@@ -1,0 +1,1333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<!-- ======================================================================== -->
+	<!-- ====================== مرجع البريفكسات ================================ -->
+	<!-- ======================================================================== -->
+	<!--                                                                          -->
+	<!-- Page_  : عناوين الصفحات (H1، عنوان الصفحة)                              -->
+	<!--         مثال: Page_Dashboard = لوحة التحكم                              -->
+	<!--                                                                          -->
+	<!-- Btn_   : الأزرار والعناصر القابلة للنقر                                 -->
+	<!--         مثال: Btn_Save = حفظ، Btn_Delete = حذف                          -->
+	<!--                                                                          -->
+	<!-- Lbl_   : تسميات الحقول وعناوين عرض البيانات                            -->
+	<!--         مثال: Lbl_Name = الاسم، Lbl_Email = البريد الإلكتروني          -->
+	<!--                                                                          -->
+	<!-- Menu_  : عناصر القوائم                                                  -->
+	<!--         مثال: Menu_Home = الرئيسية، Menu_Products = المنتجات           -->
+	<!--                                                                          -->
+	<!-- Msg_   : رسائل النظام (نجاح، خطأ، تحذير، معلومات)                      -->
+	<!--         مثال: Msg_Success = تمت العملية بنجاح                           -->
+	<!--                                                                          -->
+	<!-- Sec_   : عناوين الأقسام داخل الصفحة                                     -->
+	<!--         مثال: Sec_PersonalInfo = المعلومات الشخصية                      -->
+	<!--                                                                          -->
+	<!-- Opt_   : الخيارات (نعم/لا، مفعل/غير مفعل، ذكر/أنثى)                    -->
+	<!--         مثال: Opt_Yes = نعم، Opt_Active = مفعل                          -->
+	<!--                                                                          -->
+	<!-- Fld_   : النصوص الإرشادية داخل الحقول (Placeholders)                   -->
+	<!--         مثال: Fld_Search = ابحث...                                      -->
+	<!--                                                                          -->
+	<!-- Tbl_   : رؤوس أعمدة الجداول                                             -->
+	<!--         مثال: Tbl_ID = المعرف، Tbl_Name = الاسم                         -->
+	<!--                                                                          -->
+	<!-- ======================================================================== -->
+
+	<!-- ========== عناوين الصفحات (Page_) ========== -->
+	<!-- Page_ : عناوين الصفحات الرئيسية -->
+	<data name="Page_Dashboard" xml:space="preserve">
+    <value>لوحة التحكم</value>
+    <comment>الصفحة الرئيسية للمشرف</comment>
+  </data>
+	<data name="Page_Home" xml:space="preserve">
+    <value>الرئيسية</value>
+    <comment>الصفحة الرئيسية للموقع</comment>
+  </data>
+	<data name="Page_Products" xml:space="preserve">
+    <value>المنتجات</value>
+    <comment>صفحة عرض المنتجات</comment>
+  </data>
+	<data name="Page_Orders" xml:space="preserve">
+    <value>الطلبات</value>
+    <comment>صفحة إدارة الطلبات</comment>
+  </data>
+	<data name="Page_Users" xml:space="preserve">
+    <value>المستخدمين</value>
+    <comment>صفحة إدارة المستخدمين</comment>
+  </data>
+	<data name="Page_Customers" xml:space="preserve">
+    <value>العملاء</value>
+    <comment>صفحة إدارة العملاء</comment>
+  </data>
+	<data name="Page_Suppliers" xml:space="preserve">
+    <value>الموردين</value>
+    <comment>صفحة إدارة الموردين</comment>
+  </data>
+	<data name="Page_Reports" xml:space="preserve">
+    <value>التقارير</value>
+    <comment>صفحة التقارير</comment>
+  </data>
+	<data name="Page_Settings" xml:space="preserve">
+    <value>الإعدادات</value>
+    <comment>صفحة الإعدادات</comment>
+  </data>
+	<data name="Page_Profile" xml:space="preserve">
+    <value>الملف الشخصي</value>
+    <comment>صفحة الملف الشخصي</comment>
+  </data>
+	<data name="Page_Account" xml:space="preserve">
+    <value>الحساب</value>
+    <comment>صفحة الحساب</comment>
+  </data>
+	<data name="Page_Admin" xml:space="preserve">
+    <value>الإدارة</value>
+    <comment>صفحة الإدارة</comment>
+  </data>
+	<data name="Page_Help" xml:space="preserve">
+    <value>مساعدة</value>
+    <comment>صفحة المساعدة</comment>
+  </data>
+	<data name="Page_Support" xml:space="preserve">
+    <value>الدعم الفني</value>
+    <comment>صفحة الدعم الفني</comment>
+  </data>
+	<data name="Page_About" xml:space="preserve">
+    <value>عن الموقع</value>
+    <comment>صفحة معلومات عن الموقع</comment>
+  </data>
+	<data name="Page_Contact" xml:space="preserve">
+    <value>اتصل بنا</value>
+    <comment>صفحة التواصل</comment>
+  </data>
+	<data name="Page_Privacy" xml:space="preserve">
+    <value>سياسة الخصوصية</value>
+    <comment>صفحة سياسة الخصوصية</comment>
+  </data>
+	<data name="Page_Terms" xml:space="preserve">
+    <value>الشروط والأحكام</value>
+    <comment>صفحة الشروط والأحكام</comment>
+  </data>
+	<data name="Page_Login" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+    <comment>صفحة تسجيل الدخول</comment>
+  </data>
+	<data name="Page_Register" xml:space="preserve">
+    <value>إنشاء حساب</value>
+    <comment>صفحة إنشاء حساب جديد</comment>
+  </data>
+	<data name="Page_ForgotPassword" xml:space="preserve">
+    <value>نسيت كلمة المرور</value>
+    <comment>صفحة استعادة كلمة المرور</comment>
+  </data>
+	<data name="Page_ResetPassword" xml:space="preserve">
+    <value>إعادة تعيين كلمة المرور</value>
+    <comment>صفحة إعادة تعيين كلمة المرور</comment>
+  </data>
+	<data name="Page_Checkout" xml:space="preserve">
+    <value>إتمام الشراء</value>
+    <comment>صفحة إتمام عملية الشراء</comment>
+  </data>
+	<data name="Page_Cart" xml:space="preserve">
+    <value>سلة التسوق</value>
+    <comment>صفحة سلة التسوق</comment>
+  </data>
+	<data name="Page_Wishlist" xml:space="preserve">
+    <value>المفضلة</value>
+    <comment>صفحة قائمة المفضلة</comment>
+  </data>
+	<data name="Page_Compare" xml:space="preserve">
+    <value>مقارنة المنتجات</value>
+    <comment>صفحة مقارنة المنتجات</comment>
+  </data>
+
+	<!-- ========== الأزرار (Btn_) ========== -->
+	<!-- Btn_ : جميع الأزرار في الموقع -->
+	<data name="Btn_Save" xml:space="preserve">
+    <value>حفظ</value>
+    <comment>زر الحفظ</comment>
+  </data>
+	<data name="Btn_SaveChanges" xml:space="preserve">
+    <value>حفظ التغييرات</value>
+    <comment>زر حفظ التغييرات</comment>
+  </data>
+	<data name="Btn_SaveCont" xml:space="preserve">
+    <value>حفظ ومتابعة</value>
+    <comment>زر الحفظ والاستمرار</comment>
+  </data>
+	<data name="Btn_Delete" xml:space="preserve">
+    <value>حذف</value>
+    <comment>زر الحذف</comment>
+  </data>
+	<data name="Btn_Edit" xml:space="preserve">
+    <value>تعديل</value>
+    <comment>زر التعديل</comment>
+  </data>
+	<data name="Btn_Update" xml:space="preserve">
+    <value>تحديث</value>
+    <comment>زر التحديث</comment>
+  </data>
+	<data name="Btn_Add" xml:space="preserve">
+    <value>إضافة جديد</value>
+    <comment>زر الإضافة</comment>
+  </data>
+	<data name="Btn_AddItem" xml:space="preserve">
+    <value>إضافة عنصر</value>
+    <comment>زر إضافة عنصر</comment>
+  </data>
+	<data name="Btn_Create" xml:space="preserve">
+    <value>إنشاء</value>
+    <comment>زر الإنشاء</comment>
+  </data>
+	<data name="Btn_Cancel" xml:space="preserve">
+    <value>إلغاء</value>
+    <comment>زر الإلغاء</comment>
+  </data>
+	<data name="Btn_Close" xml:space="preserve">
+    <value>إغلاق</value>
+    <comment>زر الإغلاق</comment>
+  </data>
+	<data name="Btn_Back" xml:space="preserve">
+    <value>رجوع</value>
+    <comment>زر الرجوع</comment>
+  </data>
+	<data name="Btn_Next" xml:space="preserve">
+    <value>التالي</value>
+    <comment>زر التالي</comment>
+  </data>
+	<data name="Btn_Prev" xml:space="preserve">
+    <value>السابق</value>
+    <comment>زر السابق</comment>
+  </data>
+	<data name="Btn_Finish" xml:space="preserve">
+    <value>إنهاء</value>
+    <comment>زر الإنهاء</comment>
+  </data>
+	<data name="Btn_Submit" xml:space="preserve">
+    <value>إرسال</value>
+    <comment>زر الإرسال</comment>
+  </data>
+	<data name="Btn_Apply" xml:space="preserve">
+    <value>تطبيق</value>
+    <comment>زر التطبيق</comment>
+  </data>
+	<data name="Btn_Reset" xml:space="preserve">
+    <value>إعادة تعيين</value>
+    <comment>زر إعادة التعيين</comment>
+  </data>
+	<data name="Btn_Clear" xml:space="preserve">
+    <value>مسح</value>
+    <comment>زر المسح</comment>
+  </data>
+	<data name="Btn_Search" xml:space="preserve">
+    <value>بحث</value>
+    <comment>زر البحث</comment>
+  </data>
+	<data name="Btn_Filter" xml:space="preserve">
+    <value>تصفية</value>
+    <comment>زر التصفية</comment>
+  </data>
+	<data name="Btn_Refresh" xml:space="preserve">
+    <value>تحديث</value>
+    <comment>زر التحديث</comment>
+  </data>
+	<data name="Btn_Download" xml:space="preserve">
+    <value>تحميل</value>
+    <comment>زر التحميل</comment>
+  </data>
+	<data name="Btn_Upload" xml:space="preserve">
+    <value>رفع</value>
+    <comment>زر الرفع</comment>
+  </data>
+	<data name="Btn_Export" xml:space="preserve">
+    <value>تصدير</value>
+    <comment>زر التصدير</comment>
+  </data>
+	<data name="Btn_Import" xml:space="preserve">
+    <value>استيراد</value>
+    <comment>زر الاستيراد</comment>
+  </data>
+	<data name="Btn_Print" xml:space="preserve">
+    <value>طباعة</value>
+    <comment>زر الطباعة</comment>
+  </data>
+	<data name="Btn_Preview" xml:space="preserve">
+    <value>معاينة</value>
+    <comment>زر المعاينة</comment>
+  </data>
+	<data name="Btn_View" xml:space="preserve">
+    <value>عرض</value>
+    <comment>زر العرض</comment>
+  </data>
+	<data name="Btn_ViewAll" xml:space="preserve">
+    <value>عرض الكل</value>
+    <comment>زر عرض الكل</comment>
+  </data>
+	<data name="Btn_Show" xml:space="preserve">
+    <value>إظهار</value>
+    <comment>زر الإظهار</comment>
+  </data>
+	<data name="Btn_Hide" xml:space="preserve">
+    <value>إخفاء</value>
+    <comment>زر الإخفاء</comment>
+  </data>
+	<data name="Btn_Expand" xml:space="preserve">
+    <value>توسيع</value>
+    <comment>زر التوسيع</comment>
+  </data>
+	<data name="Btn_Collapse" xml:space="preserve">
+    <value>طي</value>
+    <comment>زر الطي</comment>
+  </data>
+	<data name="Btn_Select" xml:space="preserve">
+    <value>اختيار</value>
+    <comment>زر الاختيار</comment>
+  </data>
+	<data name="Btn_Choose" xml:space="preserve">
+    <value>تحديد</value>
+    <comment>زر التحديد</comment>
+  </data>
+	<data name="Btn_Confirm" xml:space="preserve">
+    <value>تأكيد</value>
+    <comment>زر التأكيد</comment>
+  </data>
+	<data name="Btn_Approve" xml:space="preserve">
+    <value>موافقة</value>
+    <comment>زر الموافقة</comment>
+  </data>
+	<data name="Btn_Reject" xml:space="preserve">
+    <value>رفض</value>
+    <comment>زر الرفض</comment>
+  </data>
+	<data name="Btn_Accept" xml:space="preserve">
+    <value>قبول</value>
+    <comment>زر القبول</comment>
+  </data>
+	<data name="Btn_Decline" xml:space="preserve">
+    <value>رفض</value>
+    <comment>زر الرفض</comment>
+  </data>
+	<data name="Btn_Continue" xml:space="preserve">
+    <value>متابعة</value>
+    <comment>زر المتابعة</comment>
+  </data>
+	<data name="Btn_GoBack" xml:space="preserve">
+    <value>العودة</value>
+    <comment>زر العودة</comment>
+  </data>
+	<data name="Btn_TryAgain" xml:space="preserve">
+    <value>إعادة المحاولة</value>
+    <comment>زر إعادة المحاولة</comment>
+  </data>
+	<data name="Btn_LearnMore" xml:space="preserve">
+    <value>اعرف أكثر</value>
+    <comment>زر معرفة المزيد</comment>
+  </data>
+	<data name="Btn_ReadMore" xml:space="preserve">
+    <value>اقرأ المزيد</value>
+    <comment>زر قراءة المزيد</comment>
+  </data>
+	<data name="Btn_Subscribe" xml:space="preserve">
+    <value>اشتراك</value>
+    <comment>زر الاشتراك</comment>
+  </data>
+	<data name="Btn_Send" xml:space="preserve">
+    <value>إرسال</value>
+    <comment>زر الإرسال</comment>
+  </data>
+	<data name="Btn_Reply" xml:space="preserve">
+    <value>رد</value>
+    <comment>زر الرد</comment>
+  </data>
+	<data name="Btn_Forward" xml:space="preserve">
+    <value>إعادة توجيه</value>
+    <comment>زر إعادة التوجيه</comment>
+  </data>
+
+	<!-- ========== تسميات الحقول (Lbl_) ========== -->
+	<!-- Lbl_ : تسميات الحقول في النماذج -->
+	<data name="Lbl_Name" xml:space="preserve">
+    <value>الاسم</value>
+    <comment>تسمية حقل الاسم</comment>
+  </data>
+	<data name="Lbl_FullName" xml:space="preserve">
+    <value>الاسم الكامل</value>
+    <comment>تسمية حقل الاسم الكامل</comment>
+  </data>
+	<data name="Lbl_FirstName" xml:space="preserve">
+    <value>الاسم الأول</value>
+    <comment>تسمية حقل الاسم الأول</comment>
+  </data>
+	<data name="Lbl_LastName" xml:space="preserve">
+    <value>الاسم الأخير</value>
+    <comment>تسمية حقل الاسم الأخير</comment>
+  </data>
+	<data name="Lbl_Email" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+    <comment>تسمية حقل البريد الإلكتروني</comment>
+  </data>
+	<data name="Lbl_Phone" xml:space="preserve">
+    <value>رقم الهاتف</value>
+    <comment>تسمية حقل رقم الهاتف</comment>
+  </data>
+	<data name="Lbl_Mobile" xml:space="preserve">
+    <value>رقم الجوال</value>
+    <comment>تسمية حقل رقم الجوال</comment>
+  </data>
+	<data name="Lbl_Address" xml:space="preserve">
+    <value>العنوان</value>
+    <comment>تسمية حقل العنوان</comment>
+  </data>
+	<data name="Lbl_City" xml:space="preserve">
+    <value>المدينة</value>
+    <comment>تسمية حقل المدينة</comment>
+  </data>
+	<data name="Lbl_Country" xml:space="preserve">
+    <value>الدولة</value>
+    <comment>تسمية حقل الدولة</comment>
+  </data>
+	<data name="Lbl_State" xml:space="preserve">
+    <value>المنطقة / المحافظة</value>
+    <comment>تسمية حقل المنطقة</comment>
+  </data>
+	<data name="Lbl_ZipCode" xml:space="preserve">
+    <value>الرمز البريدي</value>
+    <comment>تسمية حقل الرمز البريدي</comment>
+  </data>
+	<data name="Lbl_Price" xml:space="preserve">
+    <value>السعر</value>
+    <comment>تسمية حقل السعر</comment>
+  </data>
+	<data name="Lbl_Quantity" xml:space="preserve">
+    <value>الكمية</value>
+    <comment>تسمية حقل الكمية</comment>
+  </data>
+	<data name="Lbl_Total" xml:space="preserve">
+    <value>الإجمالي</value>
+    <comment>تسمية حقل الإجمالي</comment>
+  </data>
+	<data name="Lbl_Subtotal" xml:space="preserve">
+    <value>المجموع الفرعي</value>
+    <comment>تسمية حقل المجموع الفرعي</comment>
+  </data>
+	<data name="Lbl_Discount" xml:space="preserve">
+    <value>الخصم</value>
+    <comment>تسمية حقل الخصم</comment>
+  </data>
+	<data name="Lbl_Tax" xml:space="preserve">
+    <value>الضريبة</value>
+    <comment>تسمية حقل الضريبة</comment>
+  </data>
+	<data name="Lbl_Shipping" xml:space="preserve">
+    <value>الشحن</value>
+    <comment>تسمية حقل تكلفة الشحن</comment>
+  </data>
+	<data name="Lbl_Description" xml:space="preserve">
+    <value>الوصف</value>
+    <comment>تسمية حقل الوصف</comment>
+  </data>
+	<data name="Lbl_Notes" xml:space="preserve">
+    <value>ملاحظات</value>
+    <comment>تسمية حقل الملاحظات</comment>
+  </data>
+	<data name="Lbl_Status" xml:space="preserve">
+    <value>الحالة</value>
+    <comment>تسمية حقل الحالة</comment>
+  </data>
+	<data name="Lbl_Type" xml:space="preserve">
+    <value>النوع</value>
+    <comment>تسمية حقل النوع</comment>
+  </data>
+	<data name="Lbl_Category" xml:space="preserve">
+    <value>التصنيف</value>
+    <comment>تسمية حقل التصنيف</comment>
+  </data>
+	<data name="Lbl_Brand" xml:space="preserve">
+    <value>الماركة</value>
+    <comment>تسمية حقل الماركة</comment>
+  </data>
+	<data name="Lbl_Date" xml:space="preserve">
+    <value>التاريخ</value>
+    <comment>تسمية حقل التاريخ</comment>
+  </data>
+	<data name="Lbl_CreatedAt" xml:space="preserve">
+    <value>تاريخ الإنشاء</value>
+    <comment>تسمية حقل تاريخ الإنشاء</comment>
+  </data>
+	<data name="Lbl_UpdatedAt" xml:space="preserve">
+    <value>تاريخ التحديث</value>
+    <comment>تسمية حقل تاريخ التحديث</comment>
+  </data>
+	<data name="Lbl_CreatedBy" xml:space="preserve">
+    <value>تم الإنشاء بواسطة</value>
+    <comment>تسمية حقل من قام بالإنشاء</comment>
+  </data>
+	<data name="Lbl_UpdatedBy" xml:space="preserve">
+    <value>تم التحديث بواسطة</value>
+    <comment>تسمية حقل من قام بالتحديث</comment>
+  </data>
+	<data name="Lbl_ID" xml:space="preserve">
+    <value>رقم تعريفي</value>
+    <comment>تسمية حقل الرقم التعريفي</comment>
+  </data>
+	<data name="Lbl_Code" xml:space="preserve">
+    <value>الكود</value>
+    <comment>تسمية حقل الكود</comment>
+  </data>
+	<data name="Lbl_SKU" xml:space="preserve">
+    <value>رمز SKU</value>
+    <comment>تسمية حقل رمز المنتج</comment>
+  </data>
+	<data name="Lbl_Barcode" xml:space="preserve">
+    <value>الباركود</value>
+    <comment>تسمية حقل الباركود</comment>
+  </data>
+	<data name="Lbl_Password" xml:space="preserve">
+    <value>كلمة المرور</value>
+    <comment>تسمية حقل كلمة المرور</comment>
+  </data>
+	<data name="Lbl_ConfirmPass" xml:space="preserve">
+    <value>تأكيد كلمة المرور</value>
+    <comment>تسمية حقل تأكيد كلمة المرور</comment>
+  </data>
+	<data name="Lbl_CurrentPass" xml:space="preserve">
+    <value>كلمة المرور الحالية</value>
+    <comment>تسمية حقل كلمة المرور الحالية</comment>
+  </data>
+	<data name="Lbl_NewPass" xml:space="preserve">
+    <value>كلمة المرور الجديدة</value>
+    <comment>تسمية حقل كلمة المرور الجديدة</comment>
+  </data>
+	<data name="Lbl_Role" xml:space="preserve">
+    <value>الدور</value>
+    <comment>تسمية حقل الدور</comment>
+  </data>
+	<data name="Lbl_Permissions" xml:space="preserve">
+    <value>الصلاحيات</value>
+    <comment>تسمية حقل الصلاحيات</comment>
+  </data>
+	<data name="Lbl_Image" xml:space="preserve">
+    <value>الصورة</value>
+    <comment>تسمية حقل الصورة</comment>
+  </data>
+	<data name="Lbl_File" xml:space="preserve">
+    <value>الملف</value>
+    <comment>تسمية حقل الملف</comment>
+  </data>
+	<data name="Lbl_Attachment" xml:space="preserve">
+    <value>المرفق</value>
+    <comment>تسمية حقل المرفق</comment>
+  </data>
+	<data name="Lbl_Color" xml:space="preserve">
+    <value>اللون</value>
+    <comment>تسمية حقل اللون</comment>
+  </data>
+	<data name="Lbl_Size" xml:space="preserve">
+    <value>الحجم</value>
+    <comment>تسمية حقل الحجم</comment>
+  </data>
+	<data name="Lbl_Weight" xml:space="preserve">
+    <value>الوزن</value>
+    <comment>تسمية حقل الوزن</comment>
+  </data>
+	<data name="Lbl_Dimensions" xml:space="preserve">
+    <value>الأبعاد</value>
+    <comment>تسمية حقل الأبعاد</comment>
+  </data>
+	<data name="Lbl_Rating" xml:space="preserve">
+    <value>التقييم</value>
+    <comment>تسمية حقل التقييم</comment>
+  </data>
+	<data name="Lbl_Reviews" xml:space="preserve">
+    <value>المراجعات</value>
+    <comment>تسمية حقل المراجعات</comment>
+  </data>
+	<data name="Lbl_Comments" xml:space="preserve">
+    <value>التعليقات</value>
+    <comment>تسمية حقل التعليقات</comment>
+  </data>
+	<data name="Lbl_Likes" xml:space="preserve">
+    <value>الإعجابات</value>
+    <comment>تسمية حقل الإعجابات</comment>
+  </data>
+	<data name="Lbl_Views" xml:space="preserve">
+    <value>المشاهدات</value>
+    <comment>تسمية حقل المشاهدات</comment>
+  </data>
+	<data name="Lbl_Downloads" xml:space="preserve">
+    <value>التحميلات</value>
+    <comment>تسمية حقل التحميلات</comment>
+  </data>
+
+	<!-- ========== عناصر القوائم (Menu_) ========== -->
+	<!-- Menu_ : عناصر القوائم العلوية والجانبية -->
+	<data name="Menu_Home" xml:space="preserve">
+    <value>الرئيسية</value>
+    <comment>عنصر القائمة الرئيسية</comment>
+  </data>
+	<data name="Menu_Products" xml:space="preserve">
+    <value>المنتجات</value>
+    <comment>عنصر قائمة المنتجات</comment>
+  </data>
+	<data name="Menu_Orders" xml:space="preserve">
+    <value>الطلبات</value>
+    <comment>عنصر قائمة الطلبات</comment>
+  </data>
+	<data name="Menu_Users" xml:space="preserve">
+    <value>المستخدمين</value>
+    <comment>عنصر قائمة المستخدمين</comment>
+  </data>
+	<data name="Menu_Customers" xml:space="preserve">
+    <value>العملاء</value>
+    <comment>عنصر قائمة العملاء</comment>
+  </data>
+	<data name="Menu_Suppliers" xml:space="preserve">
+    <value>الموردين</value>
+    <comment>عنصر قائمة الموردين</comment>
+  </data>
+	<data name="Menu_Reports" xml:space="preserve">
+    <value>التقارير</value>
+    <comment>عنصر قائمة التقارير</comment>
+  </data>
+	<data name="Menu_Settings" xml:space="preserve">
+    <value>الإعدادات</value>
+    <comment>عنصر قائمة الإعدادات</comment>
+  </data>
+	<data name="Menu_Profile" xml:space="preserve">
+    <value>الملف الشخصي</value>
+    <comment>عنصر قائمة الملف الشخصي</comment>
+  </data>
+	<data name="Menu_Account" xml:space="preserve">
+    <value>الحساب</value>
+    <comment>عنصر قائمة الحساب</comment>
+  </data>
+	<data name="Menu_Dashboard" xml:space="preserve">
+    <value>لوحة التحكم</value>
+    <comment>عنصر قائمة لوحة التحكم</comment>
+  </data>
+	<data name="Menu_Admin" xml:space="preserve">
+    <value>الإدارة</value>
+    <comment>عنصر قائمة الإدارة</comment>
+  </data>
+	<data name="Menu_Help" xml:space="preserve">
+    <value>مساعدة</value>
+    <comment>عنصر قائمة المساعدة</comment>
+  </data>
+	<data name="Menu_Support" xml:space="preserve">
+    <value>الدعم الفني</value>
+    <comment>عنصر قائمة الدعم الفني</comment>
+  </data>
+	<data name="Menu_About" xml:space="preserve">
+    <value>عن الموقع</value>
+    <comment>عنصر قائمة عن الموقع</comment>
+  </data>
+	<data name="Menu_Contact" xml:space="preserve">
+    <value>اتصل بنا</value>
+    <comment>عنصر قائمة اتصل بنا</comment>
+  </data>
+	<data name="Menu_FAQ" xml:space="preserve">
+    <value>الأسئلة الشائعة</value>
+    <comment>عنصر قائمة الأسئلة الشائعة</comment>
+  </data>
+	<data name="Menu_Logout" xml:space="preserve">
+    <value>تسجيل خروج</value>
+    <comment>عنصر قائمة تسجيل الخروج</comment>
+  </data>
+	<data name="Menu_Login" xml:space="preserve">
+    <value>تسجيل دخول</value>
+    <comment>عنصر قائمة تسجيل الدخول</comment>
+  </data>
+	<data name="Menu_Register" xml:space="preserve">
+    <value>إنشاء حساب</value>
+    <comment>عنصر قائمة إنشاء حساب</comment>
+  </data>
+	<data name="Menu_Cart" xml:space="preserve">
+    <value>السلة</value>
+    <comment>عنصر قائمة سلة التسوق</comment>
+  </data>
+	<data name="Menu_Wishlist" xml:space="preserve">
+    <value>المفضلة</value>
+    <comment>عنصر قائمة المفضلة</comment>
+  </data>
+	<data name="Menu_Compare" xml:space="preserve">
+    <value>مقارنة</value>
+    <comment>عنصر قائمة مقارنة المنتجات</comment>
+  </data>
+	<data name="Menu_Checkout" xml:space="preserve">
+    <value>إتمام الشراء</value>
+    <comment>عنصر قائمة إتمام الشراء</comment>
+  </data>
+	<data name="Menu_Blog" xml:space="preserve">
+    <value>المدونة</value>
+    <comment>عنصر قائمة المدونة</comment>
+  </data>
+	<data name="Menu_News" xml:space="preserve">
+    <value>الأخبار</value>
+    <comment>عنصر قائمة الأخبار</comment>
+  </data>
+	<data name="Menu_Gallery" xml:space="preserve">
+    <value>معرض الصور</value>
+    <comment>عنصر قائمة معرض الصور</comment>
+  </data>
+	<data name="Menu_Events" xml:space="preserve">
+    <value>الفعاليات</value>
+    <comment>عنصر قائمة الفعاليات</comment>
+  </data>
+	<data name="Menu_Promotions" xml:space="preserve">
+    <value>العروض</value>
+    <comment>عنصر قائمة العروض</comment>
+  </data>
+	<data name="Menu_Offers" xml:space="preserve">
+    <value>عروض خاصة</value>
+    <comment>عنصر قائمة العروض الخاصة</comment>
+  </data>
+
+	<!-- ========== الرسائل (Msg_) ========== -->
+	<!-- Msg_ : رسائل النظام للمستخدم -->
+	<data name="Msg_Success" xml:space="preserve">
+    <value>تمت العملية بنجاح</value>
+    <comment>رسالة نجاح عامة</comment>
+  </data>
+	<data name="Msg_Error" xml:space="preserve">
+    <value>حدث خطأ</value>
+    <comment>رسالة خطأ عامة</comment>
+  </data>
+	<data name="Msg_Warning" xml:space="preserve">
+    <value>تحذير</value>
+    <comment>رسالة تحذير</comment>
+  </data>
+	<data name="Msg_Info" xml:space="preserve">
+    <value>معلومات</value>
+    <comment>رسالة معلوماتية</comment>
+  </data>
+	<data name="Msg_ConfirmDelete" xml:space="preserve">
+    <value>هل أنت متأكد من حذف هذا العنصر؟</value>
+    <comment>رسالة تأكيد الحذف</comment>
+  </data>
+	<data name="Msg_ConfirmSave" xml:space="preserve">
+    <value>هل أنت متأكد من حفظ التغييرات؟</value>
+    <comment>رسالة تأكيد الحفظ</comment>
+  </data>
+	<data name="Msg_ConfirmCancel" xml:space="preserve">
+    <value>هل أنت متأكد من الإلغاء؟ سيتم فقدان التغييرات غير المحفوظة</value>
+    <comment>رسالة تأكيد الإلغاء</comment>
+  </data>
+	<data name="Msg_ConfirmLogout" xml:space="preserve">
+    <value>هل أنت متأكد من تسجيل الخروج؟</value>
+    <comment>رسالة تأكيد تسجيل الخروج</comment>
+  </data>
+	<data name="Msg_NoData" xml:space="preserve">
+    <value>لا توجد بيانات</value>
+    <comment>رسالة عدم وجود بيانات</comment>
+  </data>
+	<data name="Msg_Loading" xml:space="preserve">
+    <value>جاري التحميل...</value>
+    <comment>رسالة أثناء التحميل</comment>
+  </data>
+	<data name="Msg_Processing" xml:space="preserve">
+    <value>جاري المعالجة...</value>
+    <comment>رسالة أثناء المعالجة</comment>
+  </data>
+	<data name="Msg_Saving" xml:space="preserve">
+    <value>جاري الحفظ...</value>
+    <comment>رسالة أثناء الحفظ</comment>
+  </data>
+	<data name="Msg_Deleting" xml:space="preserve">
+    <value>جاري الحذف...</value>
+    <comment>رسالة أثناء الحذف</comment>
+  </data>
+	<data name="Msg_Uploading" xml:space="preserve">
+    <value>جاري الرفع...</value>
+    <comment>رسالة أثناء رفع الملفات</comment>
+  </data>
+	<data name="Msg_Downloading" xml:space="preserve">
+    <value>جاري التحميل...</value>
+    <comment>رسالة أثناء تحميل الملفات</comment>
+  </data>
+	<data name="Msg_SelectItem" xml:space="preserve">
+    <value>-- اختر --</value>
+    <comment>نص افتراضي لقائمة الاختيار</comment>
+  </data>
+	<data name="Msg_AllItems" xml:space="preserve">
+    <value>الكل</value>
+    <comment>خيار تحديد الكل</comment>
+  </data>
+	<data name="Msg_None" xml:space="preserve">
+    <value>لا شيء</value>
+    <comment>خيار لا شيء</comment>
+  </data>
+	<data name="Msg_Required" xml:space="preserve">
+    <value>مطلوب</value>
+    <comment>علامة حقل مطلوب</comment>
+  </data>
+	<data name="Msg_Optional" xml:space="preserve">
+    <value>اختياري</value>
+    <comment>علامة حقل اختياري</comment>
+  </data>
+	<data name="Msg_New" xml:space="preserve">
+    <value>جديد</value>
+    <comment>علامة عنصر جديد</comment>
+  </data>
+	<data name="Msg_Updated" xml:space="preserve">
+    <value>تم التحديث</value>
+    <comment>علامة عنصر محدث</comment>
+  </data>
+	<data name="Msg_Expired" xml:space="preserve">
+    <value>منتهي الصلاحية</value>
+    <comment>علامة عنصر منتهي الصلاحية</comment>
+  </data>
+	<data name="Msg_NotFound" xml:space="preserve">
+    <value>العنصر غير موجود</value>
+    <comment>رسالة عدم وجود عنصر</comment>
+  </data>
+	<data name="Msg_AccessDenied" xml:space="preserve">
+    <value>تم رفض الوصول. ليس لديك صلاحية لعرض هذه الصفحة</value>
+    <comment>رسالة رفض الوصول</comment>
+  </data>
+	<data name="Msg_SessionExpired" xml:space="preserve">
+    <value>انتهت الجلسة. الرجاء تسجيل الدخول مرة أخرى</value>
+    <comment>رسالة انتهاء الجلسة</comment>
+  </data>
+	<data name="Msg_InvalidRequest" xml:space="preserve">
+    <value>طلب غير صالح</value>
+    <comment>رسالة طلب غير صالح</comment>
+  </data>
+	<data name="Msg_OperationFailed" xml:space="preserve">
+    <value>فشلت العملية. الرجاء المحاولة مرة أخرى</value>
+    <comment>رسالة فشل العملية</comment>
+  </data>
+	<data name="Msg_ChangesSaved" xml:space="preserve">
+    <value>تم حفظ التغييرات بنجاح</value>
+    <comment>رسالة حفظ التغييرات</comment>
+  </data>
+	<data name="Msg_ItemDeleted" xml:space="preserve">
+    <value>تم حذف العنصر بنجاح</value>
+    <comment>رسالة حذف العنصر</comment>
+  </data>
+	<data name="Msg_ItemAdded" xml:space="preserve">
+    <value>تمت إضافة العنصر بنجاح</value>
+    <comment>رسالة إضافة العنصر</comment>
+  </data>
+	<data name="Msg_ItemUpdated" xml:space="preserve">
+    <value>تم تحديث العنصر بنجاح</value>
+    <comment>رسالة تحديث العنصر</comment>
+  </data>
+
+	<!-- ========== عناوين الأقسام (Sec_) ========== -->
+	<!-- Sec_ : عناوين الأقسام داخل الصفحة -->
+	<data name="Sec_PersonalInfo" xml:space="preserve">
+    <value>المعلومات الشخصية</value>
+    <comment>عنوان قسم المعلومات الشخصية</comment>
+  </data>
+	<data name="Sec_ContactInfo" xml:space="preserve">
+    <value>معلومات الاتصال</value>
+    <comment>عنوان قسم معلومات الاتصال</comment>
+  </data>
+	<data name="Sec_AddressInfo" xml:space="preserve">
+    <value>معلومات العنوان</value>
+    <comment>عنوان قسم معلومات العنوان</comment>
+  </data>
+	<data name="Sec_LoginInfo" xml:space="preserve">
+    <value>معلومات تسجيل الدخول</value>
+    <comment>عنوان قسم معلومات تسجيل الدخول</comment>
+  </data>
+	<data name="Sec_PaymentInfo" xml:space="preserve">
+    <value>معلومات الدفع</value>
+    <comment>عنوان قسم معلومات الدفع</comment>
+  </data>
+	<data name="Sec_ShippingInfo" xml:space="preserve">
+    <value>معلومات الشحن</value>
+    <comment>عنوان قسم معلومات الشحن</comment>
+  </data>
+	<data name="Sec_BillingInfo" xml:space="preserve">
+    <value>معلومات الفوترة</value>
+    <comment>عنوان قسم معلومات الفوترة</comment>
+  </data>
+	<data name="Sec_OrderSummary" xml:space="preserve">
+    <value>ملخص الطلب</value>
+    <comment>عنوان قسم ملخص الطلب</comment>
+  </data>
+	<data name="Sec_ProductDetails" xml:space="preserve">
+    <value>تفاصيل المنتج</value>
+    <comment>عنوان قسم تفاصيل المنتج</comment>
+  </data>
+	<data name="Sec_AdditionalInfo" xml:space="preserve">
+    <value>معلومات إضافية</value>
+    <comment>عنوان قسم معلومات إضافية</comment>
+  </data>
+	<data name="Sec_Reviews" xml:space="preserve">
+    <value>تقييمات العملاء</value>
+    <comment>عنوان قسم تقييمات العملاء</comment>
+  </data>
+	<data name="Sec_RelatedProducts" xml:space="preserve">
+    <value>منتجات ذات صلة</value>
+    <comment>عنوان قسم منتجات ذات صلة</comment>
+  </data>
+	<data name="Sec_Recommended" xml:space="preserve">
+    <value>موصى بها لك</value>
+    <comment>عنوان قسم المنتجات الموصى بها</comment>
+  </data>
+	<data name="Sec_RecentlyViewed" xml:space="preserve">
+    <value>تم مشاهدتها مؤخراً</value>
+    <comment>عنوان قسم العناصر التي تم مشاهدتها</comment>
+  </data>
+	<data name="Sec_Security" xml:space="preserve">
+    <value>إعدادات الأمان</value>
+    <comment>عنوان قسم إعدادات الأمان</comment>
+  </data>
+	<data name="Sec_Notifications" xml:space="preserve">
+    <value>إعدادات الإشعارات</value>
+    <comment>عنوان قسم إعدادات الإشعارات</comment>
+  </data>
+	<data name="Sec_Preferences" xml:space="preserve">
+    <value>تفضيلات المستخدم</value>
+    <comment>عنوان قسم تفضيلات المستخدم</comment>
+  </data>
+	<data name="Sec_History" xml:space="preserve">
+    <value>سجل الطلبات</value>
+    <comment>عنوان قسم سجل الطلبات</comment>
+  </data>
+	<data name="Sec_Activity" xml:space="preserve">
+    <value>آخر النشاطات</value>
+    <comment>عنوان قسم آخر النشاطات</comment>
+  </data>
+	<data name="Sec_Statistics" xml:space="preserve">
+    <value>إحصائيات</value>
+    <comment>عنوان قسم الإحصائيات</comment>
+  </data>
+
+	<!-- ========== الخيارات (Opt_) ========== -->
+	<!-- Opt_ : قيم الخيارات الثابتة -->
+	<data name="Opt_Yes" xml:space="preserve">
+    <value>نعم</value>
+    <comment>خيار نعم</comment>
+  </data>
+	<data name="Opt_No" xml:space="preserve">
+    <value>لا</value>
+    <comment>خيار لا</comment>
+  </data>
+	<data name="Opt_Ok" xml:space="preserve">
+    <value>حسناً</value>
+    <comment>خيار موافق</comment>
+  </data>
+	<data name="Opt_Active" xml:space="preserve">
+    <value>نشط</value>
+    <comment>حالة نشط</comment>
+  </data>
+	<data name="Opt_Inactive" xml:space="preserve">
+    <value>غير نشط</value>
+    <comment>حالة غير نشط</comment>
+  </data>
+	<data name="Opt_Enabled" xml:space="preserve">
+    <value>مفعل</value>
+    <comment>حالة مفعل</comment>
+  </data>
+	<data name="Opt_Disabled" xml:space="preserve">
+    <value>معطل</value>
+    <comment>حالة معطل</comment>
+  </data>
+	<data name="Opt_Male" xml:space="preserve">
+    <value>ذكر</value>
+    <comment>خيار الجنس ذكر</comment>
+  </data>
+	<data name="Opt_Female" xml:space="preserve">
+    <value>أنثى</value>
+    <comment>خيار الجنس أنثى</comment>
+  </data>
+	<data name="Opt_Other" xml:space="preserve">
+    <value>أخرى</value>
+    <comment>خيار آخر</comment>
+  </data>
+	<data name="Opt_True" xml:space="preserve">
+    <value>صحيح</value>
+    <comment>خيار صحيح</comment>
+  </data>
+	<data name="Opt_False" xml:space="preserve">
+    <value>خطأ</value>
+    <comment>خيار خطأ</comment>
+  </data>
+	<data name="Opt_On" xml:space="preserve">
+    <value>تشغيل</value>
+    <comment>خيار تشغيل</comment>
+  </data>
+	<data name="Opt_Off" xml:space="preserve">
+    <value>إيقاف</value>
+    <comment>خيار إيقاف</comment>
+  </data>
+	<data name="Opt_Show" xml:space="preserve">
+    <value>إظهار</value>
+    <comment>خيار إظهار</comment>
+  </data>
+	<data name="Opt_Hide" xml:space="preserve">
+    <value>إخفاء</value>
+    <comment>خيار إخفاء</comment>
+  </data>
+	<data name="Opt_Include" xml:space="preserve">
+    <value>تضمين</value>
+    <comment>خيار تضمين</comment>
+  </data>
+	<data name="Opt_Exclude" xml:space="preserve">
+    <value>استبعاد</value>
+    <comment>خيار استبعاد</comment>
+  </data>
+	<data name="Opt_Allow" xml:space="preserve">
+    <value>السماح</value>
+    <comment>خيار السماح</comment>
+  </data>
+	<data name="Opt_Deny" xml:space="preserve">
+    <value>منع</value>
+    <comment>خيار المنع</comment>
+  </data>
+	<data name="Opt_Locked" xml:space="preserve">
+    <value>مقفل</value>
+    <comment>حالة مقفل</comment>
+  </data>
+	<data name="Opt_Unlocked" xml:space="preserve">
+    <value>مفتوح</value>
+    <comment>حالة مفتوح</comment>
+  </data>
+	<data name="Opt_Verified" xml:space="preserve">
+    <value>موثق</value>
+    <comment>حالة موثق</comment>
+  </data>
+	<data name="Opt_Unverified" xml:space="preserve">
+    <value>غير موثق</value>
+    <comment>حالة غير موثق</comment>
+  </data>
+	<data name="Opt_Featured" xml:space="preserve">
+    <value>مميز</value>
+    <comment>حالة مميز</comment>
+  </data>
+	<data name="Opt_NotFeatured" xml:space="preserve">
+    <value>غير مميز</value>
+    <comment>حالة غير مميز</comment>
+  </data>
+	<data name="Opt_Published" xml:space="preserve">
+    <value>منشور</value>
+    <comment>حالة منشور</comment>
+  </data>
+	<data name="Opt_Unpublished" xml:space="preserve">
+    <value>غير منشور</value>
+    <comment>حالة غير منشور</comment>
+  </data>
+	<data name="Opt_Approved" xml:space="preserve">
+    <value>معتمد</value>
+    <comment>حالة معتمد</comment>
+  </data>
+	<data name="Opt_Pending" xml:space="preserve">
+    <value>قيد الانتظار</value>
+    <comment>حالة قيد الانتظار</comment>
+  </data>
+	<data name="Opt_Rejected" xml:space="preserve">
+    <value>مرفوض</value>
+    <comment>حالة مرفوض</comment>
+  </data>
+	<data name="Opt_Completed" xml:space="preserve">
+    <value>مكتمل</value>
+    <comment>حالة مكتمل</comment>
+  </data>
+	<data name="Opt_InProgress" xml:space="preserve">
+    <value>قيد التنفيذ</value>
+    <comment>حالة قيد التنفيذ</comment>
+  </data>
+	<data name="Opt_Cancelled" xml:space="preserve">
+    <value>ملغي</value>
+    <comment>حالة ملغي</comment>
+  </data>
+	<data name="Opt_Refunded" xml:space="preserve">
+    <value>مسترجع</value>
+    <comment>حالة مسترجع</comment>
+  </data>
+	<data name="Opt_Paid" xml:space="preserve">
+    <value>مدفوع</value>
+    <comment>حالة مدفوع</comment>
+  </data>
+	<data name="Opt_Unpaid" xml:space="preserve">
+    <value>غير مدفوع</value>
+    <comment>حالة غير مدفوع</comment>
+  </data>
+	<data name="Opt_Shipped" xml:space="preserve">
+    <value>تم الشحن</value>
+    <comment>حالة تم الشحن</comment>
+  </data>
+	<data name="Opt_Delivered" xml:space="preserve">
+    <value>تم التوصيل</value>
+    <comment>حالة تم التوصيل</comment>
+  </data>
+	<data name="Opt_Returned" xml:space="preserve">
+    <value>تم الإرجاع</value>
+    <comment>حالة تم الإرجاع</comment>
+  </data>
+
+	<!-- ========== عناصر النماذج (Fld_) ========== -->
+	<!-- Fld_ : النصوص الإرشادية داخل الحقول -->
+	<data name="Fld_Search" xml:space="preserve">
+    <value>ابحث...</value>
+    <comment>نص إرشادي في حقل البحث</comment>
+  </data>
+	<data name="Fld_EnterName" xml:space="preserve">
+    <value>أدخل الاسم</value>
+    <comment>نص إرشادي في حقل الاسم</comment>
+  </data>
+	<data name="Fld_EnterEmail" xml:space="preserve">
+    <value>أدخل البريد الإلكتروني</value>
+    <comment>نص إرشادي في حقل البريد</comment>
+  </data>
+	<data name="Fld_EnterPass" xml:space="preserve">
+    <value>أدخل كلمة المرور</value>
+    <comment>نص إرشادي في حقل كلمة المرور</comment>
+  </data>
+	<data name="Fld_ConfirmPass" xml:space="preserve">
+    <value>تأكيد كلمة المرور</value>
+    <comment>نص إرشادي في حقل تأكيد كلمة المرور</comment>
+  </data>
+	<data name="Fld_EnterPhone" xml:space="preserve">
+    <value>أدخل رقم الهاتف</value>
+    <comment>نص إرشادي في حقل الهاتف</comment>
+  </data>
+	<data name="Fld_EnterAddress" xml:space="preserve">
+    <value>أدخل العنوان</value>
+    <comment>نص إرشادي في حقل العنوان</comment>
+  </data>
+	<data name="Fld_EnterCity" xml:space="preserve">
+    <value>أدخل المدينة</value>
+    <comment>نص إرشادي في حقل المدينة</comment>
+  </data>
+	<data name="Fld_EnterCountry" xml:space="preserve">
+    <value>أدخل الدولة</value>
+    <comment>نص إرشادي في حقل الدولة</comment>
+  </data>
+	<data name="Fld_EnterZip" xml:space="preserve">
+    <value>أدخل الرمز البريدي</value>
+    <comment>نص إرشادي في حقل الرمز البريدي</comment>
+  </data>
+	<data name="Fld_EnterPrice" xml:space="preserve">
+    <value>أدخل السعر</value>
+    <comment>نص إرشادي في حقل السعر</comment>
+  </data>
+	<data name="Fld_EnterQuantity" xml:space="preserve">
+    <value>أدخل الكمية</value>
+    <comment>نص إرشادي في حقل الكمية</comment>
+  </data>
+	<data name="Fld_EnterDescription" xml:space="preserve">
+    <value>أدخل الوصف</value>
+    <comment>نص إرشادي في حقل الوصف</comment>
+  </data>
+	<data name="Fld_EnterNotes" xml:space="preserve">
+    <value>أدخل ملاحظات</value>
+    <comment>نص إرشادي في حقل الملاحظات</comment>
+  </data>
+	<data name="Fld_EnterCode" xml:space="preserve">
+    <value>أدخل الكود</value>
+    <comment>نص إرشادي في حقل الكود</comment>
+  </data>
+	<data name="Fld_EnterSKU" xml:space="preserve">
+    <value>أدخل رمز SKU</value>
+    <comment>نص إرشادي في حقل رمز المنتج</comment>
+  </data>
+	<data name="Fld_EnterBarcode" xml:space="preserve">
+    <value>أدخل الباركود</value>
+    <comment>نص إرشادي في حقل الباركود</comment>
+  </data>
+	<data name="Fld_TypeHere" xml:space="preserve">
+    <value>اكتب هنا...</value>
+    <comment>نص إرشادي عام</comment>
+  </data>
+	<data name="Fld_ChooseFile" xml:space="preserve">
+    <value>اختر ملف</value>
+    <comment>نص إرشادي لاختيار ملف</comment>
+  </data>
+	<data name="Fld_NoFileChosen" xml:space="preserve">
+    <value>لم يتم اختيار ملف</value>
+    <comment>رسالة عدم اختيار ملف</comment>
+  </data>
+	<data name="Fld_SelectDate" xml:space="preserve">
+    <value>اختر تاريخ</value>
+    <comment>نص إرشادي لاختيار تاريخ</comment>
+  </data>
+	<data name="Fld_SelectTime" xml:space="preserve">
+    <value>اختر وقت</value>
+    <comment>نص إرشادي لاختيار وقت</comment>
+  </data>
+	<data name="Fld_Min" xml:space="preserve">
+    <value>الحد الأدنى</value>
+    <comment>تسمية الحد الأدنى</comment>
+  </data>
+	<data name="Fld_Max" xml:space="preserve">
+    <value>الحد الأقصى</value>
+    <comment>تسمية الحد الأقصى</comment>
+  </data>
+	<data name="Fld_From" xml:space="preserve">
+    <value>من</value>
+    <comment>تسمية من</comment>
+  </data>
+	<data name="Fld_To" xml:space="preserve">
+    <value>إلى</value>
+    <comment>تسمية إلى</comment>
+  </data>
+	<data name="Fld_StartDate" xml:space="preserve">
+    <value>تاريخ البداية</value>
+    <comment>تسمية تاريخ البداية</comment>
+  </data>
+	<data name="Fld_EndDate" xml:space="preserve">
+    <value>تاريخ النهاية</value>
+    <comment>تسمية تاريخ النهاية</comment>
+  </data>
+
+	<!-- ========== رؤوس الجداول (Tbl_) ========== -->
+	<!-- Tbl_ : رؤوس أعمدة الجداول -->
+	<data name="Tbl_ID" xml:space="preserve">
+    <value>المعرف</value>
+    <comment>عمود المعرف في الجدول</comment>
+  </data>
+	<data name="Tbl_Name" xml:space="preserve">
+    <value>الاسم</value>
+    <comment>عمود الاسم في الجدول</comment>
+  </data>
+	<data name="Tbl_Email" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+    <comment>عمود البريد الإلكتروني</comment>
+  </data>
+	<data name="Tbl_Phone" xml:space="preserve">
+    <value>الهاتف</value>
+    <comment>عمود الهاتف</comment>
+  </data>
+	<data name="Tbl_Address" xml:space="preserve">
+    <value>العنوان</value>
+    <comment>عمود العنوان</comment>
+  </data>
+	<data name="Tbl_City" xml:space="preserve">
+    <value>المدينة</value>
+    <comment>عمود المدينة</comment>
+  </data>
+	<data name="Tbl_Country" xml:space="preserve">
+    <value>الدولة</value>
+    <comment>عمود الدولة</comment>
+  </data>
+	<data name="Tbl_Price" xml:space="preserve">
+    <value>السعر</value>
+    <comment>عمود السعر</comment>
+  </data>
+	<data name="Tbl_Quantity" xml:space="preserve">
+    <value>الكمية</value>
+    <comment>عمود الكمية</comment>
+  </data>
+	<data name="Tbl_Total" xml:space="preserve">
+    <value>الإجمالي</value>
+    <comment>عمود الإجمالي</comment>
+  </data>
+	<data name="Tbl_Status" xml:space="preserve">
+    <value>الحالة</value>
+    <comment>عمود الحالة</comment>
+  </data>
+	<data name="Tbl_Type" xml:space="preserve">
+    <value>النوع</value>
+    <comment>عمود النوع</comment>
+  </data>
+	<data name="Tbl_Category" xml:space="preserve">
+    <value>التصنيف</value>
+    <comment>عمود التصنيف</comment>
+  </data>
+	<data name="Tbl_Date" xml:space="preserve">
+    <value>التاريخ</value>
+    <comment>عمود التاريخ</comment>
+  </data>
+	<data name="Tbl_CreatedAt" xml:space="preserve">
+    <value>تاريخ الإنشاء</value>
+    <comment>عمود تاريخ الإنشاء</comment>
+  </data>
+	<data name="Tbl_UpdatedAt" xml:space="preserve">
+    <value>تاريخ التحديث</value>
+    <comment>عمود تاريخ التحديث</comment>
+  </data>
+	<data name="Tbl_Actions" xml:space="preserve">
+    <value>الإجراءات</value>
+    <comment>عمود الإجراءات</comment>
+  </data>
+	<data name="Tbl_Role" xml:space="preserve">
+    <value>الدور</value>
+    <comment>عمود الدور</comment>
+  </data>
+	<data name="Tbl_Image" xml:space="preserve">
+    <value>الصورة</value>
+    <comment>عمود الصورة</comment>
+  </data>
+	<data name="Tbl_OrderID" xml:space="preserve">
+    <value>رقم الطلب</value>
+    <comment>عمود رقم الطلب</comment>
+  </data>
+	<data name="Tbl_Product" xml:space="preserve">
+    <value>المنتج</value>
+    <comment>عمود المنتج</comment>
+  </data>
+	<data name="Tbl_Customer" xml:space="preserve">
+    <value>العميل</value>
+    <comment>عمود العميل</comment>
+  </data>
+	<data name="Tbl_Payment" xml:space="preserve">
+    <value>طريقة الدفع</value>
+    <comment>عمود طريقة الدفع</comment>
+  </data>
+	<data name="Tbl_Shipping" xml:space="preserve">
+    <value>طريقة الشحن</value>
+    <comment>عمود طريقة الشحن</comment>
+  </data>
+</root>

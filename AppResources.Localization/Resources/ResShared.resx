@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<!-- ========== الصفحات (Page_) ========== -->
+	<data name="Page_Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+	<data name="Page_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+	<data name="Page_Products" xml:space="preserve">
+    <value>Products</value>
+  </data>
+	<data name="Page_Orders" xml:space="preserve">
+    <value>Orders</value>
+  </data>
+	<data name="Page_Users" xml:space="preserve">
+    <value>Users</value>
+  </data>
+	<data name="Page_Customers" xml:space="preserve">
+    <value>Customers</value>
+  </data>
+	<data name="Page_Suppliers" xml:space="preserve">
+    <value>Suppliers</value>
+  </data>
+	<data name="Page_Reports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+	<data name="Page_Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+	<data name="Page_Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+	<data name="Page_Account" xml:space="preserve">
+    <value>Account</value>
+  </data>
+	<data name="Page_Admin" xml:space="preserve">
+    <value>Administration</value>
+  </data>
+	<data name="Page_Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+	<data name="Page_Support" xml:space="preserve">
+    <value>Support</value>
+  </data>
+	<data name="Page_About" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+	<data name="Page_Contact" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+	<data name="Page_Privacy" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+	<data name="Page_Terms" xml:space="preserve">
+    <value>Terms &amp; Conditions</value>
+  </data>
+
+	<!-- ========== الأزرار (Btn_) ========== -->
+	<data name="Btn_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+	<data name="Btn_SaveChanges" xml:space="preserve">
+    <value>Save Changes</value>
+  </data>
+	<data name="Btn_SaveCont" xml:space="preserve">
+    <value>Save &amp; Continue</value>
+  </data>
+	<data name="Btn_Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+	<data name="Btn_Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+	<data name="Btn_Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+	<data name="Btn_Add" xml:space="preserve">
+    <value>Add New</value>
+  </data>
+	<data name="Btn_AddItem" xml:space="preserve">
+    <value>Add Item</value>
+  </data>
+	<data name="Btn_Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+	<data name="Btn_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+	<data name="Btn_Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+	<data name="Btn_Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+	<data name="Btn_Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+	<data name="Btn_Prev" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+	<data name="Btn_Finish" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+	<data name="Btn_Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+	<data name="Btn_Apply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+	<data name="Btn_Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+	<data name="Btn_Clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+	<data name="Btn_Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+	<data name="Btn_Filter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+	<data name="Btn_Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+	<data name="Btn_Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+	<data name="Btn_Upload" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+	<data name="Btn_Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+	<data name="Btn_Import" xml:space="preserve">
+    <value>Import</value>
+  </data>
+	<data name="Btn_Print" xml:space="preserve">
+    <value>Print</value>
+  </data>
+	<data name="Btn_Preview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+	<data name="Btn_View" xml:space="preserve">
+    <value>View</value>
+  </data>
+	<data name="Btn_ViewAll" xml:space="preserve">
+    <value>View All</value>
+  </data>
+	<data name="Btn_Show" xml:space="preserve">
+    <value>Show</value>
+  </data>
+	<data name="Btn_Hide" xml:space="preserve">
+    <value>Hide</value>
+  </data>
+	<data name="Btn_Expand" xml:space="preserve">
+    <value>Expand</value>
+  </data>
+	<data name="Btn_Collapse" xml:space="preserve">
+    <value>Collapse</value>
+  </data>
+	<data name="Btn_Select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+	<data name="Btn_Choose" xml:space="preserve">
+    <value>Choose</value>
+  </data>
+	<data name="Btn_Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+	<data name="Btn_Approve" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+	<data name="Btn_Reject" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+	<data name="Btn_Accept" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+
+	<!-- ========== التسميات (Lbl_) ========== -->
+	<data name="Lbl_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+	<data name="Lbl_FullName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+	<data name="Lbl_FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+	<data name="Lbl_LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+	<data name="Lbl_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+	<data name="Lbl_Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+	<data name="Lbl_Mobile" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+	<data name="Lbl_Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+	<data name="Lbl_City" xml:space="preserve">
+    <value>City</value>
+  </data>
+	<data name="Lbl_Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+	<data name="Lbl_ZipCode" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+	<data name="Lbl_Price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+	<data name="Lbl_Quantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+	<data name="Lbl_Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+	<data name="Lbl_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+	<data name="Lbl_Notes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+	<data name="Lbl_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+	<data name="Lbl_Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+	<data name="Lbl_Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+	<data name="Lbl_Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+	<data name="Lbl_CreatedAt" xml:space="preserve">
+    <value>Created At</value>
+  </data>
+	<data name="Lbl_UpdatedAt" xml:space="preserve">
+    <value>Updated At</value>
+  </data>
+	<data name="Lbl_CreatedBy" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+	<data name="Lbl_UpdatedBy" xml:space="preserve">
+    <value>Updated By</value>
+  </data>
+	<data name="Lbl_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+	<data name="Lbl_Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+	<data name="Lbl_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+	<data name="Lbl_ConfirmPass" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+	<data name="Lbl_Role" xml:space="preserve">
+    <value>Role</value>
+  </data>
+	<data name="Lbl_Image" xml:space="preserve">
+    <value>Image</value>
+  </data>
+	<data name="Lbl_File" xml:space="preserve">
+    <value>File</value>
+  </data>
+
+	<!-- ========== القوائم (Menu_) ========== -->
+	<data name="Menu_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+	<data name="Menu_Products" xml:space="preserve">
+    <value>Products</value>
+  </data>
+	<data name="Menu_Orders" xml:space="preserve">
+    <value>Orders</value>
+  </data>
+	<data name="Menu_Users" xml:space="preserve">
+    <value>Users</value>
+  </data>
+	<data name="Menu_Reports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+	<data name="Menu_Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+	<data name="Menu_Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+	<data name="Menu_Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+	<data name="Menu_Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+	<data name="Menu_Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+
+	<!-- ========== الرسائل (Msg_) ========== -->
+	<data name="Msg_Success" xml:space="preserve">
+    <value>Operation completed successfully</value>
+  </data>
+	<data name="Msg_Error" xml:space="preserve">
+    <value>An error occurred</value>
+  </data>
+	<data name="Msg_Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+	<data name="Msg_Info" xml:space="preserve">
+    <value>Information</value>
+  </data>
+	<data name="Msg_ConfirmDelete" xml:space="preserve">
+    <value>Are you sure you want to delete this item?</value>
+  </data>
+	<data name="Msg_ConfirmSave" xml:space="preserve">
+    <value>Are you sure you want to save changes?</value>
+  </data>
+	<data name="Msg_NoData" xml:space="preserve">
+    <value>No data available</value>
+  </data>
+	<data name="Msg_Loading" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+	<data name="Msg_Processing" xml:space="preserve">
+    <value>Processing...</value>
+  </data>
+	<data name="Msg_SelectItem" xml:space="preserve">
+    <value>-- Select --</value>
+  </data>
+	<data name="Msg_AllItems" xml:space="preserve">
+    <value>All</value>
+  </data>
+	<data name="Msg_Required" xml:space="preserve">
+    <value>Required</value>
+  </data>
+	<data name="Msg_Optional" xml:space="preserve">
+    <value>Optional</value>
+  </data>
+
+	<!-- ========== عناوين الأقسام (Sec_) ========== -->
+	<data name="Sec_PersonalInfo" xml:space="preserve">
+    <value>Personal Information</value>
+  </data>
+	<data name="Sec_ContactInfo" xml:space="preserve">
+    <value>Contact Information</value>
+  </data>
+	<data name="Sec_AddressInfo" xml:space="preserve">
+    <value>Address Information</value>
+  </data>
+	<data name="Sec_LoginInfo" xml:space="preserve">
+    <value>Login Information</value>
+  </data>
+	<data name="Sec_PaymentInfo" xml:space="preserve">
+    <value>Payment Information</value>
+  </data>
+	<data name="Sec_ShippingInfo" xml:space="preserve">
+    <value>Shipping Information</value>
+  </data>
+	<data name="Sec_OrderSummary" xml:space="preserve">
+    <value>Order Summary</value>
+  </data>
+
+	<!-- ========== نصوص خيارات (Opt_) ========== -->
+	<data name="Opt_Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+	<data name="Opt_No" xml:space="preserve">
+    <value>No</value>
+  </data>
+	<data name="Opt_Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+	<data name="Opt_Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+	<data name="Opt_Inactive" xml:space="preserve">
+    <value>Inactive</value>
+  </data>
+	<data name="Opt_Enabled" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+	<data name="Opt_Disabled" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+	<data name="Opt_Male" xml:space="preserve">
+    <value>Male</value>
+  </data>
+	<data name="Opt_Female" xml:space="preserve">
+    <value>Female</value>
+  </data>
+
+	<!-- ========== Form Placeholder (Fld_) ========== -->
+	<data name="Fld_Search" xml:space="preserve">
+    <value>Search...</value>
+  </data>
+	<data name="Fld_EnterName" xml:space="preserve">
+    <value>Enter name</value>
+  </data>
+	<data name="Fld_EnterEmail" xml:space="preserve">
+    <value>Enter email</value>
+  </data>
+	<data name="Fld_EnterPass" xml:space="preserve">
+    <value>Enter password</value>
+  </data>
+	<data name="Fld_ConfirmPass" xml:space="preserve">
+    <value>Confirm password</value>
+  </data>
+	<data name="Fld_EnterPhone" xml:space="preserve">
+    <value>Enter phone number</value>
+  </data>
+</root>

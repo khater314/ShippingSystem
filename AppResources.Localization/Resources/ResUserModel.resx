@@ -1,0 +1,1344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<!-- ======================================================================== -->
+	<!-- ====================== PREFIXES REFERENCE ============================= -->
+	<!-- ======================================================================== -->
+	<!--                                                                          -->
+	<!-- Page_  : Page titles (H1, title tag)                                    -->
+	<!--         Example: Page_Dashboard, Page_Profile, Page_Settings            -->
+	<!--                                                                          -->
+	<!-- Btn_   : Buttons and clickable actions                                  -->
+	<!--         Example: Btn_Save, Btn_Delete, Btn_Add, Btn_Back                -->
+	<!--                                                                          -->
+	<!-- Lbl_   : Labels for form fields and data display                        -->
+	<!--         Example: Lbl_Name, Lbl_Email, Lbl_Phone, Lbl_Address            -->
+	<!--                                                                          -->
+	<!-- Menu_  : Navigation menu items                                          -->
+	<!--         Example: Menu_Home, Menu_Products, Menu_Users, Menu_Logout      -->
+	<!--                                                                          -->
+	<!-- Msg_   : System messages (success, error, warning, info)                -->
+	<!--         Example: Msg_Success, Msg_Error, Msg_ConfirmDelete              -->
+	<!--                                                                          -->
+	<!-- Sec_   : Section titles inside a page                                   -->
+	<!--         Example: Sec_PersonalInfo, Sec_AddressInfo, Sec_PaymentInfo     -->
+	<!--                                                                          -->
+	<!-- Opt_   : Options and choices (Yes/No, Active/Inactive, Male/Female)     -->
+	<!--         Example: Opt_Yes, Opt_No, Opt_Active, Opt_Male                  -->
+	<!--                                                                          -->
+	<!-- Fld_   : Form field placeholders and hints                              -->
+	<!--         Example: Fld_Search, Fld_EnterName, Fld_EnterEmail              -->
+	<!--                                                                          -->
+	<!-- Tbl_   : Table column headers                                           -->
+	<!--         Example: Tbl_ID, Tbl_Name, Tbl_Price, Tbl_Status                -->
+	<!--                                                                          -->
+	<!-- Val_   : Validation messages (used in separate Validation file)         -->
+	<!--                                                                          -->
+	<!-- Email_ : Email templates (used in separate Email file)                  -->
+	<!--                                                                          -->
+	<!-- Enum_  : Enum display names (used in separate Enums file)               -->
+	<!--                                                                          -->
+	<!-- Err_   : Error messages (used in separate Errors file)                  -->
+	<!--                                                                          -->
+	<!-- Mod_   : Model properties display names (used in separate Models file)  -->
+	<!--         Example: Mod_User_Id, Mod_Product_Name, Mod_Order_Total         -->
+	<!--                                                                          -->
+	<!-- ======================================================================== -->
+
+	<!-- ========== PAGE TITLES (Page_) ========== -->
+	<!-- Page_ : Used for page titles and H1 headings -->
+	<data name="Page_Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+    <comment>Main admin dashboard page title</comment>
+  </data>
+	<data name="Page_Home" xml:space="preserve">
+    <value>Home</value>
+    <comment>Home page title</comment>
+  </data>
+	<data name="Page_Products" xml:space="preserve">
+    <value>Products</value>
+    <comment>Products listing page title</comment>
+  </data>
+	<data name="Page_Orders" xml:space="preserve">
+    <value>Orders</value>
+    <comment>Orders management page title</comment>
+  </data>
+	<data name="Page_Users" xml:space="preserve">
+    <value>Users</value>
+    <comment>Users management page title</comment>
+  </data>
+	<data name="Page_Customers" xml:space="preserve">
+    <value>Customers</value>
+    <comment>Customers management page title</comment>
+  </data>
+	<data name="Page_Suppliers" xml:space="preserve">
+    <value>Suppliers</value>
+    <comment>Suppliers management page title</comment>
+  </data>
+	<data name="Page_Reports" xml:space="preserve">
+    <value>Reports</value>
+    <comment>Reports page title</comment>
+  </data>
+	<data name="Page_Settings" xml:space="preserve">
+    <value>Settings</value>
+    <comment>Settings page title</comment>
+  </data>
+	<data name="Page_Profile" xml:space="preserve">
+    <value>Profile</value>
+    <comment>User profile page title</comment>
+  </data>
+	<data name="Page_Account" xml:space="preserve">
+    <value>Account</value>
+    <comment>Account management page title</comment>
+  </data>
+	<data name="Page_Admin" xml:space="preserve">
+    <value>Administration</value>
+    <comment>Admin area page title</comment>
+  </data>
+	<data name="Page_Help" xml:space="preserve">
+    <value>Help</value>
+    <comment>Help page title</comment>
+  </data>
+	<data name="Page_Support" xml:space="preserve">
+    <value>Support</value>
+    <comment>Support page title</comment>
+  </data>
+	<data name="Page_About" xml:space="preserve">
+    <value>About Us</value>
+    <comment>About us page title</comment>
+  </data>
+	<data name="Page_Contact" xml:space="preserve">
+    <value>Contact Us</value>
+    <comment>Contact page title</comment>
+  </data>
+	<data name="Page_Privacy" xml:space="preserve">
+    <value>Privacy Policy</value>
+    <comment>Privacy policy page title</comment>
+  </data>
+	<data name="Page_Terms" xml:space="preserve">
+    <value>Terms &amp; Conditions</value>
+    <comment>Terms and conditions page title</comment>
+  </data>
+	<data name="Page_Login" xml:space="preserve">
+    <value>Login</value>
+    <comment>Login page title</comment>
+  </data>
+	<data name="Page_Register" xml:space="preserve">
+    <value>Register</value>
+    <comment>Registration page title</comment>
+  </data>
+	<data name="Page_ForgotPassword" xml:space="preserve">
+    <value>Forgot Password</value>
+    <comment>Forgot password page title</comment>
+  </data>
+	<data name="Page_ResetPassword" xml:space="preserve">
+    <value>Reset Password</value>
+    <comment>Reset password page title</comment>
+  </data>
+	<data name="Page_Checkout" xml:space="preserve">
+    <value>Checkout</value>
+    <comment>Checkout page title</comment>
+  </data>
+	<data name="Page_Cart" xml:space="preserve">
+    <value>Shopping Cart</value>
+    <comment>Shopping cart page title</comment>
+  </data>
+	<data name="Page_Wishlist" xml:space="preserve">
+    <value>Wishlist</value>
+    <comment>Wishlist page title</comment>
+  </data>
+	<data name="Page_Compare" xml:space="preserve">
+    <value>Compare Products</value>
+    <comment>Product comparison page title</comment>
+  </data>
+
+	<!-- ========== BUTTONS (Btn_) ========== -->
+	<!-- Btn_ : All buttons and clickable actions -->
+	<data name="Btn_Save" xml:space="preserve">
+    <value>Save</value>
+    <comment>Save button</comment>
+  </data>
+	<data name="Btn_SaveChanges" xml:space="preserve">
+    <value>Save Changes</value>
+    <comment>Save changes button</comment>
+  </data>
+	<data name="Btn_SaveCont" xml:space="preserve">
+    <value>Save &amp; Continue</value>
+    <comment>Save and continue button</comment>
+  </data>
+	<data name="Btn_Delete" xml:space="preserve">
+    <value>Delete</value>
+    <comment>Delete button</comment>
+  </data>
+	<data name="Btn_Edit" xml:space="preserve">
+    <value>Edit</value>
+    <comment>Edit button</comment>
+  </data>
+	<data name="Btn_Update" xml:space="preserve">
+    <value>Update</value>
+    <comment>Update button</comment>
+  </data>
+	<data name="Btn_Add" xml:space="preserve">
+    <value>Add New</value>
+    <comment>Add new button</comment>
+  </data>
+	<data name="Btn_AddItem" xml:space="preserve">
+    <value>Add Item</value>
+    <comment>Add item button</comment>
+  </data>
+	<data name="Btn_Create" xml:space="preserve">
+    <value>Create</value>
+    <comment>Create button</comment>
+  </data>
+	<data name="Btn_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>Cancel button</comment>
+  </data>
+	<data name="Btn_Close" xml:space="preserve">
+    <value>Close</value>
+    <comment>Close button</comment>
+  </data>
+	<data name="Btn_Back" xml:space="preserve">
+    <value>Back</value>
+    <comment>Back button</comment>
+  </data>
+	<data name="Btn_Next" xml:space="preserve">
+    <value>Next</value>
+    <comment>Next button</comment>
+  </data>
+	<data name="Btn_Prev" xml:space="preserve">
+    <value>Previous</value>
+    <comment>Previous button</comment>
+  </data>
+	<data name="Btn_Finish" xml:space="preserve">
+    <value>Finish</value>
+    <comment>Finish button</comment>
+  </data>
+	<data name="Btn_Submit" xml:space="preserve">
+    <value>Submit</value>
+    <comment>Submit button</comment>
+  </data>
+	<data name="Btn_Apply" xml:space="preserve">
+    <value>Apply</value>
+    <comment>Apply button</comment>
+  </data>
+	<data name="Btn_Reset" xml:space="preserve">
+    <value>Reset</value>
+    <comment>Reset button</comment>
+  </data>
+	<data name="Btn_Clear" xml:space="preserve">
+    <value>Clear</value>
+    <comment>Clear button</comment>
+  </data>
+	<data name="Btn_Search" xml:space="preserve">
+    <value>Search</value>
+    <comment>Search button</comment>
+  </data>
+	<data name="Btn_Filter" xml:space="preserve">
+    <value>Filter</value>
+    <comment>Filter button</comment>
+  </data>
+	<data name="Btn_Refresh" xml:space="preserve">
+    <value>Refresh</value>
+    <comment>Refresh button</comment>
+  </data>
+	<data name="Btn_Download" xml:space="preserve">
+    <value>Download</value>
+    <comment>Download button</comment>
+  </data>
+	<data name="Btn_Upload" xml:space="preserve">
+    <value>Upload</value>
+    <comment>Upload button</comment>
+  </data>
+	<data name="Btn_Export" xml:space="preserve">
+    <value>Export</value>
+    <comment>Export button</comment>
+  </data>
+	<data name="Btn_Import" xml:space="preserve">
+    <value>Import</value>
+    <comment>Import button</comment>
+  </data>
+	<data name="Btn_Print" xml:space="preserve">
+    <value>Print</value>
+    <comment>Print button</comment>
+  </data>
+	<data name="Btn_Preview" xml:space="preserve">
+    <value>Preview</value>
+    <comment>Preview button</comment>
+  </data>
+	<data name="Btn_View" xml:space="preserve">
+    <value>View</value>
+    <comment>View button</comment>
+  </data>
+	<data name="Btn_ViewAll" xml:space="preserve">
+    <value>View All</value>
+    <comment>View all button</comment>
+  </data>
+	<data name="Btn_Show" xml:space="preserve">
+    <value>Show</value>
+    <comment>Show button</comment>
+  </data>
+	<data name="Btn_Hide" xml:space="preserve">
+    <value>Hide</value>
+    <comment>Hide button</comment>
+  </data>
+	<data name="Btn_Expand" xml:space="preserve">
+    <value>Expand</value>
+    <comment>Expand button</comment>
+  </data>
+	<data name="Btn_Collapse" xml:space="preserve">
+    <value>Collapse</value>
+    <comment>Collapse button</comment>
+  </data>
+	<data name="Btn_Select" xml:space="preserve">
+    <value>Select</value>
+    <comment>Select button</comment>
+  </data>
+	<data name="Btn_Choose" xml:space="preserve">
+    <value>Choose</value>
+    <comment>Choose button</comment>
+  </data>
+	<data name="Btn_Confirm" xml:space="preserve">
+    <value>Confirm</value>
+    <comment>Confirm button</comment>
+  </data>
+	<data name="Btn_Approve" xml:space="preserve">
+    <value>Approve</value>
+    <comment>Approve button</comment>
+  </data>
+	<data name="Btn_Reject" xml:space="preserve">
+    <value>Reject</value>
+    <comment>Reject button</comment>
+  </data>
+	<data name="Btn_Accept" xml:space="preserve">
+    <value>Accept</value>
+    <comment>Accept button</comment>
+  </data>
+	<data name="Btn_Decline" xml:space="preserve">
+    <value>Decline</value>
+    <comment>Decline button</comment>
+  </data>
+	<data name="Btn_Continue" xml:space="preserve">
+    <value>Continue</value>
+    <comment>Continue button</comment>
+  </data>
+	<data name="Btn_GoBack" xml:space="preserve">
+    <value>Go Back</value>
+    <comment>Go back button</comment>
+  </data>
+	<data name="Btn_TryAgain" xml:space="preserve">
+    <value>Try Again</value>
+    <comment>Try again button</comment>
+  </data>
+	<data name="Btn_LearnMore" xml:space="preserve">
+    <value>Learn More</value>
+    <comment>Learn more button</comment>
+  </data>
+	<data name="Btn_ReadMore" xml:space="preserve">
+    <value>Read More</value>
+    <comment>Read more button</comment>
+  </data>
+	<data name="Btn_Subscribe" xml:space="preserve">
+    <value>Subscribe</value>
+    <comment>Subscribe button</comment>
+  </data>
+	<data name="Btn_Send" xml:space="preserve">
+    <value>Send</value>
+    <comment>Send button</comment>
+  </data>
+	<data name="Btn_Reply" xml:space="preserve">
+    <value>Reply</value>
+    <comment>Reply button</comment>
+  </data>
+	<data name="Btn_Forward" xml:space="preserve">
+    <value>Forward</value>
+    <comment>Forward button</comment>
+  </data>
+
+	<!-- ========== LABELS (Lbl_) ========== -->
+	<!-- Lbl_ : Form field labels and data display names -->
+	<data name="Lbl_Name" xml:space="preserve">
+    <value>Name</value>
+    <comment>Generic name label</comment>
+  </data>
+	<data name="Lbl_FullName" xml:space="preserve">
+    <value>Full Name</value>
+    <comment>Full name label</comment>
+  </data>
+	<data name="Lbl_FirstName" xml:space="preserve">
+    <value>First Name</value>
+    <comment>First name label</comment>
+  </data>
+	<data name="Lbl_LastName" xml:space="preserve">
+    <value>Last Name</value>
+    <comment>Last name label</comment>
+  </data>
+	<data name="Lbl_Email" xml:space="preserve">
+    <value>Email</value>
+    <comment>Email address label</comment>
+  </data>
+	<data name="Lbl_Phone" xml:space="preserve">
+    <value>Phone</value>
+    <comment>Phone number label</comment>
+  </data>
+	<data name="Lbl_Mobile" xml:space="preserve">
+    <value>Mobile</value>
+    <comment>Mobile number label</comment>
+  </data>
+	<data name="Lbl_Address" xml:space="preserve">
+    <value>Address</value>
+    <comment>Address label</comment>
+  </data>
+	<data name="Lbl_City" xml:space="preserve">
+    <value>City</value>
+    <comment>City label</comment>
+  </data>
+	<data name="Lbl_Country" xml:space="preserve">
+    <value>Country</value>
+    <comment>Country label</comment>
+  </data>
+	<data name="Lbl_State" xml:space="preserve">
+    <value>State / Province</value>
+    <comment>State or province label</comment>
+  </data>
+	<data name="Lbl_ZipCode" xml:space="preserve">
+    <value>Postal Code</value>
+    <comment>Postal or zip code label</comment>
+  </data>
+	<data name="Lbl_Price" xml:space="preserve">
+    <value>Price</value>
+    <comment>Price label</comment>
+  </data>
+	<data name="Lbl_Quantity" xml:space="preserve">
+    <value>Quantity</value>
+    <comment>Quantity label</comment>
+  </data>
+	<data name="Lbl_Total" xml:space="preserve">
+    <value>Total</value>
+    <comment>Total amount label</comment>
+  </data>
+	<data name="Lbl_Subtotal" xml:space="preserve">
+    <value>Subtotal</value>
+    <comment>Subtotal label</comment>
+  </data>
+	<data name="Lbl_Discount" xml:space="preserve">
+    <value>Discount</value>
+    <comment>Discount label</comment>
+  </data>
+	<data name="Lbl_Tax" xml:space="preserve">
+    <value>Tax</value>
+    <comment>Tax label</comment>
+  </data>
+	<data name="Lbl_Shipping" xml:space="preserve">
+    <value>Shipping</value>
+    <comment>Shipping cost label</comment>
+  </data>
+	<data name="Lbl_Description" xml:space="preserve">
+    <value>Description</value>
+    <comment>Description label</comment>
+  </data>
+	<data name="Lbl_Notes" xml:space="preserve">
+    <value>Notes</value>
+    <comment>Notes label</comment>
+  </data>
+	<data name="Lbl_Status" xml:space="preserve">
+    <value>Status</value>
+    <comment>Status label</comment>
+  </data>
+	<data name="Lbl_Type" xml:space="preserve">
+    <value>Type</value>
+    <comment>Type label</comment>
+  </data>
+	<data name="Lbl_Category" xml:space="preserve">
+    <value>Category</value>
+    <comment>Category label</comment>
+  </data>
+	<data name="Lbl_Brand" xml:space="preserve">
+    <value>Brand</value>
+    <comment>Brand label</comment>
+  </data>
+	<data name="Lbl_Date" xml:space="preserve">
+    <value>Date</value>
+    <comment>Date label</comment>
+  </data>
+	<data name="Lbl_CreatedAt" xml:space="preserve">
+    <value>Created At</value>
+    <comment>Creation date label</comment>
+  </data>
+	<data name="Lbl_UpdatedAt" xml:space="preserve">
+    <value>Updated At</value>
+    <comment>Update date label</comment>
+  </data>
+	<data name="Lbl_CreatedBy" xml:space="preserve">
+    <value>Created By</value>
+    <comment>Created by user label</comment>
+  </data>
+	<data name="Lbl_UpdatedBy" xml:space="preserve">
+    <value>Updated By</value>
+    <comment>Updated by user label</comment>
+  </data>
+	<data name="Lbl_ID" xml:space="preserve">
+    <value>ID</value>
+    <comment>ID label</comment>
+  </data>
+	<data name="Lbl_Code" xml:space="preserve">
+    <value>Code</value>
+    <comment>Code label</comment>
+  </data>
+	<data name="Lbl_SKU" xml:space="preserve">
+    <value>SKU</value>
+    <comment>SKU label</comment>
+  </data>
+	<data name="Lbl_Barcode" xml:space="preserve">
+    <value>Barcode</value>
+    <comment>Barcode label</comment>
+  </data>
+	<data name="Lbl_Password" xml:space="preserve">
+    <value>Password</value>
+    <comment>Password label</comment>
+  </data>
+	<data name="Lbl_ConfirmPass" xml:space="preserve">
+    <value>Confirm Password</value>
+    <comment>Confirm password label</comment>
+  </data>
+	<data name="Lbl_CurrentPass" xml:space="preserve">
+    <value>Current Password</value>
+    <comment>Current password label</comment>
+  </data>
+	<data name="Lbl_NewPass" xml:space="preserve">
+    <value>New Password</value>
+    <comment>New password label</comment>
+  </data>
+	<data name="Lbl_Role" xml:space="preserve">
+    <value>Role</value>
+    <comment>Role label</comment>
+  </data>
+	<data name="Lbl_Permissions" xml:space="preserve">
+    <value>Permissions</value>
+    <comment>Permissions label</comment>
+  </data>
+	<data name="Lbl_Image" xml:space="preserve">
+    <value>Image</value>
+    <comment>Image label</comment>
+  </data>
+	<data name="Lbl_File" xml:space="preserve">
+    <value>File</value>
+    <comment>File label</comment>
+  </data>
+	<data name="Lbl_Attachment" xml:space="preserve">
+    <value>Attachment</value>
+    <comment>Attachment label</comment>
+  </data>
+	<data name="Lbl_Color" xml:space="preserve">
+    <value>Color</value>
+    <comment>Color label</comment>
+  </data>
+	<data name="Lbl_Size" xml:space="preserve">
+    <value>Size</value>
+    <comment>Size label</comment>
+  </data>
+	<data name="Lbl_Weight" xml:space="preserve">
+    <value>Weight</value>
+    <comment>Weight label</comment>
+  </data>
+	<data name="Lbl_Dimensions" xml:space="preserve">
+    <value>Dimensions</value>
+    <comment>Dimensions label</comment>
+  </data>
+	<data name="Lbl_Rating" xml:space="preserve">
+    <value>Rating</value>
+    <comment>Rating label</comment>
+  </data>
+	<data name="Lbl_Reviews" xml:space="preserve">
+    <value>Reviews</value>
+    <comment>Reviews label</comment>
+  </data>
+	<data name="Lbl_Comments" xml:space="preserve">
+    <value>Comments</value>
+    <comment>Comments label</comment>
+  </data>
+	<data name="Lbl_Likes" xml:space="preserve">
+    <value>Likes</value>
+    <comment>Likes label</comment>
+  </data>
+	<data name="Lbl_Views" xml:space="preserve">
+    <value>Views</value>
+    <comment>Views count label</comment>
+  </data>
+	<data name="Lbl_Downloads" xml:space="preserve">
+    <value>Downloads</value>
+    <comment>Downloads count label</comment>
+  </data>
+
+	<!-- ========== MENU ITEMS (Menu_) ========== -->
+	<!-- Menu_ : Navigation menu items -->
+	<data name="Menu_Home" xml:space="preserve">
+    <value>Home</value>
+    <comment>Home menu item</comment>
+  </data>
+	<data name="Menu_Products" xml:space="preserve">
+    <value>Products</value>
+    <comment>Products menu item</comment>
+  </data>
+	<data name="Menu_Orders" xml:space="preserve">
+    <value>Orders</value>
+    <comment>Orders menu item</comment>
+  </data>
+	<data name="Menu_Users" xml:space="preserve">
+    <value>Users</value>
+    <comment>Users menu item</comment>
+  </data>
+	<data name="Menu_Customers" xml:space="preserve">
+    <value>Customers</value>
+    <comment>Customers menu item</comment>
+  </data>
+	<data name="Menu_Suppliers" xml:space="preserve">
+    <value>Suppliers</value>
+    <comment>Suppliers menu item</comment>
+  </data>
+	<data name="Menu_Reports" xml:space="preserve">
+    <value>Reports</value>
+    <comment>Reports menu item</comment>
+  </data>
+	<data name="Menu_Settings" xml:space="preserve">
+    <value>Settings</value>
+    <comment>Settings menu item</comment>
+  </data>
+	<data name="Menu_Profile" xml:space="preserve">
+    <value>Profile</value>
+    <comment>Profile menu item</comment>
+  </data>
+	<data name="Menu_Account" xml:space="preserve">
+    <value>Account</value>
+    <comment>Account menu item</comment>
+  </data>
+	<data name="Menu_Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+    <comment>Dashboard menu item</comment>
+  </data>
+	<data name="Menu_Admin" xml:space="preserve">
+    <value>Admin</value>
+    <comment>Admin menu item</comment>
+  </data>
+	<data name="Menu_Help" xml:space="preserve">
+    <value>Help</value>
+    <comment>Help menu item</comment>
+  </data>
+	<data name="Menu_Support" xml:space="preserve">
+    <value>Support</value>
+    <comment>Support menu item</comment>
+  </data>
+	<data name="Menu_About" xml:space="preserve">
+    <value>About</value>
+    <comment>About menu item</comment>
+  </data>
+	<data name="Menu_Contact" xml:space="preserve">
+    <value>Contact</value>
+    <comment>Contact menu item</comment>
+  </data>
+	<data name="Menu_FAQ" xml:space="preserve">
+    <value>FAQ</value>
+    <comment>FAQ menu item</comment>
+  </data>
+	<data name="Menu_Logout" xml:space="preserve">
+    <value>Logout</value>
+    <comment>Logout menu item</comment>
+  </data>
+	<data name="Menu_Login" xml:space="preserve">
+    <value>Login</value>
+    <comment>Login menu item</comment>
+  </data>
+	<data name="Menu_Register" xml:space="preserve">
+    <value>Register</value>
+    <comment>Register menu item</comment>
+  </data>
+	<data name="Menu_Cart" xml:space="preserve">
+    <value>Cart</value>
+    <comment>Shopping cart menu item</comment>
+  </data>
+	<data name="Menu_Wishlist" xml:space="preserve">
+    <value>Wishlist</value>
+    <comment>Wishlist menu item</comment>
+  </data>
+	<data name="Menu_Compare" xml:space="preserve">
+    <value>Compare</value>
+    <comment>Compare products menu item</comment>
+  </data>
+	<data name="Menu_Checkout" xml:space="preserve">
+    <value>Checkout</value>
+    <comment>Checkout menu item</comment>
+  </data>
+	<data name="Menu_Blog" xml:space="preserve">
+    <value>Blog</value>
+    <comment>Blog menu item</comment>
+  </data>
+	<data name="Menu_News" xml:space="preserve">
+    <value>News</value>
+    <comment>News menu item</comment>
+  </data>
+	<data name="Menu_Gallery" xml:space="preserve">
+    <value>Gallery</value>
+    <comment>Gallery menu item</comment>
+  </data>
+	<data name="Menu_Events" xml:space="preserve">
+    <value>Events</value>
+    <comment>Events menu item</comment>
+  </data>
+	<data name="Menu_Promotions" xml:space="preserve">
+    <value>Promotions</value>
+    <comment>Promotions menu item</comment>
+  </data>
+	<data name="Menu_Offers" xml:space="preserve">
+    <value>Special Offers</value>
+    <comment>Special offers menu item</comment>
+  </data>
+
+	<!-- ========== MESSAGES (Msg_) ========== -->
+	<!-- Msg_ : System messages for user feedback -->
+	<data name="Msg_Success" xml:space="preserve">
+    <value>Operation completed successfully</value>
+    <comment>Generic success message</comment>
+  </data>
+	<data name="Msg_Error" xml:space="preserve">
+    <value>An error occurred</value>
+    <comment>Generic error message</comment>
+  </data>
+	<data name="Msg_Warning" xml:space="preserve">
+    <value>Warning</value>
+    <comment>Warning message title</comment>
+  </data>
+	<data name="Msg_Info" xml:space="preserve">
+    <value>Information</value>
+    <comment>Information message title</comment>
+  </data>
+	<data name="Msg_ConfirmDelete" xml:space="preserve">
+    <value>Are you sure you want to delete this item?</value>
+    <comment>Delete confirmation message</comment>
+  </data>
+	<data name="Msg_ConfirmSave" xml:space="preserve">
+    <value>Are you sure you want to save changes?</value>
+    <comment>Save confirmation message</comment>
+  </data>
+	<data name="Msg_ConfirmCancel" xml:space="preserve">
+    <value>Are you sure you want to cancel? Unsaved changes will be lost.</value>
+    <comment>Cancel confirmation message</comment>
+  </data>
+	<data name="Msg_ConfirmLogout" xml:space="preserve">
+    <value>Are you sure you want to logout?</value>
+    <comment>Logout confirmation message</comment>
+  </data>
+	<data name="Msg_NoData" xml:space="preserve">
+    <value>No data available</value>
+    <comment>No data message</comment>
+  </data>
+	<data name="Msg_Loading" xml:space="preserve">
+    <value>Loading...</value>
+    <comment>Loading message</comment>
+  </data>
+	<data name="Msg_Processing" xml:space="preserve">
+    <value>Processing...</value>
+    <comment>Processing message</comment>
+  </data>
+	<data name="Msg_Saving" xml:space="preserve">
+    <value>Saving...</value>
+    <comment>Saving message</comment>
+  </data>
+	<data name="Msg_Deleting" xml:space="preserve">
+    <value>Deleting...</value>
+    <comment>Deleting message</comment>
+  </data>
+	<data name="Msg_Uploading" xml:space="preserve">
+    <value>Uploading...</value>
+    <comment>Uploading message</comment>
+  </data>
+	<data name="Msg_Downloading" xml:space="preserve">
+    <value>Downloading...</value>
+    <comment>Downloading message</comment>
+  </data>
+	<data name="Msg_SelectItem" xml:space="preserve">
+    <value>-- Select --</value>
+    <comment>Default select option</comment>
+  </data>
+	<data name="Msg_AllItems" xml:space="preserve">
+    <value>All</value>
+    <comment>All items option</comment>
+  </data>
+	<data name="Msg_None" xml:space="preserve">
+    <value>None</value>
+    <comment>None option</comment>
+  </data>
+	<data name="Msg_Required" xml:space="preserve">
+    <value>Required</value>
+    <comment>Required field indicator</comment>
+  </data>
+	<data name="Msg_Optional" xml:space="preserve">
+    <value>Optional</value>
+    <comment>Optional field indicator</comment>
+  </data>
+	<data name="Msg_New" xml:space="preserve">
+    <value>New</value>
+    <comment>New item indicator</comment>
+  </data>
+	<data name="Msg_Updated" xml:space="preserve">
+    <value>Updated</value>
+    <comment>Updated item indicator</comment>
+  </data>
+	<data name="Msg_Expired" xml:space="preserve">
+    <value>Expired</value>
+    <comment>Expired item indicator</comment>
+  </data>
+	<data name="Msg_NotFound" xml:space="preserve">
+    <value>Item not found</value>
+    <comment>Not found message</comment>
+  </data>
+	<data name="Msg_AccessDenied" xml:space="preserve">
+    <value>Access denied. You don't have permission to view this page.</value>
+    <comment>Access denied message</comment>
+  </data>
+	<data name="Msg_SessionExpired" xml:space="preserve">
+    <value>Your session has expired. Please login again.</value>
+    <comment>Session expired message</comment>
+  </data>
+	<data name="Msg_InvalidRequest" xml:space="preserve">
+    <value>Invalid request</value>
+    <comment>Invalid request message</comment>
+  </data>
+	<data name="Msg_OperationFailed" xml:space="preserve">
+    <value>Operation failed. Please try again.</value>
+    <comment>Operation failed message</comment>
+  </data>
+	<data name="Msg_ChangesSaved" xml:space="preserve">
+    <value>Changes saved successfully</value>
+    <comment>Changes saved message</comment>
+  </data>
+	<data name="Msg_ItemDeleted" xml:space="preserve">
+    <value>Item deleted successfully</value>
+    <comment>Item deleted message</comment>
+  </data>
+	<data name="Msg_ItemAdded" xml:space="preserve">
+    <value>Item added successfully</value>
+    <comment>Item added message</comment>
+  </data>
+	<data name="Msg_ItemUpdated" xml:space="preserve">
+    <value>Item updated successfully</value>
+    <comment>Item updated message</comment>
+  </data>
+
+	<!-- ========== SECTION TITLES (Sec_) ========== -->
+	<!-- Sec_ : Section titles inside pages -->
+	<data name="Sec_PersonalInfo" xml:space="preserve">
+    <value>Personal Information</value>
+    <comment>Personal information section title</comment>
+  </data>
+	<data name="Sec_ContactInfo" xml:space="preserve">
+    <value>Contact Information</value>
+    <comment>Contact information section title</comment>
+  </data>
+	<data name="Sec_AddressInfo" xml:space="preserve">
+    <value>Address Information</value>
+    <comment>Address information section title</comment>
+  </data>
+	<data name="Sec_LoginInfo" xml:space="preserve">
+    <value>Login Information</value>
+    <comment>Login information section title</comment>
+  </data>
+	<data name="Sec_PaymentInfo" xml:space="preserve">
+    <value>Payment Information</value>
+    <comment>Payment information section title</comment>
+  </data>
+	<data name="Sec_ShippingInfo" xml:space="preserve">
+    <value>Shipping Information</value>
+    <comment>Shipping information section title</comment>
+  </data>
+	<data name="Sec_BillingInfo" xml:space="preserve">
+    <value>Billing Information</value>
+    <comment>Billing information section title</comment>
+  </data>
+	<data name="Sec_OrderSummary" xml:space="preserve">
+    <value>Order Summary</value>
+    <comment>Order summary section title</comment>
+  </data>
+	<data name="Sec_ProductDetails" xml:space="preserve">
+    <value>Product Details</value>
+    <comment>Product details section title</comment>
+  </data>
+	<data name="Sec_AdditionalInfo" xml:space="preserve">
+    <value>Additional Information</value>
+    <comment>Additional information section title</comment>
+  </data>
+	<data name="Sec_Reviews" xml:space="preserve">
+    <value>Customer Reviews</value>
+    <comment>Reviews section title</comment>
+  </data>
+	<data name="Sec_RelatedProducts" xml:space="preserve">
+    <value>Related Products</value>
+    <comment>Related products section title</comment>
+  </data>
+	<data name="Sec_Recommended" xml:space="preserve">
+    <value>Recommended for You</value>
+    <comment>Recommended products section title</comment>
+  </data>
+	<data name="Sec_RecentlyViewed" xml:space="preserve">
+    <value>Recently Viewed</value>
+    <comment>Recently viewed items section title</comment>
+  </data>
+	<data name="Sec_Security" xml:space="preserve">
+    <value>Security Settings</value>
+    <comment>Security settings section title</comment>
+  </data>
+	<data name="Sec_Notifications" xml:space="preserve">
+    <value>Notification Settings</value>
+    <comment>Notification settings section title</comment>
+  </data>
+	<data name="Sec_Preferences" xml:space="preserve">
+    <value>User Preferences</value>
+    <comment>User preferences section title</comment>
+  </data>
+	<data name="Sec_History" xml:space="preserve">
+    <value>Order History</value>
+    <comment>Order history section title</comment>
+  </data>
+	<data name="Sec_Activity" xml:space="preserve">
+    <value>Recent Activity</value>
+    <comment>Recent activity section title</comment>
+  </data>
+	<data name="Sec_Statistics" xml:space="preserve">
+    <value>Statistics</value>
+    <comment>Statistics section title</comment>
+  </data>
+
+	<!-- ========== OPTIONS (Opt_) ========== -->
+	<!-- Opt_ : Static option values -->
+	<data name="Opt_Yes" xml:space="preserve">
+    <value>Yes</value>
+    <comment>Yes option</comment>
+  </data>
+	<data name="Opt_No" xml:space="preserve">
+    <value>No</value>
+    <comment>No option</comment>
+  </data>
+	<data name="Opt_Ok" xml:space="preserve">
+    <value>OK</value>
+    <comment>OK option</comment>
+  </data>
+	<data name="Opt_Active" xml:space="preserve">
+    <value>Active</value>
+    <comment>Active status option</comment>
+  </data>
+	<data name="Opt_Inactive" xml:space="preserve">
+    <value>Inactive</value>
+    <comment>Inactive status option</comment>
+  </data>
+	<data name="Opt_Enabled" xml:space="preserve">
+    <value>Enabled</value>
+    <comment>Enabled option</comment>
+  </data>
+	<data name="Opt_Disabled" xml:space="preserve">
+    <value>Disabled</value>
+    <comment>Disabled option</comment>
+  </data>
+	<data name="Opt_Male" xml:space="preserve">
+    <value>Male</value>
+    <comment>Male gender option</comment>
+  </data>
+	<data name="Opt_Female" xml:space="preserve">
+    <value>Female</value>
+    <comment>Female gender option</comment>
+  </data>
+	<data name="Opt_Other" xml:space="preserve">
+    <value>Other</value>
+    <comment>Other option</comment>
+  </data>
+	<data name="Opt_True" xml:space="preserve">
+    <value>True</value>
+    <comment>True option</comment>
+  </data>
+	<data name="Opt_False" xml:space="preserve">
+    <value>False</value>
+    <comment>False option</comment>
+  </data>
+	<data name="Opt_On" xml:space="preserve">
+    <value>On</value>
+    <comment>On option</comment>
+  </data>
+	<data name="Opt_Off" xml:space="preserve">
+    <value>Off</value>
+    <comment>Off option</comment>
+  </data>
+	<data name="Opt_Show" xml:space="preserve">
+    <value>Show</value>
+    <comment>Show option</comment>
+  </data>
+	<data name="Opt_Hide" xml:space="preserve">
+    <value>Hide</value>
+    <comment>Hide option</comment>
+  </data>
+	<data name="Opt_Include" xml:space="preserve">
+    <value>Include</value>
+    <comment>Include option</comment>
+  </data>
+	<data name="Opt_Exclude" xml:space="preserve">
+    <value>Exclude</value>
+    <comment>Exclude option</comment>
+  </data>
+	<data name="Opt_Allow" xml:space="preserve">
+    <value>Allow</value>
+    <comment>Allow option</comment>
+  </data>
+	<data name="Opt_Deny" xml:space="preserve">
+    <value>Deny</value>
+    <comment>Deny option</comment>
+  </data>
+	<data name="Opt_Locked" xml:space="preserve">
+    <value>Locked</value>
+    <comment>Locked option</comment>
+  </data>
+	<data name="Opt_Unlocked" xml:space="preserve">
+    <value>Unlocked</value>
+    <comment>Unlocked option</comment>
+  </data>
+	<data name="Opt_Verified" xml:space="preserve">
+    <value>Verified</value>
+    <comment>Verified option</comment>
+  </data>
+	<data name="Opt_Unverified" xml:space="preserve">
+    <value>Unverified</value>
+    <comment>Unverified option</comment>
+  </data>
+	<data name="Opt_Featured" xml:space="preserve">
+    <value>Featured</value>
+    <comment>Featured option</comment>
+  </data>
+	<data name="Opt_NotFeatured" xml:space="preserve">
+    <value>Not Featured</value>
+    <comment>Not featured option</comment>
+  </data>
+	<data name="Opt_Published" xml:space="preserve">
+    <value>Published</value>
+    <comment>Published option</comment>
+  </data>
+	<data name="Opt_Unpublished" xml:space="preserve">
+    <value>Unpublished</value>
+    <comment>Unpublished option</comment>
+  </data>
+	<data name="Opt_Approved" xml:space="preserve">
+    <value>Approved</value>
+    <comment>Approved option</comment>
+  </data>
+	<data name="Opt_Pending" xml:space="preserve">
+    <value>Pending</value>
+    <comment>Pending option</comment>
+  </data>
+	<data name="Opt_Rejected" xml:space="preserve">
+    <value>Rejected</value>
+    <comment>Rejected option</comment>
+  </data>
+	<data name="Opt_Completed" xml:space="preserve">
+    <value>Completed</value>
+    <comment>Completed option</comment>
+  </data>
+	<data name="Opt_InProgress" xml:space="preserve">
+    <value>In Progress</value>
+    <comment>In progress option</comment>
+  </data>
+	<data name="Opt_Cancelled" xml:space="preserve">
+    <value>Cancelled</value>
+    <comment>Cancelled option</comment>
+  </data>
+	<data name="Opt_Refunded" xml:space="preserve">
+    <value>Refunded</value>
+    <comment>Refunded option</comment>
+  </data>
+	<data name="Opt_Paid" xml:space="preserve">
+    <value>Paid</value>
+    <comment>Paid option</comment>
+  </data>
+	<data name="Opt_Unpaid" xml:space="preserve">
+    <value>Unpaid</value>
+    <comment>Unpaid option</comment>
+  </data>
+	<data name="Opt_Shipped" xml:space="preserve">
+    <value>Shipped</value>
+    <comment>Shipped option</comment>
+  </data>
+	<data name="Opt_Delivered" xml:space="preserve">
+    <value>Delivered</value>
+    <comment>Delivered option</comment>
+  </data>
+	<data name="Opt_Returned" xml:space="preserve">
+    <value>Returned</value>
+    <comment>Returned option</comment>
+  </data>
+
+	<!-- ========== FORM FIELDS (Fld_) ========== -->
+	<!-- Fld_ : Placeholders and hints for form fields -->
+	<data name="Fld_Search" xml:space="preserve">
+    <value>Search...</value>
+    <comment>Search field placeholder</comment>
+  </data>
+	<data name="Fld_EnterName" xml:space="preserve">
+    <value>Enter name</value>
+    <comment>Name field placeholder</comment>
+  </data>
+	<data name="Fld_EnterEmail" xml:space="preserve">
+    <value>Enter email</value>
+    <comment>Email field placeholder</comment>
+  </data>
+	<data name="Fld_EnterPass" xml:space="preserve">
+    <value>Enter password</value>
+    <comment>Password field placeholder</comment>
+  </data>
+	<data name="Fld_ConfirmPass" xml:space="preserve">
+    <value>Confirm password</value>
+    <comment>Confirm password placeholder</comment>
+  </data>
+	<data name="Fld_EnterPhone" xml:space="preserve">
+    <value>Enter phone number</value>
+    <comment>Phone field placeholder</comment>
+  </data>
+	<data name="Fld_EnterAddress" xml:space="preserve">
+    <value>Enter address</value>
+    <comment>Address field placeholder</comment>
+  </data>
+	<data name="Fld_EnterCity" xml:space="preserve">
+    <value>Enter city</value>
+    <comment>City field placeholder</comment>
+  </data>
+	<data name="Fld_EnterCountry" xml:space="preserve">
+    <value>Enter country</value>
+    <comment>Country field placeholder</comment>
+  </data>
+	<data name="Fld_EnterZip" xml:space="preserve">
+    <value>Enter postal code</value>
+    <comment>Postal code placeholder</comment>
+  </data>
+	<data name="Fld_EnterPrice" xml:space="preserve">
+    <value>Enter price</value>
+    <comment>Price field placeholder</comment>
+  </data>
+	<data name="Fld_EnterQuantity" xml:space="preserve">
+    <value>Enter quantity</value>
+    <comment>Quantity field placeholder</comment>
+  </data>
+	<data name="Fld_EnterDescription" xml:space="preserve">
+    <value>Enter description</value>
+    <comment>Description field placeholder</comment>
+  </data>
+	<data name="Fld_EnterNotes" xml:space="preserve">
+    <value>Enter notes</value>
+    <comment>Notes field placeholder</comment>
+  </data>
+	<data name="Fld_EnterCode" xml:space="preserve">
+    <value>Enter code</value>
+    <comment>Code field placeholder</comment>
+  </data>
+	<data name="Fld_EnterSKU" xml:space="preserve">
+    <value>Enter SKU</value>
+    <comment>SKU field placeholder</comment>
+  </data>
+	<data name="Fld_EnterBarcode" xml:space="preserve">
+    <value>Enter barcode</value>
+    <comment>Barcode field placeholder</comment>
+  </data>
+	<data name="Fld_TypeHere" xml:space="preserve">
+    <value>Type here...</value>
+    <comment>Generic placeholder</comment>
+  </data>
+	<data name="Fld_ChooseFile" xml:space="preserve">
+    <value>Choose file</value>
+    <comment>File upload placeholder</comment>
+  </data>
+	<data name="Fld_NoFileChosen" xml:space="preserve">
+    <value>No file chosen</value>
+    <comment>No file selected message</comment>
+  </data>
+	<data name="Fld_SelectDate" xml:space="preserve">
+    <value>Select date</value>
+    <comment>Date picker placeholder</comment>
+  </data>
+	<data name="Fld_SelectTime" xml:space="preserve">
+    <value>Select time</value>
+    <comment>Time picker placeholder</comment>
+  </data>
+	<data name="Fld_Min" xml:space="preserve">
+    <value>Min</value>
+    <comment>Minimum value label</comment>
+  </data>
+	<data name="Fld_Max" xml:space="preserve">
+    <value>Max</value>
+    <comment>Maximum value label</comment>
+  </data>
+	<data name="Fld_From" xml:space="preserve">
+    <value>From</value>
+    <comment>From date/label</comment>
+  </data>
+	<data name="Fld_To" xml:space="preserve">
+    <value>To</value>
+    <comment>To date/label</comment>
+  </data>
+	<data name="Fld_StartDate" xml:space="preserve">
+    <value>Start Date</value>
+    <comment>Start date label</comment>
+  </data>
+	<data name="Fld_EndDate" xml:space="preserve">
+    <value>End Date</value>
+    <comment>End date label</comment>
+  </data>
+
+	<!-- ========== TABLE HEADERS (Tbl_) ========== -->
+	<!-- Tbl_ : Table column headers -->
+	<data name="Tbl_ID" xml:space="preserve">
+    <value>ID</value>
+    <comment>Table ID column</comment>
+  </data>
+	<data name="Tbl_Name" xml:space="preserve">
+    <value>Name</value>
+    <comment>Table name column</comment>
+  </data>
+	<data name="Tbl_Email" xml:space="preserve">
+    <value>Email</value>
+    <comment>Table email column</comment>
+  </data>
+	<data name="Tbl_Phone" xml:space="preserve">
+    <value>Phone</value>
+    <comment>Table phone column</comment>
+  </data>
+	<data name="Tbl_Address" xml:space="preserve">
+    <value>Address</value>
+    <comment>Table address column</comment>
+  </data>
+	<data name="Tbl_City" xml:space="preserve">
+    <value>City</value>
+    <comment>Table city column</comment>
+  </data>
+	<data name="Tbl_Country" xml:space="preserve">
+    <value>Country</value>
+    <comment>Table country column</comment>
+  </data>
+	<data name="Tbl_Price" xml:space="preserve">
+    <value>Price</value>
+    <comment>Table price column</comment>
+  </data>
+	<data name="Tbl_Quantity" xml:space="preserve">
+    <value>Quantity</value>
+    <comment>Table quantity column</comment>
+  </data>
+	<data name="Tbl_Total" xml:space="preserve">
+    <value>Total</value>
+    <comment>Table total column</comment>
+  </data>
+	<data name="Tbl_Status" xml:space="preserve">
+    <value>Status</value>
+    <comment>Table status column</comment>
+  </data>
+	<data name="Tbl_Type" xml:space="preserve">
+    <value>Type</value>
+    <comment>Table type column</comment>
+  </data>
+	<data name="Tbl_Category" xml:space="preserve">
+    <value>Category</value>
+    <comment>Table category column</comment>
+  </data>
+	<data name="Tbl_Date" xml:space="preserve">
+    <value>Date</value>
+    <comment>Table date column</comment>
+  </data>
+	<data name="Tbl_CreatedAt" xml:space="preserve">
+    <value>Created</value>
+    <comment>Table created date column</comment>
+  </data>
+	<data name="Tbl_UpdatedAt" xml:space="preserve">
+    <value>Updated</value>
+    <comment>Table updated date column</comment>
+  </data>
+	<data name="Tbl_Actions" xml:space="preserve">
+    <value>Actions</value>
+    <comment>Table actions column</comment>
+  </data>
+	<data name="Tbl_Role" xml:space="preserve">
+    <value>Role</value>
+    <comment>Table role column</comment>
+  </data>
+	<data name="Tbl_Image" xml:space="preserve">
+    <value>Image</value>
+    <comment>Table image column</comment>
+  </data>
+	<data name="Tbl_OrderID" xml:space="preserve">
+    <value>Order ID</value>
+    <comment>Table order ID column</comment>
+  </data>
+	<data name="Tbl_Product" xml:space="preserve">
+    <value>Product</value>
+    <comment>Table product column</comment>
+  </data>
+	<data name="Tbl_Customer" xml:space="preserve">
+    <value>Customer</value>
+    <comment>Table customer column</comment>
+  </data>
+	<data name="Tbl_Payment" xml:space="preserve">
+    <value>Payment</value>
+    <comment>Table payment method column</comment>
+  </data>
+	<data name="Tbl_Shipping" xml:space="preserve">
+    <value>Shipping</value>
+    <comment>Table shipping method column</comment>
+  </data>
+</root>

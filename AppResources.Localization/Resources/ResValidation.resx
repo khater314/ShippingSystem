@@ -1,0 +1,679 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<!-- ======================================================================== -->
+	<!-- ====================== PREFIXES REFERENCE ============================= -->
+	<!-- ======================================================================== -->
+	<!--                                                                          -->
+	<!-- Req_    : Required field validations                                    -->
+	<!--           Example: Req_Field = {0} is required                         -->
+	<!--                                                                          -->
+	<!-- Format_ : Format validations (Email, Phone, URL, etc)                   -->
+	<!--           Example: Format_Email = Invalid email address                 -->
+	<!--                                                                          -->
+	<!-- Length_ : Length validations (Min, Max, Range)                          -->
+	<!--           Example: Length_Max = {0} cannot exceed {1} characters       -->
+	<!--                                                                          -->
+	<!-- Range_  : Range validations (Number, Date, etc)                         -->
+	<!--           Example: Range_Number = {0} must be between {1} and {2}      -->
+	<!--                                                                          -->
+	<!-- Compare_: Comparison validations (Match, NotMatch)                      -->
+	<!--           Example: Compare_Match = {0} and {1} do not match            -->
+	<!--                                                                          -->
+	<!-- File_   : File upload validations                                       -->
+	<!--           Example: File_Size = File size cannot exceed {0} MB          -->
+	<!--                                                                          -->
+	<!-- Custom_ : Custom business validations                                   -->
+	<!--           Example: Custom_Unique = {0} already exists                   -->
+	<!--                                                                          -->
+	<!-- ======================================================================== -->
+
+	<!-- ========== REQUIRED FIELD VALIDATIONS (Req_) ========== -->
+	<!-- Req_ : Messages for required fields -->
+	<data name="Req_Field" xml:space="preserve">
+    <value>{0} is required</value>
+    <comment>Generic required field message with field name placeholder</comment>
+  </data>
+	<data name="Req_Simple" xml:space="preserve">
+    <value>This field is required</value>
+    <comment>Simple required message without field name</comment>
+  </data>
+	<data name="Req_Select" xml:space="preserve">
+    <value>Please select a {0}</value>
+    <comment>Required selection message (dropdown, radio, etc)</comment>
+  </data>
+	<data name="Req_Check" xml:space="preserve">
+    <value>You must check this box to continue</value>
+    <comment>Required checkbox message</comment>
+  </data>
+	<data name="Req_Agree" xml:space="preserve">
+    <value>You must agree to the terms and conditions</value>
+    <comment>Required agreement message</comment>
+  </data>
+	<data name="Req_Upload" xml:space="preserve">
+    <value>Please upload a {0}</value>
+    <comment>Required file upload message</comment>
+  </data>
+
+	<!-- ========== FORMAT VALIDATIONS (Format_) ========== -->
+	<!-- Format_ : Messages for format validation -->
+	<data name="Format_Email" xml:space="preserve">
+    <value>Please enter a valid email address</value>
+    <comment>Invalid email format message</comment>
+  </data>
+	<data name="Format_EmailWithField" xml:space="preserve">
+    <value>{0} must be a valid email address</value>
+    <comment>Invalid email format with field name</comment>
+  </data>
+	<data name="Format_Phone" xml:space="preserve">
+    <value>Please enter a valid phone number</value>
+    <comment>Invalid phone format message</comment>
+  </data>
+	<data name="Format_PhoneWithField" xml:space="preserve">
+    <value>{0} must be a valid phone number</value>
+    <comment>Invalid phone format with field name</comment>
+  </data>
+	<data name="Format_Mobile" xml:space="preserve">
+    <value>Please enter a valid mobile number</value>
+    <comment>Invalid mobile format message</comment>
+  </data>
+	<data name="Format_Url" xml:space="preserve">
+    <value>Please enter a valid URL</value>
+    <comment>Invalid URL format message</comment>
+  </data>
+	<data name="Format_UrlWithField" xml:space="preserve">
+    <value>{0} must be a valid URL</value>
+    <comment>Invalid URL format with field name</comment>
+  </data>
+	<data name="Format_Number" xml:space="preserve">
+    <value>Please enter a valid number</value>
+    <comment>Invalid number format message</comment>
+  </data>
+	<data name="Format_NumberWithField" xml:space="preserve">
+    <value>{0} must be a valid number</value>
+    <comment>Invalid number format with field name</comment>
+  </data>
+	<data name="Format_Integer" xml:space="preserve">
+    <value>Please enter a whole number</value>
+    <comment>Invalid integer format message</comment>
+  </data>
+	<data name="Format_IntegerWithField" xml:space="preserve">
+    <value>{0} must be a whole number</value>
+    <comment>Invalid integer format with field name</comment>
+  </data>
+	<data name="Format_Decimal" xml:space="preserve">
+    <value>Please enter a valid decimal number</value>
+    <comment>Invalid decimal format message</comment>
+  </data>
+	<data name="Format_DecimalWithField" xml:space="preserve">
+    <value>{0} must be a valid decimal number</value>
+    <comment>Invalid decimal format with field name</comment>
+  </data>
+	<data name="Format_Date" xml:space="preserve">
+    <value>Please enter a valid date</value>
+    <comment>Invalid date format message</comment>
+  </data>
+	<data name="Format_DateWithField" xml:space="preserve">
+    <value>{0} must be a valid date</value>
+    <comment>Invalid date format with field name</comment>
+  </data>
+	<data name="Format_Time" xml:space="preserve">
+    <value>Please enter a valid time</value>
+    <comment>Invalid time format message</comment>
+  </data>
+	<data name="Format_TimeWithField" xml:space="preserve">
+    <value>{0} must be a valid time</value>
+    <comment>Invalid time format with field name</comment>
+  </data>
+	<data name="Format_DateTime" xml:space="preserve">
+    <value>Please enter a valid date and time</value>
+    <comment>Invalid datetime format message</comment>
+  </data>
+	<data name="Format_DateTimeWithField" xml:space="preserve">
+    <value>{0} must be a valid date and time</value>
+    <comment>Invalid datetime format with field name</comment>
+  </data>
+	<data name="Format_CreditCard" xml:space="preserve">
+    <value>Please enter a valid credit card number</value>
+    <comment>Invalid credit card format message</comment>
+  </data>
+	<data name="Format_CreditCardWithField" xml:space="preserve">
+    <value>{0} must be a valid credit card number</value>
+    <comment>Invalid credit card format with field name</comment>
+  </data>
+	<data name="Format_PostalCode" xml:space="preserve">
+    <value>Please enter a valid postal code</value>
+    <comment>Invalid postal code format message</comment>
+  </data>
+	<data name="Format_PostalCodeWithField" xml:space="preserve">
+    <value>{0} must be a valid postal code</value>
+    <comment>Invalid postal code format with field name</comment>
+  </data>
+	<data name="Format_IPAddress" xml:space="preserve">
+    <value>Please enter a valid IP address</value>
+    <comment>Invalid IP address format message</comment>
+  </data>
+	<data name="Format_HexColor" xml:space="preserve">
+    <value>Please enter a valid hex color code (e.g., #FF0000)</value>
+    <comment>Invalid hex color format message</comment>
+  </data>
+	<data name="Format_AlphaNumeric" xml:space="preserve">
+    <value>Only letters and numbers are allowed</value>
+    <comment>Alphanumeric validation message</comment>
+  </data>
+	<data name="Format_AlphaNumericWithField" xml:space="preserve">
+    <value>{0} can only contain letters and numbers</value>
+    <comment>Alphanumeric validation with field name</comment>
+  </data>
+	<data name="Format_LettersOnly" xml:space="preserve">
+    <value>Only letters are allowed</value>
+    <comment>Letters only validation message</comment>
+  </data>
+	<data name="Format_LettersOnlyWithField" xml:space="preserve">
+    <value>{0} can only contain letters</value>
+    <comment>Letters only validation with field name</comment>
+  </data>
+	<data name="Format_NumbersOnly" xml:space="preserve">
+    <value>Only numbers are allowed</value>
+    <comment>Numbers only validation message</comment>
+  </data>
+	<data name="Format_NumbersOnlyWithField" xml:space="preserve">
+    <value>{0} can only contain numbers</value>
+    <comment>Numbers only validation with field name</comment>
+  </data>
+	<data name="Format_NoSpecialChars" xml:space="preserve">
+    <value>Special characters are not allowed</value>
+    <comment>No special characters validation message</comment>
+  </data>
+	<data name="Format_NoSpecialCharsWithField" xml:space="preserve">
+    <value>{0} cannot contain special characters</value>
+    <comment>No special characters validation with field name</comment>
+  </data>
+	<data name="Format_StrongPassword" xml:space="preserve">
+    <value>Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character</value>
+    <comment>Strong password requirements message</comment>
+  </data>
+	<data name="Format_Username" xml:space="preserve">
+    <value>Username can only contain letters, numbers, and underscores</value>
+    <comment>Username format message</comment>
+  </data>
+
+	<!-- ========== LENGTH VALIDATIONS (Length_) ========== -->
+	<!-- Length_ : Messages for length validations -->
+	<data name="Length_Max" xml:space="preserve">
+    <value>{0} cannot exceed {1} characters</value>
+    <comment>Maximum length exceeded message</comment>
+  </data>
+	<data name="Length_Min" xml:space="preserve">
+    <value>{0} must be at least {1} characters</value>
+    <comment>Minimum length not met message</comment>
+  </data>
+	<data name="Length_Exact" xml:space="preserve">
+    <value>{0} must be exactly {1} characters</value>
+    <comment>Exact length required message</comment>
+  </data>
+	<data name="Length_Range" xml:space="preserve">
+    <value>{0} must be between {1} and {2} characters</value>
+    <comment>Length range message</comment>
+  </data>
+	<data name="Length_MaxSimple" xml:space="preserve">
+    <value>Maximum {0} characters</value>
+    <comment>Simple max length message</comment>
+  </data>
+	<data name="Length_MinSimple" xml:space="preserve">
+    <value>Minimum {0} characters</value>
+    <comment>Simple min length message</comment>
+  </data>
+	<data name="Length_TooShort" xml:space="preserve">
+    <value>{0} is too short</value>
+    <comment>Too short message</comment>
+  </data>
+	<data name="Length_TooLong" xml:space="preserve">
+    <value>{0} is too long</value>
+    <comment>Too long message</comment>
+  </data>
+
+	<!-- ========== RANGE VALIDATIONS (Range_) ========== -->
+	<!-- Range_ : Messages for range validations -->
+	<data name="Range_Number" xml:space="preserve">
+    <value>{0} must be between {1} and {2}</value>
+    <comment>Number range message</comment>
+  </data>
+	<data name="Range_Date" xml:space="preserve">
+    <value>{0} must be between {1} and {2}</value>
+    <comment>Date range message</comment>
+  </data>
+	<data name="Range_Min" xml:space="preserve">
+    <value>{0} must be at least {1}</value>
+    <comment>Minimum value message</comment>
+  </data>
+	<data name="Range_Max" xml:space="preserve">
+    <value>{0} must not exceed {1}</value>
+    <comment>Maximum value message</comment>
+  </data>
+	<data name="Range_Positive" xml:space="preserve">
+    <value>{0} must be a positive number</value>
+    <comment>Positive number message</comment>
+  </data>
+	<data name="Range_Negative" xml:space="preserve">
+    <value>{0} must be a negative number</value>
+    <comment>Negative number message</comment>
+  </data>
+	<data name="Range_NonZero" xml:space="preserve">
+    <value>{0} cannot be zero</value>
+    <comment>Non-zero message</comment>
+  </data>
+	<data name="Range_Future" xml:space="preserve">
+    <value>{0} must be a future date</value>
+    <comment>Future date message</comment>
+  </data>
+	<data name="Range_Past" xml:space="preserve">
+    <value>{0} must be a past date</value>
+    <comment>Past date message</comment>
+  </data>
+	<data name="Range_TodayOrFuture" xml:space="preserve">
+    <value>{0} must be today or a future date</value>
+    <comment>Today or future message</comment>
+  </data>
+	<data name="Range_TodayOrPast" xml:space="preserve">
+    <value>{0} must be today or a past date</value>
+    <comment>Today or past message</comment>
+  </data>
+	<data name="Range_NotFuture" xml:space="preserve">
+    <value>{0} cannot be a future date</value>
+    <comment>Not future message</comment>
+  </data>
+	<data name="Range_NotPast" xml:space="preserve">
+    <value>{0} cannot be a past date</value>
+    <comment>Not past message</comment>
+  </data>
+	<data name="Range_Age" xml:space="preserve">
+    <value>You must be at least {0} years old</value>
+    <comment>Minimum age message</comment>
+  </data>
+
+	<!-- ========== COMPARISON VALIDATIONS (Compare_) ========== -->
+	<!-- Compare_ : Messages for comparison validations -->
+	<data name="Compare_Match" xml:space="preserve">
+    <value>{0} and {1} do not match</value>
+    <comment>Fields don't match message</comment>
+  </data>
+	<data name="Compare_PasswordMatch" xml:space="preserve">
+    <value>Passwords do not match</value>
+    <comment>Password mismatch message</comment>
+  </data>
+	<data name="Compare_EmailMatch" xml:space="preserve">
+    <value>Email addresses do not match</value>
+    <comment>Email mismatch message</comment>
+  </data>
+	<data name="Compare_GreaterThan" xml:space="preserve">
+    <value>{0} must be greater than {1}</value>
+    <comment>Greater than message</comment>
+  </data>
+	<data name="Compare_GreaterThanOrEqual" xml:space="preserve">
+    <value>{0} must be greater than or equal to {1}</value>
+    <comment>Greater than or equal message</comment>
+  </data>
+	<data name="Compare_LessThan" xml:space="preserve">
+    <value>{0} must be less than {1}</value>
+    <comment>Less than message</comment>
+  </data>
+	<data name="Compare_LessThanOrEqual" xml:space="preserve">
+    <value>{0} must be less than or equal to {1}</value>
+    <comment>Less than or equal message</comment>
+  </data>
+	<data name="Compare_Equal" xml:space="preserve">
+    <value>{0} must be equal to {1}</value>
+    <comment>Equal message</comment>
+  </data>
+	<data name="Compare_NotEqual" xml:space="preserve">
+    <value>{0} must not be equal to {1}</value>
+    <comment>Not equal message</comment>
+  </data>
+	<data name="Compare_StartEndDate" xml:space="preserve">
+    <value>End date must be after start date</value>
+    <comment>Start/end date comparison</comment>
+  </data>
+	<data name="Compare_MinMax" xml:space="preserve">
+    <value>Maximum value must be greater than minimum value</value>
+    <comment>Min/max comparison</comment>
+  </data>
+	<data name="Compare_CurrentNewPassword" xml:space="preserve">
+    <value>New password must be different from current password</value>
+    <comment>Current/new password comparison</comment>
+  </data>
+
+	<!-- ========== FILE VALIDATIONS (File_) ========== -->
+	<!-- File_ : Messages for file upload validations -->
+	<data name="File_Required" xml:space="preserve">
+    <value>Please select a file to upload</value>
+    <comment>Required file message</comment>
+  </data>
+	<data name="File_Size" xml:space="preserve">
+    <value>File size cannot exceed {0} MB</value>
+    <comment>File size limit message</comment>
+  </data>
+	<data name="File_SizeExceeded" xml:space="preserve">
+    <value>The selected file exceeds the maximum allowed size of {0} MB</value>
+    <comment>File size exceeded message</comment>
+  </data>
+	<data name="File_Type" xml:space="preserve">
+    <value>Only {0} files are allowed</value>
+    <comment>File type restriction message</comment>
+  </data>
+	<data name="File_TypeInvalid" xml:space="preserve">
+    <value>Invalid file type. Allowed types: {0}</value>
+    <comment>Invalid file type message</comment>
+  </data>
+	<data name="File_Image" xml:space="preserve">
+    <value>Please select a valid image file (jpg, png, gif, etc)</value>
+    <comment>Image file type message</comment>
+  </data>
+	<data name="File_Document" xml:space="preserve">
+    <value>Please select a valid document (pdf, doc, docx, etc)</value>
+    <comment>Document file type message</comment>
+  </data>
+	<data name="File_ImageDimensions" xml:space="preserve">
+    <value>Image dimensions must be between {0}x{1} and {2}x{3} pixels</value>
+    <comment>Image dimensions restriction</comment>
+  </data>
+	<data name="File_ImageMinDimensions" xml:space="preserve">
+    <value>Image must be at least {0}x{1} pixels</value>
+    <comment>Minimum image dimensions</comment>
+  </data>
+	<data name="File_ImageMaxDimensions" xml:space="preserve">
+    <value>Image must not exceed {0}x{1} pixels</value>
+    <comment>Maximum image dimensions</comment>
+  </data>
+	<data name="File_ImageRatio" xml:space="preserve">
+    <value>Image must have aspect ratio {0}:{1}</value>
+    <comment>Image aspect ratio requirement</comment>
+  </data>
+	<data name="File_ImageSquare" xml:space="preserve">
+    <value>Image must be square (width equals height)</value>
+    <comment>Square image requirement</comment>
+  </data>
+	<data name="File_Count" xml:space="preserve">
+    <value>You can upload up to {0} files</value>
+    <comment>File count limit</comment>
+  </data>
+	<data name="File_CountExceeded" xml:space="preserve">
+    <value>You cannot upload more than {0} files</value>
+    <comment>File count exceeded</comment>
+  </data>
+	<data name="File_Empty" xml:space="preserve">
+    <value>The selected file is empty</value>
+    <comment>Empty file message</comment>
+  </data>
+	<data name="File_Corrupted" xml:space="preserve">
+    <value>The file appears to be corrupted</value>
+    <comment>Corrupted file message</comment>
+  </data>
+
+	<!-- ========== CUSTOM VALIDATIONS (Custom_) ========== -->
+	<!-- Custom_ : Custom business rule validations -->
+	<data name="Custom_Unique" xml:space="preserve">
+    <value>{0} already exists</value>
+    <comment>Unique field violation</comment>
+  </data>
+	<data name="Custom_UniqueEmail" xml:space="preserve">
+    <value>This email is already registered</value>
+    <comment>Unique email violation</comment>
+  </data>
+	<data name="Custom_UniqueUsername" xml:space="preserve">
+    <value>This username is already taken</value>
+    <comment>Unique username violation</comment>
+  </data>
+	<data name="Custom_UniquePhone" xml:space="preserve">
+    <value>This phone number is already registered</value>
+    <comment>Unique phone violation</comment>
+  </data>
+	<data name="Custom_Exists" xml:space="preserve">
+    <value>The selected {0} does not exist</value>
+    <comment>Referenced item doesn't exist</comment>
+  </data>
+	<data name="Custom_InsufficientStock" xml:space="preserve">
+    <value>Insufficient stock for {0}. Available: {1}</value>
+    <comment>Insufficient stock message</comment>
+  </data>
+	<data name="Custom_InsufficientBalance" xml:space="preserve">
+    <value>Insufficient balance. Your balance: {0}</value>
+    <comment>Insufficient balance message</comment>
+  </data>
+	<data name="Custom_LimitExceeded" xml:space="preserve">
+    <value>{0} exceeds the allowed limit of {1}</value>
+    <comment>Limit exceeded message</comment>
+  </data>
+	<data name="Custom_NotAllowed" xml:space="preserve">
+    <value>{0} is not allowed</value>
+    <comment>Not allowed message</comment>
+  </data>
+	<data name="Custom_InvalidOperation" xml:space="preserve">
+    <value>This operation cannot be performed on a {0} with status {1}</value>
+    <comment>Invalid operation based on status</comment>
+  </data>
+	<data name="Custom_DuplicateOrder" xml:space="preserve">
+    <value>You already have an active order for this item</value>
+    <comment>Duplicate order message</comment>
+  </data>
+	<data name="Custom_MaxOrders" xml:space="preserve">
+    <value>You cannot place more than {0} orders per day</value>
+    <comment>Maximum orders limit</comment>
+  </data>
+	<data name="Custom_BookingConflict" xml:space="preserve">
+    <value>The selected time slot is already booked</value>
+    <comment>Booking conflict message</comment>
+  </data>
+	<data name="Custom_MinimumOrder" xml:space="preserve">
+    <value>Minimum order amount is {0}</value>
+    <comment>Minimum order message</comment>
+  </data>
+	<data name="Custom_MaximumOrder" xml:space="preserve">
+    <value>Maximum order amount is {0}</value>
+    <comment>Maximum order message</comment>
+  </data>
+	<data name="Custom_ShippingRestriction" xml:space="preserve">
+    <value>Shipping is not available to the selected location</value>
+    <comment>Shipping restriction message</comment>
+  </data>
+	<data name="Custom_PaymentFailed" xml:space="preserve">
+    <value>Payment processing failed. Please try again</value>
+    <comment>Payment failure message</comment>
+  </data>
+	<data name="Custom_CouponInvalid" xml:space="preserve">
+    <value>Invalid coupon code</value>
+    <comment>Invalid coupon message</comment>
+  </data>
+	<data name="Custom_CouponExpired" xml:space="preserve">
+    <value>This coupon has expired</value>
+    <comment>Expired coupon message</comment>
+  </data>
+	<data name="Custom_CouponUsed" xml:space="preserve">
+    <value>This coupon has already been used</value>
+    <comment>Used coupon message</comment>
+  </data>
+	<data name="Custom_CouponMinOrder" xml:space="preserve">
+    <value>This coupon requires a minimum order of {0}</value>
+    <comment>Coupon minimum order message</comment>
+  </data>
+
+	<!-- ========== AUTH VALIDATIONS (Auth_) ========== -->
+	<!-- Auth_ : Authentication and authorization validations -->
+	<data name="Auth_InvalidCredentials" xml:space="preserve">
+    <value>Invalid email or password</value>
+    <comment>Invalid login credentials</comment>
+  </data>
+	<data name="Auth_AccountLocked" xml:space="preserve">
+    <value>Your account has been locked. Please try again after {0} minutes</value>
+    <comment>Locked account message</comment>
+  </data>
+	<data name="Auth_AccountNotActive" xml:space="preserve">
+    <value>Your account is not active. Please contact support</value>
+    <comment>Inactive account message</comment>
+  </data>
+	<data name="Auth_EmailNotVerified" xml:space="preserve">
+    <value>Please verify your email address before logging in</value>
+    <comment>Unverified email message</comment>
+  </data>
+	<data name="Auth_PhoneNotVerified" xml:space="preserve">
+    <value>Please verify your phone number before continuing</value>
+    <comment>Unverified phone message</comment>
+  </data>
+	<data name="Auth_TokenExpired" xml:space="preserve">
+    <value>Your session has expired. Please log in again</value>
+    <comment>Expired token message</comment>
+  </data>
+	<data name="Auth_TokenInvalid" xml:space="preserve">
+    <value>Invalid authentication token</value>
+    <comment>Invalid token message</comment>
+  </data>
+	<data name="Auth_Unauthorized" xml:space="preserve">
+    <value>You are not authorized to perform this action</value>
+    <comment>Unauthorized action message</comment>
+  </data>
+	<data name="Auth_AccessDenied" xml:space="preserve">
+    <value>Access denied. You do not have the required permissions</value>
+    <comment>Access denied message</comment>
+  </data>
+	<data name="Auth_LoginRequired" xml:space="preserve">
+    <value>You must be logged in to access this page</value>
+    <comment>Login required message</comment>
+  </data>
+	<data name="Auth_TooManyAttempts" xml:space="preserve">
+    <value>Too many failed attempts. Please try again after {0} minutes</value>
+    <comment>Too many attempts message</comment>
+  </data>
+	<data name="Auth_PasswordResetRequired" xml:space="preserve">
+    <value>You must reset your password before continuing</value>
+    <comment>Password reset required message</comment>
+  </data>
+	<data name="Auth_OldPasswordIncorrect" xml:space="preserve">
+    <value>Current password is incorrect</value>
+    <comment>Incorrect current password</comment>
+  </data>
+	<data name="Auth_NewPasswordSame" xml:space="preserve">
+    <value>New password must be different from current password</value>
+    <comment>New password same as old</comment>
+  </data>
+	<data name="Auth_TwoFactorRequired" xml:space="preserve">
+    <value>Two-factor authentication code is required</value>
+    <comment>2FA required message</comment>
+  </data>
+	<data name="Auth_TwoFactorInvalid" xml:space="preserve">
+    <value>Invalid two-factor authentication code</value>
+    <comment>Invalid 2FA code</comment>
+  </data>
+
+	<!-- ========== GENERIC VALIDATIONS (Val_) ========== -->
+	<!-- Val_ : Generic validation messages -->
+	<data name="Val_Invalid" xml:space="preserve">
+    <value>{0} is invalid</value>
+    <comment>Generic invalid message</comment>
+  </data>
+	<data name="Val_InvalidInput" xml:space="preserve">
+    <value>Invalid input</value>
+    <comment>Generic invalid input</comment>
+  </data>
+	<data name="Val_InvalidFormat" xml:space="preserve">
+    <value>Invalid format</value>
+    <comment>Generic invalid format</comment>
+  </data>
+	<data name="Val_InvalidValue" xml:space="preserve">
+    <value>Invalid value</value>
+    <comment>Generic invalid value</comment>
+  </data>
+	<data name="Val_InvalidSelection" xml:space="preserve">
+    <value>Invalid selection</value>
+    <comment>Generic invalid selection</comment>
+  </data>
+	<data name="Val_MustMatch" xml:space="preserve">
+    <value>{0} must match {1}</value>
+    <comment>Generic must match message</comment>
+  </data>
+	<data name="Val_AlreadyExists" xml:space="preserve">
+    <value>{0} already exists</value>
+    <comment>Generic already exists</comment>
+  </data>
+	<data name="Val_NotFound" xml:space="preserve">
+    <value>{0} not found</value>
+    <comment>Generic not found</comment>
+  </data>
+	<data name="Val_CannotBeEmpty" xml:space="preserve">
+    <value>{0} cannot be empty</value>
+    <comment>Generic cannot be empty</comment>
+  </data>
+	<data name="Val_CannotBeNull" xml:space="preserve">
+    <value>{0} cannot be null</value>
+    <comment>Generic cannot be null</comment>
+  </data>
+	<data name="Val_CannotBeZero" xml:space="preserve">
+    <value>{0} cannot be zero</value>
+    <comment>Generic cannot be zero</comment>
+  </data>
+	<data name="Val_CannotBeNegative" xml:space="preserve">
+    <value>{0} cannot be negative</value>
+    <comment>Generic cannot be negative</comment>
+  </data>
+	<data name="Val_OutOfRange" xml:space="preserve">
+    <value>{0} is out of range</value>
+    <comment>Generic out of range</comment>
+  </data>
+</root>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+	</resheader>
+
+	<!-- ===================== Address Actions ===================== -->
+	<data name="Btn_AddAddress" xml:space="preserve"><value>إضافة عنوان</value></data>
+	<data name="Btn_EditAddress" xml:space="preserve"><value>تعديل العنوان</value></data>
+	<data name="Btn_DeleteAddress" xml:space="preserve"><value>حذف العنوان</value></data>
+	<data name="Btn_SetDefault" xml:space="preserve"><value>تعيين كافتراضي</value></data>
+
+	<!-- ===================== Address Information ===================== -->
+	<data name="Lbl_AddressDetails" xml:space="preserve"><value>تفاصيل العنوان</value></data>
+	<data name="Lbl_AddressType" xml:space="preserve"><value>نوع العنوان</value></data>
+	<data name="Lbl_ContactName" xml:space="preserve"><value>اسم جهة الاتصال</value></data>
+	<data name="Lbl_CompanyName" xml:space="preserve"><value>اسم الشركة</value></data>
+	<data name="Lbl_PhoneNumber" xml:space="preserve"><value>رقم الهاتف</value></data>
+	<data name="Lbl_AlternatePhone" xml:space="preserve"><value>رقم هاتف بديل</value></data>
+	<data name="Lbl_Email" xml:space="preserve"><value>البريد الإلكتروني</value></data>
+
+	<!-- ===================== Location Fields ===================== -->
+	<data name="Lbl_Country" xml:space="preserve"><value>الدولة</value></data>
+	<data name="Lbl_State" xml:space="preserve"><value>المحافظة / الولاية</value></data>
+	<data name="Lbl_City" xml:space="preserve"><value>المدينة</value></data>
+	<data name="Lbl_District" xml:space="preserve"><value>الحي</value></data>
+	<data name="Lbl_Street" xml:space="preserve"><value>الشارع</value></data>
+	<data name="Lbl_BuildingNumber" xml:space="preserve"><value>رقم المبنى</value></data>
+	<data name="Lbl_Floor" xml:space="preserve"><value>الدور</value></data>
+	<data name="Lbl_Apartment" xml:space="preserve"><value>الشقة</value></data>
+	<data name="Lbl_PostalCode" xml:space="preserve"><value>الرمز البريدي</value></data>
+	<data name="Lbl_Landmark" xml:space="preserve"><value>علامة مميزة</value></data>
+
+	<!-- ===================== Address Types ===================== -->
+	<data name="Type_Home" xml:space="preserve"><value>منزل</value></data>
+	<data name="Type_Work" xml:space="preserve"><value>عمل</value></data>
+	<data name="Type_Warehouse" xml:space="preserve"><value>مخزن</value></data>
+	<data name="Type_Other" xml:space="preserve"><value>أخرى</value></data>
+
+	<!-- ===================== Status ===================== -->
+	<data name="Status_Default" xml:space="preserve"><value>افتراضي</value></data>
+	<data name="Status_Primary" xml:space="preserve"><value>أساسي</value></data>
+	<data name="Status_Secondary" xml:space="preserve"><value>ثانوي</value></data>
+
+	<!-- ===================== Messages ===================== -->
+	<data name="Msg_AddressAdded" xml:space="preserve"><value>تمت إضافة العنوان بنجاح.</value></data>
+	<data name="Msg_AddressUpdated" xml:space="preserve"><value>تم تحديث العنوان بنجاح.</value></data>
+	<data name="Msg_AddressDeleted" xml:space="preserve"><value>تم حذف العنوان بنجاح.</value></data>
+	<data name="Msg_SetAsDefault" xml:space="preserve"><value>تم تعيين العنوان كافتراضي بنجاح.</value></data>
+	<data name="Msg_AddressNotFound" xml:space="preserve"><value>العنوان غير موجود.</value></data>
+
+	<!-- ===================== Validation ===================== -->
+	<data name="Val_CountryRequired" xml:space="preserve"><value>الدولة مطلوبة.</value></data>
+	<data name="Val_CityRequired" xml:space="preserve"><value>المدينة مطلوبة.</value></data>
+	<data name="Val_StreetRequired" xml:space="preserve"><value>الشارع مطلوب.</value></data>
+	<data name="Val_PostalCodeRequired" xml:space="preserve"><value>الرمز البريدي مطلوب.</value></data>
+	<data name="Val_ContactNameRequired" xml:space="preserve"><value>اسم جهة الاتصال مطلوب.</value></data>
+	<data name="Val_PhoneRequired" xml:space="preserve"><value>رقم الهاتف مطلوب.</value></data>
+	<data name="Val_InvalidPostalCode" xml:space="preserve"><value>يرجى إدخال رمز بريدي صحيح.</value></data>
+	<data name="Val_InvalidPhone" xml:space="preserve"><value>يرجى إدخال رقم هاتف صحيح.</value></data>
+
+</root>

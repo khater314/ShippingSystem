@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="AppResources.Localization/AppResources.Localization.csproj" Id="bbb16f48-9713-4e85-b5a4-b09c5fe6163d" />
+  <Project Path="BL/BL.csproj" />
+  <Project Path="DAL/DAL.csproj" />
+  <Project Path="Domains/Domains.csproj" />
+  <Project Path="Ui/Ui.csproj" />
+  <Project Path="WebApi/WebApi.csproj" />
+</Solution>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+	</resheader>
+
+	<!-- ===================== Shipment Actions ===================== -->
+	<data name="Btn_CreateShipment" xml:space="preserve"><value>إنشاء شحنة</value></data>
+	<data name="Btn_EditShipment" xml:space="preserve"><value>تعديل الشحنة</value></data>
+	<data name="Btn_CancelShipment" xml:space="preserve"><value>إلغاء الشحنة</value></data>
+	<data name="Btn_TrackShipment" xml:space="preserve"><value>تتبع الشحنة</value></data>
+	<data name="Btn_AssignCourier" xml:space="preserve"><value>تعيين مندوب</value></data>
+	<data name="Btn_GenerateLabel" xml:space="preserve"><value>إنشاء ملصق الشحن</value></data>
+	<data name="Btn_PrintLabel" xml:space="preserve"><value>طباعة ملصق الشحن</value></data>
+
+	<!-- ===================== Shipment Information ===================== -->
+	<data name="Lbl_ShipmentNumber" xml:space="preserve"><value>رقم الشحنة</value></data>
+	<data name="Lbl_TrackingNumber" xml:space="preserve"><value>رقم التتبع</value></data>
+	<data name="Lbl_ReferenceNumber" xml:space="preserve"><value>الرقم المرجعي</value></data>
+	<data name="Lbl_OrderNumber" xml:space="preserve"><value>رقم الطلب</value></data>
+	<data name="Lbl_ShipmentType" xml:space="preserve"><value>نوع الشحنة</value></data>
+	<data name="Lbl_ShippingMethod" xml:space="preserve"><value>طريقة الشحن</value></data>
+	<data name="Lbl_ServiceType" xml:space="preserve"><value>نوع الخدمة</value></data>
+	<data name="Lbl_PickupDate" xml:space="preserve"><value>تاريخ الاستلام</value></data>
+	<data name="Lbl_DeliveryDate" xml:space="preserve"><value>تاريخ التسليم</value></data>
+	<data name="Lbl_ExpectedDelivery" xml:space="preserve"><value>تاريخ التسليم المتوقع</value></data>
+
+	<!-- ===================== Sender & Receiver ===================== -->
+	<data name="Lbl_SenderInformation" xml:space="preserve"><value>بيانات المرسل</value></data>
+	<data name="Lbl_ReceiverInformation" xml:space="preserve"><value>بيانات المستلم</value></data>
+	<data name="Lbl_SenderName" xml:space="preserve"><value>اسم المرسل</value></data>
+	<data name="Lbl_SenderPhone" xml:space="preserve"><value>هاتف المرسل</value></data>
+	<data name="Lbl_SenderAddress" xml:space="preserve"><value>عنوان المرسل</value></data>
+	<data name="Lbl_ReceiverName" xml:space="preserve"><value>اسم المستلم</value></data>
+	<data name="Lbl_ReceiverPhone" xml:space="preserve"><value>هاتف المستلم</value></data>
+	<data name="Lbl_ReceiverAddress" xml:space="preserve"><value>عنوان المستلم</value></data>
+
+	<!-- ===================== Package Details ===================== -->
+	<data name="Lbl_PackageDetails" xml:space="preserve"><value>تفاصيل الطرد</value></data>
+	<data name="Lbl_Weight" xml:space="preserve"><value>الوزن</value></data>
+	<data name="Lbl_Length" xml:space="preserve"><value>الطول</value></data>
+	<data name="Lbl_Width" xml:space="preserve"><value>العرض</value></data>
+	<data name="Lbl_Height" xml:space="preserve"><value>الارتفاع</value></data>
+	<data name="Lbl_Dimensions" xml:space="preserve"><value>الأبعاد</value></data>
+	<data name="Lbl_PackageType" xml:space="preserve"><value>نوع الطرد</value></data>
+	<data name="Lbl_ContentsDescription" xml:space="preserve"><value>وصف المحتويات</value></data>
+	<data name="Lbl_DeclaredValue" xml:space="preserve"><value>القيمة المصرح بها</value></data>
+	<data name="Lbl_Quantity" xml:space="preserve"><value>الكمية</value></data>
+
+	<!-- ===================== Shipment Status ===================== -->
+	<data name="Status_Draft" xml:space="preserve"><value>مسودة</value></data>
+	<data name="Status_Created" xml:space="preserve"><value>تم الإنشاء</value></data>
+	<data name="Status_ReadyForPickup" xml:space="preserve"><value>جاهزة للاستلام</value></data>
+	<data name="Status_PickedUp" xml:space="preserve"><value>تم الاستلام</value></data>
+	<data name="Status_InTransit" xml:space="preserve"><value>قيد النقل</value></data>
+	<data name="Status_OutForDelivery" xml:space="preserve"><value>خرجت للتسليم</value></data>
+	<data name="Status_Delivered" xml:space="preserve"><value>تم التسليم</value></data>
+	<data name="Status_Returned" xml:space="preserve"><value>مرتجعة</value></data>
+	<data name="Status_Cancelled" xml:space="preserve"><value>ملغاة</value></data>
+	<data name="Status_FailedDelivery" xml:space="preserve"><value>فشل التسليم</value></data>
+
+	<!-- ===================== Messages ===================== -->
+	<data name="Msg_ShipmentCreated" xml:space="preserve"><value>تم إنشاء الشحنة بنجاح.</value></data>
+	<data name="Msg_ShipmentUpdated" xml:space="preserve"><value>تم تحديث الشحنة بنجاح.</value></data>
+	<data name="Msg_ShipmentCancelled" xml:space="preserve"><value>تم إلغاء الشحنة.</value></data>
+	<data name="Msg_ShipmentDelivered" xml:space="preserve"><value>تم تسليم الشحنة بنجاح.</value></data>
+	<data name="Msg_InvalidTrackingNumber" xml:space="preserve"><value>رقم التتبع غير صالح.</value></data>
+	<data name="Msg_ShipmentNotFound" xml:space="preserve"><value>الشحنة غير موجودة.</value></data>
+
+	<!-- ===================== Validation ===================== -->
+	<data name="Val_WeightRequired" xml:space="preserve"><value>الوزن مطلوب.</value></data>
+	<data name="Val_DimensionsRequired" xml:space="preserve"><value>جميع الأبعاد مطلوبة.</value></data>
+	<data name="Val_SenderRequired" xml:space="preserve"><value>بيانات المرسل مطلوبة.</value></data>
+	<data name="Val_ReceiverRequired" xml:space="preserve"><value>بيانات المستلم مطلوبة.</value></data>
+	<data name="Val_InvalidDeclaredValue" xml:space="preserve"><value>يرجى إدخال قيمة مصرح بها صحيحة.</value></data>
+
+</root>

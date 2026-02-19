@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+	</resheader>
+
+	<!-- ===================== Shipment Actions ===================== -->
+	<data name="Btn_CreateShipment" xml:space="preserve"><value>Create Shipment</value></data>
+	<data name="Btn_EditShipment" xml:space="preserve"><value>Edit Shipment</value></data>
+	<data name="Btn_CancelShipment" xml:space="preserve"><value>Cancel Shipment</value></data>
+	<data name="Btn_TrackShipment" xml:space="preserve"><value>Track Shipment</value></data>
+	<data name="Btn_AssignCourier" xml:space="preserve"><value>Assign Courier</value></data>
+	<data name="Btn_GenerateLabel" xml:space="preserve"><value>Generate Shipping Label</value></data>
+	<data name="Btn_PrintLabel" xml:space="preserve"><value>Print Shipping Label</value></data>
+
+	<!-- ===================== Shipment Information ===================== -->
+	<data name="Lbl_ShipmentNumber" xml:space="preserve"><value>Shipment Number</value></data>
+	<data name="Lbl_TrackingNumber" xml:space="preserve"><value>Tracking Number</value></data>
+	<data name="Lbl_ReferenceNumber" xml:space="preserve"><value>Reference Number</value></data>
+	<data name="Lbl_OrderNumber" xml:space="preserve"><value>Order Number</value></data>
+	<data name="Lbl_ShipmentType" xml:space="preserve"><value>Shipment Type</value></data>
+	<data name="Lbl_ShippingMethod" xml:space="preserve"><value>Shipping Method</value></data>
+	<data name="Lbl_ServiceType" xml:space="preserve"><value>Service Type</value></data>
+	<data name="Lbl_PickupDate" xml:space="preserve"><value>Pickup Date</value></data>
+	<data name="Lbl_DeliveryDate" xml:space="preserve"><value>Delivery Date</value></data>
+	<data name="Lbl_ExpectedDelivery" xml:space="preserve"><value>Expected Delivery Date</value></data>
+
+	<!-- ===================== Sender & Receiver ===================== -->
+	<data name="Lbl_SenderInformation" xml:space="preserve"><value>Sender Information</value></data>
+	<data name="Lbl_ReceiverInformation" xml:space="preserve"><value>Receiver Information</value></data>
+	<data name="Lbl_SenderName" xml:space="preserve"><value>Sender Name</value></data>
+	<data name="Lbl_SenderPhone" xml:space="preserve"><value>Sender Phone</value></data>
+	<data name="Lbl_SenderAddress" xml:space="preserve"><value>Sender Address</value></data>
+	<data name="Lbl_ReceiverName" xml:space="preserve"><value>Receiver Name</value></data>
+	<data name="Lbl_ReceiverPhone" xml:space="preserve"><value>Receiver Phone</value></data>
+	<data name="Lbl_ReceiverAddress" xml:space="preserve"><value>Receiver Address</value></data>
+
+	<!-- ===================== Package Details ===================== -->
+	<data name="Lbl_PackageDetails" xml:space="preserve"><value>Package Details</value></data>
+	<data name="Lbl_Weight" xml:space="preserve"><value>Weight</value></data>
+	<data name="Lbl_Length" xml:space="preserve"><value>Length</value></data>
+	<data name="Lbl_Width" xml:space="preserve"><value>Width</value></data>
+	<data name="Lbl_Height" xml:space="preserve"><value>Height</value></data>
+	<data name="Lbl_Dimensions" xml:space="preserve"><value>Dimensions</value></data>
+	<data name="Lbl_PackageType" xml:space="preserve"><value>Package Type</value></data>
+	<data name="Lbl_ContentsDescription" xml:space="preserve"><value>Contents Description</value></data>
+	<data name="Lbl_DeclaredValue" xml:space="preserve"><value>Declared Value</value></data>
+	<data name="Lbl_Quantity" xml:space="preserve"><value>Quantity</value></data>
+
+	<!-- ===================== Shipment Status ===================== -->
+	<data name="Status_Draft" xml:space="preserve"><value>Draft</value></data>
+	<data name="Status_Created" xml:space="preserve"><value>Created</value></data>
+	<data name="Status_ReadyForPickup" xml:space="preserve"><value>Ready for Pickup</value></data>
+	<data name="Status_PickedUp" xml:space="preserve"><value>Picked Up</value></data>
+	<data name="Status_InTransit" xml:space="preserve"><value>In Transit</value></data>
+	<data name="Status_OutForDelivery" xml:space="preserve"><value>Out for Delivery</value></data>
+	<data name="Status_Delivered" xml:space="preserve"><value>Delivered</value></data>
+	<data name="Status_Returned" xml:space="preserve"><value>Returned</value></data>
+	<data name="Status_Cancelled" xml:space="preserve"><value>Cancelled</value></data>
+	<data name="Status_FailedDelivery" xml:space="preserve"><value>Delivery Failed</value></data>
+
+	<!-- ===================== Messages ===================== -->
+	<data name="Msg_ShipmentCreated" xml:space="preserve"><value>Shipment created successfully.</value></data>
+	<data name="Msg_ShipmentUpdated" xml:space="preserve"><value>Shipment updated successfully.</value></data>
+	<data name="Msg_ShipmentCancelled" xml:space="preserve"><value>Shipment has been cancelled.</value></data>
+	<data name="Msg_ShipmentDelivered" xml:space="preserve"><value>Shipment delivered successfully.</value></data>
+	<data name="Msg_InvalidTrackingNumber" xml:space="preserve"><value>Invalid tracking number.</value></data>
+	<data name="Msg_ShipmentNotFound" xml:space="preserve"><value>Shipment not found.</value></data>
+
+	<!-- ===================== Validation ===================== -->
+	<data name="Val_WeightRequired" xml:space="preserve"><value>Weight is required.</value></data>
+	<data name="Val_DimensionsRequired" xml:space="preserve"><value>All dimensions are required.</value></data>
+	<data name="Val_SenderRequired" xml:space="preserve"><value>Sender information is required.</value></data>
+	<data name="Val_ReceiverRequired" xml:space="preserve"><value>Receiver information is required.</value></data>
+	<data name="Val_InvalidDeclaredValue" xml:space="preserve"><value>Please enter a valid declared value.</value></data>
+
+</root>

@@ -23,11 +23,25 @@ namespace Ui
 
             builder.Services.AddAppLocalization();
 
+            #region Dependency Injection
             builder.Services.AddAutoMapper(cfg => { }, typeof(MappingProfile));
             builder.Services.AddScoped(typeof(ITableRepository<>), typeof(TableRepository<>));
+            //Services Add Scoped
             builder.Services.AddScoped<ICityService, CityService>();
+            builder.Services.AddScoped<IShippingTypeService, ShippingTypeService>();
+            builder.Services.AddScoped<IShippmentService, ShippmentService>();
+            builder.Services.AddScoped<ICountryService, CountryService>();
+            builder.Services.AddScoped<ICarrierService, CarrierService>();
+            builder.Services.AddScoped<ISubscriptionPackageService, SubscriptionPackageService>();
+            builder.Services.AddScoped<IUserReceiverService, UserReceiverService>();
+            builder.Services.AddScoped<IUserSenderService, UserSenderService>();
+            builder.Services.AddScoped<IUserSubscriptionService, UserSubscriptionService>();
+            builder.Services.AddScoped<IPaymentMethodService, PaymentMethodService>();
+            builder.Services.AddScoped<IShippmentStatusService, ShippmentStatusService>();
             builder.Services.AddScoped<BL.Mapping.IMapper, BL.Mapping.AutoMapperAdapter>();
-
+            //Services Add Singleton
+            builder.Services.AddScoped<ISettingService, SettingService>();
+            #endregion
         }
     }
 }

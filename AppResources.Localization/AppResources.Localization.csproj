@@ -19,10 +19,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>ResAddress.resx</DependentUpon>
     </Compile>
+    <Compile Update="Resources\Resource1.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
     <Compile Update="Resources\ResShared.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>ResShared.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\ResShippingTypes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ResShippingTypes.resx</DependentUpon>
     </Compile>
     <Compile Update="Resources\ResUserModel.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -47,9 +57,17 @@
     <EmbeddedResource Update="Resources\ResGeneral.en.resx">
       <CustomToolNamespace>AppResources.Localization</CustomToolNamespace>
     </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resources\ResShared.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResShared.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResShippingTypes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResShippingTypes.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\ResUserModel.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

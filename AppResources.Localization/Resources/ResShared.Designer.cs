@@ -1492,6 +1492,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Overview.
+        /// </summary>
+        public static string Page_Overview {
+            get {
+                return ResourceManager.GetString("Page_Overview", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Privacy Policy.
         /// </summary>
         public static string Page_Privacy {
@@ -2374,6 +2383,33 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Shipping Type.
+        /// </summary>
+        public static string Tb_ShippingType {
+            get {
+                return ResourceManager.GetString("Tb_ShippingType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipping Types.
+        /// </summary>
+        public static string Tb_ShippingTypes {
+            get {
+                return ResourceManager.GetString("Tb_ShippingTypes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Actions.
+        /// </summary>
+        public static string Th_Actions {
+            get {
+                return ResourceManager.GetString("Th_Actions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Assignee.
         /// </summary>
         public static string Th_Assignee {
@@ -2424,6 +2460,15 @@ namespace AppResources.Localization.Resources {
         public static string Th_Progress {
             get {
                 return ResourceManager.GetString("Th_Progress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipping Factor.
+        /// </summary>
+        public static string Th_ShippingFactor {
+            get {
+                return ResourceManager.GetString("Th_ShippingFactor", resourceCulture);
             }
         }
         

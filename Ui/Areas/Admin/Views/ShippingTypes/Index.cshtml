@@ -1,0 +1,87 @@
+﻿@model List<TbShippingTypeDTO>
+
+
+<div class="page-header">
+    <h3 class="page-title"> @ResShippingTypes.ShippingTypesTable </h3>
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">@ResShippingTypes.Tables</li>
+        <li class="breadcrumb-item active" aria-current="page">@ResShippingTypes.ShippingTypesTable</li>
+    </ol>
+    </nav>
+</div>
+<div class="card">
+    <div class="card-body">
+    <h4 class="card-title">@ResShippingTypes.ShippingTypesTable</h4>
+    <a href="~/admin/ShippingTypes/Edit" class="btn btn-gradient-dark btn-fw mb-3">@ResShared.Btn_Add</a>
+    <div class="row">
+        <div class="col-12">
+        <table id="order-listing" class="table">
+            <thead>
+            <tr>
+                <th>@ResShared.Th_Number</th>
+                <th>@ResShared.Th_Name</th>
+                <th>@ResShared.Th_ShippingFactor</th>
+                <th>@ResShared.Th_Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+                        @{
+                            int counter = 1;
+                        }
+                        @foreach (var shippingType in Model)
+                {
+                    <tr>
+                        <td>@(counter++)</td>
+                        <td>
+                            @if (CultureInfo.CurrentCulture.Name.ToLower() == "ar")
+                                {
+                                        @shippingType.ShippingTypeAname
+                                }
+                                else 
+                                {
+                                        @shippingType.ShippingTypeEname
+                                }
+                            </td>
+                                <td>@shippingType.ShippingFactor</td>
+                        <td>
+                            @* <a class="btn btn-outline-primary" asp-controller="ShippingTypes"
+                                asp-action="Edit" asp-route-id="@Model[i].Id">
+                                @ResShippingTypes.EditButton
+                            </a> *@
+                                    <form asp-controller="ShippingTypes" method="post" >
+                                        <button type="submit" class="btn btn-outline-primary" asp-action="Edit"
+                                                asp-route-id="@shippingType.Id">
+                                            @ResShippingTypes.EditButton
+                                        </button>
+                                        <button type="submit" class="btn btn-outline-danger" asp-action="Delete"
+                                                onclick="return confirm('هل أنت متأكد؟')" asp-route-id="@shippingType.Id">
+                                            @ResShippingTypes.DeleteButton
+                                        </button>
+                                    </form>
+                            @* <a class="btn btn-outline-danger" asp-controller="ShippingTypes"
+                                asp-action="Delete" asp-route-id="@Model[i].Id">
+                                @ResShippingTypes.DeleteButton
+                            </a> *@
+                        </td>
+                    </tr>
+                        }
+            </tbody>
+        </table>
+        </div>
+    </div>
+    </div>
+</div>
+@section PluginStyles
+{
+    <link rel="stylesheet" href="~/admin/assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+}
+@section PluginScripts
+{
+    <script src="~/admin/assets/vendors/datatables.net/jquery.dataTables.js"></script>
+    <script src="~/admin/assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+}
+@section CustomScripts
+{
+    <script src="~/admin/assets/js/data-table.js"></script>
+}

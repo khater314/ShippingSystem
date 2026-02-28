@@ -40,14 +40,14 @@ namespace DAL.Repositories
         {
             return await ExecuteWithHandlingAsync(async () =>
             {
-                return await _dbSet.ToListAsync(ct);
+                return await _dbSet.Where(i => i.CurrentState == 1).ToListAsync(ct);
             }, "Error retrieving all records.");
         }
         public async Task<T> GetByIdAsync(Guid id, CancellationToken ct = default)
         {
             return await ExecuteWithHandlingAsync(async () =>
             {
-                return await _dbSet.FirstAsync(e => e.Id == id, ct);
+                return await _dbSet.Where(i => i.CurrentState == 1).FirstAsync(e => e.Id == id, ct);
             }, $"Error retrieving record with ID: {id}");
         }
 

@@ -1,618 +1,1086 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="metadata">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" />
-							</xsd:sequence>
-							<xsd:attribute name="name" use="required" type="xsd:string" />
-							<xsd:attribute name="type" type="xsd:string" />
-							<xsd:attribute name="mimetype" type="xsd:string" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="assembly">
-						<xsd:complexType>
-							<xsd:attribute name="alias" type="xsd:string" />
-							<xsd:attribute name="name" type="xsd:string" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>2.0</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
 
-	<!-- ========== الصفحات (Page_) ========== -->
-	<data name="Page_Dashboard" xml:space="preserve">
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Page_Dashboard" xml:space="preserve">
     <value>Dashboard</value>
   </data>
-	<data name="Page_Home" xml:space="preserve">
+  <data name="Page_Home" xml:space="preserve">
     <value>Home</value>
   </data>
-	<data name="Page_Products" xml:space="preserve">
+  <data name="Page_Products" xml:space="preserve">
     <value>Products</value>
   </data>
-	<data name="Page_Orders" xml:space="preserve">
+  <data name="Page_Orders" xml:space="preserve">
     <value>Orders</value>
   </data>
-	<data name="Page_Users" xml:space="preserve">
+  <data name="Page_Users" xml:space="preserve">
     <value>Users</value>
   </data>
-	<data name="Page_Customers" xml:space="preserve">
+  <data name="Page_Customers" xml:space="preserve">
     <value>Customers</value>
   </data>
-	<data name="Page_Suppliers" xml:space="preserve">
+  <data name="Page_Suppliers" xml:space="preserve">
     <value>Suppliers</value>
   </data>
-	<data name="Page_Reports" xml:space="preserve">
+  <data name="Page_Reports" xml:space="preserve">
     <value>Reports</value>
   </data>
-	<data name="Page_Settings" xml:space="preserve">
+  <data name="Page_Settings" xml:space="preserve">
     <value>Settings</value>
   </data>
-	<data name="Page_Profile" xml:space="preserve">
+  <data name="Page_Profile" xml:space="preserve">
     <value>Profile</value>
   </data>
-	<data name="Page_Account" xml:space="preserve">
+  <data name="Page_Account" xml:space="preserve">
     <value>Account</value>
   </data>
-	<data name="Page_Admin" xml:space="preserve">
+  <data name="Page_Admin" xml:space="preserve">
     <value>Administration</value>
   </data>
-	<data name="Page_Help" xml:space="preserve">
+  <data name="Page_Help" xml:space="preserve">
     <value>Help</value>
   </data>
-	<data name="Page_Support" xml:space="preserve">
+  <data name="Page_Support" xml:space="preserve">
     <value>Support</value>
   </data>
-	<data name="Page_About" xml:space="preserve">
+  <data name="Page_About" xml:space="preserve">
     <value>About Us</value>
   </data>
-	<data name="Page_Contact" xml:space="preserve">
+  <data name="Page_Contact" xml:space="preserve">
     <value>Contact Us</value>
   </data>
-	<data name="Page_Privacy" xml:space="preserve">
+  <data name="Page_Privacy" xml:space="preserve">
     <value>Privacy Policy</value>
   </data>
-	<data name="Page_Terms" xml:space="preserve">
+  <data name="Page_Terms" xml:space="preserve">
     <value>Terms &amp; Conditions</value>
   </data>
-
-	<!-- ========== الأزرار (Btn_) ========== -->
-	<data name="Btn_Save" xml:space="preserve">
+  <data name="Btn_Save" xml:space="preserve">
     <value>Save</value>
   </data>
-	<data name="Btn_SaveChanges" xml:space="preserve">
+  <data name="Btn_SaveChanges" xml:space="preserve">
     <value>Save Changes</value>
   </data>
-	<data name="Btn_SaveCont" xml:space="preserve">
+  <data name="Btn_SaveCont" xml:space="preserve">
     <value>Save &amp; Continue</value>
   </data>
-	<data name="Btn_Delete" xml:space="preserve">
+  <data name="Btn_Delete" xml:space="preserve">
     <value>Delete</value>
   </data>
-	<data name="Btn_Edit" xml:space="preserve">
+  <data name="Btn_Edit" xml:space="preserve">
     <value>Edit</value>
   </data>
-	<data name="Btn_Update" xml:space="preserve">
+  <data name="Btn_Update" xml:space="preserve">
     <value>Update</value>
   </data>
-	<data name="Btn_Add" xml:space="preserve">
-    <value>Add New</value>
+  <data name="Btn_Add" xml:space="preserve">
+    <value>Add</value>
   </data>
-	<data name="Btn_AddItem" xml:space="preserve">
+  <data name="Btn_AddItem" xml:space="preserve">
     <value>Add Item</value>
   </data>
-	<data name="Btn_Create" xml:space="preserve">
+  <data name="Btn_Create" xml:space="preserve">
     <value>Create</value>
   </data>
-	<data name="Btn_Cancel" xml:space="preserve">
+  <data name="Btn_Cancel" xml:space="preserve">
     <value>Cancel</value>
   </data>
-	<data name="Btn_Close" xml:space="preserve">
+  <data name="Btn_Close" xml:space="preserve">
     <value>Close</value>
   </data>
-	<data name="Btn_Back" xml:space="preserve">
+  <data name="Btn_Back" xml:space="preserve">
     <value>Back</value>
   </data>
-	<data name="Btn_Next" xml:space="preserve">
+  <data name="Btn_Next" xml:space="preserve">
     <value>Next</value>
   </data>
-	<data name="Btn_Prev" xml:space="preserve">
+  <data name="Btn_Prev" xml:space="preserve">
     <value>Previous</value>
   </data>
-	<data name="Btn_Finish" xml:space="preserve">
+  <data name="Btn_Finish" xml:space="preserve">
     <value>Finish</value>
   </data>
-	<data name="Btn_Submit" xml:space="preserve">
+  <data name="Btn_Submit" xml:space="preserve">
     <value>Submit</value>
   </data>
-	<data name="Btn_Apply" xml:space="preserve">
+  <data name="Btn_Apply" xml:space="preserve">
     <value>Apply</value>
   </data>
-	<data name="Btn_Reset" xml:space="preserve">
+  <data name="Btn_Reset" xml:space="preserve">
     <value>Reset</value>
   </data>
-	<data name="Btn_Clear" xml:space="preserve">
+  <data name="Btn_Clear" xml:space="preserve">
     <value>Clear</value>
   </data>
-	<data name="Btn_Search" xml:space="preserve">
+  <data name="Btn_Search" xml:space="preserve">
     <value>Search</value>
   </data>
-	<data name="Btn_Filter" xml:space="preserve">
+  <data name="Btn_Filter" xml:space="preserve">
     <value>Filter</value>
   </data>
-	<data name="Btn_Refresh" xml:space="preserve">
+  <data name="Btn_Refresh" xml:space="preserve">
     <value>Refresh</value>
   </data>
-	<data name="Btn_Download" xml:space="preserve">
+  <data name="Btn_Download" xml:space="preserve">
     <value>Download</value>
   </data>
-	<data name="Btn_Upload" xml:space="preserve">
+  <data name="Btn_Upload" xml:space="preserve">
     <value>Upload</value>
   </data>
-	<data name="Btn_Export" xml:space="preserve">
+  <data name="Btn_Export" xml:space="preserve">
     <value>Export</value>
   </data>
-	<data name="Btn_Import" xml:space="preserve">
+  <data name="Btn_Import" xml:space="preserve">
     <value>Import</value>
   </data>
-	<data name="Btn_Print" xml:space="preserve">
+  <data name="Btn_Print" xml:space="preserve">
     <value>Print</value>
   </data>
-	<data name="Btn_Preview" xml:space="preserve">
+  <data name="Btn_Preview" xml:space="preserve">
     <value>Preview</value>
   </data>
-	<data name="Btn_View" xml:space="preserve">
+  <data name="Btn_View" xml:space="preserve">
     <value>View</value>
   </data>
-	<data name="Btn_ViewAll" xml:space="preserve">
+  <data name="Btn_ViewAll" xml:space="preserve">
     <value>View All</value>
   </data>
-	<data name="Btn_Show" xml:space="preserve">
+  <data name="Btn_Show" xml:space="preserve">
     <value>Show</value>
   </data>
-	<data name="Btn_Hide" xml:space="preserve">
+  <data name="Btn_Hide" xml:space="preserve">
     <value>Hide</value>
   </data>
-	<data name="Btn_Expand" xml:space="preserve">
+  <data name="Btn_Expand" xml:space="preserve">
     <value>Expand</value>
   </data>
-	<data name="Btn_Collapse" xml:space="preserve">
+  <data name="Btn_Collapse" xml:space="preserve">
     <value>Collapse</value>
   </data>
-	<data name="Btn_Select" xml:space="preserve">
+  <data name="Btn_Select" xml:space="preserve">
     <value>Select</value>
   </data>
-	<data name="Btn_Choose" xml:space="preserve">
+  <data name="Btn_Choose" xml:space="preserve">
     <value>Choose</value>
   </data>
-	<data name="Btn_Confirm" xml:space="preserve">
+  <data name="Btn_Confirm" xml:space="preserve">
     <value>Confirm</value>
   </data>
-	<data name="Btn_Approve" xml:space="preserve">
+  <data name="Btn_Approve" xml:space="preserve">
     <value>Approve</value>
   </data>
-	<data name="Btn_Reject" xml:space="preserve">
+  <data name="Btn_Reject" xml:space="preserve">
     <value>Reject</value>
   </data>
-	<data name="Btn_Accept" xml:space="preserve">
+  <data name="Btn_Accept" xml:space="preserve">
     <value>Accept</value>
   </data>
-
-	<!-- ========== التسميات (Lbl_) ========== -->
-	<data name="Lbl_Name" xml:space="preserve">
+  <data name="Lbl_Name" xml:space="preserve">
     <value>Name</value>
   </data>
-	<data name="Lbl_FullName" xml:space="preserve">
+  <data name="Lbl_FullName" xml:space="preserve">
     <value>Full Name</value>
   </data>
-	<data name="Lbl_FirstName" xml:space="preserve">
+  <data name="Lbl_FirstName" xml:space="preserve">
     <value>First Name</value>
   </data>
-	<data name="Lbl_LastName" xml:space="preserve">
+  <data name="Lbl_LastName" xml:space="preserve">
     <value>Last Name</value>
   </data>
-	<data name="Lbl_Email" xml:space="preserve">
+  <data name="Lbl_Email" xml:space="preserve">
     <value>Email</value>
   </data>
-	<data name="Lbl_Phone" xml:space="preserve">
+  <data name="Lbl_Phone" xml:space="preserve">
     <value>Phone</value>
   </data>
-	<data name="Lbl_Mobile" xml:space="preserve">
+  <data name="Lbl_Mobile" xml:space="preserve">
     <value>Mobile</value>
   </data>
-	<data name="Lbl_Address" xml:space="preserve">
+  <data name="Lbl_Address" xml:space="preserve">
     <value>Address</value>
   </data>
-	<data name="Lbl_City" xml:space="preserve">
+  <data name="Lbl_City" xml:space="preserve">
     <value>City</value>
   </data>
-	<data name="Lbl_Country" xml:space="preserve">
+  <data name="Lbl_Country" xml:space="preserve">
     <value>Country</value>
   </data>
-	<data name="Lbl_ZipCode" xml:space="preserve">
+  <data name="Lbl_ZipCode" xml:space="preserve">
     <value>Postal Code</value>
   </data>
-	<data name="Lbl_Price" xml:space="preserve">
+  <data name="Lbl_Price" xml:space="preserve">
     <value>Price</value>
   </data>
-	<data name="Lbl_Quantity" xml:space="preserve">
+  <data name="Lbl_Quantity" xml:space="preserve">
     <value>Quantity</value>
   </data>
-	<data name="Lbl_Total" xml:space="preserve">
+  <data name="Lbl_Total" xml:space="preserve">
     <value>Total</value>
   </data>
-	<data name="Lbl_Description" xml:space="preserve">
+  <data name="Lbl_Description" xml:space="preserve">
     <value>Description</value>
   </data>
-	<data name="Lbl_Notes" xml:space="preserve">
+  <data name="Lbl_Notes" xml:space="preserve">
     <value>Notes</value>
   </data>
-	<data name="Lbl_Status" xml:space="preserve">
+  <data name="Lbl_Status" xml:space="preserve">
     <value>Status</value>
   </data>
-	<data name="Lbl_Type" xml:space="preserve">
+  <data name="Lbl_Type" xml:space="preserve">
     <value>Type</value>
   </data>
-	<data name="Lbl_Category" xml:space="preserve">
+  <data name="Lbl_Category" xml:space="preserve">
     <value>Category</value>
   </data>
-	<data name="Lbl_Date" xml:space="preserve">
+  <data name="Lbl_Date" xml:space="preserve">
     <value>Date</value>
   </data>
-	<data name="Lbl_CreatedAt" xml:space="preserve">
+  <data name="Lbl_CreatedAt" xml:space="preserve">
     <value>Created At</value>
   </data>
-	<data name="Lbl_UpdatedAt" xml:space="preserve">
+  <data name="Lbl_UpdatedAt" xml:space="preserve">
     <value>Updated At</value>
   </data>
-	<data name="Lbl_CreatedBy" xml:space="preserve">
+  <data name="Lbl_CreatedBy" xml:space="preserve">
     <value>Created By</value>
   </data>
-	<data name="Lbl_UpdatedBy" xml:space="preserve">
+  <data name="Lbl_UpdatedBy" xml:space="preserve">
     <value>Updated By</value>
   </data>
-	<data name="Lbl_ID" xml:space="preserve">
+  <data name="Lbl_ID" xml:space="preserve">
     <value>ID</value>
   </data>
-	<data name="Lbl_Code" xml:space="preserve">
+  <data name="Lbl_Code" xml:space="preserve">
     <value>Code</value>
   </data>
-	<data name="Lbl_Password" xml:space="preserve">
+  <data name="Lbl_Password" xml:space="preserve">
     <value>Password</value>
   </data>
-	<data name="Lbl_ConfirmPass" xml:space="preserve">
+  <data name="Lbl_ConfirmPass" xml:space="preserve">
     <value>Confirm Password</value>
   </data>
-	<data name="Lbl_Role" xml:space="preserve">
+  <data name="Lbl_Role" xml:space="preserve">
     <value>Role</value>
   </data>
-	<data name="Lbl_Image" xml:space="preserve">
+  <data name="Lbl_Image" xml:space="preserve">
     <value>Image</value>
   </data>
-	<data name="Lbl_File" xml:space="preserve">
+  <data name="Lbl_File" xml:space="preserve">
     <value>File</value>
   </data>
-	<data name="Lbl_AppTitle"><value>Purple Admin</value></data>
-	<data name="Txt_FreeSupport"><value>Free 24/7 customer support, updates, and more with this template!</value></data>
-	<data name="Btn_BuyNow"><value>Buy Now</value></data>
-	<data name="Btn_BannerClose"><value>Close</value></data>
-
-	<data name="Plh_SearchProjects"><value>Search projects</value></data>
-
-	<data name="Lbl_ProfileName"><value>David Greymaax</value></data>
-	<data name="Lbl_ActivityLog"><value>Activity Log</value></data>
-	<data name="Btn_SignOut"><value>Signout</value></data>
-	<data name="Btn_Fullscreen"><value>Fullscreen</value></data>
-
-	<data name="Lbl_Messages"><value>Messages</value></data>
-	<data name="Msg_MarkSentMessage"><value>Mark sent you a message</value></data>
-	<data name="Msg_CreghSentMessage"><value>Cregh sent you a message</value></data>
-	<data name="Msg_ProfilePictureUpdated"><value>Profile picture updated</value></data>
-	<data name="Txt_1MinuteAgo"><value>1 Minutes ago</value></data>
-	<data name="Txt_15MinutesAgo"><value>15 Minutes ago</value></data>
-	<data name="Txt_18MinutesAgo"><value>18 Minutes ago</value></data>
-	<data name="Msg_NewMessages"><value>{0} new messages</value></data>
-
-	<data name="Lbl_Notifications"><value>Notifications</value></data>
-	<data name="Txt_EventToday"><value>Event today</value></data>
-	<data name="Txt_ReminderEvent"><value>Just a reminder that you have an event today</value></data>
-	<data name="Lbl_Settings"><value>Settings</value></data>
-	<data name="Txt_UpdateDashboard"><value>Update dashboard</value></data>
-	<data name="Txt_LaunchAdmin"><value>Launch Admin</value></data>
-	<data name="Txt_NewAdminWow"><value>New admin wow!</value></data>
-	<data name="Msg_SeeAllNotifications"><value>See all notifications</value></data>
-
-	<data name="Lbl_Languages"><value>Languages</value></data>
-	<data name="Lang_Arabic"><value>العربية</value></data>
-	<data name="Lang_English"><value>English</value></data>
-
-	<data name="Lbl_SidebarSkins"><value>SIDEBAR SKINS</value></data>
-	<data name="Txt_Light"><value>Light</value></data>
-	<data name="Txt_Dark"><value>Dark</value></data>
-	<data name="Lbl_HeaderSkins"><value>HEADER SKINS</value></data>
-	<data name="Lbl_TemplateDemos"><value>Template Demos</value></data>
-	<data name="Plh_DemoImage"><value>demo image</value></data>
-
-	<data name="Lbl_TodoTab"><value>TO DO LIST</value></data>
-	<data name="Lbl_ChatsTab"><value>CHATS</value></data>
-	<data name="Plh_AddTodo"><value>What do you need to do today?</value></data>
-	<data name="Btn_Add"><value>Add</value></data>
-
-	<data name="Todo_TeamReview"><value>Team review meeting at 3.00 PM</value></data>
-	<data name="Todo_PreparePresentation"><value>Prepare for presentation</value></data>
-	<data name="Todo_ResolveLowPriorityTickets"><value>Resolve all the low priority tickets due today</value></data>
-	<data name="Todo_ScheduleMeeting"><value>Schedule meeting for next week</value></data>
-	<data name="Todo_ProjectReview"><value>Project review</value></data>
-
-	<data name="Txt_Feb112018"><value>Feb 11 2018</value></data>
-	<data name="Txt_CreatingComponentPage"><value>Creating component page</value></data>
-	<data name="Txt_BuildJsApp"><value>build a js based app</value></data>
-	<data name="Txt_Feb072018"><value>Feb 7 2018</value></data>
-	<data name="Txt_MeetingWithAlisa"><value>Meeting with Alisa</value></data>
-	<data name="Txt_CallSarahGraves"><value>Call Sarah Graves</value></data>
-
-	<data name="Lbl_Friends"><value>Friends</value></data>
-	<data name="Btn_SeeAll"><value>See All</value></data>
-	<data name="User_ThomasDouglas"><value>Thomas Douglas</value></data>
-	<data name="Txt_Available"><value>Available</value></data>
-	<data name="Txt_19Min"><value>19 min</value></data>
-
-	<data name="Txt_ProjectManager"><value>Project Manager</value></data>
-
-	<data name="Menu_Dashboard"><value>Dashboard</value></data>
-	<data name="Menu_PageLayouts"><value>Page Layouts</value></data>
-	<data name="Menu_Apps"><value>Apps</value></data>
-	<data name="Menu_Widgets"><value>Widgets</value></data>
-	<data name="Sub_Boxed"><value>Boxed</value></data>
-	<data name="Sub_RTL"><value>RTL</value></data>
-	<data name="Sub_KanbanBoard"><value>kanban-board</value></data>
-	<data name="Sub_TodoList"><value>Todo List</value></data>
-	<data name="Sub_Tickets"><value>Tickets</value></data>
-	<data name="Sub_Chats"><value>Chats</value></data>
-
-	<data name="Lbl_Projects"><value>Projects</value></data>
-	<data name="Btn_AddProject"><value>+ Add a project</value></data>
-	<data name="Lbl_Categories"><value>Categories</value></data>
-	<data name="Txt_Free"><value>Free</value></data>
-	<data name="Txt_Pro"><value>Pro</value></data>
-
-	<data name="Lbl_FooterCopyright"><value>Copyright © 2021 &lt;a href='https://www.bootstrapdash.com/' target='_blank'&gt;BootstrapDash&lt;/a&gt;. All rights reserved.</value></data>
-	<data name="Lbl_HandCrafted"><value>Hand-crafted &amp; made with &lt;i class='mdi mdi-heart text-danger'&gt;&lt;/i&gt;</value></data>
-
-  <!-- Layout-specific / menu/submenu keys (append only, do not remove existing) -->
-  <data name="Menu_SidebarLayouts" xml:space="preserve"><value>Sidebar Layouts</value></data>
-  <data name="Menu_BasicUIElements" xml:space="preserve"><value>Basic UI Elements</value></data>
-  <data name="Menu_AdvancedUI" xml:space="preserve"><value>Advanced UI</value></data>
-  <data name="Menu_Popups" xml:space="preserve"><value>Popups</value></data>
-  <data name="Menu_Notifications" xml:space="preserve"><value>Notifications</value></data>
-  <data name="Menu_Icons" xml:space="preserve"><value>Icons</value></data>
-  <data name="Menu_Forms" xml:space="preserve"><value>Forms</value></data>
-  <data name="Menu_TextEditors" xml:space="preserve"><value>Text editors</value></data>
-  <data name="Menu_CodeEditors" xml:space="preserve"><value>Code editors</value></data>
-  <data name="Menu_Charts" xml:space="preserve"><value>Charts</value></data>
-  <data name="Menu_Tables" xml:space="preserve"><value>Tables</value></data>
-  <data name="Menu_Maps" xml:space="preserve"><value>Maps</value></data>
-  <data name="Menu_UserPages" xml:space="preserve"><value>User Pages</value></data>
-  <data name="Menu_ErrorPages" xml:space="preserve"><value>Error pages</value></data>
-  <data name="Menu_GeneralPages" xml:space="preserve"><value>General Pages</value></data>
-  <data name="Menu_Ecommerce" xml:space="preserve"><value>E-commerce</value></data>
-  <data name="Menu_Email" xml:space="preserve"><value>E-mail</value></data>
-  <data name="Menu_Calendar" xml:space="preserve"><value>Calendar</value></data>
-  <data name="Menu_Gallery" xml:space="preserve"><value>Gallery</value></data>
-  <data name="Menu_Documentation" xml:space="preserve"><value>Documentation</value></data>
-
-  <!-- Sidebar sub-items -->
-  <data name="Sub_CompactMenu" xml:space="preserve"><value>Compact menu</value></data>
-  <data name="Sub_IconMenu" xml:space="preserve"><value>Icon menu</value></data>
-  <data name="Sub_SidebarHidden" xml:space="preserve"><value>Sidebar Hidden</value></data>
-  <data name="Sub_SidebarOverlay" xml:space="preserve"><value>Sidebar Overlay</value></data>
-  <data name="Sub_SidebarFixed" xml:space="preserve"><value>Sidebar Fixed</value></data>
-
-  <!-- Page / UI feature sub-items -->
-  <data name="Sub_Accordions" xml:space="preserve"><value>Accordions</value></data>
-  <data name="Sub_Buttons" xml:space="preserve"><value>Buttons</value></data>
-  <data name="Sub_Badges" xml:space="preserve"><value>Badges</value></data>
-  <data name="Sub_Breadcrumbs" xml:space="preserve"><value>Breadcrumbs</value></data>
-  <data name="Sub_Dropdowns" xml:space="preserve"><value>Dropdowns</value></data>
-  <data name="Sub_Modals" xml:space="preserve"><value>Modals</value></data>
-  <data name="Sub_ProgressBar" xml:space="preserve"><value>Progress bar</value></data>
-  <data name="Sub_Pagination" xml:space="preserve"><value>Pagination</value></data>
-  <data name="Sub_Tabs" xml:space="preserve"><value>Tabs</value></data>
-  <data name="Sub_Typography" xml:space="preserve"><value>Typography</value></data>
-  <data name="Sub_Tooltip" xml:space="preserve"><value>Tooltip</value></data>
-
-  <!-- Advanced UI subs -->
-  <data name="Sub_Dragula" xml:space="preserve"><value>Dragula</value></data>
-  <data name="Sub_Clipboard" xml:space="preserve"><value>Clipboard</value></data>
-  <data name="Sub_ContextMenu" xml:space="preserve"><value>Context menu</value></data>
-  <data name="Sub_Slider" xml:space="preserve"><value>Slider</value></data>
-  <data name="Sub_Colcade" xml:space="preserve"><value>Colcade</value></data>
-  <data name="Sub_Carousel" xml:space="preserve"><value>Carousel</value></data>
-  <data name="Sub_Loaders" xml:space="preserve"><value>Loaders</value></data>
-  <data name="Sub_TreeView" xml:space="preserve"><value>Tree View</value></data>
-
-  <!-- Icons subs -->
-  <data name="Sub_MaterialIcons" xml:space="preserve"><value>Material</value></data>
-  <data name="Sub_FlagIcons" xml:space="preserve"><value>Flag icons</value></data>
-  <data name="Sub_FontAwesome" xml:space="preserve"><value>Font Awesome</value></data>
-  <data name="Sub_SimpleLineIcons" xml:space="preserve"><value>Simple line icons</value></data>
-  <data name="Sub_ThemifyIcons" xml:space="preserve"><value>Themify icons</value></data>
-
-  <!-- Forms subs -->
-  <data name="Sub_FormElements" xml:space="preserve"><value>Form Elements</value></data>
-  <data name="Sub_AdvancedForms" xml:space="preserve"><value>Advanced Forms</value></data>
-  <data name="Sub_Validation" xml:space="preserve"><value>Validation</value></data>
-  <data name="Sub_Wizard" xml:space="preserve"><value>Wizard</value></data>
-
-  <!-- Charts subs -->
-  <data name="Sub_ChartJs" xml:space="preserve"><value>ChartJs</value></data>
-  <data name="Sub_Morris" xml:space="preserve"><value>Morris</value></data>
-  <data name="Sub_Flot" xml:space="preserve"><value>Flot</value></data>
-  <data name="Sub_GoogleCharts" xml:space="preserve"><value>Google charts</value></data>
-  <data name="Sub_SparklineJs" xml:space="preserve"><value>Sparkline js</value></data>
-  <data name="Sub_C3Charts" xml:space="preserve"><value>C3 charts</value></data>
-  <data name="Sub_Chartist" xml:space="preserve"><value>Chartist</value></data>
-  <data name="Sub_JustGage" xml:space="preserve"><value>JustGage</value></data>
-
-  <!-- Tables subs -->
-  <data name="Sub_BasicTable" xml:space="preserve"><value>Basic table</value></data>
-  <data name="Sub_DataTable" xml:space="preserve"><value>Data table</value></data>
-  <data name="Sub_JsGrid" xml:space="preserve"><value>Js-grid</value></data>
-  <data name="Sub_SortableTable" xml:space="preserve"><value>Sortable table</value></data>
-
-  <!-- Maps subs -->
-  <data name="Sub_GoogleMaps" xml:space="preserve"><value>Google Maps</value></data>
-  <data name="Sub_Mapael" xml:space="preserve"><value>Mapael</value></data>
-  <data name="Sub_VectorMap" xml:space="preserve"><value>Vector map</value></data>
-
-  <!-- Auth / user pages -->
-  <data name="Menu_Login" xml:space="preserve"><value>Login</value></data>
-  <data name="Menu_Login2" xml:space="preserve"><value>Login 2</value></data>
-  <data name="Menu_MultiLevelLogin" xml:space="preserve"><value>Multi Level Login</value></data>
-  <data name="Menu_Register" xml:space="preserve"><value>Register</value></data>
-  <data name="Menu_Register2" xml:space="preserve"><value>Register 2</value></data>
-  <data name="Menu_Lockscreen" xml:space="preserve"><value>Lockscreen</value></data>
-
-  <!-- General pages -->
-  <data name="Sub_BlankPage" xml:space="preserve"><value>Blank Page</value></data>
-  <data name="Sub_LandingPage" xml:space="preserve"><value>Landing Page</value></data>
-  <data name="Sub_Profile" xml:space="preserve"><value>Profile</value></data>
-  <data name="Sub_Faq" xml:space="preserve"><value>FAQ</value></data>
-  <data name="Sub_Faq2" xml:space="preserve"><value>FAQ 2</value></data>
-  <data name="Sub_NewsGrid" xml:space="preserve"><value>News grid</value></data>
-  <data name="Sub_Timeline" xml:space="preserve"><value>Timeline</value></data>
-  <data name="Sub_SearchResults" xml:space="preserve"><value>Search Results</value></data>
-  <data name="Sub_Portfolio" xml:space="preserve"><value>Portfolio</value></data>
-  <data name="Sub_UserListing" xml:space="preserve"><value>User Listing</value></data>
-
-  <!-- E-commerce subs -->
-  <data name="Sub_EmailTemplates" xml:space="preserve"><value>Email Templates</value></data>
-  <data name="Sub_Invoice" xml:space="preserve"><value>Invoice</value></data>
-  <data name="Sub_PricingTable" xml:space="preserve"><value>Pricing Table</value></data>
-  <data name="Sub_ProductCatalogue" xml:space="preserve"><value>Product Catalogue</value></data>
-  <data name="Sub_ProjectList" xml:space="preserve"><value>Project List</value></data>
-  <data name="Sub_Orders" xml:space="preserve"><value>Orders</value></data>
-
-  <!-- Append these keys to ResShared.resx under <root> (do not remove existing entries) -->
-  <data name="Alt_CircleImage" xml:space="preserve"><value>circle image</value></data>
-  <data name="Alt_Image" xml:space="preserve"><value>image</value></data>
-
-  <data name="WeeklySales" xml:space="preserve"><value>Weekly Sales</value></data>
-  <data name="SalesAmount" xml:space="preserve"><value>$ 15,0000</value></data>
-  <data name="IncreasedBy60" xml:space="preserve"><value>Increased by 60%</value></data>
-
-  <data name="WeeklyOrders" xml:space="preserve"><value>Weekly Orders</value></data>
-  <data name="OrdersCount" xml:space="preserve"><value>45,6334</value></data>
-  <data name="DecreasedBy10" xml:space="preserve"><value>Decreased by 10%</value></data>
-
-  <data name="VisitorsOnline" xml:space="preserve"><value>Visitors Online</value></data>
-  <data name="VisitorsCount" xml:space="preserve"><value>95,5741</value></data>
-  <data name="IncreasedBy5" xml:space="preserve"><value>Increased by 5%</value></data>
-
-  <data name="VisitAndSalesStatistics" xml:space="preserve"><value>Visit And Sales Statistics</value></data>
-  <data name="TrafficSources" xml:space="preserve"><value>Traffic Sources</value></data>
-
-  <data name="RecentTickets" xml:space="preserve"><value>Recent Tickets</value></data>
-  <data name="Th_Assignee" xml:space="preserve"><value>Assignee</value></data>
-  <data name="Th_Subject" xml:space="preserve"><value>Subject</value></data>
-  <data name="Th_Status" xml:space="preserve"><value>Status</value></data>
-  <data name="Th_LastUpdate" xml:space="preserve"><value>Last Update</value></data>
-  <data name="Th_TrackingId" xml:space="preserve"><value>Tracking ID</value></data>
-
-  <data name="User_DavidGrey" xml:space="preserve"><value>David Grey</value></data>
-  <data name="FundNotReceived" xml:space="preserve"><value>Fund is not received</value></data>
-  <data name="Status_Done" xml:space="preserve"><value>DONE</value></data>
-  <data name="Date_Dec52017" xml:space="preserve"><value>Dec 5, 2017</value></data>
-  <data name="Tracking_WD12345" xml:space="preserve"><value>WD-12345</value></data>
-
-  <data name="User_StellaJohnson" xml:space="preserve"><value>Stella Johnson</value></data>
-  <data name="HighLoadingTime" xml:space="preserve"><value>High loading time</value></data>
-  <data name="Status_Progress" xml:space="preserve"><value>PROGRESS</value></data>
-  <data name="Date_Dec122017" xml:space="preserve"><value>Dec 12, 2017</value></data>
-  <data name="Tracking_WD12346" xml:space="preserve"><value>WD-12346</value></data>
-
-  <data name="User_MarinaMichel" xml:space="preserve"><value>Marina Michel</value></data>
-  <data name="WebsiteDownOneWeek" xml:space="preserve"><value>Website down for one week</value></data>
-  <data name="Status_OnHold" xml:space="preserve"><value>ON HOLD</value></data>
-  <data name="Date_Dec162017" xml:space="preserve"><value>Dec 16, 2017</value></data>
-  <data name="Tracking_WD12347" xml:space="preserve"><value>WD-12347</value></data>
-
-  <data name="User_JohnDoe" xml:space="preserve"><value>John Doe</value></data>
-  <data name="LoosingControlOnServer" xml:space="preserve"><value>Losing control on server</value></data>
-  <data name="Status_Rejected" xml:space="preserve"><value>REJECTED</value></data>
-  <data name="Date_Dec32017" xml:space="preserve"><value>Dec 3, 2017</value></data>
-  <data name="Tracking_WD12348" xml:space="preserve"><value>WD-12348</value></data>
-
-  <data name="RecentUpdates" xml:space="preserve"><value>Recent Updates</value></data>
-  <data name="User_JackMenqu" xml:space="preserve"><value>jack Menqu</value></data>
-  <data name="Date_Oct032018" xml:space="preserve"><value>October 3rd, 2018</value></data>
-
-  <data name="Project_SchoolWebsite_Title" xml:space="preserve"><value>School Website - Authentication Module.</value></data>
-  <data name="Project_SchoolWebsite_Description" xml:space="preserve"><value>It is a long established fact that a reader will be distracted by the readable content of a page.</value></data>
-
-  <data name="ProjectStatus" xml:space="preserve"><value>Project Status</value></data>
-  <data name="Th_Number" xml:space="preserve"><value>#</value></data>
-  <data name="Th_Name" xml:space="preserve"><value>Name</value></data>
-  <data name="Th_DueDate" xml:space="preserve"><value>Due Date</value></data>
-  <data name="Th_Progress" xml:space="preserve"><value>Progress</value></data>
-
-  <data name="ProjectName_HermanBeck" xml:space="preserve"><value>Herman Beck</value></data>
-  <data name="Date_May152015" xml:space="preserve"><value>May 15, 2015</value></data>
-  <data name="ProjectName_MesssyAdam" xml:space="preserve"><value>Messsy Adam</value></data>
-  <data name="Date_Jul012015" xml:space="preserve"><value>Jul 01, 2015</value></data>
-  <data name="ProjectName_JohnRichards" xml:space="preserve"><value>John Richards</value></data>
-  <data name="Date_Apr122015" xml:space="preserve"><value>Apr 12, 2015</value></data>
-  <data name="ProjectName_PeterMeggik" xml:space="preserve"><value>Peter Meggik</value></data>
-  <data name="ProjectName_Edward" xml:space="preserve"><value>Edward</value></data>
-  <data name="Date_May032015" xml:space="preserve"><value>May 03, 2015</value></data>
-  <data name="ProjectName_Ronald" xml:space="preserve"><value>Ronald</value></data>
-  <data name="Date_Jun052015" xml:space="preserve"><value>Jun 05, 2015</value></data>
-
-  <data name="TodoHeading" xml:space="preserve"><value>Todo</value></data>
-  <!-- Use existing placeholder and Btn_Add (Plh_AddTodo / Btn_Add) already in ResShared -->
-  <data name="Todo_MeetingWithAlisa" xml:space="preserve"><value>Meeting with Alisa</value></data>
-  <data name="Todo_CallJohn" xml:space="preserve"><value>Call John</value></data>
-  <data name="Todo_CreateInvoice" xml:space="preserve"><value>Create invoice</value></data>
-  <data name="Todo_PrintStatements" xml:space="preserve"><value>Print Statements</value></data>
-  <data name="Todo_PrepareForPresentation" xml:space="preserve"><value>Prepare for presentation</value></data>
-  <data name="Todo_PickUpKids" xml:space="preserve"><value>Pick up kids from school</value></data>
+  <data name="Lbl_AppTitle" xml:space="preserve">
+    <value>Purple Admin</value>
+  </data>
+  <data name="Txt_FreeSupport" xml:space="preserve">
+    <value>Free 24/7 customer support, updates, and more with this template!</value>
+  </data>
+  <data name="Btn_BuyNow" xml:space="preserve">
+    <value>Buy Now</value>
+  </data>
+  <data name="Btn_BannerClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Plh_SearchProjects" xml:space="preserve">
+    <value>Search projects</value>
+  </data>
+  <data name="Lbl_ProfileName" xml:space="preserve">
+    <value>David Greymaax</value>
+  </data>
+  <data name="Lbl_ActivityLog" xml:space="preserve">
+    <value>Activity Log</value>
+  </data>
+  <data name="Btn_SignOut" xml:space="preserve">
+    <value>Signout</value>
+  </data>
+  <data name="Btn_Fullscreen" xml:space="preserve">
+    <value>Fullscreen</value>
+  </data>
+  <data name="Lbl_Messages" xml:space="preserve">
+    <value>Messages</value>
+  </data>
+  <data name="Msg_MarkSentMessage" xml:space="preserve">
+    <value>Mark sent you a message</value>
+  </data>
+  <data name="Msg_CreghSentMessage" xml:space="preserve">
+    <value>Cregh sent you a message</value>
+  </data>
+  <data name="Msg_ProfilePictureUpdated" xml:space="preserve">
+    <value>Profile picture updated</value>
+  </data>
+  <data name="Txt_1MinuteAgo" xml:space="preserve">
+    <value>1 Minutes ago</value>
+  </data>
+  <data name="Txt_15MinutesAgo" xml:space="preserve">
+    <value>15 Minutes ago</value>
+  </data>
+  <data name="Txt_18MinutesAgo" xml:space="preserve">
+    <value>18 Minutes ago</value>
+  </data>
+  <data name="Msg_NewMessages" xml:space="preserve">
+    <value>{0} new messages</value>
+  </data>
+  <data name="Lbl_Notifications" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="Txt_EventToday" xml:space="preserve">
+    <value>Event today</value>
+  </data>
+  <data name="Txt_ReminderEvent" xml:space="preserve">
+    <value>Just a reminder that you have an event today</value>
+  </data>
+  <data name="Lbl_Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Txt_UpdateDashboard" xml:space="preserve">
+    <value>Update dashboard</value>
+  </data>
+  <data name="Txt_LaunchAdmin" xml:space="preserve">
+    <value>Launch Admin</value>
+  </data>
+  <data name="Txt_NewAdminWow" xml:space="preserve">
+    <value>New admin wow!</value>
+  </data>
+  <data name="Msg_SeeAllNotifications" xml:space="preserve">
+    <value>See all notifications</value>
+  </data>
+  <data name="Lbl_Languages" xml:space="preserve">
+    <value>Languages</value>
+  </data>
+  <data name="Lang_Arabic" xml:space="preserve">
+    <value>العربية</value>
+  </data>
+  <data name="Lang_English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Lbl_SidebarSkins" xml:space="preserve">
+    <value>SIDEBAR SKINS</value>
+  </data>
+  <data name="Txt_Light" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="Txt_Dark" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="Lbl_HeaderSkins" xml:space="preserve">
+    <value>HEADER SKINS</value>
+  </data>
+  <data name="Lbl_TemplateDemos" xml:space="preserve">
+    <value>Template Demos</value>
+  </data>
+  <data name="Plh_DemoImage" xml:space="preserve">
+    <value>demo image</value>
+  </data>
+  <data name="Lbl_TodoTab" xml:space="preserve">
+    <value>TO DO LIST</value>
+  </data>
+  <data name="Lbl_ChatsTab" xml:space="preserve">
+    <value>CHATS</value>
+  </data>
+  <data name="Plh_AddTodo" xml:space="preserve">
+    <value>What do you need to do today?</value>
+  </data>
+  <data name="Todo_TeamReview" xml:space="preserve">
+    <value>Team review meeting at 3.00 PM</value>
+  </data>
+  <data name="Todo_PreparePresentation" xml:space="preserve">
+    <value>Prepare for presentation</value>
+  </data>
+  <data name="Todo_ResolveLowPriorityTickets" xml:space="preserve">
+    <value>Resolve all the low priority tickets due today</value>
+  </data>
+  <data name="Todo_ScheduleMeeting" xml:space="preserve">
+    <value>Schedule meeting for next week</value>
+  </data>
+  <data name="Todo_ProjectReview" xml:space="preserve">
+    <value>Project review</value>
+  </data>
+  <data name="Txt_Feb112018" xml:space="preserve">
+    <value>Feb 11 2018</value>
+  </data>
+  <data name="Txt_CreatingComponentPage" xml:space="preserve">
+    <value>Creating component page</value>
+  </data>
+  <data name="Txt_BuildJsApp" xml:space="preserve">
+    <value>build a js based app</value>
+  </data>
+  <data name="Txt_Feb072018" xml:space="preserve">
+    <value>Feb 7 2018</value>
+  </data>
+  <data name="Txt_MeetingWithAlisa" xml:space="preserve">
+    <value>Meeting with Alisa</value>
+  </data>
+  <data name="Txt_CallSarahGraves" xml:space="preserve">
+    <value>Call Sarah Graves</value>
+  </data>
+  <data name="Lbl_Friends" xml:space="preserve">
+    <value>Friends</value>
+  </data>
+  <data name="Btn_SeeAll" xml:space="preserve">
+    <value>See All</value>
+  </data>
+  <data name="User_ThomasDouglas" xml:space="preserve">
+    <value>Thomas Douglas</value>
+  </data>
+  <data name="Txt_Available" xml:space="preserve">
+    <value>Available</value>
+  </data>
+  <data name="Txt_19Min" xml:space="preserve">
+    <value>19 min</value>
+  </data>
+  <data name="Txt_ProjectManager" xml:space="preserve">
+    <value>Project Manager</value>
+  </data>
+  <data name="Menu_Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Menu_PageLayouts" xml:space="preserve">
+    <value>Page Layouts</value>
+  </data>
+  <data name="Menu_Apps" xml:space="preserve">
+    <value>Apps</value>
+  </data>
+  <data name="Menu_Widgets" xml:space="preserve">
+    <value>Widgets</value>
+  </data>
+  <data name="Sub_Boxed" xml:space="preserve">
+    <value>Boxed</value>
+  </data>
+  <data name="Sub_RTL" xml:space="preserve">
+    <value>RTL</value>
+  </data>
+  <data name="Sub_KanbanBoard" xml:space="preserve">
+    <value>kanban-board</value>
+  </data>
+  <data name="Sub_TodoList" xml:space="preserve">
+    <value>Todo List</value>
+  </data>
+  <data name="Sub_Tickets" xml:space="preserve">
+    <value>Tickets</value>
+  </data>
+  <data name="Sub_Chats" xml:space="preserve">
+    <value>Chats</value>
+  </data>
+  <data name="Lbl_Projects" xml:space="preserve">
+    <value>Projects</value>
+  </data>
+  <data name="Btn_AddProject" xml:space="preserve">
+    <value>+ Add a project</value>
+  </data>
+  <data name="Lbl_Categories" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="Txt_Free" xml:space="preserve">
+    <value>Free</value>
+  </data>
+  <data name="Txt_Pro" xml:space="preserve">
+    <value>Pro</value>
+  </data>
+  <data name="Lbl_FooterCopyright" xml:space="preserve">
+    <value>Copyright © 2021 &lt;a href='https://www.bootstrapdash.com/' target='_blank'&gt;BootstrapDash&lt;/a&gt;. All rights reserved.</value>
+  </data>
+  <data name="Lbl_HandCrafted" xml:space="preserve">
+    <value>Hand-crafted &amp; made with &lt;i class='mdi mdi-heart text-danger'&gt;&lt;/i&gt;</value>
+  </data>
+  <data name="Menu_SidebarLayouts" xml:space="preserve">
+    <value>Sidebar Layouts</value>
+  </data>
+  <data name="Menu_BasicUIElements" xml:space="preserve">
+    <value>Basic UI Elements</value>
+  </data>
+  <data name="Menu_AdvancedUI" xml:space="preserve">
+    <value>Advanced UI</value>
+  </data>
+  <data name="Menu_Popups" xml:space="preserve">
+    <value>Popups</value>
+  </data>
+  <data name="Menu_Notifications" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="Menu_Icons" xml:space="preserve">
+    <value>Icons</value>
+  </data>
+  <data name="Menu_Forms" xml:space="preserve">
+    <value>Forms</value>
+  </data>
+  <data name="Menu_TextEditors" xml:space="preserve">
+    <value>Text editors</value>
+  </data>
+  <data name="Menu_CodeEditors" xml:space="preserve">
+    <value>Code editors</value>
+  </data>
+  <data name="Menu_Charts" xml:space="preserve">
+    <value>Charts</value>
+  </data>
+  <data name="Menu_Tables" xml:space="preserve">
+    <value>Tables</value>
+  </data>
+  <data name="Menu_Maps" xml:space="preserve">
+    <value>Maps</value>
+  </data>
+  <data name="Menu_UserPages" xml:space="preserve">
+    <value>User Pages</value>
+  </data>
+  <data name="Menu_ErrorPages" xml:space="preserve">
+    <value>Error pages</value>
+  </data>
+  <data name="Menu_GeneralPages" xml:space="preserve">
+    <value>General Pages</value>
+  </data>
+  <data name="Menu_Ecommerce" xml:space="preserve">
+    <value>E-commerce</value>
+  </data>
+  <data name="Menu_Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Menu_Calendar" xml:space="preserve">
+    <value>Calendar</value>
+  </data>
+  <data name="Menu_Gallery" xml:space="preserve">
+    <value>Gallery</value>
+  </data>
+  <data name="Menu_Documentation" xml:space="preserve">
+    <value>Documentation</value>
+  </data>
+  <data name="Sub_CompactMenu" xml:space="preserve">
+    <value>Compact menu</value>
+  </data>
+  <data name="Sub_IconMenu" xml:space="preserve">
+    <value>Icon menu</value>
+  </data>
+  <data name="Sub_SidebarHidden" xml:space="preserve">
+    <value>Sidebar Hidden</value>
+  </data>
+  <data name="Sub_SidebarOverlay" xml:space="preserve">
+    <value>Sidebar Overlay</value>
+  </data>
+  <data name="Sub_SidebarFixed" xml:space="preserve">
+    <value>Sidebar Fixed</value>
+  </data>
+  <data name="Sub_Accordions" xml:space="preserve">
+    <value>Accordions</value>
+  </data>
+  <data name="Sub_Buttons" xml:space="preserve">
+    <value>Buttons</value>
+  </data>
+  <data name="Sub_Badges" xml:space="preserve">
+    <value>Badges</value>
+  </data>
+  <data name="Sub_Breadcrumbs" xml:space="preserve">
+    <value>Breadcrumbs</value>
+  </data>
+  <data name="Sub_Dropdowns" xml:space="preserve">
+    <value>Dropdowns</value>
+  </data>
+  <data name="Sub_Modals" xml:space="preserve">
+    <value>Modals</value>
+  </data>
+  <data name="Sub_ProgressBar" xml:space="preserve">
+    <value>Progress bar</value>
+  </data>
+  <data name="Sub_Pagination" xml:space="preserve">
+    <value>Pagination</value>
+  </data>
+  <data name="Sub_Tabs" xml:space="preserve">
+    <value>Tabs</value>
+  </data>
+  <data name="Sub_Typography" xml:space="preserve">
+    <value>Typography</value>
+  </data>
+  <data name="Sub_Tooltip" xml:space="preserve">
+    <value>Tooltip</value>
+  </data>
+  <data name="Sub_Dragula" xml:space="preserve">
+    <value>Dragula</value>
+  </data>
+  <data name="Sub_Clipboard" xml:space="preserve">
+    <value>Clipboard</value>
+  </data>
+  <data name="Sub_ContextMenu" xml:space="preserve">
+    <value>Context menu</value>
+  </data>
+  <data name="Sub_Slider" xml:space="preserve">
+    <value>Slider</value>
+  </data>
+  <data name="Sub_Colcade" xml:space="preserve">
+    <value>Colcade</value>
+  </data>
+  <data name="Sub_Carousel" xml:space="preserve">
+    <value>Carousel</value>
+  </data>
+  <data name="Sub_Loaders" xml:space="preserve">
+    <value>Loaders</value>
+  </data>
+  <data name="Sub_TreeView" xml:space="preserve">
+    <value>Tree View</value>
+  </data>
+  <data name="Sub_MaterialIcons" xml:space="preserve">
+    <value>Material</value>
+  </data>
+  <data name="Sub_FlagIcons" xml:space="preserve">
+    <value>Flag icons</value>
+  </data>
+  <data name="Sub_FontAwesome" xml:space="preserve">
+    <value>Font Awesome</value>
+  </data>
+  <data name="Sub_SimpleLineIcons" xml:space="preserve">
+    <value>Simple line icons</value>
+  </data>
+  <data name="Sub_ThemifyIcons" xml:space="preserve">
+    <value>Themify icons</value>
+  </data>
+  <data name="Sub_FormElements" xml:space="preserve">
+    <value>Form Elements</value>
+  </data>
+  <data name="Sub_AdvancedForms" xml:space="preserve">
+    <value>Advanced Forms</value>
+  </data>
+  <data name="Sub_Validation" xml:space="preserve">
+    <value>Validation</value>
+  </data>
+  <data name="Sub_Wizard" xml:space="preserve">
+    <value>Wizard</value>
+  </data>
+  <data name="Sub_ChartJs" xml:space="preserve">
+    <value>ChartJs</value>
+  </data>
+  <data name="Sub_Morris" xml:space="preserve">
+    <value>Morris</value>
+  </data>
+  <data name="Sub_Flot" xml:space="preserve">
+    <value>Flot</value>
+  </data>
+  <data name="Sub_GoogleCharts" xml:space="preserve">
+    <value>Google charts</value>
+  </data>
+  <data name="Sub_SparklineJs" xml:space="preserve">
+    <value>Sparkline js</value>
+  </data>
+  <data name="Sub_C3Charts" xml:space="preserve">
+    <value>C3 charts</value>
+  </data>
+  <data name="Sub_Chartist" xml:space="preserve">
+    <value>Chartist</value>
+  </data>
+  <data name="Sub_JustGage" xml:space="preserve">
+    <value>JustGage</value>
+  </data>
+  <data name="Sub_BasicTable" xml:space="preserve">
+    <value>Basic table</value>
+  </data>
+  <data name="Sub_DataTable" xml:space="preserve">
+    <value>Data table</value>
+  </data>
+  <data name="Sub_JsGrid" xml:space="preserve">
+    <value>Js-grid</value>
+  </data>
+  <data name="Sub_SortableTable" xml:space="preserve">
+    <value>Sortable table</value>
+  </data>
+  <data name="Sub_GoogleMaps" xml:space="preserve">
+    <value>Google Maps</value>
+  </data>
+  <data name="Sub_Mapael" xml:space="preserve">
+    <value>Mapael</value>
+  </data>
+  <data name="Sub_VectorMap" xml:space="preserve">
+    <value>Vector map</value>
+  </data>
+  <data name="Menu_Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Menu_Login2" xml:space="preserve">
+    <value>Login 2</value>
+  </data>
+  <data name="Menu_MultiLevelLogin" xml:space="preserve">
+    <value>Multi Level Login</value>
+  </data>
+  <data name="Menu_Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="Menu_Register2" xml:space="preserve">
+    <value>Register 2</value>
+  </data>
+  <data name="Menu_Lockscreen" xml:space="preserve">
+    <value>Lockscreen</value>
+  </data>
+  <data name="Sub_BlankPage" xml:space="preserve">
+    <value>Blank Page</value>
+  </data>
+  <data name="Sub_LandingPage" xml:space="preserve">
+    <value>Landing Page</value>
+  </data>
+  <data name="Sub_Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="Sub_Faq" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="Sub_Faq2" xml:space="preserve">
+    <value>FAQ 2</value>
+  </data>
+  <data name="Sub_NewsGrid" xml:space="preserve">
+    <value>News grid</value>
+  </data>
+  <data name="Sub_Timeline" xml:space="preserve">
+    <value>Timeline</value>
+  </data>
+  <data name="Sub_SearchResults" xml:space="preserve">
+    <value>Search Results</value>
+  </data>
+  <data name="Sub_Portfolio" xml:space="preserve">
+    <value>Portfolio</value>
+  </data>
+  <data name="Sub_UserListing" xml:space="preserve">
+    <value>User Listing</value>
+  </data>
+  <data name="Sub_EmailTemplates" xml:space="preserve">
+    <value>Email Templates</value>
+  </data>
+  <data name="Sub_Invoice" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="Sub_PricingTable" xml:space="preserve">
+    <value>Pricing Table</value>
+  </data>
+  <data name="Sub_ProductCatalogue" xml:space="preserve">
+    <value>Product Catalogue</value>
+  </data>
+  <data name="Sub_ProjectList" xml:space="preserve">
+    <value>Project List</value>
+  </data>
+  <data name="Sub_Orders" xml:space="preserve">
+    <value>Orders</value>
+  </data>
+  <data name="Alt_CircleImage" xml:space="preserve">
+    <value>circle image</value>
+  </data>
+  <data name="Alt_Image" xml:space="preserve">
+    <value>image</value>
+  </data>
+  <data name="WeeklySales" xml:space="preserve">
+    <value>Weekly Sales</value>
+  </data>
+  <data name="SalesAmount" xml:space="preserve">
+    <value>$ 15,0000</value>
+  </data>
+  <data name="IncreasedBy60" xml:space="preserve">
+    <value>Increased by 60%</value>
+  </data>
+  <data name="WeeklyOrders" xml:space="preserve">
+    <value>Weekly Orders</value>
+  </data>
+  <data name="OrdersCount" xml:space="preserve">
+    <value>45,6334</value>
+  </data>
+  <data name="DecreasedBy10" xml:space="preserve">
+    <value>Decreased by 10%</value>
+  </data>
+  <data name="VisitorsOnline" xml:space="preserve">
+    <value>Visitors Online</value>
+  </data>
+  <data name="VisitorsCount" xml:space="preserve">
+    <value>95,5741</value>
+  </data>
+  <data name="IncreasedBy5" xml:space="preserve">
+    <value>Increased by 5%</value>
+  </data>
+  <data name="VisitAndSalesStatistics" xml:space="preserve">
+    <value>Visit And Sales Statistics</value>
+  </data>
+  <data name="TrafficSources" xml:space="preserve">
+    <value>Traffic Sources</value>
+  </data>
+  <data name="RecentTickets" xml:space="preserve">
+    <value>Recent Tickets</value>
+  </data>
+  <data name="Th_Assignee" xml:space="preserve">
+    <value>Assignee</value>
+  </data>
+  <data name="Th_Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="Th_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Th_LastUpdate" xml:space="preserve">
+    <value>Last Update</value>
+  </data>
+  <data name="Th_TrackingId" xml:space="preserve">
+    <value>Tracking ID</value>
+  </data>
+  <data name="User_DavidGrey" xml:space="preserve">
+    <value>David Grey</value>
+  </data>
+  <data name="FundNotReceived" xml:space="preserve">
+    <value>Fund is not received</value>
+  </data>
+  <data name="Status_Done" xml:space="preserve">
+    <value>DONE</value>
+  </data>
+  <data name="Date_Dec52017" xml:space="preserve">
+    <value>Dec 5, 2017</value>
+  </data>
+  <data name="Tracking_WD12345" xml:space="preserve">
+    <value>WD-12345</value>
+  </data>
+  <data name="User_StellaJohnson" xml:space="preserve">
+    <value>Stella Johnson</value>
+  </data>
+  <data name="HighLoadingTime" xml:space="preserve">
+    <value>High loading time</value>
+  </data>
+  <data name="Status_Progress" xml:space="preserve">
+    <value>PROGRESS</value>
+  </data>
+  <data name="Date_Dec122017" xml:space="preserve">
+    <value>Dec 12, 2017</value>
+  </data>
+  <data name="Tracking_WD12346" xml:space="preserve">
+    <value>WD-12346</value>
+  </data>
+  <data name="User_MarinaMichel" xml:space="preserve">
+    <value>Marina Michel</value>
+  </data>
+  <data name="WebsiteDownOneWeek" xml:space="preserve">
+    <value>Website down for one week</value>
+  </data>
+  <data name="Status_OnHold" xml:space="preserve">
+    <value>ON HOLD</value>
+  </data>
+  <data name="Date_Dec162017" xml:space="preserve">
+    <value>Dec 16, 2017</value>
+  </data>
+  <data name="Tracking_WD12347" xml:space="preserve">
+    <value>WD-12347</value>
+  </data>
+  <data name="User_JohnDoe" xml:space="preserve">
+    <value>John Doe</value>
+  </data>
+  <data name="LoosingControlOnServer" xml:space="preserve">
+    <value>Losing control on server</value>
+  </data>
+  <data name="Status_Rejected" xml:space="preserve">
+    <value>REJECTED</value>
+  </data>
+  <data name="Date_Dec32017" xml:space="preserve">
+    <value>Dec 3, 2017</value>
+  </data>
+  <data name="Tracking_WD12348" xml:space="preserve">
+    <value>WD-12348</value>
+  </data>
+  <data name="RecentUpdates" xml:space="preserve">
+    <value>Recent Updates</value>
+  </data>
+  <data name="User_JackMenqu" xml:space="preserve">
+    <value>jack Menqu</value>
+  </data>
+  <data name="Date_Oct032018" xml:space="preserve">
+    <value>October 3rd, 2018</value>
+  </data>
+  <data name="Project_SchoolWebsite_Title" xml:space="preserve">
+    <value>School Website - Authentication Module.</value>
+  </data>
+  <data name="Project_SchoolWebsite_Description" xml:space="preserve">
+    <value>It is a long established fact that a reader will be distracted by the readable content of a page.</value>
+  </data>
+  <data name="ProjectStatus" xml:space="preserve">
+    <value>Project Status</value>
+  </data>
+  <data name="Th_Number" xml:space="preserve">
+    <value>#</value>
+  </data>
+  <data name="Th_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Th_DueDate" xml:space="preserve">
+    <value>Due Date</value>
+  </data>
+  <data name="Th_Progress" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="ProjectName_HermanBeck" xml:space="preserve">
+    <value>Herman Beck</value>
+  </data>
+  <data name="Date_May152015" xml:space="preserve">
+    <value>May 15, 2015</value>
+  </data>
+  <data name="ProjectName_MesssyAdam" xml:space="preserve">
+    <value>Messsy Adam</value>
+  </data>
+  <data name="Date_Jul012015" xml:space="preserve">
+    <value>Jul 01, 2015</value>
+  </data>
+  <data name="ProjectName_JohnRichards" xml:space="preserve">
+    <value>John Richards</value>
+  </data>
+  <data name="Date_Apr122015" xml:space="preserve">
+    <value>Apr 12, 2015</value>
+  </data>
+  <data name="ProjectName_PeterMeggik" xml:space="preserve">
+    <value>Peter Meggik</value>
+  </data>
+  <data name="ProjectName_Edward" xml:space="preserve">
+    <value>Edward</value>
+  </data>
+  <data name="Date_May032015" xml:space="preserve">
+    <value>May 03, 2015</value>
+  </data>
+  <data name="ProjectName_Ronald" xml:space="preserve">
+    <value>Ronald</value>
+  </data>
+  <data name="Date_Jun052015" xml:space="preserve">
+    <value>Jun 05, 2015</value>
+  </data>
+  <data name="TodoHeading" xml:space="preserve">
+    <value>Todo</value>
+  </data>
+  <data name="Todo_MeetingWithAlisa" xml:space="preserve">
+    <value>Meeting with Alisa</value>
+  </data>
+  <data name="Todo_CallJohn" xml:space="preserve">
+    <value>Call John</value>
+  </data>
+  <data name="Todo_CreateInvoice" xml:space="preserve">
+    <value>Create invoice</value>
+  </data>
+  <data name="Todo_PrintStatements" xml:space="preserve">
+    <value>Print Statements</value>
+  </data>
+  <data name="Todo_PrepareForPresentation" xml:space="preserve">
+    <value>Prepare for presentation</value>
+  </data>
+  <data name="Todo_PickUpKids" xml:space="preserve">
+    <value>Pick up kids from school</value>
+  </data>
+  <data name="Page_Overview" xml:space="preserve">
+    <value>Overview</value>
+  </data>
+  <data name="Tb_ShippingTypes" xml:space="preserve">
+    <value>Shipping Types</value>
+  </data>
+  <data name="Tb_ShippingType" xml:space="preserve">
+    <value>Shipping Type</value>
+  </data>
+  <data name="Th_ShippingFactor" xml:space="preserve">
+    <value>Shipping Factor</value>
+  </data>
+  <data name="Th_Actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
 </root>

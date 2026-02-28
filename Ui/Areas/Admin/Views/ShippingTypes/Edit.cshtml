@@ -1,0 +1,38 @@
+﻿@model TbShippingTypeDTO
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">@ResShippingTypes.FormTitle</h4>
+            <p class="card-description">@ResShippingTypes.FormDescription</p>
+            <form class="forms-sample" asp-controller="ShippingTypes" asp-action="Save" method="post">
+
+                <div class="form-group">
+                    <label for="ShippingTypeAname">@ResShippingTypes.ShippingTypeAname</label>
+                    <input type="text" class="form-control" id="ShippingTypeAname"
+                           placeholder="@ResShippingTypes.ShippingTypeAnamePlaceholder"
+                           name="ShippingTypeAname" asp-for="ShippingTypeAname"
+                           asp-route-id="@Model.ShippingTypeAname">
+                </div>
+
+                <div class="form-group">
+                    <label for="ShippingTypeEname">@ResShippingTypes.ShippingTypeEname</label>
+                    <input type="text" class="form-control" id="ShippingTypeEname"
+                           placeholder="@ResShippingTypes.ShippingTypeEnamePlaceholder"
+                           name="ShippingTypeEname" asp-for="ShippingTypeEname"
+                           asp-route-id="@Model.ShippingTypeEname">
+                </div>
+
+                <div class="form-group">
+                    <label for="ShippingFactor">@ResShippingTypes.ShippingFactor</label>
+                    <input type="number" step="0.01" class="form-control" id="ShippingFactor"
+                           placeholder="@ResShippingTypes.ShippingFactorPlaceholder"
+                           name="ShippingFactor" asp-for="ShippingFactor" asp-route-id="@Model.ShippingFactor">
+                </div>
+
+                <button type="submit" class="btn btn-gradient-primary me-2">@ResShippingTypes.SubmitButton</button>
+                <a asp-action="Index" class="btn btn-light">@ResShippingTypes.CancelButton</a>
+            </form>
+        </div>
+    </div>
+</div>

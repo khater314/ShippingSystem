@@ -26,7 +26,7 @@
 </head>
 <body>
     <div class="container-scroller">
-        <div class="row p-0 m-0 proBanner" id="proBanner">
+        @* <div class="row p-0 m-0 proBanner" id="proBanner">
             <div class="col-md-12 p-0 m-0">
                 <div class="card-body card-body-padding d-flex align-items-center justify-content-between">
                     <div class="ps-lg-3">
@@ -43,7 +43,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> *@
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
@@ -456,295 +456,15 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="~/admin/home/index">
                             <span class="menu-title">@ResShared.Menu_Dashboard</span>
                             <i class="mdi mdi-home menu-icon"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#page-layouts" aria-expanded="false" aria-controls="page-layouts">
-                            <span class="menu-title">@ResShared.Menu_PageLayouts</span>
-                            <i class="menu-arrow"></i>
-                            <i class="mdi mdi-apps menu-icon"></i>
-                        </a>
-                        <div class="collapse" id="page-layouts">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/layout/boxed-layout.html">@ResShared.Sub_Boxed</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/layout/rtl-layout.html">@ResShared.Sub_RTL</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#apps" aria-expanded="false" aria-controls="apps">
-                            <span class="menu-title">@ResShared.Menu_Apps</span>
-                            <i class="menu-arrow"></i>
-                            <i class="mdi mdi-cart-arrow-down menu-icon"></i>
-                        </a>
-                        <div class="collapse" id="apps">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/apps/kanban-board.html">@ResShared.Sub_KanbanBoard</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/apps/todo.html">@ResShared.Sub_TodoList</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/apps/tickets.html">@ResShared.Sub_Tickets</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/apps/chats.html">@ResShared.Sub_Chats</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/samples/widgets.html">
-                            <span class="menu-title">@ResShared.Menu_Widgets</span>
-                            <i class="mdi mdi-forum menu-icon"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#sidebar-layouts" aria-expanded="false" aria-controls="sidebar-layouts">
-                            <span class="menu-title">@ResShared.Menu_SidebarLayouts</span>
-                            <i class="menu-arrow"></i>
-                            <i class="mdi mdi-playlist-play menu-icon"></i>
-                        </a>
-                        <div class="collapse" id="sidebar-layouts">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/layout/compact-menu.html">@ResShared.Sub_CompactMenu</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/layout/sidebar-collapsed.html">@ResShared.Sub_IconMenu</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/layout/sidebar-hidden.html">@ResShared.Sub_SidebarHidden</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/layout/sidebar-hidden-overlay.html">@ResShared.Sub_SidebarOverlay</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/layout/sidebar-fixed.html">@ResShared.Sub_SidebarFixed</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                            <span class="menu-title">@ResShared.Menu_BasicUIElements</span>
-                            <i class="menu-arrow"></i>
-                            <i class="mdi mdi-crosshairs-gps menu-icon"></i>
-                        </a>
-                        <div class="collapse" id="ui-basic">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/accordions.html">@ResShared.Sub_Accordions</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">@ResShared.Sub_Buttons</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/badges.html">@ResShared.Sub_Badges</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/breadcrumbs.html">@ResShared.Sub_Breadcrumbs</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">@ResShared.Sub_Dropdowns</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/modals.html">@ResShared.Sub_Modals</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/progress.html">@ResShared.Sub_ProgressBar</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/pagination.html">@ResShared.Sub_Pagination</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/tabs.html">@ResShared.Sub_Tabs</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">@ResShared.Sub_Typography</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/tooltips.html">@ResShared.Sub_Tooltip</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#ui-advanced" aria-expanded="false" aria-controls="ui-advanced">
-                            <span class="menu-title">@ResShared.Menu_AdvancedUI</span>
-                            <i class="menu-arrow"></i>
-                            <i class="mdi mdi-cards-variant menu-icon"></i>
-                        </a>
-                        <div class="collapse" id="ui-advanced">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dragula.html">@ResShared.Sub_Dragula</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/clipboard.html">@ResShared.Sub_Clipboard</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/context-menu.html">@ResShared.Sub_ContextMenu</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/slider.html">@ResShared.Sub_Slider</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/colcade.html">@ResShared.Sub_Colcade</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/carousel.html">@ResShared.Sub_Carousel</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/loaders.html">@ResShared.Sub_Loaders</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/treeview.html">@ResShared.Sub_TreeView</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/ui-features/popups.html">
-                            <span class="menu-title">@ResShared.Menu_Popups</span>
-                            <i class="mdi mdi-forum menu-icon"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/ui-features/notifications.html">
-                            <span class="menu-title">@ResShared.Menu_Notifications</span>
-                            <i class="mdi mdi-bell-ring menu-icon"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
-                            <span class="menu-title">@ResShared.Menu_Icons</span>
-                            <i class="menu-arrow"></i>
-                            <i class="mdi mdi-contacts menu-icon"></i>
-                        </a>
-                        <div class="collapse" id="icons">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">@ResShared.Sub_MaterialIcons</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/icons/flag-icons.html">@ResShared.Sub_FlagIcons</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/icons/font-awesome.html">@ResShared.Sub_FontAwesome</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/icons/simple-line-icon.html">@ResShared.Sub_SimpleLineIcons</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/icons/themify.html">@ResShared.Sub_ThemifyIcons</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#forms" aria-expanded="false" aria-controls="forms">
-                            <span class="menu-title">@ResShared.Menu_Forms</span>
-                            <i class="menu-arrow"></i>
-                            <i class="mdi mdi-format-list-bulleted menu-icon"></i>
-                        </a>
-                        <div class="collapse" id="forms">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/forms/basic_elements.html">@ResShared.Sub_FormElements</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/forms/advanced_elements.html">@ResShared.Sub_AdvancedForms</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/forms/validation.html">@ResShared.Sub_Validation</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/forms/wizard.html">@ResShared.Sub_Wizard</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/forms/text_editor.html">
-                            <span class="menu-title">@ResShared.Menu_TextEditors</span>
-                            <i class="mdi mdi-file-document menu-icon"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/forms/code_editor.html">
-                            <span class="menu-title">@ResShared.Menu_CodeEditors</span>
-                            <i class="mdi mdi-code-not-equal-variant menu-icon"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
-                            <span class="menu-title">@ResShared.Menu_Charts</span>
-                            <i class="menu-arrow"></i>
-                            <i class="mdi mdi-chart-bar menu-icon"></i>
-                        </a>
-                        <div class="collapse" id="charts">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">@ResShared.Sub_ChartJs</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/charts/morris.html">@ResShared.Sub_Morris</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/charts/flot-chart.html">@ResShared.Sub_Flot</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/charts/google-charts.html">@ResShared.Sub_GoogleCharts</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/charts/sparkline.html">@ResShared.Sub_SparklineJs</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/charts/c3.html">@ResShared.Sub_C3Charts</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartist.html">@ResShared.Sub_Chartist</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/charts/justGage.html">@ResShared.Sub_JustGage</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
-                            <span class="menu-title">@ResShared.Menu_Tables</span>
-                            <i class="menu-arrow"></i>
-                            <i class="mdi mdi-table-large menu-icon"></i>
-                        </a>
-                        <div class="collapse" id="tables">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">@ResShared.Sub_BasicTable</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/tables/data-table.html">@ResShared.Sub_DataTable</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/tables/js-grid.html">@ResShared.Sub_JsGrid</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/tables/sortable-table.html">@ResShared.Sub_SortableTable</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#maps" aria-expanded="false" aria-controls="maps">
-                            <span class="menu-title">@ResShared.Menu_Maps</span>
-                            <i class="menu-arrow"></i>
-                            <i class="mdi mdi-map-marker-radius menu-icon"></i>
-                        </a>
-                        <div class="collapse" id="maps">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/maps/google-maps.html">@ResShared.Sub_GoogleMaps</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/maps/mapael.html">@ResShared.Sub_Mapael</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/maps/vector-map.html">@ResShared.Sub_VectorMap</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-                            <span class="menu-title">@ResShared.Menu_UserPages</span>
-                            <i class="menu-arrow"></i>
-                            <i class="mdi mdi-lock menu-icon"></i>
-                        </a>
-                        <div class="collapse" id="auth">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> @ResShared.Menu_Login </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/login-2.html"> @ResShared.Menu_Login2 </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/multi-level-login.html"> @ResShared.Menu_MultiLevelLogin </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> @ResShared.Menu_Register </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/register-2.html"> @ResShared.Menu_Register2 </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> @ResShared.Menu_Lockscreen </a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
-                            <span class="menu-title">@ResShared.Menu_ErrorPages</span>
-                            <i class="menu-arrow"></i>
-                            <i class="mdi mdi-security menu-icon"></i>
-                        </a>
-                        <div class="collapse" id="error">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
-                            <span class="menu-title">@ResShared.Menu_GeneralPages</span>
-                            <i class="menu-arrow"></i>
-                            <i class="mdi mdi-medical-bag menu-icon"></i>
-                        </a>
-                        <div class="collapse" id="general-pages">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> @ResShared.Sub_BlankPage </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/landing-page.html"> @ResShared.Sub_LandingPage </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/profile.html"> @ResShared.Sub_Profile </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/faq.html"> @ResShared.Sub_Faq </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/faq-2.html"> @ResShared.Sub_Faq2 </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/news-grid.html"> @ResShared.Sub_NewsGrid </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/timeline.html"> @ResShared.Sub_Timeline </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/search-results.html"> @ResShared.Sub_SearchResults </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/portfolio.html"> @ResShared.Sub_Portfolio </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/user-listing.html"> @ResShared.Sub_UserListing </a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#e-commerce" aria-expanded="false" aria-controls="e-commerce">
-                            <span class="menu-title">@ResShared.Menu_Ecommerce</span>
-                            <i class="menu-arrow"></i>
-                            <i class="mdi mdi-shopping menu-icon"></i>
-                        </a>
-                        <div class="collapse" id="e-commerce">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/email-template.html"> @ResShared.Sub_EmailTemplates </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/invoice.html"> @ResShared.Sub_Invoice </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/pricing-table.html"> @ResShared.Sub_PricingTable </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/product-catalogue.html"> @ResShared.Sub_ProductCatalogue </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/project-list.html"> @ResShared.Sub_ProjectList </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/orders.html"> @ResShared.Sub_Orders </a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/apps/email.html">
-                            <span class="menu-title">@ResShared.Menu_Email</span>
-                            <i class="mdi mdi-email menu-icon"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/apps/calendar.html">
-                            <span class="menu-title">@ResShared.Menu_Calendar</span>
-                            <i class="mdi mdi-calendar-today menu-icon"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/apps/gallery.html">
-                            <span class="menu-title">@ResShared.Menu_Gallery</span>
-                            <i class="mdi mdi-image-filter-frames menu-icon"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="http://www.bootstrapdash.com/demo/purple/jquery/documentation/documentation.html"  target="_blank">
-                            <span class="menu-title">@ResShared.Menu_Documentation</span>
-                            <i class="mdi mdi-file-document-box menu-icon"></i>
+                        <a class="nav-link" href="~/Admin/ShippingTypes/Index">
+                            <span class="menu-title">@ResShared.Tb_ShippingTypes</span>
+                            <i class="mdi mdi-home menu-icon"></i>
                         </a>
                     </li>
                     <li class="nav-item sidebar-actions">
@@ -768,7 +488,9 @@
             </nav>
             <!-- partial -->
             <div class="main-panel">
+                <div class="content-wrapper">
                 @RenderBody()
+                </div>
                 <!-- content-wrapper ends -->
                 <!-- partial:partials/_footer.html -->
                 <footer class="footer">

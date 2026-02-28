@@ -1,292 +1,810 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
-  <resheader name="version"><value>2.0</value></resheader>
-  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
-  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
 
-  <!-- Top / Banner -->
-  <data name="Lbl_AppTitle" xml:space="preserve"><value>لوحة الإدارة</value></data>
-  <data name="Txt_FreeSupport" xml:space="preserve"><value>دعم عملاء مجاني 24/7، تحديثات والمزيد مع هذا القالب!</value></data>
-  <data name="Btn_BuyNow" xml:space="preserve"><value>اشترِ الآن</value></data>
-  <data name="Btn_BannerClose" xml:space="preserve"><value>إغلاق</value></data>
-
-  <!-- Navbar -->
-  <data name="Plh_SearchProjects" xml:space="preserve"><value>ابحث في المشاريع</value></data>
-  <data name="Lbl_ProfileName" xml:space="preserve"><value>ديفيد جريماكس</value></data>
-  <data name="Lbl_ActivityLog" xml:space="preserve"><value>سجل النشاط</value></data>
-  <data name="Btn_SignOut" xml:space="preserve"><value>تسجيل الخروج</value></data>
-  <data name="Btn_Fullscreen" xml:space="preserve"><value>شاشة كاملة</value></data>
-
-  <!-- Messages -->
-  <data name="Lbl_Messages" xml:space="preserve"><value>الرسائل</value></data>
-  <data name="Msg_MarkSentMessage" xml:space="preserve"><value>مارك أرسل لك رسالة</value></data>
-  <data name="Msg_CreghSentMessage" xml:space="preserve"><value>كريغ أرسل لك رسالة</value></data>
-  <data name="Msg_ProfilePictureUpdated" xml:space="preserve"><value>تحديث صورة الملف الشخصي</value></data>
-  <data name="Txt_1MinuteAgo" xml:space="preserve"><value>منذ دقيقة</value></data>
-  <data name="Txt_15MinutesAgo" xml:space="preserve"><value>منذ 15 دقيقة</value></data>
-  <data name="Txt_18MinutesAgo" xml:space="preserve"><value>منذ 18 دقيقة</value></data>
-  <data name="Msg_NewMessages" xml:space="preserve"><value>{0} رسائل جديدة</value></data>
-
-  <!-- Notifications -->
-  <data name="Lbl_Notifications" xml:space="preserve"><value>الإشعارات</value></data>
-  <data name="Txt_EventToday" xml:space="preserve"><value>حدث اليوم</value></data>
-  <data name="Txt_ReminderEvent" xml:space="preserve"><value>تذكير: لديك حدث اليوم</value></data>
-  <data name="Lbl_Settings" xml:space="preserve"><value>الإعدادات</value></data>
-  <data name="Txt_UpdateDashboard" xml:space="preserve"><value>تحديث لوحة التحكم</value></data>
-  <data name="Txt_LaunchAdmin" xml:space="preserve"><value>تشغيل لوحة الإدارة</value></data>
-  <data name="Txt_NewAdminWow" xml:space="preserve"><value>إصدار جديد من لوحة الإدارة!</value></data>
-  <data name="Msg_SeeAllNotifications" xml:space="preserve"><value>عرض كل الإشعارات</value></data>
-
-  <!-- Language -->
-  <data name="Lbl_Languages" xml:space="preserve"><value>اللغات</value></data>
-  <data name="Lang_Arabic" xml:space="preserve"><value>العربية</value></data>
-  <data name="Lang_English" xml:space="preserve"><value>الإنجليزية</value></data>
-
-  <!-- Settings panel -->
-  <data name="Lbl_SidebarSkins" xml:space="preserve"><value>سمات الشريط الجانبي</value></data>
-  <data name="Txt_Light" xml:space="preserve"><value>فاتح</value></data>
-  <data name="Txt_Dark" xml:space="preserve"><value>داكن</value></data>
-  <data name="Lbl_HeaderSkins" xml:space="preserve"><value>سمات الرأس</value></data>
-  <data name="Lbl_TemplateDemos" xml:space="preserve"><value>نماذج القالب</value></data>
-  <data name="Plh_DemoImage" xml:space="preserve"><value>صورة العرض</value></data>
-
-  <!-- Right sidebar tabs -->
-  <data name="Lbl_TodoTab" xml:space="preserve"><value>قائمة المهام</value></data>
-  <data name="Lbl_ChatsTab" xml:space="preserve"><value>الدردشات</value></data>
-  <data name="Plh_AddTodo" xml:space="preserve"><value>ما الذي تحتاج إلى فعله اليوم؟</value></data>
-  <data name="Btn_Add" xml:space="preserve"><value>إضافة</value></data>
-
-  <!-- Todo items -->
-  <data name="Todo_TeamReview" xml:space="preserve"><value>اجتماع مراجعة الفريق الساعة 3:00 م</value></data>
-  <data name="Todo_PreparePresentation" xml:space="preserve"><value>التحضير للعرض</value></data>
-  <data name="Todo_ResolveLowPriorityTickets" xml:space="preserve"><value>حل التذاكر منخفضة الأولوية</value></data>
-  <data name="Todo_ScheduleMeeting" xml:space="preserve"><value>جدولة اجتماع للأسبوع القادم</value></data>
-  <data name="Todo_ProjectReview" xml:space="preserve"><value>مراجعة المشروع</value></data>
-
-  <!-- Events -->
-  <data name="Txt_Feb112018" xml:space="preserve"><value>11 فبراير 2018</value></data>
-  <data name="Txt_CreatingComponentPage" xml:space="preserve"><value>إنشاء صفحة المكونات</value></data>
-  <data name="Txt_BuildJsApp" xml:space="preserve"><value>بناء تطبيق يعتمد على جافاسكربت</value></data>
-  <data name="Txt_Feb072018" xml:space="preserve"><value>7 فبراير 2018</value></data>
-  <data name="Txt_MeetingWithAlisa" xml:space="preserve"><value>اجتماع مع أليسا</value></data>
-  <data name="Txt_CallSarahGraves" xml:space="preserve"><value>الاتصال بسارة غريفز</value></data>
-
-  <!-- Friends / chat -->
-  <data name="Lbl_Friends" xml:space="preserve"><value>الأصدقاء</value></data>
-  <data name="Btn_SeeAll" xml:space="preserve"><value>عرض الكل</value></data>
-  <data name="User_ThomasDouglas" xml:space="preserve"><value>توماس دوغلاس</value></data>
-  <data name="Txt_Available" xml:space="preserve"><value>متاح</value></data>
-  <data name="Txt_19Min" xml:space="preserve"><value>19 دقيقة</value></data>
-
-  <!-- Sidebar top -->
-  <data name="Txt_ProjectManager" xml:space="preserve"><value>مدير المشروع</value></data>
-
-  <!-- Sidebar menu (top-level) -->
-  <data name="Menu_Dashboard" xml:space="preserve"><value>لوحة القيادة</value></data>
-  <data name="Menu_PageLayouts" xml:space="preserve"><value>تخطيطات الصفحة</value></data>
-  <data name="Menu_Apps" xml:space="preserve"><value>التطبيقات</value></data>
-  <data name="Menu_Widgets" xml:space="preserve"><value>ودجات</value></data>
-  <data name="Menu_SidebarLayouts" xml:space="preserve"><value>تخطيطات الشريط الجانبي</value></data>
-  <data name="Menu_BasicUIElements" xml:space="preserve"><value>عناصر واجهة المستخدم الأساسية</value></data>
-  <data name="Menu_AdvancedUI" xml:space="preserve"><value>واجهة المستخدم المتقدمة</value></data>
-  <data name="Menu_Popups" xml:space="preserve"><value>نوافذ منبثقة</value></data>
-  <data name="Menu_Notifications" xml:space="preserve"><value>الإشعارات</value></data>
-  <data name="Menu_Icons" xml:space="preserve"><value>الرموز</value></data>
-  <data name="Menu_Forms" xml:space="preserve"><value>النماذج</value></data>
-  <data name="Menu_TextEditors" xml:space="preserve"><value>محررات النص</value></data>
-  <data name="Menu_CodeEditors" xml:space="preserve"><value>محررات الشفرة</value></data>
-  <data name="Menu_Charts" xml:space="preserve"><value>الرسوم البيانية</value></data>
-  <data name="Menu_Tables" xml:space="preserve"><value>الجداول</value></data>
-  <data name="Menu_Maps" xml:space="preserve"><value>الخرائط</value></data>
-  <data name="Menu_UserPages" xml:space="preserve"><value>صفحات المستخدم</value></data>
-  <data name="Menu_ErrorPages" xml:space="preserve"><value>صفحات الخطأ</value></data>
-  <data name="Menu_GeneralPages" xml:space="preserve"><value>الصفحات العامة</value></data>
-  <data name="Menu_Ecommerce" xml:space="preserve"><value>التجارة الإلكترونية</value></data>
-  <data name="Menu_Email" xml:space="preserve"><value>البريد الإلكتروني</value></data>
-  <data name="Menu_Calendar" xml:space="preserve"><value>التقويم</value></data>
-  <data name="Menu_Gallery" xml:space="preserve"><value>المعرض</value></data>
-  <data name="Menu_Documentation" xml:space="preserve"><value>التوثيق</value></data>
-
-  <!-- Sidebar menu (sub-items) -->
-  <data name="Sub_CompactMenu" xml:space="preserve"><value>قائمة مدمجة</value></data>
-  <data name="Sub_IconMenu" xml:space="preserve"><value>قائمة أيقونات</value></data>
-  <data name="Sub_SidebarHidden" xml:space="preserve"><value>إخفاء الشريط الجانبي</value></data>
-  <data name="Sub_SidebarOverlay" xml:space="preserve"><value>تراكب الشريط الجانبي</value></data>
-  <data name="Sub_SidebarFixed" xml:space="preserve"><value>الشريط الجانبي ثابت</value></data>
-
-  <data name="Sub_Boxed" xml:space="preserve"><value>مغلف</value></data>
-  <data name="Sub_RTL" xml:space="preserve"><value>من اليمين لليسار</value></data>
-
-  <data name="Sub_Accordions" xml:space="preserve"><value>أكورديون</value></data>
-  <data name="Sub_Buttons" xml:space="preserve"><value>أزرار</value></data>
-  <data name="Sub_Badges" xml:space="preserve"><value>شارات</value></data>
-  <data name="Sub_Breadcrumbs" xml:space="preserve"><value>مسار التنقل</value></data>
-  <data name="Sub_Dropdowns" xml:space="preserve"><value>قوائم منسدلة</value></data>
-  <data name="Sub_Modals" xml:space="preserve"><value>نوافذ منبثقة</value></data>
-  <data name="Sub_ProgressBar" xml:space="preserve"><value>شريط التقدم</value></data>
-  <data name="Sub_Pagination" xml:space="preserve"><value>ترقيم الصفحات</value></data>
-  <data name="Sub_Tabs" xml:space="preserve"><value>تبويبات</value></data>
-  <data name="Sub_Typography" xml:space="preserve"><value>طباعة</value></data>
-  <data name="Sub_Tooltip" xml:space="preserve"><value>تلميح</value></data>
-
-  <data name="Sub_Dragula" xml:space="preserve"><value>سحب وإفلات</value></data>
-  <data name="Sub_Clipboard" xml:space="preserve"><value>الحافظة</value></data>
-  <data name="Sub_ContextMenu" xml:space="preserve"><value>قائمة السياق</value></data>
-  <data name="Sub_Slider" xml:space="preserve"><value>شريط التمرير</value></data>
-  <data name="Sub_Colcade" xml:space="preserve"><value>Colcade</value></data>
-  <data name="Sub_Carousel" xml:space="preserve"><value>عارض الصور</value></data>
-  <data name="Sub_Loaders" xml:space="preserve"><value>أدوات التحميل</value></data>
-  <data name="Sub_TreeView" xml:space="preserve"><value>عرض شجري</value></data>
-
-  <data name="Sub_MaterialIcons" xml:space="preserve"><value>ماتيريال</value></data>
-  <data name="Sub_FlagIcons" xml:space="preserve"><value>أعلام</value></data>
-  <data name="Sub_FontAwesome" xml:space="preserve"><value>فونت أوسم</value></data>
-  <data name="Sub_SimpleLineIcons" xml:space="preserve"><value>أيقونات بسيطة</value></data>
-  <data name="Sub_ThemifyIcons" xml:space="preserve"><value>Themify</value></data>
-
-  <data name="Sub_FormElements" xml:space="preserve"><value>عناصر النموذج</value></data>
-  <data name="Sub_AdvancedForms" xml:space="preserve"><value>نماذج متقدمة</value></data>
-  <data name="Sub_Validation" xml:space="preserve"><value>التحقق</value></data>
-  <data name="Sub_Wizard" xml:space="preserve"><value>المعالج</value></data>
-
-  <data name="Sub_ChartJs" xml:space="preserve"><value>ChartJs</value></data>
-  <data name="Sub_Morris" xml:space="preserve"><value>Morris</value></data>
-  <data name="Sub_Flot" xml:space="preserve"><value>Flot</value></data>
-  <data name="Sub_GoogleCharts" xml:space="preserve"><value>رسوم جوجل</value></data>
-  <data name="Sub_SparklineJs" xml:space="preserve"><value>Sparkline js</value></data>
-  <data name="Sub_C3Charts" xml:space="preserve"><value>C3 charts</value></data>
-  <data name="Sub_Chartist" xml:space="preserve"><value>Chartist</value></data>
-  <data name="Sub_JustGage" xml:space="preserve"><value>JustGage</value></data>
-
-  <data name="Sub_BasicTable" xml:space="preserve"><value>جدول أساسي</value></data>
-  <data name="Sub_DataTable" xml:space="preserve"><value>جدول بيانات</value></data>
-  <data name="Sub_JsGrid" xml:space="preserve"><value>Js-grid</value></data>
-  <data name="Sub_SortableTable" xml:space="preserve"><value>جدول قابل للفرز</value></data>
-
-  <data name="Sub_GoogleMaps" xml:space="preserve"><value>خرائط جوجل</value></data>
-  <data name="Sub_Mapael" xml:space="preserve"><value>Mapael</value></data>
-  <data name="Sub_VectorMap" xml:space="preserve"><value>خريطة متجهية</value></data>
-
-  <!-- User pages / auth -->
-  <data name="Menu_Login" xml:space="preserve"><value>تسجيل الدخول</value></data>
-  <data name="Menu_Login2" xml:space="preserve"><value>تسجيل الدخول 2</value></data>
-  <data name="Menu_MultiLevelLogin" xml:space="preserve"><value>تسجيل متعدد المستويات</value></data>
-  <data name="Menu_Register" xml:space="preserve"><value>تسجيل</value></data>
-  <data name="Menu_Register2" xml:space="preserve"><value>تسجيل 2</value></data>
-  <data name="Menu_Lockscreen" xml:space="preserve"><value>قفل الشاشة</value></data>
-
-  <!-- General pages -->
-  <data name="Sub_BlankPage" xml:space="preserve"><value>صفحة فارغة</value></data>
-  <data name="Sub_LandingPage" xml:space="preserve"><value>صفحة هبوط</value></data>
-  <data name="Sub_Profile" xml:space="preserve"><value>الملف الشخصي</value></data>
-  <data name="Sub_Faq" xml:space="preserve"><value>الأسئلة الشائعة</value></data>
-  <data name="Sub_Faq2" xml:space="preserve"><value>الأسئلة الشائعة 2</value></data>
-  <data name="Sub_NewsGrid" xml:space="preserve"><value>شبكة الأخبار</value></data>
-  <data name="Sub_Timeline" xml:space="preserve"><value>الجدول الزمني</value></data>
-  <data name="Sub_SearchResults" xml:space="preserve"><value>نتائج البحث</value></data>
-  <data name="Sub_Portfolio" xml:space="preserve"><value>المعرض الشخصي</value></data>
-  <data name="Sub_UserListing" xml:space="preserve"><value>قائمة المستخدمين</value></data>
-
-  <!-- E-commerce -->
-  <data name="Sub_EmailTemplates" xml:space="preserve"><value>قوالب البريد</value></data>
-  <data name="Sub_Invoice" xml:space="preserve"><value>فاتورة</value></data>
-  <data name="Sub_PricingTable" xml:space="preserve"><value>جدول الأسعار</value></data>
-  <data name="Sub_ProductCatalogue" xml:space="preserve"><value>فهرس المنتجات</value></data>
-  <data name="Sub_ProjectList" xml:space="preserve"><value>قائمة المشاريع</value></data>
-  <data name="Sub_Orders" xml:space="preserve"><value>الطلبات</value></data>
-
-  <!-- Sidebar actions -->
-  <data name="Lbl_Projects" xml:space="preserve"><value>المشاريع</value></data>
-  <data name="Btn_AddProject" xml:space="preserve"><value>+ إضافة مشروع</value></data>
-  <data name="Lbl_Categories" xml:space="preserve"><value>الفئات</value></data>
-  <data name="Txt_Free" xml:space="preserve"><value>مجاني</value></data>
-  <data name="Txt_Pro" xml:space="preserve"><value>احترافي</value></data>
-
-  <!-- Footer -->
-  <data name="Lbl_FooterCopyright" xml:space="preserve"><value>حقوق النشر © 2021 &lt;a href='https://www.bootstrapdash.com/' target='_blank'&gt;BootstrapDash&lt;/a&gt;. كل الحقوق محفوظة.</value></data>
-  <data name="Lbl_HandCrafted" xml:space="preserve"><value>مصنوع بحـب &lt;i class='mdi mdi-heart text-danger'&gt;&lt;/i&gt;</value></data>
-
-  <!-- Arabic translations for appended keys (append only) -->
-  <data name="Alt_CircleImage" xml:space="preserve"><value>صورة الدائرة</value></data>
-  <data name="Alt_Image" xml:space="preserve"><value>صورة</value></data>
-
-  <data name="WeeklySales" xml:space="preserve"><value>المبيعات الأسبوعية</value></data>
-  <data name="SalesAmount" xml:space="preserve"><value>$ 15,0000</value></data>
-  <data name="IncreasedBy60" xml:space="preserve"><value>زيادة بنسبة 60%</value></data>
-
-  <data name="WeeklyOrders" xml:space="preserve"><value>الطلبات الأسبوعية</value></data>
-  <data name="OrdersCount" xml:space="preserve"><value>45,6334</value></data>
-  <data name="DecreasedBy10" xml:space="preserve"><value>انخفاض بنسبة 10%</value></data>
-
-  <data name="VisitorsOnline" xml:space="preserve"><value>الزوار المتصلون</value></data>
-  <data name="VisitorsCount" xml:space="preserve"><value>95,5741</value></data>
-  <data name="IncreasedBy5" xml:space="preserve"><value>زيادة بنسبة 5%</value></data>
-
-  <data name="VisitAndSalesStatistics" xml:space="preserve"><value>إحصائيات الزيارات والمبيعات</value></data>
-  <data name="TrafficSources" xml:space="preserve"><value>مصادر المرور</value></data>
-
-  <data name="RecentTickets" xml:space="preserve"><value>التذاكر الأخيرة</value></data>
-  <data name="Th_Assignee" xml:space="preserve"><value>المسؤول</value></data>
-  <data name="Th_Subject" xml:space="preserve"><value>الموضوع</value></data>
-  <data name="Th_Status" xml:space="preserve"><value>الحالة</value></data>
-  <data name="Th_LastUpdate" xml:space="preserve"><value>آخر تحديث</value></data>
-  <data name="Th_TrackingId" xml:space="preserve"><value>معرّف التتبع</value></data>
-
-  <data name="User_DavidGrey" xml:space="preserve"><value>ديفيد غراي</value></data>
-  <data name="FundNotReceived" xml:space="preserve"><value>لم يتم استلام الأموال</value></data>
-  <data name="Status_Done" xml:space="preserve"><value>مكتمل</value></data>
-  <data name="Date_Dec52017" xml:space="preserve"><value>5 ديسمبر 2017</value></data>
-  <data name="Tracking_WD12345" xml:space="preserve"><value>WD-12345</value></data>
-
-  <data name="User_StellaJohnson" xml:space="preserve"><value>ستيلا جونسون</value></data>
-  <data name="HighLoadingTime" xml:space="preserve"><value>زمن تحميل مرتفع</value></data>
-  <data name="Status_Progress" xml:space="preserve"><value>قيد التنفيذ</value></data>
-  <data name="Date_Dec122017" xml:space="preserve"><value>12 ديسمبر 2017</value></data>
-  <data name="Tracking_WD12346" xml:space="preserve"><value>WD-12346</value></data>
-
-  <data name="User_MarinaMichel" xml:space="preserve"><value>مارينا ميشيل</value></data>
-  <data name="WebsiteDownOneWeek" xml:space="preserve"><value>تعطلت الموقع لمدة أسبوع</value></data>
-  <data name="Status_OnHold" xml:space="preserve"><value>قيد الانتظار</value></data>
-  <data name="Date_Dec162017" xml:space="preserve"><value>16 ديسمبر 2017</value></data>
-  <data name="Tracking_WD12347" xml:space="preserve"><value>WD-12347</value></data>
-
-  <data name="User_JohnDoe" xml:space="preserve"><value>جون دو</value></data>
-  <data name="LoosingControlOnServer" xml:space="preserve"><value>فقدان السيطرة على الخادم</value></data>
-  <data name="Status_Rejected" xml:space="preserve"><value>مرفوض</value></data>
-  <data name="Date_Dec32017" xml:space="preserve"><value>3 ديسمبر 2017</value></data>
-  <data name="Tracking_WD12348" xml:space="preserve"><value>WD-12348</value></data>
-
-  <data name="RecentUpdates" xml:space="preserve"><value>التحديثات الأخيرة</value></data>
-  <data name="User_JackMenqu" xml:space="preserve"><value>جاك منق</value></data>
-  <data name="Date_Oct032018" xml:space="preserve"><value>3 أكتوبر 2018</value></data>
-
-  <data name="Project_SchoolWebsite_Title" xml:space="preserve"><value>موقع المدرسة - وحدة المصادقة.</value></data>
-  <data name="Project_SchoolWebsite_Description" xml:space="preserve"><value>هذه حقيقة معروفة أن القارئ سيتشتت بسبب المحتوى المقروء في الصفحة.</value></data>
-
-  <data name="ProjectStatus" xml:space="preserve"><value>حالة المشروع</value></data>
-  <data name="Th_Number" xml:space="preserve"><value>#</value></data>
-  <data name="Th_Name" xml:space="preserve"><value>الاسم</value></data>
-  <data name="Th_DueDate" xml:space="preserve"><value>تاريخ الاستحقاق</value></data>
-  <data name="Th_Progress" xml:space="preserve"><value>التقدم</value></data>
-
-  <data name="ProjectName_HermanBeck" xml:space="preserve"><value>هيرمان بيك</value></data>
-  <data name="Date_May152015" xml:space="preserve"><value>15 مايو 2015</value></data>
-  <data name="ProjectName_MesssyAdam" xml:space="preserve"><value>ميسّي آدم</value></data>
-  <data name="Date_Jul012015" xml:space="preserve"><value>01 يوليو 2015</value></data>
-  <data name="ProjectName_JohnRichards" xml:space="preserve"><value>جون ريتشاردز</value></data>
-  <data name="Date_Apr122015" xml:space="preserve"><value>12 أبريل 2015</value></data>
-  <data name="ProjectName_PeterMeggik" xml:space="preserve"><value>بيتر ميجيك</value></data>
-  <data name="ProjectName_Edward" xml:space="preserve"><value>إدوارد</value></data>
-  <data name="Date_May032015" xml:space="preserve"><value>03 مايو 2015</value></data>
-  <data name="ProjectName_Ronald" xml:space="preserve"><value>رونالد</value></data>
-  <data name="Date_Jun052015" xml:space="preserve"><value>05 يونيو 2015</value></data>
-
-  <data name="TodoHeading" xml:space="preserve"><value>قائمة المهام</value></data>
-  <data name="Todo_MeetingWithAlisa" xml:space="preserve"><value>اجتماع مع أليسا</value></data>
-  <data name="Todo_CallJohn" xml:space="preserve"><value>الاتصال بجون</value></data>
-  <data name="Todo_CreateInvoice" xml:space="preserve"><value>إنشاء فاتورة</value></data>
-  <data name="Todo_PrintStatements" xml:space="preserve"><value>طباعة الكشوفات</value></data>
-  <data name="Todo_PrepareForPresentation" xml:space="preserve"><value>التحضير للعرض</value></data>
-  <data name="Todo_PickUpKids" xml:space="preserve"><value>إحضار الأطفال من المدرسة</value></data>
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Btn_Add" xml:space="preserve">
+    <value>إضافة</value>
+  </data>
+  <data name="Lbl_AppTitle" xml:space="preserve">
+    <value>لوحة الإدارة</value>
+  </data>
+  <data name="Txt_FreeSupport" xml:space="preserve">
+    <value>دعم عملاء مجاني 24/7، تحديثات والمزيد مع هذا القالب!</value>
+  </data>
+  <data name="Btn_BuyNow" xml:space="preserve">
+    <value>اشترِ الآن</value>
+  </data>
+  <data name="Btn_BannerClose" xml:space="preserve">
+    <value>إغلاق</value>
+  </data>
+  <data name="Plh_SearchProjects" xml:space="preserve">
+    <value>ابحث في المشاريع</value>
+  </data>
+  <data name="Lbl_ProfileName" xml:space="preserve">
+    <value>ديفيد جريماكس</value>
+  </data>
+  <data name="Lbl_ActivityLog" xml:space="preserve">
+    <value>سجل النشاط</value>
+  </data>
+  <data name="Btn_SignOut" xml:space="preserve">
+    <value>تسجيل الخروج</value>
+  </data>
+  <data name="Btn_Fullscreen" xml:space="preserve">
+    <value>شاشة كاملة</value>
+  </data>
+  <data name="Lbl_Messages" xml:space="preserve">
+    <value>الرسائل</value>
+  </data>
+  <data name="Msg_MarkSentMessage" xml:space="preserve">
+    <value>مارك أرسل لك رسالة</value>
+  </data>
+  <data name="Msg_CreghSentMessage" xml:space="preserve">
+    <value>كريغ أرسل لك رسالة</value>
+  </data>
+  <data name="Msg_ProfilePictureUpdated" xml:space="preserve">
+    <value>تحديث صورة الملف الشخصي</value>
+  </data>
+  <data name="Txt_1MinuteAgo" xml:space="preserve">
+    <value>منذ دقيقة</value>
+  </data>
+  <data name="Txt_15MinutesAgo" xml:space="preserve">
+    <value>منذ 15 دقيقة</value>
+  </data>
+  <data name="Txt_18MinutesAgo" xml:space="preserve">
+    <value>منذ 18 دقيقة</value>
+  </data>
+  <data name="Msg_NewMessages" xml:space="preserve">
+    <value>{0} رسائل جديدة</value>
+  </data>
+  <data name="Lbl_Notifications" xml:space="preserve">
+    <value>الإشعارات</value>
+  </data>
+  <data name="Txt_EventToday" xml:space="preserve">
+    <value>حدث اليوم</value>
+  </data>
+  <data name="Txt_ReminderEvent" xml:space="preserve">
+    <value>تذكير: لديك حدث اليوم</value>
+  </data>
+  <data name="Lbl_Settings" xml:space="preserve">
+    <value>الإعدادات</value>
+  </data>
+  <data name="Txt_UpdateDashboard" xml:space="preserve">
+    <value>تحديث لوحة التحكم</value>
+  </data>
+  <data name="Txt_LaunchAdmin" xml:space="preserve">
+    <value>تشغيل لوحة الإدارة</value>
+  </data>
+  <data name="Txt_NewAdminWow" xml:space="preserve">
+    <value>إصدار جديد من لوحة الإدارة!</value>
+  </data>
+  <data name="Msg_SeeAllNotifications" xml:space="preserve">
+    <value>عرض كل الإشعارات</value>
+  </data>
+  <data name="Lbl_Languages" xml:space="preserve">
+    <value>اللغات</value>
+  </data>
+  <data name="Lang_Arabic" xml:space="preserve">
+    <value>العربية</value>
+  </data>
+  <data name="Lang_English" xml:space="preserve">
+    <value>الإنجليزية</value>
+  </data>
+  <data name="Lbl_SidebarSkins" xml:space="preserve">
+    <value>سمات الشريط الجانبي</value>
+  </data>
+  <data name="Txt_Light" xml:space="preserve">
+    <value>فاتح</value>
+  </data>
+  <data name="Txt_Dark" xml:space="preserve">
+    <value>داكن</value>
+  </data>
+  <data name="Lbl_HeaderSkins" xml:space="preserve">
+    <value>سمات الرأس</value>
+  </data>
+  <data name="Lbl_TemplateDemos" xml:space="preserve">
+    <value>نماذج القالب</value>
+  </data>
+  <data name="Plh_DemoImage" xml:space="preserve">
+    <value>صورة العرض</value>
+  </data>
+  <data name="Lbl_TodoTab" xml:space="preserve">
+    <value>قائمة المهام</value>
+  </data>
+  <data name="Lbl_ChatsTab" xml:space="preserve">
+    <value>الدردشات</value>
+  </data>
+  <data name="Plh_AddTodo" xml:space="preserve">
+    <value>ما الذي تحتاج إلى فعله اليوم؟</value>
+  </data>
+  <data name="Todo_TeamReview" xml:space="preserve">
+    <value>اجتماع مراجعة الفريق الساعة 3:00 م</value>
+  </data>
+  <data name="Todo_PreparePresentation" xml:space="preserve">
+    <value>التحضير للعرض</value>
+  </data>
+  <data name="Todo_ResolveLowPriorityTickets" xml:space="preserve">
+    <value>حل التذاكر منخفضة الأولوية</value>
+  </data>
+  <data name="Todo_ScheduleMeeting" xml:space="preserve">
+    <value>جدولة اجتماع للأسبوع القادم</value>
+  </data>
+  <data name="Todo_ProjectReview" xml:space="preserve">
+    <value>مراجعة المشروع</value>
+  </data>
+  <data name="Txt_Feb112018" xml:space="preserve">
+    <value>11 فبراير 2018</value>
+  </data>
+  <data name="Txt_CreatingComponentPage" xml:space="preserve">
+    <value>إنشاء صفحة المكونات</value>
+  </data>
+  <data name="Txt_BuildJsApp" xml:space="preserve">
+    <value>بناء تطبيق يعتمد على جافاسكربت</value>
+  </data>
+  <data name="Txt_Feb072018" xml:space="preserve">
+    <value>7 فبراير 2018</value>
+  </data>
+  <data name="Txt_MeetingWithAlisa" xml:space="preserve">
+    <value>اجتماع مع أليسا</value>
+  </data>
+  <data name="Txt_CallSarahGraves" xml:space="preserve">
+    <value>الاتصال بسارة غريفز</value>
+  </data>
+  <data name="Lbl_Friends" xml:space="preserve">
+    <value>الأصدقاء</value>
+  </data>
+  <data name="Btn_SeeAll" xml:space="preserve">
+    <value>عرض الكل</value>
+  </data>
+  <data name="User_ThomasDouglas" xml:space="preserve">
+    <value>توماس دوغلاس</value>
+  </data>
+  <data name="Txt_Available" xml:space="preserve">
+    <value>متاح</value>
+  </data>
+  <data name="Txt_19Min" xml:space="preserve">
+    <value>19 دقيقة</value>
+  </data>
+  <data name="Txt_ProjectManager" xml:space="preserve">
+    <value>مدير المشروع</value>
+  </data>
+  <data name="Menu_Dashboard" xml:space="preserve">
+    <value>لوحة القيادة</value>
+  </data>
+  <data name="Menu_PageLayouts" xml:space="preserve">
+    <value>تخطيطات الصفحة</value>
+  </data>
+  <data name="Menu_Apps" xml:space="preserve">
+    <value>التطبيقات</value>
+  </data>
+  <data name="Menu_Widgets" xml:space="preserve">
+    <value>ودجات</value>
+  </data>
+  <data name="Sub_Boxed" xml:space="preserve">
+    <value>مغلف</value>
+  </data>
+  <data name="Sub_RTL" xml:space="preserve">
+    <value>من اليمين لليسار</value>
+  </data>
+  <data name="Lbl_Projects" xml:space="preserve">
+    <value>المشاريع</value>
+  </data>
+  <data name="Btn_AddProject" xml:space="preserve">
+    <value>+ إضافة مشروع</value>
+  </data>
+  <data name="Lbl_Categories" xml:space="preserve">
+    <value>الفئات</value>
+  </data>
+  <data name="Txt_Free" xml:space="preserve">
+    <value>مجاني</value>
+  </data>
+  <data name="Txt_Pro" xml:space="preserve">
+    <value>احترافي</value>
+  </data>
+  <data name="Lbl_FooterCopyright" xml:space="preserve">
+    <value>حقوق النشر © 2021 &lt;a href='https://www.bootstrapdash.com/' target='_blank'&gt;BootstrapDash&lt;/a&gt;. كل الحقوق محفوظة.</value>
+  </data>
+  <data name="Lbl_HandCrafted" xml:space="preserve">
+    <value>مصنوع بحـب &lt;i class='mdi mdi-heart text-danger'&gt;&lt;/i&gt;</value>
+  </data>
+  <data name="Menu_SidebarLayouts" xml:space="preserve">
+    <value>تخطيطات الشريط الجانبي</value>
+  </data>
+  <data name="Menu_BasicUIElements" xml:space="preserve">
+    <value>عناصر واجهة المستخدم الأساسية</value>
+  </data>
+  <data name="Menu_AdvancedUI" xml:space="preserve">
+    <value>واجهة المستخدم المتقدمة</value>
+  </data>
+  <data name="Menu_Popups" xml:space="preserve">
+    <value>نوافذ منبثقة</value>
+  </data>
+  <data name="Menu_Notifications" xml:space="preserve">
+    <value>الإشعارات</value>
+  </data>
+  <data name="Menu_Icons" xml:space="preserve">
+    <value>الرموز</value>
+  </data>
+  <data name="Menu_Forms" xml:space="preserve">
+    <value>النماذج</value>
+  </data>
+  <data name="Menu_TextEditors" xml:space="preserve">
+    <value>محررات النص</value>
+  </data>
+  <data name="Menu_CodeEditors" xml:space="preserve">
+    <value>محررات الشفرة</value>
+  </data>
+  <data name="Menu_Charts" xml:space="preserve">
+    <value>الرسوم البيانية</value>
+  </data>
+  <data name="Menu_Tables" xml:space="preserve">
+    <value>الجداول</value>
+  </data>
+  <data name="Menu_Maps" xml:space="preserve">
+    <value>الخرائط</value>
+  </data>
+  <data name="Menu_UserPages" xml:space="preserve">
+    <value>صفحات المستخدم</value>
+  </data>
+  <data name="Menu_ErrorPages" xml:space="preserve">
+    <value>صفحات الخطأ</value>
+  </data>
+  <data name="Menu_GeneralPages" xml:space="preserve">
+    <value>الصفحات العامة</value>
+  </data>
+  <data name="Menu_Ecommerce" xml:space="preserve">
+    <value>التجارة الإلكترونية</value>
+  </data>
+  <data name="Menu_Email" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+  <data name="Menu_Calendar" xml:space="preserve">
+    <value>التقويم</value>
+  </data>
+  <data name="Menu_Gallery" xml:space="preserve">
+    <value>المعرض</value>
+  </data>
+  <data name="Menu_Documentation" xml:space="preserve">
+    <value>التوثيق</value>
+  </data>
+  <data name="Sub_CompactMenu" xml:space="preserve">
+    <value>قائمة مدمجة</value>
+  </data>
+  <data name="Sub_IconMenu" xml:space="preserve">
+    <value>قائمة أيقونات</value>
+  </data>
+  <data name="Sub_SidebarHidden" xml:space="preserve">
+    <value>إخفاء الشريط الجانبي</value>
+  </data>
+  <data name="Sub_SidebarOverlay" xml:space="preserve">
+    <value>تراكب الشريط الجانبي</value>
+  </data>
+  <data name="Sub_SidebarFixed" xml:space="preserve">
+    <value>الشريط الجانبي ثابت</value>
+  </data>
+  <data name="Sub_Accordions" xml:space="preserve">
+    <value>أكورديون</value>
+  </data>
+  <data name="Sub_Buttons" xml:space="preserve">
+    <value>أزرار</value>
+  </data>
+  <data name="Sub_Badges" xml:space="preserve">
+    <value>شارات</value>
+  </data>
+  <data name="Sub_Breadcrumbs" xml:space="preserve">
+    <value>مسار التنقل</value>
+  </data>
+  <data name="Sub_Dropdowns" xml:space="preserve">
+    <value>قوائم منسدلة</value>
+  </data>
+  <data name="Sub_Modals" xml:space="preserve">
+    <value>نوافذ منبثقة</value>
+  </data>
+  <data name="Sub_ProgressBar" xml:space="preserve">
+    <value>شريط التقدم</value>
+  </data>
+  <data name="Sub_Pagination" xml:space="preserve">
+    <value>ترقيم الصفحات</value>
+  </data>
+  <data name="Sub_Tabs" xml:space="preserve">
+    <value>تبويبات</value>
+  </data>
+  <data name="Sub_Typography" xml:space="preserve">
+    <value>طباعة</value>
+  </data>
+  <data name="Sub_Tooltip" xml:space="preserve">
+    <value>تلميح</value>
+  </data>
+  <data name="Sub_Dragula" xml:space="preserve">
+    <value>سحب وإفلات</value>
+  </data>
+  <data name="Sub_Clipboard" xml:space="preserve">
+    <value>الحافظة</value>
+  </data>
+  <data name="Sub_ContextMenu" xml:space="preserve">
+    <value>قائمة السياق</value>
+  </data>
+  <data name="Sub_Slider" xml:space="preserve">
+    <value>شريط التمرير</value>
+  </data>
+  <data name="Sub_Colcade" xml:space="preserve">
+    <value>Colcade</value>
+  </data>
+  <data name="Sub_Carousel" xml:space="preserve">
+    <value>عارض الصور</value>
+  </data>
+  <data name="Sub_Loaders" xml:space="preserve">
+    <value>أدوات التحميل</value>
+  </data>
+  <data name="Sub_TreeView" xml:space="preserve">
+    <value>عرض شجري</value>
+  </data>
+  <data name="Sub_MaterialIcons" xml:space="preserve">
+    <value>ماتيريال</value>
+  </data>
+  <data name="Sub_FlagIcons" xml:space="preserve">
+    <value>أعلام</value>
+  </data>
+  <data name="Sub_FontAwesome" xml:space="preserve">
+    <value>فونت أوسم</value>
+  </data>
+  <data name="Sub_SimpleLineIcons" xml:space="preserve">
+    <value>أيقونات بسيطة</value>
+  </data>
+  <data name="Sub_ThemifyIcons" xml:space="preserve">
+    <value>Themify</value>
+  </data>
+  <data name="Sub_FormElements" xml:space="preserve">
+    <value>عناصر النموذج</value>
+  </data>
+  <data name="Sub_AdvancedForms" xml:space="preserve">
+    <value>نماذج متقدمة</value>
+  </data>
+  <data name="Sub_Validation" xml:space="preserve">
+    <value>التحقق</value>
+  </data>
+  <data name="Sub_Wizard" xml:space="preserve">
+    <value>المعالج</value>
+  </data>
+  <data name="Sub_ChartJs" xml:space="preserve">
+    <value>ChartJs</value>
+  </data>
+  <data name="Sub_Morris" xml:space="preserve">
+    <value>Morris</value>
+  </data>
+  <data name="Sub_Flot" xml:space="preserve">
+    <value>Flot</value>
+  </data>
+  <data name="Sub_GoogleCharts" xml:space="preserve">
+    <value>رسوم جوجل</value>
+  </data>
+  <data name="Sub_SparklineJs" xml:space="preserve">
+    <value>Sparkline js</value>
+  </data>
+  <data name="Sub_C3Charts" xml:space="preserve">
+    <value>C3 charts</value>
+  </data>
+  <data name="Sub_Chartist" xml:space="preserve">
+    <value>Chartist</value>
+  </data>
+  <data name="Sub_JustGage" xml:space="preserve">
+    <value>JustGage</value>
+  </data>
+  <data name="Sub_BasicTable" xml:space="preserve">
+    <value>جدول أساسي</value>
+  </data>
+  <data name="Sub_DataTable" xml:space="preserve">
+    <value>جدول بيانات</value>
+  </data>
+  <data name="Sub_JsGrid" xml:space="preserve">
+    <value>Js-grid</value>
+  </data>
+  <data name="Sub_SortableTable" xml:space="preserve">
+    <value>جدول قابل للفرز</value>
+  </data>
+  <data name="Sub_GoogleMaps" xml:space="preserve">
+    <value>خرائط جوجل</value>
+  </data>
+  <data name="Sub_Mapael" xml:space="preserve">
+    <value>Mapael</value>
+  </data>
+  <data name="Sub_VectorMap" xml:space="preserve">
+    <value>خريطة متجهية</value>
+  </data>
+  <data name="Menu_Login" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+  <data name="Menu_Login2" xml:space="preserve">
+    <value>تسجيل الدخول 2</value>
+  </data>
+  <data name="Menu_MultiLevelLogin" xml:space="preserve">
+    <value>تسجيل متعدد المستويات</value>
+  </data>
+  <data name="Menu_Register" xml:space="preserve">
+    <value>تسجيل</value>
+  </data>
+  <data name="Menu_Register2" xml:space="preserve">
+    <value>تسجيل 2</value>
+  </data>
+  <data name="Menu_Lockscreen" xml:space="preserve">
+    <value>قفل الشاشة</value>
+  </data>
+  <data name="Sub_BlankPage" xml:space="preserve">
+    <value>صفحة فارغة</value>
+  </data>
+  <data name="Sub_LandingPage" xml:space="preserve">
+    <value>صفحة هبوط</value>
+  </data>
+  <data name="Sub_Profile" xml:space="preserve">
+    <value>الملف الشخصي</value>
+  </data>
+  <data name="Sub_Faq" xml:space="preserve">
+    <value>الأسئلة الشائعة</value>
+  </data>
+  <data name="Sub_Faq2" xml:space="preserve">
+    <value>الأسئلة الشائعة 2</value>
+  </data>
+  <data name="Sub_NewsGrid" xml:space="preserve">
+    <value>شبكة الأخبار</value>
+  </data>
+  <data name="Sub_Timeline" xml:space="preserve">
+    <value>الجدول الزمني</value>
+  </data>
+  <data name="Sub_SearchResults" xml:space="preserve">
+    <value>نتائج البحث</value>
+  </data>
+  <data name="Sub_Portfolio" xml:space="preserve">
+    <value>المعرض الشخصي</value>
+  </data>
+  <data name="Sub_UserListing" xml:space="preserve">
+    <value>قائمة المستخدمين</value>
+  </data>
+  <data name="Sub_EmailTemplates" xml:space="preserve">
+    <value>قوالب البريد</value>
+  </data>
+  <data name="Sub_Invoice" xml:space="preserve">
+    <value>فاتورة</value>
+  </data>
+  <data name="Sub_PricingTable" xml:space="preserve">
+    <value>جدول الأسعار</value>
+  </data>
+  <data name="Sub_ProductCatalogue" xml:space="preserve">
+    <value>فهرس المنتجات</value>
+  </data>
+  <data name="Sub_ProjectList" xml:space="preserve">
+    <value>قائمة المشاريع</value>
+  </data>
+  <data name="Sub_Orders" xml:space="preserve">
+    <value>الطلبات</value>
+  </data>
+  <data name="Alt_CircleImage" xml:space="preserve">
+    <value>صورة الدائرة</value>
+  </data>
+  <data name="Alt_Image" xml:space="preserve">
+    <value>صورة</value>
+  </data>
+  <data name="WeeklySales" xml:space="preserve">
+    <value>المبيعات الأسبوعية</value>
+  </data>
+  <data name="SalesAmount" xml:space="preserve">
+    <value>$ 15,0000</value>
+  </data>
+  <data name="IncreasedBy60" xml:space="preserve">
+    <value>زيادة بنسبة 60%</value>
+  </data>
+  <data name="WeeklyOrders" xml:space="preserve">
+    <value>الطلبات الأسبوعية</value>
+  </data>
+  <data name="OrdersCount" xml:space="preserve">
+    <value>45,6334</value>
+  </data>
+  <data name="DecreasedBy10" xml:space="preserve">
+    <value>انخفاض بنسبة 10%</value>
+  </data>
+  <data name="VisitorsOnline" xml:space="preserve">
+    <value>الزوار المتصلون</value>
+  </data>
+  <data name="VisitorsCount" xml:space="preserve">
+    <value>95,5741</value>
+  </data>
+  <data name="IncreasedBy5" xml:space="preserve">
+    <value>زيادة بنسبة 5%</value>
+  </data>
+  <data name="VisitAndSalesStatistics" xml:space="preserve">
+    <value>إحصائيات الزيارات والمبيعات</value>
+  </data>
+  <data name="TrafficSources" xml:space="preserve">
+    <value>مصادر المرور</value>
+  </data>
+  <data name="RecentTickets" xml:space="preserve">
+    <value>التذاكر الأخيرة</value>
+  </data>
+  <data name="Th_Assignee" xml:space="preserve">
+    <value>المسؤول</value>
+  </data>
+  <data name="Th_Subject" xml:space="preserve">
+    <value>الموضوع</value>
+  </data>
+  <data name="Th_Status" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+  <data name="Th_LastUpdate" xml:space="preserve">
+    <value>آخر تحديث</value>
+  </data>
+  <data name="Th_TrackingId" xml:space="preserve">
+    <value>معرّف التتبع</value>
+  </data>
+  <data name="User_DavidGrey" xml:space="preserve">
+    <value>ديفيد غراي</value>
+  </data>
+  <data name="FundNotReceived" xml:space="preserve">
+    <value>لم يتم استلام الأموال</value>
+  </data>
+  <data name="Status_Done" xml:space="preserve">
+    <value>مكتمل</value>
+  </data>
+  <data name="Date_Dec52017" xml:space="preserve">
+    <value>5 ديسمبر 2017</value>
+  </data>
+  <data name="Tracking_WD12345" xml:space="preserve">
+    <value>WD-12345</value>
+  </data>
+  <data name="User_StellaJohnson" xml:space="preserve">
+    <value>ستيلا جونسون</value>
+  </data>
+  <data name="HighLoadingTime" xml:space="preserve">
+    <value>زمن تحميل مرتفع</value>
+  </data>
+  <data name="Status_Progress" xml:space="preserve">
+    <value>قيد التنفيذ</value>
+  </data>
+  <data name="Date_Dec122017" xml:space="preserve">
+    <value>12 ديسمبر 2017</value>
+  </data>
+  <data name="Tracking_WD12346" xml:space="preserve">
+    <value>WD-12346</value>
+  </data>
+  <data name="User_MarinaMichel" xml:space="preserve">
+    <value>مارينا ميشيل</value>
+  </data>
+  <data name="WebsiteDownOneWeek" xml:space="preserve">
+    <value>تعطلت الموقع لمدة أسبوع</value>
+  </data>
+  <data name="Status_OnHold" xml:space="preserve">
+    <value>قيد الانتظار</value>
+  </data>
+  <data name="Date_Dec162017" xml:space="preserve">
+    <value>16 ديسمبر 2017</value>
+  </data>
+  <data name="Tracking_WD12347" xml:space="preserve">
+    <value>WD-12347</value>
+  </data>
+  <data name="User_JohnDoe" xml:space="preserve">
+    <value>جون دو</value>
+  </data>
+  <data name="LoosingControlOnServer" xml:space="preserve">
+    <value>فقدان السيطرة على الخادم</value>
+  </data>
+  <data name="Status_Rejected" xml:space="preserve">
+    <value>مرفوض</value>
+  </data>
+  <data name="Date_Dec32017" xml:space="preserve">
+    <value>3 ديسمبر 2017</value>
+  </data>
+  <data name="Tracking_WD12348" xml:space="preserve">
+    <value>WD-12348</value>
+  </data>
+  <data name="RecentUpdates" xml:space="preserve">
+    <value>التحديثات الأخيرة</value>
+  </data>
+  <data name="User_JackMenqu" xml:space="preserve">
+    <value>جاك منق</value>
+  </data>
+  <data name="Date_Oct032018" xml:space="preserve">
+    <value>3 أكتوبر 2018</value>
+  </data>
+  <data name="Project_SchoolWebsite_Title" xml:space="preserve">
+    <value>موقع المدرسة - وحدة المصادقة.</value>
+  </data>
+  <data name="Project_SchoolWebsite_Description" xml:space="preserve">
+    <value>هذه حقيقة معروفة أن القارئ سيتشتت بسبب المحتوى المقروء في الصفحة.</value>
+  </data>
+  <data name="ProjectStatus" xml:space="preserve">
+    <value>حالة المشروع</value>
+  </data>
+  <data name="Th_Number" xml:space="preserve">
+    <value>#</value>
+  </data>
+  <data name="Th_Name" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="Th_DueDate" xml:space="preserve">
+    <value>تاريخ الاستحقاق</value>
+  </data>
+  <data name="Th_Progress" xml:space="preserve">
+    <value>التقدم</value>
+  </data>
+  <data name="ProjectName_HermanBeck" xml:space="preserve">
+    <value>هيرمان بيك</value>
+  </data>
+  <data name="Date_May152015" xml:space="preserve">
+    <value>15 مايو 2015</value>
+  </data>
+  <data name="ProjectName_MesssyAdam" xml:space="preserve">
+    <value>ميسّي آدم</value>
+  </data>
+  <data name="Date_Jul012015" xml:space="preserve">
+    <value>01 يوليو 2015</value>
+  </data>
+  <data name="ProjectName_JohnRichards" xml:space="preserve">
+    <value>جون ريتشاردز</value>
+  </data>
+  <data name="Date_Apr122015" xml:space="preserve">
+    <value>12 أبريل 2015</value>
+  </data>
+  <data name="ProjectName_PeterMeggik" xml:space="preserve">
+    <value>بيتر ميجيك</value>
+  </data>
+  <data name="ProjectName_Edward" xml:space="preserve">
+    <value>إدوارد</value>
+  </data>
+  <data name="Date_May032015" xml:space="preserve">
+    <value>03 مايو 2015</value>
+  </data>
+  <data name="ProjectName_Ronald" xml:space="preserve">
+    <value>رونالد</value>
+  </data>
+  <data name="Date_Jun052015" xml:space="preserve">
+    <value>05 يونيو 2015</value>
+  </data>
+  <data name="TodoHeading" xml:space="preserve">
+    <value>قائمة المهام</value>
+  </data>
+  <data name="Todo_MeetingWithAlisa" xml:space="preserve">
+    <value>اجتماع مع أليسا</value>
+  </data>
+  <data name="Todo_CallJohn" xml:space="preserve">
+    <value>الاتصال بجون</value>
+  </data>
+  <data name="Todo_CreateInvoice" xml:space="preserve">
+    <value>إنشاء فاتورة</value>
+  </data>
+  <data name="Todo_PrintStatements" xml:space="preserve">
+    <value>طباعة الكشوفات</value>
+  </data>
+  <data name="Todo_PrepareForPresentation" xml:space="preserve">
+    <value>التحضير للعرض</value>
+  </data>
+  <data name="Todo_PickUpKids" xml:space="preserve">
+    <value>إحضار الأطفال من المدرسة</value>
+  </data>
+  <data name="Page_Overview" xml:space="preserve">
+    <value>نظرة عامة</value>
+  </data>
+  <data name="Tb_ShippingTypes" xml:space="preserve">
+    <value>طرق الشحن</value>
+  </data>
+  <data name="Tb_ShippingType" xml:space="preserve">
+    <value>طريقة الشحن</value>
+  </data>
+  <data name="Th_ShippingFactor" xml:space="preserve">
+    <value>معامل الشحن</value>
+  </data>
+  <data name="Th_Actions" xml:space="preserve">
+    <value>تعديلات</value>
+  </data>
 </root>

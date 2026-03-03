@@ -592,6 +592,429 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Receiver Address.
+        /// </summary>
+        public static string Field_Address_Receiver {
+            get {
+                return ResourceManager.GetString("Field_Address_Receiver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sender Address.
+        /// </summary>
+        public static string Field_Address_Sender {
+            get {
+                return ResourceManager.GetString("Field_Address_Sender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Carrier.
+        /// </summary>
+        public static string Field_CarrierId {
+            get {
+                return ResourceManager.GetString("Field_CarrierId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Carrier Name.
+        /// </summary>
+        public static string Field_CarrierName {
+            get {
+                return ResourceManager.GetString("Field_CarrierName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to City Name (Arabic).
+        /// </summary>
+        public static string Field_CityAname {
+            get {
+                return ResourceManager.GetString("Field_CityAname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to City Name (English).
+        /// </summary>
+        public static string Field_CityEname {
+            get {
+                return ResourceManager.GetString("Field_CityEname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Receiver City.
+        /// </summary>
+        public static string Field_CityId_Receiver {
+            get {
+                return ResourceManager.GetString("Field_CityId_Receiver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sender City.
+        /// </summary>
+        public static string Field_CityId_Sender {
+            get {
+                return ResourceManager.GetString("Field_CityId_Sender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Commission.
+        /// </summary>
+        public static string Field_Commission {
+            get {
+                return ResourceManager.GetString("Field_Commission", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Country Name (Arabic).
+        /// </summary>
+        public static string Field_CountryAname {
+            get {
+                return ResourceManager.GetString("Field_CountryAname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Country Name (English).
+        /// </summary>
+        public static string Field_CountryEname {
+            get {
+                return ResourceManager.GetString("Field_CountryEname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Receiver Email.
+        /// </summary>
+        public static string Field_Email_Receiver {
+            get {
+                return ResourceManager.GetString("Field_Email_Receiver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sender Email.
+        /// </summary>
+        public static string Field_Email_Sender {
+            get {
+                return ResourceManager.GetString("Field_Email_Sender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Height.
+        /// </summary>
+        public static string Field_Height {
+            get {
+                return ResourceManager.GetString("Field_Height", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kilometer Rate.
+        /// </summary>
+        public static string Field_KiloMeterRate {
+            get {
+                return ResourceManager.GetString("Field_KiloMeterRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kilogram Rate.
+        /// </summary>
+        public static string Field_KilooGramRate {
+            get {
+                return ResourceManager.GetString("Field_KilooGramRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Length.
+        /// </summary>
+        public static string Field_Length {
+            get {
+                return ResourceManager.GetString("Field_Length", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Payment Method Name (Arabic).
+        /// </summary>
+        public static string Field_MethdAname {
+            get {
+                return ResourceManager.GetString("Field_MethdAname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Payment Method Name (English).
+        /// </summary>
+        public static string Field_MethodEname {
+            get {
+                return ResourceManager.GetString("Field_MethodEname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Notes.
+        /// </summary>
+        public static string Field_Notes {
+            get {
+                return ResourceManager.GetString("Field_Notes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of Kilometers.
+        /// </summary>
+        public static string Field_NumberOfKiloMeters {
+            get {
+                return ResourceManager.GetString("Field_NumberOfKiloMeters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Package.
+        /// </summary>
+        public static string Field_PackageId {
+            get {
+                return ResourceManager.GetString("Field_PackageId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Package Name.
+        /// </summary>
+        public static string Field_PackageName {
+            get {
+                return ResourceManager.GetString("Field_PackageName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Package Value.
+        /// </summary>
+        public static string Field_PackageValue {
+            get {
+                return ResourceManager.GetString("Field_PackageValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Payment Method.
+        /// </summary>
+        public static string Field_PaymentMethodId {
+            get {
+                return ResourceManager.GetString("Field_PaymentMethodId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Receiver Phone.
+        /// </summary>
+        public static string Field_Phone_Receiver {
+            get {
+                return ResourceManager.GetString("Field_Phone_Receiver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sender Phone.
+        /// </summary>
+        public static string Field_Phone_Sender {
+            get {
+                return ResourceManager.GetString("Field_Phone_Sender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Receiver.
+        /// </summary>
+        public static string Field_ReceiverId {
+            get {
+                return ResourceManager.GetString("Field_ReceiverId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Receiver Name.
+        /// </summary>
+        public static string Field_ReceiverName {
+            get {
+                return ResourceManager.GetString("Field_ReceiverName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sender.
+        /// </summary>
+        public static string Field_SenderId {
+            get {
+                return ResourceManager.GetString("Field_SenderId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sender Name.
+        /// </summary>
+        public static string Field_SenderName {
+            get {
+                return ResourceManager.GetString("Field_SenderName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shippments Count.
+        /// </summary>
+        public static string Field_ShippimentCount {
+            get {
+                return ResourceManager.GetString("Field_ShippimentCount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipping Date.
+        /// </summary>
+        public static string Field_ShippingDate {
+            get {
+                return ResourceManager.GetString("Field_ShippingDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipping Factor.
+        /// </summary>
+        public static string Field_ShippingFactor {
+            get {
+                return ResourceManager.GetString("Field_ShippingFactor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipping Rate.
+        /// </summary>
+        public static string Field_ShippingRate {
+            get {
+                return ResourceManager.GetString("Field_ShippingRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipping Type Name (Arabic).
+        /// </summary>
+        public static string Field_ShippingTypeAname {
+            get {
+                return ResourceManager.GetString("Field_ShippingTypeAname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipping Type Name (English).
+        /// </summary>
+        public static string Field_ShippingTypeEname {
+            get {
+                return ResourceManager.GetString("Field_ShippingTypeEname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipping Type.
+        /// </summary>
+        public static string Field_ShippingTypeId {
+            get {
+                return ResourceManager.GetString("Field_ShippingTypeId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shippment Number.
+        /// </summary>
+        public static string Field_ShippmentId {
+            get {
+                return ResourceManager.GetString("Field_ShippmentId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subscription Date.
+        /// </summary>
+        public static string Field_SubscriptionDate {
+            get {
+                return ResourceManager.GetString("Field_SubscriptionDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total Weight.
+        /// </summary>
+        public static string Field_TotalWeight {
+            get {
+                return ResourceManager.GetString("Field_TotalWeight", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tracking Number.
+        /// </summary>
+        public static string Field_TrackingNumber {
+            get {
+                return ResourceManager.GetString("Field_TrackingNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User.
+        /// </summary>
+        public static string Field_UserId {
+            get {
+                return ResourceManager.GetString("Field_UserId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User.
+        /// </summary>
+        public static string Field_UserId_Subscription {
+            get {
+                return ResourceManager.GetString("Field_UserId_Subscription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Subscription.
+        /// </summary>
+        public static string Field_UserSubscriptionId {
+            get {
+                return ResourceManager.GetString("Field_UserSubscriptionId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weight.
+        /// </summary>
+        public static string Field_Weight {
+            get {
+                return ResourceManager.GetString("Field_Weight", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Width.
+        /// </summary>
+        public static string Field_Width {
+            get {
+                return ResourceManager.GetString("Field_Width", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Fund is not received.
         /// </summary>
         public static string FundNotReceived {
@@ -2901,6 +3324,78 @@ namespace AppResources.Localization.Resources {
         public static string User_ThomasDouglas {
             get {
                 return ResourceManager.GetString("User_ThomasDouglas", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid email address.
+        /// </summary>
+        public static string Val_Email {
+            get {
+                return ResourceManager.GetString("Val_Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please Enter This Field In Arabic.
+        /// </summary>
+        public static string Val_Language_Ar {
+            get {
+                return ResourceManager.GetString("Val_Language_Ar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please Enter This Field In English Letter Only.
+        /// </summary>
+        public static string Val_Language_En {
+            get {
+                return ResourceManager.GetString("Val_Language_En", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid phone number.
+        /// </summary>
+        public static string Val_Phone {
+            get {
+                return ResourceManager.GetString("Val_Phone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The {0} must be a positive number.
+        /// </summary>
+        public static string Val_PositiveNumber {
+            get {
+                return ResourceManager.GetString("Val_PositiveNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The {0} must be between {1} and {2}.
+        /// </summary>
+        public static string Val_Range {
+            get {
+                return ResourceManager.GetString("Val_Range", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The {0} field is required.
+        /// </summary>
+        public static string Val_Required {
+            get {
+                return ResourceManager.GetString("Val_Required", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The {0} must be between {2} and {1} characters.
+        /// </summary>
+        public static string Val_StringLength {
+            get {
+                return ResourceManager.GetString("Val_StringLength", resourceCulture);
             }
         }
         

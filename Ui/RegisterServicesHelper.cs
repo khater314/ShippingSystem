@@ -39,8 +39,8 @@ namespace Ui
             builder.Services.AddScoped<IPaymentMethodService, PaymentMethodService>();
             builder.Services.AddScoped<IShippmentStatusService, ShippmentStatusService>();
             builder.Services.AddScoped<BL.Mapping.IMapper, BL.Mapping.AutoMapperAdapter>();
-            //Services Add Singleton
             builder.Services.AddScoped<ISettingService, SettingService>();
+            //Services Add Singleton
             #endregion
         }
     }

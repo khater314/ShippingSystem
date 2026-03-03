@@ -28,24 +28,20 @@ namespace Ui.Areas.Admin.Controllers
         }
 
 
-        // POST: ShippingTypesController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Save(TbShippingTypeDTO dTO)
+        public async Task<ActionResult> Edit(TbShippingTypeDTO dTO, CancellationToken ct)
         {
             if (!ModelState.IsValid)
-                return View("Edit", dTO);
+                return View(dTO);
             if (dTO.Id == Guid.Empty)
-                await _shippingTypeService.AddAsync(dTO, dTO.Id);
+                await _shippingTypeService.AddAsync(dTO, dTO.Id, ct);
             else
-                await _shippingTypeService.UpdateAsync(dTO, dTO.Id);
+                await _shippingTypeService.UpdateAsync(dTO, dTO.Id, ct);
 
             return RedirectToAction(nameof(Index));
         }
 
-
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
         public async Task<ActionResult> Delete(Guid id, CancellationToken ct)
         {
             await _shippingTypeService.ChangeStatusAsync(id, Guid.NewGuid(), 0, ct);

@@ -508,7 +508,9 @@
     <!-- container-scroller -->
     <!-- plugins:js -->
     <script src="~/admin/vendors/js/vendor.bundle.base.js"></script>
-    <!-- endinject -->
+    <!-- --- -->
+    <script src="~/lib/sweetalert2/sweetalert2.all.min.js"></script>
+    <!-- end plugins:js -->
     <!-- Plugin js for this page -->
     @RenderSection("PluginScripts", required: false)
     <!-- End plugin js for this page -->
@@ -519,6 +521,8 @@
     <script src="~/admin/js/settings.js"></script>
     <script src="~/admin/js/todolist.js"></script>
     <script src="~/admin/js/jquery.cookie.js"></script>
+    <!-- ------------------------------------------- -->
+    <script src="~/js/alert.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->
     @RenderSection("CustomScripts", required: false)

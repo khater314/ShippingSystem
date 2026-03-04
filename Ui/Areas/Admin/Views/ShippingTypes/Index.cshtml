@@ -26,46 +26,35 @@
             </tr>
             </thead>
             <tbody>
-                        @{
-                            int counter = 1;
-                        }
-                        @foreach (var shippingType in Model)
-                {
-                    <tr>
-                        <td>@(counter++)</td>
-                        <td>
-                            @if (CultureInfo.CurrentCulture.Name.ToLower() == "ar")
-                                {
+                @{int counter = 1;}
+                @foreach (var shippingType in Model)
+                    {
+                        <tr>
+                            <td>@(counter++)</td>
+                            <td>
+                                @if (CultureInfo.CurrentCulture.Name.ToLower() == "ar")
+                                    {
                                         @shippingType.ShippingTypeAname
-                                }
-                                else 
-                                {
+                                    }
+                                    else 
+                                    {
                                         @shippingType.ShippingTypeEname
-                                }
+                                    }
+                                </td>
+                                    <td>@shippingType.ShippingFactor</td>
+                            <td>
+                                    <a class="btn btn-outline-primary py-2" asp-action="Edit"
+                                                asp-route-id="@shippingType.Id" asp-controller="ShippingTypes">
+                                            @ResShared.Btn_Edit
+                                    </a>
+                                    <button type="button" class="btn btn-outline-danger py-2 js-btn-delete" 
+                                            data-url="@Url.Action("Delete", "ShippingTypes", new { area = "Admin" })"
+                                            data-id="@shippingType.Id">
+                                            @ResShared.Btn_Delete
+                                    </button>
                             </td>
-                                <td>@shippingType.ShippingFactor</td>
-                        <td>
-                            @* <a class="btn btn-outline-primary" asp-controller="ShippingTypes"
-                                asp-action="Edit" asp-route-id="@Model[i].Id">
-                                @ResShippingTypes.EditButton
-                            </a> *@
-                                    <form asp-controller="ShippingTypes" method="post" >
-                                        <button type="submit" class="btn btn-outline-primary" asp-action="Edit"
-                                                asp-route-id="@shippingType.Id">
-                                            @ResShippingTypes.EditButton
-                                        </button>
-                                        <button type="submit" class="btn btn-outline-danger" asp-action="Delete"
-                                                onclick="return confirm('هل أنت متأكد؟')" asp-route-id="@shippingType.Id">
-                                            @ResShippingTypes.DeleteButton
-                                        </button>
-                                    </form>
-                            @* <a class="btn btn-outline-danger" asp-controller="ShippingTypes"
-                                asp-action="Delete" asp-route-id="@Model[i].Id">
-                                @ResShippingTypes.DeleteButton
-                            </a> *@
-                        </td>
-                    </tr>
-                        }
+                        </tr>
+                    }
             </tbody>
         </table>
         </div>

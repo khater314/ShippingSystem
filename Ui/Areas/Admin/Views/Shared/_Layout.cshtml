@@ -522,6 +522,26 @@
     <script src="~/admin/js/todolist.js"></script>
     <script src="~/admin/js/jquery.cookie.js"></script>
     <!-- ------------------------------------------- -->
+    <script>
+        window.TempDataMessage = {
+            type: '@TempData["MessageType"]',
+            body: '@TempData["MessageBody"]'
+        };
+        window.Resources = {
+            success: '@Html.Raw(ResShared.Word_Success)',
+            warning: '@Html.Raw(ResShared.Word_Warning)',
+            error: '@Html.Raw(ResShared.Word_Error)',
+            failed: '@Html.Raw(ResShared.Word_Failed)',
+            done: '@Html.Raw(ResShared.Word_Done)',
+            deleted: '@Html.Raw(ResShared.Word_Deleted)',
+            confirm: '@Html.Raw(ResShared.Msg_Confirm)',
+            confirmDelete: '@Html.Raw(ResShared.Msg_Confirm_Delete)',
+            yes: '@Html.Raw(ResShared.Btn_Yes)',
+            no: '@Html.Raw(ResShared.Btn_No)',
+            cancel: '@Html.Raw(ResShared.Btn_Cancel)',
+            msg_warning: '@Html.Raw(ResShared.Msg_Warning_Delete_Multiple)',
+        }
+    </script>
     <script src="~/js/alert.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->

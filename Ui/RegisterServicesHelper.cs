@@ -25,8 +25,12 @@ namespace Ui
 
             #region Dependency Injection
             builder.Services.AddAutoMapper(cfg => { }, typeof(MappingProfile));
+            /**********************************************************************/
+            /***************************** Add Scoped *****************************/
+            /**********************************************************************/
+            // Repositories Add Scoped
             builder.Services.AddScoped(typeof(ITableRepository<>), typeof(TableRepository<>));
-            //Services Add Scoped
+            // Services Add Scoped
             builder.Services.AddScoped<ICityService, CityService>();
             builder.Services.AddScoped<IShippingTypeService, ShippingTypeService>();
             builder.Services.AddScoped<IShippmentService, ShippmentService>();
@@ -38,9 +42,11 @@ namespace Ui
             builder.Services.AddScoped<IUserSubscriptionService, UserSubscriptionService>();
             builder.Services.AddScoped<IPaymentMethodService, PaymentMethodService>();
             builder.Services.AddScoped<IShippmentStatusService, ShippmentStatusService>();
-            builder.Services.AddScoped<BL.Mapping.IMapper, BL.Mapping.AutoMapperAdapter>();
             builder.Services.AddScoped<ISettingService, SettingService>();
-            //Services Add Singleton
+            // Mapping Add Scoped
+            builder.Services.AddScoped<BL.Mapping.IMapper, BL.Mapping.AutoMapperAdapter>();
+            // Filters Add Scoped
+            builder.Services.AddScoped<Filters.TransactionExceptionFilter>();
             #endregion
         }
     }

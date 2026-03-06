@@ -49,7 +49,7 @@
                                     </a>
                                     <button type="button" class="btn btn-outline-danger py-2 js-btn-delete" 
                                             data-url="@Url.Action("Delete", "ShippingTypes", new { area = "Admin" })"
-                                            data-id="@shippingType.Id">
+                                            data-id="@shippingType.Id" name="@shippingType.Id">
                                             @ResShared.Btn_Delete
                                     </button>
                             </td>

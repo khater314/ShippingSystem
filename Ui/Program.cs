@@ -6,6 +6,7 @@ using DAL.DbContext;
 using DAL.Repositories;
 using Microsoft.EntityFrameworkCore;
 using AppResources.Localization;
+using Ui.Filters;
 
 
 namespace Ui
@@ -19,9 +20,10 @@ namespace Ui
             RegisterServicesHelper.RegisterServices(builder);
 
             // Add services to the container.
-            builder.Services.AddControllersWithViews()
-                .AddViewLocalization()
-                .AddDataAnnotationsLocalization();
+            builder.Services.AddControllersWithViews(option =>
+            {
+                option.Filters.Add<TransactionExceptionFilter>();
+            }).AddViewLocalization().AddDataAnnotationsLocalization();
 
             var app = builder.Build();
 

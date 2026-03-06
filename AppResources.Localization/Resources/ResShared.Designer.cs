@@ -5423,5 +5423,410 @@ namespace AppResources.Localization.Resources {
                 return ResourceManager.GetString("WeeklySales", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Activated.
+        /// </summary>
+        public static string Word_Activated {
+            get {
+                return ResourceManager.GetString("Word_Activated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Added.
+        /// </summary>
+        public static string Word_Added {
+            get {
+                return ResourceManager.GetString("Word_Added", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All.
+        /// </summary>
+        public static string Word_All {
+            get {
+                return ResourceManager.GetString("Word_All", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Approved.
+        /// </summary>
+        public static string Word_Approved {
+            get {
+                return ResourceManager.GetString("Word_Approved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back.
+        /// </summary>
+        public static string Word_Back {
+            get {
+                return ResourceManager.GetString("Word_Back", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        public static string Word_Cancel {
+            get {
+                return ResourceManager.GetString("Word_Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancelled.
+        /// </summary>
+        public static string Word_Cancelled {
+            get {
+                return ResourceManager.GetString("Word_Cancelled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Closed.
+        /// </summary>
+        public static string Word_Closed {
+            get {
+                return ResourceManager.GetString("Word_Closed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Completed.
+        /// </summary>
+        public static string Word_Completed {
+            get {
+                return ResourceManager.GetString("Word_Completed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirmation.
+        /// </summary>
+        public static string Word_Confirm {
+            get {
+                return ResourceManager.GetString("Word_Confirm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Critical.
+        /// </summary>
+        public static string Word_Critical {
+            get {
+                return ResourceManager.GetString("Word_Critical", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Deactivated.
+        /// </summary>
+        public static string Word_Deactivated {
+            get {
+                return ResourceManager.GetString("Word_Deactivated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Deleted.
+        /// </summary>
+        public static string Word_Deleted {
+            get {
+                return ResourceManager.GetString("Word_Deleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Done.
+        /// </summary>
+        public static string Word_Done {
+            get {
+                return ResourceManager.GetString("Word_Done", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        public static string Word_Error {
+            get {
+                return ResourceManager.GetString("Word_Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed.
+        /// </summary>
+        public static string Word_Failed {
+            get {
+                return ResourceManager.GetString("Word_Failed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Forward.
+        /// </summary>
+        public static string Word_Forward {
+            get {
+                return ResourceManager.GetString("Word_Forward", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hidden.
+        /// </summary>
+        public static string Word_Hidden {
+            get {
+                return ResourceManager.GetString("Word_Hidden", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to High.
+        /// </summary>
+        public static string Word_High {
+            get {
+                return ResourceManager.GetString("Word_High", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Information.
+        /// </summary>
+        public static string Word_Info {
+            get {
+                return ResourceManager.GetString("Word_Info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Locked.
+        /// </summary>
+        public static string Word_Locked {
+            get {
+                return ResourceManager.GetString("Word_Locked", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Low.
+        /// </summary>
+        public static string Word_Low {
+            get {
+                return ResourceManager.GetString("Word_Low", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Many.
+        /// </summary>
+        public static string Word_Many {
+            get {
+                return ResourceManager.GetString("Word_Many", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Medium.
+        /// </summary>
+        public static string Word_Medium {
+            get {
+                return ResourceManager.GetString("Word_Medium", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Next.
+        /// </summary>
+        public static string Word_Next {
+            get {
+                return ResourceManager.GetString("Word_Next", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        public static string Word_No {
+            get {
+                return ResourceManager.GetString("Word_No", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to None.
+        /// </summary>
+        public static string Word_None {
+            get {
+                return ResourceManager.GetString("Word_None", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Now.
+        /// </summary>
+        public static string Word_Now {
+            get {
+                return ResourceManager.GetString("Word_Now", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        public static string Word_Ok {
+            get {
+                return ResourceManager.GetString("Word_Ok", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open.
+        /// </summary>
+        public static string Word_Open {
+            get {
+                return ResourceManager.GetString("Word_Open", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pending.
+        /// </summary>
+        public static string Word_Pending {
+            get {
+                return ResourceManager.GetString("Word_Pending", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Previous.
+        /// </summary>
+        public static string Word_Previous {
+            get {
+                return ResourceManager.GetString("Word_Previous", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Processing.
+        /// </summary>
+        public static string Word_Processing {
+            get {
+                return ResourceManager.GetString("Word_Processing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rejected.
+        /// </summary>
+        public static string Word_Rejected {
+            get {
+                return ResourceManager.GetString("Word_Rejected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Saved.
+        /// </summary>
+        public static string Word_Saved {
+            get {
+                return ResourceManager.GetString("Word_Saved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Some.
+        /// </summary>
+        public static string Word_Some {
+            get {
+                return ResourceManager.GetString("Word_Some", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        public static string Word_Success {
+            get {
+                return ResourceManager.GetString("Word_Success", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Today.
+        /// </summary>
+        public static string Word_Today {
+            get {
+                return ResourceManager.GetString("Word_Today", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tomorrow.
+        /// </summary>
+        public static string Word_Tomorrow {
+            get {
+                return ResourceManager.GetString("Word_Tomorrow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unlocked.
+        /// </summary>
+        public static string Word_Unlocked {
+            get {
+                return ResourceManager.GetString("Word_Unlocked", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Updated.
+        /// </summary>
+        public static string Word_Updated {
+            get {
+                return ResourceManager.GetString("Word_Updated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Visible.
+        /// </summary>
+        public static string Word_Visible {
+            get {
+                return ResourceManager.GetString("Word_Visible", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Warning.
+        /// </summary>
+        public static string Word_Warning {
+            get {
+                return ResourceManager.GetString("Word_Warning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        public static string Word_Yes {
+            get {
+                return ResourceManager.GetString("Word_Yes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yesterday.
+        /// </summary>
+        public static string Word_Yesterday {
+            get {
+                return ResourceManager.GetString("Word_Yesterday", resourceCulture);
+            }
+        }
     }
 }

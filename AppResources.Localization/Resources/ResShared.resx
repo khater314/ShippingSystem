@@ -1,2325 +1,2427 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!--
-	Microsoft ResX Schema
-
-	Version 2.0
-
-	The primary goals of this format is to allow a simple XML format
-	that is mostly human readable. The generation and parsing of the
-	various data types are done through the TypeConverter classes
-	associated with the data types.
-
-	Example:
-
-	... ado.net/XML headers & schema ...
-	<resheader name="resmimetype">text/microsoft-resx</resheader>
-	<resheader name="version">2.0</resheader>
-	<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-	<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-	<data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-	<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-	<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-		<value>[base64 mime encoded serialized .NET Framework object]</value>
-	</data>
-	<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-		<value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-		<comment>This is a comment</comment>
-	</data>
-
-	There are any number of "resheader" rows that contain simple
-	name/value pairs.
-
-	Each data row contains a name, and value. The row also contains a
-	type or mimetype. Type corresponds to a .NET class that support
-	text/value conversion through the TypeConverter architecture.
-	Classes that don't support this are serialized and stored with the
-	mimetype set.
-
-	The mimetype is used for serialized objects, and tells the
-	ResXResourceReader how to depersist the object. This is currently not
-	extensible. For a given mimetype the value must be set accordingly:
-
-	Note - application/x-microsoft.net.object.binary.base64 is the format
-	that the ResXResourceWriter will generate, however the reader can
-	read any of the formats listed below.
-
-	mimetype: application/x-microsoft.net.object.binary.base64
-	value   : The object must be serialized with
-			: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-			: and then encoded with base64 encoding.
-
-	mimetype: application/x-microsoft.net.object.soap.base64
-	value   : The object must be serialized with
-			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-			: and then encoded with base64 encoding.
-
-	mimetype: application/x-microsoft.net.object.bytearray.base64
-	value   : The object must be serialized into a byte array
-			: using a System.ComponentModel.TypeConverter
-			: and then encoded with base64 encoding.
-	-->
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="metadata">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" />
-							</xsd:sequence>
-							<xsd:attribute name="name" use="required" type="xsd:string" />
-							<xsd:attribute name="type" type="xsd:string" />
-							<xsd:attribute name="mimetype" type="xsd:string" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="assembly">
-						<xsd:complexType>
-							<xsd:attribute name="alias" type="xsd:string" />
-							<xsd:attribute name="name" type="xsd:string" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>2.0</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-
-	<!-- =========================================================== -->
-	<!-- ====================  SECTION: PAGES  ===================== -->
-	<!-- =========================================================== -->
-	<!-- ===== Pages - Main ===== -->
-	<data name="Page_Dashboard" xml:space="preserve">
-	<value>Dashboard</value>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Page_Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
   </data>
-	<data name="Page_Home" xml:space="preserve">
-	<value>Home</value>
+  <data name="Page_Home" xml:space="preserve">
+    <value>Home</value>
   </data>
-	<data name="Page_Products" xml:space="preserve">
-	<value>Products</value>
+  <data name="Page_Products" xml:space="preserve">
+    <value>Products</value>
   </data>
-	<data name="Page_Orders" xml:space="preserve">
-	<value>Orders</value>
+  <data name="Page_Orders" xml:space="preserve">
+    <value>Orders</value>
   </data>
-	<data name="Page_Users" xml:space="preserve">
-	<value>Users</value>
+  <data name="Page_Users" xml:space="preserve">
+    <value>Users</value>
   </data>
-	<data name="Page_Customers" xml:space="preserve">
-	<value>Customers</value>
+  <data name="Page_Customers" xml:space="preserve">
+    <value>Customers</value>
   </data>
-	<data name="Page_Suppliers" xml:space="preserve">
-	<value>Suppliers</value>
+  <data name="Page_Suppliers" xml:space="preserve">
+    <value>Suppliers</value>
   </data>
-	<data name="Page_Reports" xml:space="preserve">
-	<value>Reports</value>
+  <data name="Page_Reports" xml:space="preserve">
+    <value>Reports</value>
   </data>
-	<data name="Page_Settings" xml:space="preserve">
-	<value>Settings</value>
+  <data name="Page_Settings" xml:space="preserve">
+    <value>Settings</value>
   </data>
-	<data name="Page_Profile" xml:space="preserve">
-	<value>Profile</value>
+  <data name="Page_Profile" xml:space="preserve">
+    <value>Profile</value>
   </data>
-	<data name="Page_Account" xml:space="preserve">
-	<value>Account</value>
+  <data name="Page_Account" xml:space="preserve">
+    <value>Account</value>
   </data>
-	<data name="Page_Admin" xml:space="preserve">
-	<value>Administration</value>
+  <data name="Page_Admin" xml:space="preserve">
+    <value>Administration</value>
   </data>
-	<data name="Page_Overview" xml:space="preserve">
-	<value>Overview</value>
+  <data name="Page_Overview" xml:space="preserve">
+    <value>Overview</value>
   </data>
-
-	<!-- ===== Pages - Support ===== -->
-	<data name="Page_Help" xml:space="preserve">
-	<value>Help</value>
+  <data name="Page_Help" xml:space="preserve">
+    <value>Help</value>
   </data>
-	<data name="Page_Support" xml:space="preserve">
-	<value>Support</value>
+  <data name="Page_Support" xml:space="preserve">
+    <value>Support</value>
   </data>
-	<data name="Page_About" xml:space="preserve">
-	<value>About Us</value>
+  <data name="Page_About" xml:space="preserve">
+    <value>About Us</value>
   </data>
-	<data name="Page_Contact" xml:space="preserve">
-	<value>Contact Us</value>
+  <data name="Page_Contact" xml:space="preserve">
+    <value>Contact Us</value>
   </data>
-	<data name="Page_Privacy" xml:space="preserve">
-	<value>Privacy Policy</value>
+  <data name="Page_Privacy" xml:space="preserve">
+    <value>Privacy Policy</value>
   </data>
-	<data name="Page_Terms" xml:space="preserve">
-	<value>Terms &amp; Conditions</value>
+  <data name="Page_Terms" xml:space="preserve">
+    <value>Terms &amp; Conditions</value>
   </data>
-
-	<!-- =========================================================== -->
-	<!-- ===================  SECTION: BUTTONS  ==================== -->
-	<!-- =========================================================== -->
-	<!-- ===== Buttons - Basic Actions ===== -->
-	<data name="Btn_Save" xml:space="preserve">
-	<value>Save</value>
+  <data name="Page_Title_Carrier" xml:space="preserve">
+    <value>Carriers Management</value>
   </data>
-	<data name="Btn_SaveChanges" xml:space="preserve">
-	<value>Save Changes</value>
+  <data name="Page_Subtitle_Carrier" xml:space="preserve">
+    <value>Manage shipping carriers and their information</value>
   </data>
-	<data name="Btn_SaveCont" xml:space="preserve">
-	<value>Save &amp; Continue</value>
+  <data name="Form_Title_Carrier" xml:space="preserve">
+    <value>Carrier Details</value>
   </data>
-	<data name="Btn_Delete" xml:space="preserve">
-	<value>Delete</value>
+  <data name="Form_Description_Carrier" xml:space="preserve">
+    <value>Enter the carrier information below</value>
   </data>
-	<data name="Btn_Edit" xml:space="preserve">
-	<value>Edit</value>
+  <data name="List_Title_Carrier" xml:space="preserve">
+    <value>Carriers List</value>
   </data>
-	<data name="Btn_Update" xml:space="preserve">
-	<value>Update</value>
+  <data name="List_Description_Carrier" xml:space="preserve">
+    <value>View and manage all carriers</value>
   </data>
-	<data name="Btn_Add" xml:space="preserve">
-	<value>Add</value>
+  <data name="Page_Title_City" xml:space="preserve">
+    <value>Cities Management</value>
   </data>
-	<data name="Btn_AddItem" xml:space="preserve">
-	<value>Add Item</value>
+  <data name="Page_Subtitle_City" xml:space="preserve">
+    <value>Manage cities and their associated countries</value>
   </data>
-	<data name="Btn_Create" xml:space="preserve">
-	<value>Create</value>
+  <data name="Form_Title_City" xml:space="preserve">
+    <value>City Details</value>
   </data>
-
-	<!-- ===== Buttons - Navigation ===== -->
-	<data name="Btn_Cancel" xml:space="preserve">
-	<value>Cancel</value>
+  <data name="Form_Description_City" xml:space="preserve">
+    <value>Enter the city information below</value>
   </data>
-	<data name="Btn_Close" xml:space="preserve">
-	<value>Close</value>
+  <data name="List_Title_City" xml:space="preserve">
+    <value>Cities List</value>
   </data>
-	<data name="Btn_Back" xml:space="preserve">
-	<value>Back</value>
+  <data name="List_Description_City" xml:space="preserve">
+    <value>View and manage all cities</value>
   </data>
-	<data name="Btn_Next" xml:space="preserve">
-	<value>Next</value>
+  <data name="Page_Title_Country" xml:space="preserve">
+    <value>Countries Management</value>
   </data>
-	<data name="Btn_Prev" xml:space="preserve">
-	<value>Previous</value>
+  <data name="Page_Subtitle_Country" xml:space="preserve">
+    <value>Manage countries and their details</value>
   </data>
-	<data name="Btn_Finish" xml:space="preserve">
-	<value>Finish</value>
+  <data name="Form_Title_Country" xml:space="preserve">
+    <value>Country Details</value>
   </data>
-	<data name="Btn_Submit" xml:space="preserve">
-	<value>Submit</value>
+  <data name="Form_Description_Country" xml:space="preserve">
+    <value>Enter the country information below</value>
   </data>
-	<data name="Btn_Apply" xml:space="preserve">
-	<value>Apply</value>
+  <data name="List_Title_Country" xml:space="preserve">
+    <value>Countries List</value>
   </data>
-	<data name="Btn_Reset" xml:space="preserve">
-	<value>Reset</value>
+  <data name="List_Description_Country" xml:space="preserve">
+    <value>View and manage all countries</value>
   </data>
-	<data name="Btn_Clear" xml:space="preserve">
-	<value>Clear</value>
+  <data name="Page_Title_PaymentMethod" xml:space="preserve">
+    <value>Payment Methods Management</value>
   </data>
-	<data name="Btn_Go" xml:space="preserve">
-	<value>Go</value>
+  <data name="Page_Subtitle_PaymentMethod" xml:space="preserve">
+    <value>Manage payment methods and commission rates</value>
   </data>
-	<data name="Btn_Continue" xml:space="preserve">
-	<value>Continue</value>
+  <data name="Form_Title_PaymentMethod" xml:space="preserve">
+    <value>Payment Method Details</value>
   </data>
-	<data name="Btn_Proceed" xml:space="preserve">
-	<value>Proceed</value>
+  <data name="Form_Description_PaymentMethod" xml:space="preserve">
+    <value>Enter the payment method information below</value>
   </data>
-
-	<!-- ===== Buttons - Search & Filter ===== -->
-	<data name="Btn_Search" xml:space="preserve">
-	<value>Search</value>
+  <data name="List_Title_PaymentMethod" xml:space="preserve">
+    <value>Payment Methods List</value>
   </data>
-	<data name="Btn_Filter" xml:space="preserve">
-	<value>Filter</value>
+  <data name="List_Description_PaymentMethod" xml:space="preserve">
+    <value>View and manage all payment methods</value>
   </data>
-	<data name="Btn_Refresh" xml:space="preserve">
-	<value>Refresh</value>
+  <data name="Page_Title_Setting" xml:space="preserve">
+    <value>System Settings</value>
   </data>
-
-	<!-- ===== Buttons - File Operations ===== -->
-	<data name="Btn_Download" xml:space="preserve">
-	<value>Download</value>
+  <data name="Page_Subtitle_Setting" xml:space="preserve">
+    <value>Configure system-wide rates and parameters</value>
   </data>
-	<data name="Btn_Upload" xml:space="preserve">
-	<value>Upload</value>
+  <data name="Form_Title_Setting" xml:space="preserve">
+    <value>Settings Details</value>
   </data>
-	<data name="Btn_Export" xml:space="preserve">
-	<value>Export</value>
+  <data name="Form_Description_Setting" xml:space="preserve">
+    <value>Update system settings below</value>
   </data>
-	<data name="Btn_Import" xml:space="preserve">
-	<value>Import</value>
+  <data name="List_Title_Setting" xml:space="preserve">
+    <value>Settings List</value>
   </data>
-	<data name="Btn_Print" xml:space="preserve">
-	<value>Print</value>
+  <data name="List_Description_Setting" xml:space="preserve">
+    <value>View and manage system settings</value>
   </data>
-	<data name="Btn_Preview" xml:space="preserve">
-	<value>Preview</value>
+  <data name="Page_Title_ShippingType" xml:space="preserve">
+    <value>Shipping Types Management</value>
   </data>
-
-	<!-- ===== Buttons - View Options ===== -->
-	<data name="Btn_View" xml:space="preserve">
-	<value>View</value>
+  <data name="Page_Subtitle_ShippingType" xml:space="preserve">
+    <value>Manage shipping types and their factors</value>
   </data>
-	<data name="Btn_ViewAll" xml:space="preserve">
-	<value>View All</value>
+  <data name="Form_Title_ShippingType" xml:space="preserve">
+    <value>Shipping Type Details</value>
   </data>
-	<data name="Btn_Show" xml:space="preserve">
-	<value>Show</value>
+  <data name="Form_Description_ShippingType" xml:space="preserve">
+    <value>Enter the shipping type information below</value>
   </data>
-	<data name="Btn_Hide" xml:space="preserve">
-	<value>Hide</value>
+  <data name="List_Title_ShippingType" xml:space="preserve">
+    <value>Shipping Types List</value>
   </data>
-	<data name="Btn_Expand" xml:space="preserve">
-	<value>Expand</value>
+  <data name="List_Description_ShippingType" xml:space="preserve">
+    <value>View and manage all shipping types</value>
   </data>
-	<data name="Btn_Collapse" xml:space="preserve">
-	<value>Collapse</value>
+  <data name="Page_Title_Shippment" xml:space="preserve">
+    <value>Shipments Management</value>
   </data>
-	<data name="Btn_Details" xml:space="preserve">
-	<value>Details</value>
+  <data name="Page_Subtitle_Shippment" xml:space="preserve">
+    <value>Manage all shipments and their details</value>
   </data>
-	<data name="Btn_More" xml:space="preserve">
-	<value>More</value>
+  <data name="Form_Title_Shippment" xml:space="preserve">
+    <value>Shipment Details</value>
   </data>
-	<data name="Btn_Less" xml:space="preserve">
-	<value>Less</value>
+  <data name="Form_Description_Shippment" xml:space="preserve">
+    <value>Enter the shipment information below</value>
   </data>
-	<data name="Btn_SeeAll" xml:space="preserve">
-	<value>See All</value>
+  <data name="List_Title_Shippment" xml:space="preserve">
+    <value>Shipments List</value>
   </data>
-
-	<!-- ===== Buttons - Selection ===== -->
-	<data name="Btn_Select" xml:space="preserve">
-	<value>Select</value>
+  <data name="List_Description_Shippment" xml:space="preserve">
+    <value>View and manage all shipments</value>
   </data>
-	<data name="Btn_Choose" xml:space="preserve">
-	<value>Choose</value>
+  <data name="Page_Title_ShippmentStatus" xml:space="preserve">
+    <value>Shipment Status Management</value>
   </data>
-	<data name="Btn_Confirm" xml:space="preserve">
-	<value>Confirm</value>
+  <data name="Page_Subtitle_ShippmentStatus" xml:space="preserve">
+    <value>Track shipment status updates</value>
   </data>
-	<data name="Btn_Approve" xml:space="preserve">
-	<value>Approve</value>
+  <data name="Form_Title_ShippmentStatus" xml:space="preserve">
+    <value>Shipment Status Details</value>
   </data>
-	<data name="Btn_Reject" xml:space="preserve">
-	<value>Reject</value>
+  <data name="Form_Description_ShippmentStatus" xml:space="preserve">
+    <value>Update shipment status information</value>
   </data>
-	<data name="Btn_Accept" xml:space="preserve">
-	<value>Accept</value>
+  <data name="List_Title_ShippmentStatus" xml:space="preserve">
+    <value>Shipment Status List</value>
   </data>
-
-	<!-- ===== Buttons - Status Actions ===== -->
-	<data name="Btn_Enable" xml:space="preserve">
-	<value>Enable</value>
+  <data name="List_Description_ShippmentStatus" xml:space="preserve">
+    <value>View all shipment status updates</value>
   </data>
-	<data name="Btn_Disable" xml:space="preserve">
-	<value>Disable</value>
+  <data name="Page_Title_SubscriptionPackage" xml:space="preserve">
+    <value>Subscription Packages Management</value>
   </data>
-	<data name="Btn_Activate" xml:space="preserve">
-	<value>Activate</value>
+  <data name="Page_Subtitle_SubscriptionPackage" xml:space="preserve">
+    <value>Manage subscription packages and their limits</value>
   </data>
-	<data name="Btn_Deactivate" xml:space="preserve">
-	<value>Deactivate</value>
+  <data name="Form_Title_SubscriptionPackage" xml:space="preserve">
+    <value>Package Details</value>
   </data>
-	<data name="Btn_Lock" xml:space="preserve">
-	<value>Lock</value>
+  <data name="Form_Description_SubscriptionPackage" xml:space="preserve">
+    <value>Enter the package information below</value>
   </data>
-	<data name="Btn_Unlock" xml:space="preserve">
-	<value>Unlock</value>
+  <data name="List_Title_SubscriptionPackage" xml:space="preserve">
+    <value>Packages List</value>
   </data>
-	<data name="Btn_Suspend" xml:space="preserve">
-	<value>Suspend</value>
+  <data name="List_Description_SubscriptionPackage" xml:space="preserve">
+    <value>View and manage all subscription packages</value>
   </data>
-	<data name="Btn_Resume" xml:space="preserve">
-	<value>Resume</value>
+  <data name="Page_Title_UserReceiver" xml:space="preserve">
+    <value>Receivers Management</value>
   </data>
-	<data name="Btn_Archive" xml:space="preserve">
-	<value>Archive</value>
+  <data name="Page_Subtitle_UserReceiver" xml:space="preserve">
+    <value>Manage receiver information and addresses</value>
   </data>
-	<data name="Btn_Restore" xml:space="preserve">
-	<value>Restore</value>
+  <data name="Form_Title_UserReceiver" xml:space="preserve">
+    <value>Receiver Details</value>
   </data>
-
-	<!-- ===== Buttons - Copy Actions ===== -->
-	<data name="Btn_Copy" xml:space="preserve">
-	<value>Copy</value>
+  <data name="Form_Description_UserReceiver" xml:space="preserve">
+    <value>Enter the receiver information below</value>
   </data>
-	<data name="Btn_Paste" xml:space="preserve">
-	<value>Paste</value>
+  <data name="List_Title_UserReceiver" xml:space="preserve">
+    <value>Receivers List</value>
   </data>
-	<data name="Btn_Cut" xml:space="preserve">
-	<value>Cut</value>
+  <data name="List_Description_UserReceiver" xml:space="preserve">
+    <value>View and manage all receivers</value>
   </data>
-	<data name="Btn_Remove" xml:space="preserve">
-	<value>Remove</value>
+  <data name="Page_Title_UserSender" xml:space="preserve">
+    <value>Senders Management</value>
   </data>
-
-	<!-- ===== Buttons - Media Actions ===== -->
-	<data name="Btn_Play" xml:space="preserve">
-	<value>Play</value>
+  <data name="Page_Subtitle_UserSender" xml:space="preserve">
+    <value>Manage sender information and addresses</value>
   </data>
-	<data name="Btn_Pause" xml:space="preserve">
-	<value>Pause</value>
+  <data name="Form_Title_UserSender" xml:space="preserve">
+    <value>Sender Details</value>
   </data>
-	<data name="Btn_Stop" xml:space="preserve">
-	<value>Stop</value>
+  <data name="Form_Description_UserSender" xml:space="preserve">
+    <value>Enter the sender information below</value>
   </data>
-	<data name="Btn_Start" xml:space="preserve">
-	<value>Start</value>
+  <data name="List_Title_UserSender" xml:space="preserve">
+    <value>Senders List</value>
   </data>
-
-	<!-- ===== Buttons - Retry Actions ===== -->
-	<data name="Btn_Retry" xml:space="preserve">
-	<value>Retry</value>
+  <data name="List_Description_UserSender" xml:space="preserve">
+    <value>View and manage all senders</value>
   </data>
-	<data name="Btn_TryAgain" xml:space="preserve">
-	<value>Try Again</value>
+  <data name="Page_Title_UserSubscription" xml:space="preserve">
+    <value>User Subscriptions Management</value>
   </data>
-	<data name="Btn_Skip" xml:space="preserve">
-	<value>Skip</value>
+  <data name="Page_Subtitle_UserSubscription" xml:space="preserve">
+    <value>Manage user subscriptions to packages</value>
   </data>
-	<data name="Btn_Done" xml:space="preserve">
-	<value>Done</value>
+  <data name="Form_Title_UserSubscription" xml:space="preserve">
+    <value>Subscription Details</value>
   </data>
-
-	<!-- ===== Buttons - Confirmation ===== -->
-	<data name="Btn_Ok" xml:space="preserve">
-	<value>OK</value>
+  <data name="Form_Description_UserSubscription" xml:space="preserve">
+    <value>Enter the subscription information below</value>
   </data>
-	<data name="Btn_Yes" xml:space="preserve">
-	<value>Yes</value>
+  <data name="List_Title_UserSubscription" xml:space="preserve">
+    <value>Subscriptions List</value>
   </data>
-	<data name="Btn_No" xml:space="preserve">
-	<value>No</value>
+  <data name="List_Description_UserSubscription" xml:space="preserve">
+    <value>View and manage all user subscriptions</value>
   </data>
-
-	<!-- ===== Buttons - User Actions ===== -->
-	<data name="Btn_Login" xml:space="preserve">
-	<value>Login</value>
+  <data name="Btn_Save" xml:space="preserve">
+    <value>Save</value>
   </data>
-	<data name="Btn_Logout" xml:space="preserve">
-	<value>Logout</value>
+  <data name="Btn_SaveChanges" xml:space="preserve">
+    <value>Save Changes</value>
   </data>
-	<data name="Btn_SignOut" xml:space="preserve">
-	<value>Signout</value>
+  <data name="Btn_SaveCont" xml:space="preserve">
+    <value>Save &amp; Continue</value>
   </data>
-	<data name="Btn_Register" xml:space="preserve">
-	<value>Register</value>
+  <data name="Btn_Delete" xml:space="preserve">
+    <value>Delete</value>
   </data>
-	<data name="Btn_SignIn" xml:space="preserve">
-	<value>Sign In</value>
+  <data name="Btn_Edit" xml:space="preserve">
+    <value>Edit</value>
   </data>
-	<data name="Btn_SignUp" xml:space="preserve">
-	<value>Sign Up</value>
+  <data name="Btn_Update" xml:space="preserve">
+    <value>Update</value>
   </data>
-	<data name="Btn_Profile" xml:space="preserve">
-	<value>Profile</value>
+  <data name="Btn_Add" xml:space="preserve">
+    <value>Add</value>
   </data>
-	<data name="Btn_Settings" xml:space="preserve">
-	<value>Settings</value>
+  <data name="Btn_AddItem" xml:space="preserve">
+    <value>Add Item</value>
   </data>
-	<data name="Btn_Preferences" xml:space="preserve">
-	<value>Preferences</value>
+  <data name="Btn_Create" xml:space="preserve">
+    <value>Create</value>
   </data>
-	<data name="Btn_Account" xml:space="preserve">
-	<value>Account</value>
+  <data name="Btn_Cancel" xml:space="preserve">
+    <value>Cancel</value>
   </data>
-	<data name="Btn_Dashboard" xml:space="preserve">
-	<value>Dashboard</value>
+  <data name="Btn_Close" xml:space="preserve">
+    <value>Close</value>
   </data>
-	<data name="Btn_ChangePassword" xml:space="preserve">
-	<value>Change Password</value>
+  <data name="Btn_Back" xml:space="preserve">
+    <value>Back</value>
   </data>
-	<data name="Btn_ForgotPassword" xml:space="preserve">
-	<value>Forgot Password?</value>
+  <data name="Btn_Next" xml:space="preserve">
+    <value>Next</value>
   </data>
-	<data name="Btn_ResetPassword" xml:space="preserve">
-	<value>Reset Password</value>
+  <data name="Btn_Prev" xml:space="preserve">
+    <value>Previous</value>
   </data>
-
-	<!-- ===== Buttons - Misc ===== -->
-	<data name="Btn_BuyNow" xml:space="preserve">
-	<value>Buy Now</value>
+  <data name="Btn_Finish" xml:space="preserve">
+    <value>Finish</value>
   </data>
-	<data name="Btn_BannerClose" xml:space="preserve">
-	<value>Close</value>
+  <data name="Btn_Submit" xml:space="preserve">
+    <value>Submit</value>
   </data>
-	<data name="Btn_Fullscreen" xml:space="preserve">
-	<value>Fullscreen</value>
+  <data name="Btn_Apply" xml:space="preserve">
+    <value>Apply</value>
   </data>
-	<data name="Btn_AddProject" xml:space="preserve">
-	<value>+ Add a project</value>
+  <data name="Btn_Reset" xml:space="preserve">
+    <value>Reset</value>
   </data>
-
-	<!-- =========================================================== -->
-	<!-- ===================  SECTION: LABELS  ===================== -->
-	<!-- =========================================================== -->
-	<!-- ===== Labels - Personal Info ===== -->
-	<data name="Lbl_Name" xml:space="preserve">
-	<value>Name</value>
+  <data name="Btn_Clear" xml:space="preserve">
+    <value>Clear</value>
   </data>
-	<data name="Lbl_FullName" xml:space="preserve">
-	<value>Full Name</value>
+  <data name="Btn_Go" xml:space="preserve">
+    <value>Go</value>
   </data>
-	<data name="Lbl_FirstName" xml:space="preserve">
-	<value>First Name</value>
+  <data name="Btn_Continue" xml:space="preserve">
+    <value>Continue</value>
   </data>
-	<data name="Lbl_LastName" xml:space="preserve">
-	<value>Last Name</value>
+  <data name="Btn_Proceed" xml:space="preserve">
+    <value>Proceed</value>
   </data>
-	<data name="Lbl_Email" xml:space="preserve">
-	<value>Email</value>
+  <data name="Btn_Search" xml:space="preserve">
+    <value>Search</value>
   </data>
-	<data name="Lbl_Phone" xml:space="preserve">
-	<value>Phone</value>
+  <data name="Btn_Filter" xml:space="preserve">
+    <value>Filter</value>
   </data>
-	<data name="Lbl_Mobile" xml:space="preserve">
-	<value>Mobile</value>
+  <data name="Btn_Refresh" xml:space="preserve">
+    <value>Refresh</value>
   </data>
-	<data name="Lbl_Address" xml:space="preserve">
-	<value>Address</value>
+  <data name="Btn_Download" xml:space="preserve">
+    <value>Download</value>
   </data>
-	<data name="Lbl_City" xml:space="preserve">
-	<value>City</value>
+  <data name="Btn_Upload" xml:space="preserve">
+    <value>Upload</value>
   </data>
-	<data name="Lbl_Country" xml:space="preserve">
-	<value>Country</value>
+  <data name="Btn_Export" xml:space="preserve">
+    <value>Export</value>
   </data>
-	<data name="Lbl_ZipCode" xml:space="preserve">
-	<value>Postal Code</value>
+  <data name="Btn_Import" xml:space="preserve">
+    <value>Import</value>
   </data>
-
-	<!-- ===== Labels - Financial ===== -->
-	<data name="Lbl_Price" xml:space="preserve">
-	<value>Price</value>
+  <data name="Btn_Print" xml:space="preserve">
+    <value>Print</value>
   </data>
-	<data name="Lbl_Quantity" xml:space="preserve">
-	<value>Quantity</value>
+  <data name="Btn_Preview" xml:space="preserve">
+    <value>Preview</value>
   </data>
-	<data name="Lbl_Total" xml:space="preserve">
-	<value>Total</value>
+  <data name="Btn_View" xml:space="preserve">
+    <value>View</value>
   </data>
-	<data name="Lbl_Commission" xml:space="preserve">
-	<value>Commission</value>
+  <data name="Btn_ViewAll" xml:space="preserve">
+    <value>View All</value>
   </data>
-
-	<!-- ===== Labels - Descriptions ===== -->
-	<data name="Lbl_Description" xml:space="preserve">
-	<value>Description</value>
+  <data name="Btn_Show" xml:space="preserve">
+    <value>Show</value>
   </data>
-	<data name="Lbl_Notes" xml:space="preserve">
-	<value>Notes</value>
+  <data name="Btn_Hide" xml:space="preserve">
+    <value>Hide</value>
   </data>
-
-	<!-- ===== Labels - Status & Type ===== -->
-	<data name="Lbl_Status" xml:space="preserve">
-	<value>Status</value>
+  <data name="Btn_Expand" xml:space="preserve">
+    <value>Expand</value>
   </data>
-	<data name="Lbl_Type" xml:space="preserve">
-	<value>Type</value>
+  <data name="Btn_Collapse" xml:space="preserve">
+    <value>Collapse</value>
   </data>
-	<data name="Lbl_Category" xml:space="preserve">
-	<value>Category</value>
+  <data name="Btn_Details" xml:space="preserve">
+    <value>Details</value>
   </data>
-	<data name="Lbl_Role" xml:space="preserve">
-	<value>Role</value>
+  <data name="Btn_More" xml:space="preserve">
+    <value>More</value>
   </data>
-
-	<!-- ===== Labels - Dates ===== -->
-	<data name="Lbl_Date" xml:space="preserve">
-	<value>Date</value>
+  <data name="Btn_Less" xml:space="preserve">
+    <value>Less</value>
   </data>
-	<data name="Lbl_CreatedAt" xml:space="preserve">
-	<value>Created At</value>
+  <data name="Btn_SeeAll" xml:space="preserve">
+    <value>See All</value>
   </data>
-	<data name="Lbl_UpdatedAt" xml:space="preserve">
-	<value>Updated At</value>
+  <data name="Btn_Select" xml:space="preserve">
+    <value>Select</value>
   </data>
-	<data name="Lbl_CreatedBy" xml:space="preserve">
-	<value>Created By</value>
+  <data name="Btn_Choose" xml:space="preserve">
+    <value>Choose</value>
   </data>
-	<data name="Lbl_UpdatedBy" xml:space="preserve">
-	<value>Updated By</value>
+  <data name="Btn_Confirm" xml:space="preserve">
+    <value>Confirm</value>
   </data>
-	<data name="Lbl_SubscriptionDate" xml:space="preserve">
-	<value>Subscription Date</value>
+  <data name="Btn_Approve" xml:space="preserve">
+    <value>Approve</value>
   </data>
-	<data name="Lbl_ShippingDate" xml:space="preserve">
-	<value>Shipping Date</value>
+  <data name="Btn_Reject" xml:space="preserve">
+    <value>Reject</value>
   </data>
-
-	<!-- ===== Labels - Identifiers ===== -->
-	<data name="Lbl_ID" xml:space="preserve">
-	<value>ID</value>
+  <data name="Btn_Accept" xml:space="preserve">
+    <value>Accept</value>
   </data>
-	<data name="Lbl_Code" xml:space="preserve">
-	<value>Code</value>
+  <data name="Btn_Enable" xml:space="preserve">
+    <value>Enable</value>
   </data>
-	<data name="Lbl_TrackingNumber" xml:space="preserve">
-	<value>Tracking Number</value>
+  <data name="Btn_Disable" xml:space="preserve">
+    <value>Disable</value>
   </data>
-
-	<!-- ===== Labels - Security ===== -->
-	<data name="Lbl_Password" xml:space="preserve">
-	<value>Password</value>
+  <data name="Btn_Activate" xml:space="preserve">
+    <value>Activate</value>
   </data>
-	<data name="Lbl_ConfirmPass" xml:space="preserve">
-	<value>Confirm Password</value>
+  <data name="Btn_Deactivate" xml:space="preserve">
+    <value>Deactivate</value>
   </data>
-
-	<!-- ===== Labels - Media ===== -->
-	<data name="Lbl_Image" xml:space="preserve">
-	<value>Image</value>
+  <data name="Btn_Lock" xml:space="preserve">
+    <value>Lock</value>
   </data>
-	<data name="Lbl_File" xml:space="preserve">
-	<value>File</value>
+  <data name="Btn_Unlock" xml:space="preserve">
+    <value>Unlock</value>
   </data>
-
-	<!-- ===== Labels - Measurements ===== -->
-	<data name="Lbl_Width" xml:space="preserve">
-	<value>Width</value>
+  <data name="Btn_Suspend" xml:space="preserve">
+    <value>Suspend</value>
   </data>
-	<data name="Lbl_Height" xml:space="preserve">
-	<value>Height</value>
+  <data name="Btn_Resume" xml:space="preserve">
+    <value>Resume</value>
   </data>
-	<data name="Lbl_Weight" xml:space="preserve">
-	<value>Weight</value>
+  <data name="Btn_Archive" xml:space="preserve">
+    <value>Archive</value>
   </data>
-	<data name="Lbl_Length" xml:space="preserve">
-	<value>Length</value>
+  <data name="Btn_Restore" xml:space="preserve">
+    <value>Restore</value>
   </data>
-	<data name="Lbl_TotalWeight" xml:space="preserve">
-	<value>Total Weight</value>
+  <data name="Btn_Copy" xml:space="preserve">
+    <value>Copy</value>
   </data>
-	<data name="Lbl_NumberOfKiloMeters" xml:space="preserve">
-	<value>Number of Kilometers</value>
+  <data name="Btn_Paste" xml:space="preserve">
+    <value>Paste</value>
   </data>
-	<data name="Lbl_KiloMeterRate" xml:space="preserve">
-	<value>Kilometer Rate</value>
+  <data name="Btn_Cut" xml:space="preserve">
+    <value>Cut</value>
   </data>
-	<data name="Lbl_KilooGramRate" xml:space="preserve">
-	<value>Kilogram Rate</value>
+  <data name="Btn_Remove" xml:space="preserve">
+    <value>Remove</value>
   </data>
-	<data name="Lbl_ShippingFactor" xml:space="preserve">
-	<value>Shipping Factor</value>
+  <data name="Btn_Play" xml:space="preserve">
+    <value>Play</value>
   </data>
-
-	<!-- ===== Labels - Shipping ===== -->
-	<data name="Lbl_CarrierName" xml:space="preserve">
-	<value>Carrier Name</value>
+  <data name="Btn_Pause" xml:space="preserve">
+    <value>Pause</value>
   </data>
-	<data name="Lbl_CarrierId" xml:space="preserve">
-	<value>Carrier</value>
+  <data name="Btn_Stop" xml:space="preserve">
+    <value>Stop</value>
   </data>
-	<data name="Lbl_ShippmentId" xml:space="preserve">
-	<value>Shippment Number</value>
+  <data name="Btn_Start" xml:space="preserve">
+    <value>Start</value>
   </data>
-	<data name="Lbl_ShippimentCount" xml:space="preserve">
-	<value>Shippments Count</value>
+  <data name="Btn_Retry" xml:space="preserve">
+    <value>Retry</value>
   </data>
-	<data name="Lbl_PackageValue" xml:space="preserve">
-	<value>Package Value</value>
+  <data name="Btn_TryAgain" xml:space="preserve">
+    <value>Try Again</value>
   </data>
-	<data name="Lbl_ShippingRate" xml:space="preserve">
-	<value>Shipping Rate</value>
+  <data name="Btn_Skip" xml:space="preserve">
+    <value>Skip</value>
   </data>
-	<data name="Lbl_ShippingType" xml:space="preserve">
-	<value>Shipping Type</value>
+  <data name="Btn_Done" xml:space="preserve">
+    <value>Done</value>
   </data>
-	<data name="Lbl_ShippingTypeId" xml:space="preserve">
-	<value>Shipping Type</value>
+  <data name="Btn_Ok" xml:space="preserve">
+    <value>OK</value>
   </data>
-	<data name="Lbl_PaymentMethodId" xml:space="preserve">
-	<value>Payment Method</value>
+  <data name="Btn_Yes" xml:space="preserve">
+    <value>Yes</value>
   </data>
-	<data name="Lbl_UserSubscriptionId" xml:space="preserve">
-	<value>User Subscription</value>
+  <data name="Btn_No" xml:space="preserve">
+    <value>No</value>
   </data>
-
-	<!-- ===== Labels - Package ===== -->
-	<data name="Lbl_PackageName" xml:space="preserve">
-	<value>Package Name</value>
+  <data name="Btn_Login" xml:space="preserve">
+    <value>Login</value>
   </data>
-	<data name="Lbl_PackageId" xml:space="preserve">
-	<value>Package</value>
+  <data name="Btn_Logout" xml:space="preserve">
+    <value>Logout</value>
   </data>
-
-	<!-- ===== Labels - Users ===== -->
-	<data name="Lbl_UserId" xml:space="preserve">
-	<value>User</value>
+  <data name="Btn_SignOut" xml:space="preserve">
+    <value>Signout</value>
   </data>
-	<data name="Lbl_SenderName" xml:space="preserve">
-	<value>Sender Name</value>
+  <data name="Btn_Register" xml:space="preserve">
+    <value>Register</value>
   </data>
-	<data name="Lbl_SenderId" xml:space="preserve">
-	<value>Sender</value>
+  <data name="Btn_SignIn" xml:space="preserve">
+    <value>Sign In</value>
   </data>
-	<data name="Lbl_ReceiverName" xml:space="preserve">
-	<value>Receiver Name</value>
+  <data name="Btn_SignUp" xml:space="preserve">
+    <value>Sign Up</value>
   </data>
-	<data name="Lbl_ReceiverId" xml:space="preserve">
-	<value>Receiver</value>
+  <data name="Btn_Profile" xml:space="preserve">
+    <value>Profile</value>
   </data>
-
-	<!-- ===== Labels - UI Elements ===== -->
-	<data name="Lbl_AppTitle" xml:space="preserve">
-	<value>Purple Admin</value>
+  <data name="Btn_Settings" xml:space="preserve">
+    <value>Settings</value>
   </data>
-	<data name="Lbl_ProfileName" xml:space="preserve">
-	<value>David Greymaax</value>
+  <data name="Btn_Preferences" xml:space="preserve">
+    <value>Preferences</value>
   </data>
-	<data name="Lbl_ActivityLog" xml:space="preserve">
-	<value>Activity Log</value>
+  <data name="Btn_Account" xml:space="preserve">
+    <value>Account</value>
   </data>
-	<data name="Lbl_Messages" xml:space="preserve">
-	<value>Messages</value>
+  <data name="Btn_Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
   </data>
-	<data name="Lbl_Notifications" xml:space="preserve">
-	<value>Notifications</value>
+  <data name="Btn_ChangePassword" xml:space="preserve">
+    <value>Change Password</value>
   </data>
-	<data name="Lbl_Settings" xml:space="preserve">
-	<value>Settings</value>
+  <data name="Btn_ForgotPassword" xml:space="preserve">
+    <value>Forgot Password?</value>
   </data>
-	<data name="Lbl_Languages" xml:space="preserve">
-	<value>Languages</value>
+  <data name="Btn_ResetPassword" xml:space="preserve">
+    <value>Reset Password</value>
   </data>
-	<data name="Lbl_SidebarSkins" xml:space="preserve">
-	<value>SIDEBAR SKINS</value>
+  <data name="Btn_BuyNow" xml:space="preserve">
+    <value>Buy Now</value>
   </data>
-	<data name="Lbl_HeaderSkins" xml:space="preserve">
-	<value>HEADER SKINS</value>
+  <data name="Btn_BannerClose" xml:space="preserve">
+    <value>Close</value>
   </data>
-	<data name="Lbl_TemplateDemos" xml:space="preserve">
-	<value>Template Demos</value>
+  <data name="Btn_Fullscreen" xml:space="preserve">
+    <value>Fullscreen</value>
   </data>
-	<data name="Lbl_TodoTab" xml:space="preserve">
-	<value>TO DO LIST</value>
+  <data name="Btn_AddProject" xml:space="preserve">
+    <value>+ Add a project</value>
   </data>
-	<data name="Lbl_ChatsTab" xml:space="preserve">
-	<value>CHATS</value>
+  <data name="Lbl_Name" xml:space="preserve">
+    <value>Name</value>
   </data>
-	<data name="Lbl_Friends" xml:space="preserve">
-	<value>Friends</value>
+  <data name="Lbl_FullName" xml:space="preserve">
+    <value>Full Name</value>
   </data>
-	<data name="Lbl_Projects" xml:space="preserve">
-	<value>Projects</value>
+  <data name="Lbl_FirstName" xml:space="preserve">
+    <value>First Name</value>
   </data>
-	<data name="Lbl_Categories" xml:space="preserve">
-	<value>Categories</value>
+  <data name="Lbl_LastName" xml:space="preserve">
+    <value>Last Name</value>
   </data>
-
-	<!-- ===== Labels - Arabic/English ===== -->
-	<data name="Lbl_CityAname" xml:space="preserve">
-	<value>City Name (Arabic)</value>
+  <data name="Lbl_Email" xml:space="preserve">
+    <value>Email</value>
   </data>
-	<data name="Lbl_CityEname" xml:space="preserve">
-	<value>City Name (English)</value>
+  <data name="Lbl_Phone" xml:space="preserve">
+    <value>Phone</value>
   </data>
-	<data name="Lbl_CountryAname" xml:space="preserve">
-	<value>Country Name (Arabic)</value>
+  <data name="Lbl_Mobile" xml:space="preserve">
+    <value>Mobile</value>
   </data>
-	<data name="Lbl_CountryEname" xml:space="preserve">
-	<value>Country Name (English)</value>
+  <data name="Lbl_Address" xml:space="preserve">
+    <value>Address</value>
   </data>
-	<data name="Lbl_MethdAname" xml:space="preserve">
-	<value>Payment Method Name (Arabic)</value>
+  <data name="Lbl_City" xml:space="preserve">
+    <value>City</value>
   </data>
-	<data name="Lbl_MethodEname" xml:space="preserve">
-	<value>Payment Method Name (English)</value>
+  <data name="Lbl_Country" xml:space="preserve">
+    <value>Country</value>
   </data>
-	<data name="Lbl_ShippingTypeAname" xml:space="preserve">
-	<value>Shipping Type Name (Arabic)</value>
+  <data name="Lbl_ZipCode" xml:space="preserve">
+    <value>Postal Code</value>
   </data>
-	<data name="Lbl_ShippingTypeEname" xml:space="preserve">
-	<value>Shipping Type Name (English)</value>
+  <data name="Lbl_Price" xml:space="preserve">
+    <value>Price</value>
   </data>
-
-	<!-- ===== Labels - Email & Phone ===== -->
-	<data name="Lbl_Email_Receiver" xml:space="preserve">
-	<value>Receiver Email</value>
+  <data name="Lbl_Quantity" xml:space="preserve">
+    <value>Quantity</value>
   </data>
-	<data name="Lbl_Phone_Receiver" xml:space="preserve">
-	<value>Receiver Phone</value>
+  <data name="Lbl_Total" xml:space="preserve">
+    <value>Total</value>
   </data>
-	<data name="Lbl_Email_Sender" xml:space="preserve">
-	<value>Sender Email</value>
+  <data name="Lbl_Commission" xml:space="preserve">
+    <value>Commission</value>
   </data>
-	<data name="Lbl_Phone_Sender" xml:space="preserve">
-	<value>Sender Phone</value>
+  <data name="Lbl_Description" xml:space="preserve">
+    <value>Description</value>
   </data>
-
-	<!-- ===== Labels - City & Address ===== -->
-	<data name="Lbl_CityId_Receiver" xml:space="preserve">
-	<value>Receiver City</value>
+  <data name="Lbl_Notes" xml:space="preserve">
+    <value>Notes</value>
   </data>
-	<data name="Lbl_Address_Receiver" xml:space="preserve">
-	<value>Receiver Address</value>
+  <data name="Lbl_Status" xml:space="preserve">
+    <value>Status</value>
   </data>
-	<data name="Lbl_CityId_Sender" xml:space="preserve">
-	<value>Sender City</value>
+  <data name="Lbl_Type" xml:space="preserve">
+    <value>Type</value>
   </data>
-	<data name="Lbl_Address_Sender" xml:space="preserve">
-	<value>Sender Address</value>
+  <data name="Lbl_Category" xml:space="preserve">
+    <value>Category</value>
   </data>
-	<data name="Lbl_UserId_Subscription" xml:space="preserve">
-	<value>User</value>
+  <data name="Lbl_Role" xml:space="preserve">
+    <value>Role</value>
   </data>
-
-	<!-- ===== Labels - Footer ===== -->
-	<data name="Lbl_FooterCopyright" xml:space="preserve">
-	<value>Copyright © 2021 &lt;a href='https://www.bootstrapdash.com/' target='_blank'&gt;BootstrapDash&lt;/a&gt;. All rights reserved.</value>
+  <data name="Lbl_Date" xml:space="preserve">
+    <value>Date</value>
   </data>
-	<data name="Lbl_HandCrafted" xml:space="preserve">
-	<value>Hand-crafted &amp; made with &lt;i class='mdi mdi-heart text-danger'&gt;&lt;/i&gt;</value>
+  <data name="Lbl_CreatedAt" xml:space="preserve">
+    <value>Created At</value>
   </data>
-
-	<!-- =========================================================== -->
-	<!-- =================  SECTION: PLACEHOLDERS  ================= -->
-	<!-- =========================================================== -->
-	<!-- ===== Placeholders - Search ===== -->
-	<data name="Plh_SearchProjects" xml:space="preserve">
-	<value>Search projects</value>
+  <data name="Lbl_UpdatedAt" xml:space="preserve">
+    <value>Updated At</value>
   </data>
-
-	<!-- ===== Placeholders - Images ===== -->
-	<data name="Plh_DemoImage" xml:space="preserve">
-	<value>demo image</value>
+  <data name="Lbl_CreatedBy" xml:space="preserve">
+    <value>Created By</value>
   </data>
-
-	<!-- ===== Placeholders - Todo ===== -->
-	<data name="Plh_AddTodo" xml:space="preserve">
-	<value>What do you need to do today?</value>
+  <data name="Lbl_UpdatedBy" xml:space="preserve">
+    <value>Updated By</value>
   </data>
-
-	<!-- =========================================================== -->
-	<!-- ====================  SECTION: TEXT  ====================== -->
-	<!-- =========================================================== -->
-	<!-- ===== Text - Support ===== -->
-	<data name="Txt_FreeSupport" xml:space="preserve">
-	<value>Free 24/7 customer support, updates, and more with this template!</value>
+  <data name="Lbl_SubscriptionDate" xml:space="preserve">
+    <value>Subscription Date</value>
   </data>
-
-	<!-- ===== Text - Time ===== -->
-	<data name="Txt_1MinuteAgo" xml:space="preserve">
-	<value>1 Minutes ago</value>
+  <data name="Lbl_ShippingDate" xml:space="preserve">
+    <value>Shipping Date</value>
   </data>
-	<data name="Txt_15MinutesAgo" xml:space="preserve">
-	<value>15 Minutes ago</value>
+  <data name="Lbl_ID" xml:space="preserve">
+    <value>ID</value>
   </data>
-	<data name="Txt_18MinutesAgo" xml:space="preserve">
-	<value>18 Minutes ago</value>
+  <data name="Lbl_Code" xml:space="preserve">
+    <value>Code</value>
   </data>
-	<data name="Txt_19Min" xml:space="preserve">
-	<value>19 min</value>
+  <data name="Lbl_TrackingNumber" xml:space="preserve">
+    <value>Tracking Number</value>
   </data>
-
-	<!-- ===== Text - Events ===== -->
-	<data name="Txt_EventToday" xml:space="preserve">
-	<value>Event today</value>
+  <data name="Lbl_Password" xml:space="preserve">
+    <value>Password</value>
   </data>
-	<data name="Txt_ReminderEvent" xml:space="preserve">
-	<value>Just a reminder that you have an event today</value>
+  <data name="Lbl_ConfirmPass" xml:space="preserve">
+    <value>Confirm Password</value>
   </data>
-
-	<!-- ===== Text - Admin ===== -->
-	<data name="Txt_UpdateDashboard" xml:space="preserve">
-	<value>Update dashboard</value>
+  <data name="Lbl_Image" xml:space="preserve">
+    <value>Image</value>
   </data>
-	<data name="Txt_LaunchAdmin" xml:space="preserve">
-	<value>Launch Admin</value>
+  <data name="Lbl_File" xml:space="preserve">
+    <value>File</value>
   </data>
-	<data name="Txt_NewAdminWow" xml:space="preserve">
-	<value>New admin wow!</value>
+  <data name="Lbl_Width" xml:space="preserve">
+    <value>Width</value>
   </data>
-
-	<!-- ===== Text - Themes ===== -->
-	<data name="Txt_Light" xml:space="preserve">
-	<value>Light</value>
+  <data name="Lbl_Height" xml:space="preserve">
+    <value>Height</value>
   </data>
-	<data name="Txt_Dark" xml:space="preserve">
-	<value>Dark</value>
+  <data name="Lbl_Weight" xml:space="preserve">
+    <value>Weight</value>
   </data>
-
-	<!-- ===== Text - Dates ===== -->
-	<data name="Txt_Feb112018" xml:space="preserve">
-	<value>Feb 11 2018</value>
+  <data name="Lbl_Length" xml:space="preserve">
+    <value>Length</value>
   </data>
-	<data name="Txt_Feb072018" xml:space="preserve">
-	<value>Feb 7 2018</value>
+  <data name="Lbl_TotalWeight" xml:space="preserve">
+    <value>Total Weight</value>
   </data>
-
-	<!-- ===== Text - Activities ===== -->
-	<data name="Txt_CreatingComponentPage" xml:space="preserve">
-	<value>Creating component page</value>
+  <data name="Lbl_NumberOfKiloMeters" xml:space="preserve">
+    <value>Number of Kilometers</value>
   </data>
-	<data name="Txt_BuildJsApp" xml:space="preserve">
-	<value>build a js based app</value>
+  <data name="Lbl_KiloMeterRate" xml:space="preserve">
+    <value>Kilometer Rate</value>
   </data>
-	<data name="Txt_MeetingWithAlisa" xml:space="preserve">
-	<value>Meeting with Alisa</value>
+  <data name="Lbl_KilooGramRate" xml:space="preserve">
+    <value>Kilogram Rate</value>
   </data>
-	<data name="Txt_CallSarahGraves" xml:space="preserve">
-	<value>Call Sarah Graves</value>
+  <data name="Lbl_ShippingFactor" xml:space="preserve">
+    <value>Shipping Factor</value>
   </data>
-
-	<!-- ===== Text - Availability ===== -->
-	<data name="Txt_Available" xml:space="preserve">
-	<value>Available</value>
+  <data name="Lbl_CarrierName" xml:space="preserve">
+    <value>Carrier Name</value>
   </data>
-	<data name="Txt_ProjectManager" xml:space="preserve">
-	<value>Project Manager</value>
+  <data name="Lbl_CarrierId" xml:space="preserve">
+    <value>Carrier</value>
   </data>
-
-	<!-- ===== Text - Pricing ===== -->
-	<data name="Txt_Free" xml:space="preserve">
-	<value>Free</value>
+  <data name="Lbl_ShippmentId" xml:space="preserve">
+    <value>Shippment Number</value>
   </data>
-	<data name="Txt_Pro" xml:space="preserve">
-	<value>Pro</value>
+  <data name="Lbl_ShippimentCount" xml:space="preserve">
+    <value>Shippments Count</value>
   </data>
-
-	<!-- =========================================================== -->
-	<!-- ====================  SECTION: MENU  ====================== -->
-	<!-- =========================================================== -->
-	<!-- ===== Menu - Main ===== -->
-	<data name="Menu_Dashboard" xml:space="preserve">
-	<value>Dashboard</value>
+  <data name="Lbl_PackageValue" xml:space="preserve">
+    <value>Package Value</value>
   </data>
-	<data name="Menu_PageLayouts" xml:space="preserve">
-	<value>Page Layouts</value>
+  <data name="Lbl_ShippingRate" xml:space="preserve">
+    <value>Shipping Rate</value>
   </data>
-	<data name="Menu_Apps" xml:space="preserve">
-	<value>Apps</value>
+  <data name="Lbl_ShippingType" xml:space="preserve">
+    <value>Shipping Type</value>
   </data>
-	<data name="Menu_Widgets" xml:space="preserve">
-	<value>Widgets</value>
+  <data name="Lbl_ShippingTypeId" xml:space="preserve">
+    <value>Shipping Type</value>
   </data>
-	<data name="Menu_SidebarLayouts" xml:space="preserve">
-	<value>Sidebar Layouts</value>
+  <data name="Lbl_PaymentMethodId" xml:space="preserve">
+    <value>Payment Method</value>
   </data>
-
-	<!-- ===== Menu - UI Elements ===== -->
-	<data name="Menu_BasicUIElements" xml:space="preserve">
-	<value>Basic UI Elements</value>
+  <data name="Lbl_UserSubscriptionId" xml:space="preserve">
+    <value>User Subscription</value>
   </data>
-	<data name="Menu_AdvancedUI" xml:space="preserve">
-	<value>Advanced UI</value>
+  <data name="Lbl_PackageName" xml:space="preserve">
+    <value>Package Name</value>
   </data>
-	<data name="Menu_Popups" xml:space="preserve">
-	<value>Popups</value>
+  <data name="Lbl_PackageId" xml:space="preserve">
+    <value>Package</value>
   </data>
-	<data name="Menu_Notifications" xml:space="preserve">
-	<value>Notifications</value>
+  <data name="Lbl_UserId" xml:space="preserve">
+    <value>User</value>
   </data>
-	<data name="Menu_Icons" xml:space="preserve">
-	<value>Icons</value>
+  <data name="Lbl_SenderName" xml:space="preserve">
+    <value>Sender Name</value>
   </data>
-
-	<!-- ===== Menu - Forms ===== -->
-	<data name="Menu_Forms" xml:space="preserve">
-	<value>Forms</value>
+  <data name="Lbl_SenderId" xml:space="preserve">
+    <value>Sender</value>
   </data>
-	<data name="Menu_TextEditors" xml:space="preserve">
-	<value>Text editors</value>
+  <data name="Lbl_ReceiverName" xml:space="preserve">
+    <value>Receiver Name</value>
   </data>
-	<data name="Menu_CodeEditors" xml:space="preserve">
-	<value>Code editors</value>
+  <data name="Lbl_ReceiverId" xml:space="preserve">
+    <value>Receiver</value>
   </data>
-
-	<!-- ===== Menu - Charts & Tables ===== -->
-	<data name="Menu_Charts" xml:space="preserve">
-	<value>Charts</value>
+  <data name="Lbl_AppTitle" xml:space="preserve">
+    <value>Purple Admin</value>
   </data>
-	<data name="Menu_Tables" xml:space="preserve">
-	<value>Tables</value>
+  <data name="Lbl_ProfileName" xml:space="preserve">
+    <value>David Greymaax</value>
   </data>
-
-	<!-- ===== Menu - Maps ===== -->
-	<data name="Menu_Maps" xml:space="preserve">
-	<value>Maps</value>
+  <data name="Lbl_ActivityLog" xml:space="preserve">
+    <value>Activity Log</value>
   </data>
-
-	<!-- ===== Menu - Pages ===== -->
-	<data name="Menu_UserPages" xml:space="preserve">
-	<value>User Pages</value>
+  <data name="Lbl_Messages" xml:space="preserve">
+    <value>Messages</value>
   </data>
-	<data name="Menu_ErrorPages" xml:space="preserve">
-	<value>Error pages</value>
+  <data name="Lbl_Notifications" xml:space="preserve">
+    <value>Notifications</value>
   </data>
-	<data name="Menu_GeneralPages" xml:space="preserve">
-	<value>General Pages</value>
+  <data name="Lbl_Settings" xml:space="preserve">
+    <value>Settings</value>
   </data>
-
-	<!-- ===== Menu - E-commerce ===== -->
-	<data name="Menu_Ecommerce" xml:space="preserve">
-	<value>E-commerce</value>
+  <data name="Lbl_Languages" xml:space="preserve">
+    <value>Languages</value>
   </data>
-	<data name="Menu_Email" xml:space="preserve">
-	<value>E-mail</value>
+  <data name="Lbl_SidebarSkins" xml:space="preserve">
+    <value>SIDEBAR SKINS</value>
   </data>
-	<data name="Menu_Calendar" xml:space="preserve">
-	<value>Calendar</value>
+  <data name="Lbl_HeaderSkins" xml:space="preserve">
+    <value>HEADER SKINS</value>
   </data>
-	<data name="Menu_Gallery" xml:space="preserve">
-	<value>Gallery</value>
+  <data name="Lbl_TemplateDemos" xml:space="preserve">
+    <value>Template Demos</value>
   </data>
-
-	<!-- ===== Menu - Documentation ===== -->
-	<data name="Menu_Documentation" xml:space="preserve">
-	<value>Documentation</value>
+  <data name="Lbl_TodoTab" xml:space="preserve">
+    <value>TO DO LIST</value>
   </data>
-
-	<!-- ===== Menu - Authentication ===== -->
-	<data name="Menu_Login" xml:space="preserve">
-	<value>Login</value>
+  <data name="Lbl_ChatsTab" xml:space="preserve">
+    <value>CHATS</value>
   </data>
-	<data name="Menu_Login2" xml:space="preserve">
-	<value>Login 2</value>
+  <data name="Lbl_Friends" xml:space="preserve">
+    <value>Friends</value>
   </data>
-	<data name="Menu_MultiLevelLogin" xml:space="preserve">
-	<value>Multi Level Login</value>
+  <data name="Lbl_Projects" xml:space="preserve">
+    <value>Projects</value>
   </data>
-	<data name="Menu_Register" xml:space="preserve">
-	<value>Register</value>
+  <data name="Lbl_Categories" xml:space="preserve">
+    <value>Categories</value>
   </data>
-	<data name="Menu_Register2" xml:space="preserve">
-	<value>Register 2</value>
+  <data name="Lbl_CityAname" xml:space="preserve">
+    <value>City Name (Arabic)</value>
   </data>
-	<data name="Menu_Lockscreen" xml:space="preserve">
-	<value>Lockscreen</value>
+  <data name="Lbl_CityEname" xml:space="preserve">
+    <value>City Name (English)</value>
   </data>
-
-	<!-- =========================================================== -->
-	<!-- ===================  SECTION: SUB MENU  =================== -->
-	<!-- =========================================================== -->
-	<!-- ===== Sub Menu - Layouts ===== -->
-	<data name="Sub_Boxed" xml:space="preserve">
-	<value>Boxed</value>
+  <data name="Lbl_CountryAname" xml:space="preserve">
+    <value>Country Name (Arabic)</value>
   </data>
-	<data name="Sub_RTL" xml:space="preserve">
-	<value>RTL</value>
+  <data name="Lbl_CountryEname" xml:space="preserve">
+    <value>Country Name (English)</value>
   </data>
-	<data name="Sub_KanbanBoard" xml:space="preserve">
-	<value>kanban-board</value>
+  <data name="Lbl_MethdAname" xml:space="preserve">
+    <value>Payment Method Name (Arabic)</value>
   </data>
-	<data name="Sub_TodoList" xml:space="preserve">
-	<value>Todo List</value>
+  <data name="Lbl_MethodEname" xml:space="preserve">
+    <value>Payment Method Name (English)</value>
   </data>
-	<data name="Sub_Tickets" xml:space="preserve">
-	<value>Tickets</value>
+  <data name="Lbl_ShippingTypeAname" xml:space="preserve">
+    <value>Shipping Type Name (Arabic)</value>
   </data>
-	<data name="Sub_Chats" xml:space="preserve">
-	<value>Chats</value>
+  <data name="Lbl_ShippingTypeEname" xml:space="preserve">
+    <value>Shipping Type Name (English)</value>
   </data>
-
-	<!-- ===== Sub Menu - Sidebar ===== -->
-	<data name="Sub_CompactMenu" xml:space="preserve">
-	<value>Compact menu</value>
+  <data name="Lbl_Email_Receiver" xml:space="preserve">
+    <value>Receiver Email</value>
   </data>
-	<data name="Sub_IconMenu" xml:space="preserve">
-	<value>Icon menu</value>
+  <data name="Lbl_Phone_Receiver" xml:space="preserve">
+    <value>Receiver Phone</value>
   </data>
-	<data name="Sub_SidebarHidden" xml:space="preserve">
-	<value>Sidebar Hidden</value>
+  <data name="Lbl_Email_Sender" xml:space="preserve">
+    <value>Sender Email</value>
   </data>
-	<data name="Sub_SidebarOverlay" xml:space="preserve">
-	<value>Sidebar Overlay</value>
+  <data name="Lbl_Phone_Sender" xml:space="preserve">
+    <value>Sender Phone</value>
   </data>
-	<data name="Sub_SidebarFixed" xml:space="preserve">
-	<value>Sidebar Fixed</value>
+  <data name="Lbl_CityId_Receiver" xml:space="preserve">
+    <value>Receiver City</value>
   </data>
-
-	<!-- ===== Sub Menu - UI Components ===== -->
-	<data name="Sub_Accordions" xml:space="preserve">
-	<value>Accordions</value>
+  <data name="Lbl_Address_Receiver" xml:space="preserve">
+    <value>Receiver Address</value>
   </data>
-	<data name="Sub_Buttons" xml:space="preserve">
-	<value>Buttons</value>
+  <data name="Lbl_CityId_Sender" xml:space="preserve">
+    <value>Sender City</value>
   </data>
-	<data name="Sub_Badges" xml:space="preserve">
-	<value>Badges</value>
+  <data name="Lbl_Address_Sender" xml:space="preserve">
+    <value>Sender Address</value>
   </data>
-	<data name="Sub_Breadcrumbs" xml:space="preserve">
-	<value>Breadcrumbs</value>
+  <data name="Lbl_UserId_Subscription" xml:space="preserve">
+    <value>User</value>
   </data>
-	<data name="Sub_Dropdowns" xml:space="preserve">
-	<value>Dropdowns</value>
+  <data name="Lbl_FooterCopyright" xml:space="preserve">
+    <value>Copyright © 2021 &lt;a href='https://www.bootstrapdash.com/' target='_blank'&gt;BootstrapDash&lt;/a&gt;. All rights reserved.</value>
   </data>
-	<data name="Sub_Modals" xml:space="preserve">
-	<value>Modals</value>
+  <data name="Lbl_HandCrafted" xml:space="preserve">
+    <value>Hand-crafted &amp; made with &lt;i class='mdi mdi-heart text-danger'&gt;&lt;/i&gt;</value>
   </data>
-	<data name="Sub_ProgressBar" xml:space="preserve">
-	<value>Progress bar</value>
+  <data name="Plh_SearchProjects" xml:space="preserve">
+    <value>Search projects</value>
   </data>
-	<data name="Sub_Pagination" xml:space="preserve">
-	<value>Pagination</value>
+  <data name="Plh_DemoImage" xml:space="preserve">
+    <value>demo image</value>
   </data>
-	<data name="Sub_Tabs" xml:space="preserve">
-	<value>Tabs</value>
+  <data name="Plh_AddTodo" xml:space="preserve">
+    <value>What do you need to do today?</value>
   </data>
-	<data name="Sub_Typography" xml:space="preserve">
-	<value>Typography</value>
+  <data name="Plh_CreatedBy" xml:space="preserve">
+    <value>Enter creator ID</value>
   </data>
-	<data name="Sub_Tooltip" xml:space="preserve">
-	<value>Tooltip</value>
+  <data name="Plh_UpdatedBy" xml:space="preserve">
+    <value>Enter updater ID</value>
   </data>
-	<data name="Sub_Dragula" xml:space="preserve">
-	<value>Dragula</value>
+  <data name="Plh_CreatedDate" xml:space="preserve">
+    <value>Select creation date</value>
   </data>
-	<data name="Sub_Clipboard" xml:space="preserve">
-	<value>Clipboard</value>
+  <data name="Plh_UpdatedDate" xml:space="preserve">
+    <value>Select update date</value>
   </data>
-	<data name="Sub_ContextMenu" xml:space="preserve">
-	<value>Context menu</value>
+  <data name="Plh_CurrentState" xml:space="preserve">
+    <value>Enter state (0/1)</value>
   </data>
-	<data name="Sub_Slider" xml:space="preserve">
-	<value>Slider</value>
+  <data name="Plh_CarrierName" xml:space="preserve">
+    <value>Enter carrier name</value>
   </data>
-	<data name="Sub_Colcade" xml:space="preserve">
-	<value>Colcade</value>
+  <data name="Plh_CityAname" xml:space="preserve">
+    <value>Enter city name in Arabic</value>
   </data>
-	<data name="Sub_Carousel" xml:space="preserve">
-	<value>Carousel</value>
+  <data name="Plh_CityEname" xml:space="preserve">
+    <value>Enter city name in English</value>
   </data>
-	<data name="Sub_Loaders" xml:space="preserve">
-	<value>Loaders</value>
+  <data name="Plh_CountryId" xml:space="preserve">
+    <value>Select country</value>
   </data>
-	<data name="Sub_TreeView" xml:space="preserve">
-	<value>Tree View</value>
+  <data name="Plh_CountryAname" xml:space="preserve">
+    <value>Enter country name in Arabic</value>
   </data>
-
-	<!-- ===== Sub Menu - Icons ===== -->
-	<data name="Sub_MaterialIcons" xml:space="preserve">
-	<value>Material</value>
+  <data name="Plh_CountryEname" xml:space="preserve">
+    <value>Enter country name in English</value>
   </data>
-	<data name="Sub_FlagIcons" xml:space="preserve">
-	<value>Flag icons</value>
+  <data name="Plh_MethdAname" xml:space="preserve">
+    <value>Enter payment method name in Arabic</value>
   </data>
-	<data name="Sub_FontAwesome" xml:space="preserve">
-	<value>Font Awesome</value>
+  <data name="Plh_MethodEname" xml:space="preserve">
+    <value>Enter payment method name in English</value>
   </data>
-	<data name="Sub_SimpleLineIcons" xml:space="preserve">
-	<value>Simple line icons</value>
+  <data name="Plh_Commission" xml:space="preserve">
+    <value>Enter commission percentage</value>
   </data>
-	<data name="Sub_ThemifyIcons" xml:space="preserve">
-	<value>Themify icons</value>
+  <data name="Plh_KiloMeterRate" xml:space="preserve">
+    <value>Enter rate per kilometer</value>
   </data>
-
-	<!-- ===== Sub Menu - Forms ===== -->
-	<data name="Sub_FormElements" xml:space="preserve">
-	<value>Form Elements</value>
+  <data name="Plh_KilooGramRate" xml:space="preserve">
+    <value>Enter rate per kilogram</value>
   </data>
-	<data name="Sub_AdvancedForms" xml:space="preserve">
-	<value>Advanced Forms</value>
+  <data name="Plh_ShippingTypeAname" xml:space="preserve">
+    <value>Enter shipping type name in Arabic</value>
   </data>
-	<data name="Sub_Validation" xml:space="preserve">
-	<value>Validation</value>
+  <data name="Plh_ShippingTypeEname" xml:space="preserve">
+    <value>Enter shipping type name in English</value>
   </data>
-	<data name="Sub_Wizard" xml:space="preserve">
-	<value>Wizard</value>
+  <data name="Plh_ShippingFactor" xml:space="preserve">
+    <value>Enter shipping factor</value>
   </data>
-
-	<!-- ===== Sub Menu - Charts ===== -->
-	<data name="Sub_ChartJs" xml:space="preserve">
-	<value>ChartJs</value>
+  <data name="Plh_ShippingDate" xml:space="preserve">
+    <value>Select shipping date</value>
   </data>
-	<data name="Sub_Morris" xml:space="preserve">
-	<value>Morris</value>
+  <data name="Plh_SenderId" xml:space="preserve">
+    <value>Select sender</value>
   </data>
-	<data name="Sub_Flot" xml:space="preserve">
-	<value>Flot</value>
+  <data name="Plh_ReceiverId" xml:space="preserve">
+    <value>Select receiver</value>
   </data>
-	<data name="Sub_GoogleCharts" xml:space="preserve">
-	<value>Google charts</value>
+  <data name="Plh_ShippingTypeId" xml:space="preserve">
+    <value>Select shipping type</value>
   </data>
-	<data name="Sub_SparklineJs" xml:space="preserve">
-	<value>Sparkline js</value>
+  <data name="Plh_Width" xml:space="preserve">
+    <value>Enter width</value>
   </data>
-	<data name="Sub_C3Charts" xml:space="preserve">
-	<value>C3 charts</value>
+  <data name="Plh_Height" xml:space="preserve">
+    <value>Enter height</value>
   </data>
-	<data name="Sub_Chartist" xml:space="preserve">
-	<value>Chartist</value>
+  <data name="Plh_Weight" xml:space="preserve">
+    <value>Enter weight</value>
   </data>
-	<data name="Sub_JustGage" xml:space="preserve">
-	<value>JustGage</value>
+  <data name="Plh_Length" xml:space="preserve">
+    <value>Enter length</value>
   </data>
-
-	<!-- ===== Sub Menu - Tables ===== -->
-	<data name="Sub_BasicTable" xml:space="preserve">
-	<value>Basic table</value>
+  <data name="Plh_PackageValue" xml:space="preserve">
+    <value>Enter package value</value>
   </data>
-	<data name="Sub_DataTable" xml:space="preserve">
-	<value>Data table</value>
+  <data name="Plh_ShippingRate" xml:space="preserve">
+    <value>Enter shipping rate</value>
   </data>
-	<data name="Sub_JsGrid" xml:space="preserve">
-	<value>Js-grid</value>
+  <data name="Plh_PaymentMethodId" xml:space="preserve">
+    <value>Select payment method</value>
   </data>
-	<data name="Sub_SortableTable" xml:space="preserve">
-	<value>Sortable table</value>
+  <data name="Plh_UserSubscriptionId" xml:space="preserve">
+    <value>Select user subscription</value>
   </data>
-
-	<!-- ===== Sub Menu - Maps ===== -->
-	<data name="Sub_GoogleMaps" xml:space="preserve">
-	<value>Google Maps</value>
+  <data name="Plh_TrackingNumber" xml:space="preserve">
+    <value>Enter tracking number</value>
   </data>
-	<data name="Sub_Mapael" xml:space="preserve">
-	<value>Mapael</value>
+  <data name="Plh_ReferenceId" xml:space="preserve">
+    <value>Enter reference ID</value>
   </data>
-	<data name="Sub_VectorMap" xml:space="preserve">
-	<value>Vector map</value>
+  <data name="Plh_ShippmentId" xml:space="preserve">
+    <value>Select shipment</value>
   </data>
-
-	<!-- ===== Sub Menu - Pages ===== -->
-	<data name="Sub_BlankPage" xml:space="preserve">
-	<value>Blank Page</value>
+  <data name="Plh_Notes" xml:space="preserve">
+    <value>Enter notes</value>
   </data>
-	<data name="Sub_LandingPage" xml:space="preserve">
-	<value>Landing Page</value>
+  <data name="Plh_CarrierId" xml:space="preserve">
+    <value>Select carrier</value>
   </data>
-	<data name="Sub_Profile" xml:space="preserve">
-	<value>Profile</value>
+  <data name="Plh_PackageName" xml:space="preserve">
+    <value>Enter package name</value>
   </data>
-	<data name="Sub_Faq" xml:space="preserve">
-	<value>FAQ</value>
+  <data name="Plh_ShippimentCount" xml:space="preserve">
+    <value>Enter number of shipments</value>
   </data>
-	<data name="Sub_Faq2" xml:space="preserve">
-	<value>FAQ 2</value>
+  <data name="Plh_NumberOfKiloMeters" xml:space="preserve">
+    <value>Enter number of kilometers</value>
   </data>
-	<data name="Sub_NewsGrid" xml:space="preserve">
-	<value>News grid</value>
+  <data name="Plh_TotalWeight" xml:space="preserve">
+    <value>Enter total weight</value>
   </data>
-	<data name="Sub_Timeline" xml:space="preserve">
-	<value>Timeline</value>
+  <data name="Plh_UserId" xml:space="preserve">
+    <value>Select user</value>
   </data>
-	<data name="Sub_SearchResults" xml:space="preserve">
-	<value>Search Results</value>
+  <data name="Plh_ReceiverName" xml:space="preserve">
+    <value>Enter receiver name</value>
   </data>
-	<data name="Sub_Portfolio" xml:space="preserve">
-	<value>Portfolio</value>
+  <data name="Plh_Email_Receiver" xml:space="preserve">
+    <value>Enter receiver email</value>
   </data>
-	<data name="Sub_UserListing" xml:space="preserve">
-	<value>User Listing</value>
+  <data name="Plh_Phone_Receiver" xml:space="preserve">
+    <value>Enter receiver phone</value>
   </data>
-	<data name="Sub_EmailTemplates" xml:space="preserve">
-	<value>Email Templates</value>
+  <data name="Plh_CityId_Receiver" xml:space="preserve">
+    <value>Select receiver city</value>
   </data>
-	<data name="Sub_Invoice" xml:space="preserve">
-	<value>Invoice</value>
+  <data name="Plh_Address_Receiver" xml:space="preserve">
+    <value>Enter receiver address</value>
   </data>
-	<data name="Sub_PricingTable" xml:space="preserve">
-	<value>Pricing Table</value>
+  <data name="Plh_SenderName" xml:space="preserve">
+    <value>Enter sender name</value>
   </data>
-	<data name="Sub_ProductCatalogue" xml:space="preserve">
-	<value>Product Catalogue</value>
+  <data name="Plh_Email_Sender" xml:space="preserve">
+    <value>Enter sender email</value>
   </data>
-	<data name="Sub_ProjectList" xml:space="preserve">
-	<value>Project List</value>
+  <data name="Plh_Phone_Sender" xml:space="preserve">
+    <value>Enter sender phone</value>
   </data>
-	<data name="Sub_Orders" xml:space="preserve">
-	<value>Orders</value>
+  <data name="Plh_CityId_Sender" xml:space="preserve">
+    <value>Select sender city</value>
   </data>
-
-	<!-- =========================================================== -->
-	<!-- ====================  SECTION: ALT  ======================= -->
-	<!-- =========================================================== -->
-	<!-- ===== Alt - Images ===== -->
-	<data name="Alt_CircleImage" xml:space="preserve">
-	<value>circle image</value>
-  </data>
-	<data name="Alt_Image" xml:space="preserve">
-	<value>image</value>
+  <data name="Plh_Address_Sender" xml:space="preserve">
+    <value>Enter sender address</value>
   </data>
-
-	<!-- =========================================================== -->
-	<!-- ==================  SECTION: DASHBOARD  =================== -->
-	<!-- =========================================================== -->
-	<!-- ===== Dashboard - Stats ===== -->
-	<data name="WeeklySales" xml:space="preserve">
-	<value>Weekly Sales</value>
+  <data name="Plh_UserId_Subscription" xml:space="preserve">
+    <value>Select user</value>
   </data>
-	<data name="SalesAmount" xml:space="preserve">
-	<value>$ 15,0000</value>
+  <data name="Plh_PackageId" xml:space="preserve">
+    <value>Select package</value>
   </data>
-	<data name="IncreasedBy60" xml:space="preserve">
-	<value>Increased by 60%</value>
+  <data name="Plh_SubscriptionDate" xml:space="preserve">
+    <value>Select subscription date</value>
   </data>
-	<data name="WeeklyOrders" xml:space="preserve">
-	<value>Weekly Orders</value>
+  <data name="Txt_FreeSupport" xml:space="preserve">
+    <value>Free 24/7 customer support, updates, and more with this template!</value>
   </data>
-	<data name="OrdersCount" xml:space="preserve">
-	<value>45,6334</value>
+  <data name="Txt_1MinuteAgo" xml:space="preserve">
+    <value>1 Minutes ago</value>
   </data>
-	<data name="DecreasedBy10" xml:space="preserve">
-	<value>Decreased by 10%</value>
+  <data name="Txt_15MinutesAgo" xml:space="preserve">
+    <value>15 Minutes ago</value>
   </data>
-	<data name="VisitorsOnline" xml:space="preserve">
-	<value>Visitors Online</value>
+  <data name="Txt_18MinutesAgo" xml:space="preserve">
+    <value>18 Minutes ago</value>
   </data>
-	<data name="VisitorsCount" xml:space="preserve">
-	<value>95,5741</value>
+  <data name="Txt_19Min" xml:space="preserve">
+    <value>19 min</value>
   </data>
-	<data name="IncreasedBy5" xml:space="preserve">
-	<value>Increased by 5%</value>
+  <data name="Txt_EventToday" xml:space="preserve">
+    <value>Event today</value>
   </data>
-
-	<!-- ===== Dashboard - Statistics ===== -->
-	<data name="VisitAndSalesStatistics" xml:space="preserve">
-	<value>Visit And Sales Statistics</value>
+  <data name="Txt_ReminderEvent" xml:space="preserve">
+    <value>Just a reminder that you have an event today</value>
   </data>
-	<data name="TrafficSources" xml:space="preserve">
-	<value>Traffic Sources</value>
+  <data name="Txt_UpdateDashboard" xml:space="preserve">
+    <value>Update dashboard</value>
   </data>
-	<data name="RecentTickets" xml:space="preserve">
-	<value>Recent Tickets</value>
+  <data name="Txt_LaunchAdmin" xml:space="preserve">
+    <value>Launch Admin</value>
   </data>
-	<data name="RecentUpdates" xml:space="preserve">
-	<value>Recent Updates</value>
+  <data name="Txt_NewAdminWow" xml:space="preserve">
+    <value>New admin wow!</value>
   </data>
-	<data name="ProjectStatus" xml:space="preserve">
-	<value>Project Status</value>
+  <data name="Txt_Light" xml:space="preserve">
+    <value>Light</value>
   </data>
-
-	<!-- =========================================================== -->
-	<!-- ==================  SECTION: TABLE HEADERS  =============== -->
-	<!-- =========================================================== -->
-	<!-- ===== Table Headers - Common ===== -->
-	<data name="Th_Assignee" xml:space="preserve">
-	<value>Assignee</value>
+  <data name="Txt_Dark" xml:space="preserve">
+    <value>Dark</value>
   </data>
-	<data name="Th_Subject" xml:space="preserve">
-	<value>Subject</value>
+  <data name="Txt_Feb112018" xml:space="preserve">
+    <value>Feb 11 2018</value>
   </data>
-	<data name="Th_Status" xml:space="preserve">
-	<value>Status</value>
+  <data name="Txt_Feb072018" xml:space="preserve">
+    <value>Feb 7 2018</value>
   </data>
-	<data name="Th_LastUpdate" xml:space="preserve">
-	<value>Last Update</value>
+  <data name="Txt_CreatingComponentPage" xml:space="preserve">
+    <value>Creating component page</value>
   </data>
-	<data name="Th_TrackingId" xml:space="preserve">
-	<value>Tracking ID</value>
+  <data name="Txt_BuildJsApp" xml:space="preserve">
+    <value>build a js based app</value>
   </data>
-	<data name="Th_Number" xml:space="preserve">
-	<value>#</value>
+  <data name="Txt_MeetingWithAlisa" xml:space="preserve">
+    <value>Meeting with Alisa</value>
   </data>
-	<data name="Th_Name" xml:space="preserve">
-	<value>Name</value>
+  <data name="Txt_CallSarahGraves" xml:space="preserve">
+    <value>Call Sarah Graves</value>
   </data>
-	<data name="Th_DueDate" xml:space="preserve">
-	<value>Due Date</value>
+  <data name="Txt_Available" xml:space="preserve">
+    <value>Available</value>
   </data>
-	<data name="Th_Progress" xml:space="preserve">
-	<value>Progress</value>
+  <data name="Txt_ProjectManager" xml:space="preserve">
+    <value>Project Manager</value>
   </data>
-	<data name="Th_ShippingFactor" xml:space="preserve">
-	<value>Shipping Factor</value>
+  <data name="Txt_Free" xml:space="preserve">
+    <value>Free</value>
   </data>
-	<data name="Th_Actions" xml:space="preserve">
-	<value>Actions</value>
+  <data name="Txt_Pro" xml:space="preserve">
+    <value>Pro</value>
   </data>
-
-	<!-- =========================================================== -->
-	<!-- ==================  SECTION: USERS  ======================= -->
-	<!-- =========================================================== -->
-	<!-- ===== Users - Names ===== -->
-	<data name="User_DavidGrey" xml:space="preserve">
-	<value>David Grey</value>
+  <data name="Menu_Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
   </data>
-	<data name="User_StellaJohnson" xml:space="preserve">
-	<value>Stella Johnson</value>
+  <data name="Menu_PageLayouts" xml:space="preserve">
+    <value>Page Layouts</value>
   </data>
-	<data name="User_MarinaMichel" xml:space="preserve">
-	<value>Marina Michel</value>
+  <data name="Menu_Apps" xml:space="preserve">
+    <value>Apps</value>
   </data>
-	<data name="User_JohnDoe" xml:space="preserve">
-	<value>John Doe</value>
+  <data name="Menu_Widgets" xml:space="preserve">
+    <value>Widgets</value>
   </data>
-	<data name="User_JackMenqu" xml:space="preserve">
-	<value>jack Menqu</value>
+  <data name="Menu_SidebarLayouts" xml:space="preserve">
+    <value>Sidebar Layouts</value>
   </data>
-	<data name="User_ThomasDouglas" xml:space="preserve">
-	<value>Thomas Douglas</value>
+  <data name="Menu_BasicUIElements" xml:space="preserve">
+    <value>Basic UI Elements</value>
   </data>
-
-	<!-- =========================================================== -->
-	<!-- ==================  SECTION: STATUS  ====================== -->
-	<!-- =========================================================== -->
-	<!-- ===== Status - Tickets ===== -->
-	<data name="Status_Done" xml:space="preserve">
-	<value>DONE</value>
+  <data name="Menu_AdvancedUI" xml:space="preserve">
+    <value>Advanced UI</value>
   </data>
-	<data name="Status_Progress" xml:space="preserve">
-	<value>PROGRESS</value>
+  <data name="Menu_Popups" xml:space="preserve">
+    <value>Popups</value>
   </data>
-	<data name="Status_OnHold" xml:space="preserve">
-	<value>ON HOLD</value>
+  <data name="Menu_Notifications" xml:space="preserve">
+    <value>Notifications</value>
   </data>
-	<data name="Status_Rejected" xml:space="preserve">
-	<value>REJECTED</value>
+  <data name="Menu_Icons" xml:space="preserve">
+    <value>Icons</value>
   </data>
-
-	<!-- =========================================================== -->
-	<!-- ==================  SECTION: DATES  ======================= -->
-	<!-- =========================================================== -->
-	<!-- ===== Dates - Tickets ===== -->
-	<data name="Date_Dec52017" xml:space="preserve">
-	<value>Dec 5, 2017</value>
+  <data name="Menu_Forms" xml:space="preserve">
+    <value>Forms</value>
   </data>
-	<data name="Date_Dec122017" xml:space="preserve">
-	<value>Dec 12, 2017</value>
+  <data name="Menu_TextEditors" xml:space="preserve">
+    <value>Text editors</value>
   </data>
-	<data name="Date_Dec162017" xml:space="preserve">
-	<value>Dec 16, 2017</value>
+  <data name="Menu_CodeEditors" xml:space="preserve">
+    <value>Code editors</value>
   </data>
-	<data name="Date_Dec32017" xml:space="preserve">
-	<value>Dec 3, 2017</value>
+  <data name="Menu_Charts" xml:space="preserve">
+    <value>Charts</value>
   </data>
-	<data name="Date_Oct032018" xml:space="preserve">
-	<value>October 3rd, 2018</value>
+  <data name="Menu_Tables" xml:space="preserve">
+    <value>Tables</value>
   </data>
-	<data name="Date_May152015" xml:space="preserve">
-	<value>May 15, 2015</value>
+  <data name="Menu_Maps" xml:space="preserve">
+    <value>Maps</value>
   </data>
-	<data name="Date_Jul012015" xml:space="preserve">
-	<value>Jul 01, 2015</value>
+  <data name="Menu_UserPages" xml:space="preserve">
+    <value>User Pages</value>
   </data>
-	<data name="Date_Apr122015" xml:space="preserve">
-	<value>Apr 12, 2015</value>
+  <data name="Menu_ErrorPages" xml:space="preserve">
+    <value>Error pages</value>
   </data>
-	<data name="Date_May032015" xml:space="preserve">
-	<value>May 03, 2015</value>
+  <data name="Menu_GeneralPages" xml:space="preserve">
+    <value>General Pages</value>
   </data>
-	<data name="Date_Jun052015" xml:space="preserve">
-	<value>Jun 05, 2015</value>
+  <data name="Menu_Ecommerce" xml:space="preserve">
+    <value>E-commerce</value>
   </data>
-
-	<!-- =========================================================== -->
-	<!-- ==================  SECTION: TRACKING  ==================== -->
-	<!-- =========================================================== -->
-	<!-- ===== Tracking IDs ===== -->
-	<data name="Tracking_WD12345" xml:space="preserve">
-	<value>WD-12345</value>
+  <data name="Menu_Email" xml:space="preserve">
+    <value>E-mail</value>
   </data>
-	<data name="Tracking_WD12346" xml:space="preserve">
-	<value>WD-12346</value>
+  <data name="Menu_Calendar" xml:space="preserve">
+    <value>Calendar</value>
   </data>
-	<data name="Tracking_WD12347" xml:space="preserve">
-	<value>WD-12347</value>
+  <data name="Menu_Gallery" xml:space="preserve">
+    <value>Gallery</value>
   </data>
-	<data name="Tracking_WD12348" xml:space="preserve">
-	<value>WD-12348</value>
+  <data name="Menu_Documentation" xml:space="preserve">
+    <value>Documentation</value>
   </data>
-
-	<!-- =========================================================== -->
-	<!-- ==================  SECTION: ISSUES  ====================== -->
-	<!-- =========================================================== -->
-	<!-- ===== Issues ===== -->
-	<data name="FundNotReceived" xml:space="preserve">
-	<value>Fund is not received</value>
+  <data name="Menu_Login" xml:space="preserve">
+    <value>Login</value>
   </data>
-	<data name="HighLoadingTime" xml:space="preserve">
-	<value>High loading time</value>
+  <data name="Menu_Login2" xml:space="preserve">
+    <value>Login 2</value>
   </data>
-	<data name="WebsiteDownOneWeek" xml:space="preserve">
-	<value>Website down for one week</value>
+  <data name="Menu_MultiLevelLogin" xml:space="preserve">
+    <value>Multi Level Login</value>
   </data>
-	<data name="LoosingControlOnServer" xml:space="preserve">
-	<value>Losing control on server</value>
+  <data name="Menu_Register" xml:space="preserve">
+    <value>Register</value>
   </data>
-
-	<!-- =========================================================== -->
-	<!-- ==================  SECTION: PROJECTS  ==================== -->
-	<!-- =========================================================== -->
-	<!-- ===== Projects ===== -->
-	<data name="Project_SchoolWebsite_Title" xml:space="preserve">
-	<value>School Website - Authentication Module.</value>
+  <data name="Menu_Register2" xml:space="preserve">
+    <value>Register 2</value>
   </data>
-	<data name="Project_SchoolWebsite_Description" xml:space="preserve">
-	<value>It is a long established fact that a reader will be distracted by the readable content of a page.</value>
+  <data name="Menu_Lockscreen" xml:space="preserve">
+    <value>Lockscreen</value>
   </data>
-	<data name="ProjectName_HermanBeck" xml:space="preserve">
-	<value>Herman Beck</value>
+  <data name="Sub_Boxed" xml:space="preserve">
+    <value>Boxed</value>
   </data>
-	<data name="ProjectName_MesssyAdam" xml:space="preserve">
-	<value>Messsy Adam</value>
+  <data name="Sub_RTL" xml:space="preserve">
+    <value>RTL</value>
   </data>
-	<data name="ProjectName_JohnRichards" xml:space="preserve">
-	<value>John Richards</value>
+  <data name="Sub_KanbanBoard" xml:space="preserve">
+    <value>kanban-board</value>
   </data>
-	<data name="ProjectName_PeterMeggik" xml:space="preserve">
-	<value>Peter Meggik</value>
+  <data name="Sub_TodoList" xml:space="preserve">
+    <value>Todo List</value>
   </data>
-	<data name="ProjectName_Edward" xml:space="preserve">
-	<value>Edward</value>
+  <data name="Sub_Tickets" xml:space="preserve">
+    <value>Tickets</value>
   </data>
-	<data name="ProjectName_Ronald" xml:space="preserve">
-	<value>Ronald</value>
+  <data name="Sub_Chats" xml:space="preserve">
+    <value>Chats</value>
   </data>
-
-	<!-- =========================================================== -->
-	<!-- ==================  SECTION: TODO  ======================== -->
-	<!-- =========================================================== -->
-	<!-- ===== Todo ===== -->
-	<data name="TodoHeading" xml:space="preserve">
-	<value>Todo</value>
+  <data name="Sub_CompactMenu" xml:space="preserve">
+    <value>Compact menu</value>
   </data>
-	<data name="Todo_TeamReview" xml:space="preserve">
-	<value>Team review meeting at 3.00 PM</value>
+  <data name="Sub_IconMenu" xml:space="preserve">
+    <value>Icon menu</value>
   </data>
-	<data name="Todo_PreparePresentation" xml:space="preserve">
-	<value>Prepare for presentation</value>
+  <data name="Sub_SidebarHidden" xml:space="preserve">
+    <value>Sidebar Hidden</value>
   </data>
-	<data name="Todo_ResolveLowPriorityTickets" xml:space="preserve">
-	<value>Resolve all the low priority tickets due today</value>
+  <data name="Sub_SidebarOverlay" xml:space="preserve">
+    <value>Sidebar Overlay</value>
   </data>
-	<data name="Todo_ScheduleMeeting" xml:space="preserve">
-	<value>Schedule meeting for next week</value>
+  <data name="Sub_SidebarFixed" xml:space="preserve">
+    <value>Sidebar Fixed</value>
   </data>
-	<data name="Todo_ProjectReview" xml:space="preserve">
-	<value>Project review</value>
+  <data name="Sub_Accordions" xml:space="preserve">
+    <value>Accordions</value>
   </data>
-	<data name="Todo_MeetingWithAlisa" xml:space="preserve">
-	<value>Meeting with Alisa</value>
+  <data name="Sub_Buttons" xml:space="preserve">
+    <value>Buttons</value>
   </data>
-	<data name="Todo_CallJohn" xml:space="preserve">
-	<value>Call John</value>
+  <data name="Sub_Badges" xml:space="preserve">
+    <value>Badges</value>
   </data>
-	<data name="Todo_CreateInvoice" xml:space="preserve">
-	<value>Create invoice</value>
+  <data name="Sub_Breadcrumbs" xml:space="preserve">
+    <value>Breadcrumbs</value>
   </data>
-	<data name="Todo_PrintStatements" xml:space="preserve">
-	<value>Print Statements</value>
+  <data name="Sub_Dropdowns" xml:space="preserve">
+    <value>Dropdowns</value>
   </data>
-	<data name="Todo_PrepareForPresentation" xml:space="preserve">
-	<value>Prepare for presentation</value>
+  <data name="Sub_Modals" xml:space="preserve">
+    <value>Modals</value>
   </data>
-	<data name="Todo_PickUpKids" xml:space="preserve">
-	<value>Pick up kids from school</value>
+  <data name="Sub_ProgressBar" xml:space="preserve">
+    <value>Progress bar</value>
   </data>
-
-	<!-- =========================================================== -->
-	<!-- ==================  SECTION: TABLE  ======================= -->
-	<!-- =========================================================== -->
-	<!-- ===== Table - Shipping ===== -->
-	<data name="Tb_ShippingTypes" xml:space="preserve">
-	<value>Shipping Types</value>
-  </data>
-	<data name="Tb_ShippingType" xml:space="preserve">
-	<value>Shipping Type</value>
+  <data name="Sub_Pagination" xml:space="preserve">
+    <value>Pagination</value>
   </data>
-
-	<!-- =========================================================== -->
-	<!-- ==================  SECTION: VALIDATION  ================== -->
-	<!-- =========================================================== -->
-	<!-- ===== Validation - Common ===== -->
-	<data name="Val_Required" xml:space="preserve">
-	<value>The {0} field is required</value>
+  <data name="Sub_Tabs" xml:space="preserve">
+    <value>Tabs</value>
   </data>
-	<data name="Val_Email" xml:space="preserve">
-	<value>Invalid email address</value>
+  <data name="Sub_Typography" xml:space="preserve">
+    <value>Typography</value>
   </data>
-	<data name="Val_Phone" xml:space="preserve">
-	<value>Invalid phone number</value>
+  <data name="Sub_Tooltip" xml:space="preserve">
+    <value>Tooltip</value>
   </data>
-	<data name="Val_StringLength" xml:space="preserve">
-	<value>The {0} must be between {2} and {1} characters</value>
+  <data name="Sub_Dragula" xml:space="preserve">
+    <value>Dragula</value>
   </data>
-	<data name="Val_Range" xml:space="preserve">
-	<value>The {0} must be between {1} and {2}</value>
+  <data name="Sub_Clipboard" xml:space="preserve">
+    <value>Clipboard</value>
   </data>
-	<data name="Val_PositiveNumber" xml:space="preserve">
-	<value>The {0} must be a positive number</value>
+  <data name="Sub_ContextMenu" xml:space="preserve">
+    <value>Context menu</value>
   </data>
-
-	<!-- ===== Validation - Language ===== -->
-	<data name="Val_Language_Ar" xml:space="preserve">
-	<value>Please Enter This Field In Arabic</value>
+  <data name="Sub_Slider" xml:space="preserve">
+    <value>Slider</value>
   </data>
-	<data name="Val_Language_En" xml:space="preserve">
-	<value>Please Enter This Field In English Letter Only</value>
+  <data name="Sub_Colcade" xml:space="preserve">
+    <value>Colcade</value>
   </data>
-
-	<!-- =========================================================== -->
-	<!-- ==================  SECTION: MESSAGES  ==================== -->
-	<!-- =========================================================== -->
-	<!-- ===== Messages - Notifications ===== -->
-	<data name="Msg_MarkSentMessage" xml:space="preserve">
-	<value>Mark sent you a message</value>
+  <data name="Sub_Carousel" xml:space="preserve">
+    <value>Carousel</value>
   </data>
-	<data name="Msg_CreghSentMessage" xml:space="preserve">
-	<value>Cregh sent you a message</value>
+  <data name="Sub_Loaders" xml:space="preserve">
+    <value>Loaders</value>
   </data>
-	<data name="Msg_ProfilePictureUpdated" xml:space="preserve">
-	<value>Profile picture updated</value>
+  <data name="Sub_TreeView" xml:space="preserve">
+    <value>Tree View</value>
   </data>
-	<data name="Msg_NewMessages" xml:space="preserve">
-	<value>{0} new messages</value>
+  <data name="Sub_MaterialIcons" xml:space="preserve">
+    <value>Material</value>
   </data>
-	<data name="Msg_SeeAllNotifications" xml:space="preserve">
-	<value>See all notifications</value>
+  <data name="Sub_FlagIcons" xml:space="preserve">
+    <value>Flag icons</value>
   </data>
-
-	<!-- =========================================================== -->
-	<!-- ==================  SECTION: LANGUAGES  =================== -->
-	<!-- =========================================================== -->
-	<!-- ===== Languages ===== -->
-	<data name="Lang_Arabic" xml:space="preserve">
-	<value>Arabic</value>
-  </data>
-	<data name="Lang_English" xml:space="preserve">
-	<value>English</value>
+  <data name="Sub_FontAwesome" xml:space="preserve">
+    <value>Font Awesome</value>
   </data>
-
-
-	<!-- =========================================================== -->
-	<!-- ==================  SECTION: FIELDS  ====================== -->
-	<!-- =========================================================== -->
-	<!-- ===== Fields - Carrier ===== -->
-	<data name="Field_CarrierName" xml:space="preserve">
-	<value>Carrier Name</value>
+  <data name="Sub_SimpleLineIcons" xml:space="preserve">
+    <value>Simple line icons</value>
   </data>
-
-	<!-- ===== Fields - City ===== -->
-	<data name="Field_CityAname" xml:space="preserve">
-	<value>City Name (Arabic)</value>
+  <data name="Sub_ThemifyIcons" xml:space="preserve">
+    <value>Themify icons</value>
   </data>
-	<data name="Field_CityEname" xml:space="preserve">
-	<value>City Name (English)</value>
+  <data name="Sub_FormElements" xml:space="preserve">
+    <value>Form Elements</value>
   </data>
-
-	<!-- ===== Fields - Country ===== -->
-	<data name="Field_CountryAname" xml:space="preserve">
-	<value>Country Name (Arabic)</value>
+  <data name="Sub_AdvancedForms" xml:space="preserve">
+    <value>Advanced Forms</value>
   </data>
-	<data name="Field_CountryEname" xml:space="preserve">
-	<value>Country Name (English)</value>
+  <data name="Sub_Validation" xml:space="preserve">
+    <value>Validation</value>
   </data>
-
-	<!-- ===== Fields - Payment Method ===== -->
-	<data name="Field_MethdAname" xml:space="preserve">
-	<value>Payment Method Name (Arabic)</value>
+  <data name="Sub_Wizard" xml:space="preserve">
+    <value>Wizard</value>
   </data>
-	<data name="Field_MethodEname" xml:space="preserve">
-	<value>Payment Method Name (English)</value>
+  <data name="Sub_ChartJs" xml:space="preserve">
+    <value>ChartJs</value>
   </data>
-	<data name="Field_Commission" xml:space="preserve">
-	<value>Commission</value>
+  <data name="Sub_Morris" xml:space="preserve">
+    <value>Morris</value>
   </data>
-
-	<!-- ===== Fields - Settings ===== -->
-	<data name="Field_KiloMeterRate" xml:space="preserve">
-	<value>Kilometer Rate</value>
+  <data name="Sub_Flot" xml:space="preserve">
+    <value>Flot</value>
   </data>
-	<data name="Field_KilooGramRate" xml:space="preserve">
-	<value>Kilogram Rate</value>
+  <data name="Sub_GoogleCharts" xml:space="preserve">
+    <value>Google charts</value>
   </data>
-
-	<!-- ===== Fields - Shipping Type ===== -->
-	<data name="Field_ShippingTypeAname" xml:space="preserve">
-	<value>Shipping Type Name (Arabic)</value>
+  <data name="Sub_SparklineJs" xml:space="preserve">
+    <value>Sparkline js</value>
   </data>
-	<data name="Field_ShippingTypeEname" xml:space="preserve">
-	<value>Shipping Type Name (English)</value>
+  <data name="Sub_C3Charts" xml:space="preserve">
+    <value>C3 charts</value>
   </data>
-	<data name="Field_ShippingFactor" xml:space="preserve">
-	<value>Shipping Factor</value>
+  <data name="Sub_Chartist" xml:space="preserve">
+    <value>Chartist</value>
   </data>
-
-	<!-- ===== Fields - Shippment ===== -->
-	<data name="Field_ShippingDate" xml:space="preserve">
-	<value>Shipping Date</value>
+  <data name="Sub_JustGage" xml:space="preserve">
+    <value>JustGage</value>
   </data>
-	<data name="Field_SenderId" xml:space="preserve">
-	<value>Sender</value>
+  <data name="Sub_BasicTable" xml:space="preserve">
+    <value>Basic table</value>
   </data>
-	<data name="Field_ReceiverId" xml:space="preserve">
-	<value>Receiver</value>
+  <data name="Sub_DataTable" xml:space="preserve">
+    <value>Data table</value>
   </data>
-	<data name="Field_ShippingTypeId" xml:space="preserve">
-	<value>Shipping Type</value>
+  <data name="Sub_JsGrid" xml:space="preserve">
+    <value>Js-grid</value>
   </data>
-	<data name="Field_Width" xml:space="preserve">
-	<value>Width</value>
+  <data name="Sub_SortableTable" xml:space="preserve">
+    <value>Sortable table</value>
   </data>
-	<data name="Field_Height" xml:space="preserve">
-	<value>Height</value>
+  <data name="Sub_GoogleMaps" xml:space="preserve">
+    <value>Google Maps</value>
   </data>
-	<data name="Field_Weight" xml:space="preserve">
-	<value>Weight</value>
+  <data name="Sub_Mapael" xml:space="preserve">
+    <value>Mapael</value>
   </data>
-	<data name="Field_Length" xml:space="preserve">
-	<value>Length</value>
+  <data name="Sub_VectorMap" xml:space="preserve">
+    <value>Vector map</value>
   </data>
-	<data name="Field_PackageValue" xml:space="preserve">
-	<value>Package Value</value>
+  <data name="Sub_BlankPage" xml:space="preserve">
+    <value>Blank Page</value>
   </data>
-	<data name="Field_ShippingRate" xml:space="preserve">
-	<value>Shipping Rate</value>
+  <data name="Sub_LandingPage" xml:space="preserve">
+    <value>Landing Page</value>
   </data>
-	<data name="Field_PaymentMethodId" xml:space="preserve">
-	<value>Payment Method</value>
+  <data name="Sub_Profile" xml:space="preserve">
+    <value>Profile</value>
   </data>
-	<data name="Field_UserSubscriptionId" xml:space="preserve">
-	<value>User Subscription</value>
+  <data name="Sub_Faq" xml:space="preserve">
+    <value>FAQ</value>
   </data>
-	<data name="Field_TrackingNumber" xml:space="preserve">
-	<value>Tracking Number</value>
+  <data name="Sub_Faq2" xml:space="preserve">
+    <value>FAQ 2</value>
   </data>
-
-	<!-- ===== Fields - Shippment Status ===== -->
-	<data name="Field_ShippmentId" xml:space="preserve">
-	<value>Shippment Number</value>
+  <data name="Sub_NewsGrid" xml:space="preserve">
+    <value>News grid</value>
   </data>
-	<data name="Field_Notes" xml:space="preserve">
-	<value>Notes</value>
+  <data name="Sub_Timeline" xml:space="preserve">
+    <value>Timeline</value>
   </data>
-	<data name="Field_CarrierId" xml:space="preserve">
-	<value>Carrier</value>
+  <data name="Sub_SearchResults" xml:space="preserve">
+    <value>Search Results</value>
   </data>
-
-	<!-- ===== Fields - Subscription Package ===== -->
-	<data name="Field_PackageName" xml:space="preserve">
-	<value>Package Name</value>
+  <data name="Sub_Portfolio" xml:space="preserve">
+    <value>Portfolio</value>
   </data>
-	<data name="Field_ShippimentCount" xml:space="preserve">
-	<value>Shippments Count</value>
+  <data name="Sub_UserListing" xml:space="preserve">
+    <value>User Listing</value>
   </data>
-	<data name="Field_NumberOfKiloMeters" xml:space="preserve">
-	<value>Number of Kilometers</value>
+  <data name="Sub_EmailTemplates" xml:space="preserve">
+    <value>Email Templates</value>
   </data>
-	<data name="Field_TotalWeight" xml:space="preserve">
-	<value>Total Weight</value>
+  <data name="Sub_Invoice" xml:space="preserve">
+    <value>Invoice</value>
   </data>
-
-	<!-- ===== Fields - User Receiver ===== -->
-	<data name="Field_UserId" xml:space="preserve">
-	<value>User</value>
+  <data name="Sub_PricingTable" xml:space="preserve">
+    <value>Pricing Table</value>
   </data>
-	<data name="Field_ReceiverName" xml:space="preserve">
-	<value>Receiver Name</value>
+  <data name="Sub_ProductCatalogue" xml:space="preserve">
+    <value>Product Catalogue</value>
   </data>
-	<data name="Field_Email_Receiver" xml:space="preserve">
-	<value>Receiver Email</value>
+  <data name="Sub_ProjectList" xml:space="preserve">
+    <value>Project List</value>
   </data>
-	<data name="Field_Phone_Receiver" xml:space="preserve">
-	<value>Receiver Phone</value>
+  <data name="Sub_Orders" xml:space="preserve">
+    <value>Orders</value>
   </data>
-	<data name="Field_CityId_Receiver" xml:space="preserve">
-	<value>Receiver City</value>
+  <data name="Alt_CircleImage" xml:space="preserve">
+    <value>circle image</value>
   </data>
-	<data name="Field_Address_Receiver" xml:space="preserve">
-	<value>Receiver Address</value>
+  <data name="Alt_Image" xml:space="preserve">
+    <value>image</value>
   </data>
-
-	<!-- ===== Fields - User Sender ===== -->
-	<data name="Field_SenderName" xml:space="preserve">
-	<value>Sender Name</value>
+  <data name="WeeklySales" xml:space="preserve">
+    <value>Weekly Sales</value>
   </data>
-	<data name="Field_Email_Sender" xml:space="preserve">
-	<value>Sender Email</value>
+  <data name="SalesAmount" xml:space="preserve">
+    <value>$ 15,0000</value>
   </data>
-	<data name="Field_Phone_Sender" xml:space="preserve">
-	<value>Sender Phone</value>
+  <data name="IncreasedBy60" xml:space="preserve">
+    <value>Increased by 60%</value>
   </data>
-	<data name="Field_CityId_Sender" xml:space="preserve">
-	<value>Sender City</value>
+  <data name="WeeklyOrders" xml:space="preserve">
+    <value>Weekly Orders</value>
   </data>
-	<data name="Field_Address_Sender" xml:space="preserve">
-	<value>Sender Address</value>
+  <data name="OrdersCount" xml:space="preserve">
+    <value>45,6334</value>
   </data>
-
-	<!-- ===== Fields - User Subscription ===== -->
-	<data name="Field_UserId_Subscription" xml:space="preserve">
-	<value>User</value>
+  <data name="DecreasedBy10" xml:space="preserve">
+    <value>Decreased by 10%</value>
   </data>
-	<data name="Field_PackageId" xml:space="preserve">
-	<value>Package</value>
+  <data name="VisitorsOnline" xml:space="preserve">
+    <value>Visitors Online</value>
   </data>
-	<data name="Field_SubscriptionDate" xml:space="preserve">
-	<value>Subscription Date</value>
+  <data name="VisitorsCount" xml:space="preserve">
+    <value>95,5741</value>
   </data>
-
-	<!-- =========================================================== -->
-	<!-- ==================  SECTION: MESSAGES (COMPLETE)  ========= -->
-	<!-- =========================================================== -->
-	<!-- ===== Messages - Success ===== -->
-	<data name="Msg_Success" xml:space="preserve">
-	<value>Operation completed successfully</value>
+  <data name="IncreasedBy5" xml:space="preserve">
+    <value>Increased by 5%</value>
   </data>
-	<data name="Msg_Saved" xml:space="preserve">
-	<value>Data saved successfully</value>
+  <data name="VisitAndSalesStatistics" xml:space="preserve">
+    <value>Visit And Sales Statistics</value>
   </data>
-	<data name="Msg_Added" xml:space="preserve">
-	<value>Added successfully</value>
+  <data name="TrafficSources" xml:space="preserve">
+    <value>Traffic Sources</value>
   </data>
-	<data name="Msg_Updated" xml:space="preserve">
-	<value>Updated successfully</value>
+  <data name="RecentTickets" xml:space="preserve">
+    <value>Recent Tickets</value>
   </data>
-	<data name="Msg_Deleted" xml:space="preserve">
-	<value>Deleted successfully</value>
+  <data name="RecentUpdates" xml:space="preserve">
+    <value>Recent Updates</value>
   </data>
-	<data name="Msg_Uploaded" xml:space="preserve">
-	<value>File uploaded successfully</value>
+  <data name="ProjectStatus" xml:space="preserve">
+    <value>Project Status</value>
   </data>
-	<data name="Msg_Downloaded" xml:space="preserve">
-	<value>File downloaded successfully</value>
+  <data name="Th_Assignee" xml:space="preserve">
+    <value>Assignee</value>
   </data>
-	<data name="Msg_Imported" xml:space="preserve">
-	<value>Data imported successfully</value>
+  <data name="Th_Subject" xml:space="preserve">
+    <value>Subject</value>
   </data>
-	<data name="Msg_Exported" xml:space="preserve">
-	<value>Data exported successfully</value>
+  <data name="Th_Status" xml:space="preserve">
+    <value>Status</value>
   </data>
-	<data name="Msg_Sent" xml:space="preserve">
-	<value>Message sent successfully</value>
+  <data name="Th_LastUpdate" xml:space="preserve">
+    <value>Last Update</value>
   </data>
-	<data name="Msg_Received" xml:space="preserve">
-	<value>Message received successfully</value>
+  <data name="Th_TrackingId" xml:space="preserve">
+    <value>Tracking ID</value>
   </data>
-	<data name="Msg_Activated" xml:space="preserve">
-	<value>Activated successfully</value>
+  <data name="Th_Number" xml:space="preserve">
+    <value>#</value>
   </data>
-	<data name="Msg_Deactivated" xml:space="preserve">
-	<value>Deactivated successfully</value>
+  <data name="Th_Name" xml:space="preserve">
+    <value>Name</value>
   </data>
-	<data name="Msg_Approved" xml:space="preserve">
-	<value>Approved successfully</value>
+  <data name="Th_DueDate" xml:space="preserve">
+    <value>Due Date</value>
   </data>
-	<data name="Msg_Rejected" xml:space="preserve">
-	<value>Rejected successfully</value>
+  <data name="Th_Progress" xml:space="preserve">
+    <value>Progress</value>
   </data>
-	<data name="Msg_Submitted" xml:space="preserve">
-	<value>Submitted successfully</value>
+  <data name="Th_ShippingFactor" xml:space="preserve">
+    <value>Shipping Factor</value>
   </data>
-	<data name="Msg_Processed" xml:space="preserve">
-	<value>Processed successfully</value>
+  <data name="Th_Actions" xml:space="preserve">
+    <value>Actions</value>
   </data>
-	<data name="Msg_Completed" xml:space="preserve">
-	<value>Completed successfully</value>
+  <data name="User_DavidGrey" xml:space="preserve">
+    <value>David Grey</value>
   </data>
-	<data name="Msg_Published" xml:space="preserve">
-	<value>Published successfully</value>
+  <data name="User_StellaJohnson" xml:space="preserve">
+    <value>Stella Johnson</value>
   </data>
-	<data name="Msg_Unpublished" xml:space="preserve">
-	<value>Unpublished successfully</value>
+  <data name="User_MarinaMichel" xml:space="preserve">
+    <value>Marina Michel</value>
   </data>
-	<data name="Msg_Archived" xml:space="preserve">
-	<value>Archived successfully</value>
+  <data name="User_JohnDoe" xml:space="preserve">
+    <value>John Doe</value>
   </data>
-	<data name="Msg_Restored" xml:space="preserve">
-	<value>Restored successfully</value>
+  <data name="User_JackMenqu" xml:space="preserve">
+    <value>jack Menqu</value>
   </data>
-	<data name="Msg_Locked" xml:space="preserve">
-	<value>Locked successfully</value>
+  <data name="User_ThomasDouglas" xml:space="preserve">
+    <value>Thomas Douglas</value>
   </data>
-	<data name="Msg_Unlocked" xml:space="preserve">
-	<value>Unlocked successfully</value>
+  <data name="Status_Done" xml:space="preserve">
+    <value>DONE</value>
   </data>
-	<data name="Msg_Suspended" xml:space="preserve">
-	<value>Suspended successfully</value>
+  <data name="Status_Progress" xml:space="preserve">
+    <value>PROGRESS</value>
   </data>
-	<data name="Msg_Resumed" xml:space="preserve">
-	<value>Resumed successfully</value>
+  <data name="Status_OnHold" xml:space="preserve">
+    <value>ON HOLD</value>
   </data>
-	<data name="Msg_Verified" xml:space="preserve">
-	<value>Verified successfully</value>
+  <data name="Status_Rejected" xml:space="preserve">
+    <value>REJECTED</value>
   </data>
-	<data name="Msg_Authenticated" xml:space="preserve">
-	<value>Authenticated successfully</value>
+  <data name="Date_Dec52017" xml:space="preserve">
+    <value>Dec 5, 2017</value>
   </data>
-	<data name="Msg_Authorized" xml:space="preserve">
-	<value>Authorized successfully</value>
+  <data name="Date_Dec122017" xml:space="preserve">
+    <value>Dec 12, 2017</value>
   </data>
-	<data name="Msg_Registered" xml:space="preserve">
-	<value>Registered successfully</value>
+  <data name="Date_Dec162017" xml:space="preserve">
+    <value>Dec 16, 2017</value>
   </data>
-	<data name="Msg_LoggedIn" xml:space="preserve">
-	<value>Logged in successfully</value>
+  <data name="Date_Dec32017" xml:space="preserve">
+    <value>Dec 3, 2017</value>
   </data>
-	<data name="Msg_LoggedOut" xml:space="preserve">
-	<value>Logged out successfully</value>
+  <data name="Date_Oct032018" xml:space="preserve">
+    <value>October 3rd, 2018</value>
   </data>
-	<data name="Msg_PasswordChanged" xml:space="preserve">
-	<value>Password changed successfully</value>
+  <data name="Date_May152015" xml:space="preserve">
+    <value>May 15, 2015</value>
   </data>
-	<data name="Msg_PasswordReset" xml:space="preserve">
-	<value>Password reset successfully</value>
+  <data name="Date_Jul012015" xml:space="preserve">
+    <value>Jul 01, 2015</value>
   </data>
-	<data name="Msg_EmailSent" xml:space="preserve">
-	<value>Email sent successfully</value>
+  <data name="Date_Apr122015" xml:space="preserve">
+    <value>Apr 12, 2015</value>
   </data>
-	<data name="Msg_EmailVerified" xml:space="preserve">
-	<value>Email verified successfully</value>
+  <data name="Date_May032015" xml:space="preserve">
+    <value>May 03, 2015</value>
   </data>
-	<data name="Msg_PhoneVerified" xml:space="preserve">
-	<value>Phone number verified successfully</value>
+  <data name="Date_Jun052015" xml:space="preserve">
+    <value>Jun 05, 2015</value>
   </data>
-	<data name="Msg_ProfileUpdated" xml:space="preserve">
-	<value>Profile updated successfully</value>
+  <data name="Tracking_WD12345" xml:space="preserve">
+    <value>WD-12345</value>
   </data>
-	<data name="Msg_SettingsSaved" xml:space="preserve">
-	<value>Settings saved successfully</value>
+  <data name="Tracking_WD12346" xml:space="preserve">
+    <value>WD-12346</value>
   </data>
-	<data name="Msg_PreferencesSaved" xml:space="preserve">
-	<value>Preferences saved successfully</value>
+  <data name="Tracking_WD12347" xml:space="preserve">
+    <value>WD-12347</value>
   </data>
-
-	<!-- ===== Messages - Error ===== -->
-	<data name="Msg_Error" xml:space="preserve">
-	<value>An error occurred while processing your request</value>
+  <data name="Tracking_WD12348" xml:space="preserve">
+    <value>WD-12348</value>
   </data>
-	<data name="Msg_Error_General" xml:space="preserve">
-	<value>Something went wrong. Please try again later</value>
+  <data name="FundNotReceived" xml:space="preserve">
+    <value>Fund is not received</value>
   </data>
-	<data name="Msg_Error_NotFound" xml:space="preserve">
-	<value>The requested resource was not found</value>
+  <data name="HighLoadingTime" xml:space="preserve">
+    <value>High loading time</value>
   </data>
-	<data name="Msg_Error_Unauthorized" xml:space="preserve">
-	<value>You are not authorized to perform this action</value>
+  <data name="WebsiteDownOneWeek" xml:space="preserve">
+    <value>Website down for one week</value>
   </data>
-	<data name="Msg_Error_Forbidden" xml:space="preserve">
-	<value>Access to this resource is forbidden</value>
+  <data name="LoosingControlOnServer" xml:space="preserve">
+    <value>Losing control on server</value>
   </data>
-	<data name="Msg_Error_BadRequest" xml:space="preserve">
-	<value>Invalid request. Please check your input</value>
+  <data name="Project_SchoolWebsite_Title" xml:space="preserve">
+    <value>School Website - Authentication Module.</value>
   </data>
-	<data name="Msg_Error_Server" xml:space="preserve">
-	<value>Server error. Please try again later</value>
+  <data name="Project_SchoolWebsite_Description" xml:space="preserve">
+    <value>It is a long established fact that a reader will be distracted by the readable content of a page.</value>
   </data>
-	<data name="Msg_Error_Timeout" xml:space="preserve">
-	<value>The request timed out. Please try again</value>
+  <data name="ProjectName_HermanBeck" xml:space="preserve">
+    <value>Herman Beck</value>
   </data>
-	<data name="Msg_Error_Validation" xml:space="preserve">
-	<value>Validation failed. Please check your input</value>
+  <data name="ProjectName_MesssyAdam" xml:space="preserve">
+    <value>Messsy Adam</value>
   </data>
-	<data name="Msg_Error_Duplicate" xml:space="preserve">
-	<value>A record with the same {0} already exists</value>
+  <data name="ProjectName_JohnRichards" xml:space="preserve">
+    <value>John Richards</value>
   </data>
-	<data name="Msg_Error_AlreadyExists" xml:space="preserve">
-	<value>This record already exists</value>
+  <data name="ProjectName_PeterMeggik" xml:space="preserve">
+    <value>Peter Meggik</value>
   </data>
-	<data name="Msg_Error_NotFound_Item" xml:space="preserve">
-	<value>{0} not found</value>
+  <data name="ProjectName_Edward" xml:space="preserve">
+    <value>Edward</value>
   </data>
-	<data name="Msg_Error_Invalid" xml:space="preserve">
-	<value>Invalid {0}</value>
+  <data name="ProjectName_Ronald" xml:space="preserve">
+    <value>Ronald</value>
   </data>
-	<data name="Msg_Error_InvalidCredentials" xml:space="preserve">
-	<value>Invalid username or password</value>
+  <data name="TodoHeading" xml:space="preserve">
+    <value>Todo</value>
   </data>
-	<data name="Msg_Error_AccountLocked" xml:space="preserve">
-	<value>Your account has been locked. Please contact support</value>
+  <data name="Todo_TeamReview" xml:space="preserve">
+    <value>Team review meeting at 3.00 PM</value>
   </data>
-	<data name="Msg_Error_AccountDisabled" xml:space="preserve">
-	<value>Your account has been disabled. Please contact support</value>
+  <data name="Todo_PreparePresentation" xml:space="preserve">
+    <value>Prepare for presentation</value>
   </data>
-	<data name="Msg_Error_AccountNotVerified" xml:space="preserve">
-	<value>Your account has not been verified. Please check your email</value>
+  <data name="Todo_ResolveLowPriorityTickets" xml:space="preserve">
+    <value>Resolve all the low priority tickets due today</value>
   </data>
-	<data name="Msg_Error_EmailNotVerified" xml:space="preserve">
-	<value>Your email has not been verified. Please check your inbox</value>
+  <data name="Todo_ScheduleMeeting" xml:space="preserve">
+    <value>Schedule meeting for next week</value>
   </data>
-	<data name="Msg_Error_PhoneNotVerified" xml:space="preserve">
-	<value>Your phone number has not been verified</value>
+  <data name="Todo_ProjectReview" xml:space="preserve">
+    <value>Project review</value>
   </data>
-	<data name="Msg_Error_MaxAttempts" xml:space="preserve">
-	<value>You have exceeded the maximum number of attempts</value>
+  <data name="Todo_MeetingWithAlisa" xml:space="preserve">
+    <value>Meeting with Alisa</value>
   </data>
-	<data name="Msg_Error_SessionExpired" xml:space="preserve">
-	<value>Your session has expired. Please log in again</value>
+  <data name="Todo_CallJohn" xml:space="preserve">
+    <value>Call John</value>
   </data>
-	<data name="Msg_Error_TokenExpired" xml:space="preserve">
-	<value>This link has expired. Please request a new one</value>
+  <data name="Todo_CreateInvoice" xml:space="preserve">
+    <value>Create invoice</value>
   </data>
-	<data name="Msg_Error_TokenInvalid" xml:space="preserve">
-	<value>Invalid token. Please request a new one</value>
+  <data name="Todo_PrintStatements" xml:space="preserve">
+    <value>Print Statements</value>
   </data>
-	<data name="Msg_Error_FileSize" xml:space="preserve">
-	<value>File size exceeds the maximum allowed</value>
+  <data name="Todo_PrepareForPresentation" xml:space="preserve">
+    <value>Prepare for presentation</value>
   </data>
-	<data name="Msg_Error_FileType" xml:space="preserve">
-	<value>File type not allowed</value>
+  <data name="Todo_PickUpKids" xml:space="preserve">
+    <value>Pick up kids from school</value>
   </data>
-	<data name="Msg_Error_Upload" xml:space="preserve">
-	<value>Failed to upload file. Please try again</value>
+  <data name="Tb_ShippingTypes" xml:space="preserve">
+    <value>Shipping Types</value>
   </data>
-	<data name="Msg_Error_Download" xml:space="preserve">
-	<value>Failed to download file. Please try again</value>
+  <data name="Tb_ShippingType" xml:space="preserve">
+    <value>Shipping Type</value>
   </data>
-	<data name="Msg_Error_Import" xml:space="preserve">
-	<value>Failed to import data. Please check the file format</value>
+  <data name="Val_Required" xml:space="preserve">
+    <value>The {0} field is required</value>
   </data>
-	<data name="Msg_Error_Export" xml:space="preserve">
-	<value>Failed to export data. Please try again</value>
+  <data name="Val_Email" xml:space="preserve">
+    <value>Invalid email address</value>
   </data>
-	<data name="Msg_Error_Delete" xml:space="preserve">
-	<value>Failed to delete. The record may be in use</value>
+  <data name="Val_Phone" xml:space="preserve">
+    <value>Invalid phone number</value>
   </data>
-	<data name="Msg_Error_Save" xml:space="preserve">
-	<value>Failed to save data. Please try again</value>
+  <data name="Val_StringLength" xml:space="preserve">
+    <value>The {0} must be between {2} and {1} characters</value>
   </data>
-	<data name="Msg_Error_Update" xml:space="preserve">
-	<value>Failed to update data. Please try again</value>
+  <data name="Val_Range" xml:space="preserve">
+    <value>The {0} must be between {1} and {2}</value>
   </data>
-	<data name="Msg_Error_Connection" xml:space="preserve">
-	<value>Connection error. Please check your internet connection</value>
+  <data name="Val_PositiveNumber" xml:space="preserve">
+    <value>The {0} must be a positive number</value>
   </data>
-	<data name="Msg_Error_Database" xml:space="preserve">
-	<value>Database error. Please try again later</value>
+  <data name="Val_Language_Ar" xml:space="preserve">
+    <value>Please Enter This Field In Arabic</value>
   </data>
-	<data name="Msg_Error_Network" xml:space="preserve">
-	<value>Network error. Please check your connection</value>
+  <data name="Val_Language_En" xml:space="preserve">
+    <value>Please Enter This Field In English Letter Only</value>
   </data>
-	<data name="Msg_Error_Permission" xml:space="preserve">
-	<value>You do not have permission to perform this action</value>
+  <data name="Msg_MarkSentMessage" xml:space="preserve">
+    <value>Mark sent you a message</value>
   </data>
-	<data name="Msg_Error_Access" xml:space="preserve">
-	<value>Access denied</value>
+  <data name="Msg_CreghSentMessage" xml:space="preserve">
+    <value>Cregh sent you a message</value>
   </data>
-
-	<!-- ===== Messages - Warning ===== -->
-	<data name="Msg_Warning" xml:space="preserve">
-	<value>Warning</value>
+  <data name="Msg_ProfilePictureUpdated" xml:space="preserve">
+    <value>Profile picture updated</value>
   </data>
-	<data name="Msg_Warning_Unsaved" xml:space="preserve">
-	<value>You have unsaved changes. Are you sure you want to leave?</value>
+  <data name="Msg_NewMessages" xml:space="preserve">
+    <value>{0} new messages</value>
   </data>
-	<data name="Msg_Warning_Delete" xml:space="preserve">
-	<value>Are you sure you want to delete this {0}?</value>
+  <data name="Msg_SeeAllNotifications" xml:space="preserve">
+    <value>See all notifications</value>
   </data>
-	<data name="Msg_Warning_Delete_Multiple" xml:space="preserve">
-	<value>Are you sure you want to delete the selected items?</value>
+  <data name="Lang_Arabic" xml:space="preserve">
+    <value>Arabic</value>
   </data>
-	<data name="Msg_Warning_Permanent" xml:space="preserve">
-	<value>This action cannot be undone. Are you sure?</value>
+  <data name="Lang_English" xml:space="preserve">
+    <value>English</value>
   </data>
-	<data name="Msg_Warning_Logout" xml:space="preserve">
-	<value>Are you sure you want to log out?</value>
+  <data name="Field_CarrierName" xml:space="preserve">
+    <value>Carrier Name</value>
   </data>
-	<data name="Msg_Warning_Exit" xml:space="preserve">
-	<value>Are you sure you want to exit?</value>
+  <data name="Field_CityAname" xml:space="preserve">
+    <value>City Name (Arabic)</value>
   </data>
-	<data name="Msg_Warning_Cancel" xml:space="preserve">
-	<value>Are you sure you want to cancel?</value>
+  <data name="Field_CityEname" xml:space="preserve">
+    <value>City Name (English)</value>
   </data>
-	<data name="Msg_Warning_Reset" xml:space="preserve">
-	<value>Are you sure you want to reset?</value>
+  <data name="Field_CountryAname" xml:space="preserve">
+    <value>Country Name (Arabic)</value>
   </data>
-	<data name="Msg_Warning_Overwrite" xml:space="preserve">
-	<value>This will overwrite existing data. Continue?</value>
+  <data name="Field_CountryEname" xml:space="preserve">
+    <value>Country Name (English)</value>
   </data>
-	<data name="Msg_Warning_Duplicate" xml:space="preserve">
-	<value>A similar record already exists. Continue?</value>
+  <data name="Field_MethdAname" xml:space="preserve">
+    <value>Payment Method Name (Arabic)</value>
   </data>
-	<data name="Msg_Warning_LowStock" xml:space="preserve">
-	<value>Warning: Low stock</value>
+  <data name="Field_MethodEname" xml:space="preserve">
+    <value>Payment Method Name (English)</value>
   </data>
-	<data name="Msg_Warning_OutOfStock" xml:space="preserve">
-	<value>Out of stock</value>
+  <data name="Field_Commission" xml:space="preserve">
+    <value>Commission</value>
   </data>
-	<data name="Msg_Warning_Expiring" xml:space="preserve">
-	<value>Warning: This item is expiring soon</value>
+  <data name="Field_KiloMeterRate" xml:space="preserve">
+    <value>Kilometer Rate</value>
   </data>
-	<data name="Msg_Warning_Expired" xml:space="preserve">
-	<value>This item has expired</value>
+  <data name="Field_KilooGramRate" xml:space="preserve">
+    <value>Kilogram Rate</value>
   </data>
-	<data name="Msg_Warning_SystemMaintenance" xml:space="preserve">
-	<value>The system will be under maintenance on {0}</value>
+  <data name="Field_ShippingTypeAname" xml:space="preserve">
+    <value>Shipping Type Name (Arabic)</value>
   </data>
-
-	<!-- ===== Messages - Info ===== -->
-	<data name="Msg_Info" xml:space="preserve">
-	<value>Information</value>
+  <data name="Field_ShippingTypeEname" xml:space="preserve">
+    <value>Shipping Type Name (English)</value>
   </data>
-	<data name="Msg_Info_NoData" xml:space="preserve">
-	<value>No data available</value>
+  <data name="Field_ShippingFactor" xml:space="preserve">
+    <value>Shipping Factor</value>
   </data>
-	<data name="Msg_Info_NoResults" xml:space="preserve">
-	<value>No results found</value>
+  <data name="Field_ShippingDate" xml:space="preserve">
+    <value>Shipping Date</value>
   </data>
-	<data name="Msg_Info_Loading" xml:space="preserve">
-	<value>Loading...</value>
+  <data name="Field_SenderId" xml:space="preserve">
+    <value>Sender</value>
   </data>
-	<data name="Msg_Info_Processing" xml:space="preserve">
-	<value>Processing...</value>
+  <data name="Field_ReceiverId" xml:space="preserve">
+    <value>Receiver</value>
   </data>
-	<data name="Msg_Info_Wait" xml:space="preserve">
-	<value>Please wait...</value>
+  <data name="Field_ShippingTypeId" xml:space="preserve">
+    <value>Shipping Type</value>
   </data>
-	<data name="Msg_Info_Select" xml:space="preserve">
-	<value>Please select an item</value>
+  <data name="Field_Width" xml:space="preserve">
+    <value>Width</value>
   </data>
-	<data name="Msg_Info_Choose" xml:space="preserve">
-	<value>Please choose an option</value>
+  <data name="Field_Height" xml:space="preserve">
+    <value>Height</value>
   </data>
-	<data name="Msg_Info_Enter" xml:space="preserve">
-	<value>Please enter {0}</value>
+  <data name="Field_Weight" xml:space="preserve">
+    <value>Weight</value>
   </data>
-	<data name="Msg_Info_Upload" xml:space="preserve">
-	<value>Drag and drop files here or click to upload</value>
+  <data name="Field_Length" xml:space="preserve">
+    <value>Length</value>
   </data>
-	<data name="Msg_Info_Required" xml:space="preserve">
-	<value>Fields marked with * are required</value>
+  <data name="Field_PackageValue" xml:space="preserve">
+    <value>Package Value</value>
   </data>
-	<data name="Msg_Info_Search" xml:space="preserve">
-	<value>Type to search...</value>
+  <data name="Field_ShippingRate" xml:space="preserve">
+    <value>Shipping Rate</value>
   </data>
-	<data name="Msg_Info_Filter" xml:space="preserve">
-	<value>Apply filters to refine results</value>
+  <data name="Field_PaymentMethodId" xml:space="preserve">
+    <value>Payment Method</value>
   </data>
-	<data name="Msg_Info_Sort" xml:space="preserve">
-	<value>Click to sort</value>
+  <data name="Field_UserSubscriptionId" xml:space="preserve">
+    <value>User Subscription</value>
   </data>
-	<data name="Msg_Info_Page" xml:space="preserve">
-	<value>Page {0} of {1}</value>
+  <data name="Field_TrackingNumber" xml:space="preserve">
+    <value>Tracking Number</value>
   </data>
-	<data name="Msg_Info_ItemsPerPage" xml:space="preserve">
-	<value>Items per page</value>
+  <data name="Field_ShippmentId" xml:space="preserve">
+    <value>Shippment Number</value>
   </data>
-	<data name="Msg_Info_Showing" xml:space="preserve">
-	<value>Showing {0} to {1} of {2} entries</value>
+  <data name="Field_Notes" xml:space="preserve">
+    <value>Notes</value>
   </data>
-	<data name="Msg_Info_Total" xml:space="preserve">
-	<value>Total: {0}</value>
+  <data name="Field_CarrierId" xml:space="preserve">
+    <value>Carrier</value>
   </data>
-	<data name="Msg_Info_Count" xml:space="preserve">
-	<value>Count: {0}</value>
+  <data name="Field_PackageName" xml:space="preserve">
+    <value>Package Name</value>
   </data>
-	<data name="Msg_Info_New" xml:space="preserve">
-	<value>New</value>
+  <data name="Field_ShippimentCount" xml:space="preserve">
+    <value>Shippments Count</value>
   </data>
-	<data name="Msg_Info_Update" xml:space="preserve">
-	<value>Update available</value>
+  <data name="Field_NumberOfKiloMeters" xml:space="preserve">
+    <value>Number of Kilometers</value>
   </data>
-	<data name="Msg_Info_Version" xml:space="preserve">
-	<value>Version {0}</value>
+  <data name="Field_TotalWeight" xml:space="preserve">
+    <value>Total Weight</value>
   </data>
-	<data name="Msg_Info_LastUpdate" xml:space="preserve">
-	<value>Last updated: {0}</value>
+  <data name="Field_UserId" xml:space="preserve">
+    <value>User</value>
   </data>
-
-	<!-- ===== Messages - Confirm ===== -->
-	<data name="Msg_Confirm" xml:space="preserve">
-	<value>Please confirm</value>
+  <data name="Field_ReceiverName" xml:space="preserve">
+    <value>Receiver Name</value>
   </data>
-	<data name="Msg_Confirm_Delete" xml:space="preserve">
-	<value>Are you sure you want to delete this item?</value>
+  <data name="Field_Email_Receiver" xml:space="preserve">
+    <value>Receiver Email</value>
   </data>
-	<data name="Msg_Confirm_Delete_Multiple" xml:space="preserve">
-	<value>Are you sure you want to delete {0} items?</value>
+  <data name="Field_Phone_Receiver" xml:space="preserve">
+    <value>Receiver Phone</value>
   </data>
-	<data name="Msg_Confirm_Save" xml:space="preserve">
-	<value>Do you want to save changes?</value>
+  <data name="Field_CityId_Receiver" xml:space="preserve">
+    <value>Receiver City</value>
   </data>
-	<data name="Msg_Confirm_Discard" xml:space="preserve">
-	<value>Do you want to discard changes?</value>
+  <data name="Field_Address_Receiver" xml:space="preserve">
+    <value>Receiver Address</value>
   </data>
-	<data name="Msg_Confirm_Overwrite" xml:space="preserve">
-	<value>Do you want to overwrite the existing file?</value>
+  <data name="Field_SenderName" xml:space="preserve">
+    <value>Sender Name</value>
   </data>
-	<data name="Msg_Confirm_Replace" xml:space="preserve">
-	<value>Do you want to replace the existing item?</value>
+  <data name="Field_Email_Sender" xml:space="preserve">
+    <value>Sender Email</value>
   </data>
-	<data name="Msg_Confirm_Submit" xml:space="preserve">
-	<value>Are you sure you want to submit?</value>
+  <data name="Field_Phone_Sender" xml:space="preserve">
+    <value>Sender Phone</value>
   </data>
-	<data name="Msg_Confirm_Cancel" xml:space="preserve">
-	<value>Are you sure you want to cancel?</value>
+  <data name="Field_CityId_Sender" xml:space="preserve">
+    <value>Sender City</value>
   </data>
-	<data name="Msg_Confirm_Exit" xml:space="preserve">
-	<value>Are you sure you want to exit?</value>
+  <data name="Field_Address_Sender" xml:space="preserve">
+    <value>Sender Address</value>
   </data>
-	<data name="Msg_Confirm_Logout" xml:space="preserve">
-	<value>Are you sure you want to log out?</value>
+  <data name="Field_UserId_Subscription" xml:space="preserve">
+    <value>User</value>
   </data>
-	<data name="Msg_Confirm_Action" xml:space="preserve">
-	<value>Are you sure you want to perform this action?</value>
+  <data name="Field_PackageId" xml:space="preserve">
+    <value>Package</value>
   </data>
-
-	<!-- =========================================================== -->
-	<!-- ====================  SECTION: WORDS  ===================== -->
-	<!-- =========================================================== -->
-	<!-- ===== Words - Status ===== -->
-	<data name="Word_Success" xml:space="preserve">
-	<value>Success</value>
+  <data name="Field_SubscriptionDate" xml:space="preserve">
+    <value>Subscription Date</value>
   </data>
-	<data name="Word_Error" xml:space="preserve">
-	<value>Error</value>
+  <data name="Msg_Success" xml:space="preserve">
+    <value>Operation completed successfully</value>
   </data>
-	<data name="Word_Warning" xml:space="preserve">
-	<value>Warning</value>
+  <data name="Msg_Saved" xml:space="preserve">
+    <value>Data saved successfully</value>
   </data>
-	<data name="Word_Info" xml:space="preserve">
-	<value>Information</value>
+  <data name="Msg_Added" xml:space="preserve">
+    <value>Added successfully</value>
   </data>
-	<data name="Word_Confirm" xml:space="preserve">
-	<value>Confirmation</value>
+  <data name="Msg_Updated" xml:space="preserve">
+    <value>Updated successfully</value>
   </data>
-
-	<!-- ===== Words - Result ===== -->
-	<data name="Word_Done" xml:space="preserve">
-	<value>Done</value>
+  <data name="Msg_Deleted" xml:space="preserve">
+    <value>Deleted successfully</value>
   </data>
-	<data name="Word_Failed" xml:space="preserve">
-	<value>Failed</value>
+  <data name="Msg_Uploaded" xml:space="preserve">
+    <value>File uploaded successfully</value>
   </data>
-	<data name="Word_Completed" xml:space="preserve">
-	<value>Completed</value>
+  <data name="Msg_Downloaded" xml:space="preserve">
+    <value>File downloaded successfully</value>
   </data>
-	<data name="Word_Pending" xml:space="preserve">
-	<value>Pending</value>
+  <data name="Msg_Imported" xml:space="preserve">
+    <value>Data imported successfully</value>
   </data>
-	<data name="Word_Processing" xml:space="preserve">
-	<value>Processing</value>
+  <data name="Msg_Exported" xml:space="preserve">
+    <value>Data exported successfully</value>
   </data>
-	<data name="Word_Cancelled" xml:space="preserve">
-	<value>Cancelled</value>
+  <data name="Msg_Sent" xml:space="preserve">
+    <value>Message sent successfully</value>
   </data>
-
-	<!-- ===== Words - Action ===== -->
-	<data name="Word_Saved" xml:space="preserve">
-	<value>Saved</value>
+  <data name="Msg_Received" xml:space="preserve">
+    <value>Message received successfully</value>
   </data>
-	<data name="Word_Added" xml:space="preserve">
-	<value>Added</value>
+  <data name="Msg_Activated" xml:space="preserve">
+    <value>Activated successfully</value>
   </data>
-	<data name="Word_Updated" xml:space="preserve">
-	<value>Updated</value>
+  <data name="Msg_Deactivated" xml:space="preserve">
+    <value>Deactivated successfully</value>
   </data>
-	<data name="Word_Deleted" xml:space="preserve">
-	<value>Deleted</value>
+  <data name="Msg_Approved" xml:space="preserve">
+    <value>Approved successfully</value>
   </data>
-	<data name="Word_Approved" xml:space="preserve">
-	<value>Approved</value>
+  <data name="Msg_Rejected" xml:space="preserve">
+    <value>Rejected successfully</value>
   </data>
-	<data name="Word_Rejected" xml:space="preserve">
-	<value>Rejected</value>
+  <data name="Msg_Submitted" xml:space="preserve">
+    <value>Submitted successfully</value>
   </data>
-	<data name="Word_Activated" xml:space="preserve">
-	<value>Activated</value>
+  <data name="Msg_Processed" xml:space="preserve">
+    <value>Processed successfully</value>
   </data>
-	<data name="Word_Deactivated" xml:space="preserve">
-	<value>Deactivated</value>
+  <data name="Msg_Completed" xml:space="preserve">
+    <value>Completed successfully</value>
   </data>
-
-	<!-- ===== Words - Confirmation ===== -->
-	<data name="Word_Yes" xml:space="preserve">
-	<value>Yes</value>
+  <data name="Msg_Published" xml:space="preserve">
+    <value>Published successfully</value>
   </data>
-	<data name="Word_No" xml:space="preserve">
-	<value>No</value>
+  <data name="Msg_Unpublished" xml:space="preserve">
+    <value>Unpublished successfully</value>
   </data>
-	<data name="Word_Ok" xml:space="preserve">
-	<value>OK</value>
+  <data name="Msg_Archived" xml:space="preserve">
+    <value>Archived successfully</value>
   </data>
-	<data name="Word_Cancel" xml:space="preserve">
-	<value>Cancel</value>
+  <data name="Msg_Restored" xml:space="preserve">
+    <value>Restored successfully</value>
   </data>
-
-	<!-- ===== Words - Time ===== -->
-	<data name="Word_Now" xml:space="preserve">
-	<value>Now</value>
+  <data name="Msg_Locked" xml:space="preserve">
+    <value>Locked successfully</value>
   </data>
-	<data name="Word_Today" xml:space="preserve">
-	<value>Today</value>
+  <data name="Msg_Unlocked" xml:space="preserve">
+    <value>Unlocked successfully</value>
   </data>
-	<data name="Word_Yesterday" xml:space="preserve">
-	<value>Yesterday</value>
+  <data name="Msg_Suspended" xml:space="preserve">
+    <value>Suspended successfully</value>
   </data>
-	<data name="Word_Tomorrow" xml:space="preserve">
-	<value>Tomorrow</value>
+  <data name="Msg_Resumed" xml:space="preserve">
+    <value>Resumed successfully</value>
   </data>
-
-	<!-- ===== Words - Direction ===== -->
-	<data name="Word_Next" xml:space="preserve">
-	<value>Next</value>
+  <data name="Msg_Verified" xml:space="preserve">
+    <value>Verified successfully</value>
   </data>
-	<data name="Word_Previous" xml:space="preserve">
-	<value>Previous</value>
+  <data name="Msg_Authenticated" xml:space="preserve">
+    <value>Authenticated successfully</value>
   </data>
-	<data name="Word_Back" xml:space="preserve">
-	<value>Back</value>
+  <data name="Msg_Authorized" xml:space="preserve">
+    <value>Authorized successfully</value>
   </data>
-	<data name="Word_Forward" xml:space="preserve">
-	<value>Forward</value>
+  <data name="Msg_Registered" xml:space="preserve">
+    <value>Registered successfully</value>
   </data>
-
-	<!-- ===== Words - Quantity ===== -->
-	<data name="Word_All" xml:space="preserve">
-	<value>All</value>
+  <data name="Msg_LoggedIn" xml:space="preserve">
+    <value>Logged in successfully</value>
   </data>
-	<data name="Word_None" xml:space="preserve">
-	<value>None</value>
+  <data name="Msg_LoggedOut" xml:space="preserve">
+    <value>Logged out successfully</value>
   </data>
-	<data name="Word_Some" xml:space="preserve">
-	<value>Some</value>
+  <data name="Msg_PasswordChanged" xml:space="preserve">
+    <value>Password changed successfully</value>
   </data>
-	<data name="Word_Many" xml:space="preserve">
-	<value>Many</value>
+  <data name="Msg_PasswordReset" xml:space="preserve">
+    <value>Password reset successfully</value>
   </data>
-
-	<!-- ===== Words - Importance ===== -->
-	<data name="Word_High" xml:space="preserve">
-	<value>High</value>
+  <data name="Msg_EmailSent" xml:space="preserve">
+    <value>Email sent successfully</value>
   </data>
-	<data name="Word_Medium" xml:space="preserve">
-	<value>Medium</value>
+  <data name="Msg_EmailVerified" xml:space="preserve">
+    <value>Email verified successfully</value>
   </data>
-	<data name="Word_Low" xml:space="preserve">
-	<value>Low</value>
+  <data name="Msg_PhoneVerified" xml:space="preserve">
+    <value>Phone number verified successfully</value>
   </data>
-	<data name="Word_Critical" xml:space="preserve">
-	<value>Critical</value>
+  <data name="Msg_ProfileUpdated" xml:space="preserve">
+    <value>Profile updated successfully</value>
   </data>
-
-	<!-- ===== Words - State ===== -->
-	<data name="Word_Open" xml:space="preserve">
-	<value>Open</value>
+  <data name="Msg_SettingsSaved" xml:space="preserve">
+    <value>Settings saved successfully</value>
   </data>
-	<data name="Word_Closed" xml:space="preserve">
-	<value>Closed</value>
+  <data name="Msg_PreferencesSaved" xml:space="preserve">
+    <value>Preferences saved successfully</value>
   </data>
-	<data name="Word_Locked" xml:space="preserve">
-	<value>Locked</value>
+  <data name="Msg_Error" xml:space="preserve">
+    <value>An error occurred while processing your request</value>
   </data>
-	<data name="Word_Unlocked" xml:space="preserve">
-	<value>Unlocked</value>
+  <data name="Msg_Error_General" xml:space="preserve">
+    <value>Something went wrong. Please try again later</value>
   </data>
-	<data name="Word_Visible" xml:space="preserve">
-	<value>Visible</value>
+  <data name="Msg_Error_NotFound" xml:space="preserve">
+    <value>The requested resource was not found</value>
   </data>
-	<data name="Word_Hidden" xml:space="preserve">
-	<value>Hidden</value>
+  <data name="Msg_Error_Unauthorized" xml:space="preserve">
+    <value>You are not authorized to perform this action</value>
   </data>
-
+  <data name="Msg_Error_Forbidden" xml:space="preserve">
+    <value>Access to this resource is forbidden</value>
+  </data>
+  <data name="Msg_Error_BadRequest" xml:space="preserve">
+    <value>Invalid request. Please check your input</value>
+  </data>
+  <data name="Msg_Error_Server" xml:space="preserve">
+    <value>Server error. Please try again later</value>
+  </data>
+  <data name="Msg_Error_Timeout" xml:space="preserve">
+    <value>The request timed out. Please try again</value>
+  </data>
+  <data name="Msg_Error_Validation" xml:space="preserve">
+    <value>Validation failed. Please check your input</value>
+  </data>
+  <data name="Msg_Error_Duplicate" xml:space="preserve">
+    <value>A record with the same {0} already exists</value>
+  </data>
+  <data name="Msg_Error_AlreadyExists" xml:space="preserve">
+    <value>This record already exists</value>
+  </data>
+  <data name="Msg_Error_NotFound_Item" xml:space="preserve">
+    <value>{0} not found</value>
+  </data>
+  <data name="Msg_Error_Invalid" xml:space="preserve">
+    <value>Invalid {0}</value>
+  </data>
+  <data name="Msg_Error_InvalidCredentials" xml:space="preserve">
+    <value>Invalid username or password</value>
+  </data>
+  <data name="Msg_Error_AccountLocked" xml:space="preserve">
+    <value>Your account has been locked. Please contact support</value>
+  </data>
+  <data name="Msg_Error_AccountDisabled" xml:space="preserve">
+    <value>Your account has been disabled. Please contact support</value>
+  </data>
+  <data name="Msg_Error_AccountNotVerified" xml:space="preserve">
+    <value>Your account has not been verified. Please check your email</value>
+  </data>
+  <data name="Msg_Error_EmailNotVerified" xml:space="preserve">
+    <value>Your email has not been verified. Please check your inbox</value>
+  </data>
+  <data name="Msg_Error_PhoneNotVerified" xml:space="preserve">
+    <value>Your phone number has not been verified</value>
+  </data>
+  <data name="Msg_Error_MaxAttempts" xml:space="preserve">
+    <value>You have exceeded the maximum number of attempts</value>
+  </data>
+  <data name="Msg_Error_SessionExpired" xml:space="preserve">
+    <value>Your session has expired. Please log in again</value>
+  </data>
+  <data name="Msg_Error_TokenExpired" xml:space="preserve">
+    <value>This link has expired. Please request a new one</value>
+  </data>
+  <data name="Msg_Error_TokenInvalid" xml:space="preserve">
+    <value>Invalid token. Please request a new one</value>
+  </data>
+  <data name="Msg_Error_FileSize" xml:space="preserve">
+    <value>File size exceeds the maximum allowed</value>
+  </data>
+  <data name="Msg_Error_FileType" xml:space="preserve">
+    <value>File type not allowed</value>
+  </data>
+  <data name="Msg_Error_Upload" xml:space="preserve">
+    <value>Failed to upload file. Please try again</value>
+  </data>
+  <data name="Msg_Error_Download" xml:space="preserve">
+    <value>Failed to download file. Please try again</value>
+  </data>
+  <data name="Msg_Error_Import" xml:space="preserve">
+    <value>Failed to import data. Please check the file format</value>
+  </data>
+  <data name="Msg_Error_Export" xml:space="preserve">
+    <value>Failed to export data. Please try again</value>
+  </data>
+  <data name="Msg_Error_Delete" xml:space="preserve">
+    <value>Failed to delete. The record may be in use</value>
+  </data>
+  <data name="Msg_Error_Save" xml:space="preserve">
+    <value>Failed to save data. Please try again</value>
+  </data>
+  <data name="Msg_Error_Update" xml:space="preserve">
+    <value>Failed to update data. Please try again</value>
+  </data>
+  <data name="Msg_Error_Connection" xml:space="preserve">
+    <value>Connection error. Please check your internet connection</value>
+  </data>
+  <data name="Msg_Error_Database" xml:space="preserve">
+    <value>Database error. Please try again later</value>
+  </data>
+  <data name="Msg_Error_Network" xml:space="preserve">
+    <value>Network error. Please check your connection</value>
+  </data>
+  <data name="Msg_Error_Permission" xml:space="preserve">
+    <value>You do not have permission to perform this action</value>
+  </data>
+  <data name="Msg_Error_Access" xml:space="preserve">
+    <value>Access denied</value>
+  </data>
+  <data name="Msg_Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="Msg_Warning_Unsaved" xml:space="preserve">
+    <value>You have unsaved changes. Are you sure you want to leave?</value>
+  </data>
+  <data name="Msg_Warning_Delete" xml:space="preserve">
+    <value>Are you sure you want to delete this {0}?</value>
+  </data>
+  <data name="Msg_Warning_Delete_Multiple" xml:space="preserve">
+    <value>Are you sure you want to delete the selected items?</value>
+  </data>
+  <data name="Msg_Warning_Permanent" xml:space="preserve">
+    <value>This action cannot be undone. Are you sure?</value>
+  </data>
+  <data name="Msg_Warning_Logout" xml:space="preserve">
+    <value>Are you sure you want to log out?</value>
+  </data>
+  <data name="Msg_Warning_Exit" xml:space="preserve">
+    <value>Are you sure you want to exit?</value>
+  </data>
+  <data name="Msg_Warning_Cancel" xml:space="preserve">
+    <value>Are you sure you want to cancel?</value>
+  </data>
+  <data name="Msg_Warning_Reset" xml:space="preserve">
+    <value>Are you sure you want to reset?</value>
+  </data>
+  <data name="Msg_Warning_Overwrite" xml:space="preserve">
+    <value>This will overwrite existing data. Continue?</value>
+  </data>
+  <data name="Msg_Warning_Duplicate" xml:space="preserve">
+    <value>A similar record already exists. Continue?</value>
+  </data>
+  <data name="Msg_Warning_LowStock" xml:space="preserve">
+    <value>Warning: Low stock</value>
+  </data>
+  <data name="Msg_Warning_OutOfStock" xml:space="preserve">
+    <value>Out of stock</value>
+  </data>
+  <data name="Msg_Warning_Expiring" xml:space="preserve">
+    <value>Warning: This item is expiring soon</value>
+  </data>
+  <data name="Msg_Warning_Expired" xml:space="preserve">
+    <value>This item has expired</value>
+  </data>
+  <data name="Msg_Warning_SystemMaintenance" xml:space="preserve">
+    <value>The system will be under maintenance on {0}</value>
+  </data>
+  <data name="Msg_Info" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="Msg_Info_NoData" xml:space="preserve">
+    <value>No data available</value>
+  </data>
+  <data name="Msg_Info_NoResults" xml:space="preserve">
+    <value>No results found</value>
+  </data>
+  <data name="Msg_Info_Loading" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="Msg_Info_Processing" xml:space="preserve">
+    <value>Processing...</value>
+  </data>
+  <data name="Msg_Info_Wait" xml:space="preserve">
+    <value>Please wait...</value>
+  </data>
+  <data name="Msg_Info_Select" xml:space="preserve">
+    <value>Please select an item</value>
+  </data>
+  <data name="Msg_Info_Choose" xml:space="preserve">
+    <value>Please choose an option</value>
+  </data>
+  <data name="Msg_Info_Enter" xml:space="preserve">
+    <value>Please enter {0}</value>
+  </data>
+  <data name="Msg_Info_Upload" xml:space="preserve">
+    <value>Drag and drop files here or click to upload</value>
+  </data>
+  <data name="Msg_Info_Required" xml:space="preserve">
+    <value>Fields marked with * are required</value>
+  </data>
+  <data name="Msg_Info_Search" xml:space="preserve">
+    <value>Type to search...</value>
+  </data>
+  <data name="Msg_Info_Filter" xml:space="preserve">
+    <value>Apply filters to refine results</value>
+  </data>
+  <data name="Msg_Info_Sort" xml:space="preserve">
+    <value>Click to sort</value>
+  </data>
+  <data name="Msg_Info_Page" xml:space="preserve">
+    <value>Page {0} of {1}</value>
+  </data>
+  <data name="Msg_Info_ItemsPerPage" xml:space="preserve">
+    <value>Items per page</value>
+  </data>
+  <data name="Msg_Info_Showing" xml:space="preserve">
+    <value>Showing {0} to {1} of {2} entries</value>
+  </data>
+  <data name="Msg_Info_Total" xml:space="preserve">
+    <value>Total: {0}</value>
+  </data>
+  <data name="Msg_Info_Count" xml:space="preserve">
+    <value>Count: {0}</value>
+  </data>
+  <data name="Msg_Info_New" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="Msg_Info_Update" xml:space="preserve">
+    <value>Update available</value>
+  </data>
+  <data name="Msg_Info_Version" xml:space="preserve">
+    <value>Version {0}</value>
+  </data>
+  <data name="Msg_Info_LastUpdate" xml:space="preserve">
+    <value>Last updated: {0}</value>
+  </data>
+  <data name="Msg_Confirm" xml:space="preserve">
+    <value>Please confirm</value>
+  </data>
+  <data name="Msg_Confirm_Delete" xml:space="preserve">
+    <value>Are you sure you want to delete this item?</value>
+  </data>
+  <data name="Msg_Confirm_Delete_Multiple" xml:space="preserve">
+    <value>Are you sure you want to delete {0} items?</value>
+  </data>
+  <data name="Msg_Confirm_Save" xml:space="preserve">
+    <value>Do you want to save changes?</value>
+  </data>
+  <data name="Msg_Confirm_Discard" xml:space="preserve">
+    <value>Do you want to discard changes?</value>
+  </data>
+  <data name="Msg_Confirm_Overwrite" xml:space="preserve">
+    <value>Do you want to overwrite the existing file?</value>
+  </data>
+  <data name="Msg_Confirm_Replace" xml:space="preserve">
+    <value>Do you want to replace the existing item?</value>
+  </data>
+  <data name="Msg_Confirm_Submit" xml:space="preserve">
+    <value>Are you sure you want to submit?</value>
+  </data>
+  <data name="Msg_Confirm_Cancel" xml:space="preserve">
+    <value>Are you sure you want to cancel?</value>
+  </data>
+  <data name="Msg_Confirm_Exit" xml:space="preserve">
+    <value>Are you sure you want to exit?</value>
+  </data>
+  <data name="Msg_Confirm_Logout" xml:space="preserve">
+    <value>Are you sure you want to log out?</value>
+  </data>
+  <data name="Msg_Confirm_Action" xml:space="preserve">
+    <value>Are you sure you want to perform this action?</value>
+  </data>
+  <data name="Word_Success" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="Word_Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Word_Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="Word_Info" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="Word_Confirm" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="Word_Done" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="Word_Failed" xml:space="preserve">
+    <value>Failed</value>
+  </data>
+  <data name="Word_Completed" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="Word_Pending" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="Word_Processing" xml:space="preserve">
+    <value>Processing</value>
+  </data>
+  <data name="Word_Cancelled" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="Word_Saved" xml:space="preserve">
+    <value>Saved</value>
+  </data>
+  <data name="Word_Added" xml:space="preserve">
+    <value>Added</value>
+  </data>
+  <data name="Word_Updated" xml:space="preserve">
+    <value>Updated</value>
+  </data>
+  <data name="Word_Deleted" xml:space="preserve">
+    <value>Deleted</value>
+  </data>
+  <data name="Word_Approved" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="Word_Rejected" xml:space="preserve">
+    <value>Rejected</value>
+  </data>
+  <data name="Word_Activated" xml:space="preserve">
+    <value>Activated</value>
+  </data>
+  <data name="Word_Deactivated" xml:space="preserve">
+    <value>Deactivated</value>
+  </data>
+  <data name="Word_Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="Word_No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Word_Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Word_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Word_Now" xml:space="preserve">
+    <value>Now</value>
+  </data>
+  <data name="Word_Today" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="Word_Yesterday" xml:space="preserve">
+    <value>Yesterday</value>
+  </data>
+  <data name="Word_Tomorrow" xml:space="preserve">
+    <value>Tomorrow</value>
+  </data>
+  <data name="Word_Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="Word_Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Word_Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Word_Forward" xml:space="preserve">
+    <value>Forward</value>
+  </data>
+  <data name="Word_All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="Word_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Word_Some" xml:space="preserve">
+    <value>Some</value>
+  </data>
+  <data name="Word_Many" xml:space="preserve">
+    <value>Many</value>
+  </data>
+  <data name="Word_High" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="Word_Medium" xml:space="preserve">
+    <value>Medium</value>
+  </data>
+  <data name="Word_Low" xml:space="preserve">
+    <value>Low</value>
+  </data>
+  <data name="Word_Critical" xml:space="preserve">
+    <value>Critical</value>
+  </data>
+  <data name="Word_Open" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="Word_Closed" xml:space="preserve">
+    <value>Closed</value>
+  </data>
+  <data name="Word_Locked" xml:space="preserve">
+    <value>Locked</value>
+  </data>
+  <data name="Word_Unlocked" xml:space="preserve">
+    <value>Unlocked</value>
+  </data>
+  <data name="Word_Visible" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="Word_Hidden" xml:space="preserve">
+    <value>Hidden</value>
+  </data>
+  <data name="Word_Tables" xml:space="preserve">
+    <value>Tables</value>
+  </data>
+  <data name="Val_InvalidNumber" xml:space="preserve">
+    <value>Invalid Number Format.</value>
+  </data>
 </root>

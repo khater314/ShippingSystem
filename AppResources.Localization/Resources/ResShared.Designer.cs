@@ -1411,6 +1411,222 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enter the carrier information below.
+        /// </summary>
+        public static string Form_Description_Carrier {
+            get {
+                return ResourceManager.GetString("Form_Description_Carrier", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter the city information below.
+        /// </summary>
+        public static string Form_Description_City {
+            get {
+                return ResourceManager.GetString("Form_Description_City", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter the country information below.
+        /// </summary>
+        public static string Form_Description_Country {
+            get {
+                return ResourceManager.GetString("Form_Description_Country", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter the payment method information below.
+        /// </summary>
+        public static string Form_Description_PaymentMethod {
+            get {
+                return ResourceManager.GetString("Form_Description_PaymentMethod", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update system settings below.
+        /// </summary>
+        public static string Form_Description_Setting {
+            get {
+                return ResourceManager.GetString("Form_Description_Setting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter the shipping type information below.
+        /// </summary>
+        public static string Form_Description_ShippingType {
+            get {
+                return ResourceManager.GetString("Form_Description_ShippingType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter the shipment information below.
+        /// </summary>
+        public static string Form_Description_Shippment {
+            get {
+                return ResourceManager.GetString("Form_Description_Shippment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update shipment status information.
+        /// </summary>
+        public static string Form_Description_ShippmentStatus {
+            get {
+                return ResourceManager.GetString("Form_Description_ShippmentStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter the package information below.
+        /// </summary>
+        public static string Form_Description_SubscriptionPackage {
+            get {
+                return ResourceManager.GetString("Form_Description_SubscriptionPackage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter the receiver information below.
+        /// </summary>
+        public static string Form_Description_UserReceiver {
+            get {
+                return ResourceManager.GetString("Form_Description_UserReceiver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter the sender information below.
+        /// </summary>
+        public static string Form_Description_UserSender {
+            get {
+                return ResourceManager.GetString("Form_Description_UserSender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter the subscription information below.
+        /// </summary>
+        public static string Form_Description_UserSubscription {
+            get {
+                return ResourceManager.GetString("Form_Description_UserSubscription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Carrier Details.
+        /// </summary>
+        public static string Form_Title_Carrier {
+            get {
+                return ResourceManager.GetString("Form_Title_Carrier", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to City Details.
+        /// </summary>
+        public static string Form_Title_City {
+            get {
+                return ResourceManager.GetString("Form_Title_City", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Country Details.
+        /// </summary>
+        public static string Form_Title_Country {
+            get {
+                return ResourceManager.GetString("Form_Title_Country", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Payment Method Details.
+        /// </summary>
+        public static string Form_Title_PaymentMethod {
+            get {
+                return ResourceManager.GetString("Form_Title_PaymentMethod", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings Details.
+        /// </summary>
+        public static string Form_Title_Setting {
+            get {
+                return ResourceManager.GetString("Form_Title_Setting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipping Type Details.
+        /// </summary>
+        public static string Form_Title_ShippingType {
+            get {
+                return ResourceManager.GetString("Form_Title_ShippingType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipment Details.
+        /// </summary>
+        public static string Form_Title_Shippment {
+            get {
+                return ResourceManager.GetString("Form_Title_Shippment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipment Status Details.
+        /// </summary>
+        public static string Form_Title_ShippmentStatus {
+            get {
+                return ResourceManager.GetString("Form_Title_ShippmentStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Package Details.
+        /// </summary>
+        public static string Form_Title_SubscriptionPackage {
+            get {
+                return ResourceManager.GetString("Form_Title_SubscriptionPackage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Receiver Details.
+        /// </summary>
+        public static string Form_Title_UserReceiver {
+            get {
+                return ResourceManager.GetString("Form_Title_UserReceiver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sender Details.
+        /// </summary>
+        public static string Form_Title_UserSender {
+            get {
+                return ResourceManager.GetString("Form_Title_UserSender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subscription Details.
+        /// </summary>
+        public static string Form_Title_UserSubscription {
+            get {
+                return ResourceManager.GetString("Form_Title_UserSubscription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Fund is not received.
         /// </summary>
         public static string FundNotReceived {
@@ -2316,6 +2532,222 @@ namespace AppResources.Localization.Resources {
         public static string Lbl_ZipCode {
             get {
                 return ResourceManager.GetString("Lbl_ZipCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View and manage all carriers.
+        /// </summary>
+        public static string List_Description_Carrier {
+            get {
+                return ResourceManager.GetString("List_Description_Carrier", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View and manage all cities.
+        /// </summary>
+        public static string List_Description_City {
+            get {
+                return ResourceManager.GetString("List_Description_City", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View and manage all countries.
+        /// </summary>
+        public static string List_Description_Country {
+            get {
+                return ResourceManager.GetString("List_Description_Country", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View and manage all payment methods.
+        /// </summary>
+        public static string List_Description_PaymentMethod {
+            get {
+                return ResourceManager.GetString("List_Description_PaymentMethod", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View and manage system settings.
+        /// </summary>
+        public static string List_Description_Setting {
+            get {
+                return ResourceManager.GetString("List_Description_Setting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View and manage all shipping types.
+        /// </summary>
+        public static string List_Description_ShippingType {
+            get {
+                return ResourceManager.GetString("List_Description_ShippingType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View and manage all shipments.
+        /// </summary>
+        public static string List_Description_Shippment {
+            get {
+                return ResourceManager.GetString("List_Description_Shippment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View all shipment status updates.
+        /// </summary>
+        public static string List_Description_ShippmentStatus {
+            get {
+                return ResourceManager.GetString("List_Description_ShippmentStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View and manage all subscription packages.
+        /// </summary>
+        public static string List_Description_SubscriptionPackage {
+            get {
+                return ResourceManager.GetString("List_Description_SubscriptionPackage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View and manage all receivers.
+        /// </summary>
+        public static string List_Description_UserReceiver {
+            get {
+                return ResourceManager.GetString("List_Description_UserReceiver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View and manage all senders.
+        /// </summary>
+        public static string List_Description_UserSender {
+            get {
+                return ResourceManager.GetString("List_Description_UserSender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View and manage all user subscriptions.
+        /// </summary>
+        public static string List_Description_UserSubscription {
+            get {
+                return ResourceManager.GetString("List_Description_UserSubscription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Carriers List.
+        /// </summary>
+        public static string List_Title_Carrier {
+            get {
+                return ResourceManager.GetString("List_Title_Carrier", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cities List.
+        /// </summary>
+        public static string List_Title_City {
+            get {
+                return ResourceManager.GetString("List_Title_City", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Countries List.
+        /// </summary>
+        public static string List_Title_Country {
+            get {
+                return ResourceManager.GetString("List_Title_Country", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Payment Methods List.
+        /// </summary>
+        public static string List_Title_PaymentMethod {
+            get {
+                return ResourceManager.GetString("List_Title_PaymentMethod", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings List.
+        /// </summary>
+        public static string List_Title_Setting {
+            get {
+                return ResourceManager.GetString("List_Title_Setting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipping Types List.
+        /// </summary>
+        public static string List_Title_ShippingType {
+            get {
+                return ResourceManager.GetString("List_Title_ShippingType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipments List.
+        /// </summary>
+        public static string List_Title_Shippment {
+            get {
+                return ResourceManager.GetString("List_Title_Shippment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipment Status List.
+        /// </summary>
+        public static string List_Title_ShippmentStatus {
+            get {
+                return ResourceManager.GetString("List_Title_ShippmentStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Packages List.
+        /// </summary>
+        public static string List_Title_SubscriptionPackage {
+            get {
+                return ResourceManager.GetString("List_Title_SubscriptionPackage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Receivers List.
+        /// </summary>
+        public static string List_Title_UserReceiver {
+            get {
+                return ResourceManager.GetString("List_Title_UserReceiver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Senders List.
+        /// </summary>
+        public static string List_Title_UserSender {
+            get {
+                return ResourceManager.GetString("List_Title_UserSender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subscriptions List.
+        /// </summary>
+        public static string List_Title_UserSubscription {
+            get {
+                return ResourceManager.GetString("List_Title_UserSubscription", resourceCulture);
             }
         }
         
@@ -3940,6 +4372,114 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Manage shipping carriers and their information.
+        /// </summary>
+        public static string Page_Subtitle_Carrier {
+            get {
+                return ResourceManager.GetString("Page_Subtitle_Carrier", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage cities and their associated countries.
+        /// </summary>
+        public static string Page_Subtitle_City {
+            get {
+                return ResourceManager.GetString("Page_Subtitle_City", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage countries and their details.
+        /// </summary>
+        public static string Page_Subtitle_Country {
+            get {
+                return ResourceManager.GetString("Page_Subtitle_Country", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage payment methods and commission rates.
+        /// </summary>
+        public static string Page_Subtitle_PaymentMethod {
+            get {
+                return ResourceManager.GetString("Page_Subtitle_PaymentMethod", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Configure system-wide rates and parameters.
+        /// </summary>
+        public static string Page_Subtitle_Setting {
+            get {
+                return ResourceManager.GetString("Page_Subtitle_Setting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage shipping types and their factors.
+        /// </summary>
+        public static string Page_Subtitle_ShippingType {
+            get {
+                return ResourceManager.GetString("Page_Subtitle_ShippingType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage all shipments and their details.
+        /// </summary>
+        public static string Page_Subtitle_Shippment {
+            get {
+                return ResourceManager.GetString("Page_Subtitle_Shippment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Track shipment status updates.
+        /// </summary>
+        public static string Page_Subtitle_ShippmentStatus {
+            get {
+                return ResourceManager.GetString("Page_Subtitle_ShippmentStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage subscription packages and their limits.
+        /// </summary>
+        public static string Page_Subtitle_SubscriptionPackage {
+            get {
+                return ResourceManager.GetString("Page_Subtitle_SubscriptionPackage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage receiver information and addresses.
+        /// </summary>
+        public static string Page_Subtitle_UserReceiver {
+            get {
+                return ResourceManager.GetString("Page_Subtitle_UserReceiver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage sender information and addresses.
+        /// </summary>
+        public static string Page_Subtitle_UserSender {
+            get {
+                return ResourceManager.GetString("Page_Subtitle_UserSender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage user subscriptions to packages.
+        /// </summary>
+        public static string Page_Subtitle_UserSubscription {
+            get {
+                return ResourceManager.GetString("Page_Subtitle_UserSubscription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Suppliers.
         /// </summary>
         public static string Page_Suppliers {
@@ -3967,11 +4507,137 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Carriers Management.
+        /// </summary>
+        public static string Page_Title_Carrier {
+            get {
+                return ResourceManager.GetString("Page_Title_Carrier", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cities Management.
+        /// </summary>
+        public static string Page_Title_City {
+            get {
+                return ResourceManager.GetString("Page_Title_City", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Countries Management.
+        /// </summary>
+        public static string Page_Title_Country {
+            get {
+                return ResourceManager.GetString("Page_Title_Country", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Payment Methods Management.
+        /// </summary>
+        public static string Page_Title_PaymentMethod {
+            get {
+                return ResourceManager.GetString("Page_Title_PaymentMethod", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to System Settings.
+        /// </summary>
+        public static string Page_Title_Setting {
+            get {
+                return ResourceManager.GetString("Page_Title_Setting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipping Types Management.
+        /// </summary>
+        public static string Page_Title_ShippingType {
+            get {
+                return ResourceManager.GetString("Page_Title_ShippingType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipments Management.
+        /// </summary>
+        public static string Page_Title_Shippment {
+            get {
+                return ResourceManager.GetString("Page_Title_Shippment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipment Status Management.
+        /// </summary>
+        public static string Page_Title_ShippmentStatus {
+            get {
+                return ResourceManager.GetString("Page_Title_ShippmentStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subscription Packages Management.
+        /// </summary>
+        public static string Page_Title_SubscriptionPackage {
+            get {
+                return ResourceManager.GetString("Page_Title_SubscriptionPackage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Receivers Management.
+        /// </summary>
+        public static string Page_Title_UserReceiver {
+            get {
+                return ResourceManager.GetString("Page_Title_UserReceiver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Senders Management.
+        /// </summary>
+        public static string Page_Title_UserSender {
+            get {
+                return ResourceManager.GetString("Page_Title_UserSender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Subscriptions Management.
+        /// </summary>
+        public static string Page_Title_UserSubscription {
+            get {
+                return ResourceManager.GetString("Page_Title_UserSubscription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Users.
         /// </summary>
         public static string Page_Users {
             get {
                 return ResourceManager.GetString("Page_Users", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter receiver address.
+        /// </summary>
+        public static string Plh_Address_Receiver {
+            get {
+                return ResourceManager.GetString("Plh_Address_Receiver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter sender address.
+        /// </summary>
+        public static string Plh_Address_Sender {
+            get {
+                return ResourceManager.GetString("Plh_Address_Sender", resourceCulture);
             }
         }
         
@@ -3985,6 +4651,123 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Select carrier.
+        /// </summary>
+        public static string Plh_CarrierId {
+            get {
+                return ResourceManager.GetString("Plh_CarrierId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter carrier name.
+        /// </summary>
+        public static string Plh_CarrierName {
+            get {
+                return ResourceManager.GetString("Plh_CarrierName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter city name in Arabic.
+        /// </summary>
+        public static string Plh_CityAname {
+            get {
+                return ResourceManager.GetString("Plh_CityAname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter city name in English.
+        /// </summary>
+        public static string Plh_CityEname {
+            get {
+                return ResourceManager.GetString("Plh_CityEname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select receiver city.
+        /// </summary>
+        public static string Plh_CityId_Receiver {
+            get {
+                return ResourceManager.GetString("Plh_CityId_Receiver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select sender city.
+        /// </summary>
+        public static string Plh_CityId_Sender {
+            get {
+                return ResourceManager.GetString("Plh_CityId_Sender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter commission percentage.
+        /// </summary>
+        public static string Plh_Commission {
+            get {
+                return ResourceManager.GetString("Plh_Commission", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter country name in Arabic.
+        /// </summary>
+        public static string Plh_CountryAname {
+            get {
+                return ResourceManager.GetString("Plh_CountryAname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter country name in English.
+        /// </summary>
+        public static string Plh_CountryEname {
+            get {
+                return ResourceManager.GetString("Plh_CountryEname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select country.
+        /// </summary>
+        public static string Plh_CountryId {
+            get {
+                return ResourceManager.GetString("Plh_CountryId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter creator ID.
+        /// </summary>
+        public static string Plh_CreatedBy {
+            get {
+                return ResourceManager.GetString("Plh_CreatedBy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select creation date.
+        /// </summary>
+        public static string Plh_CreatedDate {
+            get {
+                return ResourceManager.GetString("Plh_CreatedDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter state (0/1).
+        /// </summary>
+        public static string Plh_CurrentState {
+            get {
+                return ResourceManager.GetString("Plh_CurrentState", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to demo image.
         /// </summary>
         public static string Plh_DemoImage {
@@ -3994,11 +4777,362 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enter receiver email.
+        /// </summary>
+        public static string Plh_Email_Receiver {
+            get {
+                return ResourceManager.GetString("Plh_Email_Receiver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter sender email.
+        /// </summary>
+        public static string Plh_Email_Sender {
+            get {
+                return ResourceManager.GetString("Plh_Email_Sender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter height.
+        /// </summary>
+        public static string Plh_Height {
+            get {
+                return ResourceManager.GetString("Plh_Height", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter rate per kilometer.
+        /// </summary>
+        public static string Plh_KiloMeterRate {
+            get {
+                return ResourceManager.GetString("Plh_KiloMeterRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter rate per kilogram.
+        /// </summary>
+        public static string Plh_KilooGramRate {
+            get {
+                return ResourceManager.GetString("Plh_KilooGramRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter length.
+        /// </summary>
+        public static string Plh_Length {
+            get {
+                return ResourceManager.GetString("Plh_Length", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter payment method name in Arabic.
+        /// </summary>
+        public static string Plh_MethdAname {
+            get {
+                return ResourceManager.GetString("Plh_MethdAname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter payment method name in English.
+        /// </summary>
+        public static string Plh_MethodEname {
+            get {
+                return ResourceManager.GetString("Plh_MethodEname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter notes.
+        /// </summary>
+        public static string Plh_Notes {
+            get {
+                return ResourceManager.GetString("Plh_Notes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter number of kilometers.
+        /// </summary>
+        public static string Plh_NumberOfKiloMeters {
+            get {
+                return ResourceManager.GetString("Plh_NumberOfKiloMeters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select package.
+        /// </summary>
+        public static string Plh_PackageId {
+            get {
+                return ResourceManager.GetString("Plh_PackageId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter package name.
+        /// </summary>
+        public static string Plh_PackageName {
+            get {
+                return ResourceManager.GetString("Plh_PackageName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter package value.
+        /// </summary>
+        public static string Plh_PackageValue {
+            get {
+                return ResourceManager.GetString("Plh_PackageValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select payment method.
+        /// </summary>
+        public static string Plh_PaymentMethodId {
+            get {
+                return ResourceManager.GetString("Plh_PaymentMethodId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter receiver phone.
+        /// </summary>
+        public static string Plh_Phone_Receiver {
+            get {
+                return ResourceManager.GetString("Plh_Phone_Receiver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter sender phone.
+        /// </summary>
+        public static string Plh_Phone_Sender {
+            get {
+                return ResourceManager.GetString("Plh_Phone_Sender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select receiver.
+        /// </summary>
+        public static string Plh_ReceiverId {
+            get {
+                return ResourceManager.GetString("Plh_ReceiverId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter receiver name.
+        /// </summary>
+        public static string Plh_ReceiverName {
+            get {
+                return ResourceManager.GetString("Plh_ReceiverName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter reference ID.
+        /// </summary>
+        public static string Plh_ReferenceId {
+            get {
+                return ResourceManager.GetString("Plh_ReferenceId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Search projects.
         /// </summary>
         public static string Plh_SearchProjects {
             get {
                 return ResourceManager.GetString("Plh_SearchProjects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select sender.
+        /// </summary>
+        public static string Plh_SenderId {
+            get {
+                return ResourceManager.GetString("Plh_SenderId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter sender name.
+        /// </summary>
+        public static string Plh_SenderName {
+            get {
+                return ResourceManager.GetString("Plh_SenderName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter number of shipments.
+        /// </summary>
+        public static string Plh_ShippimentCount {
+            get {
+                return ResourceManager.GetString("Plh_ShippimentCount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select shipping date.
+        /// </summary>
+        public static string Plh_ShippingDate {
+            get {
+                return ResourceManager.GetString("Plh_ShippingDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter shipping factor.
+        /// </summary>
+        public static string Plh_ShippingFactor {
+            get {
+                return ResourceManager.GetString("Plh_ShippingFactor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter shipping rate.
+        /// </summary>
+        public static string Plh_ShippingRate {
+            get {
+                return ResourceManager.GetString("Plh_ShippingRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter shipping type name in Arabic.
+        /// </summary>
+        public static string Plh_ShippingTypeAname {
+            get {
+                return ResourceManager.GetString("Plh_ShippingTypeAname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter shipping type name in English.
+        /// </summary>
+        public static string Plh_ShippingTypeEname {
+            get {
+                return ResourceManager.GetString("Plh_ShippingTypeEname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select shipping type.
+        /// </summary>
+        public static string Plh_ShippingTypeId {
+            get {
+                return ResourceManager.GetString("Plh_ShippingTypeId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select shipment.
+        /// </summary>
+        public static string Plh_ShippmentId {
+            get {
+                return ResourceManager.GetString("Plh_ShippmentId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select subscription date.
+        /// </summary>
+        public static string Plh_SubscriptionDate {
+            get {
+                return ResourceManager.GetString("Plh_SubscriptionDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter total weight.
+        /// </summary>
+        public static string Plh_TotalWeight {
+            get {
+                return ResourceManager.GetString("Plh_TotalWeight", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter tracking number.
+        /// </summary>
+        public static string Plh_TrackingNumber {
+            get {
+                return ResourceManager.GetString("Plh_TrackingNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter updater ID.
+        /// </summary>
+        public static string Plh_UpdatedBy {
+            get {
+                return ResourceManager.GetString("Plh_UpdatedBy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select update date.
+        /// </summary>
+        public static string Plh_UpdatedDate {
+            get {
+                return ResourceManager.GetString("Plh_UpdatedDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select user.
+        /// </summary>
+        public static string Plh_UserId {
+            get {
+                return ResourceManager.GetString("Plh_UserId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select user.
+        /// </summary>
+        public static string Plh_UserId_Subscription {
+            get {
+                return ResourceManager.GetString("Plh_UserId_Subscription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select user subscription.
+        /// </summary>
+        public static string Plh_UserSubscriptionId {
+            get {
+                return ResourceManager.GetString("Plh_UserSubscriptionId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter weight.
+        /// </summary>
+        public static string Plh_Weight {
+            get {
+                return ResourceManager.GetString("Plh_Weight", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter width.
+        /// </summary>
+        public static string Plh_Width {
+            get {
+                return ResourceManager.GetString("Plh_Width", resourceCulture);
             }
         }
         
@@ -5308,6 +6442,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Invalid Number Format..
+        /// </summary>
+        public static string Val_InvalidNumber {
+            get {
+                return ResourceManager.GetString("Val_InvalidNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please Enter This Field In Arabic.
         /// </summary>
         public static string Val_Language_Ar {
@@ -5754,6 +6897,15 @@ namespace AppResources.Localization.Resources {
         public static string Word_Success {
             get {
                 return ResourceManager.GetString("Word_Success", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tables.
+        /// </summary>
+        public static string Word_Tables {
+            get {
+                return ResourceManager.GetString("Word_Tables", resourceCulture);
             }
         }
         

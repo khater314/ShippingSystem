@@ -1,0 +1,33 @@
+﻿@model TbCountryDTO
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">@ResShared.Form_Title_Country</h4>
+            <p class="card-description">@ResShared.Form_Description_Country</p>
+            <form class="forms-sample" asp-controller="Country" asp-action="Edit" method="post">
+
+                <div class="form-group">
+                    <label for="CountryAname">@ResShared.Lbl_CountryAname</label>
+                    <input type="text" class="form-control" id="CountryAname"
+                           placeholder="@ResShared.Plh_CountryAname"
+                           name="CountryAname" asp-for="CountryAname"
+                           asp-route-id="@Model.CountryAname">
+                           <span asp-validation-for="CountryAname" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="CountryEname">@ResShared.Lbl_CountryEname</label>
+                    <input type="text" class="form-control" id="CountryEname"
+                           placeholder="@ResShared.Plh_CountryEname"
+                           name="CountryEname" asp-for="CountryEname"
+                           asp-route-id="@Model.CountryEname">
+                           <span asp-validation-for="CountryEname" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-gradient-primary me-2">@ResShared.Btn_Submit</button>
+                <a asp-action="Index" class="btn btn-light">@ResShared.Btn_Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>

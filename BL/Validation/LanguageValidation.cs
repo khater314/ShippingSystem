@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using AppResources.Localization.Resources;
+using System.ComponentModel.DataAnnotations;
 using System.Text.RegularExpressions;
 
 namespace BL.Validation
@@ -23,13 +24,13 @@ namespace BL.Validation
                 _ => false
             };
 
-            if (!isValid)
+            return isValid ? ValidationResult.Success! : language.ToLower() switch
             {
-                return new ValidationResult(
-                    ErrorMessage ?? $"{validationContext.DisplayName} contains invalid characters for {language} language.");
-            }
+                "ar" => new ValidationResult(ResShared.Val_Language_Ar),
+                "en" => new ValidationResult(ResShared.Val_Language_En),
+                _ => new ValidationResult(ResShared.Val_Language_En)
+            };
 
-            return ValidationResult.Success;
         }
     }
 }

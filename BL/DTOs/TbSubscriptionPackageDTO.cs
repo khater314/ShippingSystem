@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BL.Validation;
+using System;
 using System.Collections.Generic;
 
 namespace BL.DTOs;

@@ -174,6 +174,222 @@
   <data name="Page_Terms" xml:space="preserve">
     <value>الشروط والأحكام</value>
   </data>
+  <data name="Page_Title_Carrier" xml:space="preserve">
+    <value>إدارة شركات النقل</value>
+  </data>
+  <data name="Page_Subtitle_Carrier" xml:space="preserve">
+    <value>إدارة شركات النقل وبياناتها</value>
+  </data>
+  <data name="Form_Title_Carrier" xml:space="preserve">
+    <value>بيانات شركة النقل</value>
+  </data>
+  <data name="Form_Description_Carrier" xml:space="preserve">
+    <value>أدخل بيانات شركة النقل أدناه</value>
+  </data>
+  <data name="List_Title_Carrier" xml:space="preserve">
+    <value>قائمة شركات النقل</value>
+  </data>
+  <data name="List_Description_Carrier" xml:space="preserve">
+    <value>عرض وإدارة جميع شركات النقل</value>
+  </data>
+  <data name="Page_Title_City" xml:space="preserve">
+    <value>إدارة المدن</value>
+  </data>
+  <data name="Page_Subtitle_City" xml:space="preserve">
+    <value>إدارة المدن والدول التابعة لها</value>
+  </data>
+  <data name="Form_Title_City" xml:space="preserve">
+    <value>بيانات المدينة</value>
+  </data>
+  <data name="Form_Description_City" xml:space="preserve">
+    <value>أدخل بيانات المدينة أدناه</value>
+  </data>
+  <data name="List_Title_City" xml:space="preserve">
+    <value>قائمة المدن</value>
+  </data>
+  <data name="List_Description_City" xml:space="preserve">
+    <value>عرض وإدارة جميع المدن</value>
+  </data>
+  <data name="Page_Title_Country" xml:space="preserve">
+    <value>إدارة الدول</value>
+  </data>
+  <data name="Page_Subtitle_Country" xml:space="preserve">
+    <value>إدارة الدول وبياناتها</value>
+  </data>
+  <data name="Form_Title_Country" xml:space="preserve">
+    <value>بيانات الدولة</value>
+  </data>
+  <data name="Form_Description_Country" xml:space="preserve">
+    <value>أدخل بيانات الدولة أدناه</value>
+  </data>
+  <data name="List_Title_Country" xml:space="preserve">
+    <value>قائمة الدول</value>
+  </data>
+  <data name="List_Description_Country" xml:space="preserve">
+    <value>عرض وإدارة جميع الدول</value>
+  </data>
+  <data name="Page_Title_PaymentMethod" xml:space="preserve">
+    <value>إدارة طرق الدفع</value>
+  </data>
+  <data name="Page_Subtitle_PaymentMethod" xml:space="preserve">
+    <value>إدارة طرق الدفع ونسب العمولة</value>
+  </data>
+  <data name="Form_Title_PaymentMethod" xml:space="preserve">
+    <value>بيانات طريقة الدفع</value>
+  </data>
+  <data name="Form_Description_PaymentMethod" xml:space="preserve">
+    <value>أدخل بيانات طريقة الدفع أدناه</value>
+  </data>
+  <data name="List_Title_PaymentMethod" xml:space="preserve">
+    <value>قائمة طرق الدفع</value>
+  </data>
+  <data name="List_Description_PaymentMethod" xml:space="preserve">
+    <value>عرض وإدارة جميع طرق الدفع</value>
+  </data>
+  <data name="Page_Title_Setting" xml:space="preserve">
+    <value>إعدادات النظام</value>
+  </data>
+  <data name="Page_Subtitle_Setting" xml:space="preserve">
+    <value>تكوين معدلات وبارامترات النظام</value>
+  </data>
+  <data name="Form_Title_Setting" xml:space="preserve">
+    <value>بيانات الإعدادات</value>
+  </data>
+  <data name="Form_Description_Setting" xml:space="preserve">
+    <value>تحديث إعدادات النظام أدناه</value>
+  </data>
+  <data name="List_Title_Setting" xml:space="preserve">
+    <value>قائمة الإعدادات</value>
+  </data>
+  <data name="List_Description_Setting" xml:space="preserve">
+    <value>عرض وإدارة إعدادات النظام</value>
+  </data>
+  <data name="Page_Title_ShippingType" xml:space="preserve">
+    <value>إدارة أنواع الشحن</value>
+  </data>
+  <data name="Page_Subtitle_ShippingType" xml:space="preserve">
+    <value>إدارة أنواع الشحن وعواملها</value>
+  </data>
+  <data name="Form_Title_ShippingType" xml:space="preserve">
+    <value>بيانات نوع الشحن</value>
+  </data>
+  <data name="Form_Description_ShippingType" xml:space="preserve">
+    <value>أدخل بيانات نوع الشحن أدناه</value>
+  </data>
+  <data name="List_Title_ShippingType" xml:space="preserve">
+    <value>قائمة أنواع الشحن</value>
+  </data>
+  <data name="List_Description_ShippingType" xml:space="preserve">
+    <value>عرض وإدارة جميع أنواع الشحن</value>
+  </data>
+  <data name="Page_Title_Shippment" xml:space="preserve">
+    <value>إدارة الشحنات</value>
+  </data>
+  <data name="Page_Subtitle_Shippment" xml:space="preserve">
+    <value>إدارة جميع الشحنات وبياناتها</value>
+  </data>
+  <data name="Form_Title_Shippment" xml:space="preserve">
+    <value>بيانات الشحنة</value>
+  </data>
+  <data name="Form_Description_Shippment" xml:space="preserve">
+    <value>أدخل بيانات الشحنة أدناه</value>
+  </data>
+  <data name="List_Title_Shippment" xml:space="preserve">
+    <value>قائمة الشحنات</value>
+  </data>
+  <data name="List_Description_Shippment" xml:space="preserve">
+    <value>عرض وإدارة جميع الشحنات</value>
+  </data>
+  <data name="Page_Title_ShippmentStatus" xml:space="preserve">
+    <value>إدارة حالات الشحنات</value>
+  </data>
+  <data name="Page_Subtitle_ShippmentStatus" xml:space="preserve">
+    <value>تتبع تحديثات حالة الشحنات</value>
+  </data>
+  <data name="Form_Title_ShippmentStatus" xml:space="preserve">
+    <value>بيانات حالة الشحنة</value>
+  </data>
+  <data name="Form_Description_ShippmentStatus" xml:space="preserve">
+    <value>تحديث معلومات حالة الشحنة</value>
+  </data>
+  <data name="List_Title_ShippmentStatus" xml:space="preserve">
+    <value>قائمة حالات الشحنات</value>
+  </data>
+  <data name="List_Description_ShippmentStatus" xml:space="preserve">
+    <value>عرض جميع تحديثات حالة الشحنات</value>
+  </data>
+  <data name="Page_Title_SubscriptionPackage" xml:space="preserve">
+    <value>إدارة باقات الاشتراك</value>
+  </data>
+  <data name="Page_Subtitle_SubscriptionPackage" xml:space="preserve">
+    <value>إدارة باقات الاشتراك وحدودها</value>
+  </data>
+  <data name="Form_Title_SubscriptionPackage" xml:space="preserve">
+    <value>بيانات الباقة</value>
+  </data>
+  <data name="Form_Description_SubscriptionPackage" xml:space="preserve">
+    <value>أدخل بيانات الباقة أدناه</value>
+  </data>
+  <data name="List_Title_SubscriptionPackage" xml:space="preserve">
+    <value>قائمة الباقات</value>
+  </data>
+  <data name="List_Description_SubscriptionPackage" xml:space="preserve">
+    <value>عرض وإدارة جميع باقات الاشتراك</value>
+  </data>
+  <data name="Page_Title_UserReceiver" xml:space="preserve">
+    <value>إدارة المستلمين</value>
+  </data>
+  <data name="Page_Subtitle_UserReceiver" xml:space="preserve">
+    <value>إدارة بيانات المستلمين وعناوينهم</value>
+  </data>
+  <data name="Form_Title_UserReceiver" xml:space="preserve">
+    <value>بيانات المستلم</value>
+  </data>
+  <data name="Form_Description_UserReceiver" xml:space="preserve">
+    <value>أدخل بيانات المستلم أدناه</value>
+  </data>
+  <data name="List_Title_UserReceiver" xml:space="preserve">
+    <value>قائمة المستلمين</value>
+  </data>
+  <data name="List_Description_UserReceiver" xml:space="preserve">
+    <value>عرض وإدارة جميع المستلمين</value>
+  </data>
+  <data name="Page_Title_UserSender" xml:space="preserve">
+    <value>إدارة المرسلين</value>
+  </data>
+  <data name="Page_Subtitle_UserSender" xml:space="preserve">
+    <value>إدارة بيانات المرسلين وعناوينهم</value>
+  </data>
+  <data name="Form_Title_UserSender" xml:space="preserve">
+    <value>بيانات المرسل</value>
+  </data>
+  <data name="Form_Description_UserSender" xml:space="preserve">
+    <value>أدخل بيانات المرسل أدناه</value>
+  </data>
+  <data name="List_Title_UserSender" xml:space="preserve">
+    <value>قائمة المرسلين</value>
+  </data>
+  <data name="List_Description_UserSender" xml:space="preserve">
+    <value>عرض وإدارة جميع المرسلين</value>
+  </data>
+  <data name="Page_Title_UserSubscription" xml:space="preserve">
+    <value>إدارة اشتراكات المستخدمين</value>
+  </data>
+  <data name="Page_Subtitle_UserSubscription" xml:space="preserve">
+    <value>إدارة اشتراكات المستخدمين في الباقات</value>
+  </data>
+  <data name="Form_Title_UserSubscription" xml:space="preserve">
+    <value>بيانات الاشتراك</value>
+  </data>
+  <data name="Form_Description_UserSubscription" xml:space="preserve">
+    <value>أدخل بيانات الاشتراك أدناه</value>
+  </data>
+  <data name="List_Title_UserSubscription" xml:space="preserve">
+    <value>قائمة الاشتراكات</value>
+  </data>
+  <data name="List_Description_UserSubscription" xml:space="preserve">
+    <value>عرض وإدارة جميع اشتراكات المستخدمين</value>
+  </data>
   <data name="Btn_Save" xml:space="preserve">
     <value>حفظ</value>
   </data>
@@ -737,6 +953,168 @@
   </data>
   <data name="Plh_AddTodo" xml:space="preserve">
     <value>ماذا تحتاج أن تفعل اليوم؟</value>
+  </data>
+  <data name="Plh_CreatedBy" xml:space="preserve">
+    <value>أدخل معرف المنشئ</value>
+  </data>
+  <data name="Plh_UpdatedBy" xml:space="preserve">
+    <value>أدخل معرف المحدث</value>
+  </data>
+  <data name="Plh_CreatedDate" xml:space="preserve">
+    <value>اختر تاريخ الإنشاء</value>
+  </data>
+  <data name="Plh_UpdatedDate" xml:space="preserve">
+    <value>اختر تاريخ التحديث</value>
+  </data>
+  <data name="Plh_CurrentState" xml:space="preserve">
+    <value>أدخل الحالة (0/1)</value>
+  </data>
+  <data name="Plh_CarrierName" xml:space="preserve">
+    <value>أدخل اسم شركة النقل</value>
+  </data>
+  <data name="Plh_CityAname" xml:space="preserve">
+    <value>أدخل اسم المدينة بالعربية</value>
+  </data>
+  <data name="Plh_CityEname" xml:space="preserve">
+    <value>أدخل اسم المدينة بالإنجليزية</value>
+  </data>
+  <data name="Plh_CountryId" xml:space="preserve">
+    <value>اختر الدولة</value>
+  </data>
+  <data name="Plh_CountryAname" xml:space="preserve">
+    <value>أدخل اسم الدولة بالعربية</value>
+  </data>
+  <data name="Plh_CountryEname" xml:space="preserve">
+    <value>أدخل اسم الدولة بالإنجليزية</value>
+  </data>
+  <data name="Plh_MethdAname" xml:space="preserve">
+    <value>أدخل اسم طريقة الدفع بالعربية</value>
+  </data>
+  <data name="Plh_MethodEname" xml:space="preserve">
+    <value>أدخل اسم طريقة الدفع بالإنجليزية</value>
+  </data>
+  <data name="Plh_Commission" xml:space="preserve">
+    <value>أدخل نسبة العمولة</value>
+  </data>
+  <data name="Plh_KiloMeterRate" xml:space="preserve">
+    <value>أدخل سعر الكيلومتر</value>
+  </data>
+  <data name="Plh_KilooGramRate" xml:space="preserve">
+    <value>أدخل سعر الكيلوجرام</value>
+  </data>
+  <data name="Plh_ShippingTypeAname" xml:space="preserve">
+    <value>أدخل اسم نوع الشحن بالعربية</value>
+  </data>
+  <data name="Plh_ShippingTypeEname" xml:space="preserve">
+    <value>أدخل اسم نوع الشحن بالإنجليزية</value>
+  </data>
+  <data name="Plh_ShippingFactor" xml:space="preserve">
+    <value>أدخل عامل الشحن</value>
+  </data>
+  <data name="Plh_ShippingDate" xml:space="preserve">
+    <value>اختر تاريخ الشحن</value>
+  </data>
+  <data name="Plh_SenderId" xml:space="preserve">
+    <value>اختر المرسل</value>
+  </data>
+  <data name="Plh_ReceiverId" xml:space="preserve">
+    <value>اختر المستلم</value>
+  </data>
+  <data name="Plh_ShippingTypeId" xml:space="preserve">
+    <value>اختر نوع الشحن</value>
+  </data>
+  <data name="Plh_Width" xml:space="preserve">
+    <value>أدخل العرض</value>
+  </data>
+  <data name="Plh_Height" xml:space="preserve">
+    <value>أدخل الارتفاع</value>
+  </data>
+  <data name="Plh_Weight" xml:space="preserve">
+    <value>أدخل الوزن</value>
+  </data>
+  <data name="Plh_Length" xml:space="preserve">
+    <value>أدخل الطول</value>
+  </data>
+  <data name="Plh_PackageValue" xml:space="preserve">
+    <value>أدخل قيمة الطرد</value>
+  </data>
+  <data name="Plh_ShippingRate" xml:space="preserve">
+    <value>أدخل سعر الشحن</value>
+  </data>
+  <data name="Plh_PaymentMethodId" xml:space="preserve">
+    <value>اختر طريقة الدفع</value>
+  </data>
+  <data name="Plh_UserSubscriptionId" xml:space="preserve">
+    <value>اختر اشتراك المستخدم</value>
+  </data>
+  <data name="Plh_TrackingNumber" xml:space="preserve">
+    <value>أدخل رقم التتبع</value>
+  </data>
+  <data name="Plh_ReferenceId" xml:space="preserve">
+    <value>أدخل المعرف المرجعي</value>
+  </data>
+  <data name="Plh_ShippmentId" xml:space="preserve">
+    <value>اختر الشحنة</value>
+  </data>
+  <data name="Plh_Notes" xml:space="preserve">
+    <value>أدخل ملاحظات</value>
+  </data>
+  <data name="Plh_CarrierId" xml:space="preserve">
+    <value>اختر شركة النقل</value>
+  </data>
+  <data name="Plh_PackageName" xml:space="preserve">
+    <value>أدخل اسم الباقة</value>
+  </data>
+  <data name="Plh_ShippimentCount" xml:space="preserve">
+    <value>أدخل عدد الشحنات</value>
+  </data>
+  <data name="Plh_NumberOfKiloMeters" xml:space="preserve">
+    <value>أدخل عدد الكيلومترات</value>
+  </data>
+  <data name="Plh_TotalWeight" xml:space="preserve">
+    <value>أدخل الوزن الإجمالي</value>
+  </data>
+  <data name="Plh_UserId" xml:space="preserve">
+    <value>اختر المستخدم</value>
+  </data>
+  <data name="Plh_ReceiverName" xml:space="preserve">
+    <value>أدخل اسم المستلم</value>
+  </data>
+  <data name="Plh_Email_Receiver" xml:space="preserve">
+    <value>أدخل البريد الإلكتروني للمستلم</value>
+  </data>
+  <data name="Plh_Phone_Receiver" xml:space="preserve">
+    <value>أدخل هاتف المستلم</value>
+  </data>
+  <data name="Plh_CityId_Receiver" xml:space="preserve">
+    <value>اختر مدينة المستلم</value>
+  </data>
+  <data name="Plh_Address_Receiver" xml:space="preserve">
+    <value>أدخل عنوان المستلم</value>
+  </data>
+  <data name="Plh_SenderName" xml:space="preserve">
+    <value>أدخل اسم المرسل</value>
+  </data>
+  <data name="Plh_Email_Sender" xml:space="preserve">
+    <value>أدخل البريد الإلكتروني للمرسل</value>
+  </data>
+  <data name="Plh_Phone_Sender" xml:space="preserve">
+    <value>أدخل هاتف المرسل</value>
+  </data>
+  <data name="Plh_CityId_Sender" xml:space="preserve">
+    <value>اختر مدينة المرسل</value>
+  </data>
+  <data name="Plh_Address_Sender" xml:space="preserve">
+    <value>أدخل عنوان المرسل</value>
+  </data>
+  <data name="Plh_UserId_Subscription" xml:space="preserve">
+    <value>اختر المستخدم</value>
+  </data>
+  <data name="Plh_PackageId" xml:space="preserve">
+    <value>اختر الباقة</value>
+  </data>
+  <data name="Plh_SubscriptionDate" xml:space="preserve">
+    <value>اختر تاريخ الاشتراك</value>
   </data>
   <data name="Txt_FreeSupport" xml:space="preserve">
     <value>دعم مجاني على مدار الساعة طوال أيام الأسبوع، تحديثات، والمزيد مع هذه القالب!</value>
@@ -2039,5 +2417,11 @@
   </data>
   <data name="Word_Hidden" xml:space="preserve">
     <value>مخفي</value>
+  </data>
+  <data name="Word_Tables" xml:space="preserve">
+    <value>جداول</value>
+  </data>
+  <data name="Val_InvalidNumber" xml:space="preserve">
+    <value>من فضلك أدخل صيغة رقمية صحيحة</value>
   </data>
 </root>

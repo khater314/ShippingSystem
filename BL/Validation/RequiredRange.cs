@@ -6,10 +6,10 @@ using System.Text;
 
 namespace BL.Validation
 {
-    public class RequiredRange(int max, int min) : ValidationAttribute
+    public class RequiredRange(double max, double min) : ValidationAttribute
     {
-        private readonly int _min = min;
-        private readonly int _max = max;
+        private readonly double _min = min;
+        private readonly double _max = max;
         override protected ValidationResult? IsValid(object? value, ValidationContext validationContext)
         {
             if (value == null || string.IsNullOrWhiteSpace(value.ToString()))

@@ -5,7 +5,9 @@ using AppResources.Localization.Resources;
 using BL.Validation;
 
 namespace BL.DTOs;
-
+/// <summary>
+/// Using Built In DataAnnotations for validation and localization, and custom validation attribute for language specific validation
+/// </summary>
 public partial class TbShippingTypeDTO : BaseEntityDTO
 {
     [Required(ErrorMessageResourceName = "Val_Required", ErrorMessageResourceType = typeof(ResShared), AllowEmptyStrings = false)]

@@ -29,21 +29,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>ResShared.resx</DependentUpon>
     </Compile>
-    <Compile Update="Resources\ResShippingTypes.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>ResShippingTypes.resx</DependentUpon>
-    </Compile>
-    <Compile Update="Resources\ResUserModel.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>ResUserModel.resx</DependentUpon>
-    </Compile>
-    <Compile Update="Resources\ResValidation.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>ResValidation.resx</DependentUpon>
-    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -64,18 +49,6 @@
     <EmbeddedResource Update="Resources\ResShared.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResShared.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Resources\ResShippingTypes.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResShippingTypes.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Resources\ResUserModel.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResUserModel.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Resources\ResValidation.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResValidation.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 

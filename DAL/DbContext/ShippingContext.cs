@@ -77,6 +77,7 @@ public partial class ShippingContext : IdentityDbContext<AppUser>
                 entry.Property(nameof(BaseEntity.CreatedBy)).IsModified = false;
 
                 entity.UpdatedDate = now;
+
             }
         }
 

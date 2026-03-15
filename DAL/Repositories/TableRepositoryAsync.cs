@@ -65,6 +65,7 @@ namespace DAL.Repositories
         {
             await ExecuteWithHandlingAsync<object>(async () =>
             {
+                entity.CurrentState = 1;
                 _dbSet.Update(entity);
                 await _context.SaveChangesAsync(ct);
                 return null!;
@@ -94,54 +95,3 @@ namespace DAL.Repositories
         }
     }
 }
-
-
-//using DAL.DbContext;
-//using Microsoft.EntityFrameworkCore;
-//using Domains;
-//using DAL.Contracts;
-//using System;
-//using System.Collections.Generic;
-//using System.Text;
-//using Microsoft.Extensions.Logging;
-
-//namespace DAL.Repositories
-//{
-
-//    public class TableRepository<T>(ShippingContext _context, ILogger<TableRepository<T>> _logger) : ITableRepository<T> where T : notnull, BaseEntity
-//    {
-//        //public async Task<IReadOnlyList<T>> GetAllAsync()
-//        //{
-//        //    return await _context.Set<T>().ToListAsync();
-//        //}
-
-//        public async Task<T> GetByIdAsync(Guid id)
-//        {
-//            return await _context.Set<T>().FirstAsync(e => e.Id == id);
-//        }
-
-//        public async Task AddAsync(T entity, CancellationToken ct = default)
-//        {
-//            await _context.Set<T>().AddAsync(entity, ct);
-//            await _context.SaveChangesAsync(ct);
-//        }
-//        public async Task UpdateAsync(T entity, CancellationToken ct = default)
-//        {
-//            _context.Set<T>().Update(entity);
-//            await _context.SaveChangesAsync(ct);
-//        }
-
-//        public async Task DeleteAsync(Guid id, CancellationToken ct = default)
-//        {
-//            var entity = await GetByIdAsync(id);
-//            _context.Set<T>().Remove(entity);
-//            await _context.SaveChangesAsync(ct);
-//        }
-//        public async Task ChangeStatusAsync(Guid id, int status = 1)
-//        {
-//            var entity = await GetByIdAsync(id);
-//            entity.CurrentState = status;
-//            await UpdateAsync(entity);
-//        }
-//    }
-//}

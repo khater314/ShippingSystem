@@ -17,7 +17,8 @@ namespace Ui
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            RegisterServicesHelper.RegisterServices(builder);
+            //RegisterServicesHelper.RegisterServices(builder);
+            builder.RegisterServices();
 
             // Add services to the container.
             builder.Services.AddControllersWithViews(option =>
@@ -47,10 +48,12 @@ namespace Ui
             app.MapControllerRoute(
                 name: "Admin",
                 pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}")
+                .RequireAuthorization()
                 .WithStaticAssets();
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}")
+                .RequireAuthorization()
                 .WithStaticAssets();
 
             app.Run();

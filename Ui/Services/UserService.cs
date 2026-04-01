@@ -11,7 +11,7 @@ namespace Ui.Services
         private readonly UserManager<AppUser> _userManager = userManager;
         private readonly SignInManager<AppUser> _signInManager = signInManager;
 
-        public async Task<UserResultDto> RegisterAsync(UserDto registerDto)
+        public async Task<UserResultDto> RegisterAsync(UserRegisterDto registerDto)
         {
             if(registerDto.Password != registerDto.ConfirmedPassword)
             {
@@ -31,7 +31,7 @@ namespace Ui.Services
             };
         }
 
-        public async Task<UserResultDto> LoginAsync(UserDto loginDto)
+        public async Task<UserResultDto> LoginAsync(UserLoginDto loginDto)
         {
             var result = await _signInManager.PasswordSignInAsync(loginDto.Email, loginDto.Password, isPersistent: true, lockoutOnFailure: true);
             if (!result.Succeeded)

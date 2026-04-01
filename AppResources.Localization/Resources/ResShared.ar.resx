@@ -324,6 +324,9 @@
   <data name="Page_Subtitle_SubscriptionPackage" xml:space="preserve">
     <value>إدارة باقات الاشتراك وحدودها</value>
   </data>
+	<data name="Page_Title_Register" xml:space="preserve">
+    <value>جديد هنا؟</value>
+  </data>
   <data name="Form_Title_SubscriptionPackage" xml:space="preserve">
     <value>بيانات الباقة</value>
   </data>
@@ -945,6 +948,9 @@
   <data name="Lbl_HandCrafted" xml:space="preserve">
     <value>مصنوع يدويًا وبحب &lt;i class='mdi mdi-heart text-danger'&gt;&lt;/i&gt;</value>
   </data>
+	<data name="Lbl_AgreeToTerms" xml:space="preserve">
+    <value>أوافق على جميع الشروط والأحكام</value>
+  </data>
   <data name="Plh_SearchProjects" xml:space="preserve">
     <value>البحث في المشاريع</value>
   </data>
@@ -1115,6 +1121,10 @@
   </data>
   <data name="Plh_SubscriptionDate" xml:space="preserve">
     <value>اختر تاريخ الاشتراك</value>
+  </data>
+	<!-- ===== Placeholders - Confirm Password ===== -->
+	<data name="Plh_ConfirmPassword" xml:space="preserve">
+    <value>تأكيد كلمة المرور</value>
   </data>
   <data name="Txt_FreeSupport" xml:space="preserve">
     <value>دعم مجاني على مدار الساعة طوال أيام الأسبوع، تحديثات، والمزيد مع هذه القالب!</value>
@@ -1737,6 +1747,12 @@
   <data name="Val_Language_En" xml:space="preserve">
     <value>الرجاء إدخال هذا الحقل باللغة الإنجليزية فقط</value>
   </data>
+	<data name="Val_Compare" xml:space="preserve">
+    <value>{0} و {1} غير متطابقين.</value>
+  </data>
+	<data name="Val_InvalidCredentials" xml:space="preserve">
+    <value>البريد الإلكتروني أو كلمة المرور غير صحيحة. الرجاء المحاولة مرة أخرى.</value>
+  </data>
   <data name="Msg_MarkSentMessage" xml:space="preserve">
     <value>مارك أرسل لك رسالة</value>
   </data>
@@ -1898,6 +1914,16 @@
   </data>
   <data name="Field_SubscriptionDate" xml:space="preserve">
     <value>تاريخ الاشتراك</value>
+  </data>
+	<!-- ===== Fields - Email & Password ===== -->
+	<data name="Field_Email" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+	<data name="Field_Password" xml:space="preserve">
+    <value>كلمة المرور</value>
+  </data>
+	<data name="Field_ConfirmPassword" xml:space="preserve">
+    <value>تأكيد كلمة المرور</value>
   </data>
   <data name="Msg_Success" xml:space="preserve">
     <value>تمت العملية بنجاح</value>
@@ -2283,6 +2309,13 @@
   <data name="Msg_Confirm_Action" xml:space="preserve">
     <value>هل أنت متأكد من القيام بهذا الإجراء؟</value>
   </data>
+	<data name="Msg_RegisterDescription" xml:space="preserve">
+    <value>التسجيل سهل. يستغرق بضع خطوات فقط</value>
+  </data>
+
+	<data name="Msg_AlreadyHaveAccount" xml:space="preserve">
+    <value>لديك حساب بالفعل؟</value>
+  </data>
   <data name="Word_Success" xml:space="preserve">
     <value>نجاح</value>
   </data>
@@ -2423,5 +2456,33 @@
   </data>
   <data name="Val_InvalidNumber" xml:space="preserve">
     <value>من فضلك أدخل صيغة رقمية صحيحة</value>
+  </data>
+	<!-- =========================================================== -->
+	<!-- ==================  SECTION: LOGIN PAGE  ================== -->
+	<!-- =========================================================== -->
+
+	<data name="Page_Title_Login" xml:space="preserve">
+    <value>مرحباً! دعنا نبدأ</value>
+  </data>
+	<data name="Msg_SignInToContinue" xml:space="preserve">
+    <value>سجل الدخول للمتابعة.</value>
+  </data>
+	<data name="Plh_Username" xml:space="preserve">
+    <value>اسم المستخدم</value>
+  </data>
+	<data name="Plh_Password" xml:space="preserve">
+    <value>كلمة المرور</value>
+  </data>
+	<data name="Lbl_KeepMeSignedIn" xml:space="preserve">
+    <value>ابقني مسجلاً</value>
+  </data>
+	<data name="Btn_ConnectFacebook" xml:space="preserve">
+    <value>اتصل باستخدام فيسبوك</value>
+  </data>
+	<data name="Msg_NoAccount" xml:space="preserve">
+    <value>ليس لديك حساب؟</value>
+  </data>
+	<data name="Btn_CreateAccount" xml:space="preserve">
+    <value>إنشاء حساب</value>
   </data>
 </root>

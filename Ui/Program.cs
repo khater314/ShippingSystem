@@ -7,13 +7,16 @@ using DAL.Repositories;
 using Microsoft.EntityFrameworkCore;
 using AppResources.Localization;
 using Ui.Filters;
+using Microsoft.AspNetCore.Identity;
+using DAL.UserModel;
+using Ui.Services;
 
 
 namespace Ui
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -55,6 +58,18 @@ namespace Ui
                 pattern: "{controller=Home}/{action=Index}/{id?}")
                 .RequireAuthorization()
                 .WithStaticAssets();
+
+            using (var scope = app.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+                var userManager = services.GetRequiredService<UserManager<AppUser>>();
+                var shippingContext = services.GetRequiredService<ShippingContext>();
+
+                await shippingContext.Database.MigrateAsync();
+
+                await ContextConfig.SeedDataAsync(shippingContext, roleManager, userManager);
+            }
 
             app.Run();
         }

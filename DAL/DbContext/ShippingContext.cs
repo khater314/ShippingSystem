@@ -69,7 +69,7 @@ public partial class ShippingContext : IdentityDbContext<AppUser>
             {
                 entity.CreatedDate = now;
                 //Identity
-                //entity.CreatedBy = "System User"; 
+                //entity.CreatedBy = "System User";
             }
             else 
             {

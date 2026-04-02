@@ -6,10 +6,7 @@ using BL.Mapping;
 
 namespace BL.Services
 {
-    public class PaymentMethodService : BaseService<TbPaymentMethod, TbPaymentMethodDTO>, IPaymentMethodService
+    public class PaymentMethodService(ITableRepository<TbPaymentMethod> repo, IMapper mapper, IUserService userService) : BaseService<TbPaymentMethod, TbPaymentMethodDTO>(repo, mapper, userService), IPaymentMethodService
     {
-        public PaymentMethodService(ITableRepository<TbPaymentMethod> repo, IMapper mapper) : base(repo, mapper)
-        {
-        }
     }
 }

@@ -6,10 +6,7 @@ using BL.Mapping;
 
 namespace BL.Services
 {
-    public class UserReceiverService : BaseService<TbUserReceiver, TbUserReceiverDTO>, IUserReceiverService
+    public class UserReceiverService(ITableRepository<TbUserReceiver> repo, IMapper mapper, IUserService userService) : BaseService<TbUserReceiver, TbUserReceiverDTO>(repo, mapper, userService), IUserReceiverService
     {
-        public UserReceiverService(ITableRepository<TbUserReceiver> repo, IMapper mapper) : base(repo, mapper)
-        {
-        }
     }
 }

@@ -41,9 +41,9 @@ namespace Ui.Areas.Admin.Controllers
             bool isNew = dTO.Id == Guid.Empty;
 
             if (isNew)
-                await _baseService.AddAsync(dTO, dTO.Id, ct);
+                await _baseService.AddAsync(dTO, ct);
             else
-                await _baseService.UpdateAsync(dTO, dTO.Id, ct);
+                await _baseService.UpdateAsync(dTO, ct);
 
             TempData["MessageType"] = isNew ? Helpers.MessageType.SaveSuccess.ToString() : Helpers.MessageType.UpdateSuccess.ToString();
             TempData["MessageBody"] = isNew ? ResShared.Msg_Saved : ResShared.Msg_Updated;
@@ -53,7 +53,8 @@ namespace Ui.Areas.Admin.Controllers
 
         public async Task<ActionResult> Delete(Guid id, CancellationToken ct)
         {
-            await _baseService.ChangeStatusAsync(id, Guid.NewGuid(), 0, ct);
+            TDto dto = await _baseService.GetByIdAsync(id, ct);
+            await _baseService.ChangeStatusAsync(dto, 0, ct);
 
             TempData["MessageType"] = Helpers.MessageType.DeleteSuccess.ToString();
             TempData["MessageBody"] = ResShared.Msg_Deleted;

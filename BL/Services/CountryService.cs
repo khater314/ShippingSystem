@@ -6,10 +6,7 @@ using BL.Mapping;
 
 namespace BL.Services
 {
-    public class CountryService : BaseService<TbCountry, TbCountryDTO>, ICountryService
+    public class CountryService(ITableRepository<TbCountry> repo, IMapper mapper, IUserService userService) : BaseService<TbCountry, TbCountryDTO>(repo, mapper, userService), ICountryService
     {
-        public CountryService(ITableRepository<TbCountry> repo, IMapper mapper) : base(repo, mapper)
-        {
-        }
     }
 }

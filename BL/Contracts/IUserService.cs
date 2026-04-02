@@ -12,5 +12,6 @@ namespace BL.Contracts
         Task LogoutAsync();
         Task<UserReadDto?> GetUserByIdAsync(string userId);
         Task<IEnumerable<UserReadDto>> GetAllUsersAsync();
+        Guid GetLoggedInUserId();
     }
 }

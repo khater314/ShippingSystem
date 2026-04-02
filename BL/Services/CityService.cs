@@ -9,10 +9,7 @@ using BL.Mapping;
 
 namespace BL.Services
 {
-    public class CityService : BaseService<TbCity, TbCityDTO>, ICityService
+    public class CityService(ITableRepository<TbCity> repo, IMapper mapper, IUserService userService) : BaseService<TbCity, TbCityDTO>(repo, mapper, userService), ICityService
     {
-        public CityService(ITableRepository<TbCity> repo, IMapper mapper) : base(repo, mapper)
-        {
-        }
     }
 }

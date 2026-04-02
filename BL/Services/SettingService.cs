@@ -6,10 +6,7 @@ using BL.Mapping;
 
 namespace BL.Services
 {
-    public class SettingService : BaseService<TbSetting, TbSettingDTO>, ISettingService
+    public class SettingService(ITableRepository<TbSetting> repo, IMapper mapper, IUserService userService) : BaseService<TbSetting, TbSettingDTO>(repo, mapper, userService), ISettingService
     {
-        public SettingService(ITableRepository<TbSetting> repo, IMapper mapper) : base(repo, mapper)
-        {
-        }
     }
 }

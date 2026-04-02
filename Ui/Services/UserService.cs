@@ -3,13 +3,15 @@ using DAL.UserModel;
 using Microsoft.AspNetCore.Identity;
 using System.Net.Sockets;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace Ui.Services
 {
-    public class UserService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager) : BL.Contracts.IUserService
+    public class UserService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IHttpContextAccessor httpContextAccessor) : BL.Contracts.IUserService
     {
         private readonly UserManager<AppUser> _userManager = userManager;
         private readonly SignInManager<AppUser> _signInManager = signInManager;
+        private IHttpContextAccessor _httpContextAccessor = httpContextAccessor;
 
         public async Task<UserResultDto> RegisterAsync(UserRegisterDto registerDto)
         {
@@ -77,6 +79,19 @@ namespace Ui.Services
                     Email = u.Email!
                 })
                 .ToListAsync();
+        }
+
+        public Guid GetLoggedInUserId()
+        {
+            var userId = _httpContextAccessor.HttpContext?.User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            if(string.IsNullOrEmpty(userId))
+            {
+                // You Should Put Logic Here In This Case.
+                return Guid.Empty;
+            }
+
+            return Guid.Parse(userId);
         }
     }
 }

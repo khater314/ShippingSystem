@@ -14,15 +14,15 @@ namespace Ui.Areas.Admin.Controllers
         readonly IBaseService<T, TDto> _baseService = baseService;
 
         // GET: ShippingTypesController
-        public async Task<ActionResult> Index()
+        public virtual async Task<ActionResult> Index(CancellationToken ct)
         {
-            var data = await _baseService.GetAllAsync();
+            var data = await _baseService.GetAllAsync(ct);
             return View(data);
         }
 
 
 
-        public async Task<ActionResult> Edit(Guid? id, CancellationToken ct)
+        public virtual async Task<ActionResult> Edit(Guid? id, CancellationToken ct)
         {
             if (id == null)
                 return View(Activator.CreateInstance<TDto>());
@@ -34,7 +34,7 @@ namespace Ui.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit(TDto dTO, CancellationToken ct)
+        public virtual async Task<ActionResult> Edit(TDto dTO, CancellationToken ct)
         {
             if (!ModelState.IsValid) return View(dTO);
 
@@ -51,7 +51,7 @@ namespace Ui.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        public async Task<ActionResult> Delete(Guid id, CancellationToken ct)
+        public virtual async Task<ActionResult> Delete(Guid id, CancellationToken ct)
         {
             TDto dto = await _baseService.GetByIdAsync(id, ct);
             await _baseService.ChangeStatusAsync(dto, 0, ct);

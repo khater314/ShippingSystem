@@ -13,6 +13,7 @@ namespace BL.Mapping
         { 
             CreateMap<TbCountry, TbCountryDTO>().ReverseMap();
             CreateMap<TbCity, TbCityDTO>().ReverseMap();
+            CreateMap<VwCity, TbCityDTO>().ReverseMap();
             CreateMap<TbCarrier, TbCarrierDTO>().ReverseMap();
             CreateMap<TbPaymentMethod, TbPaymentMethodDTO>().ReverseMap();
             CreateMap<TbSubscriptionPackage, TbSubscriptionPackageDTO>().ReverseMap();

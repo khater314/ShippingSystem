@@ -50,6 +50,8 @@ public partial class ShippingContext : IdentityDbContext<AppUser>
 
     public virtual DbSet<TbLog> Logs { get; set; }
 
+    public virtual DbSet<VwCity> VwCities { get; set; }
+
 
 
 
@@ -268,6 +270,12 @@ public partial class ShippingContext : IdentityDbContext<AppUser>
             entity.ToTable("Logs");
             entity.HasKey(e => e.Id);
             entity.ToTable("Logs", t => t.ExcludeFromMigrations());
+        });
+
+        modelBuilder.Entity<VwCity>(entity =>
+        {
+            entity.HasNoKey();
+            entity.ToView("VwCities");
         });
 
         OnModelCreatingPartial(modelBuilder);

@@ -1,0 +1,61 @@
+﻿@model TbCityDTO
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">@ResShared.Form_Title_City</h4>
+            <p class="card-description">@ResShared.Form_Description_City</p>
+            <form class="forms-sample" asp-controller="City" asp-action="Edit" method="post">
+
+                <div class="form-group">
+                    <label for="CityAname">@ResShared.Lbl_CityAname</label>
+                    <input type="text" class="form-control" 
+                        placeholder="@ResShared.Plh_CityAname"
+                        asp-for="CityAname">
+                    <span asp-validation-for="CityAname" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="CityEname">@ResShared.Lbl_CityEname</label>
+                    <input type="text" class="form-control" 
+                           placeholder="@ResShared.Plh_CityEname" 
+                           asp-for="CityEname">
+                    <span asp-validation-for="CityEname" class="text-danger"></span>
+                </div>
+
+                @if (CultureInfo.CurrentCulture.Name.ToLower() == "ar")
+                {
+                        
+                    <select class="form-control select2" asp-for="CountryId" 
+                                    asp-items="@(new SelectList(ViewBag.Countries, "CountryId", "CountryAname"))">
+                    </select>
+                }
+                else
+                                {
+                            <select class="form-control select2" asp-for="CountryId"
+                                    asp-items="@(new SelectList(ViewBag.Countries, "CountryId", "CountryEname"))">
+                            </select>
+                }
+
+                <button type="submit" class="btn btn-gradient-primary me-2">@ResShared.Btn_Submit</button>
+                <a asp-action="Index" class="btn btn-light">@ResShared.Btn_Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+@section PluginStyles
+{
+    <link rel="stylesheet" href="~/admin/vendors/select2/select2.min.css">
+    <link rel="stylesheet" href="~/admin/vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
+}
+@section PluginScripts
+{
+    <script src="~/admin/vendors/select2/select2.min.js"></script>
+    <script src="~/admin/vendors/typeahead.js/typeahead.bundle.min.js"></script>
+}
+@section CustomScripts
+{
+    <script src="~/admin/js/file-upload.js"></script>
+    <script src="~/admin/js/typeahead.js"></script>
+    <script src="~/admin/js/select2.js"></script>
+}

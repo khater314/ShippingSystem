@@ -7,8 +7,8 @@ using DAL.Exceptions;
 
 namespace DAL.Repositories
 {
-    public class TableRepository<T>(ShippingContext _context, ILogger<TableRepository<T>> _logger)
-        : ITableRepository<T> where T : notnull, BaseEntity
+    public class ViewRepository<T>(ShippingContext _context, ILogger<ViewRepository<T>> _logger)
+        : IViewRepository<T> where T : notnull, BaseView
     {
         private readonly DbSet<T> _dbSet = _context.Set<T>();
 
@@ -44,7 +44,6 @@ namespace DAL.Repositories
                 return await _dbSet.Where(i => i.CurrentState == 1).ToListAsync(ct);
             }, "Error retrieving all records.");
         }
-
         public async Task<T> GetByIdAsync(Guid id, CancellationToken ct = default)
         {
             return await ExecuteWithHandlingAsync(async () =>
@@ -53,47 +52,5 @@ namespace DAL.Repositories
             }, $"Error retrieving record with ID: {id}");
         }
 
-        public async Task AddAsync(T entity, CancellationToken ct = default)
-        {
-            await ExecuteWithHandlingAsync<object>(async () =>
-            {
-                await _dbSet.AddAsync(entity, ct);
-                await _context.SaveChangesAsync(ct);
-                return null!;
-            }, "Failed to add a new record.");
-        }
-
-        public async Task UpdateAsync(T entity, CancellationToken ct = default)
-        {
-            await ExecuteWithHandlingAsync<object>(async () =>
-            {
-                entity.CurrentState = 1;
-                _dbSet.Update(entity);
-                await _context.SaveChangesAsync(ct);
-                return null!;
-            }, "Failed to update the record.");
-        }
-
-        public async Task DeleteAsync(Guid id, CancellationToken ct = default)
-        {
-            await ExecuteWithHandlingAsync<object>(async () =>
-            {
-                var entity = await GetByIdAsync(id, ct);
-                _dbSet.Remove(entity);
-                await _context.SaveChangesAsync(ct);
-                return null!;
-            }, "Failed to delete the record.");
-        }
-
-        public async Task ChangeStatusAsync(Guid id, int status = 1, CancellationToken ct = default)
-        {
-            await ExecuteWithHandlingAsync<object>(async () =>
-            {
-                var entity = await GetByIdAsync(id, ct);
-                entity.CurrentState = status;
-                await UpdateAsync(entity, ct);
-                return null!;
-            }, "Failed to change record status.");
-        }
     }
 }

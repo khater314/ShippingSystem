@@ -1723,6 +1723,49 @@
   <data name="Tb_ShippingType" xml:space="preserve">
     <value>Shipping Type</value>
   </data>
+	  <!-- =========================================================== -->
+  <!-- =====================  SECTION: TABLES  =================== -->
+  <!-- =========================================================== -->
+  
+  <data name="Tb_Carriers" xml:space="preserve">
+    <value>Carriers</value>
+  </data>
+  <data name="Tb_Cities" xml:space="preserve">
+    <value>Cities</value>
+  </data>
+  <data name="Tb_Countries" xml:space="preserve">
+    <value>Countries</value>
+  </data>
+  <data name="Tb_Logs" xml:space="preserve">
+    <value>Logs</value>
+  </data>
+  <data name="Tb_PaymentMethods" xml:space="preserve">
+    <value>Payment Methods</value>
+  </data>
+  <data name="Tb_Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Tb_Shippments" xml:space="preserve">
+    <value>Shipments</value>
+  </data>
+  <data name="Tb_ShippmentStatuses" xml:space="preserve">
+    <value>Shipment Statuses</value>
+  </data>
+  <data name="Tb_SubscriptionPackages" xml:space="preserve">
+    <value>Subscription Packages</value>
+  </data>
+  <data name="Tb_Receivers" xml:space="preserve">
+    <value>Receivers</value>
+  </data>
+  <data name="Tb_Senders" xml:space="preserve">
+    <value>Senders</value>
+  </data>
+  <data name="Tb_UserSubscriptions" xml:space="preserve">
+    <value>User Subscriptions</value>
+  </data>
+  <data name="Tb_CitiesView" xml:space="preserve">
+    <value>Cities View</value>
+  </data>
   <data name="Val_Required" xml:space="preserve">
     <value>The {0} field is required</value>
   </data>

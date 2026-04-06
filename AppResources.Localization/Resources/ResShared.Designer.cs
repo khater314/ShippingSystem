@@ -6055,6 +6055,87 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Carriers.
+        /// </summary>
+        public static string Tb_Carriers {
+            get {
+                return ResourceManager.GetString("Tb_Carriers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cities.
+        /// </summary>
+        public static string Tb_Cities {
+            get {
+                return ResourceManager.GetString("Tb_Cities", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cities View.
+        /// </summary>
+        public static string Tb_CitiesView {
+            get {
+                return ResourceManager.GetString("Tb_CitiesView", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Countries.
+        /// </summary>
+        public static string Tb_Countries {
+            get {
+                return ResourceManager.GetString("Tb_Countries", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Logs.
+        /// </summary>
+        public static string Tb_Logs {
+            get {
+                return ResourceManager.GetString("Tb_Logs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Payment Methods.
+        /// </summary>
+        public static string Tb_PaymentMethods {
+            get {
+                return ResourceManager.GetString("Tb_PaymentMethods", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Receivers.
+        /// </summary>
+        public static string Tb_Receivers {
+            get {
+                return ResourceManager.GetString("Tb_Receivers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Senders.
+        /// </summary>
+        public static string Tb_Senders {
+            get {
+                return ResourceManager.GetString("Tb_Senders", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        public static string Tb_Settings {
+            get {
+                return ResourceManager.GetString("Tb_Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Shipping Type.
         /// </summary>
         public static string Tb_ShippingType {
@@ -6069,6 +6150,42 @@ namespace AppResources.Localization.Resources {
         public static string Tb_ShippingTypes {
             get {
                 return ResourceManager.GetString("Tb_ShippingTypes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipments.
+        /// </summary>
+        public static string Tb_Shippments {
+            get {
+                return ResourceManager.GetString("Tb_Shippments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipment Statuses.
+        /// </summary>
+        public static string Tb_ShippmentStatuses {
+            get {
+                return ResourceManager.GetString("Tb_ShippmentStatuses", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subscription Packages.
+        /// </summary>
+        public static string Tb_SubscriptionPackages {
+            get {
+                return ResourceManager.GetString("Tb_SubscriptionPackages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Subscriptions.
+        /// </summary>
+        public static string Tb_UserSubscriptions {
+            get {
+                return ResourceManager.GetString("Tb_UserSubscriptions", resourceCulture);
             }
         }
         

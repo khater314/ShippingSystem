@@ -1723,6 +1723,49 @@
   <data name="Tb_ShippingType" xml:space="preserve">
     <value>نوع الشحن</value>
   </data>
+	<!-- =========================================================== -->
+	<!-- =====================  SECTION: TABLES  =================== -->
+	<!-- =========================================================== -->
+
+	<data name="Tb_Carriers" xml:space="preserve">
+    <value>شركات النقل</value>
+  </data>
+	<data name="Tb_Cities" xml:space="preserve">
+    <value>المدن</value>
+  </data>
+	<data name="Tb_Countries" xml:space="preserve">
+    <value>الدول</value>
+  </data>
+	<data name="Tb_Logs" xml:space="preserve">
+    <value>السجلات</value>
+  </data>
+	<data name="Tb_PaymentMethods" xml:space="preserve">
+    <value>طرق الدفع</value>
+  </data>
+	<data name="Tb_Settings" xml:space="preserve">
+    <value>الإعدادات</value>
+  </data>
+	<data name="Tb_Shippments" xml:space="preserve">
+    <value>الشحنات</value>
+  </data>
+	<data name="Tb_ShippmentStatuses" xml:space="preserve">
+    <value>حالات الشحنات</value>
+  </data>
+	<data name="Tb_SubscriptionPackages" xml:space="preserve">
+    <value>باقات الاشتراك</value>
+  </data>
+	<data name="Tb_Receivers" xml:space="preserve">
+    <value>المستلمون</value>
+  </data>
+	<data name="Tb_Senders" xml:space="preserve">
+    <value>المرسلون</value>
+  </data>
+	<data name="Tb_UserSubscriptions" xml:space="preserve">
+    <value>اشتراكات المستخدمين</value>
+  </data>
+	<data name="Tb_CitiesView" xml:space="preserve">
+    <value>عرض المدن</value>
+  </data>
   <data name="Val_Required" xml:space="preserve">
     <value>حقل {0} مطلوب</value>
   </data>

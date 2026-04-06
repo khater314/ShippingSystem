@@ -63,6 +63,7 @@ namespace Ui
             /**********************************************************************/
             // Repositories Add Scoped
             builder.Services.AddScoped(typeof(ITableRepository<>), typeof(TableRepository<>));
+            builder.Services.AddScoped(typeof(IViewRepository<>), typeof(ViewRepository<>));
             // Services Add Scoped
             builder.Services.AddScoped<ICityService, CityService>();
             builder.Services.AddScoped<IShippingTypeService, ShippingTypeService>();

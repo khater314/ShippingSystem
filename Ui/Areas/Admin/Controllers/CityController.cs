@@ -7,6 +7,7 @@ using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.Blazor;
 
 namespace Ui.Areas.Admin.Controllers
 {
+    // Note: We Use VwCity To Get Cities with Country Names, But We Use TbCity For Edit And Add To Avoid Complexity In Mapping
     public class CityController(ICityService cityService) : BaseController<TbCity, TbCityDTO>(cityService)
     {
         private readonly ICityService _cityService = cityService;

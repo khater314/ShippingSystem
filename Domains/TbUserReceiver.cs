@@ -19,5 +19,5 @@ public partial class TbUserReceiver : BaseEntity
 
     public virtual TbCity City { get; set; } = null!;
 
-    public virtual ICollection<TbShippment> TbShippments { get; set; } = new List<TbShippment>();
+    public virtual ICollection<TbShipment> TbShipments { get; set; } = new List<TbShipment>();
 }

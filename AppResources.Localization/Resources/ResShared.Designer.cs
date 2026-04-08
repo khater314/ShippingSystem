@@ -1179,9 +1179,9 @@ namespace AppResources.Localization.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Payment Method Name (Arabic).
         /// </summary>
-        public static string Field_MethdAname {
+        public static string Field_MethodAname {
             get {
-                return ResourceManager.GetString("Field_MethdAname", resourceCulture);
+                return ResourceManager.GetString("Field_MethodAname", resourceCulture);
             }
         }
         
@@ -1312,11 +1312,11 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Shippments Count.
+        ///   Looks up a localized string similar to Shipments Count.
         /// </summary>
-        public static string Field_ShippimentCount {
+        public static string Field_ShipmentCount {
             get {
-                return ResourceManager.GetString("Field_ShippimentCount", resourceCulture);
+                return ResourceManager.GetString("Field_ShipmentCount", resourceCulture);
             }
         }
         
@@ -1375,11 +1375,11 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Shippment Number.
+        ///   Looks up a localized string similar to Shipment Number.
         /// </summary>
-        public static string Field_ShippmentId {
+        public static string Field_ShipmentId {
             get {
-                return ResourceManager.GetString("Field_ShippmentId", resourceCulture);
+                return ResourceManager.GetString("Field_ShipmentId", resourceCulture);
             }
         }
         
@@ -1512,18 +1512,18 @@ namespace AppResources.Localization.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Enter the shipment information below.
         /// </summary>
-        public static string Form_Description_Shippment {
+        public static string Form_Description_Shipment {
             get {
-                return ResourceManager.GetString("Form_Description_Shippment", resourceCulture);
+                return ResourceManager.GetString("Form_Description_Shipment", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Update shipment status information.
         /// </summary>
-        public static string Form_Description_ShippmentStatus {
+        public static string Form_Description_ShipmentStatus {
             get {
-                return ResourceManager.GetString("Form_Description_ShippmentStatus", resourceCulture);
+                return ResourceManager.GetString("Form_Description_ShipmentStatus", resourceCulture);
             }
         }
         
@@ -1620,18 +1620,18 @@ namespace AppResources.Localization.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Shipment Details.
         /// </summary>
-        public static string Form_Title_Shippment {
+        public static string Form_Title_Shipment {
             get {
-                return ResourceManager.GetString("Form_Title_Shippment", resourceCulture);
+                return ResourceManager.GetString("Form_Title_Shipment", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Shipment Status Details.
         /// </summary>
-        public static string Form_Title_ShippmentStatus {
+        public static string Form_Title_ShipmentStatus {
             get {
-                return ResourceManager.GetString("Form_Title_ShippmentStatus", resourceCulture);
+                return ResourceManager.GetString("Form_Title_ShipmentStatus", resourceCulture);
             }
         }
         
@@ -2142,9 +2142,9 @@ namespace AppResources.Localization.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Payment Method Name (Arabic).
         /// </summary>
-        public static string Lbl_MethdAname {
+        public static string Lbl_MethodAname {
             get {
-                return ResourceManager.GetString("Lbl_MethdAname", resourceCulture);
+                return ResourceManager.GetString("Lbl_MethodAname", resourceCulture);
             }
         }
         
@@ -2365,11 +2365,11 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Shippments Count.
+        ///   Looks up a localized string similar to Shipments Count.
         /// </summary>
-        public static string Lbl_ShippimentCount {
+        public static string Lbl_ShipmentCount {
             get {
-                return ResourceManager.GetString("Lbl_ShippimentCount", resourceCulture);
+                return ResourceManager.GetString("Lbl_ShipmentCount", resourceCulture);
             }
         }
         
@@ -2437,11 +2437,11 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Shippment Number.
+        ///   Looks up a localized string similar to Shipment Number.
         /// </summary>
-        public static string Lbl_ShippmentId {
+        public static string Lbl_ShipmentId {
             get {
-                return ResourceManager.GetString("Lbl_ShippmentId", resourceCulture);
+                return ResourceManager.GetString("Lbl_ShipmentId", resourceCulture);
             }
         }
         
@@ -2655,18 +2655,18 @@ namespace AppResources.Localization.Resources {
         /// <summary>
         ///   Looks up a localized string similar to View and manage all shipments.
         /// </summary>
-        public static string List_Description_Shippment {
+        public static string List_Description_Shipment {
             get {
-                return ResourceManager.GetString("List_Description_Shippment", resourceCulture);
+                return ResourceManager.GetString("List_Description_Shipment", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to View all shipment status updates.
         /// </summary>
-        public static string List_Description_ShippmentStatus {
+        public static string List_Description_ShipmentStatus {
             get {
-                return ResourceManager.GetString("List_Description_ShippmentStatus", resourceCulture);
+                return ResourceManager.GetString("List_Description_ShipmentStatus", resourceCulture);
             }
         }
         
@@ -2763,18 +2763,18 @@ namespace AppResources.Localization.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Shipments List.
         /// </summary>
-        public static string List_Title_Shippment {
+        public static string List_Title_Shipment {
             get {
-                return ResourceManager.GetString("List_Title_Shippment", resourceCulture);
+                return ResourceManager.GetString("List_Title_Shipment", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Shipment Status List.
         /// </summary>
-        public static string List_Title_ShippmentStatus {
+        public static string List_Title_ShipmentStatus {
             get {
-                return ResourceManager.GetString("List_Title_ShippmentStatus", resourceCulture);
+                return ResourceManager.GetString("List_Title_ShipmentStatus", resourceCulture);
             }
         }
         
@@ -4527,18 +4527,18 @@ namespace AppResources.Localization.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Manage all shipments and their details.
         /// </summary>
-        public static string Page_Subtitle_Shippment {
+        public static string Page_Subtitle_Shipment {
             get {
-                return ResourceManager.GetString("Page_Subtitle_Shippment", resourceCulture);
+                return ResourceManager.GetString("Page_Subtitle_Shipment", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Track shipment status updates.
         /// </summary>
-        public static string Page_Subtitle_ShippmentStatus {
+        public static string Page_Subtitle_ShipmentStatus {
             get {
-                return ResourceManager.GetString("Page_Subtitle_ShippmentStatus", resourceCulture);
+                return ResourceManager.GetString("Page_Subtitle_ShipmentStatus", resourceCulture);
             }
         }
         
@@ -4680,18 +4680,18 @@ namespace AppResources.Localization.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Shipments Management.
         /// </summary>
-        public static string Page_Title_Shippment {
+        public static string Page_Title_Shipment {
             get {
-                return ResourceManager.GetString("Page_Title_Shippment", resourceCulture);
+                return ResourceManager.GetString("Page_Title_Shipment", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Shipment Status Management.
         /// </summary>
-        public static string Page_Title_ShippmentStatus {
+        public static string Page_Title_ShipmentStatus {
             get {
-                return ResourceManager.GetString("Page_Title_ShippmentStatus", resourceCulture);
+                return ResourceManager.GetString("Page_Title_ShipmentStatus", resourceCulture);
             }
         }
         
@@ -4959,9 +4959,9 @@ namespace AppResources.Localization.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Enter payment method name in Arabic.
         /// </summary>
-        public static string Plh_MethdAname {
+        public static string Plh_MethodAname {
             get {
-                return ResourceManager.GetString("Plh_MethdAname", resourceCulture);
+                return ResourceManager.GetString("Plh_MethodAname", resourceCulture);
             }
         }
         
@@ -5112,9 +5112,9 @@ namespace AppResources.Localization.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Enter number of shipments.
         /// </summary>
-        public static string Plh_ShippimentCount {
+        public static string Plh_ShipmentCount {
             get {
-                return ResourceManager.GetString("Plh_ShippimentCount", resourceCulture);
+                return ResourceManager.GetString("Plh_ShipmentCount", resourceCulture);
             }
         }
         
@@ -5175,9 +5175,9 @@ namespace AppResources.Localization.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Select shipment.
         /// </summary>
-        public static string Plh_ShippmentId {
+        public static string Plh_ShipmentId {
             get {
-                return ResourceManager.GetString("Plh_ShippmentId", resourceCulture);
+                return ResourceManager.GetString("Plh_ShipmentId", resourceCulture);
             }
         }
         
@@ -6156,18 +6156,18 @@ namespace AppResources.Localization.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Shipments.
         /// </summary>
-        public static string Tb_Shippments {
+        public static string Tb_Shipments {
             get {
-                return ResourceManager.GetString("Tb_Shippments", resourceCulture);
+                return ResourceManager.GetString("Tb_Shipments", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Shipment Statuses.
         /// </summary>
-        public static string Tb_ShippmentStatuses {
+        public static string Tb_ShipmentStatuses {
             get {
-                return ResourceManager.GetString("Tb_ShippmentStatuses", resourceCulture);
+                return ResourceManager.GetString("Tb_ShipmentStatuses", resourceCulture);
             }
         }
         

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BL.DTOs;
 
-public abstract class BaseEntityDTO 
+public abstract record BaseEntityDTO 
 {
     [Key]
     public Guid Id { get; set; }

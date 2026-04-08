@@ -93,7 +93,7 @@ namespace DAL.Migrations
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false, defaultValueSql: "(newid())")
                         .Annotation("Relational:DefaultConstraintName", "DF_TbPaymentMethods_Id"),
-                    MethdAName = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
+                    MethodAName = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
                     MethodEName = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
                     Commission = table.Column<double>(type: "float", nullable: true),
                     UpdatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
@@ -153,7 +153,7 @@ namespace DAL.Migrations
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false, defaultValueSql: "(newid())")
                         .Annotation("Relational:DefaultConstraintName", "DF_TbSubscriptionPackages_Id"),
                     PackageName = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    ShippimentCount = table.Column<int>(type: "int", nullable: false),
+                    ShipmentCount = table.Column<int>(type: "int", nullable: false),
                     NumberOfKiloMeters = table.Column<double>(type: "float", nullable: false),
                     TotalWeight = table.Column<double>(type: "float", nullable: false),
                     UpdatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
@@ -380,11 +380,11 @@ namespace DAL.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "TbShippments",
+                name: "TbShipments",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false, defaultValueSql: "(newid())")
-                        .Annotation("Relational:DefaultConstraintName", "DF_TbShippments_Id"),
+                        .Annotation("Relational:DefaultConstraintName", "DF_TbShipments_Id"),
                     ShippingDate = table.Column<DateTime>(type: "datetime", nullable: false),
                     SenderId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     ReceiverId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -407,36 +407,36 @@ namespace DAL.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_TbShippments", x => x.Id);
+                    table.PrimaryKey("PK_TbShipments", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_TbShippments_TbPaymentMethods",
+                        name: "FK_TbShipments_TbPaymentMethods",
                         column: x => x.PaymentMethodId,
                         principalTable: "TbPaymentMethods",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_TbShippments_TbShippingTypes",
+                        name: "FK_TbShipments_TbShippingTypes",
                         column: x => x.ShippingTypeId,
                         principalTable: "TbShippingTypes",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_TbShippments_TbUserReceivers",
+                        name: "FK_TbShipments_TbUserReceivers",
                         column: x => x.ReceiverId,
                         principalTable: "TbUserReceivers",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_TbShippments_TbUserSenders",
+                        name: "FK_TbShipments_TbUserSenders",
                         column: x => x.SenderId,
                         principalTable: "TbUserSenders",
                         principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
-                name: "TbShippmentStatus",
+                name: "TbShipmentStatus",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false, defaultValueSql: "(newid())")
-                        .Annotation("Relational:DefaultConstraintName", "DF_TbShippmentStatus_Id"),
-                    ShippmentId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                        .Annotation("Relational:DefaultConstraintName", "DF_TbShipmentStatus_Id"),
+                    ShipmentId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     Notes = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CarrierId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     UpdatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
@@ -447,16 +447,16 @@ namespace DAL.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_TbShippmentStatus", x => x.Id);
+                    table.PrimaryKey("PK_TbShipmentStatus", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_TbShippmentStatus_TbCarriers",
+                        name: "FK_TbShipmentStatus_TbCarriers",
                         column: x => x.CarrierId,
                         principalTable: "TbCarriers",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_TbShippmentStatus_TbShippments",
-                        column: x => x.ShippmentId,
-                        principalTable: "TbShippments",
+                        name: "FK_TbShipmentStatus_TbShipments",
+                        column: x => x.ShipmentId,
+                        principalTable: "TbShipments",
                         principalColumn: "Id");
                 });
 
@@ -505,34 +505,34 @@ namespace DAL.Migrations
                 column: "CountryId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_TbShippments_PaymentMethodId",
-                table: "TbShippments",
+                name: "IX_TbShipments_PaymentMethodId",
+                table: "TbShipments",
                 column: "PaymentMethodId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_TbShippments_ReceiverId",
-                table: "TbShippments",
+                name: "IX_TbShipments_ReceiverId",
+                table: "TbShipments",
                 column: "ReceiverId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_TbShippments_SenderId",
-                table: "TbShippments",
+                name: "IX_TbShipments_SenderId",
+                table: "TbShipments",
                 column: "SenderId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_TbShippments_ShippingTypeId",
-                table: "TbShippments",
+                name: "IX_TbShipments_ShippingTypeId",
+                table: "TbShipments",
                 column: "ShippingTypeId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_TbShippmentStatus_CarrierId",
-                table: "TbShippmentStatus",
+                name: "IX_TbShipmentStatus_CarrierId",
+                table: "TbShipmentStatus",
                 column: "CarrierId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_TbShippmentStatus_ShippmentId",
-                table: "TbShippmentStatus",
-                column: "ShippmentId");
+                name: "IX_TbShipmentStatus_ShipmentId",
+                table: "TbShipmentStatus",
+                column: "ShipmentId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_TbUserReceivers_CityId",
@@ -572,7 +572,7 @@ namespace DAL.Migrations
                 name: "TbSetting");
 
             migrationBuilder.DropTable(
-                name: "TbShippmentStatus");
+                name: "TbShipmentStatus");
 
             migrationBuilder.DropTable(
                 name: "TbUserSubscriptions");
@@ -587,7 +587,7 @@ namespace DAL.Migrations
                 name: "TbCarriers");
 
             migrationBuilder.DropTable(
-                name: "TbShippments");
+                name: "TbShipments");
 
             migrationBuilder.DropTable(
                 name: "TbSubscriptionPackages");

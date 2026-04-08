@@ -36,9 +36,9 @@ public partial class ShippingContext : IdentityDbContext<AppUser>
 
     public virtual DbSet<TbShippingType> TbShippingTypes { get; set; }
 
-    public virtual DbSet<TbShippment> TbShippments { get; set; }
+    public virtual DbSet<TbShipment> TbShipments { get; set; }
 
-    public virtual DbSet<TbShippmentStatus> TbShippmentStatuses { get; set; }
+    public virtual DbSet<TbShipmentStatus> TbShipmentStatuses { get; set; }
 
     public virtual DbSet<TbSubscriptionPackage> TbSubscriptionPackages { get; set; }
 
@@ -136,9 +136,9 @@ public partial class ShippingContext : IdentityDbContext<AppUser>
         {
             entity.Property(e => e.Id).HasDefaultValueSql("(newid())", "DF_TbPaymentMethods_Id");
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
-            entity.Property(e => e.MethdAname)
+            entity.Property(e => e.MethodAname)
                 .HasMaxLength(200)
-                .HasColumnName("MethdAName");
+                .HasColumnName("MethodAName");
             entity.Property(e => e.MethodEname)
                 .HasMaxLength(200)
                 .HasColumnName("MethodEName");
@@ -165,51 +165,51 @@ public partial class ShippingContext : IdentityDbContext<AppUser>
             entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
         });
 
-        modelBuilder.Entity<TbShippment>(entity =>
+        modelBuilder.Entity<TbShipment>(entity =>
         {
-            entity.Property(e => e.Id).HasDefaultValueSql("(newid())", "DF_TbShippments_Id");
+            entity.Property(e => e.Id).HasDefaultValueSql("(newid())", "DF_TbShipments_Id");
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
             entity.Property(e => e.PackageValue).HasColumnType("decimal(8, 4)");
             entity.Property(e => e.ShippingDate).HasColumnType("datetime");
             entity.Property(e => e.ShippingRate).HasColumnType("decimal(8, 4)");
             entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
 
-            entity.HasOne(d => d.PaymentMethod).WithMany(p => p.TbShippments)
+            entity.HasOne(d => d.PaymentMethod).WithMany(p => p.TbShipments)
                 .HasForeignKey(d => d.PaymentMethodId)
-                .HasConstraintName("FK_TbShippments_TbPaymentMethods");
+                .HasConstraintName("FK_TbShipments_TbPaymentMethods");
 
-            entity.HasOne(d => d.Receiver).WithMany(p => p.TbShippments)
+            entity.HasOne(d => d.Receiver).WithMany(p => p.TbShipments)
                 .HasForeignKey(d => d.ReceiverId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_TbShippments_TbUserReceivers");
+                .HasConstraintName("FK_TbShipments_TbUserReceivers");
 
-            entity.HasOne(d => d.Sender).WithMany(p => p.TbShippments)
+            entity.HasOne(d => d.Sender).WithMany(p => p.TbShipments)
                 .HasForeignKey(d => d.SenderId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_TbShippments_TbUserSenders");
+                .HasConstraintName("FK_TbShipments_TbUserSenders");
 
-            entity.HasOne(d => d.ShippingType).WithMany(p => p.TbShippments)
+            entity.HasOne(d => d.ShippingType).WithMany(p => p.TbShipments)
                 .HasForeignKey(d => d.ShippingTypeId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_TbShippments_TbShippingTypes");
+                .HasConstraintName("FK_TbShipments_TbShippingTypes");
         });
 
-        modelBuilder.Entity<TbShippmentStatus>(entity =>
+        modelBuilder.Entity<TbShipmentStatus>(entity =>
         {
-            entity.ToTable("TbShippmentStatus");
+            entity.ToTable("TbShipmentStatus");
 
-            entity.Property(e => e.Id).HasDefaultValueSql("(newid())", "DF_TbShippmentStatus_Id");
+            entity.Property(e => e.Id).HasDefaultValueSql("(newid())", "DF_TbShipmentStatus_Id");
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
             entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
 
-            entity.HasOne(d => d.Carrier).WithMany(p => p.TbShippmentStatuses)
+            entity.HasOne(d => d.Carrier).WithMany(p => p.TbShipmentStatuses)
                 .HasForeignKey(d => d.CarrierId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_TbShippmentStatus_TbCarriers");
+                .HasConstraintName("FK_TbShipmentStatus_TbCarriers");
 
-            entity.HasOne(d => d.Shippment).WithMany(p => p.TbShippmentStatuses)
-                .HasForeignKey(d => d.ShippmentId)
-                .HasConstraintName("FK_TbShippmentStatus_TbShippments");
+            entity.HasOne(d => d.Shipment).WithMany(p => p.TbShipmentStatuses)
+                .HasForeignKey(d => d.ShipmentId)
+                .HasConstraintName("FK_TbShipmentStatus_TbShipments");
         });
 
         modelBuilder.Entity<TbSubscriptionPackage>(entity =>

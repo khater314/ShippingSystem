@@ -4,6 +4,7 @@ using DAL.DbContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DAL.Migrations
 {
     [DbContext(typeof(ShippingContext))]
-    partial class ShippingContextModelSnapshot : ModelSnapshot
+    [Migration("20260407162657_Adding_ShipmentStatusField_At_TbShipmentStatus")]
+    partial class Adding_ShipmentStatusField_At_TbShipmentStatus
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -305,6 +308,46 @@ namespace DAL.Migrations
                     b.ToTable("TbSetting", (string)null);
                 });
 
+            modelBuilder.Entity("Domains.TbShippingType", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier")
+                        .HasDefaultValueSql("(newid())", "DF_TbShippingTypes_Id");
+
+                    b.Property<Guid>("CreatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime");
+
+                    b.Property<int>("CurrentState")
+                        .HasColumnType("int");
+
+                    b.Property<double>("ShippingFactor")
+                        .HasColumnType("float");
+
+                    b.Property<string>("ShippingTypeAname")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)")
+                        .HasColumnName("ShippingTypeAName");
+
+                    b.Property<string>("ShippingTypeEname")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)")
+                        .HasColumnName("ShippingTypeEName");
+
+                    b.Property<Guid?>("UpdatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TbShippingTypes");
+                });
+
             modelBuilder.Entity("Domains.TbShipment", b =>
                 {
                     b.Property<Guid>("Id")
@@ -351,8 +394,8 @@ namespace DAL.Migrations
                     b.Property<Guid>("ShippingTypeId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("TrackingNumber")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<double?>("TrackingNumber")
+                        .HasColumnType("float");
 
                     b.Property<Guid?>("UpdatedBy")
                         .HasColumnType("uniqueidentifier");
@@ -423,46 +466,6 @@ namespace DAL.Migrations
                     b.HasIndex("ShipmentId");
 
                     b.ToTable("TbShipmentStatus", (string)null);
-                });
-
-            modelBuilder.Entity("Domains.TbShippingType", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier")
-                        .HasDefaultValueSql("(newid())", "DF_TbShippingTypes_Id");
-
-                    b.Property<Guid>("CreatedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime");
-
-                    b.Property<int>("CurrentState")
-                        .HasColumnType("int");
-
-                    b.Property<double>("ShippingFactor")
-                        .HasColumnType("float");
-
-                    b.Property<string>("ShippingTypeAname")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)")
-                        .HasColumnName("ShippingTypeAName");
-
-                    b.Property<string>("ShippingTypeEname")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)")
-                        .HasColumnName("ShippingTypeEName");
-
-                    b.Property<Guid?>("UpdatedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("TbShippingTypes");
                 });
 
             modelBuilder.Entity("Domains.TbSubscriptionPackage", b =>
@@ -984,14 +987,14 @@ namespace DAL.Migrations
                     b.Navigation("TbShipments");
                 });
 
-            modelBuilder.Entity("Domains.TbShipment", b =>
-                {
-                    b.Navigation("TbShipmentStatuses");
-                });
-
             modelBuilder.Entity("Domains.TbShippingType", b =>
                 {
                     b.Navigation("TbShipments");
+                });
+
+            modelBuilder.Entity("Domains.TbShipment", b =>
+                {
+                    b.Navigation("TbShipmentStatuses");
                 });
 
             modelBuilder.Entity("Domains.TbSubscriptionPackage", b =>

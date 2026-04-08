@@ -1,0 +1,76 @@
+﻿@model List<TbShipmentStatusDTO>
+
+
+<div class="page-header">
+    <h3 class="page-title"> @ResShared.List_Description_ShipmentStatus </h3>
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">@ResShared.Word_Tables</li>
+        <li class="breadcrumb-item active" aria-current="page">@ResShared.List_Title_ShipmentStatus</li>
+    </ol>
+    </nav>
+</div>
+<div class="card">
+    <div class="card-body">
+    <h4 class="card-title">@ResShared.List_Title_ShipmentStatus</h4>
+    <a href="~/admin/ShipmentStatus/Edit" class="btn btn-gradient-dark btn-fw mb-3">@ResShared.Btn_Add</a>
+    <div class="row">
+        <div class="col-12">
+        <table id="order-listing" class="table">
+            <thead>
+            <tr>
+                <th>@ResShared.Th_Number</th>
+                <th>@ResShared.Lbl_Status</th>
+                <th>@ResShared.Field_Notes</th>
+                <th>@ResShared.Th_Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+                @{int counter = 1;}
+                @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@(counter++)</td>
+                            <td>
+                                @if (CultureInfo.CurrentCulture.Name.ToLower() == "ar")
+                                    {
+                                        @item.Status
+                                    }
+                                    else 
+                                    {
+                                        @item.Status
+                                    }
+                                </td>
+                                <td>@item.Notes</td>
+                            <td>
+                                    <a class="btn btn-outline-primary py-2" asp-action="Edit"
+                                           asp-route-id="@item.Id" asp-controller="ShipmentStatus">
+                                            @ResShared.Btn_Edit
+                                    </a>
+                                    <button type="button" class="btn btn-outline-danger py-2 js-btn-delete" 
+                                            data-url="@Url.Action("Delete", "ShipmentStatus", new { area = "Admin" })"
+                                            data-id="@item.Id" name="@item.Id">
+                                            @ResShared.Btn_Delete
+                                    </button>
+                            </td>
+                        </tr>
+                    }
+            </tbody>
+        </table>
+        </div>
+    </div>
+ </div> 
+</div>
+@section PluginStyles
+{
+    <link rel="stylesheet" href="~/admin/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+}
+@section PluginScripts
+{
+    <script src="~/admin/vendors/datatables.net/jquery.dataTables.js"></script>
+    <script src="~/admin/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+}
+@section CustomScripts
+{
+    <script src="~/admin/js/data-table.js"></script>
+}

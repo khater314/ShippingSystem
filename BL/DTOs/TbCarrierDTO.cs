@@ -6,9 +6,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace BL.DTOs;
 
-public partial class TbCarrierDTO : BaseEntityDTO
+public partial record TbCarrierDTO : BaseEntityDTO
 {
     [NameLocalizedValidation("en")]
-    [Display(Name = "Field_CarrierName", ResourceType = typeof(ResShared))]
+    [Display(Name = nameof(ResShared.Field_CarrierName), ResourceType = typeof(ResShared))]
     public string CarrierName { get; set; } = null!;
 }

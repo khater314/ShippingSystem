@@ -67,7 +67,7 @@ namespace Ui
             // Services Add Scoped
             builder.Services.AddScoped<ICityService, CityService>();
             builder.Services.AddScoped<IShippingTypeService, ShippingTypeService>();
-            builder.Services.AddScoped<IShippmentService, ShippmentService>();
+            builder.Services.AddScoped<IShipmentService, ShipmentService>();
             builder.Services.AddScoped<ICountryService, CountryService>();
             builder.Services.AddScoped<ICarrierService, CarrierService>();
             builder.Services.AddScoped<ISubscriptionPackageService, SubscriptionPackageService>();
@@ -75,7 +75,7 @@ namespace Ui
             builder.Services.AddScoped<IUserSenderService, UserSenderService>();
             builder.Services.AddScoped<IUserSubscriptionService, UserSubscriptionService>();
             builder.Services.AddScoped<IPaymentMethodService, PaymentMethodService>();
-            builder.Services.AddScoped<IShippmentStatusService, ShippmentStatusService>();
+            builder.Services.AddScoped<IShipmentStatusService, ShipmentStatusService>();
             builder.Services.AddScoped<ISettingService, SettingService>();
 
             builder.Services.AddScoped<BL.Contracts.IUserService, Ui.Services.UserService>();

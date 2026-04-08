@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace BL.DTOs;
 
-public partial class TbUserSubscriptionDTO : BaseEntityDTO
+public partial record TbUserSubscriptionDTO : BaseEntityDTO
 {
     public Guid UserId { get; set; }
 

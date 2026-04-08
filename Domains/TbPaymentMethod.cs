@@ -5,11 +5,11 @@ namespace Domains;
 
 public partial class TbPaymentMethod : BaseEntity
 {
-    public string? MethdAname { get; set; }
+    public string? MethodAname { get; set; }
 
     public string? MethodEname { get; set; }
 
     public double? Commission { get; set; }
 
-    public virtual ICollection<TbShippment> TbShippments { get; set; } = new List<TbShippment>();
+    public virtual ICollection<TbShipment> TbShipments { get; set; } = new List<TbShipment>();
 }

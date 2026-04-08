@@ -6,7 +6,7 @@ using BL.DTOs;
 
 namespace BL.Contracts
 {
-    public interface IShippmentStatusService : IBaseService<TbShippmentStatus, TbShippmentStatusDTO>
+    public interface IShipmentStatusService : IBaseService<TbShipmentStatus, TbShipmentStatusDTO>
     {
     }
 }

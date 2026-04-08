@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Domains;
 
-public partial class TbShippment : BaseEntity
+public partial class TbShipment : BaseEntity
 {
     public DateTime ShippingDate { get; set; }
 
@@ -29,7 +29,7 @@ public partial class TbShippment : BaseEntity
 
     public Guid? UserSubscriptionId { get; set; }
 
-    public double? TrackingNumber { get; set; }
+    public string? TrackingNumber { get; set; }
 
     public Guid? ReferenceId { get; set; }
 
@@ -41,5 +41,5 @@ public partial class TbShippment : BaseEntity
 
     public virtual TbShippingType ShippingType { get; set; } = null!;
 
-    public virtual ICollection<TbShippmentStatus> TbShippmentStatuses { get; set; } = new List<TbShippmentStatus>();
+    public virtual ICollection<TbShipmentStatus> TbShipmentStatuses { get; set; } = new List<TbShipmentStatus>();
 }

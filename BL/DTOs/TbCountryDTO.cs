@@ -6,7 +6,7 @@ using AppResources.Localization.Resources;
 
 namespace BL.DTOs;
 
-public partial class TbCountryDTO : BaseEntityDTO
+public partial record TbCountryDTO : BaseEntityDTO
 {
     [NameLocalizedValidation("ar")]
     [Display(Name = "Field_CountryAname", ResourceType = typeof(ResShared))]

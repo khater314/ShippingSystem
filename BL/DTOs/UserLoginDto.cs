@@ -7,7 +7,7 @@ using BL.Validation;
 
 namespace BL.DTOs
 {
-    public class UserLoginDto : BaseEntityDTO
+    public record UserLoginDto : BaseEntityDTO
     {
         [Required(ErrorMessageResourceName = nameof(ResShared.Val_Required), ErrorMessageResourceType = typeof(ResShared))]
         [StringLength(maximumLength: 200, MinimumLength = 6, ErrorMessageResourceName = nameof(ResShared.Val_StringLength), ErrorMessageResourceType = typeof(ResShared))]

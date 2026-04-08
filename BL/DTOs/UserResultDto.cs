@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BL.DTOs
 {
-    public class UserResultDto
+    public record UserResultDto
     {
         public bool IsSuccess { get; set; }
         public string Token { get; set; } = default!;

@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace BL.DTOs;
 
-public partial class TbCityDTO : BaseEntityDTO
+public partial record TbCityDTO : BaseEntityDTO
 {
     [NameLocalizedValidation("ar")]
     [Display(Name = nameof(ResShared.Field_CityAname), ResourceType = typeof(ResShared))]

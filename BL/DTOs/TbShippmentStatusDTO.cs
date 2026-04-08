@@ -1,19 +1,16 @@
-﻿using System;
+﻿using Domains.Enums;
+using System;
 using System.Collections.Generic;
 
 namespace BL.DTOs;
-/// <summary>
-/// Should Edit TbShippmentStatusDTO
-/// </summary>
-public partial class TbShippmentStatusDTO : BaseEntityDTO
+
+public partial record TbShipmentStatusDTO : BaseEntityDTO
 {
-    public Guid? ShippmentId { get; set; }
+    public Guid? ShipmentId { get; set; }
 
     public string? Notes { get; set; }
 
     public Guid CarrierId { get; set; }
 
-    public virtual TbCarrierDTO Carrier { get; set; } = null!;
-
-    public virtual TbShippmentDTO? Shippment { get; set; }
+    public ShipmentStatus Status { get; set; }
 }

@@ -8,9 +8,10 @@ using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.Blazor;
 namespace Ui.Areas.Admin.Controllers
 {
     // Note: We Use VwCity To Get Cities with Country Names, But We Use TbCity For Edit And Add To Avoid Complexity In Mapping
-    public class CityController(ICityService cityService) : BaseController<TbCity, TbCityDTO>(cityService)
+    public class CityController(ICityService cityService, ICountryService countryService) : BaseController<TbCity, TbCityDTO>(cityService)
     {
         private readonly ICityService _cityService = cityService;
+        private readonly ICountryService _countryService = countryService;
         public override async Task<ActionResult> Index(CancellationToken ct)
         {
             var data = await _cityService.GetAllCountryCitiesAsync(ct);
@@ -18,7 +19,7 @@ namespace Ui.Areas.Admin.Controllers
         }
         public override async Task<ActionResult> Edit(Guid? id, CancellationToken ct)
         {
-            ViewBag.Countries = await _cityService.GetAllCountryCitiesAsync(ct);
+            ViewBag.Countries = await _countryService.GetAllAsync(ct);
             return await base.Edit(id, ct);
         }
     }

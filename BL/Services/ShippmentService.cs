@@ -6,7 +6,7 @@ using BL.Mapping;
 
 namespace BL.Services
 {
-    public class ShippmentService(ITableRepository<TbShippment> repo, IMapper mapper, IUserService userService) : BaseService<TbShippment, TbShippmentDTO>(repo, mapper, userService), IShippmentService
+    public class ShipmentService(ITableRepository<TbShipment> repo, IMapper mapper, IUserService userService) : BaseService<TbShipment, TbShipmentDTO>(repo, mapper, userService), IShipmentService
     {
     }
 }

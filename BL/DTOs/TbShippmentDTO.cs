@@ -5,10 +5,8 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace BL.DTOs;
-/// <summary>
-/// TrackingNumber should be string, but it's double in the database, so we keep it as double here to avoid mapping issues, but we should consider changing it to string in the future.
-/// </summary>
-public partial class TbShippmentDTO : BaseEntityDTO
+
+public partial record TbShipmentDTO : BaseEntityDTO
 {
     public DateTime ShippingDate { get; set; }
 
@@ -42,9 +40,10 @@ public partial class TbShippmentDTO : BaseEntityDTO
     [Display(Name = nameof(ResShared.Field_Length), ResourceType = typeof(ResShared))]
     public double Length { get; set; }
 
-        [RequiredRange(min: 0.01, max: 1000)]
-        [Display(Name = nameof(ResShared.Field_PackageValue), ResourceType = typeof(ResShared))]
+    [RequiredRange(min: 0.01, max: 1000)]
+    [Display(Name = nameof(ResShared.Field_PackageValue), ResourceType = typeof(ResShared))]
     public decimal PackageValue { get; set; }
+
     [RequiredRange(min: 0, max: 10)]
     [Display(Name = nameof(ResShared.Field_ShippingRate), ResourceType = typeof(ResShared))]
     public decimal ShippingRate { get; set; }
@@ -52,7 +51,7 @@ public partial class TbShippmentDTO : BaseEntityDTO
     public Guid? PaymentMethodId { get; set; }
     public Guid? UserSubscriptionId { get; set; }
 
-    public double? TrackingNumber { get; set; } // Should be string
+    public string? TrackingNumber { get; set; }
     public Guid? ReferenceId { get; set; }
 
 }

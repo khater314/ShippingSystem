@@ -26,14 +26,14 @@
                 @if (CultureInfo.CurrentCulture.Name.ToLower() == "ar")
                 {
                         
-                    <select class="form-control select2" asp-for="CountryId" 
-                                    asp-items="@(new SelectList(ViewBag.Countries, "CountryId", "CountryAname"))">
+                    <select class="form-control select2 mb-4" asp-for="CountryId" 
+                                    asp-items="@(new SelectList(ViewBag.Countries, "Id", "CountryAname"))">
                     </select>
                 }
                 else
                                 {
-                            <select class="form-control select2" asp-for="CountryId"
-                                    asp-items="@(new SelectList(ViewBag.Countries, "CountryId", "CountryEname"))">
+                            <select class="form-control select2 mb-4" asp-for="CountryId"
+                                    asp-items="@(new SelectList(ViewBag.Countries, "Id", "CountryEname"))">
                             </select>
                 }
 

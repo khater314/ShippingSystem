@@ -4,11 +4,11 @@ using System.Collections.Generic;
 
 namespace BL.DTOs;
 
-public partial class TbSubscriptionPackageDTO : BaseEntityDTO
+public partial record TbSubscriptionPackageDTO : BaseEntityDTO
 {
     public string PackageName { get; set; } = null!;
 
-    public int ShippimentCount { get; set; }
+    public int ShipmentCount { get; set; }
 
     public double NumberOfKiloMeters { get; set; }
 

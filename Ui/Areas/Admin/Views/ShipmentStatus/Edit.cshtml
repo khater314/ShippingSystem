@@ -1,0 +1,39 @@
+﻿@model TbShipmentStatusDTO
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">@ResShared.Form_Title_ShipmentStatus</h4>
+            <p class="card-description">@ResShared.Form_Description_ShipmentStatus</p>
+            <form class="forms-sample" asp-controller="ShipmentStatus" asp-action="Edit" method="post">
+
+                <div class="form-group">
+                    <label for="Notes">@ResShared.Field_Notes</label>
+                    <textarea  class="form-control"
+                           placeholder="@ResShared.Plh_Notes"
+                           asp-for="Notes"> </textarea>
+                        <span asp-validation-for="Notes" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-gradient-primary me-2">@ResShared.Btn_Submit</button>
+                <a asp-action="Index" class="btn btn-light">@ResShared.Btn_Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+@section PluginStyles
+{
+    <link rel="stylesheet" href="~/admin/vendors/select2/select2.min.css">
+    <link rel="stylesheet" href="~/admin/vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
+}
+@section PluginScripts
+{
+    <script src="~/admin/vendors/select2/select2.min.js"></script>
+    <script src="~/admin/vendors/typeahead.js/typeahead.bundle.min.js"></script>
+}
+@section CustomScripts
+{
+    <script src="~/admin/js/file-upload.js"></script>
+    <script src="~/admin/js/typeahead.js"></script>
+    <script src="~/admin/js/select2.js"></script>
+}

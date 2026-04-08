@@ -285,40 +285,40 @@
   <data name="List_Description_ShippingType" xml:space="preserve">
     <value>View and manage all shipping types</value>
   </data>
-  <data name="Page_Title_Shippment" xml:space="preserve">
+  <data name="Page_Title_Shipment" xml:space="preserve">
     <value>Shipments Management</value>
   </data>
-  <data name="Page_Subtitle_Shippment" xml:space="preserve">
+  <data name="Page_Subtitle_Shipment" xml:space="preserve">
     <value>Manage all shipments and their details</value>
   </data>
-  <data name="Form_Title_Shippment" xml:space="preserve">
+  <data name="Form_Title_Shipment" xml:space="preserve">
     <value>Shipment Details</value>
   </data>
-  <data name="Form_Description_Shippment" xml:space="preserve">
+  <data name="Form_Description_Shipment" xml:space="preserve">
     <value>Enter the shipment information below</value>
   </data>
-  <data name="List_Title_Shippment" xml:space="preserve">
+  <data name="List_Title_Shipment" xml:space="preserve">
     <value>Shipments List</value>
   </data>
-  <data name="List_Description_Shippment" xml:space="preserve">
+  <data name="List_Description_Shipment" xml:space="preserve">
     <value>View and manage all shipments</value>
   </data>
-  <data name="Page_Title_ShippmentStatus" xml:space="preserve">
+  <data name="Page_Title_ShipmentStatus" xml:space="preserve">
     <value>Shipment Status Management</value>
   </data>
-  <data name="Page_Subtitle_ShippmentStatus" xml:space="preserve">
+  <data name="Page_Subtitle_ShipmentStatus" xml:space="preserve">
     <value>Track shipment status updates</value>
   </data>
-  <data name="Form_Title_ShippmentStatus" xml:space="preserve">
+  <data name="Form_Title_ShipmentStatus" xml:space="preserve">
     <value>Shipment Status Details</value>
   </data>
-  <data name="Form_Description_ShippmentStatus" xml:space="preserve">
+  <data name="Form_Description_ShipmentStatus" xml:space="preserve">
     <value>Update shipment status information</value>
   </data>
-  <data name="List_Title_ShippmentStatus" xml:space="preserve">
+  <data name="List_Title_ShipmentStatus" xml:space="preserve">
     <value>Shipment Status List</value>
   </data>
-  <data name="List_Description_ShippmentStatus" xml:space="preserve">
+  <data name="List_Description_ShipmentStatus" xml:space="preserve">
     <value>View all shipment status updates</value>
   </data>
   <data name="Page_Title_SubscriptionPackage" xml:space="preserve">
@@ -801,11 +801,11 @@
   <data name="Lbl_CarrierId" xml:space="preserve">
     <value>Carrier</value>
   </data>
-  <data name="Lbl_ShippmentId" xml:space="preserve">
-    <value>Shippment Number</value>
+  <data name="Lbl_ShipmentId" xml:space="preserve">
+    <value>Shipment Number</value>
   </data>
-  <data name="Lbl_ShippimentCount" xml:space="preserve">
-    <value>Shippments Count</value>
+  <data name="Lbl_ShipmentCount" xml:space="preserve">
+    <value>Shipments Count</value>
   </data>
   <data name="Lbl_PackageValue" xml:space="preserve">
     <value>Package Value</value>
@@ -903,7 +903,7 @@
   <data name="Lbl_CountryEname" xml:space="preserve">
     <value>Country Name (English)</value>
   </data>
-  <data name="Lbl_MethdAname" xml:space="preserve">
+  <data name="Lbl_MethodAname" xml:space="preserve">
     <value>Payment Method Name (Arabic)</value>
   </data>
   <data name="Lbl_MethodEname" xml:space="preserve">
@@ -993,7 +993,7 @@
   <data name="Plh_CountryEname" xml:space="preserve">
     <value>Enter country name in English</value>
   </data>
-  <data name="Plh_MethdAname" xml:space="preserve">
+  <data name="Plh_MethodAname" xml:space="preserve">
     <value>Enter payment method name in Arabic</value>
   </data>
   <data name="Plh_MethodEname" xml:space="preserve">
@@ -1059,7 +1059,7 @@
   <data name="Plh_ReferenceId" xml:space="preserve">
     <value>Enter reference ID</value>
   </data>
-  <data name="Plh_ShippmentId" xml:space="preserve">
+  <data name="Plh_ShipmentId" xml:space="preserve">
     <value>Select shipment</value>
   </data>
   <data name="Plh_Notes" xml:space="preserve">
@@ -1071,7 +1071,7 @@
   <data name="Plh_PackageName" xml:space="preserve">
     <value>Enter package name</value>
   </data>
-  <data name="Plh_ShippimentCount" xml:space="preserve">
+  <data name="Plh_ShipmentCount" xml:space="preserve">
     <value>Enter number of shipments</value>
   </data>
   <data name="Plh_NumberOfKiloMeters" xml:space="preserve">
@@ -1745,10 +1745,10 @@
   <data name="Tb_Settings" xml:space="preserve">
     <value>Settings</value>
   </data>
-  <data name="Tb_Shippments" xml:space="preserve">
+  <data name="Tb_Shipments" xml:space="preserve">
     <value>Shipments</value>
   </data>
-  <data name="Tb_ShippmentStatuses" xml:space="preserve">
+  <data name="Tb_ShipmentStatuses" xml:space="preserve">
     <value>Shipment Statuses</value>
   </data>
   <data name="Tb_SubscriptionPackages" xml:space="preserve">
@@ -1818,7 +1818,7 @@
   <data name="Field_CountryEname" xml:space="preserve">
     <value>Country Name (English)</value>
   </data>
-  <data name="Field_MethdAname" xml:space="preserve">
+  <data name="Field_MethodAname" xml:space="preserve">
     <value>Payment Method Name (Arabic)</value>
   </data>
   <data name="Field_MethodEname" xml:space="preserve">
@@ -1881,8 +1881,8 @@
   <data name="Field_TrackingNumber" xml:space="preserve">
     <value>Tracking Number</value>
   </data>
-  <data name="Field_ShippmentId" xml:space="preserve">
-    <value>Shippment Number</value>
+  <data name="Field_ShipmentId" xml:space="preserve">
+    <value>Shipment Number</value>
   </data>
   <data name="Field_Notes" xml:space="preserve">
     <value>Notes</value>
@@ -1893,8 +1893,8 @@
   <data name="Field_PackageName" xml:space="preserve">
     <value>Package Name</value>
   </data>
-  <data name="Field_ShippimentCount" xml:space="preserve">
-    <value>Shippments Count</value>
+  <data name="Field_ShipmentCount" xml:space="preserve">
+    <value>Shipments Count</value>
   </data>
   <data name="Field_NumberOfKiloMeters" xml:space="preserve">
     <value>Number of Kilometers</value>

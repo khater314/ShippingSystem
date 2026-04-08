@@ -8,7 +8,7 @@ namespace BL.DTOs;
 /// <summary>
 /// Using Built In DataAnnotations for validation and localization, and custom validation attribute for language specific validation
 /// </summary>
-public partial class TbShippingTypeDTO : BaseEntityDTO
+public partial record TbShippingTypeDTO : BaseEntityDTO
 {
     [Required(ErrorMessageResourceName = "Val_Required", ErrorMessageResourceType = typeof(ResShared), AllowEmptyStrings = false)]
     [StringLength(100, MinimumLength = 3 , ErrorMessageResourceName = "Val_StringLength", ErrorMessageResourceType = typeof(ResShared))]

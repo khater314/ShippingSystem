@@ -1,0 +1,55 @@
+﻿@model TbPaymentMethodDTO
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">@ResShared.Form_Title_PaymentMethod</h4>
+            <p class="card-description">@ResShared.Form_Description_PaymentMethod</p>
+            <form class="forms-sample" asp-controller="PaymentMethod" asp-action="Edit" method="post">
+
+                <div class="form-group">
+                    <label for="PaymentMethodAname">@ResShared.Field_MethodAname</label>
+                    <input type="text" class="form-control"
+                           placeholder="@ResShared.Plh_MethodAname"
+                           asp-for="MethodAname">
+                    <span asp-validation-for="MethodAname" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="PaymentMethodEname">@ResShared.Field_MethodEname</label>
+                    <input type="text" class="form-control" 
+                           placeholder="@ResShared.Plh_MethodEname"
+                           asp-for="MethodEname">
+                    <span asp-validation-for="MethodEname" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="Commission">@ResShared.Field_Commission</label>
+                    <input type="number" step="0.05" class="form-control" 
+                           placeholder="@ResShared.Plh_Commission"
+                           asp-for="Commission">
+                    <span asp-validation-for="Commission" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-gradient-primary me-2">@ResShared.Btn_Submit</button>
+                <a asp-action="Index" class="btn btn-light">@ResShared.Btn_Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+@section PluginStyles
+{
+    <link rel="stylesheet" href="~/admin/vendors/select2/select2.min.css">
+    <link rel="stylesheet" href="~/admin/vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
+}
+@section PluginScripts
+{
+    <script src="~/admin/vendors/select2/select2.min.js"></script>
+    <script src="~/admin/vendors/typeahead.js/typeahead.bundle.min.js"></script>
+}
+@section CustomScripts
+{
+    <script src="~/admin/js/file-upload.js"></script>
+    <script src="~/admin/js/typeahead.js"></script>
+    <script src="~/admin/js/select2.js"></script>
+}

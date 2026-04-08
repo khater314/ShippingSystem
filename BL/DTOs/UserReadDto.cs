@@ -7,7 +7,7 @@ using System.Text;
 
 namespace BL.DTOs
 {
-    public class UserReadDto : BaseEntityDTO
+    public record UserReadDto : BaseEntityDTO
     {
         [Required(ErrorMessageResourceName = nameof(ResShared.Val_Required), ErrorMessageResourceType = typeof(ResShared))]
         [StringLength(maximumLength: 200, MinimumLength = 6, ErrorMessageResourceName = nameof(ResShared.Val_StringLength), ErrorMessageResourceType = typeof(ResShared))]

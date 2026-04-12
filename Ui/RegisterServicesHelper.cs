@@ -75,7 +75,7 @@ namespace Ui
             builder.Services.AddScoped<IUserSubscriptionService, UserSubscriptionService>();
             builder.Services.AddScoped<IPaymentMethodService, PaymentMethodService>();
             builder.Services.AddScoped<IShipmentStatusService, ShipmentStatusService>();
-            builder.Services.AddScoped<ISettingService, SettingService>();
+            builder.Services.AddScoped<IRateSettingService, RateSettingService>();
 
             builder.Services.AddScoped<BL.Contracts.IUserService, Ui.Services.UserService>();
             // Mapping Add Scoped

@@ -6,7 +6,7 @@ using BL.DTOs;
 
 namespace BL.Contracts
 {
-    public interface ISettingService : IBaseService<TbSetting, TbSettingDTO>
+    public interface IRateSettingService : IBaseService<TbRateSetting, TbRateSettingDTO>
     {
     }
 }

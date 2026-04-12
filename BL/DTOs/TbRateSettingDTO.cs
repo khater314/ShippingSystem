@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace BL.DTOs;
 
-public partial record TbSettingDTO : BaseEntityDTO
+public partial record TbRateSettingDTO : BaseEntityDTO
 {
     public double? KiloMeterRate { get; set; }
 
-    public double? KilooGramRate { get; set; }
+    public double? KiloGramRate { get; set; }
 }

@@ -32,7 +32,7 @@ public partial class ShippingContext : IdentityDbContext<AppUser>
 
     public virtual DbSet<TbPaymentMethod> TbPaymentMethods { get; set; }
 
-    public virtual DbSet<TbSetting> TbSettings { get; set; }
+    public virtual DbSet<TbRateSetting> TbRateSettings { get; set; }
 
     public virtual DbSet<TbShippingType> TbShippingTypes { get; set; }
 
@@ -143,11 +143,11 @@ public partial class ShippingContext : IdentityDbContext<AppUser>
             entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
         });
 
-        modelBuilder.Entity<TbSetting>(entity =>
+        modelBuilder.Entity<TbRateSetting>(entity =>
         {
-            entity.ToTable("TbSetting");
+            entity.ToTable("TbRateSettings");
 
-            entity.Property(e => e.Id).HasDefaultValueSql("(newid())", "DF_TbSetting_Id");
+            entity.Property(e => e.Id).HasDefaultValueSql("(newid())", "DF_TbRateSettings_Id");
         });
 
         modelBuilder.Entity<TbShippingType>(entity =>

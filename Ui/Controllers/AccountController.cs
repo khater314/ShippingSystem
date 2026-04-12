@@ -64,6 +64,11 @@ namespace Ui.Controllers
 
             return RedirectToAction("Index", "Home");
         }
+        public async Task<IActionResult> Logout()
+        {
+             await _userService.LogoutAsync();
+             return RedirectToAction("Index", "Home");
+        }
         public IActionResult AccessDenied()
         {
             return View();

@@ -1150,20 +1150,20 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Kilogram Rate.
+        /// </summary>
+        public static string Field_KiloGramRate {
+            get {
+                return ResourceManager.GetString("Field_KiloGramRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Kilometer Rate.
         /// </summary>
         public static string Field_KiloMeterRate {
             get {
                 return ResourceManager.GetString("Field_KiloMeterRate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Kilogram Rate.
-        /// </summary>
-        public static string Field_KilooGramRate {
-            get {
-                return ResourceManager.GetString("Field_KilooGramRate", resourceCulture);
             }
         }
         
@@ -1321,6 +1321,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Shipment Number.
+        /// </summary>
+        public static string Field_ShipmentId {
+            get {
+                return ResourceManager.GetString("Field_ShipmentId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Shipping Date.
         /// </summary>
         public static string Field_ShippingDate {
@@ -1371,15 +1380,6 @@ namespace AppResources.Localization.Resources {
         public static string Field_ShippingTypeId {
             get {
                 return ResourceManager.GetString("Field_ShippingTypeId", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Shipment Number.
-        /// </summary>
-        public static string Field_ShipmentId {
-            get {
-                return ResourceManager.GetString("Field_ShipmentId", resourceCulture);
             }
         }
         
@@ -1494,18 +1494,9 @@ namespace AppResources.Localization.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Update system settings below.
         /// </summary>
-        public static string Form_Description_Setting {
+        public static string Form_Description_RateSetting {
             get {
-                return ResourceManager.GetString("Form_Description_Setting", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Enter the shipping type information below.
-        /// </summary>
-        public static string Form_Description_ShippingType {
-            get {
-                return ResourceManager.GetString("Form_Description_ShippingType", resourceCulture);
+                return ResourceManager.GetString("Form_Description_RateSetting", resourceCulture);
             }
         }
         
@@ -1524,6 +1515,15 @@ namespace AppResources.Localization.Resources {
         public static string Form_Description_ShipmentStatus {
             get {
                 return ResourceManager.GetString("Form_Description_ShipmentStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter the shipping type information below.
+        /// </summary>
+        public static string Form_Description_ShippingType {
+            get {
+                return ResourceManager.GetString("Form_Description_ShippingType", resourceCulture);
             }
         }
         
@@ -1602,18 +1602,9 @@ namespace AppResources.Localization.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Settings Details.
         /// </summary>
-        public static string Form_Title_Setting {
+        public static string Form_Title_RateSetting {
             get {
-                return ResourceManager.GetString("Form_Title_Setting", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Shipping Type Details.
-        /// </summary>
-        public static string Form_Title_ShippingType {
-            get {
-                return ResourceManager.GetString("Form_Title_ShippingType", resourceCulture);
+                return ResourceManager.GetString("Form_Title_RateSetting", resourceCulture);
             }
         }
         
@@ -1632,6 +1623,15 @@ namespace AppResources.Localization.Resources {
         public static string Form_Title_ShipmentStatus {
             get {
                 return ResourceManager.GetString("Form_Title_ShipmentStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipping Type Details.
+        /// </summary>
+        public static string Form_Title_ShippingType {
+            get {
+                return ResourceManager.GetString("Form_Title_ShippingType", resourceCulture);
             }
         }
         
@@ -2086,20 +2086,20 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Kilogram Rate.
+        /// </summary>
+        public static string Lbl_KiloGramRate {
+            get {
+                return ResourceManager.GetString("Lbl_KiloGramRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Kilometer Rate.
         /// </summary>
         public static string Lbl_KiloMeterRate {
             get {
                 return ResourceManager.GetString("Lbl_KiloMeterRate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Kilogram Rate.
-        /// </summary>
-        public static string Lbl_KilooGramRate {
-            get {
-                return ResourceManager.GetString("Lbl_KilooGramRate", resourceCulture);
             }
         }
         
@@ -2311,6 +2311,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Rate Setting.
+        /// </summary>
+        public static string Lbl_RateSetting {
+            get {
+                return ResourceManager.GetString("Lbl_RateSetting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Receiver.
         /// </summary>
         public static string Lbl_ReceiverId {
@@ -2374,6 +2383,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Shipment Number.
+        /// </summary>
+        public static string Lbl_ShipmentId {
+            get {
+                return ResourceManager.GetString("Lbl_ShipmentId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Shipping Date.
         /// </summary>
         public static string Lbl_ShippingDate {
@@ -2433,15 +2451,6 @@ namespace AppResources.Localization.Resources {
         public static string Lbl_ShippingTypeId {
             get {
                 return ResourceManager.GetString("Lbl_ShippingTypeId", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Shipment Number.
-        /// </summary>
-        public static string Lbl_ShipmentId {
-            get {
-                return ResourceManager.GetString("Lbl_ShipmentId", resourceCulture);
             }
         }
         
@@ -2637,18 +2646,9 @@ namespace AppResources.Localization.Resources {
         /// <summary>
         ///   Looks up a localized string similar to View and manage system settings.
         /// </summary>
-        public static string List_Description_Setting {
+        public static string List_Description_RateSetting {
             get {
-                return ResourceManager.GetString("List_Description_Setting", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to View and manage all shipping types.
-        /// </summary>
-        public static string List_Description_ShippingType {
-            get {
-                return ResourceManager.GetString("List_Description_ShippingType", resourceCulture);
+                return ResourceManager.GetString("List_Description_RateSetting", resourceCulture);
             }
         }
         
@@ -2667,6 +2667,15 @@ namespace AppResources.Localization.Resources {
         public static string List_Description_ShipmentStatus {
             get {
                 return ResourceManager.GetString("List_Description_ShipmentStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View and manage all shipping types.
+        /// </summary>
+        public static string List_Description_ShippingType {
+            get {
+                return ResourceManager.GetString("List_Description_ShippingType", resourceCulture);
             }
         }
         
@@ -2745,18 +2754,9 @@ namespace AppResources.Localization.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Settings List.
         /// </summary>
-        public static string List_Title_Setting {
+        public static string List_Title_RateSetting {
             get {
-                return ResourceManager.GetString("List_Title_Setting", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Shipping Types List.
-        /// </summary>
-        public static string List_Title_ShippingType {
-            get {
-                return ResourceManager.GetString("List_Title_ShippingType", resourceCulture);
+                return ResourceManager.GetString("List_Title_RateSetting", resourceCulture);
             }
         }
         
@@ -2775,6 +2775,15 @@ namespace AppResources.Localization.Resources {
         public static string List_Title_ShipmentStatus {
             get {
                 return ResourceManager.GetString("List_Title_ShipmentStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipping Types List.
+        /// </summary>
+        public static string List_Title_ShippingType {
+            get {
+                return ResourceManager.GetString("List_Title_ShippingType", resourceCulture);
             }
         }
         
@@ -4516,15 +4525,6 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Manage shipping types and their factors.
-        /// </summary>
-        public static string Page_Subtitle_ShippingType {
-            get {
-                return ResourceManager.GetString("Page_Subtitle_ShippingType", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Manage all shipments and their details.
         /// </summary>
         public static string Page_Subtitle_Shipment {
@@ -4539,6 +4539,15 @@ namespace AppResources.Localization.Resources {
         public static string Page_Subtitle_ShipmentStatus {
             get {
                 return ResourceManager.GetString("Page_Subtitle_ShipmentStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage shipping types and their factors.
+        /// </summary>
+        public static string Page_Subtitle_ShippingType {
+            get {
+                return ResourceManager.GetString("Page_Subtitle_ShippingType", resourceCulture);
             }
         }
         
@@ -4669,15 +4678,6 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Shipping Types Management.
-        /// </summary>
-        public static string Page_Title_ShippingType {
-            get {
-                return ResourceManager.GetString("Page_Title_ShippingType", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Shipments Management.
         /// </summary>
         public static string Page_Title_Shipment {
@@ -4692,6 +4692,15 @@ namespace AppResources.Localization.Resources {
         public static string Page_Title_ShipmentStatus {
             get {
                 return ResourceManager.GetString("Page_Title_ShipmentStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipping Types Management.
+        /// </summary>
+        public static string Page_Title_ShippingType {
+            get {
+                return ResourceManager.GetString("Page_Title_ShippingType", resourceCulture);
             }
         }
         
@@ -4930,20 +4939,20 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enter rate per kilogram.
+        /// </summary>
+        public static string Plh_KiloGramRate {
+            get {
+                return ResourceManager.GetString("Plh_KiloGramRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Enter rate per kilometer.
         /// </summary>
         public static string Plh_KiloMeterRate {
             get {
                 return ResourceManager.GetString("Plh_KiloMeterRate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Enter rate per kilogram.
-        /// </summary>
-        public static string Plh_KilooGramRate {
-            get {
-                return ResourceManager.GetString("Plh_KilooGramRate", resourceCulture);
             }
         }
         
@@ -5119,6 +5128,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Select shipment.
+        /// </summary>
+        public static string Plh_ShipmentId {
+            get {
+                return ResourceManager.GetString("Plh_ShipmentId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Select shipping date.
         /// </summary>
         public static string Plh_ShippingDate {
@@ -5169,15 +5187,6 @@ namespace AppResources.Localization.Resources {
         public static string Plh_ShippingTypeId {
             get {
                 return ResourceManager.GetString("Plh_ShippingTypeId", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Select shipment.
-        /// </summary>
-        public static string Plh_ShipmentId {
-            get {
-                return ResourceManager.GetString("Plh_ShipmentId", resourceCulture);
             }
         }
         
@@ -6109,6 +6118,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Rate Settings.
+        /// </summary>
+        public static string Tb_RateSettings {
+            get {
+                return ResourceManager.GetString("Tb_RateSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Receivers.
         /// </summary>
         public static string Tb_Receivers {
@@ -6127,11 +6145,20 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Settings.
+        ///   Looks up a localized string similar to Shipments.
         /// </summary>
-        public static string Tb_Settings {
+        public static string Tb_Shipments {
             get {
-                return ResourceManager.GetString("Tb_Settings", resourceCulture);
+                return ResourceManager.GetString("Tb_Shipments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipment Statuses.
+        /// </summary>
+        public static string Tb_ShipmentStatuses {
+            get {
+                return ResourceManager.GetString("Tb_ShipmentStatuses", resourceCulture);
             }
         }
         
@@ -6150,24 +6177,6 @@ namespace AppResources.Localization.Resources {
         public static string Tb_ShippingTypes {
             get {
                 return ResourceManager.GetString("Tb_ShippingTypes", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Shipments.
-        /// </summary>
-        public static string Tb_Shipments {
-            get {
-                return ResourceManager.GetString("Tb_Shipments", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Shipment Statuses.
-        /// </summary>
-        public static string Tb_ShipmentStatuses {
-            get {
-                return ResourceManager.GetString("Tb_ShipmentStatuses", resourceCulture);
             }
         }
         

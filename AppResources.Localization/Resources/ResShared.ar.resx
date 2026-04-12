@@ -180,6 +180,9 @@
   <data name="Page_Subtitle_Carrier" xml:space="preserve">
     <value>إدارة شركات النقل وبياناتها</value>
   </data>
+  <data name="Page_Title_Register" xml:space="preserve">
+    <value>جديد هنا؟</value>
+  </data>
   <data name="Form_Title_Carrier" xml:space="preserve">
     <value>بيانات شركة النقل</value>
   </data>
@@ -252,16 +255,16 @@
   <data name="Page_Subtitle_Setting" xml:space="preserve">
     <value>تكوين معدلات وبارامترات النظام</value>
   </data>
-  <data name="Form_Title_Setting" xml:space="preserve">
+  <data name="Form_Title_RateSetting" xml:space="preserve">
     <value>بيانات الإعدادات</value>
   </data>
-  <data name="Form_Description_Setting" xml:space="preserve">
+  <data name="Form_Description_RateSetting" xml:space="preserve">
     <value>تحديث إعدادات النظام أدناه</value>
   </data>
-  <data name="List_Title_Setting" xml:space="preserve">
+  <data name="List_Title_RateSetting" xml:space="preserve">
     <value>قائمة الإعدادات</value>
   </data>
-  <data name="List_Description_Setting" xml:space="preserve">
+  <data name="List_Description_RateSetting" xml:space="preserve">
     <value>عرض وإدارة إعدادات النظام</value>
   </data>
   <data name="Page_Title_ShippingType" xml:space="preserve">
@@ -323,9 +326,6 @@
   </data>
   <data name="Page_Subtitle_SubscriptionPackage" xml:space="preserve">
     <value>إدارة باقات الاشتراك وحدودها</value>
-  </data>
-	<data name="Page_Title_Register" xml:space="preserve">
-    <value>جديد هنا؟</value>
   </data>
   <data name="Form_Title_SubscriptionPackage" xml:space="preserve">
     <value>بيانات الباقة</value>
@@ -789,7 +789,7 @@
   <data name="Lbl_KiloMeterRate" xml:space="preserve">
     <value>سعر الكيلومتر</value>
   </data>
-  <data name="Lbl_KilooGramRate" xml:space="preserve">
+  <data name="Lbl_KiloGramRate" xml:space="preserve">
     <value>سعر الكيلوجرام</value>
   </data>
   <data name="Lbl_ShippingFactor" xml:space="preserve">
@@ -948,7 +948,7 @@
   <data name="Lbl_HandCrafted" xml:space="preserve">
     <value>مصنوع يدويًا وبحب &lt;i class='mdi mdi-heart text-danger'&gt;&lt;/i&gt;</value>
   </data>
-	<data name="Lbl_AgreeToTerms" xml:space="preserve">
+  <data name="Lbl_AgreeToTerms" xml:space="preserve">
     <value>أوافق على جميع الشروط والأحكام</value>
   </data>
   <data name="Plh_SearchProjects" xml:space="preserve">
@@ -1005,7 +1005,7 @@
   <data name="Plh_KiloMeterRate" xml:space="preserve">
     <value>أدخل سعر الكيلومتر</value>
   </data>
-  <data name="Plh_KilooGramRate" xml:space="preserve">
+  <data name="Plh_KiloGramRate" xml:space="preserve">
     <value>أدخل سعر الكيلوجرام</value>
   </data>
   <data name="Plh_ShippingTypeAname" xml:space="preserve">
@@ -1122,8 +1122,7 @@
   <data name="Plh_SubscriptionDate" xml:space="preserve">
     <value>اختر تاريخ الاشتراك</value>
   </data>
-	<!-- ===== Placeholders - Confirm Password ===== -->
-	<data name="Plh_ConfirmPassword" xml:space="preserve">
+  <data name="Plh_ConfirmPassword" xml:space="preserve">
     <value>تأكيد كلمة المرور</value>
   </data>
   <data name="Txt_FreeSupport" xml:space="preserve">
@@ -1723,47 +1722,43 @@
   <data name="Tb_ShippingType" xml:space="preserve">
     <value>نوع الشحن</value>
   </data>
-	<!-- =========================================================== -->
-	<!-- =====================  SECTION: TABLES  =================== -->
-	<!-- =========================================================== -->
-
-	<data name="Tb_Carriers" xml:space="preserve">
+  <data name="Tb_Carriers" xml:space="preserve">
     <value>شركات النقل</value>
   </data>
-	<data name="Tb_Cities" xml:space="preserve">
+  <data name="Tb_Cities" xml:space="preserve">
     <value>المدن</value>
   </data>
-	<data name="Tb_Countries" xml:space="preserve">
+  <data name="Tb_Countries" xml:space="preserve">
     <value>الدول</value>
   </data>
-	<data name="Tb_Logs" xml:space="preserve">
+  <data name="Tb_Logs" xml:space="preserve">
     <value>السجلات</value>
   </data>
-	<data name="Tb_PaymentMethods" xml:space="preserve">
+  <data name="Tb_PaymentMethods" xml:space="preserve">
     <value>طرق الدفع</value>
   </data>
-	<data name="Tb_Settings" xml:space="preserve">
-    <value>الإعدادات</value>
+  <data name="Tb_RateSettings" xml:space="preserve">
+    <value>إعدادات معاملات النقل</value>
   </data>
-	<data name="Tb_Shipments" xml:space="preserve">
+  <data name="Tb_Shipments" xml:space="preserve">
     <value>الشحنات</value>
   </data>
-	<data name="Tb_ShipmentStatuses" xml:space="preserve">
+  <data name="Tb_ShipmentStatuses" xml:space="preserve">
     <value>حالات الشحنات</value>
   </data>
-	<data name="Tb_SubscriptionPackages" xml:space="preserve">
+  <data name="Tb_SubscriptionPackages" xml:space="preserve">
     <value>باقات الاشتراك</value>
   </data>
-	<data name="Tb_Receivers" xml:space="preserve">
+  <data name="Tb_Receivers" xml:space="preserve">
     <value>المستلمون</value>
   </data>
-	<data name="Tb_Senders" xml:space="preserve">
+  <data name="Tb_Senders" xml:space="preserve">
     <value>المرسلون</value>
   </data>
-	<data name="Tb_UserSubscriptions" xml:space="preserve">
+  <data name="Tb_UserSubscriptions" xml:space="preserve">
     <value>اشتراكات المستخدمين</value>
   </data>
-	<data name="Tb_CitiesView" xml:space="preserve">
+  <data name="Tb_CitiesView" xml:space="preserve">
     <value>عرض المدن</value>
   </data>
   <data name="Val_Required" xml:space="preserve">
@@ -1790,26 +1785,11 @@
   <data name="Val_Language_En" xml:space="preserve">
     <value>الرجاء إدخال هذا الحقل باللغة الإنجليزية فقط</value>
   </data>
-	<data name="Val_Compare" xml:space="preserve">
+  <data name="Val_Compare" xml:space="preserve">
     <value>{0} و {1} غير متطابقين.</value>
   </data>
-	<data name="Val_InvalidCredentials" xml:space="preserve">
+  <data name="Val_InvalidCredentials" xml:space="preserve">
     <value>البريد الإلكتروني أو كلمة المرور غير صحيحة. الرجاء المحاولة مرة أخرى.</value>
-  </data>
-  <data name="Msg_MarkSentMessage" xml:space="preserve">
-    <value>مارك أرسل لك رسالة</value>
-  </data>
-  <data name="Msg_CreghSentMessage" xml:space="preserve">
-    <value>كريج أرسل لك رسالة</value>
-  </data>
-  <data name="Msg_ProfilePictureUpdated" xml:space="preserve">
-    <value>تم تحديث الصورة الشخصية</value>
-  </data>
-  <data name="Msg_NewMessages" xml:space="preserve">
-    <value>{0} رسائل جديدة</value>
-  </data>
-  <data name="Msg_SeeAllNotifications" xml:space="preserve">
-    <value>عرض كل الإشعارات</value>
   </data>
   <data name="Lang_Arabic" xml:space="preserve">
     <value>العربية</value>
@@ -1844,7 +1824,7 @@
   <data name="Field_KiloMeterRate" xml:space="preserve">
     <value>سعر الكيلومتر</value>
   </data>
-  <data name="Field_KilooGramRate" xml:space="preserve">
+  <data name="Field_KiloGramRate" xml:space="preserve">
     <value>سعر الكيلوجرام</value>
   </data>
   <data name="Field_ShippingTypeAname" xml:space="preserve">
@@ -1958,14 +1938,13 @@
   <data name="Field_SubscriptionDate" xml:space="preserve">
     <value>تاريخ الاشتراك</value>
   </data>
-	<!-- ===== Fields - Email & Password ===== -->
-	<data name="Field_Email" xml:space="preserve">
+  <data name="Field_Email" xml:space="preserve">
     <value>البريد الإلكتروني</value>
   </data>
-	<data name="Field_Password" xml:space="preserve">
+  <data name="Field_Password" xml:space="preserve">
     <value>كلمة المرور</value>
   </data>
-	<data name="Field_ConfirmPassword" xml:space="preserve">
+  <data name="Field_ConfirmPassword" xml:space="preserve">
     <value>تأكيد كلمة المرور</value>
   </data>
   <data name="Msg_Success" xml:space="preserve">
@@ -2352,11 +2331,25 @@
   <data name="Msg_Confirm_Action" xml:space="preserve">
     <value>هل أنت متأكد من القيام بهذا الإجراء؟</value>
   </data>
-	<data name="Msg_RegisterDescription" xml:space="preserve">
+  <data name="Msg_MarkSentMessage" xml:space="preserve">
+    <value>مارك أرسل لك رسالة</value>
+  </data>
+  <data name="Msg_CreghSentMessage" xml:space="preserve">
+    <value>كريج أرسل لك رسالة</value>
+  </data>
+  <data name="Msg_ProfilePictureUpdated" xml:space="preserve">
+    <value>تم تحديث الصورة الشخصية</value>
+  </data>
+  <data name="Msg_NewMessages" xml:space="preserve">
+    <value>{0} رسائل جديدة</value>
+  </data>
+  <data name="Msg_SeeAllNotifications" xml:space="preserve">
+    <value>عرض كل الإشعارات</value>
+  </data>
+  <data name="Msg_RegisterDescription" xml:space="preserve">
     <value>التسجيل سهل. يستغرق بضع خطوات فقط</value>
   </data>
-
-	<data name="Msg_AlreadyHaveAccount" xml:space="preserve">
+  <data name="Msg_AlreadyHaveAccount" xml:space="preserve">
     <value>لديك حساب بالفعل؟</value>
   </data>
   <data name="Word_Success" xml:space="preserve">
@@ -2500,32 +2493,31 @@
   <data name="Val_InvalidNumber" xml:space="preserve">
     <value>من فضلك أدخل صيغة رقمية صحيحة</value>
   </data>
-	<!-- =========================================================== -->
-	<!-- ==================  SECTION: LOGIN PAGE  ================== -->
-	<!-- =========================================================== -->
-
-	<data name="Page_Title_Login" xml:space="preserve">
+  <data name="Page_Title_Login" xml:space="preserve">
     <value>مرحباً! دعنا نبدأ</value>
   </data>
-	<data name="Msg_SignInToContinue" xml:space="preserve">
+  <data name="Msg_SignInToContinue" xml:space="preserve">
     <value>سجل الدخول للمتابعة.</value>
   </data>
-	<data name="Plh_Username" xml:space="preserve">
+  <data name="Plh_Username" xml:space="preserve">
     <value>اسم المستخدم</value>
   </data>
-	<data name="Plh_Password" xml:space="preserve">
+  <data name="Plh_Password" xml:space="preserve">
     <value>كلمة المرور</value>
   </data>
-	<data name="Lbl_KeepMeSignedIn" xml:space="preserve">
+  <data name="Lbl_KeepMeSignedIn" xml:space="preserve">
     <value>ابقني مسجلاً</value>
   </data>
-	<data name="Btn_ConnectFacebook" xml:space="preserve">
+  <data name="Btn_ConnectFacebook" xml:space="preserve">
     <value>اتصل باستخدام فيسبوك</value>
   </data>
-	<data name="Msg_NoAccount" xml:space="preserve">
+  <data name="Msg_NoAccount" xml:space="preserve">
     <value>ليس لديك حساب؟</value>
   </data>
-	<data name="Btn_CreateAccount" xml:space="preserve">
+  <data name="Btn_CreateAccount" xml:space="preserve">
     <value>إنشاء حساب</value>
+  </data>
+  <data name="Lbl_RateSetting" xml:space="preserve">
+    <value>إعدادات معامل التسعير</value>
   </data>
 </root>

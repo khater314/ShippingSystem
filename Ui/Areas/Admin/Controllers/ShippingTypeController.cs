@@ -9,7 +9,7 @@ namespace Ui.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [ServiceFilter(typeof(TransactionExceptionFilter))]
-    public class ShippingTypesController(IShippingTypeService shippingTypeService) : Controller
+    public class ShippingTypeController(IShippingTypeService shippingTypeService) : Controller
     {
         readonly IShippingTypeService _shippingTypeService = shippingTypeService;
 

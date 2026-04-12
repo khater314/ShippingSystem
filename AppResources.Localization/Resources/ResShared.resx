@@ -180,7 +180,7 @@
   <data name="Page_Subtitle_Carrier" xml:space="preserve">
     <value>Manage shipping carriers and their information</value>
   </data>
-	<data name="Page_Title_Register" xml:space="preserve">
+  <data name="Page_Title_Register" xml:space="preserve">
     <value>New here?</value>
   </data>
   <data name="Form_Title_Carrier" xml:space="preserve">
@@ -255,16 +255,16 @@
   <data name="Page_Subtitle_Setting" xml:space="preserve">
     <value>Configure system-wide rates and parameters</value>
   </data>
-  <data name="Form_Title_Setting" xml:space="preserve">
+  <data name="Form_Title_RateSetting" xml:space="preserve">
     <value>Settings Details</value>
   </data>
-  <data name="Form_Description_Setting" xml:space="preserve">
+  <data name="Form_Description_RateSetting" xml:space="preserve">
     <value>Update system settings below</value>
   </data>
-  <data name="List_Title_Setting" xml:space="preserve">
+  <data name="List_Title_RateSetting" xml:space="preserve">
     <value>Settings List</value>
   </data>
-  <data name="List_Description_Setting" xml:space="preserve">
+  <data name="List_Description_RateSetting" xml:space="preserve">
     <value>View and manage system settings</value>
   </data>
   <data name="Page_Title_ShippingType" xml:space="preserve">
@@ -789,7 +789,7 @@
   <data name="Lbl_KiloMeterRate" xml:space="preserve">
     <value>Kilometer Rate</value>
   </data>
-  <data name="Lbl_KilooGramRate" xml:space="preserve">
+  <data name="Lbl_KiloGramRate" xml:space="preserve">
     <value>Kilogram Rate</value>
   </data>
   <data name="Lbl_ShippingFactor" xml:space="preserve">
@@ -948,7 +948,7 @@
   <data name="Lbl_HandCrafted" xml:space="preserve">
     <value>Hand-crafted &amp; made with &lt;i class='mdi mdi-heart text-danger'&gt;&lt;/i&gt;</value>
   </data>
-	<data name="Lbl_AgreeToTerms" xml:space="preserve">
+  <data name="Lbl_AgreeToTerms" xml:space="preserve">
     <value>I agree to all Terms &amp; Conditions</value>
   </data>
   <data name="Plh_SearchProjects" xml:space="preserve">
@@ -1005,7 +1005,7 @@
   <data name="Plh_KiloMeterRate" xml:space="preserve">
     <value>Enter rate per kilometer</value>
   </data>
-  <data name="Plh_KilooGramRate" xml:space="preserve">
+  <data name="Plh_KiloGramRate" xml:space="preserve">
     <value>Enter rate per kilogram</value>
   </data>
   <data name="Plh_ShippingTypeAname" xml:space="preserve">
@@ -1122,8 +1122,7 @@
   <data name="Plh_SubscriptionDate" xml:space="preserve">
     <value>Select subscription date</value>
   </data>
-	<!-- ===== Placeholders - Confirm Password ===== -->
-	<data name="Plh_ConfirmPassword" xml:space="preserve">
+  <data name="Plh_ConfirmPassword" xml:space="preserve">
     <value>Confirm your password</value>
   </data>
   <data name="Txt_FreeSupport" xml:space="preserve">
@@ -1723,10 +1722,6 @@
   <data name="Tb_ShippingType" xml:space="preserve">
     <value>Shipping Type</value>
   </data>
-	  <!-- =========================================================== -->
-  <!-- =====================  SECTION: TABLES  =================== -->
-  <!-- =========================================================== -->
-  
   <data name="Tb_Carriers" xml:space="preserve">
     <value>Carriers</value>
   </data>
@@ -1742,8 +1737,8 @@
   <data name="Tb_PaymentMethods" xml:space="preserve">
     <value>Payment Methods</value>
   </data>
-  <data name="Tb_Settings" xml:space="preserve">
-    <value>Settings</value>
+  <data name="Tb_RateSettings" xml:space="preserve">
+    <value>Rate Settings</value>
   </data>
   <data name="Tb_Shipments" xml:space="preserve">
     <value>Shipments</value>
@@ -1790,13 +1785,12 @@
   <data name="Val_Language_En" xml:space="preserve">
     <value>Please Enter This Field In English Letter Only</value>
   </data>
-	<data name="Val_Compare" xml:space="preserve">
+  <data name="Val_Compare" xml:space="preserve">
     <value>The {0} and {1} do not match.</value>
   </data>
-	<data name="Val_InvalidCredentials" xml:space="preserve">
+  <data name="Val_InvalidCredentials" xml:space="preserve">
     <value>Invalid email or password. Please try again.</value>
   </data>
-
   <data name="Lang_Arabic" xml:space="preserve">
     <value>Arabic</value>
   </data>
@@ -1830,7 +1824,7 @@
   <data name="Field_KiloMeterRate" xml:space="preserve">
     <value>Kilometer Rate</value>
   </data>
-  <data name="Field_KilooGramRate" xml:space="preserve">
+  <data name="Field_KiloGramRate" xml:space="preserve">
     <value>Kilogram Rate</value>
   </data>
   <data name="Field_ShippingTypeAname" xml:space="preserve">
@@ -1944,14 +1938,13 @@
   <data name="Field_SubscriptionDate" xml:space="preserve">
     <value>Subscription Date</value>
   </data>
-	<!-- ===== Fields - Email & Password ===== -->
-	<data name="Field_Email" xml:space="preserve">
+  <data name="Field_Email" xml:space="preserve">
     <value>Email</value>
   </data>
-	<data name="Field_Password" xml:space="preserve">
+  <data name="Field_Password" xml:space="preserve">
     <value>Password</value>
   </data>
-	<data name="Field_ConfirmPassword" xml:space="preserve">
+  <data name="Field_ConfirmPassword" xml:space="preserve">
     <value>Confirm Password</value>
   </data>
   <data name="Msg_Success" xml:space="preserve">
@@ -2338,25 +2331,25 @@
   <data name="Msg_Confirm_Action" xml:space="preserve">
     <value>Are you sure you want to perform this action?</value>
   </data>
-	<data name="Msg_MarkSentMessage" xml:space="preserve">
+  <data name="Msg_MarkSentMessage" xml:space="preserve">
     <value>Mark sent you a message</value>
   </data>
-	<data name="Msg_CreghSentMessage" xml:space="preserve">
+  <data name="Msg_CreghSentMessage" xml:space="preserve">
     <value>Cregh sent you a message</value>
   </data>
-	<data name="Msg_ProfilePictureUpdated" xml:space="preserve">
+  <data name="Msg_ProfilePictureUpdated" xml:space="preserve">
     <value>Profile picture updated</value>
   </data>
-	<data name="Msg_NewMessages" xml:space="preserve">
+  <data name="Msg_NewMessages" xml:space="preserve">
     <value>{0} new messages</value>
   </data>
-	<data name="Msg_SeeAllNotifications" xml:space="preserve">
+  <data name="Msg_SeeAllNotifications" xml:space="preserve">
     <value>See all notifications</value>
   </data>
-	<data name="Msg_RegisterDescription" xml:space="preserve">
+  <data name="Msg_RegisterDescription" xml:space="preserve">
     <value>Signing up is easy. It only takes a few steps</value>
   </data>
-	<data name="Msg_AlreadyHaveAccount" xml:space="preserve">
+  <data name="Msg_AlreadyHaveAccount" xml:space="preserve">
     <value>Already have an account?</value>
   </data>
   <data name="Word_Success" xml:space="preserve">
@@ -2500,32 +2493,31 @@
   <data name="Val_InvalidNumber" xml:space="preserve">
     <value>Invalid Number Format.</value>
   </data>
-	<!-- =========================================================== -->
-	<!-- ==================  SECTION: LOGIN PAGE  ================== -->
-	<!-- =========================================================== -->
-
-	<data name="Page_Title_Login" xml:space="preserve">
+  <data name="Page_Title_Login" xml:space="preserve">
     <value>Hello! let's get started</value>
   </data>
-	<data name="Msg_SignInToContinue" xml:space="preserve">
+  <data name="Msg_SignInToContinue" xml:space="preserve">
     <value>Sign in to continue.</value>
   </data>
-	<data name="Plh_Username" xml:space="preserve">
+  <data name="Plh_Username" xml:space="preserve">
     <value>Username</value>
   </data>
-	<data name="Plh_Password" xml:space="preserve">
+  <data name="Plh_Password" xml:space="preserve">
     <value>Password</value>
   </data>
-	<data name="Lbl_KeepMeSignedIn" xml:space="preserve">
+  <data name="Lbl_KeepMeSignedIn" xml:space="preserve">
     <value>Keep me signed in</value>
   </data>
-	<data name="Btn_ConnectFacebook" xml:space="preserve">
+  <data name="Btn_ConnectFacebook" xml:space="preserve">
     <value>Connect using facebook</value>
   </data>
-	<data name="Msg_NoAccount" xml:space="preserve">
+  <data name="Msg_NoAccount" xml:space="preserve">
     <value>Don't have an account?</value>
   </data>
-	<data name="Btn_CreateAccount" xml:space="preserve">
+  <data name="Btn_CreateAccount" xml:space="preserve">
     <value>Create</value>
+  </data>
+  <data name="Lbl_RateSetting" xml:space="preserve">
+    <value>Rate Setting</value>
   </data>
 </root>

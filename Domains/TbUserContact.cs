@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BL.DTOs;
+namespace Domains;
 
-public partial record TbUserSenderDTO : BaseEntityDTO
+public partial class TbUserContact : BaseEntity
 {
     public Guid UserId { get; set; }
 
-    public string SenderName { get; set; } = null!;
+    public string FullName { get; set; } = null!;
 
     public string Email { get; set; } = null!;
 
@@ -17,6 +17,7 @@ public partial record TbUserSenderDTO : BaseEntityDTO
 
     public string Address { get; set; } = null!;
 
-    public virtual TbCityDTO City { get; set; } = null!;
+    public virtual TbCity City { get; set; } = null!;
 
+    public virtual ICollection<TbShipment> TbShipments { get; set; } = new List<TbShipment>();
 }

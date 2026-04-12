@@ -6,7 +6,7 @@ using BL.DTOs;
 
 namespace BL.Contracts
 {
-    public interface IUserReceiverService : IBaseService<TbUserReceiver, TbUserReceiverDTO>
+    public interface IUserContactService : IBaseService<TbUserContact, TbUserContactDTO>
     {
     }
 }

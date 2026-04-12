@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DAL.Migrations
 {
     [DbContext(typeof(ShippingContext))]
-    [Migration("20260407162657_Adding_ShipmentStatusField_At_TbShipmentStatus")]
-    partial class Adding_ShipmentStatusField_At_TbShipmentStatus
+    [Migration("20260412125534_IntialMigration")]
+    partial class IntialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,6 +33,9 @@ namespace DAL.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
+                    b.Property<DateOnly?>("BirthDate")
+                        .HasColumnType("date");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
@@ -44,11 +47,20 @@ namespace DAL.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<string>("FirstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
 
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("MiddleName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)
@@ -308,46 +320,6 @@ namespace DAL.Migrations
                     b.ToTable("TbSetting", (string)null);
                 });
 
-            modelBuilder.Entity("Domains.TbShippingType", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier")
-                        .HasDefaultValueSql("(newid())", "DF_TbShippingTypes_Id");
-
-                    b.Property<Guid>("CreatedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime");
-
-                    b.Property<int>("CurrentState")
-                        .HasColumnType("int");
-
-                    b.Property<double>("ShippingFactor")
-                        .HasColumnType("float");
-
-                    b.Property<string>("ShippingTypeAname")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)")
-                        .HasColumnName("ShippingTypeAName");
-
-                    b.Property<string>("ShippingTypeEname")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)")
-                        .HasColumnName("ShippingTypeEName");
-
-                    b.Property<Guid?>("UpdatedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("TbShippingTypes");
-                });
-
             modelBuilder.Entity("Domains.TbShipment", b =>
                 {
                     b.Property<Guid>("Id")
@@ -394,8 +366,8 @@ namespace DAL.Migrations
                     b.Property<Guid>("ShippingTypeId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<double?>("TrackingNumber")
-                        .HasColumnType("float");
+                    b.Property<string>("TrackingNumber")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid?>("UpdatedBy")
                         .HasColumnType("uniqueidentifier");
@@ -415,8 +387,6 @@ namespace DAL.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("PaymentMethodId");
-
-                    b.HasIndex("ReceiverId");
 
                     b.HasIndex("SenderId");
 
@@ -468,6 +438,46 @@ namespace DAL.Migrations
                     b.ToTable("TbShipmentStatus", (string)null);
                 });
 
+            modelBuilder.Entity("Domains.TbShippingType", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier")
+                        .HasDefaultValueSql("(newid())", "DF_TbShippingTypes_Id");
+
+                    b.Property<Guid>("CreatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime");
+
+                    b.Property<int>("CurrentState")
+                        .HasColumnType("int");
+
+                    b.Property<double>("ShippingFactor")
+                        .HasColumnType("float");
+
+                    b.Property<string>("ShippingTypeAname")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)")
+                        .HasColumnName("ShippingTypeAName");
+
+                    b.Property<string>("ShippingTypeEname")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)")
+                        .HasColumnName("ShippingTypeEName");
+
+                    b.Property<Guid?>("UpdatedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TbShippingTypes");
+                });
+
             modelBuilder.Entity("Domains.TbSubscriptionPackage", b =>
                 {
                     b.Property<Guid>("Id")
@@ -509,12 +519,12 @@ namespace DAL.Migrations
                     b.ToTable("TbSubscriptionPackages");
                 });
 
-            modelBuilder.Entity("Domains.TbUserReceiver", b =>
+            modelBuilder.Entity("Domains.TbUserContact", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
-                        .HasDefaultValueSql("(newid())", "DF_TbUserReceivers_Id");
+                        .HasDefaultValueSql("(newid())", "DF_TbUserContacts_Id");
 
                     b.Property<string>("Address")
                         .IsRequired()
@@ -538,12 +548,12 @@ namespace DAL.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.Property<string>("Phone")
+                    b.Property<string>("FullName")
                         .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.Property<string>("ReceiverName")
+                    b.Property<string>("Phone")
                         .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
@@ -561,62 +571,7 @@ namespace DAL.Migrations
 
                     b.HasIndex("CityId");
 
-                    b.ToTable("TbUserReceivers");
-                });
-
-            modelBuilder.Entity("Domains.TbUserSender", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier")
-                        .HasDefaultValueSql("(newid())", "DF_TbUserSenders_Id");
-
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<Guid>("CityId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("CreatedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime");
-
-                    b.Property<int>("CurrentState")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<string>("Phone")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<string>("SenderName")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<Guid?>("UpdatedBy")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime");
-
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CityId");
-
-                    b.ToTable("TbUserSenders");
+                    b.ToTable("TbUserContacts");
                 });
 
             modelBuilder.Entity("Domains.TbUserSubscription", b =>
@@ -836,17 +791,11 @@ namespace DAL.Migrations
                         .HasForeignKey("PaymentMethodId")
                         .HasConstraintName("FK_TbShipments_TbPaymentMethods");
 
-                    b.HasOne("Domains.TbUserReceiver", "Receiver")
-                        .WithMany("TbShipments")
-                        .HasForeignKey("ReceiverId")
-                        .IsRequired()
-                        .HasConstraintName("FK_TbShipments_TbUserReceivers");
-
-                    b.HasOne("Domains.TbUserSender", "Sender")
+                    b.HasOne("Domains.TbUserContact", "UserContact")
                         .WithMany("TbShipments")
                         .HasForeignKey("SenderId")
                         .IsRequired()
-                        .HasConstraintName("FK_TbShipments_TbUserSenders");
+                        .HasConstraintName("FK_TbShipments_TbUserContacts");
 
                     b.HasOne("Domains.TbShippingType", "ShippingType")
                         .WithMany("TbShipments")
@@ -856,11 +805,9 @@ namespace DAL.Migrations
 
                     b.Navigation("PaymentMethod");
 
-                    b.Navigation("Receiver");
-
-                    b.Navigation("Sender");
-
                     b.Navigation("ShippingType");
+
+                    b.Navigation("UserContact");
                 });
 
             modelBuilder.Entity("Domains.TbShipmentStatus", b =>
@@ -881,24 +828,13 @@ namespace DAL.Migrations
                     b.Navigation("Shipment");
                 });
 
-            modelBuilder.Entity("Domains.TbUserReceiver", b =>
+            modelBuilder.Entity("Domains.TbUserContact", b =>
                 {
                     b.HasOne("Domains.TbCity", "City")
-                        .WithMany("TbUserReceivers")
+                        .WithMany("TbUserContacts")
                         .HasForeignKey("CityId")
                         .IsRequired()
-                        .HasConstraintName("FK_TbUserReceivers_TbCities");
-
-                    b.Navigation("City");
-                });
-
-            modelBuilder.Entity("Domains.TbUserSender", b =>
-                {
-                    b.HasOne("Domains.TbCity", "City")
-                        .WithMany("TbUserSenders")
-                        .HasForeignKey("CityId")
-                        .IsRequired()
-                        .HasConstraintName("FK_TbUserSenders_TbCities");
+                        .HasConstraintName("FK_TbUserContacts_TbCities");
 
                     b.Navigation("City");
                 });
@@ -972,9 +908,7 @@ namespace DAL.Migrations
 
             modelBuilder.Entity("Domains.TbCity", b =>
                 {
-                    b.Navigation("TbUserReceivers");
-
-                    b.Navigation("TbUserSenders");
+                    b.Navigation("TbUserContacts");
                 });
 
             modelBuilder.Entity("Domains.TbCountry", b =>
@@ -987,14 +921,14 @@ namespace DAL.Migrations
                     b.Navigation("TbShipments");
                 });
 
-            modelBuilder.Entity("Domains.TbShippingType", b =>
-                {
-                    b.Navigation("TbShipments");
-                });
-
             modelBuilder.Entity("Domains.TbShipment", b =>
                 {
                     b.Navigation("TbShipmentStatuses");
+                });
+
+            modelBuilder.Entity("Domains.TbShippingType", b =>
+                {
+                    b.Navigation("TbShipments");
                 });
 
             modelBuilder.Entity("Domains.TbSubscriptionPackage", b =>
@@ -1002,12 +936,7 @@ namespace DAL.Migrations
                     b.Navigation("TbUserSubscriptions");
                 });
 
-            modelBuilder.Entity("Domains.TbUserReceiver", b =>
-                {
-                    b.Navigation("TbShipments");
-                });
-
-            modelBuilder.Entity("Domains.TbUserSender", b =>
+            modelBuilder.Entity("Domains.TbUserContact", b =>
                 {
                     b.Navigation("TbShipments");
                 });

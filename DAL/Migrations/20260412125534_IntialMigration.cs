@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class IntialMigrationCodeFirst : Migration
+    public partial class IntialMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -30,6 +30,10 @@ namespace DAL.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    MiddleName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    BirthDate = table.Column<DateOnly>(type: "date", nullable: true),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -324,13 +328,13 @@ namespace DAL.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "TbUserReceivers",
+                name: "TbUserContacts",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false, defaultValueSql: "(newid())")
-                        .Annotation("Relational:DefaultConstraintName", "DF_TbUserReceivers_Id"),
+                        .Annotation("Relational:DefaultConstraintName", "DF_TbUserContacts_Id"),
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    ReceiverName = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    FullName = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     Email = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     Phone = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     CityId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -343,37 +347,9 @@ namespace DAL.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_TbUserReceivers", x => x.Id);
+                    table.PrimaryKey("PK_TbUserContacts", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_TbUserReceivers_TbCities",
-                        column: x => x.CityId,
-                        principalTable: "TbCities",
-                        principalColumn: "Id");
-                });
-
-            migrationBuilder.CreateTable(
-                name: "TbUserSenders",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false, defaultValueSql: "(newid())")
-                        .Annotation("Relational:DefaultConstraintName", "DF_TbUserSenders_Id"),
-                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    SenderName = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    Phone = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    CityId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Address = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
-                    UpdatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    CurrentState = table.Column<int>(type: "int", nullable: false),
-                    CreatedDate = table.Column<DateTime>(type: "datetime", nullable: false),
-                    CreatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    UpdatedDate = table.Column<DateTime>(type: "datetime", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_TbUserSenders", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_TbUserSenders_TbCities",
+                        name: "FK_TbUserContacts_TbCities",
                         column: x => x.CityId,
                         principalTable: "TbCities",
                         principalColumn: "Id");
@@ -386,8 +362,8 @@ namespace DAL.Migrations
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false, defaultValueSql: "(newid())")
                         .Annotation("Relational:DefaultConstraintName", "DF_TbShipments_Id"),
                     ShippingDate = table.Column<DateTime>(type: "datetime", nullable: false),
-                    SenderId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     ReceiverId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    SenderId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     ShippingTypeId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Width = table.Column<double>(type: "float", nullable: false),
                     Height = table.Column<double>(type: "float", nullable: false),
@@ -397,7 +373,7 @@ namespace DAL.Migrations
                     ShippingRate = table.Column<decimal>(type: "decimal(8,4)", nullable: false),
                     PaymentMethodId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     UserSubscriptionId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    TrackingNumber = table.Column<double>(type: "float", nullable: true),
+                    TrackingNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ReferenceId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     UpdatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     CurrentState = table.Column<int>(type: "int", nullable: false),
@@ -419,14 +395,9 @@ namespace DAL.Migrations
                         principalTable: "TbShippingTypes",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_TbShipments_TbUserReceivers",
-                        column: x => x.ReceiverId,
-                        principalTable: "TbUserReceivers",
-                        principalColumn: "Id");
-                    table.ForeignKey(
-                        name: "FK_TbShipments_TbUserSenders",
+                        name: "FK_TbShipments_TbUserContacts",
                         column: x => x.SenderId,
-                        principalTable: "TbUserSenders",
+                        principalTable: "TbUserContacts",
                         principalColumn: "Id");
                 });
 
@@ -439,6 +410,7 @@ namespace DAL.Migrations
                     ShipmentId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     Notes = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CarrierId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Status = table.Column<int>(type: "int", nullable: false),
                     UpdatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     CurrentState = table.Column<int>(type: "int", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime", nullable: false),
@@ -510,11 +482,6 @@ namespace DAL.Migrations
                 column: "PaymentMethodId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_TbShipments_ReceiverId",
-                table: "TbShipments",
-                column: "ReceiverId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_TbShipments_SenderId",
                 table: "TbShipments",
                 column: "SenderId");
@@ -535,13 +502,8 @@ namespace DAL.Migrations
                 column: "ShipmentId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_TbUserReceivers_CityId",
-                table: "TbUserReceivers",
-                column: "CityId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_TbUserSenders_CityId",
-                table: "TbUserSenders",
+                name: "IX_TbUserContacts_CityId",
+                table: "TbUserContacts",
                 column: "CityId");
 
             migrationBuilder.CreateIndex(
@@ -599,10 +561,7 @@ namespace DAL.Migrations
                 name: "TbShippingTypes");
 
             migrationBuilder.DropTable(
-                name: "TbUserReceivers");
-
-            migrationBuilder.DropTable(
-                name: "TbUserSenders");
+                name: "TbUserContacts");
 
             migrationBuilder.DropTable(
                 name: "TbCities");

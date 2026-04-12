@@ -7,9 +7,9 @@ public partial class TbShipment : BaseEntity
 {
     public DateTime ShippingDate { get; set; }
 
-    public Guid SenderId { get; set; }
-
     public Guid ReceiverId { get; set; }
+
+    public Guid SenderId { get; set; }
 
     public Guid ShippingTypeId { get; set; }
 
@@ -35,9 +35,7 @@ public partial class TbShipment : BaseEntity
 
     public virtual TbPaymentMethod? PaymentMethod { get; set; }
 
-    public virtual TbUserReceiver Receiver { get; set; } = null!;
-
-    public virtual TbUserSender Sender { get; set; } = null!;
+    public virtual TbUserContact UserContact { get; set; } = null!;
 
     public virtual TbShippingType ShippingType { get; set; } = null!;
 

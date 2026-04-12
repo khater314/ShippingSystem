@@ -71,8 +71,7 @@ namespace Ui
             builder.Services.AddScoped<ICountryService, CountryService>();
             builder.Services.AddScoped<ICarrierService, CarrierService>();
             builder.Services.AddScoped<ISubscriptionPackageService, SubscriptionPackageService>();
-            builder.Services.AddScoped<IUserReceiverService, UserReceiverService>();
-            builder.Services.AddScoped<IUserSenderService, UserSenderService>();
+            builder.Services.AddScoped<IUserContactService, UserContactService>();
             builder.Services.AddScoped<IUserSubscriptionService, UserSubscriptionService>();
             builder.Services.AddScoped<IPaymentMethodService, PaymentMethodService>();
             builder.Services.AddScoped<IShipmentStatusService, ShipmentStatusService>();

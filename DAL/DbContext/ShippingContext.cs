@@ -42,9 +42,7 @@ public partial class ShippingContext : IdentityDbContext<AppUser>
 
     public virtual DbSet<TbSubscriptionPackage> TbSubscriptionPackages { get; set; }
 
-    public virtual DbSet<TbUserReceiver> TbUserReceivers { get; set; }
-
-    public virtual DbSet<TbUserSender> TbUserSenders { get; set; }
+    public virtual DbSet<TbUserContact> TbUserContacts { get; set; }
 
     public virtual DbSet<TbUserSubscription> TbUserSubscriptions { get; set; }
 
@@ -178,15 +176,15 @@ public partial class ShippingContext : IdentityDbContext<AppUser>
                 .HasForeignKey(d => d.PaymentMethodId)
                 .HasConstraintName("FK_TbShipments_TbPaymentMethods");
 
-            entity.HasOne(d => d.Receiver).WithMany(p => p.TbShipments)
+            entity.HasOne(d => d.UserContact).WithMany(p => p.TbShipments)
                 .HasForeignKey(d => d.ReceiverId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_TbShipments_TbUserReceivers");
+                .HasConstraintName("FK_TbShipments_TbUserContacts");
 
-            entity.HasOne(d => d.Sender).WithMany(p => p.TbShipments)
+            entity.HasOne(d => d.UserContact).WithMany(p => p.TbShipments)
                 .HasForeignKey(d => d.SenderId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_TbShipments_TbUserSenders");
+                .HasConstraintName("FK_TbShipments_TbUserContacts");
 
             entity.HasOne(d => d.ShippingType).WithMany(p => p.TbShipments)
                 .HasForeignKey(d => d.ShippingTypeId)
@@ -220,36 +218,20 @@ public partial class ShippingContext : IdentityDbContext<AppUser>
             entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
         });
 
-        modelBuilder.Entity<TbUserReceiver>(entity =>
+        modelBuilder.Entity<TbUserContact>(entity =>
         {
-            entity.Property(e => e.Id).HasDefaultValueSql("(newid())", "DF_TbUserReceivers_Id");
+            entity.Property(e => e.Id).HasDefaultValueSql("(newid())", "DF_TbUserContacts_Id");
             entity.Property(e => e.Address).HasMaxLength(500);
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
             entity.Property(e => e.Email).HasMaxLength(200);
             entity.Property(e => e.Phone).HasMaxLength(200);
-            entity.Property(e => e.ReceiverName).HasMaxLength(200);
+            entity.Property(e => e.FullName).HasMaxLength(200);
             entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
 
-            entity.HasOne(d => d.City).WithMany(p => p.TbUserReceivers)
+            entity.HasOne(d => d.City).WithMany(p => p.TbUserContacts)
                 .HasForeignKey(d => d.CityId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_TbUserReceivers_TbCities");
-        });
-
-        modelBuilder.Entity<TbUserSender>(entity =>
-        {
-            entity.Property(e => e.Id).HasDefaultValueSql("(newid())", "DF_TbUserSenders_Id");
-            entity.Property(e => e.Address).HasMaxLength(500);
-            entity.Property(e => e.CreatedDate).HasColumnType("datetime");
-            entity.Property(e => e.Email).HasMaxLength(200);
-            entity.Property(e => e.Phone).HasMaxLength(200);
-            entity.Property(e => e.SenderName).HasMaxLength(200);
-            entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
-
-            entity.HasOne(d => d.City).WithMany(p => p.TbUserSenders)
-                .HasForeignKey(d => d.CityId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_TbUserSenders_TbCities");
+                .HasConstraintName("FK_TbUserContacts_TbCities");
         });
 
         modelBuilder.Entity<TbUserSubscription>(entity =>

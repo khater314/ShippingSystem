@@ -13,7 +13,6 @@ public partial class TbCity : BaseEntity
 
     public virtual TbCountry Country { get; set; } = null!;
 
-    public virtual ICollection<TbUserReceiver> TbUserReceivers { get; set; } = new List<TbUserReceiver>();
+    public virtual ICollection<TbUserContact> TbUserContacts { get; set; } = new List<TbUserContact>();
 
-    public virtual ICollection<TbUserSender> TbUserSenders { get; set; } = new List<TbUserSender>();
 }

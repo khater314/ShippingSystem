@@ -8,24 +8,24 @@ namespace Ui.Services
     {
         private readonly static string seedAdminEmail = "admin@gmail.com";
         private readonly static string seedUserEmail = "user@gmail.com";
-        public static async Task SeedDataAsync(ShippingContext shippingContext, RoleManager<IdentityRole> roleManager, UserManager<AppUser> userManager)
+        public static async Task SeedDataAsync(ShippingContext shippingContext, RoleManager<AppRole> roleManager, UserManager<AppUser> userManager)
         {
             await SeedUserAcync(roleManager, userManager);
         }
-        private static async Task SeedUserAcync(RoleManager<IdentityRole> roleManager, UserManager<AppUser> userManager)
+        private static async Task SeedUserAcync(RoleManager<AppRole> roleManager, UserManager<AppUser> userManager)
         {
 
             if (!await roleManager.RoleExistsAsync("Admin"))
-                await roleManager.CreateAsync(new IdentityRole("Admin"));
+                await roleManager.CreateAsync(new AppRole{ Name = "Admin" });
 
             if (!await roleManager.RoleExistsAsync("User"))
-                await roleManager.CreateAsync(new IdentityRole("User"));
+                await roleManager.CreateAsync(new AppRole{ Name = "User" });
 
             var adminUser = await userManager.FindByEmailAsync(seedAdminEmail);
 
             if(adminUser == null)
             {
-                string id = Guid.NewGuid().ToString();
+                Guid id = Guid.NewGuid();
                 adminUser = new AppUser
                 {
                     Id = id,
@@ -41,7 +41,7 @@ namespace Ui.Services
             var user = await userManager.FindByEmailAsync(seedUserEmail);
             if(user == null)
             {
-                string id = Guid.NewGuid().ToString();
+                Guid id = Guid.NewGuid();
                 user = new AppUser
                 {
                     Id = id,

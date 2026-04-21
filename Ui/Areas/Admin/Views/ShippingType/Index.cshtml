@@ -1,0 +1,69 @@
+﻿@model List<TbShippingTypeDTO>
+
+
+<div class="page-header">
+    <h3 class="page-title"> @ResShared.List_Description_ShippingType </h3>
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">@ResShared.Word_Tables</li>
+        <li class="breadcrumb-item active" aria-current="page">@ResShared.List_Title_ShippingType</li>
+    </ol>
+    </nav>
+</div>
+<div class="card">
+    <div class="card-body">
+    <h4 class="card-title">@ResShared.List_Title_ShippingType</h4>
+    <a href="~/admin/ShippingType/Edit" class="btn btn-gradient-dark btn-fw mb-3">@ResShared.Btn_Add</a>
+    <div class="row">
+        <div class="col-12">
+        <table id="order-listing" class="table">
+            <thead>
+            <tr>
+                <th>@ResShared.Th_Number</th>
+                <th>@ResShared.Field_ShippingTypeAname</th>
+                <th>@ResShared.Field_ShippingTypeEname</th>
+                <th>@ResShared.Th_ShippingFactor</th>
+                <th>@ResShared.Th_Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+                @{int counter = 1;}
+                @foreach (var shippingType in Model)
+                    {
+                        <tr>
+                            <td>@(counter++)</td>
+                            <td>@shippingType.ShippingTypeAname</td>
+                            <td>@shippingType.ShippingTypeEname</td>
+                            <td>@shippingType.ShippingFactor</td>
+                            <td>
+                                    <a class="btn btn-outline-primary py-2" asp-action="Edit"
+                                                asp-route-id="@shippingType.Id" asp-controller="ShippingType">
+                                            @ResShared.Btn_Edit
+                                    </a>
+                                    <button type="button" class="btn btn-outline-danger py-2 js-btn-delete" 
+                                            data-url="@Url.Action("Delete", "ShippingType", new { area = "Admin" })"
+                                            data-id="@shippingType.Id" name="@shippingType.Id">
+                                            @ResShared.Btn_Delete
+                                    </button>
+                            </td>
+                        </tr>
+                    }
+            </tbody>
+        </table>
+        </div>
+    </div>
+    </div>
+</div>
+@section PluginStyles
+{
+    <link rel="stylesheet" href="~/admin/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+}
+@section PluginScripts
+{
+    <script src="~/admin/vendors/datatables.net/jquery.dataTables.js"></script>
+    <script src="~/admin/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+}
+@section CustomScripts
+{
+    <script src="~/admin/js/data-table.js"></script>
+}

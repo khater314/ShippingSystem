@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace DAL.DbContext;
 
-public partial class ShippingContext : IdentityDbContext<AppUser>
+public partial class ShippingContext : IdentityDbContext<AppUser, AppRole, Guid>
 {
     public ShippingContext()
     {
@@ -50,6 +50,9 @@ public partial class ShippingContext : IdentityDbContext<AppUser>
 
     public virtual DbSet<VwCity> VwCities { get; set; }
 
+    public virtual DbSet<VwUserContact> VwUserContacts { get; set; }
+
+    public virtual DbSet<VwUserSubscription> VwUserSubscriptions { get; set; }
 
 
 
@@ -188,8 +191,13 @@ public partial class ShippingContext : IdentityDbContext<AppUser>
 
             entity.HasOne(d => d.ShippingType).WithMany(p => p.TbShipments)
                 .HasForeignKey(d => d.ShippingTypeId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+                .OnDelete(DeleteBehavior.NoAction)
                 .HasConstraintName("FK_TbShipments_TbShippingTypes");
+
+            entity.HasOne<AppUser>().WithMany()
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK_TbShipments_AspNetUsers");
         });
 
         modelBuilder.Entity<TbShipmentStatus>(entity =>
@@ -232,6 +240,11 @@ public partial class ShippingContext : IdentityDbContext<AppUser>
                 .HasForeignKey(d => d.CityId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_TbUserContacts_TbCities");
+
+            entity.HasOne<AppUser>().WithMany()
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK_TbUserContacts_AspNetUsers");
         });
 
         modelBuilder.Entity<TbUserSubscription>(entity =>
@@ -245,6 +258,11 @@ public partial class ShippingContext : IdentityDbContext<AppUser>
                 .HasForeignKey(d => d.PackageId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_TbUserSubscriptions_TbSubscriptionPackages");
+
+            entity.HasOne<AppUser>().WithMany()
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK_TbUserSubscriptions_AspNetUsers");
         });
 
         modelBuilder.Entity<TbLog>(entity =>
@@ -258,6 +276,18 @@ public partial class ShippingContext : IdentityDbContext<AppUser>
         {
             entity.HasNoKey();
             entity.ToView("VwCities");
+        });
+
+        modelBuilder.Entity<VwUserContact>(entity =>
+        {
+            entity.HasNoKey();
+            entity.ToView("VwUserContacts");
+        });
+
+        modelBuilder.Entity<VwUserSubscription>(entity =>
+        {
+            entity.HasNoKey();
+            entity.ToView("VwUserSubscriptions");
         });
 
         OnModelCreatingPartial(modelBuilder);

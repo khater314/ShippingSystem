@@ -6,7 +6,9 @@ using BL.DTOs;
 
 namespace BL.Contracts
 {
-    public interface IUserSubscriptionService : IBaseService<TbUserSubscription, TbUserSubscriptionDTO>
+    public interface IUserSubscriptionService 
+        : IBaseService<TbUserSubscription, TbUserSubscriptionDTO>
     {
+        Task<IEnumerable<TbUserSubscriptionDTO>> GetAllViewDataAsync(CancellationToken ct = default);
     }
 }

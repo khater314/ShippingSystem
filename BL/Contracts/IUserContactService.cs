@@ -8,5 +8,6 @@ namespace BL.Contracts
 {
     public interface IUserContactService : IBaseService<TbUserContact, TbUserContactDTO>
     {
+        Task<IEnumerable<TbUserContactDTO>> GetAllViewDataAsync(CancellationToken ct = default);
     }
 }

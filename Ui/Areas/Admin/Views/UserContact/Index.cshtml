@@ -1,55 +1,55 @@
-﻿@model List<TbShippingTypeDTO>
+﻿@model List<TbUserContactDTO>
 
 
 <div class="page-header">
-    <h3 class="page-title"> @ResShared.List_Description_ShippingType </h3>
+    <h3 class="page-title"> @ResShared.List_Description_UserContact</h3>
     <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item">@ResShared.Word_Tables</li>
-        <li class="breadcrumb-item active" aria-current="page">@ResShared.List_Title_ShippingType</li>
+        <li class="breadcrumb-item active" aria-current="page">@ResShared.List_Title_UserContact</li>
     </ol>
     </nav>
 </div>
 <div class="card">
     <div class="card-body">
-    <h4 class="card-title">@ResShared.List_Title_ShippingType</h4>
-    <a href="~/admin/ShippingTypes/Edit" class="btn btn-gradient-dark btn-fw mb-3">@ResShared.Btn_Add</a>
+        <h4 class="card-title">@ResShared.List_Title_UserContact</h4>
+    <a href="~/admin/UserContact/Edit" class="btn btn-gradient-dark btn-fw mb-3">@ResShared.Btn_Add</a>
     <div class="row">
         <div class="col-12">
         <table id="order-listing" class="table">
             <thead>
             <tr>
                 <th>@ResShared.Th_Number</th>
-                <th>@ResShared.Th_Name</th>
-                <th>@ResShared.Th_ShippingFactor</th>
+                <th>@ResShared.Lbl_FullName</th>
+                <th>@ResShared.Lbl_Email</th>
+                <th>@ResShared.Lbl_Phone</th>
+                <th>@ResShared.Field_ContactType</th>
+                <th>@ResShared.Lbl_City</th>
+                <th>@ResShared.Lbl_Address</th>
+
                 <th>@ResShared.Th_Actions</th>
             </tr>
             </thead>
             <tbody>
                 @{int counter = 1;}
-                @foreach (var shippingType in Model)
+                @foreach (var contact in Model)
                     {
                         <tr>
                             <td>@(counter++)</td>
-                            <td>
-                                @if (CultureInfo.CurrentCulture.Name.ToLower() == "ar")
-                                    {
-                                        @shippingType.ShippingTypeAname
-                                    }
-                                    else 
-                                    {
-                                        @shippingType.ShippingTypeEname
-                                    }
-                                </td>
-                                    <td>@shippingType.ShippingFactor</td>
+                            <td>@contact.FullName</td>
+                            <td>@contact.Email</td>
+                            <td>@contact.Phone</td>
+                            <td>@contact.ContactType.ToString().Replace('_', ' ')</td>
+                            <td>@(CultureInfo.CurrentCulture.Name.StartsWith("ar") ? contact.CityAname : contact.CityEname)</td>
+                            <td>@contact.Address</td>
                             <td>
                                     <a class="btn btn-outline-primary py-2" asp-action="Edit"
-                                                asp-route-id="@shippingType.Id" asp-controller="ShippingTypes">
+                                           asp-route-id="@contact.Id" asp-controller="UserContact">
                                             @ResShared.Btn_Edit
                                     </a>
                                     <button type="button" class="btn btn-outline-danger py-2 js-btn-delete" 
-                                            data-url="@Url.Action("Delete", "ShippingTypes", new { area = "Admin" })"
-                                            data-id="@shippingType.Id" name="@shippingType.Id">
+                                            data-url="@Url.Action("Delete", "UserContact", new { area = "Admin" })"
+                                            data-id="@contact.Id" name="@contact.Id">
                                             @ResShared.Btn_Delete
                                     </button>
                             </td>

@@ -12,8 +12,6 @@ namespace BL.Mapping
         public MappingProfile() 
         { 
             CreateMap<TbCountry, TbCountryDTO>().ReverseMap();
-            CreateMap<TbCity, TbCityDTO>().ReverseMap();
-            CreateMap<VwCity, TbCityDTO>().ReverseMap();
             CreateMap<TbCarrier, TbCarrierDTO>().ReverseMap();
             CreateMap<TbPaymentMethod, TbPaymentMethodDTO>().ReverseMap();
             CreateMap<TbSubscriptionPackage, TbSubscriptionPackageDTO>().ReverseMap();
@@ -22,8 +20,15 @@ namespace BL.Mapping
             CreateMap<TbRateSetting, TbRateSettingDTO>().ReverseMap();
             CreateMap<TbLog, TbLogDTO>().ReverseMap();
             CreateMap<TbShippingType, TbShippingTypeDTO>().ReverseMap();
+
+            CreateMap<TbCity, TbCityDTO>().ReverseMap();
+            CreateMap<VwCity, TbCityDTO>().ReverseMap();
+
             CreateMap<TbUserContact, TbUserContactDTO>().ReverseMap();
+            CreateMap<VwUserContact, TbUserContactDTO>().ReverseMap();
+
             CreateMap<TbUserSubscription, TbUserSubscriptionDTO>().ReverseMap();
+            CreateMap<VwUserSubscription, TbUserSubscriptionDTO>().ReverseMap();
         }
 
     }

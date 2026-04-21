@@ -1908,11 +1908,17 @@
   <data name="Field_Phone_Receiver" xml:space="preserve">
     <value>Receiver Phone</value>
   </data>
+  <data name="Field_Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
   <data name="Field_CityId_Receiver" xml:space="preserve">
     <value>Receiver City</value>
   </data>
   <data name="Field_Address_Receiver" xml:space="preserve">
     <value>Receiver Address</value>
+  </data>
+  <data name="Field_Address" xml:space="preserve">
+    <value>Address</value>
   </data>
   <data name="Field_SenderName" xml:space="preserve">
     <value>Sender Name</value>
@@ -2519,5 +2525,74 @@
   </data>
   <data name="Lbl_RateSetting" xml:space="preserve">
     <value>Rate Setting</value>
+  </data>
+  <data name="Tb_UserContacts" xml:space="preserve">
+    <value>User Contacts</value>
+  </data>
+  <data name="Field_FullName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="Field_ContactType" xml:space="preserve">
+    <value>Contact Type</value>
+  </data>
+  <data name="Plh_FullName" xml:space="preserve">
+    <value>Enter full name</value>
+  </data>
+  <data name="Plh_ContactType" xml:space="preserve">
+    <value>Select contact type</value>
+  </data>
+  <data name="Page_Title_UserContact" xml:space="preserve">
+    <value>User Contacts Management</value>
+  </data>
+  <data name="Page_Subtitle_UserContact" xml:space="preserve">
+    <value>Manage user contact information</value>
+  </data>
+  <data name="Form_Title_UserContact" xml:space="preserve">
+    <value>User Contact Details</value>
+  </data>
+  <data name="Form_Description_UserContact" xml:space="preserve">
+    <value>Enter user contact information below</value>
+  </data>
+  <data name="List_Title_UserContact" xml:space="preserve">
+    <value>User Contacts List</value>
+  </data>
+  <data name="List_Description_UserContact" xml:space="preserve">
+    <value>View and manage all user contacts</value>
+  </data>
+  <data name="Enum_ContactType_SenderAndReceiver" xml:space="preserve">
+    <value>Sender and Receiver</value>
+  </data>
+  <data name="Enum_ContactType_SenderOnly" xml:space="preserve">
+    <value>Sender Only</value>
+  </data>
+  <data name="Enum_ContactType_ReceiverOnly" xml:space="preserve">
+    <value>Receiver Only</value>
+  </data>
+  <data name="Enum_ShipmentStatus_Pending" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="Enum_ShipmentStatus_InTransit" xml:space="preserve">
+    <value>In Transit</value>
+  </data>
+  <data name="Enum_ShipmentStatus_Delivered" xml:space="preserve">
+    <value>Delivered</value>
+  </data>
+  <data name="Enum_ShipmentStatus_Cancelled" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="Enum_ShipmentStatus_Returned" xml:space="preserve">
+    <value>Returned</value>
+  </data>
+  <data name="Plh_Phone" xml:space="preserve">
+    <value>Enter Your Phone Number</value>
+  </data>
+  <data name="Plh_Email" xml:space="preserve">
+    <value>Enter Your Email</value>
+  </data>
+  <data name="Plh_Address" xml:space="preserve">
+    <value>Enter Your Address</value>
+  </data>
+  <data name="Field_CityId" xml:space="preserve">
+    <value>City</value>
   </data>
 </root>

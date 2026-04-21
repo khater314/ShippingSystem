@@ -32,19 +32,19 @@ namespace BL.Services
         {
             var dbEntity = _mapper.Map<DTO, T>(entity);
             dbEntity.CurrentState = 1;
-            dbEntity.CreatedBy = _userService.GetLoggedInUserId();
+            dbEntity.CreatedBy = await _userService.GetLoggedInUserId();
             await _repo.AddAsync(dbEntity, ct);
         }
         public async Task UpdateAsync(DTO entity, CancellationToken ct = default)
         {
             var dbEntity = _mapper.Map<DTO, T>(entity);
-            dbEntity.UpdatedBy = _userService.GetLoggedInUserId();
+            dbEntity.UpdatedBy = await _userService.GetLoggedInUserId();
             await _repo.UpdateAsync(dbEntity, ct);
         }
         public async Task ChangeStatusAsync(DTO entity, int status = 1, CancellationToken ct = default)
         {
             var dbEntity = _mapper.Map<DTO, T>(entity);
-            dbEntity.UpdatedBy = _userService.GetLoggedInUserId();
+            dbEntity.UpdatedBy = await _userService.GetLoggedInUserId();
             await _repo.ChangeStatusAsync(dbEntity.Id, status, ct);
         }
 

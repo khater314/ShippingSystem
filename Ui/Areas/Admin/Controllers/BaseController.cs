@@ -13,7 +13,7 @@ namespace Ui.Areas.Admin.Controllers
     {
         readonly IBaseService<T, TDto> _baseService = baseService;
 
-        // GET: ShippingTypesController
+        // GET:
         public virtual async Task<ActionResult> Index(CancellationToken ct)
         {
             var data = await _baseService.GetAllAsync(ct);

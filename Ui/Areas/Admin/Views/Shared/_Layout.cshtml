@@ -437,6 +437,14 @@
             </div>
             <!-- partial -->
             <!-- partial:partials/_sidebar.html -->
+            @{
+                string IsActive(string controllerName)
+                {
+                    var currentController = ViewContext.RouteData.Values["Controller"]?.ToString();
+                    return string.Equals(currentController, controllerName, StringComparison.OrdinalIgnoreCase) ? "active" : "";
+                }
+            }
+
             <nav class="sidebar sidebar-offcanvas" id="sidebar">
                 <ul class="nav">
                     <li class="nav-item nav-profile">
@@ -444,7 +452,6 @@
                             <div class="nav-profile-image">
                                 <img src="~/admin/images/faces/face1.jpg" alt="profile">
                                 <span class="login-status online"></span>
-                                <!--change to offline or busy as needed-->
                             </div>
                             <div class="nav-profile-text d-flex flex-column">
                                 <span class="font-weight-bold mb-2">@ResShared.Lbl_ProfileName</span>
@@ -453,85 +460,77 @@
                             <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/admin/home/index">
+
+                    <li class="nav-item @IsActive("Home")">
+                        <a class="nav-link" href="~/Admin/Home/Index">
                             <span class="menu-title">@ResShared.Menu_Dashboard</span>
-                            <i class="mdi mdi-home menu-icon"></i>
+                            <i class="mdi mdi-view-dashboard menu-icon"></i>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/Admin/ShippingTypes/Index">
+
+                    <li class="nav-item @IsActive("ShippingType")">
+                        <a class="nav-link" href="~/Admin/ShippingType/Index">
                             <span class="menu-title">@ResShared.Tb_ShippingTypes</span>
-                            <i class="mdi mdi-home menu-icon"></i>
+                            <i class="mdi mdi-truck-delivery menu-icon"></i>
                         </a>
                     </li>
-                    <li class="nav-item">
+
+                    <li class="nav-item @IsActive("Country")">
                         <a class="nav-link" href="~/Admin/Country/Index">
                             <span class="menu-title">@ResShared.Tb_Countries</span>
-                            <i class="mdi mdi-home menu-icon"></i>
+                            <i class="mdi mdi-earth menu-icon"></i>
                         </a>
                     </li>
-                    <li class="nav-item">
+
+                    <li class="nav-item @IsActive("City")">
                         <a class="nav-link" href="~/Admin/City/Index">
                             <span class="menu-title">@ResShared.Tb_Cities</span>
-                            <i class="mdi mdi-home menu-icon"></i>
+                            <i class="mdi mdi-city menu-icon"></i>
                         </a>
                     </li>
-                    <li class="nav-item">
-                            <a class="nav-link" href="~/Admin/Carrier/Index">
+
+                    <li class="nav-item @IsActive("Carrier")">
+                        <a class="nav-link" href="~/Admin/Carrier/Index">
                             <span class="menu-title">@ResShared.Tb_Carriers</span>
-                            <i class="mdi mdi-home menu-icon"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link" href="~/Admin/PaymentMethod/Index">
-                            <span class="menu-title">@ResShared.Tb_PaymentMethods</span>
-                            <i class="mdi mdi-home menu-icon"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/Admin/SubscriptionPackage/Index">
-                            <span class="menu-title">@ResShared.Tb_SubscriptionPackages</span>
-                            <i class="mdi mdi-home menu-icon"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/Admin/RateSetting/Index">
-                            <span class="menu-title">@ResShared.Tb_RateSettings</span>
-                            <i class="mdi mdi-home menu-icon"></i>
+                            <i class="mdi mdi-account-group menu-icon"></i>
                         </a>
                     </li>
 
-
-                    <!-- !!! Important !!! -->
-                    <!-- Check Controller Name! -->
-                    <!-- !!! Important !!! -->
-                    
-                    @* <li class="nav-item">
+                    <li class="nav-item @IsActive("PaymentMethod")">
                         <a class="nav-link" href="~/Admin/PaymentMethod/Index">
                             <span class="menu-title">@ResShared.Tb_PaymentMethods</span>
-                            <i class="mdi mdi-home menu-icon"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/Admin/Shipments/Index">
-                            <span class="menu-title">@ResShared.Tb_Shipments</span>
-                            <i class="mdi mdi-home menu-icon"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/Admin/ShipmentStatuses/Index">
-                            <span class="menu-title">@ResShared.Tb_ShipmentStatuses</span>
-                            <i class="mdi mdi-home menu-icon"></i>
+                            <i class="mdi mdi-cash-multiple menu-icon"></i>
                         </a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/Admin/UserSubscriptions/Index">
-                            <span class="menu-title">@ResShared.Tb_UserSubscriptions</span>
-                            <i class="mdi mdi-home menu-icon"></i>
+                    <li class="nav-item @IsActive("SubscriptionPackage")">
+                        <a class="nav-link" href="~/Admin/SubscriptionPackage/Index">
+                            <span class="menu-title">@ResShared.Tb_SubscriptionPackages</span>
+                            <i class="mdi mdi-package-variant menu-icon"></i>
                         </a>
-                    </li> *@
+                    </li>
+
+                    <li class="nav-item @IsActive("RateSetting")">
+                        <a class="nav-link" href="~/Admin/RateSetting/Index">
+                            <span class="menu-title">@ResShared.Tb_RateSettings</span>
+                            <i class="mdi mdi-settings menu-icon"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item @IsActive("UserContact")">
+                        <a class="nav-link" href="~/Admin/UserContact/Index">
+                            <span class="menu-title">@ResShared.Tb_UserContacts</span>
+                            <i class="mdi mdi-contacts menu-icon"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item @IsActive("UserSubscription")">
+                        <a class="nav-link" href="~/Admin/UserSubscription/Index">
+                            <span class="menu-title">@ResShared.Tb_UserSubscriptions</span>
+                            <i class="mdi mdi-calendar-check menu-icon"></i>
+                        </a>
+                    </li>
+
                     <li class="nav-item sidebar-actions">
                         <span class="nav-link">
                             <div class="border-bottom">

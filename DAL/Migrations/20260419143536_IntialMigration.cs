@@ -15,7 +15,7 @@ namespace DAL.Migrations
                 name: "AspNetRoles",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     ConcurrencyStamp = table.Column<string>(type: "nvarchar(max)", nullable: true)
@@ -29,7 +29,7 @@ namespace DAL.Migrations
                 name: "AspNetUsers",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     FirstName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     MiddleName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     LastName = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -112,13 +112,13 @@ namespace DAL.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "TbSetting",
+                name: "TbRateSettings",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false, defaultValueSql: "(newid())")
-                        .Annotation("Relational:DefaultConstraintName", "DF_TbSetting_Id"),
+                        .Annotation("Relational:DefaultConstraintName", "DF_TbRateSettings_Id"),
                     KiloMeterRate = table.Column<double>(type: "float", nullable: true),
-                    KilooGramRate = table.Column<double>(type: "float", nullable: true),
+                    KiloGramRate = table.Column<double>(type: "float", nullable: true),
                     UpdatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     CurrentState = table.Column<int>(type: "int", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -127,7 +127,7 @@ namespace DAL.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_TbSetting", x => x.Id);
+                    table.PrimaryKey("PK_TbRateSettings", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -177,7 +177,7 @@ namespace DAL.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    RoleId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    RoleId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     ClaimType = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ClaimValue = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
@@ -198,7 +198,7 @@ namespace DAL.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     ClaimType = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ClaimValue = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
@@ -220,7 +220,7 @@ namespace DAL.Migrations
                     LoginProvider = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     ProviderKey = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     ProviderDisplayName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -237,8 +237,8 @@ namespace DAL.Migrations
                 name: "AspNetUserRoles",
                 columns: table => new
                 {
-                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    RoleId = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    RoleId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -261,7 +261,7 @@ namespace DAL.Migrations
                 name: "AspNetUserTokens",
                 columns: table => new
                 {
-                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     LoginProvider = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Value = table.Column<string>(type: "nvarchar(max)", nullable: true)
@@ -321,6 +321,12 @@ namespace DAL.Migrations
                 {
                     table.PrimaryKey("PK_TbUserSubscriptions", x => x.Id);
                     table.ForeignKey(
+                        name: "FK_TbUserSubscriptions_AspNetUsers",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
                         name: "FK_TbUserSubscriptions_TbSubscriptionPackages",
                         column: x => x.PackageId,
                         principalTable: "TbSubscriptionPackages",
@@ -339,6 +345,7 @@ namespace DAL.Migrations
                     Phone = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     CityId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Address = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
+                    ContactType = table.Column<byte>(type: "tinyint", nullable: false),
                     UpdatedBy = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     CurrentState = table.Column<int>(type: "int", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime", nullable: false),
@@ -348,6 +355,12 @@ namespace DAL.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_TbUserContacts", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_TbUserContacts_AspNetUsers",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_TbUserContacts_TbCities",
                         column: x => x.CityId,
@@ -361,6 +374,7 @@ namespace DAL.Migrations
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false, defaultValueSql: "(newid())")
                         .Annotation("Relational:DefaultConstraintName", "DF_TbShipments_Id"),
+                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     ShippingDate = table.Column<DateTime>(type: "datetime", nullable: false),
                     ReceiverId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     SenderId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -384,6 +398,12 @@ namespace DAL.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_TbShipments", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_TbShipments_AspNetUsers",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_TbShipments_TbPaymentMethods",
                         column: x => x.PaymentMethodId,
@@ -492,6 +512,11 @@ namespace DAL.Migrations
                 column: "ShippingTypeId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_TbShipments_UserId",
+                table: "TbShipments",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_TbShipmentStatus_CarrierId",
                 table: "TbShipmentStatus",
                 column: "CarrierId");
@@ -507,9 +532,19 @@ namespace DAL.Migrations
                 column: "CityId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_TbUserContacts_UserId",
+                table: "TbUserContacts",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_TbUserSubscriptions_PackageId",
                 table: "TbUserSubscriptions",
                 column: "PackageId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_TbUserSubscriptions_UserId",
+                table: "TbUserSubscriptions",
+                column: "UserId");
         }
 
         /// <inheritdoc />
@@ -531,7 +566,7 @@ namespace DAL.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "TbSetting");
+                name: "TbRateSettings");
 
             migrationBuilder.DropTable(
                 name: "TbShipmentStatus");
@@ -541,9 +576,6 @@ namespace DAL.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
-
-            migrationBuilder.DropTable(
-                name: "AspNetUsers");
 
             migrationBuilder.DropTable(
                 name: "TbCarriers");
@@ -562,6 +594,9 @@ namespace DAL.Migrations
 
             migrationBuilder.DropTable(
                 name: "TbUserContacts");
+
+            migrationBuilder.DropTable(
+                name: "AspNetUsers");
 
             migrationBuilder.DropTable(
                 name: "TbCities");

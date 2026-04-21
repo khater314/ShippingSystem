@@ -1908,11 +1908,17 @@
   <data name="Field_Phone_Receiver" xml:space="preserve">
     <value>هاتف المستلم</value>
   </data>
+  <data name="Field_Phone" xml:space="preserve">
+    <value>الهاتف</value>
+  </data>
   <data name="Field_CityId_Receiver" xml:space="preserve">
     <value>مدينة المستلم</value>
   </data>
   <data name="Field_Address_Receiver" xml:space="preserve">
     <value>عنوان المستلم</value>
+  </data>
+  <data name="Field_Address" xml:space="preserve">
+    <value>العنوان</value>
   </data>
   <data name="Field_SenderName" xml:space="preserve">
     <value>اسم المرسل</value>
@@ -2519,5 +2525,74 @@
   </data>
   <data name="Lbl_RateSetting" xml:space="preserve">
     <value>إعدادات معامل التسعير</value>
+  </data>
+  <data name="Tb_UserContacts" xml:space="preserve">
+    <value>جهات اتصال المستخدمين</value>
+  </data>
+  <data name="Field_FullName" xml:space="preserve">
+    <value>الاسم الكامل</value>
+  </data>
+  <data name="Field_ContactType" xml:space="preserve">
+    <value>نوع جهة الاتصال</value>
+  </data>
+  <data name="Plh_FullName" xml:space="preserve">
+    <value>أدخل الاسم الكامل</value>
+  </data>
+  <data name="Plh_ContactType" xml:space="preserve">
+    <value>اختر نوع جهة الاتصال</value>
+  </data>
+  <data name="Page_Title_UserContact" xml:space="preserve">
+    <value>إدارة جهات اتصال المستخدمين</value>
+  </data>
+  <data name="Page_Subtitle_UserContact" xml:space="preserve">
+    <value>إدارة معلومات جهات اتصال المستخدمين</value>
+  </data>
+  <data name="Form_Title_UserContact" xml:space="preserve">
+    <value>بيانات جهة اتصال المستخدم</value>
+  </data>
+  <data name="Form_Description_UserContact" xml:space="preserve">
+    <value>أدخل بيانات جهة اتصال المستخدم أدناه</value>
+  </data>
+  <data name="List_Title_UserContact" xml:space="preserve">
+    <value>قائمة جهات اتصال المستخدمين</value>
+  </data>
+  <data name="List_Description_UserContact" xml:space="preserve">
+    <value>عرض وإدارة جميع جهات اتصال المستخدمين</value>
+  </data>
+  <data name="Enum_ContactType_SenderAndReceiver" xml:space="preserve">
+    <value>مرسل ومستلم</value>
+  </data>
+  <data name="Enum_ContactType_SenderOnly" xml:space="preserve">
+    <value>مرسل فقط</value>
+  </data>
+  <data name="Enum_ContactType_ReceiverOnly" xml:space="preserve">
+    <value>مستلم فقط</value>
+  </data>
+  <data name="Enum_ShipmentStatus_Pending" xml:space="preserve">
+    <value>قيد الانتظار</value>
+  </data>
+  <data name="Enum_ShipmentStatus_InTransit" xml:space="preserve">
+    <value>في الطريق</value>
+  </data>
+  <data name="Enum_ShipmentStatus_Delivered" xml:space="preserve">
+    <value>تم التسليم</value>
+  </data>
+  <data name="Enum_ShipmentStatus_Cancelled" xml:space="preserve">
+    <value>ملغية</value>
+  </data>
+  <data name="Enum_ShipmentStatus_Returned" xml:space="preserve">
+    <value>مرتجع</value>
+  </data>
+  <data name="Plh_Phone" xml:space="preserve">
+    <value>أدخل رقم الهاتف</value>
+  </data>
+  <data name="Plh_Email" xml:space="preserve">
+    <value>أدخل البريد الإلكتروني</value>
+  </data>
+  <data name="Plh_Address" xml:space="preserve">
+    <value>أدخل العنوان</value>
+  </data>
+  <data name="Field_CityId" xml:space="preserve">
+    <value>المدينة</value>
   </data>
 </root>

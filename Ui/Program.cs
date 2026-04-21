@@ -62,7 +62,7 @@ namespace Ui
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
-                var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+                var roleManager = services.GetRequiredService<RoleManager<AppRole>>();
                 var userManager = services.GetRequiredService<UserManager<AppUser>>();
                 var shippingContext = services.GetRequiredService<ShippingContext>();
 

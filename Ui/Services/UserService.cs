@@ -65,7 +65,7 @@ namespace Ui.Services
             }
             return new UserReadDto
             {
-                Id = Guid.Parse( user.Id),
+                Id = user.Id,
                 Email = user.Email!
             };
         }
@@ -75,13 +75,13 @@ namespace Ui.Services
             return await _userManager.Users
                 .Select(u => new UserReadDto
                 {
-                    Id = Guid.Parse(u.Id),
+                    Id = u.Id,
                     Email = u.Email!
                 })
                 .ToListAsync();
         }
 
-        public Guid GetLoggedInUserId()
+        public async Task<Guid> GetLoggedInUserId()
         {
             var userId = _httpContextAccessor.HttpContext?.User.FindFirstValue(ClaimTypes.NameIdentifier);
 
@@ -92,6 +92,18 @@ namespace Ui.Services
             }
 
             return Guid.Parse(userId);
+        }
+
+        public async Task<IEnumerable<UserReadDto>> GetUsersBySelectedIdsAsync(List<string> ids)
+        {
+            return await _userManager.Users
+                .Where(u => ids.Contains(u.Id.ToString()))
+                .Select(u => new UserReadDto
+                {
+                    Id = u.Id,
+                    Email = u.Email!
+                })
+                .ToListAsync();
         }
     }
 }

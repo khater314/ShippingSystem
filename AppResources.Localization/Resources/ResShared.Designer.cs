@@ -1006,6 +1006,87 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Receiver Only.
+        /// </summary>
+        public static string Enum_ContactType_ReceiverOnly {
+            get {
+                return ResourceManager.GetString("Enum_ContactType_ReceiverOnly", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sender and Receiver.
+        /// </summary>
+        public static string Enum_ContactType_SenderAndReceiver {
+            get {
+                return ResourceManager.GetString("Enum_ContactType_SenderAndReceiver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sender Only.
+        /// </summary>
+        public static string Enum_ContactType_SenderOnly {
+            get {
+                return ResourceManager.GetString("Enum_ContactType_SenderOnly", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancelled.
+        /// </summary>
+        public static string Enum_ShipmentStatus_Cancelled {
+            get {
+                return ResourceManager.GetString("Enum_ShipmentStatus_Cancelled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delivered.
+        /// </summary>
+        public static string Enum_ShipmentStatus_Delivered {
+            get {
+                return ResourceManager.GetString("Enum_ShipmentStatus_Delivered", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In Transit.
+        /// </summary>
+        public static string Enum_ShipmentStatus_InTransit {
+            get {
+                return ResourceManager.GetString("Enum_ShipmentStatus_InTransit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pending.
+        /// </summary>
+        public static string Enum_ShipmentStatus_Pending {
+            get {
+                return ResourceManager.GetString("Enum_ShipmentStatus_Pending", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returned.
+        /// </summary>
+        public static string Enum_ShipmentStatus_Returned {
+            get {
+                return ResourceManager.GetString("Enum_ShipmentStatus_Returned", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Address.
+        /// </summary>
+        public static string Field_Address {
+            get {
+                return ResourceManager.GetString("Field_Address", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Receiver Address.
         /// </summary>
         public static string Field_Address_Receiver {
@@ -1060,6 +1141,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to City.
+        /// </summary>
+        public static string Field_CityId {
+            get {
+                return ResourceManager.GetString("Field_CityId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Receiver City.
         /// </summary>
         public static string Field_CityId_Receiver {
@@ -1092,6 +1182,15 @@ namespace AppResources.Localization.Resources {
         public static string Field_ConfirmPassword {
             get {
                 return ResourceManager.GetString("Field_ConfirmPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact Type.
+        /// </summary>
+        public static string Field_ContactType {
+            get {
+                return ResourceManager.GetString("Field_ContactType", resourceCulture);
             }
         }
         
@@ -1137,6 +1236,15 @@ namespace AppResources.Localization.Resources {
         public static string Field_Email_Sender {
             get {
                 return ResourceManager.GetString("Field_Email_Sender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Full Name.
+        /// </summary>
+        public static string Field_FullName {
+            get {
+                return ResourceManager.GetString("Field_FullName", resourceCulture);
             }
         }
         
@@ -1254,6 +1362,15 @@ namespace AppResources.Localization.Resources {
         public static string Field_PaymentMethodId {
             get {
                 return ResourceManager.GetString("Field_PaymentMethodId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone.
+        /// </summary>
+        public static string Field_Phone {
+            get {
+                return ResourceManager.GetString("Field_Phone", resourceCulture);
             }
         }
         
@@ -1537,6 +1654,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enter user contact information below.
+        /// </summary>
+        public static string Form_Description_UserContact {
+            get {
+                return ResourceManager.GetString("Form_Description_UserContact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Enter the receiver information below.
         /// </summary>
         public static string Form_Description_UserReceiver {
@@ -1641,6 +1767,15 @@ namespace AppResources.Localization.Resources {
         public static string Form_Title_SubscriptionPackage {
             get {
                 return ResourceManager.GetString("Form_Title_SubscriptionPackage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Contact Details.
+        /// </summary>
+        public static string Form_Title_UserContact {
+            get {
+                return ResourceManager.GetString("Form_Title_UserContact", resourceCulture);
             }
         }
         
@@ -2689,6 +2824,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to View and manage all user contacts.
+        /// </summary>
+        public static string List_Description_UserContact {
+            get {
+                return ResourceManager.GetString("List_Description_UserContact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to View and manage all receivers.
         /// </summary>
         public static string List_Description_UserReceiver {
@@ -2793,6 +2937,15 @@ namespace AppResources.Localization.Resources {
         public static string List_Title_SubscriptionPackage {
             get {
                 return ResourceManager.GetString("List_Title_SubscriptionPackage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Contacts List.
+        /// </summary>
+        public static string List_Title_UserContact {
+            get {
+                return ResourceManager.GetString("List_Title_UserContact", resourceCulture);
             }
         }
         
@@ -4561,6 +4714,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Manage user contact information.
+        /// </summary>
+        public static string Page_Subtitle_UserContact {
+            get {
+                return ResourceManager.GetString("Page_Subtitle_UserContact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Manage receiver information and addresses.
         /// </summary>
         public static string Page_Subtitle_UserReceiver {
@@ -4714,6 +4876,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to User Contacts Management.
+        /// </summary>
+        public static string Page_Title_UserContact {
+            get {
+                return ResourceManager.GetString("Page_Title_UserContact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Receivers Management.
         /// </summary>
         public static string Page_Title_UserReceiver {
@@ -4746,6 +4917,15 @@ namespace AppResources.Localization.Resources {
         public static string Page_Users {
             get {
                 return ResourceManager.GetString("Page_Users", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter Your Address.
+        /// </summary>
+        public static string Plh_Address {
+            get {
+                return ResourceManager.GetString("Plh_Address", resourceCulture);
             }
         }
         
@@ -4849,6 +5029,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Select contact type.
+        /// </summary>
+        public static string Plh_ContactType {
+            get {
+                return ResourceManager.GetString("Plh_ContactType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Enter country name in Arabic.
         /// </summary>
         public static string Plh_CountryAname {
@@ -4912,6 +5101,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enter Your Email.
+        /// </summary>
+        public static string Plh_Email {
+            get {
+                return ResourceManager.GetString("Plh_Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Enter receiver email.
         /// </summary>
         public static string Plh_Email_Receiver {
@@ -4926,6 +5124,15 @@ namespace AppResources.Localization.Resources {
         public static string Plh_Email_Sender {
             get {
                 return ResourceManager.GetString("Plh_Email_Sender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter full name.
+        /// </summary>
+        public static string Plh_FullName {
+            get {
+                return ResourceManager.GetString("Plh_FullName", resourceCulture);
             }
         }
         
@@ -5043,6 +5250,15 @@ namespace AppResources.Localization.Resources {
         public static string Plh_PaymentMethodId {
             get {
                 return ResourceManager.GetString("Plh_PaymentMethodId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter Your Phone Number.
+        /// </summary>
+        public static string Plh_Phone {
+            get {
+                return ResourceManager.GetString("Plh_Phone", resourceCulture);
             }
         }
         
@@ -6186,6 +6402,15 @@ namespace AppResources.Localization.Resources {
         public static string Tb_SubscriptionPackages {
             get {
                 return ResourceManager.GetString("Tb_SubscriptionPackages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Contacts.
+        /// </summary>
+        public static string Tb_UserContacts {
+            get {
+                return ResourceManager.GetString("Tb_UserContacts", resourceCulture);
             }
         }
         

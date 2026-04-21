@@ -1,0 +1,79 @@
+﻿@model TbUserContactDTO
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">@ResShared.Form_Title_UserContact</h4>
+            <p class="card-description">@ResShared.Form_Description_UserContact</p>
+            <form class="forms-sample" asp-controller="UserContact" asp-action="Edit" method="post">
+
+                <div class="form-group">
+                    <label for="FullName">@ResShared.Lbl_FullName</label>
+                    <input type="text" class="form-control" 
+                        placeholder="@ResShared.Plh_FullName"
+                        asp-for="FullName">
+                    <span asp-validation-for="FullName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="Email">@ResShared.Lbl_Email</label>
+                    <input type="text" class="form-control" 
+                           placeholder="@ResShared.Plh_Email" 
+                           asp-for="Email">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="Phone">@ResShared.Lbl_Phone</label>
+                    <input type="text" class="form-control"
+                            placeholder="@ResShared.Plh_Phone"
+                            asp-for="Phone">
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="Address">@ResShared.Lbl_Address</label>
+                    <input type="text" class="form-control"
+                            placeholder="@ResShared.Plh_Address"
+                            asp-for="Address">
+                        <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="Address">@ResShared.Lbl_City</label>
+                    <select class="form-control select2 mb-4" asp-for="CityId"
+                        asp-items="@(new SelectList(ViewBag.Cities, "Id", 
+                        CultureInfo.CurrentCulture.Name.ToLower().StartsWith("ar") ? "CityAname" : "CityEname"))">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Address">@ResShared.Field_ContactType</label>
+                    <select class="form-control select2 mb-4" asp-for="ContactType"
+                        asp-items="@(CultureInfo.CurrentCulture.Name.ToLower().StartsWith("ar") ? Html.GetEnumSelectList<ContactTypeAr>() : Html.GetEnumSelectList<ContactType>())">
+                    </select>
+                </div>
+
+
+                <button type="submit" class="btn btn-gradient-primary me-2">@ResShared.Btn_Submit</button>
+                <a asp-action="Index" class="btn btn-light">@ResShared.Btn_Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+@section PluginStyles
+{
+    <link rel="stylesheet" href="~/admin/vendors/select2/select2.min.css">
+    <link rel="stylesheet" href="~/admin/vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
+}
+@section PluginScripts
+{
+    <script src="~/admin/vendors/select2/select2.min.js"></script>
+    <script src="~/admin/vendors/typeahead.js/typeahead.bundle.min.js"></script>
+}
+@section CustomScripts
+{
+    <script src="~/admin/js/file-upload.js"></script>
+    <script src="~/admin/js/typeahead.js"></script>
+    <script src="~/admin/js/select2.js"></script>
+}

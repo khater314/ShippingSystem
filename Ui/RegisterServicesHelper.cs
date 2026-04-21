@@ -23,7 +23,7 @@ namespace Ui
                 options.UseSqlServer(connectionString));
             #endregion
 
-            builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
+            builder.Services.AddIdentity<AppUser, AppRole>(options =>
                 {
                     options.Password.RequireDigit = true;
                     options.Password.RequiredLength = 6;

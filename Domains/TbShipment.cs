@@ -5,6 +5,7 @@ namespace Domains;
 
 public partial class TbShipment : BaseEntity
 {
+    public Guid UserId { get; set; }
     public DateTime ShippingDate { get; set; }
 
     public Guid ReceiverId { get; set; }

@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Identity;
 using DAL.UserModel;
 using Ui.Services;
 
-
+//Test Realease at GitHub
 namespace Ui
 {
     public class Program

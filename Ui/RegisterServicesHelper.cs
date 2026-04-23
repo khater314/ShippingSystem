@@ -9,6 +9,7 @@ using AppResources.Localization;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using DAL.UserModel;
 using Microsoft.AspNetCore.Identity;
+using Serilog;
 
 namespace Ui
 {
@@ -53,7 +54,14 @@ namespace Ui
 
             builder.Services.AddAppLocalization();
 
+            #region Logger Configuration
 
+            Log.Logger = new LoggerConfiguration()
+                            .ReadFrom.Configuration(builder.Configuration)
+                            .CreateLogger();
+
+            builder.Host.UseSerilog();
+            #endregion
 
 
             #region Dependency Injection

@@ -46,6 +46,8 @@ public partial class ShippingContext : IdentityDbContext<AppUser, AppRole, Guid>
 
     public virtual DbSet<TbUserSubscription> TbUserSubscriptions { get; set; }
 
+    public virtual DbSet<TbRefreshToken> TbRefreshTokens { get; set; }
+
     public virtual DbSet<TbLog> Logs { get; set; }
 
     public virtual DbSet<VwCity> VwCities { get; set; }
@@ -263,6 +265,26 @@ public partial class ShippingContext : IdentityDbContext<AppUser, AppRole, Guid>
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.Cascade)
                 .HasConstraintName("FK_TbUserSubscriptions_AspNetUsers");
+        });
+
+        modelBuilder.Entity<TbRefreshToken>(entity =>
+        {
+            entity.ToTable("TbRefreshTokens");
+            entity.HasKey(e => e.Id);
+            entity.Property(e => e.Id).HasDefaultValueSql("(newid())", "DF_TbRefreshTokens_Id");
+
+            entity.HasOne<AppUser>().WithMany()
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK_TbRefreshTokens_AspNetUsers");
+
+            entity.Property(e => e.CurrentState)
+                .HasDefaultValue(1)
+                .IsRequired();
+
+            entity.Property(e => e.CreatedDate)
+                .HasColumnType("datetime")
+                .HasDefaultValueSql("GETUTCDATE()");
         });
 
         modelBuilder.Entity<TbLog>(entity =>

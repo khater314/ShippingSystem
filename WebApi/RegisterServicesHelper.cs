@@ -113,6 +113,7 @@ namespace WebApi
             builder.Services.AddScoped<IPaymentMethodService, PaymentMethodService>();
             builder.Services.AddScoped<IShipmentStatusService, ShipmentStatusService>();
             builder.Services.AddScoped<IRateSettingService, RateSettingService>();
+            builder.Services.AddScoped<IRefreshTokenService, RefreshTokenService>();
 
             builder.Services.AddScoped<BL.Contracts.IUserService, WebApi.Services.UserService>();
             // Mapping Add Scoped

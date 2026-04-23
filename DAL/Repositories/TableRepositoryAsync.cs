@@ -4,6 +4,7 @@ using Domains;
 using DAL.Contracts;
 using Microsoft.Extensions.Logging;
 using DAL.Exceptions;
+using System.Linq.Expressions;
 
 namespace DAL.Repositories
 {
@@ -94,6 +95,22 @@ namespace DAL.Repositories
                 await UpdateAsync(entity, ct);
                 return null!;
             }, "Failed to change record status.");
+        }
+
+        public async Task<T?> GetFirstOrDefaultAsync(Expression<Func<T, bool>> filter, CancellationToken ct = default)
+        {
+            return await ExecuteWithHandlingAsync(async () =>
+            {
+                return await _dbSet.Where(i => i.CurrentState == 1).FirstOrDefaultAsync(filter, ct);
+            }, "Error retrieving the record.");
+        }
+
+        public async Task<IEnumerable<T>> GetListAsync(Expression<Func<T, bool>> filter, CancellationToken ct = default)
+        {
+            return await ExecuteWithHandlingAsync(async () =>
+            {
+                return await _dbSet.Where(i => i.CurrentState == 1).Where(filter).ToListAsync(ct);
+            }, "Error retrieving the records.");
         }
     }
 }

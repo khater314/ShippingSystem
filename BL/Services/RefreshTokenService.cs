@@ -24,7 +24,11 @@ namespace BL.Services
                 ? throw new Exception("Refresh token not found, User Not Authorized")
                 : _mapper.Map<TbRefreshToken, TbRefreshTokenDto>(refreshToken);
         }
-
+        /// <summary>
+        /// Refresh RefreshToken by marking the old token as expired and creating a new one. This ensures that only one valid refresh token exists for a user at any time.
+        /// </summary>
+        /// <param name="tokenDto"></param>
+        /// <returns></returns>
         public async Task<bool> RefreshToken(TbRefreshTokenDto tokenDto)
         {
             var expiredTokens = await _repo.GetListAsync(x => x.UserId == tokenDto.UserId && x.CurrentState == 1);

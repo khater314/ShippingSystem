@@ -11,7 +11,7 @@ namespace WebApi.Services
     {
         private readonly UserManager<AppUser> _userManager = userManager;
         private readonly SignInManager<AppUser> _signInManager = signInManager;
-        private IHttpContextAccessor _httpContextAccessor = httpContextAccessor;
+        private readonly IHttpContextAccessor _httpContextAccessor = httpContextAccessor;
 
         public async Task<UserResultDto> RegisterAsync(UserRegisterDto registerDto)
         {
@@ -104,6 +104,20 @@ namespace WebApi.Services
                     Email = u.Email!
                 })
                 .ToListAsync();
+        }
+
+        public async Task<UserReadDto?> GetUserByEmailAsync(string email)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+
+            if (user == null) 
+                return null;
+
+            return new UserReadDto
+            {
+                Id = user.Id,
+                Email = user.Email!
+            };
         }
     }
 }

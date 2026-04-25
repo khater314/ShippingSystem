@@ -11,6 +11,7 @@ namespace BL.Contracts
         Task<UserResultDto> LoginAsync(UserLoginDto loginDto);
         Task LogoutAsync();
         Task<UserReadDto?> GetUserByIdAsync(string userId);
+        Task<UserReadDto?> GetUserByEmailAsync(string email);
         Task<IEnumerable<UserReadDto>> GetAllUsersAsync();
         Task<Guid> GetLoggedInUserId();
         Task<IEnumerable<UserReadDto>> GetUsersBySelectedIdsAsync(List<string> ids);

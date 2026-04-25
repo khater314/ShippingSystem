@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Serilog;
 using AppResources.Localization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using WebApi.Services;
 
 namespace WebApi
 {
@@ -68,12 +69,12 @@ namespace WebApi
                 {
                     ValidateIssuer = true,
                     ValidateAudience = true,
-                    ValidateLifetime = true,
+                    ValidateLifetime = false,
                     ValidateIssuerSigningKey = true,
                     ValidIssuer = builder.Configuration["Jwt:Issuer"],
                     ValidAudience = builder.Configuration["Jwt:Audience"],
                     IssuerSigningKey = new Microsoft.IdentityModel.Tokens.SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(jwtKey)),
-                    ClockSkew = TimeSpan.FromMinutes(5)
+                    //ClockSkew = TimeSpan.FromMinutes(5)
                 };
             });
             #endregion
@@ -113,7 +114,9 @@ namespace WebApi
             builder.Services.AddScoped<IPaymentMethodService, PaymentMethodService>();
             builder.Services.AddScoped<IShipmentStatusService, ShipmentStatusService>();
             builder.Services.AddScoped<IRateSettingService, RateSettingService>();
+
             builder.Services.AddScoped<IRefreshTokenService, RefreshTokenService>();
+            builder.Services.AddSingleton<TokenService>();
 
             builder.Services.AddScoped<BL.Contracts.IUserService, WebApi.Services.UserService>();
             // Mapping Add Scoped

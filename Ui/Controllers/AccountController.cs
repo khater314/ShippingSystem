@@ -10,6 +10,7 @@ namespace Ui.Controllers
     public class AccountController(IUserService userService) : Controller
     {
         private readonly IUserService _userService = userService;
+
         [HttpPost] 
         public async Task<IActionResult> Login(UserLoginDto user)
         {
@@ -23,16 +24,16 @@ namespace Ui.Controllers
                 ModelState.AddModelError(string.Empty, ResShared.Val_InvalidCredentials);
                 return View(user);
             }
-            if (!string.IsNullOrEmpty(user.ReturnUrl) && Url.IsLocalUrl(user.ReturnUrl))
-                return Redirect(user.ReturnUrl);
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToLocal(user.ReturnUrl);
         }
+
         [HttpGet]
         public IActionResult Login(string? returnUrl = null)
         {
             return View(new UserLoginDto() { Email = "", Password = "", ReturnUrl = returnUrl });
         }
+
         [HttpGet]
         public IActionResult Register(string? returnUrl = null)
         {
@@ -45,6 +46,7 @@ namespace Ui.Controllers
             };
             return View(user);
         }
+
         [HttpPost]
         public async Task<IActionResult> Register(UserRegisterDto user)
         {
@@ -59,19 +61,26 @@ namespace Ui.Controllers
                 return View(user);
             }
 
-            if (!string.IsNullOrEmpty(user.ReturnUrl) && Url.IsLocalUrl(user.ReturnUrl))
-                return Redirect(user.ReturnUrl);
-
-            return RedirectToAction("Index", "Home");
+            return RedirectToLocal(user.ReturnUrl);
         }
+
         public async Task<IActionResult> Logout()
         {
              await _userService.LogoutAsync();
              return RedirectToAction("Index", "Home");
         }
+
         public IActionResult AccessDenied()
         {
             return View();
+        }
+
+        private IActionResult RedirectToLocal(string? returnUrl)
+        {
+            if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
+                return Redirect(returnUrl);
+
+            return RedirectToAction("Index", "Home");
         }
     }
 }

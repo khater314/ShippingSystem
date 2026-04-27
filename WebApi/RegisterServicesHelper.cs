@@ -11,6 +11,7 @@ using Serilog;
 using AppResources.Localization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using WebApi.Services;
+using Microsoft.OpenApi;
 
 namespace WebApi
 {
@@ -76,6 +77,25 @@ namespace WebApi
                     IssuerSigningKey = new Microsoft.IdentityModel.Tokens.SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(jwtKey)),
                     //ClockSkew = TimeSpan.FromMinutes(5)
                 };
+            });
+            #endregion
+
+            #region Swagger Configuration
+
+            builder.Services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "Shipping API",
+                    Description = "An ASP.NET Core Web API for managing shipping operations.",
+                    //TermsOfService = new Uri("https://example.com/terms"),
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Ahmed Khater",
+                        Email = "khaterx314@gmail.com",
+                    }
+                });
             });
             #endregion
 

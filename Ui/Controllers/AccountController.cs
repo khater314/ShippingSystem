@@ -23,7 +23,7 @@ namespace Ui.Controllers
 
             var tokens = await _httpClient.PostAsync<UserLoginDto, UserResultDto>("api/auth/login", user);
 
-            if (tokens == null || !tokens.IsSuccess)
+            if (!result.IsSuccess || tokens == null || !tokens.IsSuccess)
             {
                 ModelState.AddModelError(string.Empty, ResShared.Val_InvalidCredentials);
                 return View(user);

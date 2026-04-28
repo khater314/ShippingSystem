@@ -47,7 +47,6 @@ namespace WebApi.Services
             return new UserResultDto
             {
                 IsSuccess = true,
-                Token = "DummyToken"
             };
         }
 

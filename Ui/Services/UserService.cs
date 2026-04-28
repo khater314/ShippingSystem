@@ -35,20 +35,23 @@ namespace Ui.Services
 
         public async Task<UserResultDto> LoginAsync(UserLoginDto loginDto)
         {
-            var result = await _signInManager.PasswordSignInAsync(loginDto.Email, loginDto.Password, isPersistent: true, lockoutOnFailure: true);
+            var result = await _signInManager.PasswordSignInAsync(
+                loginDto.Email, 
+                loginDto.Password, 
+                isPersistent: true, 
+                lockoutOnFailure: true
+            );
+
             if (!result.Succeeded)
             {
                 return new UserResultDto
                 {
                     IsSuccess = false,
-                    Errors = ["Invalid login attempt."]
+                    Errors = ["Something went wrong When logging in."]
                 };
             }
-            return new UserResultDto
-            {
-                IsSuccess = true,
-                Token = "DummyToken"
-            };
+
+            return new UserResultDto { IsSuccess = true };
         }
 
         public async Task LogoutAsync()

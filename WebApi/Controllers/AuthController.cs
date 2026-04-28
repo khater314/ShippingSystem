@@ -35,14 +35,14 @@ namespace WebApi.Controllers
             if (!userResult.IsSuccess) return BadRequest(userResult.Errors);
 
             var user = await _userService.GetUserByEmailAsync(request.Email); 
-            if (user == null) return Unauthorized("User not found!");
+            if (user == null) return Unauthorized("Error 404 - User not found!");
 
-            var claims = GetUserClaims(user);
+            List<Claim> claims = GetUserClaims(user);
 
-            var refreshToken = _tokenService.GenerateRefreshToken();
-            var accessToken = _tokenService.GenerateAccessToken(claims);
+            string refreshToken = _tokenService.GenerateRefreshToken();
+            string accessToken = _tokenService.GenerateAccessToken(claims);
 
-            var storedRefreshToken = new TbRefreshTokenDto
+            TbRefreshTokenDto storedRefreshToken = new()
             {
                 UserId = user.Id,
                 Token = refreshToken,
@@ -54,10 +54,10 @@ namespace WebApi.Controllers
             if (!string.IsNullOrEmpty(refreshToken))
                 SetRefreshTokenInCookie(storedRefreshToken);
 
-            return Ok(new { AccessToken = accessToken , RefreshToken = refreshToken });
+            return Ok(new { IsSuccess = true, AccessToken = accessToken , RefreshToken = refreshToken });
         }
 
-        // دي الـ Func اللي طلبتها (Refresh Access & Refresh Token)
+        // Refresh Access & Refresh Token.
         [HttpPost("refresh-token")]
         public async Task<IActionResult> RefreshToken()
         {

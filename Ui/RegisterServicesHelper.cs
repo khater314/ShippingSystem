@@ -1,15 +1,16 @@
-﻿using BL.Contracts;
+﻿using AppResources.Localization;
+using BL.Contracts;
 using BL.Mapping;
 using BL.Services;
 using DAL.Contracts;
 using DAL.DbContext;
 using DAL.Repositories;
-using Microsoft.EntityFrameworkCore;
-using AppResources.Localization;
-using Microsoft.AspNetCore.Authentication.Cookies;
 using DAL.UserModel;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
+using Ui.Services;
 
 namespace Ui
 {
@@ -24,6 +25,7 @@ namespace Ui
                 options.UseSqlServer(connectionString));
             #endregion
 
+            #region Identity Configuration
             builder.Services.AddIdentity<AppUser, AppRole>(options =>
                 {
                     options.Password.RequireDigit = true;
@@ -35,7 +37,9 @@ namespace Ui
                 })
                 .AddEntityFrameworkStores<ShippingContext>()
                 .AddDefaultTokenProviders();
+            #endregion
 
+            #region Cookie Configuration
             builder.Services.ConfigureApplicationCookie(options =>
             {
                 options.LoginPath = "/Account/Login";
@@ -49,6 +53,7 @@ namespace Ui
                 options.ReturnUrlParameter = "ReturnUrl";
                 options.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
             });
+            #endregion
 
             builder.Services.AddAuthorization();
 
@@ -63,16 +68,16 @@ namespace Ui
             builder.Host.UseSerilog();
             #endregion
 
-
             #region Dependency Injection
+
             builder.Services.AddAutoMapper(cfg => { }, typeof(MappingProfile));
-            /**********************************************************************/
-            /***************************** Add Scoped *****************************/
-            /**********************************************************************/
-            // Repositories Add Scoped
+
+            #region Repositories
             builder.Services.AddScoped(typeof(ITableRepository<>), typeof(TableRepository<>));
             builder.Services.AddScoped(typeof(IViewRepository<>), typeof(ViewRepository<>));
-            // Services Add Scoped
+            #endregion
+
+            #region Tables & Views Services
             builder.Services.AddScoped<ICityService, CityService>();
             builder.Services.AddScoped<IShippingTypeService, ShippingTypeService>();
             builder.Services.AddScoped<IShipmentService, ShipmentService>();
@@ -86,12 +91,26 @@ namespace Ui
             builder.Services.AddScoped<IRateSettingService, RateSettingService>();
             builder.Services.AddScoped<IRefreshTokenService, RefreshTokenService>();
 
-
             builder.Services.AddScoped<BL.Contracts.IUserService, Ui.Services.UserService>();
-            // Mapping Add Scoped
             builder.Services.AddScoped<BL.Mapping.IMapper, BL.Mapping.AutoMapperAdapter>();
-            // Filters Add Scoped
             builder.Services.AddScoped<Filters.TransactionExceptionFilter>();
+            #endregion
+
+            #region HttpClient Configuration
+            var baseUrl = builder.Configuration.GetValue<string>("ApiSettings:BaseUrl");
+
+            builder.Services.AddHttpClient("ShippingApiClient", client =>
+            {
+                client.BaseAddress = new Uri(baseUrl 
+                    ?? throw new InvalidOperationException("Base URL is missing!"));
+
+                client.DefaultRequestHeaders.Add("Accept", "application/json");
+                client.Timeout = TimeSpan.FromMinutes(120);
+            });
+
+            builder.Services.AddScoped<GenericApiClient>();
+            #endregion
+
             #endregion
         }
     }

@@ -7,7 +7,8 @@ namespace BL.DTOs
     public record UserResultDto
     {
         public bool IsSuccess { get; set; }
-        public string Token { get; set; } = default!;
+        public string? AccessToken { get; set; }
+        public string? RefreshToken { get; set; }
         public IEnumerable<string>? Errors { get; set; }
     }
 }

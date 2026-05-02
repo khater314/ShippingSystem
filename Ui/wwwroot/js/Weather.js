@@ -71,17 +71,17 @@ function refreshAccessToken(callback) {
 function DrowHtml(items) {
     var table =
         `
-                    <table class='table'>
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>TemperatureC</th>
-                                <th>TemperatureF</th>
-                                <th>Summary</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                    `;
+            <table class='table'>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>TemperatureC</th>
+                        <th>TemperatureF</th>
+                        <th>Summary</th>
+                    </tr>
+                </thead>
+            <tbody>
+        `;
 
     var endTable = "</tbody></table>";
 
@@ -103,55 +103,4 @@ function DrowHtml(items) {
     return table;
 }
 
-
 GetWeather();
-//var AjaxWeather = {
-//    GetWeather: function () {
-//        Helper.AjaxCallGet("https://localhost:7244/WeatherForecast/", null, "json",
-//            function (data) {
-//                console.log("hahahahahah");
-//                console.log("The Fucking Data: ", data);
-//                var html = AjaxWeather.DrowHtml(data);
-//                $("#api-result").html(html);
-//            });
-//    },
-//    DrowHtml: function (items) {
-//        var table =
-//        `
-//        <table class='table'>
-//            <thead>
-//                <tr>
-//                    <th>Date</th>
-//                    <th>TemperatureC</th>
-//                    <th>TemperatureF</th>
-//                    <th>Summary</th>
-//                </tr>
-//            </thead>
-//            <tbody>
-//        `;
-
-//        var endTable = "</tbody></table>";
-
-//        var itemHtml = "";
-
-//        for (var i = 0; i < items.length; i++)
-//        {
-//            itemHtml =
-//            `
-//                <tr>
-//                    <td>${items[i].date}</td>
-//                    <td>${items[i].temperatureC}</td>
-//                    <td>${items[i].temperatureF}</td>
-//                    <td>${items[i].summary}</td>
-//                </tr>
-//            `;
-//            table += itemHtml;
-//        }
-//        table += endTable;
-//        return table;
-//    }
-//}
-
-////$(document).ready(function () {
-////    AjaxWeather.GetWeather();
-////});   

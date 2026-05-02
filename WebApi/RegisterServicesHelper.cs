@@ -44,16 +44,16 @@ namespace WebApi
             #region Cookie Configuration
             builder.Services.ConfigureApplicationCookie(options =>
             {
-                options.LoginPath = "/Account/Login";
-                options.AccessDeniedPath = "/Account/AccessDenied";
-                options.LogoutPath = "/Account/Logout";
-                options.ExpireTimeSpan = TimeSpan.FromMinutes(1500);
-                options.SlidingExpiration = true;
-                options.Cookie.HttpOnly = true;
-                options.Cookie.SameSite = SameSiteMode.Lax;
-                options.Cookie.Name = "Cookie";
-                options.ReturnUrlParameter = "ReturnUrl";
-                options.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
+                //options.LoginPath = "/Account/Login";
+                //options.AccessDeniedPath = "/Account/AccessDenied";
+                //options.LogoutPath = "/Account/Logout";
+                //options.ExpireTimeSpan = TimeSpan.FromMinutes(1500);
+                //options.SlidingExpiration = true;
+                //options.Cookie.HttpOnly = true;
+                //options.Cookie.SameSite = SameSiteMode.Lax;
+                //options.Cookie.Name = "Cookie";
+                //options.ReturnUrlParameter = "ReturnUrl";
+                //options.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
             });
             #endregion
 
@@ -70,12 +70,12 @@ namespace WebApi
                 {
                     ValidateIssuer = true,
                     ValidateAudience = true,
-                    ValidateLifetime = false,
+                    ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
                     ValidIssuer = builder.Configuration["Jwt:Issuer"],
                     ValidAudience = builder.Configuration["Jwt:Audience"],
                     IssuerSigningKey = new Microsoft.IdentityModel.Tokens.SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(jwtKey)),
-                    //ClockSkew = TimeSpan.FromMinutes(5)
+                    ClockSkew = TimeSpan.Zero
                 };
             });
             #endregion
@@ -96,6 +96,20 @@ namespace WebApi
                         Email = "khaterx314@gmail.com",
                     }
                 });
+            });
+            #endregion
+
+            #region CORS Configuration
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("ShippingOnlyPolicy",
+                    policy =>
+                    {
+                        policy.WithOrigins("https://localhost:7210")
+                              .AllowAnyMethod()
+                              .AllowAnyHeader()
+                              .AllowCredentials();
+                    });
             });
             #endregion
 

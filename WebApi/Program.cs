@@ -45,6 +45,8 @@ namespace WebApi
 
             app.UseRouting();
 
+            app.UseCors("ShippingOnlyPolicy");
+
             app.UseAuthentication();
             app.UseAuthorization();
 

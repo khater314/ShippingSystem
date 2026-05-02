@@ -1,0 +1,26 @@
+﻿@* This file Created To Test How To Call Api From Ui By Ajax And Show The Result In Ui *@
+@{
+}
+<div class="container">
+    <h1>Test Api</h1>
+    <button id="callApiBtn" class="btn btn-primary">Call Api</button>
+<div id="api-result" class="mt-3"></div>
+</div>
+
+@section Scripts {
+    <script src="~/js/Helper.js"></script>
+    <script src="~/js/Weather.js"></script>
+    @* <script>
+        document.getElementById('callApiBtn').addEventListener('click', function () {
+            fetch('/api/test') // Replace with your actual API endpoint
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('apiResult').innerText = JSON.stringify(data, null, 2);
+                })
+                .catch(error => {
+                    console.error('Error calling API:', error);
+                    document.getElementById('apiResult').innerText = 'Error calling API';
+                });
+        });
+    </script> *@
+}

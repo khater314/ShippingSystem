@@ -61,7 +61,7 @@ namespace WebApi.Controllers
         [HttpPost("refresh-token")]
         public async Task<IActionResult> RefreshToken()
         {
-            if (!Request.Cookies.TryGetValue("refreshToken", out var refreshToken))
+            if (!Request.Cookies.TryGetValue("RefreshToken", out string? refreshToken))
                 return Unauthorized("Refresh token is required!");
 
             var storedToken = await _refreshToken.GetByToken(refreshToken);
@@ -83,17 +83,28 @@ namespace WebApi.Controllers
 
             return Ok(new { RefreshToken = newRefreshToken });
         }
+
         [HttpPost("refresh-access-token")]
         public async Task<IActionResult> RefreshAccessToken()
         {
-            if (!Request.Cookies.TryGetValue("refreshToken", out var refreshToken))
+            if (!Request.Cookies.TryGetValue("RefreshToken", out var refreshToken))
+            {
+                
                 return Unauthorized("Refresh token is required!");
+            }
 
             var storedToken = await _refreshToken.GetByToken(refreshToken);
 
-            var user = await _userService.GetUserByIdAsync(storedToken.UserId.ToString());
+            if (storedToken == null)
+                return Unauthorized("Token not found in database!");
 
-            var claims = GetUserClaims(user!);
+            if (storedToken.Expires < DateTime.UtcNow)
+                return Unauthorized("Token expired!");
+
+            var user = await _userService.GetUserByIdAsync(storedToken.UserId.ToString());
+            if (user == null) return Unauthorized("User no longer exists!");
+
+            var claims = GetUserClaims(user);
 
             var newAccessToken = _tokenService.GenerateAccessToken(claims);
 
@@ -125,10 +136,12 @@ namespace WebApi.Controllers
                 HttpOnly = true,
                 Expires = refreshToken.Expires.ToUniversalTime(),
                 Secure = true, // API must be served over HTTPS for this to work
-                SameSite = SameSiteMode.Strict
+                SameSite = SameSiteMode.None,
+                Path = "/"
             };
-            Response.Cookies.Append("refreshToken", refreshToken.Token, cookieOptions);
+            Response.Cookies.Append("RefreshToken", refreshToken.Token, cookieOptions);
         }
+
         private static List<Claim> GetUserClaims(UserReadDto user)
         {
             var claims = new List<Claim>

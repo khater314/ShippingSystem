@@ -102,9 +102,10 @@ namespace Ui.Controllers
                 HttpOnly = false,
                 Expires = DateTime.UtcNow.AddMinutes(15),
                 Secure = true, // API must be served over HTTPS for this to work
-                SameSite = SameSiteMode.Strict
+                SameSite = SameSiteMode.None,
+                Path = "/"
             };
-            Response.Cookies.Append("accessToken", accessToken, cookieOptions);
+            Response.Cookies.Append("AccessToken", accessToken, cookieOptions);
         }
     }
 }

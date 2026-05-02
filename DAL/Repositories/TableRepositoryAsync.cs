@@ -92,7 +92,7 @@ namespace DAL.Repositories
             {
                 var entity = await GetByIdAsync(id, ct);
                 entity.CurrentState = status;
-                await UpdateAsync(entity, ct);
+                await _context.SaveChangesAsync(ct);
                 return null!;
             }, "Failed to change record status.");
         }

@@ -27,7 +27,7 @@ namespace BL.Services
         /// <summary>
         /// Refresh RefreshToken by marking the old token as expired and creating a new one. This ensures that only one valid refresh token exists for a user at any time.
         /// </summary>
-        /// <param name="tokenDto"></param>
+        /// <param name="tokenDto">New Refresh Token</param>
         /// <returns></returns>
         public async Task<bool> RefreshToken(TbRefreshTokenDto tokenDto)
         {

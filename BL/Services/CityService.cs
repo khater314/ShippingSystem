@@ -22,10 +22,18 @@ namespace BL.Services
         private readonly ITableRepository<TbCity> _repo = repo;
         private readonly IUserService _userService = userService;
         private readonly IViewRepository<VwCity> _viewRepo = viewRepo;
+
         public async Task<IEnumerable<TbCityDTO>> GetAllCountryCitiesAsync(CancellationToken ct = default)
         {
             var cities = await _viewRepo.GetAllAsync(ct);
             return _mapper.Map<IEnumerable<VwCity>, IEnumerable<TbCityDTO>>(cities);
         }
+
+        public async Task<IEnumerable<TbCityDTO>> GetCitiesByCountryIdAsync(Guid countryId, CancellationToken ct = default)
+        {
+            var cities = await _repo.GetListAsync(c => c.CountryId == countryId, ct);
+            return _mapper.Map<IEnumerable<TbCity>, IEnumerable<TbCityDTO>>(cities);
+        }
+
     }
 }

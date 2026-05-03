@@ -1,9 +1,10 @@
-﻿using DAL.DbContext;
-using Microsoft.EntityFrameworkCore;
-using Domains;
-using DAL.Contracts;
-using Microsoft.Extensions.Logging;
+﻿using DAL.Contracts;
+using DAL.DbContext;
 using DAL.Exceptions;
+using Domains;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using System.Linq.Expressions;
 
 namespace DAL.Repositories
 {
@@ -50,6 +51,22 @@ namespace DAL.Repositories
             {
                 return await _dbSet.Where(i => i.CurrentState == 1).FirstAsync(e => e.Id == id, ct);
             }, $"Error retrieving record with ID: {id}");
+        }
+
+        public async Task<T?> GetFirstOrDefaultAsync(Expression<Func<T, bool>> filter, CancellationToken ct = default)
+        {
+            return await ExecuteWithHandlingAsync(async () =>
+            {
+                return await _dbSet.Where(i => i.CurrentState == 1).FirstOrDefaultAsync(filter, ct);
+            }, "Error retrieving the record.");
+        }
+
+        public async Task<IEnumerable<T>> GetListAsync(Expression<Func<T, bool>> filter, CancellationToken ct = default)
+        {
+            return await ExecuteWithHandlingAsync(async () =>
+            {
+                return await _dbSet.Where(i => i.CurrentState == 1).Where(filter).ToListAsync(ct);
+            }, "Error retrieving the records.");
         }
 
     }

@@ -23,7 +23,13 @@ namespace Ui.Services
                     Errors = ["Passwords do not match."]
                 };
             }
-            var user = new AppUser { UserName = registerDto.Email, Email = registerDto.Email };
+            var user = new AppUser { 
+                UserName = registerDto.Email, 
+                Email = registerDto.Email,
+                FirstName = registerDto.FirstName,
+                LastName = registerDto.LastName,
+                PhoneNumber = registerDto.PhoneNumber
+            };
             var result = await _userManager.CreateAsync(user, registerDto.Password);
 
             return new UserResultDto

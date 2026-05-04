@@ -295,6 +295,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Create A new Account.
+        /// </summary>
+        public static string Btn_CreateNewAccount {
+            get {
+                return ResourceManager.GetString("Btn_CreateNewAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cut.
         /// </summary>
         public static string Btn_Cut {
@@ -633,6 +642,15 @@ namespace AppResources.Localization.Resources {
         public static string Btn_Register {
             get {
                 return ResourceManager.GetString("Btn_Register", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Registration.
+        /// </summary>
+        public static string Btn_Registration {
+            get {
+                return ResourceManager.GetString("Btn_Registration", resourceCulture);
             }
         }
         
@@ -1240,6 +1258,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to First Name.
+        /// </summary>
+        public static string Field_FirstName {
+            get {
+                return ResourceManager.GetString("Field_FirstName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Full Name.
         /// </summary>
         public static string Field_FullName {
@@ -1272,6 +1299,15 @@ namespace AppResources.Localization.Resources {
         public static string Field_KiloMeterRate {
             get {
                 return ResourceManager.GetString("Field_KiloMeterRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last Name.
+        /// </summary>
+        public static string Field_LastName {
+            get {
+                return ResourceManager.GetString("Field_LastName", resourceCulture);
             }
         }
         
@@ -2032,6 +2068,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Confirm Password.
+        /// </summary>
+        public static string Lbl_ConfirmPassword {
+            get {
+                return ResourceManager.GetString("Lbl_ConfirmPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Country.
         /// </summary>
         public static string Lbl_Country {
@@ -2122,6 +2167,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Email address.
+        /// </summary>
+        public static string Lbl_EmailAddress {
+            get {
+                return ResourceManager.GetString("Lbl_EmailAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to File.
         /// </summary>
         public static string Lbl_File {
@@ -2190,6 +2244,15 @@ namespace AppResources.Localization.Resources {
         public static string Lbl_Height {
             get {
                 return ResourceManager.GetString("Lbl_Height", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Home.
+        /// </summary>
+        public static string Lbl_Home {
+            get {
+                return ResourceManager.GetString("Lbl_Home", resourceCulture);
             }
         }
         
@@ -2469,6 +2532,15 @@ namespace AppResources.Localization.Resources {
         public static string Lbl_ReceiverName {
             get {
                 return ResourceManager.GetString("Lbl_ReceiverName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remember me.
+        /// </summary>
+        public static string Lbl_RememberMe {
+            get {
+                return ResourceManager.GetString("Lbl_RememberMe", resourceCulture);
             }
         }
         
@@ -3283,6 +3355,24 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to If you have account already, please login in.
+        /// </summary>
+        public static string Msg_AlreadyHaveAccountLogin {
+            get {
+                return ResourceManager.GetString("Msg_AlreadyHaveAccountLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to and.
+        /// </summary>
+        public static string Msg_And {
+            get {
+                return ResourceManager.GetString("Msg_And", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Approved successfully.
         /// </summary>
         public static string Msg_Approved {
@@ -3315,6 +3405,15 @@ namespace AppResources.Localization.Resources {
         public static string Msg_Authorized {
             get {
                 return ResourceManager.GetString("Msg_Authorized", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The best logistic company.
+        /// </summary>
+        public static string Msg_BestLogisticCompany {
+            get {
+                return ResourceManager.GetString("Msg_BestLogisticCompany", resourceCulture);
             }
         }
         
@@ -4075,6 +4174,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Lorem Ipsum is simply dummy text of the printing and typesetting industry..
+        /// </summary>
+        public static string Msg_LoginDescription {
+            get {
+                return ResourceManager.GetString("Msg_LoginDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Mark sent you a message.
         /// </summary>
         public static string Msg_MarkSentMessage {
@@ -4201,6 +4309,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Lorem Ipsum is simply dummy text of the printing and typesetting industry..
+        /// </summary>
+        public static string Msg_RegistrationDescription {
+            get {
+                return ResourceManager.GetString("Msg_RegistrationDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Rejected successfully.
         /// </summary>
         public static string Msg_Rejected {
@@ -4260,6 +4377,15 @@ namespace AppResources.Localization.Resources {
         public static string Msg_SettingsSaved {
             get {
                 return ResourceManager.GetString("Msg_SettingsSaved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We freight to all over the world.
+        /// </summary>
+        public static string Msg_ShippingWorldwide {
+            get {
+                return ResourceManager.GetString("Msg_ShippingWorldwide", resourceCulture);
             }
         }
         
@@ -4485,6 +4611,24 @@ namespace AppResources.Localization.Resources {
         public static string Msg_Warning_Unsaved {
             get {
                 return ResourceManager.GetString("Msg_Warning_Unsaved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welcome To new account.
+        /// </summary>
+        public static string Msg_WelcomeToNewAccount {
+            get {
+                return ResourceManager.GetString("Msg_WelcomeToNewAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welcome To your account.
+        /// </summary>
+        public static string Msg_WelcomeToYourAccount {
+            get {
+                return ResourceManager.GetString("Msg_WelcomeToYourAccount", resourceCulture);
             }
         }
         
@@ -4804,11 +4948,38 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Customer Login.
+        /// </summary>
+        public static string Page_Title_CustomerLogin {
+            get {
+                return ResourceManager.GetString("Page_Title_CustomerLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Customer Registration.
+        /// </summary>
+        public static string Page_Title_CustomerRegistration {
+            get {
+                return ResourceManager.GetString("Page_Title_CustomerRegistration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hello! let&apos;s get started.
         /// </summary>
         public static string Page_Title_Login {
             get {
                 return ResourceManager.GetString("Page_Title_Login", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Login To Your Account.
+        /// </summary>
+        public static string Page_Title_LoginToYourAccount {
+            get {
+                return ResourceManager.GetString("Page_Title_LoginToYourAccount", resourceCulture);
             }
         }
         
@@ -4827,6 +4998,15 @@ namespace AppResources.Localization.Resources {
         public static string Page_Title_Register {
             get {
                 return ResourceManager.GetString("Page_Title_Register", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Registration.
+        /// </summary>
+        public static string Page_Title_Registration {
+            get {
+                return ResourceManager.GetString("Page_Title_Registration", resourceCulture);
             }
         }
         
@@ -5128,6 +5308,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enter first name.
+        /// </summary>
+        public static string Plh_FirstName {
+            get {
+                return ResourceManager.GetString("Plh_FirstName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Enter full name.
         /// </summary>
         public static string Plh_FullName {
@@ -5160,6 +5349,15 @@ namespace AppResources.Localization.Resources {
         public static string Plh_KiloMeterRate {
             get {
                 return ResourceManager.GetString("Plh_KiloMeterRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter last name.
+        /// </summary>
+        public static string Plh_LastName {
+            get {
+                return ResourceManager.GetString("Plh_LastName", resourceCulture);
             }
         }
         
@@ -7225,6 +7423,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FAST.
+        /// </summary>
+        public static string Word_Fast {
+            get {
+                return ResourceManager.GetString("Word_Fast", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Forward.
         /// </summary>
         public static string Word_Forward {
@@ -7383,6 +7590,15 @@ namespace AppResources.Localization.Resources {
         public static string Word_Rejected {
             get {
                 return ResourceManager.GetString("Word_Rejected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SAFELY.
+        /// </summary>
+        public static string Word_Safely {
+            get {
+                return ResourceManager.GetString("Word_Safely", resourceCulture);
             }
         }
         

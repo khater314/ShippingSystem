@@ -51,6 +51,9 @@ namespace Ui.Controllers
         {
             UserRegisterDto user = new() 
             { 
+                FirstName = "",
+                LastName = "",
+                PhoneNumber = "",
                 Email = "", 
                 Password = "", 
                 ConfirmedPassword = "", 

@@ -1,14 +1,5 @@
-using AutoMapper;
-using BL.DTOs;
-using BL.Mapping;
-using DAL.Contracts;
-using DAL.DbContext;
-using DAL.Repositories;
-using Domains;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Internal;
 using Serilog;
-using Serilog.Sinks.MSSqlServer;
+using WebApi.Middleware;
 
 namespace WebApi
 {
@@ -26,6 +17,8 @@ namespace WebApi
             builder.Services.AddOpenApi(); // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 
             var app = builder.Build();
+
+            app.UseMiddleware<ExceptionMiddleware>();
 
             app.UseSerilogRequestLogging();
 

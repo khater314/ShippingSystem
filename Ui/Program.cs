@@ -1,14 +1,15 @@
+using AppResources.Localization;
 using BL.Contracts;
 using BL.Mapping;
 using BL.Services;
 using DAL.Contracts;
 using DAL.DbContext;
 using DAL.Repositories;
-using Microsoft.EntityFrameworkCore;
-using AppResources.Localization;
-using Ui.Filters;
-using Microsoft.AspNetCore.Identity;
 using DAL.UserModel;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Ui.Filters;
 using Ui.Services;
 
 //Test Realease at GitHub
@@ -51,12 +52,11 @@ namespace Ui
             app.MapControllerRoute(
                 name: "Admin",
                 pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}")
-                .RequireAuthorization()
+                .RequireAuthorization("RequireAdminRole")
                 .WithStaticAssets();
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}")
-                .RequireAuthorization()
                 .WithStaticAssets();
 
             using (var scope = app.Services.CreateScope())

@@ -4,58 +4,68 @@ using Microsoft.AspNetCore.Identity;
 using System.Net.Sockets;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace Ui.Services
 {
-    public class UserService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IHttpContextAccessor httpContextAccessor) : BL.Contracts.IUserService
+    public class UserService(
+        UserManager<AppUser> userManager,
+        SignInManager<AppUser> signInManager,
+        RoleManager<AppRole> roleManager,
+        IHttpContextAccessor httpContextAccessor
+        ) : BL.Contracts.IUserService
     {
         private readonly UserManager<AppUser> _userManager = userManager;
         private readonly SignInManager<AppUser> _signInManager = signInManager;
+        private readonly RoleManager<AppRole> _roleManager = roleManager;
         private readonly IHttpContextAccessor _httpContextAccessor = httpContextAccessor;
 
         public async Task<UserResultDto> RegisterAsync(UserRegisterDto registerDto)
         {
-            if(registerDto.Password != registerDto.ConfirmedPassword)
+            if (registerDto.Password != registerDto.ConfirmedPassword)
+                return UserResult(false, ["Passwords do not match."]);
+
+            var user = new AppUser
             {
-                return new UserResultDto
-                {
-                    IsSuccess = false,
-                    Errors = ["Passwords do not match."]
-                };
-            }
-            var user = new AppUser { 
-                UserName = registerDto.Email, 
+                UserName = registerDto.Email,
                 Email = registerDto.Email,
                 FirstName = registerDto.FirstName,
                 LastName = registerDto.LastName,
                 PhoneNumber = registerDto.PhoneNumber
             };
+
+            if (!await _roleManager.RoleExistsAsync(registerDto.Role ?? "User"))
+                return UserResult(false, ["Role does not exist."]);
+
+            var role = new AppRole { Name = registerDto.Role ?? "User" };
+
             var result = await _userManager.CreateAsync(user, registerDto.Password);
+
+            var roleResult = await _userManager.AddToRoleAsync(user, role.Name);
 
             return new UserResultDto
             {
-                IsSuccess = result.Succeeded,
-                Errors = result.Errors.Select(e => e.Description)
+                IsSuccess = result.Succeeded && roleResult.Succeeded,
+                Errors = 
+                [
+                    ..result.Errors.Select(e => e.Description), 
+                    ..roleResult.Errors.Select(e => e.Description)
+                ]
             };
         }
 
         public async Task<UserResultDto> LoginAsync(UserLoginDto loginDto)
         {
             var result = await _signInManager.PasswordSignInAsync(
-                loginDto.Email, 
-                loginDto.Password, 
-                isPersistent: true, 
+                loginDto.Email,
+                loginDto.Password,
+                isPersistent: true,
                 lockoutOnFailure: true
             );
 
             if (!result.Succeeded)
-            {
-                return new UserResultDto
-                {
-                    IsSuccess = false,
-                    Errors = ["Something went wrong When logging in."]
-                };
-            }
+                return UserResult(false, ["Something went wrong When logging in."]);
+
 
             return new UserResultDto { IsSuccess = true };
         }
@@ -70,7 +80,7 @@ namespace Ui.Services
             var user = await _userManager.FindByIdAsync(userId);
             if (user == null)
             {
-                return  null;
+                return null;
             }
             return new UserReadDto
             {
@@ -94,7 +104,7 @@ namespace Ui.Services
         {
             var userId = _httpContextAccessor.HttpContext?.User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            if(string.IsNullOrEmpty(userId))
+            if (string.IsNullOrEmpty(userId))
             {
                 // You Should Put Logic Here In This Case.
                 return Guid.Empty;
@@ -126,6 +136,15 @@ namespace Ui.Services
             {
                 Id = user.Id,
                 Email = user.Email!
+            };
+        }
+
+        private static UserResultDto UserResult(bool isSuccess, IEnumerable<string> errors)
+        {
+            return new UserResultDto
+            {
+                IsSuccess = isSuccess,
+                Errors = errors
             };
         }
     }

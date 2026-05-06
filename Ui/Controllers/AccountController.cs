@@ -30,7 +30,7 @@ namespace Ui.Controllers
             }
             if (tokens.AccessToken == null || tokens.RefreshToken == null)
             {
-                ModelState.AddModelError(string.Empty, "Something went wrong.");
+                ModelState.AddModelError(string.Empty, "Tokens went wrong.");
                 return View(user);
             }
 
@@ -76,7 +76,13 @@ namespace Ui.Controllers
                 return View(user);
             }
 
-            return RedirectToLocal(user.ReturnUrl);
+            var login = new UserLoginDto { 
+                Email = user.Email, 
+                Password = user.Password, 
+                ReturnUrl = user.ReturnUrl 
+            };
+
+            return await Login(login);
         }
 
         public async Task<IActionResult> Logout()

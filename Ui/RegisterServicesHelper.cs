@@ -55,7 +55,10 @@ namespace Ui
             });
             #endregion
 
-            builder.Services.AddAuthorization();
+            builder.Services.AddAuthorization(options =>
+            {
+                options.AddPolicy("RequireAdminRole", policy => policy.RequireRole("Admin"));
+            });
 
             builder.Services.AddAppLocalization();
 

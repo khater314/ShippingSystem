@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BL.Contracts
 {
-    public interface IPackagingService : IBaseService<Domains.TbPackaging, DTOs.PackagingDTO>
+    public interface IPackagingService : IBaseService<Domains.TbPackaging, DTOs.TbPackagingDTO>
     {
     }
 }

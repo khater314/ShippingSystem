@@ -2595,139 +2595,94 @@
   <data name="Field_CityId" xml:space="preserve">
     <value>المدينة</value>
   </data>
-	<!-- =========================================================== -->
-	<!-- =================  SECTION: PAGE TITLES  ================== -->
-	<!-- =========================================================== -->
-
-	<data name="Page_Title_CustomerLogin" xml:space="preserve">
+  <data name="Page_Title_CustomerLogin" xml:space="preserve">
     <value>تسجيل دخول العميل</value>
   </data>
-	<data name="Page_Title_LoginToYourAccount" xml:space="preserve">
+  <data name="Page_Title_LoginToYourAccount" xml:space="preserve">
     <value>تسجيل الدخول إلى حسابك</value>
   </data>
-
-
-	<!-- =========================================================== -->
-	<!-- ====================  SECTION: MESSAGES  ================== -->
-	<!-- =========================================================== -->
-
-	<data name="Msg_ShippingWorldwide" xml:space="preserve">
+  <data name="Msg_ShippingWorldwide" xml:space="preserve">
     <value>نقوم بالشحن إلى جميع أنحاء العالم</value>
   </data>
-	<data name="Msg_BestLogisticCompany" xml:space="preserve">
+  <data name="Msg_BestLogisticCompany" xml:space="preserve">
     <value>أفضل شركة لوجستية</value>
   </data>
-	<data name="Msg_And" xml:space="preserve">
+  <data name="Msg_And" xml:space="preserve">
     <value>و</value>
   </data>
-	<data name="Msg_WelcomeToYourAccount" xml:space="preserve">
+  <data name="Msg_WelcomeToYourAccount" xml:space="preserve">
     <value>مرحباً بك في حسابك</value>
   </data>
-	<data name="Msg_LoginDescription" xml:space="preserve">
+  <data name="Msg_LoginDescription" xml:space="preserve">
     <value>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات</value>
   </data>
-
-
-	<!-- =========================================================== -->
-	<!-- =====================  SECTION: WORDS  ==================== -->
-	<!-- =========================================================== -->
-
-	<data name="Word_Fast" xml:space="preserve">
+  <data name="Word_Fast" xml:space="preserve">
     <value>سريع</value>
   </data>
-	<data name="Word_Safely" xml:space="preserve">
+  <data name="Word_Safely" xml:space="preserve">
     <value>بأمان</value>
   </data>
-
-
-	<!-- =========================================================== -->
-	<!-- =====================  SECTION: LABELS  =================== -->
-	<!-- =========================================================== -->
-
-	<data name="Lbl_Home" xml:space="preserve">
+  <data name="Lbl_Home" xml:space="preserve">
     <value>الرئيسية</value>
   </data>
-	<data name="Lbl_EmailAddress" xml:space="preserve">
+  <data name="Lbl_EmailAddress" xml:space="preserve">
     <value>البريد الإلكتروني</value>
   </data>
-	<data name="Lbl_RememberMe" xml:space="preserve">
+  <data name="Lbl_RememberMe" xml:space="preserve">
     <value>تذكرني</value>
   </data>
-
-
-	<!-- =========================================================== -->
-	<!-- =====================  SECTION: BUTTONS  ================== -->
-	<!-- =========================================================== -->
-
-	<data name="Btn_CreateNewAccount" xml:space="preserve">
+  <data name="Btn_CreateNewAccount" xml:space="preserve">
     <value>إنشاء حساب جديد</value>
   </data>
-	<!-- =========================================================== -->
-	<!-- =================  SECTION: PAGE TITLES  ================== -->
-	<!-- =========================================================== -->
-
-	<data name="Page_Title_CustomerRegistration" xml:space="preserve">
+  <data name="Page_Title_CustomerRegistration" xml:space="preserve">
     <value>تسجيل عميل جديد</value>
   </data>
-	<data name="Page_Title_Registration" xml:space="preserve">
+  <data name="Page_Title_Registration" xml:space="preserve">
     <value>تسجيل</value>
   </data>
-
-
-	<!-- =========================================================== -->
-	<!-- ====================  SECTION: MESSAGES  ================== -->
-	<!-- =========================================================== -->
-
-	<data name="Msg_WelcomeToNewAccount" xml:space="preserve">
+  <data name="Msg_WelcomeToNewAccount" xml:space="preserve">
     <value>مرحباً بك في حساب جديد</value>
   </data>
-	<data name="Msg_RegistrationDescription" xml:space="preserve">
+  <data name="Msg_RegistrationDescription" xml:space="preserve">
     <value>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات</value>
   </data>
-	<data name="Msg_AlreadyHaveAccountLogin" xml:space="preserve">
+  <data name="Msg_AlreadyHaveAccountLogin" xml:space="preserve">
     <value>إذا كان لديك حساب بالفعل، الرجاء تسجيل الدخول</value>
   </data>
-
-
-	<!-- =========================================================== -->
-	<!-- =====================  SECTION: BUTTONS  ================== -->
-	<!-- =========================================================== -->
-
-	<data name="Btn_Registration" xml:space="preserve">
+  <data name="Btn_Registration" xml:space="preserve">
     <value>تسجيل</value>
   </data>
-
-
-	<!-- =========================================================== -->
-	<!-- =====================  SECTION: FIELDS  =================== -->
-	<!-- =========================================================== -->
-
-	<data name="Field_FirstName" xml:space="preserve">
+  <data name="Field_FirstName" xml:space="preserve">
     <value>الاسم الأول</value>
   </data>
-	<data name="Field_LastName" xml:space="preserve">
+  <data name="Field_LastName" xml:space="preserve">
     <value>الاسم الأخير</value>
   </data>
-
-
-	<!-- =========================================================== -->
-	<!-- =================  SECTION: PLACEHOLDERS  ================= -->
-	<!-- =========================================================== -->
-
-	<data name="Plh_FirstName" xml:space="preserve">
+  <data name="Plh_FirstName" xml:space="preserve">
     <value>أدخل الاسم الأول</value>
   </data>
-	<data name="Plh_LastName" xml:space="preserve">
+  <data name="Plh_LastName" xml:space="preserve">
     <value>أدخل الاسم الأخير</value>
   </data>
-
-
-	<!-- =========================================================== -->
-	<!-- =====================  SECTION: LABELS  =================== -->
-	<!-- =========================================================== -->
-
-
-	<data name="Lbl_ConfirmPassword" xml:space="preserve">
+  <data name="Lbl_ConfirmPassword" xml:space="preserve">
     <value>تأكيد كلمة المرور</value>
+  </data>
+  <data name="Field_OtherAddressInfo" xml:space="preserve">
+    <value>معلومات إضافية حول العنوان</value>
+  </data>
+  <data name="Field_PostalCode" xml:space="preserve">
+    <value>الرمز البريدي</value>
+  </data>
+  <data name="Field_Contacts" xml:space="preserve">
+    <value>وسائل للتواصل</value>
+  </data>
+  <data name="Field_IsDefaultAddress" xml:space="preserve">
+    <value>هل هذا العنوان الإفتراضي</value>
+  </data>
+  <data name="Field_PackagingEname" xml:space="preserve">
+    <value>اسم العبوة بالانجليزية</value>
+  </data>
+  <data name="Field_PackagingAname" xml:space="preserve">
+    <value>اسم العبوة بالعربية</value>
   </data>
 </root>

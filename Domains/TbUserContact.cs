@@ -18,9 +18,11 @@ public partial class TbUserContact : BaseEntity
 
     public string Address { get; set; } = null!;
 
-    public string OtherAddressInfo { get; set; } = null!;
+    public string? OtherAddressInfo { get; set; }
 
-    public string PostalCode { get; set; } = null!;
+    public required string PostalCode { get; set; } 
+
+    public string? Contacts { get; set; }
 
     public bool IsDefaultAddress { get; set; }
 
@@ -28,5 +30,5 @@ public partial class TbUserContact : BaseEntity
 
     public virtual TbCity City { get; set; } = null!;
 
-    public virtual ICollection<TbShipment> TbShipments { get; set; } = new List<TbShipment>();
+    public virtual ICollection<TbShipment> TbShipments { get; set; } = [];
 }

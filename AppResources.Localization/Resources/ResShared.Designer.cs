@@ -1204,6 +1204,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Contacts.
+        /// </summary>
+        public static string Field_Contacts {
+            get {
+                return ResourceManager.GetString("Field_Contacts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Contact Type.
         /// </summary>
         public static string Field_ContactType {
@@ -1285,6 +1294,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Is Default Address.
+        /// </summary>
+        public static string Field_IsDefaultAddress {
+            get {
+                return ResourceManager.GetString("Field_IsDefaultAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Kilogram Rate.
         /// </summary>
         public static string Field_KiloGramRate {
@@ -1357,6 +1375,15 @@ namespace AppResources.Localization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Other Address Informations.
+        /// </summary>
+        public static string Field_OtherAddressInfo {
+            get {
+                return ResourceManager.GetString("Field_OtherAddressInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Package.
         /// </summary>
         public static string Field_PackageId {
@@ -1380,6 +1407,24 @@ namespace AppResources.Localization.Resources {
         public static string Field_PackageValue {
             get {
                 return ResourceManager.GetString("Field_PackageValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Packaging Name (Arabic Name).
+        /// </summary>
+        public static string Field_PackagingAname {
+            get {
+                return ResourceManager.GetString("Field_PackagingAname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Packaging Name (English Name).
+        /// </summary>
+        public static string Field_PackagingEname {
+            get {
+                return ResourceManager.GetString("Field_PackagingEname", resourceCulture);
             }
         }
         
@@ -1425,6 +1470,15 @@ namespace AppResources.Localization.Resources {
         public static string Field_Phone_Sender {
             get {
                 return ResourceManager.GetString("Field_Phone_Sender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Postal Code.
+        /// </summary>
+        public static string Field_PostalCode {
+            get {
+                return ResourceManager.GetString("Field_PostalCode", resourceCulture);
             }
         }
         

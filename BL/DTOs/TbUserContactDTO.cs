@@ -34,14 +34,36 @@ public partial record TbUserContactDTO : BaseEntityDTO
     [Display(Name = nameof(ResShared.Field_CityId), ResourceType = typeof(ResShared))]
     public Guid CityId { get; set; }
 
+
     [Required(ErrorMessageResourceName = nameof(ResShared.Val_Required), ErrorMessageResourceType = typeof(ResShared), AllowEmptyStrings = false)]
     [StringLength(500, MinimumLength = 3, ErrorMessageResourceName = nameof(ResShared.Val_StringLength), ErrorMessageResourceType = typeof(ResShared))]
     [Display(Name = nameof(ResShared.Field_Address), ResourceType = typeof(ResShared))]
     public string Address { get; set; } = null!;
 
+
     [Required(ErrorMessageResourceName = nameof(ResShared.Val_Required), ErrorMessageResourceType = typeof(ResShared), AllowEmptyStrings = false)]
     [Display(Name = nameof(ResShared.Field_ContactType), ResourceType = typeof(ResShared))]
     public ContactType ContactType { get; set; }
+
+
+    [StringLength(500, MinimumLength = 3, ErrorMessageResourceName = nameof(ResShared.Val_StringLength), ErrorMessageResourceType = typeof(ResShared))]
+    [Display(Name = nameof(ResShared.Field_OtherAddressInfo), ResourceType = typeof(ResShared))]
+    public string? OtherAddressInfo { get; set; }
+
+
+    [Required(ErrorMessageResourceName = nameof(ResShared.Val_Required), ErrorMessageResourceType = typeof(ResShared), AllowEmptyStrings = false)]
+    [StringLength(20, MinimumLength = 3, ErrorMessageResourceName = nameof(ResShared.Val_StringLength), ErrorMessageResourceType = typeof(ResShared))]
+    [Display(Name = nameof(ResShared.Field_PostalCode), ResourceType = typeof(ResShared))]
+    public string PostalCode { get; set; } = null!;
+
+    [StringLength(500, MinimumLength = 3, ErrorMessageResourceName = nameof(ResShared.Val_StringLength), ErrorMessageResourceType = typeof(ResShared))]
+    [Display(Name = nameof(ResShared.Field_Contacts), ResourceType = typeof(ResShared))]
+    public string? Contacts { get; set; }
+
+    [Required(ErrorMessageResourceName = nameof(ResShared.Val_Required), ErrorMessageResourceType = typeof(ResShared), AllowEmptyStrings = false)]
+    [Display(Name = nameof(ResShared.Field_IsDefaultAddress), ResourceType = typeof(ResShared))]
+    public bool IsDefaultAddress { get; set; }
+
 
     // Read-Only From 
     [Display(Name = nameof(ResShared.Field_CityAname), ResourceType = typeof(ResShared))]

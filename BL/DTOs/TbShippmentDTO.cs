@@ -10,6 +10,9 @@ public partial record TbShipmentDTO : BaseEntityDTO
 {
     public DateTime ShippingDate { get; set; }
 
+    public DateTime DelivryDate { get; set; }
+
+
     [Required(ErrorMessageResourceName = nameof(ResShared.Val_Required), ErrorMessageResourceType = typeof(ResShared))]
     [Display(Name = nameof(ResShared.Field_SenderId), ResourceType = typeof(ResShared))]
     public Guid SenderId { get; set; }
@@ -53,5 +56,8 @@ public partial record TbShipmentDTO : BaseEntityDTO
 
     public string? TrackingNumber { get; set; }
     public Guid? ReferenceId { get; set; }
+
+    public Guid? PackagingId { get; set; }
+
 
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BL.DTOs
 {
-    public record PackagingDTO : BaseEntityDTO
+    public record TbPackagingDTO : BaseEntityDTO
     {
         public required string PackagingEname { get; set; }
 

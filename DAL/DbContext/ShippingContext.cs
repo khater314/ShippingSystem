@@ -40,6 +40,8 @@ public partial class ShippingContext : IdentityDbContext<AppUser, AppRole, Guid>
 
     public virtual DbSet<TbShipmentStatus> TbShipmentStatuses { get; set; }
 
+    public virtual DbSet<TbPackaging> TbPackagings { get; set; }
+
     public virtual DbSet<TbSubscriptionPackage> TbSubscriptionPackages { get; set; }
 
     public virtual DbSet<TbUserContact> TbUserContacts { get; set; }
@@ -196,6 +198,11 @@ public partial class ShippingContext : IdentityDbContext<AppUser, AppRole, Guid>
                 .OnDelete(DeleteBehavior.NoAction)
                 .HasConstraintName("FK_TbShipments_TbShippingTypes");
 
+            entity.HasOne(d => d.Packaging).WithMany(p => p.TbShipments)
+                .HasForeignKey(d => d.PackagingId)
+                .OnDelete(DeleteBehavior.NoAction)
+                .HasConstraintName("FK_TbShipments_TbPackagings");
+
             entity.HasOne<AppUser>().WithMany()
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.Cascade)
@@ -265,6 +272,19 @@ public partial class ShippingContext : IdentityDbContext<AppUser, AppRole, Guid>
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.Cascade)
                 .HasConstraintName("FK_TbUserSubscriptions_AspNetUsers");
+        });
+
+        modelBuilder.Entity<TbPackaging>(entity =>
+        {
+            entity.Property(e => e.Id).HasDefaultValueSql("(newid())", "DF_TbPackagings_Id");
+            entity.Property(e => e.CreatedDate).HasColumnType("datetime");
+            entity.Property(e => e.PackagingAname)
+                .HasMaxLength(200)
+                .HasColumnName("PackagingAName");
+            entity.Property(e => e.PackagingEname)
+                .HasMaxLength(200)
+                .HasColumnName("PackagingEName");
+            entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
         });
 
         modelBuilder.Entity<TbRefreshToken>(entity =>

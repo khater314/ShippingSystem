@@ -6,7 +6,10 @@ namespace Domains;
 public partial class TbShipment : BaseEntity
 {
     public Guid UserId { get; set; }
+
     public DateTime ShippingDate { get; set; }
+
+    public DateTime DelivryDate { get; set; } 
 
     public Guid ReceiverId { get; set; }
 
@@ -14,13 +17,15 @@ public partial class TbShipment : BaseEntity
 
     public Guid ShippingTypeId { get; set; }
 
-    public double Width { get; set; }
+    public Guid? PackagingId { get; set; }
+
+    public double Length { get; set; }
 
     public double Height { get; set; }
 
-    public double Weight { get; set; }
+    public double Width { get; set; }
 
-    public double Length { get; set; }
+    public double Weight { get; set; }
 
     public decimal PackageValue { get; set; }
 
@@ -35,6 +40,8 @@ public partial class TbShipment : BaseEntity
     public Guid? ReferenceId { get; set; }
 
     public virtual TbPaymentMethod? PaymentMethod { get; set; }
+
+    public virtual TbPackaging? Packaging { get; set; }
 
     public virtual TbUserContact UserContact { get; set; } = null!;
 

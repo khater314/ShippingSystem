@@ -18,6 +18,12 @@ public partial class TbUserContact : BaseEntity
 
     public string Address { get; set; } = null!;
 
+    public string OtherAddressInfo { get; set; } = null!;
+
+    public string PostalCode { get; set; } = null!;
+
+    public bool IsDefaultAddress { get; set; }
+
     public ContactType ContactType { get; set; }
 
     public virtual TbCity City { get; set; } = null!;

@@ -1,21 +1,27 @@
 using BL.Contracts;
+using BL.Contracts.Shipment;
+using BL.DTOs;
+using Domains.Enums;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Ui.Models;
-using Microsoft.AspNetCore.Localization;
+using Ui.Testing;
 
 
 namespace Ui.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController(IShipmentService shipmentService, IUserService userService) : Controller
     {
+
+        private readonly IShipmentService _shipmentService = shipmentService;
+        private readonly IUserService _userService = userService;
 
         public async Task<IActionResult> Index()
         {
+            await _shipmentService.CreateAsync(await new DummyData(_userService).FillShipment());
             return View();
         }
-
-        
 
         public IActionResult Privacy()
         {

@@ -36,6 +36,28 @@ namespace DAL.Repositories
                 throw new DataAccessException(errorMessage, ex);
             }
         }
+        private TResult ExecuteWithHandling<TResult>(Func<TResult> action, string errorMessage)
+        {
+            try
+            {
+                return action();
+            }
+            catch (InvalidOperationException ex) //
+            {
+                _logger.LogWarning(ex, "Entity not found - {Message}", errorMessage);
+                throw new DataAccessException("The requested record was not found in the system.", ex);
+            }
+            catch (DbUpdateException ex) //
+            {
+                _logger.LogError(ex, "Database update failed - {Message}", errorMessage);
+                throw new DataAccessException("A database constraint error occurred. Please check your data.", ex);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Unexpected error - {Message}", errorMessage);
+                throw new DataAccessException(errorMessage, ex);
+            }
+        }
         #endregion
 
         public async Task<IEnumerable<T>> GetAllAsync(CancellationToken ct = default)
@@ -56,12 +78,57 @@ namespace DAL.Repositories
 
         public async Task AddAsync(T entity, CancellationToken ct = default)
         {
-            await ExecuteWithHandlingAsync<object>(async () =>
+            await ExecuteWithHandlingAsync<bool>(async () =>
             {
                 await _dbSet.AddAsync(entity, ct);
                 await _context.SaveChangesAsync(ct);
-                return null!;
+                return true;
             }, "Failed to add a new record.");
+        }
+        public async Task<Guid> AddAndGetIdAsync(T entity, CancellationToken ct = default)
+        {
+            return await ExecuteWithHandlingAsync<Guid>(async () =>
+            {
+                await _dbSet.AddAsync(entity, ct);
+                await _context.SaveChangesAsync(ct);
+                return entity.Id;
+            }, "Failed to add a new record.");
+        }
+        public async Task<T> AddAndReturnAsync(T entity, CancellationToken ct = default)
+        {
+            return await ExecuteWithHandlingAsync<T>(async () =>
+            {
+                await _dbSet.AddAsync(entity, ct);
+                await _context.SaveChangesAsync(ct);
+                return entity;
+            }, "Failed to add a new record.");
+        }
+
+        public bool Add(T entity)
+        {
+            return ExecuteWithHandling(() =>
+            {
+                _dbSet.Add(entity);
+                _context.SaveChanges();
+                return true;
+            }, "Failed to add a new record.");
+        }
+
+        public bool Add(T entity, out Guid id)
+        {
+
+            ExecuteWithHandling<object?>(() =>
+            {
+                _dbSet.Add(entity);
+                _context.SaveChanges();
+                return null;
+            }, "Failed to add a new record.");
+
+            if (entity.Id == Guid.Empty)
+            { id = Guid.Empty; return false; }
+
+            id = entity.Id;
+            return true;
         }
 
         public async Task UpdateAsync(T entity, CancellationToken ct = default)
@@ -112,5 +179,7 @@ namespace DAL.Repositories
                 return await _dbSet.Where(i => i.CurrentState == 1).Where(filter).ToListAsync(ct);
             }, "Error retrieving the records.");
         }
+
+
     }
 }

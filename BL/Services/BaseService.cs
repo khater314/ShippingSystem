@@ -9,11 +9,24 @@ using System.Text;
 
 namespace BL.Services
 {
-    public class BaseService<T, DTO>(ITableRepository<T> repo, IMapper mapper, IUserService userService) : IBaseService<T, DTO> where T : BaseEntity
+    public class BaseService<T, DTO>(
+        ITableRepository<T> repo, 
+        IMapper mapper, 
+        IUserService userService
+    ) 
+    : IBaseService<T, DTO> where T : BaseEntity
     {
         private readonly ITableRepository<T> _repo = repo;
         private readonly BL.Mapping.IMapper _mapper = mapper;
         private readonly IUserService _userService = userService;
+
+        /* Overloaded Constructor */
+        public BaseService(
+            IUnitOfWork unitOfWork, 
+            IMapper mapper, 
+            IUserService userService
+        ) : this(unitOfWork.GetRepository<T>(), mapper, userService) {  }
+
 
         /* Request Data */
         public async Task<IEnumerable<DTO>> GetAllAsync(CancellationToken ct = default)
@@ -35,6 +48,20 @@ namespace BL.Services
             dbEntity.CreatedBy = await _userService.GetLoggedInUserId();
             await _repo.AddAsync(dbEntity, ct);
         }
+        public async Task<Guid> AddAndGetIdAsync(DTO entity, CancellationToken ct = default)
+        {
+            var dbEntity = _mapper.Map<DTO, T>(entity);
+            dbEntity.CurrentState = 1;
+            dbEntity.CreatedBy = await _userService.GetLoggedInUserId();
+            return await _repo.AddAndGetIdAsync(dbEntity, ct);
+        }
+        public async Task<T> AddAndReturnAsync(DTO entity, CancellationToken ct = default)
+        {
+            var dbEntity = _mapper.Map<DTO, T>(entity);
+            dbEntity.CurrentState = 1;
+            dbEntity.CreatedBy = await _userService.GetLoggedInUserId();
+            return await _repo.AddAndReturnAsync(dbEntity, ct);
+        }
         public async Task UpdateAsync(DTO entity, CancellationToken ct = default)
         {
             var dbEntity = _mapper.Map<DTO, T>(entity);
@@ -47,9 +74,6 @@ namespace BL.Services
             dbEntity.UpdatedBy = await _userService.GetLoggedInUserId();
             await _repo.ChangeStatusAsync(dbEntity.Id, status, ct);
         }
-
-
-
 
     }
 }

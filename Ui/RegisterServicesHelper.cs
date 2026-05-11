@@ -11,6 +11,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Ui.Services;
+using BL.Contracts.Shipment;
+using BL.Services.Shipment;
 
 namespace Ui
 {
@@ -78,6 +80,7 @@ namespace Ui
             #region Repositories
             builder.Services.AddScoped(typeof(ITableRepository<>), typeof(TableRepository<>));
             builder.Services.AddScoped(typeof(IViewRepository<>), typeof(ViewRepository<>));
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             #endregion
 
             #region Tables & Views Services
@@ -93,6 +96,9 @@ namespace Ui
             builder.Services.AddScoped<IShipmentStatusService, ShipmentStatusService>();
             builder.Services.AddScoped<IRateSettingService, RateSettingService>();
             builder.Services.AddScoped<IRefreshTokenService, RefreshTokenService>();
+            builder.Services.AddScoped<IShipmentRateCalculator, ShipmentRateCalculator>();
+            builder.Services.AddScoped<ITrackingNumberCreator, TrackingNumberCreator>();
+
 
             builder.Services.AddScoped<BL.Contracts.IUserService, Ui.Services.UserService>();
             builder.Services.AddScoped<BL.Mapping.IMapper, BL.Mapping.AutoMapperAdapter>();

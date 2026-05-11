@@ -12,6 +12,10 @@ namespace DAL.Contracts
         Task<IEnumerable<T>> GetAllAsync(CancellationToken ct = default);
         Task<T> GetByIdAsync(Guid id, CancellationToken ct = default);
         Task AddAsync(T entity, CancellationToken ct = default);
+        Task<T> AddAndReturnAsync(T entity, CancellationToken ct = default);
+        Task<Guid> AddAndGetIdAsync(T entity, CancellationToken ct = default);
+        bool Add(T entity);
+        bool Add(T entity, out Guid id);
         Task UpdateAsync(T entity, CancellationToken ct = default);
         Task DeleteAsync(Guid id, CancellationToken ct = default);
         Task ChangeStatusAsync(Guid id, int status = 1, CancellationToken ct = default);

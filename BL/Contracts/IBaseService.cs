@@ -11,6 +11,8 @@ namespace BL.Contracts
         Task<IEnumerable<DTO>> GetAllAsync(CancellationToken ct = default);
         Task<DTO> GetByIdAsync(Guid id, CancellationToken ct = default);
         Task AddAsync(DTO entity, CancellationToken ct = default);
+        Task<T> AddAndReturnAsync(DTO entity, CancellationToken ct = default);
+        Task<Guid> AddAndGetIdAsync(DTO entity, CancellationToken ct = default);
         Task UpdateAsync(DTO entity, CancellationToken ct = default);
         Task ChangeStatusAsync(DTO entity, int status = 1, CancellationToken ct = default);
     }

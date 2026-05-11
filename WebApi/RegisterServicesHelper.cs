@@ -12,6 +12,8 @@ using AppResources.Localization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using WebApi.Services;
 using Microsoft.OpenApi;
+using BL.Contracts.Shipment;
+using BL.Services.Shipment;
 
 namespace WebApi
 {
@@ -136,6 +138,7 @@ namespace WebApi
             // Repositories Add Scoped
             builder.Services.AddScoped(typeof(ITableRepository<>), typeof(TableRepository<>));
             builder.Services.AddScoped(typeof(IViewRepository<>), typeof(ViewRepository<>));
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             // Services Add Scoped
             builder.Services.AddScoped<ICityService, CityService>();
             builder.Services.AddScoped<IShippingTypeService, ShippingTypeService>();
@@ -148,6 +151,8 @@ namespace WebApi
             builder.Services.AddScoped<IPaymentMethodService, PaymentMethodService>();
             builder.Services.AddScoped<IShipmentStatusService, ShipmentStatusService>();
             builder.Services.AddScoped<IRateSettingService, RateSettingService>();
+            builder.Services.AddScoped<IShipmentRateCalculator, ShipmentRateCalculator>();
+            builder.Services.AddScoped<ITrackingNumberCreator, TrackingNumberCreator>();
 
             builder.Services.AddScoped<IRefreshTokenService, RefreshTokenService>();
             builder.Services.AddSingleton<TokenService>();

@@ -8,6 +8,7 @@ namespace BL.DTOs;
 
 public partial record TbShipmentDTO : BaseEntityDTO
 {
+    public Guid UserId { get; set; }
     public DateTime ShippingDate { get; set; }
 
     public DateTime DelivryDate { get; set; }
@@ -20,6 +21,11 @@ public partial record TbShipmentDTO : BaseEntityDTO
     [Required(ErrorMessageResourceName = nameof(ResShared.Val_Required), ErrorMessageResourceType = typeof(ResShared))]
     [Display(Name = nameof(ResShared.Field_ReceiverId), ResourceType = typeof(ResShared))]
     public Guid ReceiverId { get; set; }
+
+
+    public TbUserContactDTO Sender { get; set; } = null!;
+    public TbUserContactDTO Receiver { get; set; } = null!;
+
 
     [Required(ErrorMessageResourceName = nameof(ResShared.Val_Required), ErrorMessageResourceType = typeof(ResShared))]
     [Display(Name = nameof(ResShared.Field_ShippingTypeId), ResourceType = typeof(ResShared))]

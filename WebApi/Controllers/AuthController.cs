@@ -9,10 +9,18 @@ namespace WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AuthController(IUserService userService, IRefreshTokenService refreshTokenService, TokenService tokenService) : ControllerBase
+    public class AuthController
+        (
+        IUserService userService, 
+        IRefreshTokenService refreshTokenService,
+        IRefreshTokenRetrevalService refreshTokenRetreval,
+        TokenService tokenService
+        ) 
+        : ControllerBase
     {
         private readonly IUserService _userService = userService;
         private readonly IRefreshTokenService _refreshToken = refreshTokenService;
+        private readonly IRefreshTokenRetrevalService _refreshTokenRetreval = refreshTokenRetreval;
         private readonly TokenService _tokenService = tokenService;
 
         [HttpPost("register")]
@@ -25,6 +33,7 @@ namespace WebApi.Controllers
 
             return Ok(user);
         }
+
 
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] UserLoginDto request)
@@ -39,23 +48,27 @@ namespace WebApi.Controllers
 
             List<Claim> claims = GetUserClaims(user);
 
-            string refreshToken = _tokenService.GenerateRefreshToken();
-            string accessToken = _tokenService.GenerateAccessToken(claims);
+            //string refreshToken = _tokenService.GenerateRefreshToken();
+            //string accessToken = _tokenService.GenerateAccessToken(claims);
+
+            if (string.IsNullOrEmpty(userResult.RefreshToken))
+                userResult.RefreshToken = _tokenService.GenerateRefreshToken();
 
             TbRefreshTokenDto storedRefreshToken = new()
             {
                 UserId = user.Id,
-                Token = refreshToken,
+                Token = userResult.RefreshToken,
                 Expires = DateTime.UtcNow.AddDays(7) 
             };
 
             await _refreshToken.RefreshToken(storedRefreshToken);
 
-            if (!string.IsNullOrEmpty(refreshToken))
-                SetRefreshTokenInCookie(storedRefreshToken);
+            
+            SetRefreshTokenInCookie(storedRefreshToken);
 
-            return Ok(new { IsSuccess = true, AccessToken = accessToken , RefreshToken = refreshToken });
+            return Ok(userResult);
         }
+
 
         // Refresh Access & Refresh Token.
         [HttpPost("refresh-token")]
@@ -64,7 +77,7 @@ namespace WebApi.Controllers
             if (!Request.Cookies.TryGetValue("RefreshToken", out string? refreshToken))
                 return Unauthorized("Refresh token is required!");
 
-            var storedToken = await _refreshToken.GetByToken(refreshToken);
+            var storedToken = await _refreshTokenRetreval.GetByToken(refreshToken);
 
             if (storedToken == null || string.IsNullOrEmpty(storedToken.Token)) 
                 return Unauthorized("Invalid refresh token!");
@@ -93,7 +106,7 @@ namespace WebApi.Controllers
                 return Unauthorized("Refresh token is required!");
             }
 
-            var storedToken = await _refreshToken.GetByToken(refreshToken);
+            var storedToken = await _refreshTokenRetreval.GetByToken(refreshToken);
 
             if (storedToken == null)
                 return Unauthorized("Token not found in database!");
@@ -110,24 +123,6 @@ namespace WebApi.Controllers
 
             return Ok(new { AccessToken = newAccessToken });
         }
-
-        //[HttpPost("revoke-token")]
-        //[Authorize] // لازم يكون عامل Login عشان يلغي التوكن بتاعه
-        //public async Task<IActionResult> RevokeToken([FromBody] RevokeTokenDto request)
-        //{
-        //    // لو مبعتش توكن في الـ Body، اسحب اللي في الكوكيز
-        //    var token = request.Token ?? Request.Cookies["refreshToken"];
-
-        //    if (string.IsNullOrEmpty(token))
-        //        return BadRequest("Token is required!");
-
-        //    var result = await _authService.RevokeTokenAsync(token);
-
-        //    if (!result) return BadRequest("Token is invalid!");
-
-        //    return Ok();
-        //}
-
 
         private void SetRefreshTokenInCookie(TbRefreshTokenDto refreshToken)
         {
@@ -150,6 +145,26 @@ namespace WebApi.Controllers
                 new(ClaimTypes.Role, "User") 
             };
             return claims;
+        }
+
+        private void comment()
+        {
+            //[HttpPost("revoke-token")]
+            //[Authorize] // لازم يكون عامل Login عشان يلغي التوكن بتاعه
+            //public async Task<IActionResult> RevokeToken([FromBody] RevokeTokenDto request)
+            //{
+            //    // لو مبعتش توكن في الـ Body، اسحب اللي في الكوكيز
+            //    var token = request.Token ?? Request.Cookies["refreshToken"];
+
+            //    if (string.IsNullOrEmpty(token))
+            //        return BadRequest("Token is required!");
+
+            //    var result = await _authService.RevokeTokenAsync(token);
+
+            //    if (!result) return BadRequest("Token is invalid!");
+
+            //    return Ok();
+            //}
         }
     }
 }

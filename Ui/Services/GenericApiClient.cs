@@ -15,7 +15,11 @@ namespace Ui.Services
         {
             _httpClient = httpClientFactory.CreateClient("ShippingApiClient");
 
-            _options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
+            _options = new JsonSerializerOptions 
+            { 
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                PropertyNameCaseInsensitive = true,
+            };
         }
 
         // GET

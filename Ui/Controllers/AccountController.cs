@@ -23,6 +23,7 @@ namespace Ui.Controllers
 
             var tokens = await _httpClient.PostAsync<UserLoginDto, UserResultDto>("api/auth/login", user);
 
+            // Break Point Here!
             if (!result.IsSuccess || tokens == null || !tokens.IsSuccess)
             {
                 ModelState.AddModelError(string.Empty, ResShared.Val_InvalidCredentials);
@@ -35,9 +36,18 @@ namespace Ui.Controllers
             }
 
             result.AccessToken = tokens.AccessToken;
+            
             SetAccessTokenInCookie(tokens.AccessToken);
 
-            return RedirectToLocal(user.ReturnUrl);
+            TbRefreshTokenDto refreshToken = new() 
+            { 
+                Token = tokens.RefreshToken, 
+                Expires = DateTime.UtcNow.AddDays(7), 
+                UserId = await _userService.GetLoggedInUserId()
+            };
+            SetRefreshTokenInCookie(refreshToken);
+
+            return Redirect(user.ReturnUrl ?? Url.Action("Index", "Home") ?? "/");
         }
 
         [HttpGet]
@@ -111,10 +121,22 @@ namespace Ui.Controllers
                 HttpOnly = false,
                 Expires = DateTime.UtcNow.AddMinutes(15),
                 Secure = true, // API must be served over HTTPS for this to work
-                SameSite = SameSiteMode.None,
+                SameSite = SameSiteMode.Lax,
                 Path = "/"
             };
             Response.Cookies.Append("AccessToken", accessToken, cookieOptions);
+        }
+        private void SetRefreshTokenInCookie(TbRefreshTokenDto refreshToken)
+        {
+            var cookieOptions = new CookieOptions
+            {
+                HttpOnly = true,
+                Expires = refreshToken.Expires.ToUniversalTime(),
+                Secure = true, // API must be served over HTTPS for this to work
+                SameSite = SameSiteMode.Lax,
+                Path = "/"
+            };
+            Response.Cookies.Append("RefreshToken", refreshToken.Token, cookieOptions);
         }
     }
 }

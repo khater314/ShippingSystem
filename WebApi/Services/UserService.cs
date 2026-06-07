@@ -1,17 +1,27 @@
-﻿using BL.DTOs;
+﻿using BL.Contracts;
+using BL.DTOs;
 using DAL.UserModel;
 using Microsoft.AspNetCore.Identity;
-using System.Net.Sockets;
 using Microsoft.EntityFrameworkCore;
+using System.Net.Sockets;
 using System.Security.Claims;
 
 namespace WebApi.Services
 {
-    public class UserService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IHttpContextAccessor httpContextAccessor) : BL.Contracts.IUserService
+    public class UserService(
+        UserManager<AppUser> userManager, 
+        SignInManager<AppUser> signInManager, 
+        IHttpContextAccessor httpContextAccessor,
+        IRefreshTokenRetrevalService refreshToken,
+        TokenService tokenService
+        ) 
+        : BL.Contracts.IUserService
     {
         private readonly UserManager<AppUser> _userManager = userManager;
         private readonly SignInManager<AppUser> _signInManager = signInManager;
         private readonly IHttpContextAccessor _httpContextAccessor = httpContextAccessor;
+        private readonly IRefreshTokenRetrevalService _refreshTokenRetreval = refreshToken;
+        private readonly TokenService _tokenService = tokenService;
 
         public async Task<UserResultDto> RegisterAsync(UserRegisterDto registerDto)
         {
@@ -47,6 +57,12 @@ namespace WebApi.Services
             return new UserResultDto
             {
                 IsSuccess = true,
+                RefreshToken = _tokenService.GenerateRefreshToken(),
+                AccessToken = _tokenService.GenerateAccessToken(
+                    [
+                        new (ClaimTypes.Name, loginDto.Email),
+                        new (ClaimTypes.Role, "User")
+                    ])
             };
         }
 
@@ -82,15 +98,9 @@ namespace WebApi.Services
 
         public async Task<Guid> GetLoggedInUserId()
         {
-            var userId = _httpContextAccessor.HttpContext?.User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            if(string.IsNullOrEmpty(userId))
-            {
-                // You Should Put Logic Here In This Case.
-                return Guid.Empty;
-            }
-
-            return Guid.Parse(userId);
+            var sRefreshToken = _httpContextAccessor.HttpContext?.Request.Cookies["RefreshToken"];
+            var oRefreshToken = await _refreshTokenRetreval.GetByToken(sRefreshToken);
+            return oRefreshToken.UserId;
         }
 
         public async Task<IEnumerable<UserReadDto>> GetUsersBySelectedIdsAsync(List<string> ids)

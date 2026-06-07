@@ -93,11 +93,14 @@ namespace Ui
             builder.Services.AddScoped<IUserContactService, UserContactService>();
             builder.Services.AddScoped<IUserSubscriptionService, UserSubscriptionService>();
             builder.Services.AddScoped<IPaymentMethodService, PaymentMethodService>();
+            builder.Services.AddScoped<IPackagingService, PackagingService>();
             builder.Services.AddScoped<IShipmentStatusService, ShipmentStatusService>();
             builder.Services.AddScoped<IRateSettingService, RateSettingService>();
             builder.Services.AddScoped<IRefreshTokenService, RefreshTokenService>();
             builder.Services.AddScoped<IShipmentRateCalculator, ShipmentRateCalculator>();
             builder.Services.AddScoped<ITrackingNumberCreator, TrackingNumberCreator>();
+            builder.Services.AddScoped<IRefreshTokenRetrevalService, RefreshTokenRetrevalService>();
+            builder.Services.AddScoped<ISelectShippingType, SelectShippingType>();
 
 
             builder.Services.AddScoped<BL.Contracts.IUserService, Ui.Services.UserService>();

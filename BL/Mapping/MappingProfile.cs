@@ -15,6 +15,7 @@ namespace BL.Mapping
             CreateMap<TbCountry, TbCountryDTO>().ReverseMap();
             CreateMap<TbCarrier, TbCarrierDTO>().ReverseMap();
             CreateMap<TbPaymentMethod, TbPaymentMethodDTO>().ReverseMap();
+            CreateMap<TbPackaging, TbPackagingDTO>().ReverseMap();
             CreateMap<TbSubscriptionPackage, TbSubscriptionPackageDTO>().ReverseMap();
             CreateMap<TbShipmentStatus, TbShipmentStatusDTO>().ReverseMap();
             CreateMap<TbShipment, TbShipmentDTO>().ReverseMap();

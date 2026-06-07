@@ -1,0 +1,781 @@
+﻿<!-- Breadcroumbs start -->
+  <div class="wshipping-content-block wshipping-breadcroumb inner-bg-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-7">
+          <h1>Create New Shipment</h1>
+          <a href="index.html" title="Home">Home</a> / Create New Shipment </div>
+        <div class="col-12 col-lg-5 text-right">
+          <h4>We freight to all over the world
+            The best logistic company, <span>FAST</span> and <span>SAFELY!</span></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Breadcroumbs end --> 
+  
+<!-- Create New Shipment Start -->
+  <div class="wshipping-content-block shipping-block">
+    <div class="container">
+      <h2 class="heading2-border mt0">Create New Shipping</h2>
+      <div class="row">
+        <div class="shipping-form-block">
+          <form class="steps" accept-charset="UTF-8" enctype="multipart/form-data" id="shipmentForm">
+
+            <!-- progressbar -->
+            <ul id="progressbar">
+              <li class="active">Where From</li>
+              <li>Where Going</li>
+              <li>What</li>
+              <li>How</li>
+              <li>Payment</li>
+              <li>Review</li>
+              <li>Complete</li>
+            </ul>
+
+
+            <!-- fieldsets Sender Start-->
+            <fieldset id="sender-fieldset">
+                <h2 class="fs-title">Hello. Where are you shipping from? <a href="" title="" class="login-btn-form">Login</a></h2>
+                <h3 class="fs-subtitle">* Indicates required field </h3>
+
+                <div class="shipping-form">
+
+                    <!-- Row 1: FullName, Email, Phone -->
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label>Full Name<sup>*</sup></label>
+                                <input type="text" id="SenderFullName" name="SenderFullName" class="form-control" required minlength="3" maxlength="200" />
+                                <span class="error-message text-danger" data-val-for="SenderFullName"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label>E-mail <sup>*</sup></label>
+                                <input type="email" id="SenderEmail" name="SenderEmail" class="form-control" required />
+                                <span class="error-message text-danger" data-val-for="SenderEmail"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label>Telephone<sup>*</sup></label>
+                                        <input type="tel"
+                                               id="SenderPhone"
+                                               name="SenderPhone"
+                                               class="form-control"
+                                               required
+                                               pattern="^\+?[0-9\s\-]{4,20}$"
+                                               title="Please enter a valid international phone number (e.g., +1234567890)" />
+                                <span class="error-message text-danger" data-val-for="SenderPhone"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Country, City, ContactType -->
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label>Country<sup>*</sup></label>
+                                <select id="SenderCountryId" name="SenderCountryId" class="form-control" required>
+                                    <option value="">Select Country</option>
+                                </select>
+                                <span class="error-message text-danger" data-val-for="SenderCountryId"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label>City<sup>*</sup></label>
+                                <select id="SenderCityId" name="SenderCityId" class="form-control" required>
+                                    <option value="">Select City</option>
+                                </select>
+                                <span class="error-message text-danger" data-val-for="SenderCityId"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label>Contact Type<sup>*</sup></label>
+                                <select id="SenderContactType" name="SenderContactType" class="form-control" required>
+                                    <option value="0">Sender</option>
+                                    <option value="1">Receiver</option>
+                                    <option value="2">Both</option>
+                                </select>
+                                <span class="error-message text-danger" data-val-for="SenderContactType"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 3: Address, Contacts, PostalCode -->
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label>Address<sup>*</sup></label>
+                                <input type="text" id="SenderAddress" name="SenderAddress" class="form-control" required minlength="3" maxlength="500" />
+                                <span class="error-message text-danger" data-val-for="SenderAddress"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label>Postal Code<sup>*</sup></label>
+                                <input type="text" id="SenderPostalCode" name="SenderPostalCode" class="form-control" required minlength="3" maxlength="20" />
+                                <span class="error-message text-danger" data-val-for="SenderPostalCode"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label>Additional Contacts</label>
+                                <input type="text" id="SenderContacts" name="SenderContacts" class="form-control" maxlength="500" />
+                                <span class="error-message text-danger" data-val-for="SenderContacts"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 4: OtherAddressInfo -->
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <div class="form-group">
+                                <label>Other Address Info</label>
+                                <input type="text" id="SenderOtherAddressInfo" name="SenderOtherAddressInfo" class="form-control" />
+                                <span class="error-message text-danger" data-val-for="SenderOtherAddressInfo"></span>
+                            </div>
+                        </div>
+                    </div>
+                            
+                    <!-- Row 5: IsDefaultAddress -->
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label class="slide-label">Is this your default address?</label>
+                                <div class="slide-redio">
+                                    <input type="checkbox" id="SenderIsDefaultAddress" name="SenderIsDefaultAddress" value="true" />
+                                    <label for="SenderIsDefaultAddress"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+                <input type="button" name="next" class="next action-button" value="Continue" />
+                <input type="reset" name="cancel" class="action-button btn-red" value="Cancel Shipment" />
+            </fieldset>
+            <!-- fieldsets Sender end--> 
+
+
+            <!-- fieldsets Receiver Start-->
+            <fieldset id="receiver-fieldset">
+                <h2 class="fs-title">Great. Who is receiving the shipment?</h2>
+                <h3 class="fs-subtitle">* Indicates required field </h3>
+
+                <div class="shipping-form">
+
+                    <!-- Row 1: Receiver FullName, Email, Phone -->
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label>Receiver Full Name<sup>*</sup></label>
+                                <input type="text" id="ReceiverFullName" name="ReceiverFullName" class="form-control" required minlength="3" maxlength="200" />
+                                <span class="error-message text-danger" data-val-for="ReceiverFullName"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label>Receiver E-mail <sup>*</sup></label>
+                                <input type="email" id="ReceiverEmail" name="ReceiverEmail" class="form-control" required />
+                                <span class="error-message text-danger" data-val-for="ReceiverEmail"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label>Receiver Telephone<sup>*</sup></label>
+                                        <input type="tel"
+                                               id="ReceiverPhone"
+                                               name="ReceiverPhone"
+                                               class="form-control"
+                                               required
+                                               pattern="^\+?[0-9\s\-]{4,20}$"
+                                               title="Please enter a valid international phone number (e.g., +1234567890)" />
+                                <span class="error-message text-danger" data-val-for="ReceiverPhone"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Receiver Country, City, ContactType -->
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label>Receiver Country<sup>*</sup></label>
+                                <select id="ReceiverCountryId" name="ReceiverCountryId" class="form-control" required>
+                                    <option value="">Select Country</option>
+                                </select>
+                                <span class="error-message text-danger" data-val-for="ReceiverCountryId"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label>Receiver City<sup>*</sup></label>
+                                <select id="ReceiverCityId" name="ReceiverCityId" class="form-control" required>
+                                    <option value="">Select City</option>
+                                </select>
+                                <span class="error-message text-danger" data-val-for="ReceiverCityId"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label>Receiver Contact Type<sup>*</sup></label>
+                                <select id="ReceiverContactType" name="ReceiverContactType" class="form-control" required>
+                                    <option value="0">Sender</option>
+                                    <option value="1" selected>Receiver</option>
+                                    <option value="2">Both</option>
+                                </select>
+                                <span class="error-message text-danger" data-val-for="ReceiverContactType"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 3: Receiver Address, PostalCode, Contacts -->
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label>Receiver Address<sup>*</sup></label>
+                                <input type="text" id="ReceiverAddress" name="ReceiverAddress" class="form-control" required minlength="3" maxlength="500" />
+                                <span class="error-message text-danger" data-val-for="ReceiverAddress"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label>Receiver Postal Code<sup>*</sup></label>
+                                <input type="text" id="ReceiverPostalCode" name="ReceiverPostalCode" class="form-control" required minlength="3" maxlength="20" />
+                                <span class="error-message text-danger" data-val-for="ReceiverPostalCode"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label>Receiver Additional Contacts</label>
+                                <input type="text" id="ReceiverContacts" name="ReceiverContacts" class="form-control" maxlength="500" />
+                                <span class="error-message text-danger" data-val-for="ReceiverContacts"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 4: Receiver OtherAddressInfo -->
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <div class="form-group">
+                                <label>Receiver Other Address Info</label>
+                                <input type="text" id="ReceiverOtherAddressInfo" name="ReceiverOtherAddressInfo" class="form-control"  />
+                                <span class="error-message text-danger" data-val-for="ReceiverOtherAddressInfo"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 5: Receiver IsDefaultAddress -->
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label class="slide-label">Save as receiver default address?</label>
+                                <div class="slide-redio">
+                                    <input type="checkbox" id="ReceiverIsDefaultAddress" name="ReceiverIsDefaultAddress" value="true" />
+                                    <label for="ReceiverIsDefaultAddress"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <input type="button" name="previous" class="previous action-button-previous" value="Back" />
+                <input type="button" name="next" class="next action-button" value="Continue" />
+            </fieldset>
+            <!-- fieldsets Receiver end-->
+            
+            
+            <!-- fieldsets package Start-->
+            <fieldset id="package-fieldset">
+                <h2 class="fs-title">What kind of packaging are you using? <a href="" title="" class="login-btn-form">Login</a></h2>
+                <h3 class="fs-subtitle">* Indicates required field </h3>
+
+                <div class="shipping-form">
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+
+                            <!-- Row 1: Packaging Type & Weight -->
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group">
+                                        <label for="PackageType">Packaging Type<sup></sup></label>
+                                        <div class="input-comment">
+                                            <select id="PackageType" name="PackageType" class="form-control" >
+                                                <option value="">Select Packaging Type</option>
+                                                <option value="Customer packaging">Customer packaging</option>
+                                                <option value="2kg">2kg</option>
+                                                <option value="10kg">10kg</option>
+                                                <option value="20kg">20kg</option>
+                                            </select>
+                                            <span class="error-message text-danger" data-val-for="PackageType"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group">
+                                        <label for="PackageWeight">Weight<sup>*</sup></label>
+                                        <div class="input-comment">
+                                            <input type="number" id="PackageWeight" name="PackageWeight" class="form-control" required step="0.01" min="0.1" max="1000" />
+                                            <span class="field-comment">lbs</span>
+                                            <span class="error-message text-danger" data-val-for="PackageWeight"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Row 2: Dimensions (Length & Width) -->
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group">
+                                                <label for="PackageLength">Length<sup>*</sup></label>
+                                        <div class="input-comment">
+                                                    <input type="number" id="PackageLength" name="PackageLength" class="form-control" required step="0.01" min="0.1" max="1000" />
+                                            <span class="field-comment">in</span>
+                                            <span class="error-message text-danger" data-val-for="PackageLength"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group">
+                                        <label for="PackageWidth">Width<sup>*</sup></label>
+                                        <div class="input-comment">
+                                                    <input type="number" id="PackageWidth" name="PackageWidth" class="form-control" required step="0.01" min="0.1" max="1000" />
+                                            <span class="field-comment">in</span>
+                                            <span class="error-message text-danger" data-val-for="PackageWidth"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Row 3: Height & Declared Value -->
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group">
+                                        <label for="PackageHeight">Height<sup>*</sup></label>
+                                        <div class="input-comment">
+                                                    <input type="number" id="PackageHeight" name="PackageHeight" class="form-control" required step="0.01" min="0.1" max="1000" />
+                                            <span class="field-comment">in</span>
+                                            <span class="error-message text-danger" data-val-for="PackageHeight"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group">
+                                                <label for="PackageDeclaredValue">Declared value<sup>*</sup></label>
+                                        <div class="input-comment">
+                                                    <input type="number" id="PackageDeclaredValue" name="PackageDeclaredValue" class="form-control" required step="0.01" min="0.1" max="1000" />
+                                            <span class="field-comment">USD</span>
+                                            <span class="error-message text-danger" data-val-for="PackageDeclaredValue"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Package Image Column -->
+                        <div class="col-12 col-lg-4">
+                            <div class="what-package"><img src="~/assets/images/package.jpg" alt="Packaging reference image" /></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <input type="button" name="previous" class="previous action-button-previous" value="Back" />
+                <input type="button" name="next" class="next action-button" value="Continue" />
+                <input type="reset" name="cancel" class="action-button btn-red" value="Cancel Shipment" />
+            </fieldset>
+            <!-- fieldsets package end-->
+            
+
+            <!-- fieldsets pick up Start-->
+            <fieldset id="pickup-fieldset">
+                <h2 class="fs-title">How would you like to ship? <a href="" title="" class="login-btn-form">Login</a></h2>
+                <h3 class="fs-subtitle">* Indicates required field </h3>
+
+                <div class="shipping-form dropoff-block">
+                    <h3>Would you like us to pick up your shipment?</h3>
+
+                    <!-- Pickup Options Tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item"><a class="nav-link active" href="#no-drop" aria-controls="no-drop" role="tab" data-toggle="tab">No I'll drop it off</a></li>
+                        <li class="or-text">--or--</li>
+                        <li class="nav-item"><a class="nav-link" href="#yes-drop" aria-controls="yes-drop" role="tab" data-toggle="tab">Yes pick up my shipment</a></li>
+                    </ul>
+
+                    <!-- Hidden Input for Backend -->
+                    <input type="hidden" id="PickupOptionType" name="PickupOptionType" value="DropOff" />
+
+                    <div class="tab-content">
+
+                        <!-- Tab 1: No Drop (Customer Dropoff) -->
+                        <div role="tabpanel" class="tab-pane active" id="no-drop">
+
+                            <!-- Row 1: Dropoff Date -->
+                            <div class="row">
+                                <div class="col-12 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="PickupDropoffDate">Dropoff date:<sup>*</sup></label>
+                                        <div class="datepicker-group">
+                                            <input type="text" id="PickupDropoffDate" name="PickupDropoffDate" class="form-control datetimepicker1" placeholder="Date" />
+                                            <div class="datepicker-icon"><i class="fa fa-calendar-alt"></i></div>
+                                            <span class="error-message text-danger" data-val-for="PickupDropoffDate"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3>When would like it delivered?</h3>
+
+                            <!-- Row 2: Delivery Date and short details -->
+                            <div class="row">
+                                <div class="col-12 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="PickupDeliveryShortDetails">Date and short details:<sup>*</sup></label>
+                                        <input type="text" id="PickupDeliveryShortDetails" name="PickupDeliveryShortDetails" class="form-control" />
+                                        <span class="error-message text-danger" data-val-for="PickupDeliveryShortDetails"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 2: Yes Drop (Company Pickup) -->
+                        <div role="tabpanel" class="tab-pane" id="yes-drop">
+
+                            <!-- Row 3: Pickup Date -->
+                            <div class="row">
+                                <div class="col-12 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="PickupDate">Pickup date:<sup>*</sup></label>
+                                        <div class="datepicker-group">
+                                            <input type="text" id="PickupDate" name="PickupDate" class="form-control datetimepicker1" placeholder="Date" />
+                                            <div class="datepicker-icon"><i class="fa fa-calendar-alt"></i></div>
+                                            <span class="error-message text-danger" data-val-for="PickupDate"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="form-group">
+                                        <label>Shipping Type<sup>*</sup></label>
+                                        <select id="ShippingTypes" name="ShippingTypes" class="form-control" required>
+                                            <option value="">Select Shipping Type</option>
+                                        </select>
+                                                <span class="error-message text-danger" data-val-for="ShippingTypes"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pickup Address Review Block -->
+                            <div class="review">
+                                <h3>Pickup Address <a href="" title="Edit" class="btn-edit">Edit</a></h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text<br>
+                                    of the printing and typesetting industry.
+                                </p>
+                            </div>
+
+                            <!-- Pickup Window Details Block -->
+                            <div class="review">
+                                <h3>Pickup Details <a href="" title="Edit" class="btn-edit">Edit</a></h3>
+                                <p>
+                                    Your pickup window: 9:00AM - 7:00PM<br>
+                                    Pickup location: Front Door
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <input type="button" name="previous" class="previous action-button-previous" value="Back" />
+                <input type="button" name="next" class="next action-button" value="Continue" />
+                <input type="reset" name="cancel" class="action-button btn-red" value="Cancel Shipment" />
+            </fieldset>
+            <!-- fieldsets pick up end-->
+            
+
+            <!-- fieldsets payment Start-->
+            <fieldset id="payment-fieldset">
+                <h2 class="fs-title">How would like to pay? <a href="" title="" class="login-btn-form">Login</a></h2>
+                <h3 class="fs-subtitle">* Indicates required field </h3>
+
+                <div class="shipping-form">
+
+                    <!-- Row 1: Card Type & Accepted Cards Images -->
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label for="PaymentCardType">Card Type<sup>*</sup></label>
+                                <select id="PaymentCardType" name="PaymentCardType" class="form-control" required>
+                                    <option value="">Select One</option>
+                                    <option value="Paypal">Paypal</option>
+                                    <option value="Visa">Visa</option>
+                                    <option value="Master">Master</option>
+                                    <option value="American express">American express</option>
+                                </select>
+                                <span class="error-message text-danger" data-val-for="PaymentCardType"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <div class="we-accept">
+                                    <img src="~/assets/images/card-paypal.png" alt="Paypal" />
+                                    <img src="~/assets/images/card-visa.png" alt="Visa" />
+                                    <img src="~/assets/images/card-master.png" alt="MasterCard" />
+                                    <img src="~/assets/images/card-discover.png" alt="Discover" />
+                                    <img src="~/assets/images/card-amex.png" alt="Amex" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Card Number -->
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label for="PaymentCardNumber">Card Number<sup>*</sup></label>
+                                <input type="text" id="PaymentCardNumber" name="PaymentCardNumber" class="form-control" placeholder="0000 0000 0000 0000" required="required" />
+                                <span class="error-message text-danger" data-val-for="PaymentCardNumber"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 3: Expiration Month, Year & CVV -->
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label for="PaymentExpirationMonth">Expiration Month<sup>*</sup></label>
+                                <select id="PaymentExpirationMonth" name="PaymentExpirationMonth" class="form-control" required>
+                                    <option value="">Select Month</option>
+                                    <option value="01">January</option>
+                                    <option value="02">February</option>
+                                    <option value="03">March</option>
+                                </select>
+                                <span class="error-message text-danger" data-val-for="PaymentExpirationMonth"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label for="PaymentExpirationYear">Expiration Year<sup>*</sup></label>
+                                <select id="PaymentExpirationYear" name="PaymentExpirationYear" class="form-control" required>
+                                    <option value="">Select Year</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                </select>
+                                <span class="error-message text-danger" data-val-for="PaymentExpirationYear"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label for="PaymentCVV">CVV<sup>*</sup></label>
+                                <input type="text" id="PaymentCVV" name="PaymentCVV" class="form-control" placeholder="123" required="required" maxlength="4" />
+                                <span class="error-message text-danger" data-val-for="PaymentCVV"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 4: Billing Address Checkbox -->
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label class="slide-label">Billing Address</label>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="PaymentIsSameBilling" name="PaymentIsSameBilling" class="css-checkbox" value="true" />
+                                    <label for="PaymentIsSameBilling" class="css-label">Send updates on this shipment</label>
+                                </div>
+                                <span class="error-message text-danger" data-val-for="PaymentIsSameBilling"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 5: Duties, Taxes & Promo Code -->
+                    <div class="row">
+                        <div class="col-12 col-lg-12">
+                            <div class="form-group">
+                                <h3>Duties and Taxes</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                <label class="slide-label" for="PaymentUsePromoCode">Use a promo code?</label>
+                                <div class="slide-redio">
+                                    <input type="checkbox" id="PaymentUsePromoCode" name="PaymentUsePromoCode" value="true" />
+                                    <label for="PaymentUsePromoCode"></label>
+                                </div>
+                                <span class="error-message text-danger" data-val-for="PaymentUsePromoCode"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Action Buttons -->
+                <input type="button" name="previous" class="previous action-button-previous" value="Back" />
+                <input type="button" name="next" class="next action-button" value="Continue" />
+                <input type="reset" name="cancel" class="action-button btn-red" value="Cancel Shipment" />
+            </fieldset>
+            <!-- fieldsets payment end-->
+            
+
+            <!-- fieldsets Review Start-->
+            <fieldset id="review-fieldset">
+                <h2 class="fs-title">Let's make sure everything is in order</h2>
+                <div class="shipping-form">
+
+                    <!-- Row 1: Shipping Addresses Review (Where) -->
+                    <div class="review">
+                        <h3>Where <a href="" title="Edit" class="btn-edit">Edit</a></h3>
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <div class="ship-address">
+                                    <h4>Ship from</h4>
+                                    <p id="ReviewSenderSummary">Ahmed Mahmoud Khater<br>Alexandria, Egypt</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="ship-address">
+                                    <h4>Ship to</h4>
+                                    <p id="ReviewReceiverSummary">Receiver Name<br>Cairo, Egypt</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="ship-address">
+                                    <h4>Return to</h4>
+                                    <p id="ReviewReturnSummary">Same as Sender</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Package and Shipment Details (What) -->
+                    <div class="review">
+                        <h3>What <a href="" title="Edit" class="btn-edit">Edit</a></h3>
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <h5>Shipment information</h5>
+                                <ul>
+                                    <li><b>Actual Weight:</b> <span id="ReviewActualWeight">60 lbs</span></li>
+                                    <li><b>Total Billable Weight:</b> <span id="ReviewBillableWeight">60 lbs</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <h5>Package information</h5>
+                                <ul>
+                                    <li><b>Weight:</b> <span id="ReviewPackageWeight">60 lbs</span></li>
+                                    <li><b>Dimensions:</b> <span id="ReviewDimensions">17x13x11 in</span></li>
+                                    <li><b>Declared value:</b> <span id="ReviewValue">$100</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 3: Service Selection and Arrival (How) -->
+                    <div class="review">
+                        <h3>How <a href="" title="Edit" class="btn-edit">Edit</a></h3>
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <h5>Service Selection</h5>
+                                <p id="ReviewServiceType">Standard Shipping</p>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <h5>Arrival</h5>
+                                <p id="ReviewArrivalTime">Mon, Nov 6, 2026, End of the day</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 4: Additional Options Review -->
+                    <div class="review">
+                        <h3>Additional Option <a href="" title="Edit" class="btn-edit">Edit</a></h3>
+                        <div class="row">
+                            <div class="col-12">
+                                <p id="ReviewAdditionalOptions">N/A</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 5: Payment and Promo Code -->
+                    <div class="review">
+                        <h3>Payment <a href="" title="Edit" class="btn-edit">Edit</a></h3>
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <h5>Bill Shipping Charge to:</h5>
+                                <p id="ReviewPaymentMethod">Paypal</p>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <label for="ReviewPromoCode">Enter Promo Code:</label>
+                                <div class="promoCode-input">
+                                    <input type="text" id="ReviewPromoCode" name="ReviewPromoCode" class="form-control" />
+                                    <span class="error-message text-danger" data-val-for="ReviewPromoCode"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 6: Terms and Conditions Checkbox -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="review">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="ReviewTermsAgreed" name="ReviewTermsAgreed" class="css-checkbox" required />
+                                    <label for="ReviewTermsAgreed" class="css-label">I agree to the terms and conditions of the shipping service.</label>
+                                    <span class="error-message text-danger" data-val-for="ReviewTermsAgreed"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Action Buttons -->
+                <input type="button" name="previous" class="previous action-button-previous" value="Back" />
+                        <input type="button" name="next" class="next action-button" value="Continue" />
+                    </fieldset>
+            <!-- fieldsets Review end-->
+            
+
+            <!-- fieldsets Submit Start-->
+            <fieldset id="submit-fieldset">
+                <div class="shipping-form">
+                    <!-- Row 1: Success Message and Icon -->
+                    <div class="row justify-content-center">
+                        <div class="col-12 text-center">
+                            <h1 class="tanks-message">Thank You For Creating Your Shipment</h1>
+                            <p class="fs-subtitle">Your request has been processed successfully. You can track your shipment status from your dashboard.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <input type="button" name="previous" class="previous action-button-previous" value="Back to Review" />
+                <input type="submit" name="FinalSubmit" id="FinalSubmit" class="submit action-button" value="Finish" />
+            </fieldset>
+            <!-- fieldsets Submit end-->
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Create New Shipment end -->
+@section Scripts
+{
+    <script src="~/modules/apphelper.js"></script>
+    <script src="~/modules/apiclient.js"></script>
+    <script src="~/modules/utilities/service-utils.js"></script>
+    <script src="~/modules/services/countryservice.js"></script>
+    <script src="~/modules/services/cityservice.js"></script>
+    <script src="~/modules/services/packagingservice.js"></script>
+    <script src="~/modules/services/shippingtypeservice.js"></script>
+    <script src="~/modules/utilities/dropdownhelper.js"></script>
+    <script src="~/modules/services/shipment/pageevents.js"></script>
+    <script src="~/modules/services/shipment/shipmentservice.js"></script>
+    <script src="~/Modules/Services/Shipment/Create.js"></script>
+}

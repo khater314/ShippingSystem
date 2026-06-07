@@ -46,7 +46,7 @@ public partial record TbUserContactDTO : BaseEntityDTO
     public ContactType ContactType { get; set; }
 
 
-    [StringLength(500, MinimumLength = 3, ErrorMessageResourceName = nameof(ResShared.Val_StringLength), ErrorMessageResourceType = typeof(ResShared))]
+
     [Display(Name = nameof(ResShared.Field_OtherAddressInfo), ResourceType = typeof(ResShared))]
     public string? OtherAddressInfo { get; set; }
 
@@ -58,7 +58,7 @@ public partial record TbUserContactDTO : BaseEntityDTO
 
     [StringLength(500, MinimumLength = 3, ErrorMessageResourceName = nameof(ResShared.Val_StringLength), ErrorMessageResourceType = typeof(ResShared))]
     [Display(Name = nameof(ResShared.Field_Contacts), ResourceType = typeof(ResShared))]
-    public string? Contacts { get; set; }
+    public string? Contacts { get; set; } //contact info for the address, like phone, email, etc.
 
     [Required(ErrorMessageResourceName = nameof(ResShared.Val_Required), ErrorMessageResourceType = typeof(ResShared), AllowEmptyStrings = false)]
     [Display(Name = nameof(ResShared.Field_IsDefaultAddress), ResourceType = typeof(ResShared))]

@@ -19,7 +19,7 @@ namespace Ui.Controllers
 
         public async Task<IActionResult> Index()
         {
-            await _shipmentService.CreateAsync(await new DummyData(_userService).FillShipment());
+            //await _shipmentService.CreateAsync(await new DummyData(_userService).FillShipment());
             return View();
         }
 

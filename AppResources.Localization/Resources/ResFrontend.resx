@@ -1,0 +1,1144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+
+	<!-- ==================== PAGES ==================== -->
+	<data name="Page_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+	<data name="Page_About" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+	<data name="Page_Contact" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+	<data name="Page_Services" xml:space="preserve">
+    <value>Services</value>
+  </data>
+	<data name="Page_Blog" xml:space="preserve">
+    <value>Blog</value>
+  </data>
+	<data name="Page_Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+	<data name="Page_Shipping" xml:space="preserve">
+    <value>Shipping</value>
+  </data>
+	<data name="Page_Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+	<data name="Page_Register" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+
+	<!-- ==================== PAGE TITLES ==================== -->
+	<data name="Page_Title_CreateShipment" xml:space="preserve">
+    <value>Create New Shipment</value>
+  </data>
+	<data name="Page_Title_CreateNewShipping" xml:space="preserve">
+    <value>Create New Shipping</value>
+  </data>
+	<data name="Page_Title_CustomerLogin" xml:space="preserve">
+    <value>Customer Login</value>
+  </data>
+	<data name="Page_Title_LoginToYourAccount" xml:space="preserve">
+    <value>Login To Your Account</value>
+  </data>
+	<data name="Page_Title_CustomerRegistration" xml:space="preserve">
+    <value>Customer Registration</value>
+  </data>
+	<data name="Page_Title_Registration" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+	<data name="Page_Title_Login" xml:space="preserve">
+    <value>Hello! let's get started</value>
+  </data>
+
+	<!-- ==================== BUTTONS ==================== -->
+	<data name="Btn_Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+	<data name="Btn_Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+	<data name="Btn_Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+	<data name="Btn_SignIn" xml:space="preserve">
+    <value>Sign In</value>
+  </data>
+	<data name="Btn_SignUp" xml:space="preserve">
+    <value>Sign Up</value>
+  </data>
+	<data name="Btn_SignOut" xml:space="preserve">
+    <value>Signout</value>
+  </data>
+	<data name="Btn_CreateAccount" xml:space="preserve">
+    <value>Create</value>
+  </data>
+	<data name="Btn_CreateNewAccount" xml:space="preserve">
+    <value>Create A new Account</value>
+  </data>
+	<data name="Btn_Registration" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+	<data name="Btn_ConnectFacebook" xml:space="preserve">
+    <value>Connect using facebook</value>
+  </data>
+	<data name="Btn_Continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+	<data name="Btn_Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+	<data name="Btn_Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+	<data name="Btn_Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+	<data name="Btn_CancelShipment" xml:space="preserve">
+    <value>Cancel Shipment</value>
+  </data>
+	<data name="Btn_Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+	<data name="Btn_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+	<data name="Btn_Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+	<data name="Btn_Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+	<data name="Btn_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+	<data name="Btn_Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+	<data name="Btn_Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+	<data name="Btn_View" xml:space="preserve">
+    <value>View</value>
+  </data>
+	<data name="Btn_ViewAll" xml:space="preserve">
+    <value>View All</value>
+  </data>
+	<data name="Btn_Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+	<data name="Btn_BuyNow" xml:space="preserve">
+    <value>Buy Now</value>
+  </data>
+	<data name="Btn_SeeAll" xml:space="preserve">
+    <value>See All</value>
+  </data>
+	<data name="Btn_More" xml:space="preserve">
+    <value>More</value>
+  </data>
+
+	<!-- ==================== LABELS ==================== -->
+	<data name="Lbl_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+	<data name="Lbl_FullName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+	<data name="Lbl_FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+	<data name="Lbl_LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+	<data name="Lbl_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+	<data name="Lbl_EmailAddress" xml:space="preserve">
+    <value>Email address</value>
+  </data>
+	<data name="Lbl_Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+	<data name="Lbl_Mobile" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+	<data name="Lbl_Telephone" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+	<data name="Lbl_Ext" xml:space="preserve">
+    <value>Ext.</value>
+  </data>
+	<data name="Lbl_Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+	<data name="Lbl_City" xml:space="preserve">
+    <value>City</value>
+  </data>
+	<data name="Lbl_Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+	<data name="Lbl_State" xml:space="preserve">
+    <value>State</value>
+  </data>
+	<data name="Lbl_ZipCode" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+	<data name="Lbl_PostalCode" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+	<data name="Lbl_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+	<data name="Lbl_ConfirmPassword" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+	<data name="Lbl_CompanyOrName" xml:space="preserve">
+    <value>Company or Name</value>
+  </data>
+	<data name="Lbl_Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+	<data name="Lbl_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+	<data name="Lbl_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+	<data name="Lbl_Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+	<data name="Lbl_Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+	<data name="Lbl_Weight" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+	<data name="Lbl_Length" xml:space="preserve">
+    <value>Length</value>
+  </data>
+	<data name="Lbl_Width" xml:space="preserve">
+    <value>Width</value>
+  </data>
+	<data name="Lbl_Height" xml:space="preserve">
+    <value>Height</value>
+  </data>
+	<data name="Lbl_PackageValue" xml:space="preserve">
+    <value>Package Value</value>
+  </data>
+	<data name="Lbl_ShippingRate" xml:space="preserve">
+    <value>Shipping Rate</value>
+  </data>
+	<data name="Lbl_TrackingNumber" xml:space="preserve">
+    <value>Tracking Number</value>
+  </data>
+	<data name="Lbl_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+	<data name="Lbl_RememberMe" xml:space="preserve">
+    <value>Remember me</value>
+  </data>
+	<data name="Lbl_KeepMeSignedIn" xml:space="preserve">
+    <value>Keep me signed in</value>
+  </data>
+	<data name="Lbl_Fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+
+	<!-- ==================== PLACEHOLDERS ==================== -->
+	<data name="Plh_Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+	<data name="Plh_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+	<data name="Plh_ConfirmPassword" xml:space="preserve">
+    <value>Confirm your password</value>
+  </data>
+	<data name="Plh_Email" xml:space="preserve">
+    <value>Enter Your Email</value>
+  </data>
+	<data name="Plh_Phone" xml:space="preserve">
+    <value>Enter Your Phone Number</value>
+  </data>
+	<data name="Plh_Address" xml:space="preserve">
+    <value>Enter Your Address</value>
+  </data>
+	<data name="Plh_FullName" xml:space="preserve">
+    <value>Enter full name</value>
+  </data>
+	<data name="Plh_FirstName" xml:space="preserve">
+    <value>Enter first name</value>
+  </data>
+	<data name="Plh_LastName" xml:space="preserve">
+    <value>Enter last name</value>
+  </data>
+	<data name="Plh_StreetAddress" xml:space="preserve">
+    <value>Street Address</value>
+  </data>
+	<data name="Plh_ApartmentSuite" xml:space="preserve">
+    <value>Apartment, suite, unit, building, floor, etc.</value>
+  </data>
+	<data name="Plh_Department" xml:space="preserve">
+    <value>Department, c/o, etc.</value>
+  </data>
+	<data name="Plh_NewsletterEmail" xml:space="preserve">
+    <value>Enter your email</value>
+  </data>
+	<data name="Plh_DatePlaceholder" xml:space="preserve">
+    <value>Date</value>
+  </data>
+
+	<!-- ==================== NAVIGATION MENU ==================== -->
+	<data name="Menu_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+	<data name="Menu_AboutUs" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+	<data name="Menu_Services" xml:space="preserve">
+    <value>Services</value>
+  </data>
+	<data name="Menu_Shipping" xml:space="preserve">
+    <value>Shipping</value>
+  </data>
+	<data name="Menu_Blog" xml:space="preserve">
+    <value>Blog</value>
+  </data>
+	<data name="Menu_ContactUs" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+	<data name="Menu_Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+	<data name="Menu_Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+	<data name="Menu_Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+	<data name="Menu_Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+
+	<!-- ==================== FOOTER ==================== -->
+	<data name="Lbl_FooterQuickLinks" xml:space="preserve">
+    <value>Quick Links</value>
+  </data>
+	<data name="Lbl_FooterUsefulLinks" xml:space="preserve">
+    <value>Usefull Links</value>
+  </data>
+	<data name="Lbl_FooterOpeningHours" xml:space="preserve">
+    <value>Opening Hours</value>
+  </data>
+	<data name="Lbl_FooterAbout" xml:space="preserve">
+    <value>About Company</value>
+  </data>
+	<data name="Lbl_MonToFri" xml:space="preserve">
+    <value>Mon to Fri:</value>
+  </data>
+	<data name="Lbl_Sun" xml:space="preserve">
+    <value>Sun:</value>
+  </data>
+	<data name="Lbl_Closed" xml:space="preserve">
+    <value>Closed</value>
+  </data>
+	<data name="Lbl_DesignBy" xml:space="preserve">
+    <value>Design &amp; Development By:</value>
+  </data>
+	<data name="Lbl_FooterCopyright" xml:space="preserve">
+    <value>Copyright © {0} {1}. All Rights Reserved</value>
+  </data>
+
+	<!-- ==================== FOOTER LINKS ==================== -->
+	<data name="Menu_CompanyOverview" xml:space="preserve">
+    <value>Company Overview</value>
+  </data>
+	<data name="Menu_OurServices" xml:space="preserve">
+    <value>Our Services</value>
+  </data>
+	<data name="Menu_CreateShipping" xml:space="preserve">
+    <value>Create Shipping</value>
+  </data>
+	<data name="Menu_Tracking" xml:space="preserve">
+    <value>Tracking</value>
+  </data>
+	<data name="Menu_ShipmentHistory" xml:space="preserve">
+    <value>Shipment History</value>
+  </data>
+	<data name="Menu_TrackingResult" xml:space="preserve">
+    <value>Tracking Result</value>
+  </data>
+
+	<!-- ==================== LANGUAGE ==================== -->
+	<data name="Lbl_Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+	<data name="Lang_Arabic" xml:space="preserve">
+    <value>Arabic</value>
+  </data>
+	<data name="Lang_English" xml:space="preserve">
+    <value>English</value>
+  </data>
+	<data name="Lang_Code_AR" xml:space="preserve">
+    <value>AR</value>
+  </data>
+	<data name="Lang_Code_EN" xml:space="preserve">
+    <value>EN</value>
+  </data>
+
+	<!-- ==================== SHIPMENT STEPS ==================== -->
+	<data name="Lbl_Step_WhereFrom" xml:space="preserve">
+    <value>Where From</value>
+  </data>
+	<data name="Lbl_Step_WhereGoing" xml:space="preserve">
+    <value>Where Going</value>
+  </data>
+	<data name="Lbl_Step_What" xml:space="preserve">
+    <value>What</value>
+  </data>
+	<data name="Lbl_Step_How" xml:space="preserve">
+    <value>How</value>
+  </data>
+	<data name="Lbl_Step_Payment" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+	<data name="Lbl_Step_Review" xml:space="preserve">
+    <value>Review</value>
+  </data>
+	<data name="Lbl_Step_Complete" xml:space="preserve">
+    <value>Complete</value>
+  </data>
+
+	<!-- ==================== SHIPMENT FORM SECTION 1: FROM ==================== -->
+	<data name="Lbl_ShippingFrom_Title" xml:space="preserve">
+    <value>Hello. Where are you shipping from?</value>
+  </data>
+	<data name="Lbl_RequiredField" xml:space="preserve">
+    <value>* Indicates required field</value>
+  </data>
+	<data name="Lbl_OtherAddressInfo" xml:space="preserve">
+    <value>Other Address Information</value>
+  </data>
+	<data name="Lbl_ResidentialAddress" xml:space="preserve">
+    <value>Is this a residential address?</value>
+  </data>
+	<data name="Lbl_SendUpdates" xml:space="preserve">
+    <value>Send updates on this shipment</value>
+  </data>
+	<data name="Lbl_SaveAsNewEntry" xml:space="preserve">
+    <value>Save as new entry</value>
+  </data>
+	<data name="Lbl_UseAsDefaultAddress" xml:space="preserve">
+    <value>Use this as my default address</value>
+  </data>
+	<data name="Lbl_AddDifferentReturnAddress" xml:space="preserve">
+    <value>Add a Different Return Address</value>
+  </data>
+
+	<!-- ==================== SHIPMENT FORM SECTION 2: TO ==================== -->
+	<data name="Lbl_ShippingGoing_Title" xml:space="preserve">
+    <value>Where is your shipping going?</value>
+  </data>
+	<data name="Lbl_ShipFrom" xml:space="preserve">
+    <value>Ship from</value>
+  </data>
+	<data name="Lbl_ShipTo" xml:space="preserve">
+    <value>Ship to</value>
+  </data>
+	<data name="Lbl_ReturnTo" xml:space="preserve">
+    <value>Return to</value>
+  </data>
+
+	<!-- ==================== SHIPMENT FORM SECTION 3: PACKAGE ==================== -->
+	<data name="Lbl_Packaging_Title" xml:space="preserve">
+    <value>What kind of packaging are you using?</value>
+  </data>
+	<data name="Lbl_PackagingType" xml:space="preserve">
+    <value>Packaging Type</value>
+  </data>
+	<data name="Lbl_DeclaredValue" xml:space="preserve">
+    <value>Declared value</value>
+  </data>
+	<data name="Lbl_lbs" xml:space="preserve">
+    <value>lbs</value>
+  </data>
+	<data name="Lbl_in" xml:space="preserve">
+    <value>in</value>
+  </data>
+	<data name="Lbl_USD" xml:space="preserve">
+    <value>USD</value>
+  </data>
+
+	<!-- ==================== SHIPMENT FORM SECTION 4: PICKUP ==================== -->
+	<data name="Lbl_Pickup_Title" xml:space="preserve">
+    <value>How would you like to ship?</value>
+  </data>
+	<data name="Lbl_PickupQuestion" xml:space="preserve">
+    <value>Whould you like us to pick up your shipment?</value>
+  </data>
+	<data name="Lbl_DropOff" xml:space="preserve">
+    <value>No I'll drop it off</value>
+  </data>
+	<data name="Lbl_PickUp" xml:space="preserve">
+    <value>Yes pick up my shipment</value>
+  </data>
+	<data name="Lbl_OrText" xml:space="preserve">
+    <value>--or--</value>
+  </data>
+	<data name="Lbl_DropoffDate" xml:space="preserve">
+    <value>Dropoff date:</value>
+  </data>
+	<data name="Lbl_DeliveryQuestion" xml:space="preserve">
+    <value>When would like it delivered?</value>
+  </data>
+	<data name="Lbl_DateAndDetails" xml:space="preserve">
+    <value>Date and short details:</value>
+  </data>
+	<data name="Lbl_PickupDate" xml:space="preserve">
+    <value>Pickup date:</value>
+  </data>
+	<data name="Lbl_PickupAddress" xml:space="preserve">
+    <value>Pickup Address</value>
+  </data>
+	<data name="Lbl_PickupDetails" xml:space="preserve">
+    <value>Pickup Details</value>
+  </data>
+
+	<!-- ==================== SHIPMENT FORM SECTION 5: PAYMENT ==================== -->
+	<data name="Lbl_Payment_Title" xml:space="preserve">
+    <value>How would like to pay?</value>
+  </data>
+	<data name="Lbl_CardType" xml:space="preserve">
+    <value>Card Type</value>
+  </data>
+	<data name="Lbl_SelectOne" xml:space="preserve">
+    <value>Select One</value>
+  </data>
+	<data name="Lbl_CardNumber" xml:space="preserve">
+    <value>Card Number</value>
+  </data>
+	<data name="Lbl_Expiration" xml:space="preserve">
+    <value>Exparation</value>
+  </data>
+	<data name="Lbl_SelectMonth" xml:space="preserve">
+    <value>Select Month</value>
+  </data>
+	<data name="Lbl_SelectYear" xml:space="preserve">
+    <value>Select Year</value>
+  </data>
+	<data name="Lbl_CVV" xml:space="preserve">
+    <value>CVV</value>
+  </data>
+	<data name="Lbl_BillingAddress" xml:space="preserve">
+    <value>Billing Address</value>
+  </data>
+	<data name="Lbl_DutiesAndTaxes" xml:space="preserve">
+    <value>Duties and Taxes</value>
+  </data>
+	<data name="Lbl_UsePromoCode" xml:space="preserve">
+    <value>Use a promo code?</value>
+  </data>
+
+	<!-- ==================== SHIPMENT FORM SECTION 6: REVIEW ==================== -->
+	<data name="Lbl_Review_Title" xml:space="preserve">
+    <value>Let's make sure everyting is in order</value>
+  </data>
+	<data name="Lbl_Where" xml:space="preserve">
+    <value>Where</value>
+  </data>
+	<data name="Lbl_What" xml:space="preserve">
+    <value>What</value>
+  </data>
+	<data name="Lbl_How" xml:space="preserve">
+    <value>How</value>
+  </data>
+	<data name="Lbl_Payment" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+	<data name="Lbl_ShipmentInfo" xml:space="preserve">
+    <value>Shipment information</value>
+  </data>
+	<data name="Lbl_PackageInfo" xml:space="preserve">
+    <value>Package information</value>
+  </data>
+	<data name="Lbl_ServiceSelection" xml:space="preserve">
+    <value>Service Selection</value>
+  </data>
+	<data name="Lbl_Arrival" xml:space="preserve">
+    <value>Arrival</value>
+  </data>
+	<data name="Lbl_AdditionalOption" xml:space="preserve">
+    <value>Aditional Option</value>
+  </data>
+	<data name="Lbl_BillShippingTo" xml:space="preserve">
+    <value>Bill Shipping Charge to:</value>
+  </data>
+	<data name="Lbl_BillDutiesTo" xml:space="preserve">
+    <value>Bill Duties and Taxes to:</value>
+  </data>
+	<data name="Lbl_EnterPromoCode" xml:space="preserve">
+    <value>Enter Promo Code:</value>
+  </data>
+	<data name="Lbl_PromoCode" xml:space="preserve">
+    <value>Promo Code</value>
+  </data>
+
+	<!-- ==================== SHIPMENT FORM SECTION 7: COMPLETE ==================== -->
+	<data name="Msg_ThankYouShipping" xml:space="preserve">
+    <value>Thank You For Create Shipping</value>
+  </data>
+
+	<!-- ==================== SHIPMENT SUMMARY ==================== -->
+	<data name="Lbl_ActualWeight" xml:space="preserve">
+    <value>Actual Weight</value>
+  </data>
+	<data name="Lbl_TotalBilableWeight" xml:space="preserve">
+    <value>Total Bilable Weight</value>
+  </data>
+	<data name="Lbl_Dimensions" xml:space="preserve">
+    <value>Dimensions</value>
+  </data>
+
+	<!-- ==================== VALIDATION MESSAGES ==================== -->
+	<data name="Val_Required" xml:space="preserve">
+    <value>The {0} field is required</value>
+  </data>
+	<data name="Val_Email" xml:space="preserve">
+    <value>Invalid email address</value>
+  </data>
+	<data name="Val_Phone" xml:space="preserve">
+    <value>Invalid phone number</value>
+  </data>
+	<data name="Val_StringLength" xml:space="preserve">
+    <value>The {0} must be between {2} and {1} characters</value>
+  </data>
+	<data name="Val_Range" xml:space="preserve">
+    <value>The {0} must be between {1} and {2}</value>
+  </data>
+	<data name="Val_PositiveNumber" xml:space="preserve">
+    <value>The {0} must be a positive number</value>
+  </data>
+	<data name="Val_Compare" xml:space="preserve">
+    <value>The {0} and {1} do not match.</value>
+  </data>
+	<data name="Val_InvalidCredentials" xml:space="preserve">
+    <value>Invalid email or password. Please try again.</value>
+  </data>
+	<data name="Val_InvalidNumber" xml:space="preserve">
+    <value>Invalid Number Format.</value>
+  </data>
+
+	<!-- ==================== MESSAGES ==================== -->
+	<data name="Msg_Success" xml:space="preserve">
+    <value>Operation completed successfully</value>
+  </data>
+	<data name="Msg_Saved" xml:space="preserve">
+    <value>Data saved successfully</value>
+  </data>
+	<data name="Msg_Added" xml:space="preserve">
+    <value>Added successfully</value>
+  </data>
+	<data name="Msg_Updated" xml:space="preserve">
+    <value>Updated successfully</value>
+  </data>
+	<data name="Msg_Deleted" xml:space="preserve">
+    <value>Deleted successfully</value>
+  </data>
+	<data name="Msg_Error" xml:space="preserve">
+    <value>An error occurred while processing your request</value>
+  </data>
+	<data name="Msg_Error_General" xml:space="preserve">
+    <value>Something went wrong. Please try again later</value>
+  </data>
+	<data name="Msg_Error_NotFound" xml:space="preserve">
+    <value>The requested resource was not found</value>
+  </data>
+	<data name="Msg_Error_InvalidCredentials" xml:space="preserve">
+    <value>Invalid username or password</value>
+  </data>
+	<data name="Msg_Error_Validation" xml:space="preserve">
+    <value>Validation failed. Please check your input</value>
+  </data>
+	<data name="Msg_Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+	<data name="Msg_Warning_Unsaved" xml:space="preserve">
+    <value>You have unsaved changes. Are you sure you want to leave?</value>
+  </data>
+	<data name="Msg_Warning_Delete" xml:space="preserve">
+    <value>Are you sure you want to delete this item?</value>
+  </data>
+	<data name="Msg_Confirm" xml:space="preserve">
+    <value>Please confirm</value>
+  </data>
+	<data name="Msg_Confirm_Delete" xml:space="preserve">
+    <value>Are you sure you want to delete this item?</value>
+  </data>
+	<data name="Msg_Confirm_Save" xml:space="preserve">
+    <value>Do you want to save changes?</value>
+  </data>
+	<data name="Msg_Confirm_Logout" xml:space="preserve">
+    <value>Are you sure you want to log out?</value>
+  </data>
+	<data name="Msg_Info" xml:space="preserve">
+    <value>Information</value>
+  </data>
+	<data name="Msg_Info_NoData" xml:space="preserve">
+    <value>No data available</value>
+  </data>
+	<data name="Msg_Info_NoResults" xml:space="preserve">
+    <value>No results found</value>
+  </data>
+	<data name="Msg_Info_Loading" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+	<data name="Msg_Info_Processing" xml:space="preserve">
+    <value>Processing...</value>
+  </data>
+	<data name="Msg_Info_Wait" xml:space="preserve">
+    <value>Please wait...</value>
+  </data>
+	<data name="Msg_Info_Required" xml:space="preserve">
+    <value>Fields marked with * are required</value>
+  </data>
+	<data name="Msg_SignInToContinue" xml:space="preserve">
+    <value>Sign in to continue.</value>
+  </data>
+	<data name="Msg_RegisterDescription" xml:space="preserve">
+    <value>Signing up is easy. It only takes a few steps</value>
+  </data>
+	<data name="Msg_AlreadyHaveAccount" xml:space="preserve">
+    <value>Already have an account?</value>
+  </data>
+	<data name="Msg_NoAccount" xml:space="preserve">
+    <value>Don't have an account?</value>
+  </data>
+	<data name="Msg_WelcomeToYourAccount" xml:space="preserve">
+    <value>Welcome To your account</value>
+  </data>
+	<data name="Msg_AlreadyHaveAccountLogin" xml:space="preserve">
+    <value>If you have account already, please login in</value>
+  </data>
+	<data name="Msg_ShippingWorldwide" xml:space="preserve">
+    <value>We freight to all over the world</value>
+  </data>
+	<data name="Msg_BestLogisticCompany" xml:space="preserve">
+    <value>The best logistic company</value>
+  </data>
+	<data name="Msg_And" xml:space="preserve">
+    <value>and</value>
+  </data>
+
+	<!-- ==================== WORDS ==================== -->
+	<data name="Word_Success" xml:space="preserve">
+    <value>Success</value>
+  </data>
+	<data name="Word_Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+	<data name="Word_Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+	<data name="Word_Info" xml:space="preserve">
+    <value>Information</value>
+  </data>
+	<data name="Word_Confirm" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+	<data name="Word_Done" xml:space="preserve">
+    <value>Done</value>
+  </data>
+	<data name="Word_Failed" xml:space="preserve">
+    <value>Failed</value>
+  </data>
+	<data name="Word_Completed" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+	<data name="Word_Pending" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+	<data name="Word_Processing" xml:space="preserve">
+    <value>Processing</value>
+  </data>
+	<data name="Word_Cancelled" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+	<data name="Word_Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+	<data name="Word_No" xml:space="preserve">
+    <value>No</value>
+  </data>
+	<data name="Word_Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+	<data name="Word_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+	<data name="Word_Now" xml:space="preserve">
+    <value>Now</value>
+  </data>
+	<data name="Word_Today" xml:space="preserve">
+    <value>Today</value>
+  </data>
+	<data name="Word_Yesterday" xml:space="preserve">
+    <value>Yesterday</value>
+  </data>
+	<data name="Word_Tomorrow" xml:space="preserve">
+    <value>Tomorrow</value>
+  </data>
+	<data name="Word_Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+	<data name="Word_Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+	<data name="Word_Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+	<data name="Word_All" xml:space="preserve">
+    <value>All</value>
+  </data>
+	<data name="Word_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+	<data name="Word_Fast" xml:space="preserve">
+    <value>FAST</value>
+  </data>
+	<data name="Word_Safely" xml:space="preserve">
+    <value>SAFELY</value>
+  </data>
+	<data name="Word_High" xml:space="preserve">
+    <value>High</value>
+  </data>
+	<data name="Word_Medium" xml:space="preserve">
+    <value>Medium</value>
+  </data>
+	<data name="Word_Low" xml:space="preserve">
+    <value>Low</value>
+  </data>
+
+	<!-- ==================== ALT TEXTS ==================== -->
+	<data name="Alt_Logo" xml:space="preserve">
+    <value>Company Logo</value>
+  </data>
+	<data name="Alt_FooterLogo" xml:space="preserve">
+    <value>Footer Logo</value>
+  </data>
+	<data name="Alt_Image" xml:space="preserve">
+    <value>image</value>
+  </data>
+	<data name="Alt_ProfilePicture" xml:space="preserve">
+    <value>Profile Picture</value>
+  </data>
+	<data name="Alt_Package" xml:space="preserve">
+    <value>Package</value>
+  </data>
+	<data name="Alt_FlagEnglish" xml:space="preserve">
+    <value>English Flag</value>
+  </data>
+	<data name="Alt_FlagArabic" xml:space="preserve">
+    <value>Arabic Flag</value>
+  </data>
+
+	<!-- ==================== MISC ==================== -->
+	<data name="Lbl_SkipNavigation" xml:space="preserve">
+    <value>skip navigation</value>
+  </data>
+	<data name="Lbl_Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+	<data name="Lbl_Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+	<data name="Lbl_Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+	<data name="Lbl_Notifications" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+	<data name="Lbl_Messages" xml:space="preserve">
+    <value>Messages</value>
+  </data>
+	<data name="Lbl_SocialMedia" xml:space="preserve">
+    <value>Follow Us</value>
+  </data>
+	<data name="Lbl_Newsletter" xml:space="preserve">
+    <value>Newsletter</value>
+  </data>
+	<data name="Lbl_Subscribe" xml:space="preserve">
+    <value>Subscribe</value>
+  </data>
+	<data name="Lbl_Copyright" xml:space="preserve">
+    <value>Copyright</value>
+  </data>
+	<data name="Lbl_AllRightsReserved" xml:space="preserve">
+    <value>All Rights Reserved</value>
+  </data>
+	<data name="Lbl_WebsiteTitle" xml:space="preserve">
+    <value>Shipping Company</value>
+  </data>
+	<data name="Lbl_Slogan" xml:space="preserve">
+    <value>Fast and Safe Delivery Worldwide</value>
+  </data>
+
+
+	<!-- ==================== SLIDER ==================== -->
+	<data name="Lbl_WeAreProud" xml:space="preserve"><value>We are proud</value></data>
+	<data name="Lbl_AlwaysOnDemand" xml:space="preserve"><value>To be always on demand</value></data>
+	<data name="Lbl_WeAreActive" xml:space="preserve"><value>We are active</value></data>
+	<data name="Lbl_ShipProductTrusted" xml:space="preserve"><value>To ship your product trusted</value></data>
+	<data name="Btn_ContactWithUs" xml:space="preserve"><value>Contact Weth Us</value></data>
+	<data name="Btn_GetFreeQuote" xml:space="preserve"><value>Get Free Quote</value></data>
+	<data name="Txt_SliderDescription" xml:space="preserve"><value>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</value></data>
+
+	<!-- ==================== TRACKING ==================== -->
+	<data name="Lbl_TrackShipment" xml:space="preserve"><value>Track a shipment</value></data>
+	<data name="Lbl_TrackNumber" xml:space="preserve"><value>Track number</value></data>
+	<data name="Lbl_TrackByNumber" xml:space="preserve"><value>Track by Number</value></data>
+	<data name="Lbl_TrackByReference" xml:space="preserve"><value>Track by Reference</value></data>
+	<data name="Lbl_AirFreightTracking" xml:space="preserve"><value>Air Freight Tracking</value></data>
+	<data name="Plh_TrackId" xml:space="preserve"><value>Track ID</value></data>
+	<data name="Btn_Track" xml:space="preserve"><value>Track</value></data>
+	<data name="Lbl_NeedHelp" xml:space="preserve"><value>Need Help?</value></data>
+	<data name="Lbl_YourOrderList" xml:space="preserve"><value>Your Order list</value></data>
+	<data name="Txt_TrackingDescription" xml:space="preserve"><value>Track your LTL, truckload, or intermodal shipment by entering your Track number below to get instant freight tracking information.</value></data>
+
+	<!-- ==================== SERVICES ==================== -->
+	<data name="Lbl_OceanFreightShipping" xml:space="preserve"><value>Ocean Freight Shipping</value></data>
+	<data name="Lbl_AirFreightShipping" xml:space="preserve"><value>Air Freight Shipping</value></data>
+	<data name="Lbl_CarShipping" xml:space="preserve"><value>Car Shipping</value></data>
+	<data name="Btn_ReadMore" xml:space="preserve"><value>Read more</value></data>
+
+	<!-- ==================== WE PROVIDE ==================== -->
+	<data name="Lbl_WeProvide" xml:space="preserve"><value>We Provide</value></data>
+	<data name="Lbl_BestSeaAndAir" xml:space="preserve"><value>the Best Sea and Air Freight Services</value></data>
+	<data name="Lbl_BookShippingFromAnyCountry" xml:space="preserve"><value>For Book Your Shipping From any Country</value></data>
+
+	<!-- ==================== WHY CHOOSE US ==================== -->
+	<data name="Lbl_WhyChooseUs" xml:space="preserve"><value>Why Choose Us?</value></data>
+	<data name="Lbl_WeAreTrusted" xml:space="preserve"><value>We Are Trusted</value></data>
+	<data name="Lbl_BestSecurity" xml:space="preserve"><value>The Best Security</value></data>
+	<data name="Lbl_100Guarantee" xml:space="preserve"><value>100% guarantee</value></data>
+	<data name="Lbl_QuickLocation" xml:space="preserve"><value>Quick Location</value></data>
+
+	<!-- ==================== SERVICE PROCESS ==================== -->
+	<data name="Lbl_OurServiceProcess" xml:space="preserve"><value>Our Service Process</value></data>
+	<data name="Lbl_SelectFreight" xml:space="preserve"><value>Select Freight</value></data>
+	<data name="Lbl_CreateInvoice" xml:space="preserve"><value>Create Invoice</value></data>
+	<data name="Lbl_SecurePayment" xml:space="preserve"><value>Secure Payment</value></data>
+	<data name="Lbl_FastDelivery" xml:space="preserve"><value>Fast Delivery</value></data>
+
+	<!-- ==================== GET QUOTE ==================== -->
+	<data name="Lbl_GetFreeQuote" xml:space="preserve"><value>GET A FREE QUOTE</value></data>
+	<data name="Lbl_BestFastestFleets" xml:space="preserve"><value>we always use best &amp; fastest fleets</value></data>
+	<data name="Plh_DestinationFrom" xml:space="preserve"><value>Destination From</value></data>
+	<data name="Plh_DestinationTo" xml:space="preserve"><value>Destination To</value></data>
+	<data name="Plh_ShippingType" xml:space="preserve"><value>Shipping Type</value></data>
+	<data name="Lbl_ShippingType" xml:space="preserve"><value>Shipping Type</value></data>
+	<data name="Plh_Message" xml:space="preserve"><value>Message</value></data>
+	<data name="Btn_SendUsQuote" xml:space="preserve"><value>Send us quote</value></data>
+
+	<!-- ==================== BLOG ==================== -->
+	<data name="Lbl_LatestBlogPost" xml:space="preserve"><value>Latest Blog Post</value></data>
+	<data name="Lbl_ByAdmin" xml:space="preserve"><value>By Admin</value></data>
+
+	<!-- ==================== COUNTERS ==================== -->
+	<data name="Lbl_ProjectDone" xml:space="preserve"><value>Project Done</value></data>
+	<data name="Lbl_PermanentClients" xml:space="preserve"><value>Permanent Clients</value></data>
+	<data name="Lbl_OwnedVehicles" xml:space="preserve"><value>Owned Vehicles</value></data>
+	<data name="Lbl_SupportMember" xml:space="preserve"><value>Support Member</value></data>
+
+	<!-- ==================== NEWS & TESTIMONIALS ==================== -->
+	<data name="Lbl_LatestNews" xml:space="preserve"><value>Latest News</value></data>
+	<data name="Lbl_NewsTitle" xml:space="preserve"><value>News Title</value></data>
+	<data name="Lbl_Testimonial" xml:space="preserve"><value>Testimonial</value></data>
+	<data name="Lbl_OurValuableClient" xml:space="preserve"><value>Our Valuable Client</value></data>
+
+	<!-- ==================== TRACKING BY REFERENCE ==================== -->
+	<data name="Lbl_ShipmentReference" xml:space="preserve">
+    <value>Shipment Reference (BOL or PO):</value>
+</data>
+	<data name="Lbl_ShipmentDateStart" xml:space="preserve">
+    <value>Shipment Date Start:</value>
+</data>
+	<data name="Lbl_ShipmentDateEnd" xml:space="preserve">
+    <value>Shipment Date End:</value>
+</data>
+	<data name="Lbl_OriginCountry" xml:space="preserve">
+    <value>Origin Country:</value>
+</data>
+	<data name="Lbl_OriginZipCode" xml:space="preserve">
+    <value>Origin ZIP/Postal Code:</value>
+</data>
+	<data name="Lbl_DestinationCountry" xml:space="preserve">
+    <value>Destination Country:</value>
+</data>
+	<data name="Lbl_DestinationZipCode" xml:space="preserve">
+    <value>Destination ZIP/Postal Code:</value>
+</data>
+	<!-- ==================== VALIDATION KEYS (ADD TO ResFrontend.resx) ==================== -->
+	<data name="Val_Required" xml:space="preserve">
+    <value>The {0} field is required</value>
+</data>
+	<data name="Val_Email" xml:space="preserve">
+    <value>Invalid email address</value>
+</data>
+	<data name="Val_Phone" xml:space="preserve">
+    <value>Invalid phone number</value>
+</data>
+	<data name="Val_StringLength" xml:space="preserve">
+    <value>The {0} must be between {2} and {1} characters</value>
+</data>
+	<data name="Val_Range" xml:space="preserve">
+    <value>The {0} must be between {1} and {2}</value>
+</data>
+	<data name="Val_PositiveNumber" xml:space="preserve">
+    <value>The {0} must be a positive number</value>
+</data>
+	<data name="Val_InvalidNumber" xml:space="preserve">
+    <value>Invalid Number Format.</value>
+</data>
+	<data name="Val_Compare" xml:space="preserve">
+    <value>The {0} and {1} do not match.</value>
+</data>
+	<data name="Val_MinLength" xml:space="preserve">
+    <value>The {0} must be at least {1} characters</value>
+</data>
+	<data name="Val_MaxLength" xml:space="preserve">
+    <value>The {0} must be no more than {1} characters</value>
+</data>
+	<data name="Val_FutureDate" xml:space="preserve">
+    <value>The {0} must be a future date</value>
+</data>
+	<data name="Val_PastDate" xml:space="preserve">
+    <value>The {0} must be a past date</value>
+</data>
+	<data name="Val_MustAccept" xml:space="preserve">
+    <value>You must accept the {0}</value>
+</data>
+	<data name="Val_SelectOption" xml:space="preserve">
+    <value>Please select a {0}</value>
+</data>
+
+	<!-- ==================== PLACEHOLDERS MISSING (ADD IF NEEDED) ==================== -->
+	<data name="Plh_ContactType" xml:space="preserve">
+    <value>Select contact type</value>
+</data>
+	<data name="Plh_Weight" xml:space="preserve">
+    <value>Enter weight</value>
+</data>
+	<data name="Plh_Length" xml:space="preserve">
+    <value>Enter length</value>
+</data>
+	<data name="Plh_Width" xml:space="preserve">
+    <value>Enter width</value>
+</data>
+	<data name="Plh_Height" xml:space="preserve">
+    <value>Enter height</value>
+</data>
+	<data name="Plh_PackageValue" xml:space="preserve">
+    <value>Enter package value</value>
+</data>
+</root>

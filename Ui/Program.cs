@@ -42,6 +42,9 @@ namespace Ui
 
 
             app.UseHttpsRedirection();
+
+            app.UseStaticFiles();
+
             app.UseRouting();
 
             app.UseAppLocalization();

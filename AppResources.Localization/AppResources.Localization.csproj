@@ -19,6 +19,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>ResAddress.resx</DependentUpon>
     </Compile>
+    <Compile Update="Resources\ResFrontend.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ResFrontend.resx</DependentUpon>
+    </Compile>
     <Compile Update="Resources\Resource1.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -35,6 +40,10 @@
     <EmbeddedResource Update="Resources\ResAddress.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResAddress.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResFrontend.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResFrontend.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\ResGeneral.ar.resx">
       <CustomToolNamespace>AppResources.Localization</CustomToolNamespace>

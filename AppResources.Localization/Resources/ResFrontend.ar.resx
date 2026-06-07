@@ -1,0 +1,1144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+
+	<!-- ==================== PAGES ==================== -->
+	<data name="Page_Home" xml:space="preserve">
+    <value>الرئيسية</value>
+  </data>
+	<data name="Page_About" xml:space="preserve">
+    <value>من نحن</value>
+  </data>
+	<data name="Page_Contact" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+	<data name="Page_Services" xml:space="preserve">
+    <value>الخدمات</value>
+  </data>
+	<data name="Page_Blog" xml:space="preserve">
+    <value>المدونة</value>
+  </data>
+	<data name="Page_Profile" xml:space="preserve">
+    <value>الملف الشخصي</value>
+  </data>
+	<data name="Page_Shipping" xml:space="preserve">
+    <value>الشحن</value>
+  </data>
+	<data name="Page_Login" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+	<data name="Page_Register" xml:space="preserve">
+    <value>تسجيل</value>
+  </data>
+
+	<!-- ==================== PAGE TITLES ==================== -->
+	<data name="Page_Title_CreateShipment" xml:space="preserve">
+    <value>إنشاء شحنة جديدة</value>
+  </data>
+	<data name="Page_Title_CreateNewShipping" xml:space="preserve">
+    <value>إنشاء شحنة جديدة</value>
+  </data>
+	<data name="Page_Title_CustomerLogin" xml:space="preserve">
+    <value>تسجيل دخول العميل</value>
+  </data>
+	<data name="Page_Title_LoginToYourAccount" xml:space="preserve">
+    <value>تسجيل الدخول إلى حسابك</value>
+  </data>
+	<data name="Page_Title_CustomerRegistration" xml:space="preserve">
+    <value>تسجيل عميل جديد</value>
+  </data>
+	<data name="Page_Title_Registration" xml:space="preserve">
+    <value>تسجيل</value>
+  </data>
+	<data name="Page_Title_Login" xml:space="preserve">
+    <value>مرحباً! دعنا نبدأ</value>
+  </data>
+
+	<!-- ==================== BUTTONS ==================== -->
+	<data name="Btn_Login" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+	<data name="Btn_Logout" xml:space="preserve">
+    <value>تسجيل الخروج</value>
+  </data>
+	<data name="Btn_Register" xml:space="preserve">
+    <value>تسجيل</value>
+  </data>
+	<data name="Btn_SignIn" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+	<data name="Btn_SignUp" xml:space="preserve">
+    <value>إنشاء حساب</value>
+  </data>
+	<data name="Btn_SignOut" xml:space="preserve">
+    <value>تسجيل الخروج</value>
+  </data>
+	<data name="Btn_CreateAccount" xml:space="preserve">
+    <value>إنشاء</value>
+  </data>
+	<data name="Btn_CreateNewAccount" xml:space="preserve">
+    <value>إنشاء حساب جديد</value>
+  </data>
+	<data name="Btn_Registration" xml:space="preserve">
+    <value>تسجيل</value>
+  </data>
+	<data name="Btn_ConnectFacebook" xml:space="preserve">
+    <value>اتصل باستخدام فيسبوك</value>
+  </data>
+	<data name="Btn_Continue" xml:space="preserve">
+    <value>متابعة</value>
+  </data>
+	<data name="Btn_Previous" xml:space="preserve">
+    <value>السابق</value>
+  </data>
+	<data name="Btn_Next" xml:space="preserve">
+    <value>التالي</value>
+  </data>
+	<data name="Btn_Submit" xml:space="preserve">
+    <value>إرسال</value>
+  </data>
+	<data name="Btn_CancelShipment" xml:space="preserve">
+    <value>إلغاء الشحنة</value>
+  </data>
+	<data name="Btn_Edit" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+	<data name="Btn_Save" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+	<data name="Btn_Delete" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+	<data name="Btn_Add" xml:space="preserve">
+    <value>إضافة</value>
+  </data>
+	<data name="Btn_Cancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+	<data name="Btn_Close" xml:space="preserve">
+    <value>إغلاق</value>
+  </data>
+	<data name="Btn_Search" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+	<data name="Btn_View" xml:space="preserve">
+    <value>عرض</value>
+  </data>
+	<data name="Btn_ViewAll" xml:space="preserve">
+    <value>عرض الكل</value>
+  </data>
+	<data name="Btn_Details" xml:space="preserve">
+    <value>تفاصيل</value>
+  </data>
+	<data name="Btn_BuyNow" xml:space="preserve">
+    <value>اشتر الآن</value>
+  </data>
+	<data name="Btn_SeeAll" xml:space="preserve">
+    <value>عرض الكل</value>
+  </data>
+	<data name="Btn_More" xml:space="preserve">
+    <value>المزيد</value>
+  </data>
+
+	<!-- ==================== LABELS ==================== -->
+	<data name="Lbl_Name" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+	<data name="Lbl_FullName" xml:space="preserve">
+    <value>الاسم الكامل</value>
+  </data>
+	<data name="Lbl_FirstName" xml:space="preserve">
+    <value>الاسم الأول</value>
+  </data>
+	<data name="Lbl_LastName" xml:space="preserve">
+    <value>الاسم الأخير</value>
+  </data>
+	<data name="Lbl_Email" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+	<data name="Lbl_EmailAddress" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+	<data name="Lbl_Phone" xml:space="preserve">
+    <value>الهاتف</value>
+  </data>
+	<data name="Lbl_Mobile" xml:space="preserve">
+    <value>الجوال</value>
+  </data>
+	<data name="Lbl_Telephone" xml:space="preserve">
+    <value>الهاتف</value>
+  </data>
+	<data name="Lbl_Ext" xml:space="preserve">
+    <value>رقم داخلي</value>
+  </data>
+	<data name="Lbl_Address" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+	<data name="Lbl_City" xml:space="preserve">
+    <value>المدينة</value>
+  </data>
+	<data name="Lbl_Country" xml:space="preserve">
+    <value>الدولة</value>
+  </data>
+	<data name="Lbl_State" xml:space="preserve">
+    <value>الولاية/المنطقة</value>
+  </data>
+	<data name="Lbl_ZipCode" xml:space="preserve">
+    <value>الرمز البريدي</value>
+  </data>
+	<data name="Lbl_PostalCode" xml:space="preserve">
+    <value>الرمز البريدي</value>
+  </data>
+	<data name="Lbl_Password" xml:space="preserve">
+    <value>كلمة المرور</value>
+  </data>
+	<data name="Lbl_ConfirmPassword" xml:space="preserve">
+    <value>تأكيد كلمة المرور</value>
+  </data>
+	<data name="Lbl_CompanyOrName" xml:space="preserve">
+    <value>الشركة أو الاسم</value>
+  </data>
+	<data name="Lbl_Contact" xml:space="preserve">
+    <value>جهة الاتصال</value>
+  </data>
+	<data name="Lbl_Description" xml:space="preserve">
+    <value>الوصف</value>
+  </data>
+	<data name="Lbl_Status" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+	<data name="Lbl_Type" xml:space="preserve">
+    <value>النوع</value>
+  </data>
+	<data name="Lbl_Date" xml:space="preserve">
+    <value>التاريخ</value>
+  </data>
+	<data name="Lbl_Weight" xml:space="preserve">
+    <value>الوزن</value>
+  </data>
+	<data name="Lbl_Length" xml:space="preserve">
+    <value>الطول</value>
+  </data>
+	<data name="Lbl_Width" xml:space="preserve">
+    <value>العرض</value>
+  </data>
+	<data name="Lbl_Height" xml:space="preserve">
+    <value>الارتفاع</value>
+  </data>
+	<data name="Lbl_PackageValue" xml:space="preserve">
+    <value>قيمة الطرد</value>
+  </data>
+	<data name="Lbl_ShippingRate" xml:space="preserve">
+    <value>سعر الشحن</value>
+  </data>
+	<data name="Lbl_TrackingNumber" xml:space="preserve">
+    <value>رقم التتبع</value>
+  </data>
+	<data name="Lbl_Home" xml:space="preserve">
+    <value>الرئيسية</value>
+  </data>
+	<data name="Lbl_RememberMe" xml:space="preserve">
+    <value>تذكرني</value>
+  </data>
+	<data name="Lbl_KeepMeSignedIn" xml:space="preserve">
+    <value>ابقني مسجلاً</value>
+  </data>
+	<data name="Lbl_Fax" xml:space="preserve">
+    <value>فاكس</value>
+  </data>
+
+	<!-- ==================== PLACEHOLDERS ==================== -->
+	<data name="Plh_Username" xml:space="preserve">
+    <value>اسم المستخدم</value>
+  </data>
+	<data name="Plh_Password" xml:space="preserve">
+    <value>كلمة المرور</value>
+  </data>
+	<data name="Plh_ConfirmPassword" xml:space="preserve">
+    <value>تأكيد كلمة المرور</value>
+  </data>
+	<data name="Plh_Email" xml:space="preserve">
+    <value>أدخل بريدك الإلكتروني</value>
+  </data>
+	<data name="Plh_Phone" xml:space="preserve">
+    <value>أدخل رقم هاتفك</value>
+  </data>
+	<data name="Plh_Address" xml:space="preserve">
+    <value>أدخل عنوانك</value>
+  </data>
+	<data name="Plh_FullName" xml:space="preserve">
+    <value>أدخل الاسم الكامل</value>
+  </data>
+	<data name="Plh_FirstName" xml:space="preserve">
+    <value>أدخل الاسم الأول</value>
+  </data>
+	<data name="Plh_LastName" xml:space="preserve">
+    <value>أدخل الاسم الأخير</value>
+  </data>
+	<data name="Plh_StreetAddress" xml:space="preserve">
+    <value>عنوان الشارع</value>
+  </data>
+	<data name="Plh_ApartmentSuite" xml:space="preserve">
+    <value>شقة، جناح، وحدة، مبنى، طابق، إلخ.</value>
+  </data>
+	<data name="Plh_Department" xml:space="preserve">
+    <value>قسم، عناية، إلخ.</value>
+  </data>
+	<data name="Plh_NewsletterEmail" xml:space="preserve">
+    <value>أدخل بريدك الإلكتروني</value>
+  </data>
+	<data name="Plh_DatePlaceholder" xml:space="preserve">
+    <value>التاريخ</value>
+  </data>
+
+	<!-- ==================== NAVIGATION MENU ==================== -->
+	<data name="Menu_Home" xml:space="preserve">
+    <value>الرئيسية</value>
+  </data>
+	<data name="Menu_AboutUs" xml:space="preserve">
+    <value>من نحن</value>
+  </data>
+	<data name="Menu_Services" xml:space="preserve">
+    <value>الخدمات</value>
+  </data>
+	<data name="Menu_Shipping" xml:space="preserve">
+    <value>الشحن</value>
+  </data>
+	<data name="Menu_Blog" xml:space="preserve">
+    <value>المدونة</value>
+  </data>
+	<data name="Menu_ContactUs" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+	<data name="Menu_Profile" xml:space="preserve">
+    <value>الملف الشخصي</value>
+  </data>
+	<data name="Menu_Login" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+	<data name="Menu_Register" xml:space="preserve">
+    <value>تسجيل</value>
+  </data>
+	<data name="Menu_Logout" xml:space="preserve">
+    <value>تسجيل الخروج</value>
+  </data>
+
+	<!-- ==================== FOOTER ==================== -->
+	<data name="Lbl_FooterQuickLinks" xml:space="preserve">
+    <value>روابط سريعة</value>
+  </data>
+	<data name="Lbl_FooterUsefulLinks" xml:space="preserve">
+    <value>روابط مفيدة</value>
+  </data>
+	<data name="Lbl_FooterOpeningHours" xml:space="preserve">
+    <value>ساعات العمل</value>
+  </data>
+	<data name="Lbl_FooterAbout" xml:space="preserve">
+    <value>عن الشركة</value>
+  </data>
+	<data name="Lbl_MonToFri" xml:space="preserve">
+    <value>الإثنين إلى الجمعة:</value>
+  </data>
+	<data name="Lbl_Sun" xml:space="preserve">
+    <value>الأحد:</value>
+  </data>
+	<data name="Lbl_Closed" xml:space="preserve">
+    <value>مغلق</value>
+  </data>
+	<data name="Lbl_DesignBy" xml:space="preserve">
+    <value>التصميم والتطوير بواسطة:</value>
+  </data>
+	<data name="Lbl_FooterCopyright" xml:space="preserve">
+    <value>حقوق النشر © {0} {1}. جميع الحقوق محفوظة</value>
+  </data>
+
+	<!-- ==================== FOOTER LINKS ==================== -->
+	<data name="Menu_CompanyOverview" xml:space="preserve">
+    <value>نظرة عامة عن الشركة</value>
+  </data>
+	<data name="Menu_OurServices" xml:space="preserve">
+    <value>خدماتنا</value>
+  </data>
+	<data name="Menu_CreateShipping" xml:space="preserve">
+    <value>إنشاء شحنة</value>
+  </data>
+	<data name="Menu_Tracking" xml:space="preserve">
+    <value>التتبع</value>
+  </data>
+	<data name="Menu_ShipmentHistory" xml:space="preserve">
+    <value>سجل الشحنات</value>
+  </data>
+	<data name="Menu_TrackingResult" xml:space="preserve">
+    <value>نتيجة التتبع</value>
+  </data>
+
+	<!-- ==================== LANGUAGE ==================== -->
+	<data name="Lbl_Language" xml:space="preserve">
+    <value>اللغة</value>
+  </data>
+	<data name="Lang_Arabic" xml:space="preserve">
+    <value>العربية</value>
+  </data>
+	<data name="Lang_English" xml:space="preserve">
+    <value>الإنجليزية</value>
+  </data>
+	<data name="Lang_Code_AR" xml:space="preserve">
+    <value>AR</value>
+  </data>
+	<data name="Lang_Code_EN" xml:space="preserve">
+    <value>EN</value>
+  </data>
+
+	<!-- ==================== SHIPMENT STEPS ==================== -->
+	<data name="Lbl_Step_WhereFrom" xml:space="preserve">
+    <value>من أين</value>
+  </data>
+	<data name="Lbl_Step_WhereGoing" xml:space="preserve">
+    <value>إلى أين</value>
+  </data>
+	<data name="Lbl_Step_What" xml:space="preserve">
+    <value>ماذا</value>
+  </data>
+	<data name="Lbl_Step_How" xml:space="preserve">
+    <value>كيف</value>
+  </data>
+	<data name="Lbl_Step_Payment" xml:space="preserve">
+    <value>الدفع</value>
+  </data>
+	<data name="Lbl_Step_Review" xml:space="preserve">
+    <value>مراجعة</value>
+  </data>
+	<data name="Lbl_Step_Complete" xml:space="preserve">
+    <value>اكتمال</value>
+  </data>
+
+	<!-- ==================== SHIPMENT FORM SECTION 1: FROM ==================== -->
+	<data name="Lbl_ShippingFrom_Title" xml:space="preserve">
+    <value>مرحباً. من أين تقوم بالشحن؟</value>
+  </data>
+	<data name="Lbl_RequiredField" xml:space="preserve">
+    <value>* يشير إلى حقل مطلوب</value>
+  </data>
+	<data name="Lbl_OtherAddressInfo" xml:space="preserve">
+    <value>معلومات عنوان أخرى</value>
+  </data>
+	<data name="Lbl_ResidentialAddress" xml:space="preserve">
+    <value>هل هذا عنوان سكني؟</value>
+  </data>
+	<data name="Lbl_SendUpdates" xml:space="preserve">
+    <value>إرسال تحديثات عن هذه الشحنة</value>
+  </data>
+	<data name="Lbl_SaveAsNewEntry" xml:space="preserve">
+    <value>حفظ كمدخل جديد</value>
+  </data>
+	<data name="Lbl_UseAsDefaultAddress" xml:space="preserve">
+    <value>استخدام هذا كعنواني الافتراضي</value>
+  </data>
+	<data name="Lbl_AddDifferentReturnAddress" xml:space="preserve">
+    <value>إضافة عنوان إرجاع مختلف</value>
+  </data>
+
+	<!-- ==================== SHIPMENT FORM SECTION 2: TO ==================== -->
+	<data name="Lbl_ShippingGoing_Title" xml:space="preserve">
+    <value>إلى أين تذهب شحنتك؟</value>
+  </data>
+	<data name="Lbl_ShipFrom" xml:space="preserve">
+    <value>الشحن من</value>
+  </data>
+	<data name="Lbl_ShipTo" xml:space="preserve">
+    <value>الشحن إلى</value>
+  </data>
+	<data name="Lbl_ReturnTo" xml:space="preserve">
+    <value>الإرجاع إلى</value>
+  </data>
+
+	<!-- ==================== SHIPMENT FORM SECTION 3: PACKAGE ==================== -->
+	<data name="Lbl_Packaging_Title" xml:space="preserve">
+    <value>ما نوع التغليف الذي تستخدمه؟</value>
+  </data>
+	<data name="Lbl_PackagingType" xml:space="preserve">
+    <value>نوع التغليف</value>
+  </data>
+	<data name="Lbl_DeclaredValue" xml:space="preserve">
+    <value>القيمة المعلنة</value>
+  </data>
+	<data name="Lbl_lbs" xml:space="preserve">
+    <value>رطل</value>
+  </data>
+	<data name="Lbl_in" xml:space="preserve">
+    <value>بوصة</value>
+  </data>
+	<data name="Lbl_USD" xml:space="preserve">
+    <value>دولار</value>
+  </data>
+
+	<!-- ==================== SHIPMENT FORM SECTION 4: PICKUP ==================== -->
+	<data name="Lbl_Pickup_Title" xml:space="preserve">
+    <value>كيف تريد الشحن؟</value>
+  </data>
+	<data name="Lbl_PickupQuestion" xml:space="preserve">
+    <value>هل تريد منا استلام شحنتك؟</value>
+  </data>
+	<data name="Lbl_DropOff" xml:space="preserve">
+    <value>لا، سأقوم بتسليمها</value>
+  </data>
+	<data name="Lbl_PickUp" xml:space="preserve">
+    <value>نعم، استلم شحنتي</value>
+  </data>
+	<data name="Lbl_OrText" xml:space="preserve">
+    <value>--أو--</value>
+  </data>
+	<data name="Lbl_DropoffDate" xml:space="preserve">
+    <value>تاريخ التسليم:</value>
+  </data>
+	<data name="Lbl_DeliveryQuestion" xml:space="preserve">
+    <value>متى تريد التسليم؟</value>
+  </data>
+	<data name="Lbl_DateAndDetails" xml:space="preserve">
+    <value>التاريخ وتفاصيل موجزة:</value>
+  </data>
+	<data name="Lbl_PickupDate" xml:space="preserve">
+    <value>تاريخ الاستلام:</value>
+  </data>
+	<data name="Lbl_PickupAddress" xml:space="preserve">
+    <value>عنوان الاستلام</value>
+  </data>
+	<data name="Lbl_PickupDetails" xml:space="preserve">
+    <value>تفاصيل الاستلام</value>
+  </data>
+
+	<!-- ==================== SHIPMENT FORM SECTION 5: PAYMENT ==================== -->
+	<data name="Lbl_Payment_Title" xml:space="preserve">
+    <value>كيف تريد الدفع؟</value>
+  </data>
+	<data name="Lbl_CardType" xml:space="preserve">
+    <value>نوع البطاقة</value>
+  </data>
+	<data name="Lbl_SelectOne" xml:space="preserve">
+    <value>اختر واحدة</value>
+  </data>
+	<data name="Lbl_CardNumber" xml:space="preserve">
+    <value>رقم البطاقة</value>
+  </data>
+	<data name="Lbl_Expiration" xml:space="preserve">
+    <value>تاريخ الانتهاء</value>
+  </data>
+	<data name="Lbl_SelectMonth" xml:space="preserve">
+    <value>اختر الشهر</value>
+  </data>
+	<data name="Lbl_SelectYear" xml:space="preserve">
+    <value>اختر السنة</value>
+  </data>
+	<data name="Lbl_CVV" xml:space="preserve">
+    <value>CVV</value>
+  </data>
+	<data name="Lbl_BillingAddress" xml:space="preserve">
+    <value>عنوان الفوترة</value>
+  </data>
+	<data name="Lbl_DutiesAndTaxes" xml:space="preserve">
+    <value>الرسوم والضرائب</value>
+  </data>
+	<data name="Lbl_UsePromoCode" xml:space="preserve">
+    <value>هل لديك رمز ترويجي؟</value>
+  </data>
+
+	<!-- ==================== SHIPMENT FORM SECTION 6: REVIEW ==================== -->
+	<data name="Lbl_Review_Title" xml:space="preserve">
+    <value>دعنا نتأكد من أن كل شيء على ما يرام</value>
+  </data>
+	<data name="Lbl_Where" xml:space="preserve">
+    <value>من أين</value>
+  </data>
+	<data name="Lbl_What" xml:space="preserve">
+    <value>ماذا</value>
+  </data>
+	<data name="Lbl_How" xml:space="preserve">
+    <value>كيف</value>
+  </data>
+	<data name="Lbl_Payment" xml:space="preserve">
+    <value>الدفع</value>
+  </data>
+	<data name="Lbl_ShipmentInfo" xml:space="preserve">
+    <value>معلومات الشحنة</value>
+  </data>
+	<data name="Lbl_PackageInfo" xml:space="preserve">
+    <value>معلومات الطرد</value>
+  </data>
+	<data name="Lbl_ServiceSelection" xml:space="preserve">
+    <value>اختيار الخدمة</value>
+  </data>
+	<data name="Lbl_Arrival" xml:space="preserve">
+    <value>الوصول</value>
+  </data>
+	<data name="Lbl_AdditionalOption" xml:space="preserve">
+    <value>خيار إضافي</value>
+  </data>
+	<data name="Lbl_BillShippingTo" xml:space="preserve">
+    <value>فاتورة الشحن إلى:</value>
+  </data>
+	<data name="Lbl_BillDutiesTo" xml:space="preserve">
+    <value>فاتورة الرسوم والضرائب إلى:</value>
+  </data>
+	<data name="Lbl_EnterPromoCode" xml:space="preserve">
+    <value>أدخل الرمز الترويجي:</value>
+  </data>
+	<data name="Lbl_PromoCode" xml:space="preserve">
+    <value>رمز ترويجي</value>
+  </data>
+
+	<!-- ==================== SHIPMENT FORM SECTION 7: COMPLETE ==================== -->
+	<data name="Msg_ThankYouShipping" xml:space="preserve">
+    <value>شكراً لك على إنشاء الشحنة</value>
+  </data>
+
+	<!-- ==================== SHIPMENT SUMMARY ==================== -->
+	<data name="Lbl_ActualWeight" xml:space="preserve">
+    <value>الوزن الفعلي</value>
+  </data>
+	<data name="Lbl_TotalBilableWeight" xml:space="preserve">
+    <value>الوزن الإجمالي القابل للفوترة</value>
+  </data>
+	<data name="Lbl_Dimensions" xml:space="preserve">
+    <value>الأبعاد</value>
+  </data>
+
+	<!-- ==================== VALIDATION MESSAGES ==================== -->
+	<data name="Val_Required" xml:space="preserve">
+    <value>حقل {0} مطلوب</value>
+  </data>
+	<data name="Val_Email" xml:space="preserve">
+    <value>البريد الإلكتروني غير صالح</value>
+  </data>
+	<data name="Val_Phone" xml:space="preserve">
+    <value>رقم الهاتف غير صالح</value>
+  </data>
+	<data name="Val_StringLength" xml:space="preserve">
+    <value>حقل {0} يجب أن يكون بين {2} و {1} حرف</value>
+  </data>
+	<data name="Val_Range" xml:space="preserve">
+    <value>حقل {0} يجب أن يكون بين {1} و {2}</value>
+  </data>
+	<data name="Val_PositiveNumber" xml:space="preserve">
+    <value>حقل {0} يجب أن يكون رقماً موجباً</value>
+  </data>
+	<data name="Val_Compare" xml:space="preserve">
+    <value>{0} و {1} غير متطابقين.</value>
+  </data>
+	<data name="Val_InvalidCredentials" xml:space="preserve">
+    <value>البريد الإلكتروني أو كلمة المرور غير صحيحة. الرجاء المحاولة مرة أخرى.</value>
+  </data>
+	<data name="Val_InvalidNumber" xml:space="preserve">
+    <value>من فضلك أدخل صيغة رقمية صحيحة</value>
+  </data>
+
+	<!-- ==================== MESSAGES ==================== -->
+	<data name="Msg_Success" xml:space="preserve">
+    <value>تمت العملية بنجاح</value>
+  </data>
+	<data name="Msg_Saved" xml:space="preserve">
+    <value>تم حفظ البيانات بنجاح</value>
+  </data>
+	<data name="Msg_Added" xml:space="preserve">
+    <value>تمت الإضافة بنجاح</value>
+  </data>
+	<data name="Msg_Updated" xml:space="preserve">
+    <value>تم التحديث بنجاح</value>
+  </data>
+	<data name="Msg_Deleted" xml:space="preserve">
+    <value>تم الحذف بنجاح</value>
+  </data>
+	<data name="Msg_Error" xml:space="preserve">
+    <value>حدث خطأ أثناء معالجة طلبك</value>
+  </data>
+	<data name="Msg_Error_General" xml:space="preserve">
+    <value>حدث خطأ ما. الرجاء المحاولة مرة أخرى لاحقاً</value>
+  </data>
+	<data name="Msg_Error_NotFound" xml:space="preserve">
+    <value>المورد المطلوب غير موجود</value>
+  </data>
+	<data name="Msg_Error_InvalidCredentials" xml:space="preserve">
+    <value>اسم المستخدم أو كلمة المرور غير صحيحة</value>
+  </data>
+	<data name="Msg_Error_Validation" xml:space="preserve">
+    <value>فشل التحقق من صحة البيانات. الرجاء التحقق من المدخلات</value>
+  </data>
+	<data name="Msg_Warning" xml:space="preserve">
+    <value>تحذير</value>
+  </data>
+	<data name="Msg_Warning_Unsaved" xml:space="preserve">
+    <value>لديك تغييرات غير محفوظة. هل أنت متأكد من المغادرة؟</value>
+  </data>
+	<data name="Msg_Warning_Delete" xml:space="preserve">
+    <value>هل أنت متأكد من حذف هذا العنصر؟</value>
+  </data>
+	<data name="Msg_Confirm" xml:space="preserve">
+    <value>الرجاء التأكيد</value>
+  </data>
+	<data name="Msg_Confirm_Delete" xml:space="preserve">
+    <value>هل أنت متأكد من حذف هذا العنصر؟</value>
+  </data>
+	<data name="Msg_Confirm_Save" xml:space="preserve">
+    <value>هل تريد حفظ التغييرات؟</value>
+  </data>
+	<data name="Msg_Confirm_Logout" xml:space="preserve">
+    <value>هل أنت متأكد من تسجيل الخروج؟</value>
+  </data>
+	<data name="Msg_Info" xml:space="preserve">
+    <value>معلومات</value>
+  </data>
+	<data name="Msg_Info_NoData" xml:space="preserve">
+    <value>لا توجد بيانات متاحة</value>
+  </data>
+	<data name="Msg_Info_NoResults" xml:space="preserve">
+    <value>لا توجد نتائج</value>
+  </data>
+	<data name="Msg_Info_Loading" xml:space="preserve">
+    <value>جاري التحميل...</value>
+  </data>
+	<data name="Msg_Info_Processing" xml:space="preserve">
+    <value>جاري المعالجة...</value>
+  </data>
+	<data name="Msg_Info_Wait" xml:space="preserve">
+    <value>الرجاء الانتظار...</value>
+  </data>
+	<data name="Msg_Info_Required" xml:space="preserve">
+    <value>الحقول التي تحمل علامة * مطلوبة</value>
+  </data>
+	<data name="Msg_SignInToContinue" xml:space="preserve">
+    <value>سجل الدخول للمتابعة.</value>
+  </data>
+	<data name="Msg_RegisterDescription" xml:space="preserve">
+    <value>التسجيل سهل. يستغرق بضع خطوات فقط</value>
+  </data>
+	<data name="Msg_AlreadyHaveAccount" xml:space="preserve">
+    <value>لديك حساب بالفعل؟</value>
+  </data>
+	<data name="Msg_NoAccount" xml:space="preserve">
+    <value>ليس لديك حساب؟</value>
+  </data>
+	<data name="Msg_WelcomeToYourAccount" xml:space="preserve">
+    <value>مرحباً بك في حسابك</value>
+  </data>
+	<data name="Msg_AlreadyHaveAccountLogin" xml:space="preserve">
+    <value>إذا كان لديك حساب بالفعل، الرجاء تسجيل الدخول</value>
+  </data>
+	<data name="Msg_ShippingWorldwide" xml:space="preserve">
+    <value>نقوم بالشحن إلى جميع أنحاء العالم</value>
+  </data>
+	<data name="Msg_BestLogisticCompany" xml:space="preserve">
+    <value>أفضل شركة لوجستية</value>
+  </data>
+	<data name="Msg_And" xml:space="preserve">
+    <value>و</value>
+  </data>
+
+	<!-- ==================== WORDS ==================== -->
+	<data name="Word_Success" xml:space="preserve">
+    <value>نجاح</value>
+  </data>
+	<data name="Word_Error" xml:space="preserve">
+    <value>خطأ</value>
+  </data>
+	<data name="Word_Warning" xml:space="preserve">
+    <value>تحذير</value>
+  </data>
+	<data name="Word_Info" xml:space="preserve">
+    <value>معلومات</value>
+  </data>
+	<data name="Word_Confirm" xml:space="preserve">
+    <value>تأكيد</value>
+  </data>
+	<data name="Word_Done" xml:space="preserve">
+    <value>تم</value>
+  </data>
+	<data name="Word_Failed" xml:space="preserve">
+    <value>فشل</value>
+  </data>
+	<data name="Word_Completed" xml:space="preserve">
+    <value>مكتمل</value>
+  </data>
+	<data name="Word_Pending" xml:space="preserve">
+    <value>قيد الانتظار</value>
+  </data>
+	<data name="Word_Processing" xml:space="preserve">
+    <value>قيد المعالجة</value>
+  </data>
+	<data name="Word_Cancelled" xml:space="preserve">
+    <value>ملغي</value>
+  </data>
+	<data name="Word_Yes" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+	<data name="Word_No" xml:space="preserve">
+    <value>لا</value>
+  </data>
+	<data name="Word_Ok" xml:space="preserve">
+    <value>موافق</value>
+  </data>
+	<data name="Word_Cancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+	<data name="Word_Now" xml:space="preserve">
+    <value>الآن</value>
+  </data>
+	<data name="Word_Today" xml:space="preserve">
+    <value>اليوم</value>
+  </data>
+	<data name="Word_Yesterday" xml:space="preserve">
+    <value>أمس</value>
+  </data>
+	<data name="Word_Tomorrow" xml:space="preserve">
+    <value>غداً</value>
+  </data>
+	<data name="Word_Next" xml:space="preserve">
+    <value>التالي</value>
+  </data>
+	<data name="Word_Previous" xml:space="preserve">
+    <value>السابق</value>
+  </data>
+	<data name="Word_Back" xml:space="preserve">
+    <value>رجوع</value>
+  </data>
+	<data name="Word_All" xml:space="preserve">
+    <value>الكل</value>
+  </data>
+	<data name="Word_None" xml:space="preserve">
+    <value>لا شيء</value>
+  </data>
+	<data name="Word_Fast" xml:space="preserve">
+    <value>سريع</value>
+  </data>
+	<data name="Word_Safely" xml:space="preserve">
+    <value>بأمان</value>
+  </data>
+	<data name="Word_High" xml:space="preserve">
+    <value>مرتفع</value>
+  </data>
+	<data name="Word_Medium" xml:space="preserve">
+    <value>متوسط</value>
+  </data>
+	<data name="Word_Low" xml:space="preserve">
+    <value>منخفض</value>
+  </data>
+
+	<!-- ==================== ALT TEXTS ==================== -->
+	<data name="Alt_Logo" xml:space="preserve">
+    <value>شعار الشركة</value>
+  </data>
+	<data name="Alt_FooterLogo" xml:space="preserve">
+    <value>شعار التذييل</value>
+  </data>
+	<data name="Alt_Image" xml:space="preserve">
+    <value>صورة</value>
+  </data>
+	<data name="Alt_ProfilePicture" xml:space="preserve">
+    <value>الصورة الشخصية</value>
+  </data>
+	<data name="Alt_Package" xml:space="preserve">
+    <value>طرد</value>
+  </data>
+	<data name="Alt_FlagEnglish" xml:space="preserve">
+    <value>علم إنجليزي</value>
+  </data>
+	<data name="Alt_FlagArabic" xml:space="preserve">
+    <value>علم عربي</value>
+  </data>
+
+	<!-- ==================== MISC ==================== -->
+	<data name="Lbl_SkipNavigation" xml:space="preserve">
+    <value>تخطي التنقل</value>
+  </data>
+	<data name="Lbl_Search" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+	<data name="Lbl_Edit" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+	<data name="Lbl_Settings" xml:space="preserve">
+    <value>الإعدادات</value>
+  </data>
+	<data name="Lbl_Notifications" xml:space="preserve">
+    <value>الإشعارات</value>
+  </data>
+	<data name="Lbl_Messages" xml:space="preserve">
+    <value>الرسائل</value>
+  </data>
+	<data name="Lbl_SocialMedia" xml:space="preserve">
+    <value>تابعنا</value>
+  </data>
+	<data name="Lbl_Newsletter" xml:space="preserve">
+    <value>النشرة البريدية</value>
+  </data>
+	<data name="Lbl_Subscribe" xml:space="preserve">
+    <value>اشتراك</value>
+  </data>
+	<data name="Lbl_Copyright" xml:space="preserve">
+    <value>حقوق النشر</value>
+  </data>
+	<data name="Lbl_AllRightsReserved" xml:space="preserve">
+    <value>جميع الحقوق محفوظة</value>
+  </data>
+	<data name="Lbl_WebsiteTitle" xml:space="preserve">
+    <value>شركة الشحن</value>
+  </data>
+	<data name="Lbl_Slogan" xml:space="preserve">
+    <value>توصيل سريع وآمن حول العالم</value>
+  </data>
+
+
+	<!-- ==================== SLIDER ==================== -->
+	<data name="Lbl_WeAreProud" xml:space="preserve"><value>نحن فخورون</value></data>
+	<data name="Lbl_AlwaysOnDemand" xml:space="preserve"><value>لنكون دائماً عند الطلب</value></data>
+	<data name="Lbl_WeAreActive" xml:space="preserve"><value>نحن نشيطون</value></data>
+	<data name="Lbl_ShipProductTrusted" xml:space="preserve"><value>لشحن منتجك بأمان</value></data>
+	<data name="Btn_ContactWithUs" xml:space="preserve"><value>اتصل بنا</value></data>
+	<data name="Btn_GetFreeQuote" xml:space="preserve"><value>احصل على عرض سعر مجاني</value></data>
+	<data name="Txt_SliderDescription" xml:space="preserve"><value>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص.</value></data>
+
+	<!-- ==================== TRACKING ==================== -->
+	<data name="Lbl_TrackShipment" xml:space="preserve"><value>تتبع شحنة</value></data>
+	<data name="Lbl_TrackNumber" xml:space="preserve"><value>رقم التتبع</value></data>
+	<data name="Lbl_TrackByNumber" xml:space="preserve"><value>تتبع بالرقم</value></data>
+	<data name="Lbl_TrackByReference" xml:space="preserve"><value>تتبع بالمرجع</value></data>
+	<data name="Lbl_AirFreightTracking" xml:space="preserve"><value>تتبع الشحن الجوي</value></data>
+	<data name="Plh_TrackId" xml:space="preserve"><value>رقم التتبع</value></data>
+	<data name="Btn_Track" xml:space="preserve"><value>تتبع</value></data>
+	<data name="Lbl_NeedHelp" xml:space="preserve"><value>تحتاج مساعدة؟</value></data>
+	<data name="Lbl_YourOrderList" xml:space="preserve"><value>قائمة طلباتك</value></data>
+	<data name="Txt_TrackingDescription" xml:space="preserve"><value>تتبع شحنتك عن طريق إدخال رقم التتبع أدناه للحصول على معلومات فورية عن الشحن.</value></data>
+
+	<!-- ==================== SERVICES ==================== -->
+	<data name="Lbl_OceanFreightShipping" xml:space="preserve"><value>الشحن البحري</value></data>
+	<data name="Lbl_AirFreightShipping" xml:space="preserve"><value>الشحن الجوي</value></data>
+	<data name="Lbl_CarShipping" xml:space="preserve"><value>شحن السيارات</value></data>
+	<data name="Btn_ReadMore" xml:space="preserve"><value>اقرأ المزيد</value></data>
+
+	<!-- ==================== WE PROVIDE ==================== -->
+	<data name="Lbl_WeProvide" xml:space="preserve"><value>نحن نوفر</value></data>
+	<data name="Lbl_BestSeaAndAir" xml:space="preserve"><value>أفضل خدمات الشحن البحري والجوي</value></data>
+	<data name="Lbl_BookShippingFromAnyCountry" xml:space="preserve"><value>لحجز شحنتك من أي دولة</value></data>
+
+	<!-- ==================== WHY CHOOSE US ==================== -->
+	<data name="Lbl_WhyChooseUs" xml:space="preserve"><value>لماذا تختارنا؟</value></data>
+	<data name="Lbl_WeAreTrusted" xml:space="preserve"><value>نحن موثوقون</value></data>
+	<data name="Lbl_BestSecurity" xml:space="preserve"><value>أفضل أمان</value></data>
+	<data name="Lbl_100Guarantee" xml:space="preserve"><value>ضمان 100%</value></data>
+	<data name="Lbl_QuickLocation" xml:space="preserve"><value>موقع سريع</value></data>
+
+	<!-- ==================== SERVICE PROCESS ==================== -->
+	<data name="Lbl_OurServiceProcess" xml:space="preserve"><value>عملية خدماتنا</value></data>
+	<data name="Lbl_SelectFreight" xml:space="preserve"><value>اختر الشحن</value></data>
+	<data name="Lbl_CreateInvoice" xml:space="preserve"><value>إنشاء فاتورة</value></data>
+	<data name="Lbl_SecurePayment" xml:space="preserve"><value>دفع آمن</value></data>
+	<data name="Lbl_FastDelivery" xml:space="preserve"><value>توصيل سريع</value></data>
+
+	<!-- ==================== GET QUOTE ==================== -->
+	<data name="Lbl_ShippingType" xml:space="preserve"><value>نوع الشحن</value></data>
+	<data name="Lbl_GetFreeQuote" xml:space="preserve"><value>احصل على عرض سعر مجاني</value></data>
+	<data name="Lbl_BestFastestFleets" xml:space="preserve"><value>نستخدم دائماً أفضل وأسرع الأساطيل</value></data>
+	<data name="Plh_DestinationFrom" xml:space="preserve"><value>الوجهة من</value></data>
+	<data name="Plh_DestinationTo" xml:space="preserve"><value>الوجهة إلى</value></data>
+	<data name="Plh_ShippingType" xml:space="preserve"><value>نوع الشحن</value></data>
+	<data name="Plh_Message" xml:space="preserve"><value>رسالة</value></data>
+	<data name="Btn_SendUsQuote" xml:space="preserve"><value>أرسل عرض سعر</value></data>
+
+	<!-- ==================== BLOG ==================== -->
+	<data name="Lbl_LatestBlogPost" xml:space="preserve"><value>آخر منشورات المدونة</value></data>
+	<data name="Lbl_ByAdmin" xml:space="preserve"><value>بواسطة المدير</value></data>
+
+	<!-- ==================== COUNTERS ==================== -->
+	<data name="Lbl_ProjectDone" xml:space="preserve"><value>مشروع مكتمل</value></data>
+	<data name="Lbl_PermanentClients" xml:space="preserve"><value>عميل دائم</value></data>
+	<data name="Lbl_OwnedVehicles" xml:space="preserve"><value>مركبة مملوكة</value></data>
+	<data name="Lbl_SupportMember" xml:space="preserve"><value>عضو دعم</value></data>
+
+	<!-- ==================== NEWS & TESTIMONIALS ==================== -->
+	<data name="Lbl_LatestNews" xml:space="preserve"><value>آخر الأخبار</value></data>
+	<data name="Lbl_NewsTitle" xml:space="preserve"><value>عنوان الخبر</value></data>
+	<data name="Lbl_Testimonial" xml:space="preserve"><value>آراء العملاء</value></data>
+	<data name="Lbl_OurValuableClient" xml:space="preserve"><value>عملائنا الكرام</value></data>
+
+	<!-- ==================== TRACKING BY REFERENCE ==================== -->
+	<data name="Lbl_ShipmentReference" xml:space="preserve">
+    <value>مرجع الشحنة (BOL أو PO):</value>
+</data>
+	<data name="Lbl_ShipmentDateStart" xml:space="preserve">
+    <value>تاريخ بدء الشحنة:</value>
+</data>
+	<data name="Lbl_ShipmentDateEnd" xml:space="preserve">
+    <value>تاريخ نهاية الشحنة:</value>
+</data>
+	<data name="Lbl_OriginCountry" xml:space="preserve">
+    <value>بلد المنشأ:</value>
+</data>
+	<data name="Lbl_OriginZipCode" xml:space="preserve">
+    <value>الرمز البريدي للمنشأ:</value>
+</data>
+	<data name="Lbl_DestinationCountry" xml:space="preserve">
+    <value>بلد الوجهة:</value>
+</data>
+	<data name="Lbl_DestinationZipCode" xml:space="preserve">
+    <value>الرمز البريدي للوجهة:</value>
+</data>
+	<!-- ==================== VALIDATION KEYS (ADD TO ResFrontend.ar.resx) ==================== -->
+	<data name="Val_Required" xml:space="preserve">
+    <value>حقل {0} مطلوب</value>
+</data>
+	<data name="Val_Email" xml:space="preserve">
+    <value>البريد الإلكتروني غير صالح</value>
+</data>
+	<data name="Val_Phone" xml:space="preserve">
+    <value>رقم الهاتف غير صالح</value>
+</data>
+	<data name="Val_StringLength" xml:space="preserve">
+    <value>يجب أن يكون طول {0} بين {2} و {1} حرفًا</value>
+</data>
+	<data name="Val_Range" xml:space="preserve">
+    <value>يجب أن تكون قيمة {0} بين {1} و {2}</value>
+</data>
+	<data name="Val_PositiveNumber" xml:space="preserve">
+    <value>يجب أن يكون {0} رقمًا موجبًا</value>
+</data>
+	<data name="Val_InvalidNumber" xml:space="preserve">
+    <value>تنسيق الرقم غير صالح</value>
+</data>
+	<data name="Val_Compare" xml:space="preserve">
+    <value>لا يتطابق {0} مع {1}</value>
+</data>
+	<data name="Val_MinLength" xml:space="preserve">
+    <value>يجب أن يكون طول {0} على الأقل {1} حرفًا</value>
+</data>
+	<data name="Val_MaxLength" xml:space="preserve">
+    <value>يجب ألا يزيد طول {0} عن {1} حرفًا</value>
+</data>
+	<data name="Val_FutureDate" xml:space="preserve">
+    <value>يجب أن يكون {0} تاريخًا مستقبليًا</value>
+</data>
+	<data name="Val_PastDate" xml:space="preserve">
+    <value>يجب أن يكون {0} تاريخًا ماضيًا</value>
+</data>
+	<data name="Val_MustAccept" xml:space="preserve">
+    <value>يجب عليك قبول {0}</value>
+</data>
+	<data name="Val_SelectOption" xml:space="preserve">
+    <value>الرجاء تحديد {0}</value>
+</data>
+
+	<!-- ==================== PLACEHOLDERS (ADD TO ResFrontend.ar.resx) ==================== -->
+	<data name="Plh_ContactType" xml:space="preserve">
+    <value>اختر نوع جهة الاتصال</value>
+</data>
+	<data name="Plh_Weight" xml:space="preserve">
+    <value>أدخل الوزن</value>
+</data>
+	<data name="Plh_Length" xml:space="preserve">
+    <value>أدخل الطول</value>
+</data>
+	<data name="Plh_Width" xml:space="preserve">
+    <value>أدخل العرض</value>
+</data>
+	<data name="Plh_Height" xml:space="preserve">
+    <value>أدخل الارتفاع</value>
+</data>
+	<data name="Plh_PackageValue" xml:space="preserve">
+    <value>أدخل قيمة الطرد</value>
+</data>
+</root>

@@ -48,7 +48,7 @@ namespace BL.Services
             dbEntity.CreatedBy = await _userService.GetLoggedInUserId();
             await _repo.AddAsync(dbEntity, ct);
         }
-        public async Task<Guid> AddAndGetIdAsync(DTO entity, CancellationToken ct = default)
+        public virtual async Task<Guid> AddAndGetIdAsync(DTO entity, CancellationToken ct = default)
         {
             var dbEntity = _mapper.Map<DTO, T>(entity);
             dbEntity.CurrentState = 1;

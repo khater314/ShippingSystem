@@ -12,18 +12,17 @@ namespace BL.Services
     /// <param name="repo"></param>
     /// <param name="mapper"></param>
     /// <param name="userService"></param>
-    public class RefreshTokenService(ITableRepository<TbRefreshToken> repo, IMapper mapper, IUserService userService) : BaseService<TbRefreshToken, TbRefreshTokenDto>(repo, mapper, userService), IRefreshTokenService
+    public class RefreshTokenService(
+        ITableRepository<TbRefreshToken> repo, 
+        IMapper mapper, 
+        IUserService userService
+        ) 
+        : BaseService<TbRefreshToken, TbRefreshTokenDto>(repo, mapper, userService), IRefreshTokenService
     {
         private readonly ITableRepository<TbRefreshToken> _repo = repo;
         private readonly IMapper _mapper = mapper;
-        public async Task<TbRefreshTokenDto> GetByToken(string token)
-        {
-            var refreshToken = await _repo.GetFirstOrDefaultAsync(x => x.Token == token);
-            
-            return refreshToken == null
-                ? throw new Exception("Refresh token not found, User Not Authorized")
-                : _mapper.Map<TbRefreshToken, TbRefreshTokenDto>(refreshToken);
-        }
+
+
         /// <summary>
         /// Refresh RefreshToken by marking the old token as expired and creating a new one. This ensures that only one valid refresh token exists for a user at any time.
         /// </summary>

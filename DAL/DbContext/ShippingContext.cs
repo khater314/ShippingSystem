@@ -183,15 +183,19 @@ public partial class ShippingContext : IdentityDbContext<AppUser, AppRole, Guid>
                 .HasForeignKey(d => d.PaymentMethodId)
                 .HasConstraintName("FK_TbShipments_TbPaymentMethods");
 
-            entity.HasOne(d => d.UserContact).WithMany(p => p.TbShipments)
-                .HasForeignKey(d => d.ReceiverId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_TbShipments_TbUserContacts");
-
-            entity.HasOne(d => d.UserContact).WithMany(p => p.TbShipments)
+            
+            entity.HasOne(d => d.Sender)
+                .WithMany(p => p.TbShipments) 
                 .HasForeignKey(d => d.SenderId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_TbShipments_TbUserContacts");
+                .HasConstraintName("FK_TbShipments_TbUserContacts_Sender"); 
+
+            
+            entity.HasOne(d => d.Receiver)
+                .WithMany() 
+                .HasForeignKey(d => d.ReceiverId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_TbShipments_TbUserContacts_Receiver"); 
 
             entity.HasOne(d => d.ShippingType).WithMany(p => p.TbShipments)
                 .HasForeignKey(d => d.ShippingTypeId)

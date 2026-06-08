@@ -180,6 +180,53 @@ namespace DAL.Repositories
             }, "Error retrieving the records.");
         }
 
+        public async Task<List<TResult>> GetListAsync<TResult>(
+            Expression<Func<T, bool>>? filter = null,
+            Expression<Func<T, TResult>>? selector = null,
+            Expression<Func<T, object>>? orderBy = null,
+            bool isDescending = false,
+            CancellationToken ct = default,
+            params Expression<Func<T, object>>[] includers)
+        {
+            return await ExecuteWithHandlingAsync(async () =>
+            {
+
+                IQueryable<T> query = _dbSet.AsNoTracking().Where(i => i.CurrentState == 1);
+
+                // for JOINs in db
+                if (includers != null && includers.Length > 0)
+                {
+                    foreach (var includeProperty in includers)
+                    {
+                        query = query.Include(includeProperty);
+                    }
+                }
+
+                // Where
+                if (filter != null)
+                {
+                    query = query.Where(filter);
+                }
+
+                // Order By
+                if (orderBy != null)
+                {
+                    query = isDescending
+                        ? query.OrderByDescending(orderBy)
+                        : query.OrderBy(orderBy);
+                }
+
+                // Select
+                if (selector != null)
+                {
+                    return await query.Select(selector).ToListAsync(ct);
+                }
+
+                // if selector is null, we assume TResult is T and cast the results
+                return await query.Cast<TResult>().ToListAsync(ct);
+
+            }, "Error retrieving records with custom query configurations.");
+        }
 
     }
 }

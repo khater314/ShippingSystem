@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Domains;
 
@@ -43,9 +44,15 @@ public partial class TbShipment : BaseEntity
 
     public virtual TbPackaging? Packaging { get; set; }
 
-    public virtual TbUserContact UserContact { get; set; } = null!;
+    //public virtual TbUserContact UserContact { get; set; } = null!;
 
     public virtual TbShippingType ShippingType { get; set; } = null!;
 
     public virtual ICollection<TbShipmentStatus> TbShipmentStatuses { get; set; } = new List<TbShipmentStatus>();
+
+    [ForeignKey(nameof(SenderId))]
+    public virtual TbUserContact Sender { get; set; } = null!;
+
+    [ForeignKey(nameof(ReceiverId))]
+    public virtual TbUserContact Receiver { get; set; } = null!;
 }

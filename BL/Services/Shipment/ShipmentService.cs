@@ -56,12 +56,74 @@ namespace BL.Services.Shipment
             return await _unitOfWork.CommitAsync(ct);
 
         }
-        public async Task<IEnumerable<TbShipmentDTO>> GetShipmentsByUserIdAsync(Guid userId = default, CancellationToken ct = default)
+
+        public async Task<IEnumerable<TbShipmentDTO>> GetShipmentsByUserIdAsync(
+            Guid userId = default,
+            CancellationToken ct = default
+        )   
         {
             if (userId == default)
                 userId = await _userService.GetLoggedInUserId();
-            var shipments = await _repo.GetListAsync(s => s.UserId == userId, ct);
-            return _mapper.Map< IEnumerable<TbShipment> , IEnumerable<TbShipmentDTO>>(shipments);
+
+            var shipments = await _repo.GetListAsync<TbShipmentDTO>(
+                filter: s => s.UserId == userId,
+                ct: ct,
+                selector: s => new TbShipmentDTO
+                {
+                    Id = s.Id,
+                    TrackingNumber = s.TrackingNumber,
+                    ShippingRate = s.ShippingRate,
+                    ShippingTypeId = s.ShippingTypeId,
+                    SenderId = s.SenderId,
+                    ReceiverId = s.ReceiverId,
+                    UserId = s.UserId,
+                    Weight = s.Weight,
+                    Width = s.Width,
+                    Length = s.Length,
+                    Height = s.Height,
+                    DelivryDate = s.DelivryDate, 
+                    ShippingDate = s.ShippingDate,
+                    PackageValue = s.PackageValue,
+                    UserSubscriptionId = s.UserSubscriptionId,
+                    PackagingId = s.PackagingId,
+                    PaymentMethodId = s.PaymentMethodId,
+                    ReferenceId = s.ReferenceId,
+
+                    Sender = new TbUserContactDTO
+                    {
+                        Id = s.Sender.Id,
+                        UserId = s.Sender.UserId,
+                        FullName = s.Sender.FullName,
+                        Email = s.Sender.Email,
+                        Phone = s.Sender.Phone,
+                        CityId = s.Sender.CityId,
+                        Address = s.Sender.Address,               
+                        PostalCode = s.Sender.PostalCode,         
+                        ContactType = s.Sender.ContactType,       
+                        IsDefaultAddress = s.Sender.IsDefaultAddress, 
+                        OtherAddressInfo = s.Sender.OtherAddressInfo,
+                        Contacts = s.Sender.Contacts,
+
+                    },
+                    Receiver = new TbUserContactDTO
+                    {
+                        Id = s.Receiver.Id,
+                        UserId = s.Receiver.UserId,
+                        FullName = s.Receiver.FullName,
+                        Email = s.Receiver.Email,
+                        Phone = s.Receiver.Phone,
+                        CityId = s.Receiver.CityId,
+                        Address = s.Receiver.Address,             
+                        PostalCode = s.Receiver.PostalCode,       
+                        ContactType = s.Receiver.ContactType,     
+                        IsDefaultAddress = s.Receiver.IsDefaultAddress, 
+                        OtherAddressInfo = s.Receiver.OtherAddressInfo,
+                        Contacts = s.Receiver.Contacts
+                    }
+                }
+            );
+
+            return shipments;
         }
     }
 }

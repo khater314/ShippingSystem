@@ -11,18 +11,19 @@ using Domains;
 namespace BL.Services.Shipment
 {
     public class ShipmentService(
-        ITableRepository<TbShipment> repo, 
-        IMapper mapper, 
-        IUserService userService, 
+        ITableRepository<TbShipment> repo,
+        IMapper mapper,
+        IUserService userService,
         IUserContactService contactService,
         IShipmentRateCalculator rateCalculator,
         ITrackingNumberCreator trackingNumberCreator,
         ISelectShippingType selectShippingType,
         IUnitOfWork unitOfWork
-        ) 
+        )
         : BaseService<TbShipment, TbShipmentDTO>(unitOfWork, mapper, userService), IShipmentService
     {
 
+        private readonly IMapper _mapper = mapper;
         private readonly IUnitOfWork _unitOfWork = unitOfWork;
         private readonly ITableRepository<TbShipment> _repo = repo;
         private readonly IUserService _userService = userService;
@@ -30,7 +31,7 @@ namespace BL.Services.Shipment
         private readonly IShipmentRateCalculator _rateCalculator = rateCalculator;
         private readonly ITrackingNumberCreator _trackingNumberCreator = trackingNumberCreator;
         private readonly ISelectShippingType _selectShippingType = selectShippingType;
-        
+
         public async Task<bool> CreateAsync(TbShipmentDTO dto, CancellationToken ct = default)
         {
             await _unitOfWork.BeginTransactionAsync(ct);
@@ -49,12 +50,18 @@ namespace BL.Services.Shipment
                 dto.ReceiverId = await _contactService.AddAndGetIdAsync(dto.Receiver, ct);
 
 
-
             // Save shipment.
             await this.AddAsync(dto, ct);
 
             return await _unitOfWork.CommitAsync(ct);
 
+        }
+        public async Task<IEnumerable<TbShipmentDTO>> GetShipmentsByUserIdAsync(Guid userId = default, CancellationToken ct = default)
+        {
+            if (userId == default)
+                userId = await _userService.GetLoggedInUserId();
+            var shipments = await _repo.GetListAsync(s => s.UserId == userId, ct);
+            return _mapper.Map< IEnumerable<TbShipment> , IEnumerable<TbShipmentDTO>>(shipments);
         }
     }
 }

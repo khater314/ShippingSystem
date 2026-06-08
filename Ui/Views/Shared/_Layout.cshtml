@@ -1,5 +1,17 @@
 ﻿@using System.Globalization
+@{
+    string gest = "Gest User";
+    string displayName = gest; // الاسم الافتراضي لو مش مسجل دخول
 
+    if (User.Identity is { IsAuthenticated: true } && !string.IsNullOrEmpty(User.Identity.Name))
+    {
+        string email = User.Identity.Name;
+        int atIndex = email.IndexOf('@');
+
+        // بنتأكد إن علامة @ موجودة فعلاً في النص
+        displayName = atIndex > 0 ? email.Substring(0, atIndex) : email;
+    }
+}
 <!DOCTYPE html>
 <html lang="@CultureInfo.CurrentCulture.TwoLetterISOLanguageName"
       dir="@(CultureInfo.CurrentCulture.TextInfo.IsRightToLeft ? "rtl" : "ltr")">
@@ -67,8 +79,15 @@
                         <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-lg-end">
                             <div class="top-menu">
                                 <ul>
-                                    <li><a href="customer-login.html"><i class="fas fa-sign-in-alt"></i> @ResFrontend.Btn_Login</a></li>
-                                    <li><a href="customer-register.html"><i class="fa fa-unlock-alt"></i> @ResFrontend.Btn_Registration</a></li>
+                                    @if(displayName == gest)
+                                        {
+                                            <li><a href="~/Account/Login"><i class="fas fa-sign-in-alt"></i> @ResFrontend.Btn_Login</a></li>
+                                            <li><a href="~/Account/Register"><i class="fa fa-unlock-alt"></i> @ResFrontend.Btn_Registration</a></li>
+                                        }
+                                        else
+                                        {
+                                            <li><a href="~/Account/Logout"><i class="fas fa-sign-out-alt"></i> @ResFrontend.Btn_Logout</a></li>
+                                        }
                                 </ul>
                             </div>
                             <div class="language">
@@ -104,7 +123,7 @@
                             <li><a href="shipment/create">@ResFrontend.Menu_Shipping</a></li>
                             <li><a href="blog.html">@ResFrontend.Menu_Blog</a></li>
                             <li><a href="contact.html">@ResFrontend.Menu_ContactUs</a></li>
-                            <li><a href="profile.html"><img class="header-profile-pic" src="~/assets/images/profile.jpg" alt="@ResFrontend.Alt_ProfilePicture" /> @ResFrontend.Menu_Profile</a></li>
+                            <li><a href="profile.html"><img class="header-profile-pic" src="~/assets/images/profile.jpg" alt="@ResFrontend.Alt_ProfilePicture" /> @(" " + displayName)</a></li>
                         </ul>
                     </nav>
                 </div>

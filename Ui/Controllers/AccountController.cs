@@ -19,12 +19,12 @@ namespace Ui.Controllers
             if (!ModelState.IsValid)
                 return View(user);
 
-            var result = await _userService.LoginAsync(user);
-
             var tokens = await _httpClient.PostAsync<UserLoginDto, UserResultDto>("api/auth/login", user);
 
+            var result = await _userService.LoginAsync(user);
+
             // Break Point Here!
-            if (!result.IsSuccess || tokens == null || !tokens.IsSuccess)
+            if (  tokens == null || !tokens.IsSuccess)
             {
                 ModelState.AddModelError(string.Empty, ResShared.Val_InvalidCredentials);
                 return View(user);
@@ -35,7 +35,7 @@ namespace Ui.Controllers
                 return View(user);
             }
 
-            result.AccessToken = tokens.AccessToken;
+            //result.AccessToken = tokens.AccessToken;
             
             SetAccessTokenInCookie(tokens.AccessToken);
 
@@ -78,9 +78,11 @@ namespace Ui.Controllers
             if (!ModelState.IsValid)
                 return View(user);
 
-            var result = await _userService.RegisterAsync(user);
+            //var result = await _userService.RegisterAsync(user);
 
-            if (!result.IsSuccess)
+            var result = await _httpClient.PostAsync<UserRegisterDto, UserResultDto>("api/auth/register", user);
+
+            if (result is null || !result.IsSuccess)
             {
                 ModelState.AddModelError(string.Empty, "Something Wrong!");
                 return View(user);

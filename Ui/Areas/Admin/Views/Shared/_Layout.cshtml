@@ -64,6 +64,18 @@
                         </div>
                     </form>
                 </div>
+                @{
+                    string displayName = "زائر"; // الاسم الافتراضي لو مش مسجل دخول
+
+                    if (User.Identity is { IsAuthenticated: true } && !string.IsNullOrEmpty(User.Identity.Name))
+                    {
+                        string email = User.Identity.Name;
+                        int atIndex = email.IndexOf('@');
+
+                        // بنتأكد إن علامة @ موجودة فعلاً في النص
+                        displayName = atIndex > 0 ? email.Substring(0, atIndex) : email;
+                    }
+                }
                 <ul class="navbar-nav navbar-nav-right">
                     <li class="nav-item nav-profile dropdown">
                         <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
@@ -72,7 +84,7 @@
                                 <span class="availability-status online"></span>
                             </div>
                             <div class="nav-profile-text">
-                                <p class="mb-1 text-black">@ResShared.Lbl_ProfileName</p>
+                                <p class="mb-1 text-black">@displayName</p>
                             </div>
                         </a>
                         <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
@@ -454,7 +466,7 @@
                                 <span class="login-status online"></span>
                             </div>
                             <div class="nav-profile-text d-flex flex-column">
-                                <span class="font-weight-bold mb-2">@ResShared.Lbl_ProfileName</span>
+                                <span class="font-weight-bold mb-2">@displayName</span>
                                 <span class="text-secondary text-small">@ResShared.Txt_ProjectManager</span>
                             </div>
                             <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>

@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Domains.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace BL.Contracts
 {
-    public interface IPackagingService : IBaseService<Domains.TbPackaging, DTOs.TbPackagingDTO>
+    public interface IPackagingService : IBaseService<TbPackaging, DTOs.TbPackagingDTO>
     {
     }
 }

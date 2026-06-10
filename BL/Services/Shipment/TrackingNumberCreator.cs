@@ -10,7 +10,7 @@ namespace BL.Services.Shipment
         public string Create()
         {
             // Implementation for creating a tracking number
-            return Guid.NewGuid().ToString();
+            return Guid.NewGuid().ToString()[8..];
         }
     }
 }

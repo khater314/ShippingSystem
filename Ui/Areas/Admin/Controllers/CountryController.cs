@@ -1,7 +1,7 @@
 ﻿using BL.Contracts;
 using Microsoft.AspNetCore.Mvc;
-using Domains;
 using BL.DTOs;
+using Domains.Entities;
 
 namespace Ui.Areas.Admin.Controllers
 {

@@ -2,7 +2,7 @@
 using BL.Contracts;
 using BL.DTOs;
 using DAL.Contracts;
-using Domains;
+using Domains.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;

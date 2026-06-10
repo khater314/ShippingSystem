@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Domains
+namespace Domains.Entities
 {
     public class VwUserContact : BaseView
     {

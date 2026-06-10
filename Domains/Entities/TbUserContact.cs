@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Domains;
+namespace Domains.Entities;
 
 public partial class TbUserContact : BaseEntity
 {

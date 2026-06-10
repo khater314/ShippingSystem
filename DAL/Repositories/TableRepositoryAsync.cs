@@ -1,10 +1,10 @@
 ﻿using DAL.DbContext;
 using Microsoft.EntityFrameworkCore;
-using Domains;
 using DAL.Contracts;
 using Microsoft.Extensions.Logging;
 using DAL.Exceptions;
 using System.Linq.Expressions;
+using Domains.Entities;
 
 namespace DAL.Repositories
 {

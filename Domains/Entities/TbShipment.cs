@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Domains;
+namespace Domains.Entities;
 
 public partial class TbShipment : BaseEntity
 {

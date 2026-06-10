@@ -2,10 +2,10 @@
 using BL.Mapping;
 using BL.Contracts;
 using DAL.Contracts;
-using Domains;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Domains.Entities;
 
 namespace BL.Services
 {

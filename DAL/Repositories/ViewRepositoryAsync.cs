@@ -1,7 +1,7 @@
 ﻿using DAL.Contracts;
 using DAL.DbContext;
 using DAL.Exceptions;
-using Domains;
+using Domains.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System.Linq.Expressions;

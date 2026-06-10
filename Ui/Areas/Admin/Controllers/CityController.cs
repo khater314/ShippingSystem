@@ -1,7 +1,7 @@
 ﻿using BL.Contracts;
 using BL.DTOs;
 using BL.Services;
-using Domains;
+using Domains.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.Blazor;
 

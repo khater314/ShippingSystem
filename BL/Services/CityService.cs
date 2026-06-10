@@ -1,11 +1,11 @@
 ﻿using BL.DTOs;
-using Domains;
 using BL.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using DAL.Contracts;
 using BL.Mapping;
+using Domains.Entities;
 
 namespace BL.Services
 {

@@ -4,6 +4,7 @@ using System.Text;
 using AutoMapper;
 using BL.DTOs;
 using Domains;
+using Domains.Entities;
 
 namespace BL.Mapping
 {

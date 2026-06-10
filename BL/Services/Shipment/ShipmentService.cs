@@ -6,7 +6,7 @@ using BL.Contracts.Shipment;
 using BL.DTOs;
 using BL.Mapping;
 using DAL.Contracts;
-using Domains;
+using Domains.Entities;
 
 namespace BL.Services.Shipment
 {

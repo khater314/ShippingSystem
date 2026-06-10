@@ -1,6 +1,7 @@
 ﻿using BL.Contracts.Shipment;
 using BL.DTOs;
 using Microsoft.AspNetCore.Mvc;
+using WebApi.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -11,40 +12,40 @@ namespace WebApi.Controllers
     public class ShipmentController(IShipmentService shipmentService) : ControllerBase
     {
         private readonly IShipmentService _shipmentService = shipmentService;
-        // GET: api/<ShipmentController>
+
+
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<ActionResult<ApiResponse<IEnumerable<TbShipmentDTO>>>> Get
+            (CancellationToken ct = default)
         {
-            return new string[] { "value1", "value2" };
+            var response = await _shipmentService.GetShipmentsByUserIdAsync(ct: ct);
+            return Ok(ApiResponse<IEnumerable<TbShipmentDTO>>.SuccessResponse(response));
         }
 
-        // GET api/<ShipmentController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
 
-        // POST api/<ShipmentController>
+        //[HttpGet("Shipments")]
+        //public async Task<ActionResult<ApiResponse<TbShipmentDTO>>> Get(Guid id, CancellationToken ct = default)
+        //{
+        //    var response = await _shipmentService.GetByIdAsync(id, ct);
+        //    return Ok(ApiResponse<TbShipmentDTO>.SuccessResponse(response));
+        //}
+
         [HttpPost]
         public void Post([FromBody] string value)
         {
         }
 
-        // POST api/<ShipmentController>
         [HttpPost("Create")]
-        public async Task Post([FromBody] TbShipmentDTO dto)
+        public async Task Post([FromBody] TbShipmentDTO dto, CancellationToken ct = default)
         {
-            await _shipmentService.CreateAsync(dto);
+            await _shipmentService.CreateAsync(dto, ct);
         }
 
-        // PUT api/<ShipmentController>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/<ShipmentController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {

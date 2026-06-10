@@ -1,9 +1,9 @@
 using BL.DTOs;
-using Domains;
 using BL.Contracts;
 using DAL.Contracts;
 using BL.Mapping;
 using Microsoft.AspNetCore.Http;
+using Domains.Entities;
 
 namespace BL.Services
 {

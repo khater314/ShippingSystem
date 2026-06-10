@@ -1,6 +1,6 @@
 ﻿using Bogus;
 using DAL.UserModel;
-using Domains;
+using Domains.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;

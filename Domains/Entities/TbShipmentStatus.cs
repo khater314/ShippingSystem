@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Domains.Enums;
 
-namespace Domains;
+namespace Domains.Entities;
 
 public partial class TbShipmentStatus : BaseEntity
 {

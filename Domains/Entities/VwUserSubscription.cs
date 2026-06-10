@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Domains
+namespace Domains.Entities
 {
     public class VwUserSubscription : BaseView
     {

@@ -1,6 +1,6 @@
 ﻿using DAL.Contracts;
 using DAL.DbContext;
-using Domains;
+using Domains.Entities;
 using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.Logging;
 

@@ -1,5 +1,6 @@
 ﻿using BL.Contracts.Shipment;
 using BL.DTOs;
+using Domains.Models;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Models;
 
@@ -15,11 +16,11 @@ namespace WebApi.Controllers
 
 
         [HttpGet]
-        public async Task<ActionResult<ApiResponse<IEnumerable<TbShipmentDTO>>>> Get
+        public async Task<ActionResult<ApiResponse<PagedResult<TbShipmentDTO>>>> Get
             (CancellationToken ct = default)
         {
             var response = await _shipmentService.GetShipmentsByUserIdAsync(ct: ct);
-            return Ok(ApiResponse<IEnumerable<TbShipmentDTO>>.SuccessResponse(response));
+            return Ok(ApiResponse<PagedResult<TbShipmentDTO>>.SuccessResponse(response));
         }
 
 

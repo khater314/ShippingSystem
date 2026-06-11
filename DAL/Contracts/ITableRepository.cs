@@ -1,4 +1,5 @@
 ﻿using Domains.Entities;
+using Domains.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
@@ -22,6 +23,19 @@ namespace DAL.Contracts
         Task<T?> GetFirstOrDefaultAsync(Expression<Func<T, bool>> filter, CancellationToken ct = default);
         Task<IEnumerable<T>> GetListAsync(Expression<Func<T, bool>> filter, CancellationToken ct = default);
         Task<List<TResult>> GetListAsync<TResult>(
+            Expression<Func<T, bool>>? filter = null,
+            Expression<Func<T, TResult>>? selector = null,
+            Expression<Func<T, object>>? orderBy = null,
+            bool isDescending = false,
+            CancellationToken ct = default,
+            params Expression<Func<T, object>>[] includers);
+
+        Task<PagedResult<TResult>> GetPagedListAsync<TResult>(
+            PaginationParameters parameters,
+            CancellationToken ct = default);
+
+        Task<PagedResult<TResult>> GetPagedListAsync<TResult>(
+            PaginationParameters parameters,
             Expression<Func<T, bool>>? filter = null,
             Expression<Func<T, TResult>>? selector = null,
             Expression<Func<T, object>>? orderBy = null,

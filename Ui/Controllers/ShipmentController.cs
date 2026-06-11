@@ -1,4 +1,5 @@
 ﻿using BL.Contracts.Shipment;
+using Domains.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Ui.Controllers
@@ -14,6 +15,13 @@ namespace Ui.Controllers
         public async Task<IActionResult> List()
         {
             var shipments = await _shipmentService.GetShipmentsByUserIdAsync();
+            return View(shipments);
+        }
+        [HttpGet]
+        public async Task<IActionResult> List(PaginationParameters parameters)
+        {
+            var shipments = await _shipmentService.GetShipmentsByUserIdAsync(
+                pageNumber: parameters.PageNumber, pageSize: parameters.PageSize);
             return View(shipments);
         }
     }

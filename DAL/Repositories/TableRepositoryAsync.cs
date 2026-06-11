@@ -1,10 +1,12 @@
-﻿using DAL.DbContext;
-using Microsoft.EntityFrameworkCore;
-using DAL.Contracts;
-using Microsoft.Extensions.Logging;
+﻿using DAL.Contracts;
+using DAL.DbContext;
 using DAL.Exceptions;
-using System.Linq.Expressions;
+using DAL.Extensions;
 using Domains.Entities;
+using Domains.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using System.Linq.Expressions;
 
 namespace DAL.Repositories
 {
@@ -228,5 +230,72 @@ namespace DAL.Repositories
             }, "Error retrieving records with custom query configurations.");
         }
 
+        public async Task<PagedResult<TResult>> GetPagedListAsync<TResult>(
+            PaginationParameters parameters, 
+            CancellationToken ct = default)
+        {
+            return await ExecuteWithHandlingAsync(async () =>
+            {
+                IQueryable<T> query = _dbSet.AsNoTracking()
+                                            .Where(i => i.CurrentState == 1)
+                                            .OrderBy(e => e.Id);
+                return await query.Cast<TResult>().ToPagedResultAsync(parameters, ct);
+
+            }, "Error retrieving paged records.");
+        }
+
+        public async Task<PagedResult<TResult>> GetPagedListAsync<TResult>(
+            PaginationParameters parameters,
+            Expression<Func<T, bool>>? filter = null,
+            Expression<Func<T, TResult>>? selector = null,
+            Expression<Func<T, object>>? orderBy = null,
+            bool isDescending = false,
+            CancellationToken ct = default,
+            params Expression<Func<T, object>>[] includers)
+        {
+            return await ExecuteWithHandlingAsync(async () =>
+            {
+                IQueryable<T> query = _dbSet.AsNoTracking().Where(i => i.CurrentState == 1);
+
+                // 1. (JOINs)
+                if (includers != null && includers.Length > 0)
+                {
+                    foreach (var includeProperty in includers)
+                    {
+                        query = query.Include(includeProperty);
+                    }
+                }
+
+                // 2. (Where)
+                if (filter != null)
+                {
+                    query = query.Where(filter);
+                }
+
+                // 3. Order By
+                if (orderBy != null)
+                {
+                    query = isDescending
+                        ? query.OrderByDescending(orderBy)
+                        : query.OrderBy(orderBy);
+                }
+                else
+                {
+                    // default order by Id to ensure consistent pagination results
+                    query = query.OrderBy(e => e.Id);
+                }
+
+                // 4. (Select & Paginate)
+                if (selector != null)
+                {
+                    return await query.Select(selector).ToPagedResultAsync(parameters, ct);
+                }
+
+                return await query.Cast<TResult>().ToPagedResultAsync(parameters, ct);
+
+            }, "Error retrieving paged records with custom configurations.");
+        }
     }
+
 }
+

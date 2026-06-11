@@ -7,6 +7,7 @@ using BL.DTOs;
 using BL.Mapping;
 using DAL.Contracts;
 using Domains.Entities;
+using Domains.Models;
 
 namespace BL.Services.Shipment
 {
@@ -57,15 +58,20 @@ namespace BL.Services.Shipment
 
         }
 
-        public async Task<IEnumerable<TbShipmentDTO>> GetShipmentsByUserIdAsync(
+        public async Task<PagedResult<TbShipmentDTO>> GetShipmentsByUserIdAsync(
             Guid userId = default,
+            int pageNumber = 1,
+            int pageSize = 10,
             CancellationToken ct = default
         )   
         {
             if (userId == default)
                 userId = await _userService.GetLoggedInUserId();
 
-            var shipments = await _repo.GetListAsync<TbShipmentDTO>(
+            PaginationParameters parameters = new() { PageNumber = pageNumber, PageSize = pageSize };
+
+            var shipments = await _repo.GetPagedListAsync<TbShipmentDTO>(
+                parameters: parameters,
                 filter: s => s.UserId == userId,
                 ct: ct,
                 selector: s => new TbShipmentDTO
@@ -125,5 +131,7 @@ namespace BL.Services.Shipment
 
             return shipments;
         }
+        
+
     }
 }

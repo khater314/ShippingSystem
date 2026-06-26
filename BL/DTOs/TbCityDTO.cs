@@ -27,4 +27,7 @@ public partial record TbCityDTO : BaseEntityDTO
     public string? CountryAname { get; set; }
     public string? CountryEname { get; set; }
 
+    // Object
+    public TbCountryDTO? Country { get; set; }
+
 }

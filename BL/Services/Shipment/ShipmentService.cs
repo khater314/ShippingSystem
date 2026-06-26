@@ -109,6 +109,10 @@ namespace BL.Services.Shipment
                         IsDefaultAddress = s.Sender.IsDefaultAddress, 
                         OtherAddressInfo = s.Sender.OtherAddressInfo,
                         Contacts = s.Sender.Contacts,
+                        CityEname = s.Sender.City.CityEname,
+                        CityAname = s.Sender.City.CityAname,
+                        CountryAname = s.Sender.City.Country.CountryAname,
+                        CountryEname = s.Sender.City.Country.CountryEname
 
                     },
                     Receiver = new TbUserContactDTO
@@ -124,7 +128,11 @@ namespace BL.Services.Shipment
                         ContactType = s.Receiver.ContactType,     
                         IsDefaultAddress = s.Receiver.IsDefaultAddress, 
                         OtherAddressInfo = s.Receiver.OtherAddressInfo,
-                        Contacts = s.Receiver.Contacts
+                        Contacts = s.Receiver.Contacts,
+                        CityEname = s.Receiver.City.CityEname,
+                        CityAname = s.Receiver.City.CityAname,
+                        CountryAname = s.Receiver.City.Country.CountryAname,
+                        CountryEname = s.Receiver.City.Country.CountryEname
                     }
                 }
             );
@@ -132,6 +140,23 @@ namespace BL.Services.Shipment
             return shipments;
         }
         
+        public override async Task<TbShipmentDTO> GetByIdAsync(Guid id, CancellationToken ct = default)
+        {
+            var shipment = await _repo.GetListAsync<TbShipment>(
+                filter: s => s.Id == id,
+                ct: ct,
+                includers: [ 
+                    x => x.Sender, 
+                    x => x.Receiver, 
+                    x => x.Sender.City, 
+                    x => x.Receiver.City,
+                    x => x.Sender.City.Country,
+                    x => x.Receiver.City.Country
+                    ]
+                );
 
+            return _mapper.Map<TbShipment, TbShipmentDTO>(shipment.First());
+        }  
+        
     }
 }

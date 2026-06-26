@@ -50,7 +50,7 @@
     {
         <link rel="stylesheet" href="~/assets/css/rtl.css">
     }
-
+    @RenderSection("Styles", false)
     @* <script src="~/assets/js/jquery-3.4.1.min.js"></script> *@
 </head>
 <body>
@@ -120,8 +120,8 @@
                             <li class="nav-active"><a href="index.html">@ResFrontend.Menu_Home</a></li>
                             <li><a href="about.html">@ResFrontend.Menu_AboutUs</a></li>
                             <li><a href="services.html">@ResFrontend.Menu_Services</a></li>
-                            <li><a href="shipment/create">@ResFrontend.Menu_Shipping</a></li>
-                            <li><a href="shipment/list">List</a></li>
+                            <li><a href="~/shipment/create">@ResFrontend.Menu_Shipping</a></li>
+                            <li><a href="~/shipment/list">List</a></li>
                             <li><a href="contact.html">@ResFrontend.Menu_ContactUs</a></li>
                             <li><a href="profile.html"><img class="header-profile-pic" src="~/assets/images/profile.jpg" alt="@ResFrontend.Alt_ProfilePicture" /> @(" " + displayName)</a></li>
                         </ul>

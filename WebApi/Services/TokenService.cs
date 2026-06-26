@@ -16,10 +16,15 @@ public class TokenService(IConfiguration config)
     {
         var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_secretKey));
 
+        if (!double.TryParse(_config["Jwt:DurationInMinutes"], out double durationInMinutes))
+        {
+            durationInMinutes = 20;
+        }
+
         var token = new JwtSecurityToken(
             issuer: _config["Jwt:Issuer"],
             audience: _config["Jwt:Audience"],
-            expires: DateTime.Now.AddMinutes(double.Parse(_config["Jwt:DurationInMinutes"]!)),
+            expires: DateTime.UtcNow.AddMinutes(durationInMinutes),
             claims: claims,
             signingCredentials: new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256)
         );

@@ -141,6 +141,7 @@ namespace WebApi.Controllers
         {
             var claims = new List<Claim>
             {
+                new(ClaimTypes.NameIdentifier, user.Id.ToString()),
                 new(ClaimTypes.Name, user.Email),
                 new(ClaimTypes.Role, "User") 
             };

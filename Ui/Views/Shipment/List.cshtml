@@ -50,7 +50,7 @@
                                         <td style="display:flex; justify-content:space-around;">
                                             <a href="@Url.Action("Delete", "Shipment", new { id = Model.Items.ElementAt(i).Id })"><i class="far fa-trash-alt"></i></a>
                                             <a href="@Url.Action("", "Shipment", new { id = Model.Items.ElementAt(i).Id })"><i class="fa fa-check-circle" aria-hidden="true"></i></a>
-                                            <a href="@Url.Action("Details", "Shipment", new { id = Model.Items.ElementAt(i).Id })"><i class="fa fa-info-circle"></i></a>
+                                            <a href="@Url.Action("Show", "Shipment", new { id = Model.Items.ElementAt(i).Id })"><i class="fa fa-info-circle"></i></a>
                                         </td>
                                     </tr>
                                 } 

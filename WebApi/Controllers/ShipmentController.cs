@@ -1,15 +1,16 @@
 ﻿using BL.Contracts.Shipment;
 using BL.DTOs;
 using Domains.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Models;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace WebApi.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
+    [Authorize]
     public class ShipmentController(IShipmentService shipmentService) : ControllerBase
     {
         private readonly IShipmentService _shipmentService = shipmentService;
@@ -24,12 +25,12 @@ namespace WebApi.Controllers
         }
 
 
-        //[HttpGet("Shipments")]
-        //public async Task<ActionResult<ApiResponse<TbShipmentDTO>>> Get(Guid id, CancellationToken ct = default)
-        //{
-        //    var response = await _shipmentService.GetByIdAsync(id, ct);
-        //    return Ok(ApiResponse<TbShipmentDTO>.SuccessResponse(response));
-        //}
+        [HttpGet("{id}")]
+        public async Task<ActionResult<ApiResponse<TbShipmentDTO>>> Get(Guid id, CancellationToken ct = default)
+        {
+            var response = await _shipmentService.GetByIdAsync(id, ct);
+            return Ok(ApiResponse<TbShipmentDTO>.SuccessResponse(response));
+        }
 
         [HttpPost]
         public void Post([FromBody] string value)

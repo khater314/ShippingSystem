@@ -59,6 +59,54 @@
         console.log('Generated shipmentDto:', shipmentDto);
         return shipmentDto;
     },
+    GetShipmentDetails: function (shipment) {
+
+        if (!shipment) return;
+
+        if (shipment.Sender) {
+            $('#ReviewSenderFullName').text(shipment.Sender.FullName || 'N/A');
+            $('#ReviewSenderEmail').text(shipment.Sender.Email || 'N/A');
+            $('#ReviewSenderPhone').text(shipment.Sender.Phone || 'N/A');
+            $('#ReviewSenderAddress').text(shipment.Sender.Address || 'N/A');
+
+            var senderCity = shipment.Sender.City.CityEname || 'N/A';
+            $('#ReviewSenderCityName').text(senderCity);
+
+            var senderCountry = shipment.Sender.City.Country.CountryEname || 'N/A';
+            $('#ReviewSenderCountryName').text(senderCountry);
+
+            $('#ReviewSenderPostalCode').text(shipment.Sender.PostalCode || 'N/A');
+            $('#ReviewSenderOtherAddressInfo').text(shipment.Sender.OtherAddressInfo || 'N/A');
+        }
+
+        if (shipment.Receiver) {
+            $('#ReviewReceiverFullName').text(shipment.Receiver.FullName || 'N/A');
+            $('#ReviewReceiverEmail').text(shipment.Receiver.Email || 'N/A');
+            $('#ReviewReceiverPhone').text(shipment.Receiver.Phone || 'N/A');
+            $('#ReviewReceiverAddress').text(shipment.Receiver.Address || 'N/A');
+
+            var receiverCity = shipment.Receiver.City.CityEname || 'N/A';
+            $('#ReviewReceiverCityName').text(receiverCity);
+
+            var receiverCountry = shipment.Receiver.City.Country.CountryEname || 'N/A';
+            $('#ReviewReceiverCountryName').text(receiverCountry);
+
+            $('#ReviewReceiverPostalCode').text(shipment.Receiver.PostalCode || 'N/A');
+            $('#ReviewReceiverOtherAddressInfo').text(shipment.Receiver.OtherAddressInfo || 'N/A');
+        }
+
+        $('#ReviewWeight').text(shipment.Weight || 0);
+        var dims = `${shipment.Length || 0} x ${shipment.Width || 0} x ${shipment.Height || 0} in`;
+        $('#ReviewDimensions').text(dims);
+
+        $('#ReviewPackageValue').text(shipment.PackageValue || 0);
+        $('#ReviewShippingRate').text(shipment.ShippingRate || 0);
+
+        $('#ReviewShippingDate').text(shipment.ShippingDate ? new Date(shipment.ShippingDate).toLocaleDateString() : 'N/A');
+        $('#ReviewDelivryDate').text(shipment.DelivryDate ? new Date(shipment.DelivryDate).toLocaleDateString() : 'N/A');
+
+        $('#ReviewTrackingNumber').text(shipment.TrackingNumber || 'Generated upon confirmation');
+    },
 
     GetShipments: function (onSuccess, onError) {
         ApiClient.get(`/api/v1/Shipment`, onSuccess, onError, true);
@@ -84,226 +132,6 @@
             });
     }
 
-
-
 }
 
-function drawShipmentList(apiResponse) {
-    const $tbody = $('#shipmentTableBody');
-    $tbody.empty(); // Clear out existing rows or loading spinners
 
-    // 1. Handle API Failures using your backend properties safely
-    if (!apiResponse || apiResponse.IsSuccess === false) {
-        const errorMsg = apiResponse?.Message || "Failed to load shipment records.";
-        $tbody.append(`<tr><td colspan="7" class="text-center text-danger">${errorMsg}</td></tr>`);
-        return;
-    }
-
-    // 2. Unwrap the collection array from your generic T Data container
-    const shipments = apiResponse.Data;
-
-    // 3. Handle Empty Data State gracefully
-    if (!shipments || shipments.length === 0) {
-        $tbody.append('<tr><td colspan="7" class="text-center text-muted">No shipments found.</td></tr>');
-        return;
-    }
-
-    // Date formatting helper ("dd MMMM yyyy")
-    const formatDate = (dateString) => {
-        if (!dateString) return 'N/A';
-        const date = new Date(dateString);
-        return date.toLocaleDateString('en-GB', {
-            day: '2-digit',
-            month: 'long',
-            year: 'numeric'
-        });
-    };
-
-    // 4. Render the data loop using jQuery
-    $.each(shipments, function (index, shipment) {
-        const senderName = shipment.Sender?.FullName || 'N/A';
-        const receiverName = shipment.Receiver?.FullName || 'N/A';
-        const packageValue = shipment.PackageValue ? Number(shipment.PackageValue).toFixed(2) : '0.00';
-        const formattedDate = formatDate(shipment.DelivryDate || shipment.DeliveryDate);
-
-        const rowHTML = `
-            <tr>
-                <td>${index + 1}</td>
-                <td>${shipment.TrackingNumber || 'N/A'}</td>
-                <td>${formattedDate}</td>
-                <td>${senderName}</td>
-                <td>${receiverName}</td>
-                <td>$${packageValue}</td>
-                <td style="display:flex; justify-content:space-around;">
-                    <a href="/Shipment/Delete/${shipment.Id}" title="Delete">
-                        <i class="far fa-trash-alt text-danger"></i>
-                    </a>
-                    <a href="/Shipment/Check/${shipment.Id}" title="Verify">
-                        <i class="fa fa-check-circle text-success" aria-hidden="true"></i>
-                    </a>
-                    <a href="/Shipment/Details/${shipment.Id}" title="Details">
-                        <i class="fa fa-info-circle text-info"></i>
-                    </a>
-                </td>
-            </tr>
-        `;
-
-        $tbody.append(rowHTML);
-    });
-}
-/*
-const ShipmentService = {
-    FormIds: {},
-
-    GetModel: function () {
-        const shipmentDto = {
-            ShippingDate: new Date().toISOString(),
-            DelivryDate: new Date(new Date().setDate(new Date().getDate() + 3)).toISOString(),
-
-            SenderId: "00000000-0000-0000-0000-000000000000",
-            Sender: {
-                Id: "00000000-0000-0000-0000-000000000000",
-                UserId: "00000000-0000-0000-0000-000000000000",
-                FullName: $('input[name="Sender.FullName"]').val(),
-                Email: $('input[name="Sender.Email"]').val(),
-                Phone: $('input[name="Sender.Phone"]').val(),
-                CityId: $('select[name="Sender.CityId"]').val(),
-                Address: $('input[name="Sender.Address"]').val(),
-                Contacts: $('input[name="Sender.Contacts"]').val(),
-                PostalCode: $('input[name="Sender.PostalCode"]').val(),
-                OtherAddressInfo: $('input[name="Sender.OtherAddressInfo"]').val(),
-                IsDefaultAddress: $('#Sender_IsDefaultAddress').is(':checked'),
-                ContactType: 0   Default: SenderAndReceiver, adjust as needed
-            },
-
-            ReceiverId: "00000000-0000-0000-0000-000000000000",
-            Receiver: {
-                Id: "00000000-0000-0000-0000-000000000000",
-                UserId: "00000000-0000-0000-0000-000000000000",
-                FullName: $('input[name="Receiver.FullName"]').val(),
-                Email: $('input[name="Receiver.Email"]').val(),
-                Phone: $('input[name="Receiver.Phone"]').val(),
-                CityId: $('select[name="Receiver.CityId"]').val(),
-                Address: $('input[name="Receiver.Address"]').val(),
-                Contacts: $('input[name="Receiver.Contacts"]').val(),
-                PostalCode: $('input[name="Receiver.PostalCode"]').val(),
-                OtherAddressInfo: $('input[name="Receiver.OtherAddressInfo"]').val(),
-                ContactType: 0
-            },
-
-            ShippingTypeId: $('select[name="ShippingTypeId"]').val(),
-            PackagingId: $('select[name="PackagingId"]').val() || null,
-
-            Width: parseFloat($('input[name="Width"]').val()) || 0,
-            Height: parseFloat($('input[name="Height"]').val()) || 0,
-            Weight: parseFloat($('input[name="Weight"]').val()) || 0,
-            Length: parseFloat($('input[name="Length"]').val()) || 0,
-
-            PackageValue: parseFloat($('input[name="PackageValue"]').val()) || 0,
-            ShippingRate: 0.0,
-
-            PaymentMethodId: null,
-            UserSubscriptionId: null,
-            TrackingNumber: null,
-            ReferenceId: null
-        };
-        console.log('shipmentDto:', shipmentDto);
-        return shipmentDto;
-    },
-
-    FillShipmentForm: function (data) {
-        this.FormIds = {
-            Id: data.Id,
-            SenderId: data.Sender?.Id,
-            ReciverId: data.Receiver?.Id,
-            TrackingNumber: data.TrackingNumber,
-            ShippingRate: data.ShippingRate
-        };
-
-        Sender fields
-        $('input[name="Sender.FullName"]').val(data.Sender?.FullName || '');
-        $('input[name="Sender.Email"]').val(data.Sender?.Email || '');
-        $('input[name="Sender.Phone"]').val(data.Sender?.Phone || '');
-        $('select[name="Sender.CountryId"]').val(data.Sender?.CountryId || '');
-        Assuming ManagePageControls can fetch cities based on country and set city dropdown
-        ManagePageControls.fillCityDropdown(
-            'select[name="Sender.CityId"]',
-            data.Sender?.CountryId,
-            data.Sender?.CityId
-        );
-        $('input[name="Sender.Address"]').val(data.Sender?.Address || '');
-        $('input[name="Sender.Contacts"]').val(data.Sender?.Contacts || '');
-        $('input[name="Sender.PostalCode"]').val(data.Sender?.PostalCode || '');
-        $('input[name="Sender.OtherAddressInfo"]').val(data.Sender?.OtherAddressInfo || '');
-        $('#Sender_IsDefaultAddress').prop('checked', data.Sender?.IsDefaultAddress || false);
-
-        Receiver fields
-        $('input[name="Receiver.FullName"]').val(data.Receiver?.FullName || '');
-        $('input[name="Receiver.Email"]').val(data.Receiver?.Email || '');
-        $('input[name="Receiver.Phone"]').val(data.Receiver?.Phone || '');
-        $('select[name="Receiver.CountryId"]').val(data.Receiver?.CountryId || '');
-        ManagePageControls.fillCityDropdown(
-            'select[name="Receiver.CityId"]',
-            data.Receiver?.CountryId,
-            data.Receiver?.CityId
-        );
-        $('input[name="Receiver.Address"]').val(data.Receiver?.Address || '');
-        $('input[name="Receiver.Contacts"]').val(data.Receiver?.Contacts || '');
-        $('input[name="Receiver.PostalCode"]').val(data.Receiver?.PostalCode || '');
-        $('input[name="Receiver.OtherAddressInfo"]').val(data.Receiver?.OtherAddressInfo || '');
-
-        Shipment details
-        $('select[name="ShippingTypeId"]').val(data.ShippingTypeId || '');
-        $('select[name="PackagingId"]').val(data.PackagingId || '');
-        $('input[name="Width"]').val(data.Width);
-        $('input[name="Height"]').val(data.Height);
-        $('input[name="Weight"]').val(data.Weight);
-        $('input[name="Length"]').val(data.Length);
-        $('input[name="PackageValue"]').val(data.PackageValue);
-        $('input[name="TrackingNumber"]').val(data.TrackingNumber ?? '');
-
-        Dates
-        if (data.ShippingDate) {
-            $('input[name="ShippingDate"]').val(new Date(data.ShippingDate).toISOString().split('T')[0]);
-        }
-        if (data.DelivryDate) {
-            $('input[name="DelivryDate"]').val(new Date(data.DelivryDate).toISOString().split('T')[0]);
-        }
-    },
-
-    SaveShippment: function () {
-        let data = ShipmentService.GetModel();
-        console.log('log data before send', data);
-        ApiClient.post('/api/Shipment/Create', data,
-            function (response) { },
-            function (xhr) {
-                console.error('API Error:', xhr.responseJSON);
-            }
-        );
-    },
-
-    EditShippment: function () {
-        let data = ShipmentService.GetModel();
-        data.Id = this.FormIds.Id;
-        data.SenderId = this.FormIds.SenderId;
-        data.ReceiverId = this.FormIds.ReciverId;
-        data.TrackingNumber = this.FormIds.TrackingNumber;
-        data.ShippingRate = this.FormIds.ShippingRate;
-        console.log('log data before send', data);
-        ApiClient.post('/api/Shipment/Edit', data,
-            function (response) { },
-            function (xhr) {
-                console.error('API Error:', xhr.responseJSON);
-            }
-        );
-    },
-
-    GetShipments: function (onSuccess, onError) {
-        ApiClient.get(`/api/v1/Shipment/shipments`, onSuccess, onError, true);
-    },
-
-    GetById: function (id, onSuccess, onError) {
-        ApiClient.get(`/api/v1/Shipment/${id}`, onSuccess, onError, true);
-    },
-};
-*/

@@ -176,15 +176,15 @@ const ApiClient = {
         this._refreshQueue = [{ onSuccess, onFailure }];
 
         $.ajax({
-            url: this.baseUrl + '/api/auth/RefreshAccessToken',
+            url: this.baseUrl + '/api/auth/refresh-access-token',
             type: 'POST',
             timeout: this.timeout,
             xhrFields: { withCredentials: true },
             contentType: 'application/json',
 
             success: (response) => {
-                if (response?.accessToken) {
-                    AppHelper.setCookie('AccessToken', response.accessToken, { days: 1 });
+                if (response?.AccessToken) {
+                    AppHelper.setCookie('AccessToken', response.AccessToken, { days: 1 });
 
                     const queue = this._refreshQueue;
                     this._refreshQueue = null;
@@ -218,9 +218,9 @@ const ApiClient = {
     baseUrl: 'https://localhost:7244',
 
     get: function (url, onSuccess, onError, useAuth = true) {
-        const accessToken = AppHelper.getCookie("AccessToken");
-        const headers = useAuth && accessToken
-            ? { 'Authorization': 'Bearer ' + accessToken }
+        const AccessToken = AppHelper.getCookie("AccessToken");
+        const headers = useAuth && AccessToken
+            ? { 'Authorization': 'Bearer ' + AccessToken }
             : {};
 
         $.ajax({
@@ -242,9 +242,9 @@ const ApiClient = {
     },
 
     post: function (url, data, onSuccess, onError, useAuth = true) {
-        const accessToken = AppHelper.getCookie("AccessToken");
-        const headers = useAuth && accessToken
-            ? { 'Authorization': 'Bearer ' + accessToken }
+        const AccessToken = AppHelper.getCookie("AccessToken");
+        const headers = useAuth && AccessToken
+            ? { 'Authorization': 'Bearer ' + AccessToken }
             : {};
 
         $.ajax({
@@ -281,8 +281,8 @@ const ApiClient = {
             },
             //data: JSON.stringify({ refreshToken: refreshToken }),
             success: function (response) {
-                if (response && response.accessToken) {
-                    document.cookie = `AccessToken=${response.accessToken}; path=/`;
+                if (response && response.AccessToken) {
+                    document.cookie = `AccessToken=${response.AccessToken}; path=/`;
                     onSuccess();
                 } else {
                     if (onFailure) onFailure({ message: 'Token refresh failed.' });

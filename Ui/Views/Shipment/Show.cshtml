@@ -1,0 +1,200 @@
+﻿<div class="wshipping-content-block wshipping-breadcroumb inner-bg-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-7">
+                <h1>Review Shipment</h1>
+                <a href="/" title="Home">Home</a> / Review Shipment
+            </div>
+            <div class="col-12 col-lg-5 text-right">
+                <h4>
+                    We freight to all over the world
+                    The best logistic company, <span>FAST</span> and <span>SAFELY!</span>
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wshipping-content-block shipping-block">
+    <div id="review-fieldset" class="container my-4 steps">
+
+        <h2 class="fs-title">Let's make sure everything is in order</h2>
+
+        <div class="shipping-form">
+
+            <div class="review">
+                <h3>Where <a href="" title="Edit" class="btn-edit">Edit</a></h3>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="ship-address">
+                            <h4>Ship from (Sender)</h4>
+                            <ul>
+                                <li><b>Name:</b> <span id="ReviewSenderFullName"></span></li>
+                                <li><b>Email:</b> <span id="ReviewSenderEmail"></span></li>
+                                <li><b>Phone:</b> <span id="ReviewSenderPhone"></span></li>
+                                <li><b>Address:</b> <span id="ReviewSenderAddress"></span></li>
+                                <li><b>City:</b> <span id="ReviewSenderCityName"></span></li>
+                                <li><b>Country:</b> <span id="ReviewSenderCountryName"></span></li>
+                                <li><b>Postal Code:</b> <span id="ReviewSenderPostalCode"></span></li>
+                                <li><b>Other Info:</b> <span id="ReviewSenderOtherAddressInfo"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="ship-address">
+                            <h4>Ship to (Receiver)</h4>
+                            <ul>
+                                <li><b>Name:</b> <span id="ReviewReceiverFullName"></span></li>
+                                <li><b>Email:</b> <span id="ReviewReceiverEmail"></span></li>
+                                <li><b>Phone:</b> <span id="ReviewReceiverPhone"></span></li>
+                                <li><b>Address:</b> <span id="ReviewReceiverAddress"></span></li>
+                                <li><b>City:</b> <span id="ReviewReceiverCityName"></span></li>
+                                <li><b>Country:</b> <span id="ReviewReceiverCountryName"></span></li>
+                                <li><b>Postal Code:</b> <span id="ReviewReceiverPostalCode"></span></li>
+                                <li><b>Other Info:</b> <span id="ReviewReceiverOtherAddressInfo"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review">
+                <h3>What <a href="" title="Edit" class="btn-edit">Edit</a></h3>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <h5>Package Dimensions</h5>
+                        <ul>
+                            <li><b>Weight:</b> <span id="ReviewWeight"></span> lbs</li>
+                            <li><b>Dimensions (L x W x H):</b> <span id="ReviewDimensions"></span></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <h5>Financial Summary</h5>
+                        <ul>
+                            <li><b>Declared Value:</b> $<span id="ReviewPackageValue"></span></li>
+                            <li><b>Shipping Rate:</b> $<span id="ReviewShippingRate"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review">
+                <h3>How <a href="" title="Edit" class="btn-edit">Edit</a></h3>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <h5>Execution Dates</h5>
+                        <ul>
+                            <li><b>Shipping Date:</b> <span id="ReviewShippingDate"></span></li>
+                            <li><b>Expected Delivery:</b> <span id="ReviewDelivryDate"></span></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <h5>Reference</h5>
+                        <ul>
+                            <li><b>Tracking Number:</b> <span id="ReviewTrackingNumber" class="badge badge-info p-2"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-4">
+            <input type="button" name="previous" class="previous action-button-previous" value="Back" />
+            <input type="button" name="next" class="next action-button" value="Confirm & Create" />
+        </div>
+    </div>
+</div>
+@section Scripts
+{
+    <script src="~/modules/apphelper.js"></script>
+    <script src="~/modules/apiclient.js"></script>
+    <script src="~/modules/utilities/service-utils.js"></script>
+    <script src="~/modules/services/countryservice.js"></script>
+    <script src="~/modules/services/cityservice.js"></script>
+    <script src="~/modules/services/packagingservice.js"></script>
+    <script src="~/modules/services/shippingtypeservice.js"></script>
+    <script src="~/modules/utilities/dropdownhelper.js"></script>
+    <script src="~/modules/services/shipment/shipmentservice.js"></script>
+    <script src="~/modules/services/shipment/show.js"></script>
+}
+@section Styles
+{
+    <style>
+        #review-fieldset {
+            background-color: #f8f8f8;
+            padding: 20px 30px;
+            border-width: 0px;
+            border-style: none;
+            border-color: currentcolor;
+            border-image: initial;
+            border-radius: 3px;
+            transition: all 0.7s ease;
+        }
+
+            #review-fieldset .fs-title {
+                font-size: 1.5rem !important;
+                margin-bottom: 1.5rem !important;
+            }
+
+            #review-fieldset .review h3 {
+                font-size: 1.2rem !important;
+                border-bottom: 1px solid #e0e0e0;
+                padding-bottom: 8px;
+                margin-bottom: 1rem;
+            }
+
+            #review-fieldset .review h4,
+            #review-fieldset .review h5 {
+                font-size: 1rem !important;
+                font-weight: 600 !important;
+                margin-bottom: 0.5rem;
+            }
+
+            #review-fieldset .review ul {
+                list-style: none;
+                padding-left: 0;
+                margin-bottom: 0;
+            }
+
+                #review-fieldset .review ul li {
+                    font-size: 0.9375rem !important;
+                    line-height: 1.6 !important;
+                    margin-bottom: 4px;
+                }
+
+            #review-fieldset .btn-edit {
+                font-size: 0.8125rem !important;
+            }
+
+        #ReviewTrackingNumber {
+            font-size: 0.85rem !important;
+        }
+
+        @@media (max-width: 767.98px) {
+            #review-fieldset {
+                padding: 15px 15px;
+            }
+
+                #review-fieldset .fs-title {
+                    font-size: 1.25rem !important;
+                    margin-bottom: 1rem !important;
+                }
+
+                #review-fieldset .review h3 {
+                    font-size: 1.1rem !important;
+                    margin-bottom: 0.75rem;
+                }
+
+                #review-fieldset .review h4,
+                #review-fieldset .review h5 {
+                    font-size: 0.95rem !important;
+                }
+
+                #review-fieldset .review ul li {
+                    font-size: 0.875rem !important;
+                    line-height: 1.5 !important;
+                }
+        }
+    </style>
+}

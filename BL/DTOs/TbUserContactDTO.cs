@@ -65,10 +65,16 @@ public partial record TbUserContactDTO : BaseEntityDTO
     public bool IsDefaultAddress { get; set; }
 
 
+    // Object references
+    public TbCityDTO City { get; set; } = null!;
+
     // Read-Only From 
     [Display(Name = nameof(ResShared.Field_CityAname), ResourceType = typeof(ResShared))]
     public string? CityAname { get; set; }
 
     [Display(Name = nameof(ResShared.Field_CityEname), ResourceType = typeof(ResShared))]
     public string? CityEname { get; set; }
+
+    public string? CountryAname { get; set; }
+    public string? CountryEname { get; set; }
 }

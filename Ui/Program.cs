@@ -25,6 +25,11 @@ namespace Ui
             builder.RegisterServices();
 
             // Add services to the container.
+            builder.Services.AddControllers()
+                .AddJsonOptions(options =>
+                {
+                    options.JsonSerializerOptions.PropertyNamingPolicy = null;
+                });
             builder.Services.AddControllersWithViews(option =>
             {
                 option.Filters.Add<TransactionExceptionFilter>();
